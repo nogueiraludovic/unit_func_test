@@ -1,0 +1,2 @@
+#cat=basic/basic/10;type=string;label=Path to store environment data
+environmentPath = fileadmin/environment

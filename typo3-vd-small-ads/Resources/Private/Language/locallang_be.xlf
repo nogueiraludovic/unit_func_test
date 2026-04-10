@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xliff version="1.2" xmlns="urn:oasis:names:tc:xliff:document:1.2">
+	<file datatype="plaintext" original="EXT:vd_small_ads/Resources/Private/Language/locallang_be.xlf" source-language="en">
+		<header/>
+		<body>
+			<trans-unit id="category_2" resname="category_2">
+				<source>Category 2</source>
+			</trans-unit>
+			<trans-unit id="comment" resname="comment">
+				<source>Comment</source>
+			</trans-unit>
+			<trans-unit id="crdateexternal" resname="crdateexternal">
+				<source>External creation date</source>
+			</trans-unit>
+			<trans-unit id="displayemail" resname="displayemail">
+				<source>Display the mail address?</source>
+			</trans-unit>
+			<trans-unit id="vdexternaluid" resname="vdexternaluid">
+				<source>External identifier</source>
+			</trans-unit>
+			<trans-unit id="iscommercial" resname="iscommercial">
+				<source>Commercial small ad?</source>
+			</trans-unit>
+			<trans-unit id="reviewed" resname="reviewed">
+				<source>Reviewed</source>
+			</trans-unit>
+			<trans-unit id="small_ads" resname="small_ads">
+				<source>Small ads</source>
+			</trans-unit>
+			<trans-unit id="user" resname="user">
+				<source>User</source>
+			</trans-unit>
+		</body>
+	</file>
+</xliff>

@@ -1,0 +1,4 @@
+.topbar-header-site,
+.topbar-header-site::after {
+  background: #055160 !important;
+}

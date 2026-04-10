@@ -1,0 +1,22 @@
+---
+routeEnhancers:
+  SmallAds:
+    aspects:
+      page:
+        end: '500'
+        start: '1'
+        type: StaticRangeMapper
+    defaultController: SmallAds::list
+    namespace: tx_vdsmallads_pi1
+    requirements:
+      page: \d+
+    routes:
+      -
+        _controller: SmallAds::list
+        routePath: /
+      -
+        _arguments:
+          page: page
+        _controller: SmallAds::list
+        routePath: /page/{page}
+    type: Extbase

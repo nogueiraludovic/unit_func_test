@@ -1,0 +1,16 @@
+config {
+  enableCspHeader = 1
+  pageTitleProviders.viewHelper {
+    before = record,seo
+    provider = Vd\VdCore\PageTitle\ViewHelperTitleProvider
+  }
+}
+
+##################################################
+
+plugin.tx_min.assetCollector {
+  compressInlineCss = 0
+  compressCss = 0
+  compressInlineJs = 0
+  compressJs = 0
+}

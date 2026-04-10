@@ -1,0 +1,24 @@
+<html data-namespace-typo3-fluid="true" xmlns:f="http://typo3.org/ns/TYPO3/CMS/Fluid/ViewHelpers">
+    <f:for as="message" each="{messages}">
+        <f:switch expression="{message.severity}">
+            <f:case value="0">
+                <f:variable name="severity" value="success"/>
+            </f:case>
+            <f:case value="1">
+                <f:variable name="severity" value="warning"/>
+            </f:case>
+            <f:case value="2">
+                <f:variable name="severity" value="danger"/>
+            </f:case>
+            <f:defaultCase>
+                <f:variable name="severity" value="info"/>
+            </f:defaultCase>
+        </f:switch>
+        <div class="alert alert-{severity}" role="alert">
+            <f:if condition="{message.title}">
+                <h4 class="mt-2">{message.title}</h4>
+            </f:if>
+            {message.message -> f:format.raw()}
+        </div>
+    </f:for>
+</html>
