@@ -23,6 +23,9 @@
         <ini name="error_reporting" value="E_ALL"/>
     </php>
     <source>
+        <exclude>
+            <directory>../../Classes/Query/</directory>
+        </exclude>
         <include>
             <directory>../../Classes/</directory>
         </include>

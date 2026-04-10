@@ -23,6 +23,10 @@
         <ini name="error_reporting" value="E_ALL"/>
     </php>
     <source>
+        <exclude>
+            <directory>../../Classes/Controller/</directory>
+            <directory>../../Classes/Domain/</directory>
+        </exclude>
         <include>
             <directory>../../Classes/</directory>
         </include>
