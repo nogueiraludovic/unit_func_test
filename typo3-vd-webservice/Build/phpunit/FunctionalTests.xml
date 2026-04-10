@@ -31,6 +31,10 @@
         <ini name="error_reporting" value="E_ALL"/>
     </php>
     <source>
+        <exclude>
+            <directory>../../Classes/Imaging/</directory>
+            <directory>../../Classes/Middleware/</directory>
+        </exclude>
         <include>
             <directory>../../Classes/</directory>
         </include>
