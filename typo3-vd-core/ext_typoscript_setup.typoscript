@@ -1,0 +1,14 @@
+config.pageRendererTemplateFile = EXT:vd_core/Resources/Private/Templates/MainPage.html
+
+##################################################
+
+plugin.tx_min.tinysource.enable = 0
+
+##################################################
+
+[applicationContext matches '/^Production/']
+  plugin.tx_min.tinysource {
+    enable = 1
+    protectCode.30 = /(<script.*?>.*?<\/script>)/is
+  }
+[end]

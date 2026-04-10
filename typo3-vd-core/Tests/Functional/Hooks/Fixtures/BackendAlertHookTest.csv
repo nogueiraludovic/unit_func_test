@@ -1,0 +1,4 @@
+"sys_news"
+,"uid","pid","title","content","crdate"
+,"1","0","<b>First title</b>","<p>First content</p>","100"
+,"2","0","<i>Second title</i>","<div>Second content</div>","200"

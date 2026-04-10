@@ -1,0 +1,62 @@
+<html data-namespace-typo3-fluid="true" xmlns:f="http://typo3.org/ns/TYPO3/CMS/Fluid/ViewHelpers">
+    <f:if condition="{paginator.numberOfPages} > 1">
+        <nav aria-label="{f:translate(extensionName: 'VdCore', id: 'pagination')}">
+            <ul class="pagination">
+                <f:if condition="{pagination.previousPageNumber}">
+                    <li class="page-item">
+                        <f:if condition="{pagination.previousPageNumber} > 1">
+                            <f:then>
+                                <a aria-label="{f:translate(extensionName: 'VdCore', id: 'previous_page')}" class="page-link" href="{f:uri.action(addQueryString: 1, arguments: {page: pagination.previousPageNumber})}">
+                                    <span aria-hidden="true">&laquo;</span>
+                                    <span class="visually-hidden"><f:translate extensionName="VdCore" id="previous_page"/></span>
+                                </a>
+                            </f:then>
+                            <f:else>
+                                <a aria-label="{f:translate(extensionName: 'VdCore', id: 'previous_page')}" class="page-link" href="{f:uri.action()}">
+                                    <span aria-hidden="true">&laquo;</span>
+                                    <span class="visually-hidden"><f:translate extensionName="VdCore" id="previous_page"/></span>
+                                </a>
+                            </f:else>
+                        </f:if>
+                    </li>
+                </f:if>
+                <f:if condition="{pagination.displayRangeStart} > 1">
+                    <li class="page-item">
+                        <a class="page-link" href="{f:uri.action()}">1</a>
+                    </li>
+                </f:if>
+                <f:if condition="{pagination.hasLessPages}">
+                    <li class="disabled page-item"><span aria-disabled="true" class="page-link">…</span></li>
+                </f:if>
+                <f:for as="page" each="{pagination.allPageNumbers}">
+                    <li class="{f:if(condition: '{page} === {paginator.currentPageNumber}', then: 'active ')}page-item">
+                        <f:if condition="{page} > 1">
+                            <f:then>
+                                <a class="page-link" href="{f:uri.action(addQueryString: 1, arguments: {page: page})}">{page}</a>
+                            </f:then>
+                            <f:else>
+                                <a class="page-link" href="{f:uri.action()}">{page}</a>
+                            </f:else>
+                        </f:if>
+                    </li>
+                </f:for>
+                <f:if condition="{pagination.hasMorePages}">
+                    <li class="disabled page-item"><span aria-disabled="true" class="page-link">…</span></li>
+                </f:if>
+                <f:if condition="{pagination.displayRangeEnd} < {paginator.numberOfPages}">
+                    <li class="page-item">
+                        <a class="page-link" href="{f:uri.action(addQueryString: 1, arguments: {page: paginator.numberOfPages})}">{paginator.numberOfPages}</a>
+                    </li>
+                </f:if>
+                <f:if condition="{pagination.nextPageNumber}">
+                    <li class="page-item">
+                        <a aria-label="{f:translate(extensionName: 'VdCore', id: 'next_page')}" class="page-link" href="{f:uri.action(addQueryString: 1, arguments: {page: pagination.nextPageNumber})}">
+                            <span aria-hidden="true">&raquo;</span>
+                            <span class="visually-hidden"><f:translate extensionName="VdCore" id="next_page"/></span>
+                        </a>
+                    </li>
+                </f:if>
+            </ul>
+        </nav>
+    </f:if>
+</html>
