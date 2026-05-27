@@ -1,0 +1,14 @@
+---
+services:
+  _defaults:
+    autoconfigure: true
+    autowire: true
+    public: false
+  Vd\VdClimatePolicy\:
+    resource: ../Classes/*
+  Vd\VdClimatePolicy\EventListener\AssetModifier:
+    tags:
+      -
+        event: Vd\VdFrontend\Event\AfterInitializeActionEvent
+        identifier: vd-climate-policy/asset-modifier
+        name: event.listener
