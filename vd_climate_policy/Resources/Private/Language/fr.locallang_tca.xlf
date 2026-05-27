@@ -7,13 +7,41 @@
 				<source>Addresses</source>
 				<target state="translated">Adresses</target>
 			</trans-unit>
+			<trans-unit id="axes" resname="axes">
+				<source>Axes</source>
+				<target state="translated">Axes</target>
+			</trans-unit>
+			<trans-unit id="axis" resname="axis">
+				<source>Axis</source>
+				<target state="translated">Axe</target>
+			</trans-unit>
 			<trans-unit id="color" resname="color">
 				<source>Color</source>
 				<target state="translated">Couleur</target>
 			</trans-unit>
+			<trans-unit id="dicateries" resname="dicateries">
+				<source>Dicasteries</source>
+				<target state="translated">Dicastères</target>
+			</trans-unit>
+			<trans-unit id="dicastery" resname="dicastery">
+				<source>Dicastery</source>
+				<target state="translated">Dicastère</target>
+			</trans-unit>
 			<trans-unit id="logo" resname="logo">
 				<source>Logo</source>
 				<target state="translated">Logo</target>
+			</trans-unit>
+			<trans-unit id="number" resname="number">
+				<source>Number</source>
+				<target state="translated">Numéro</target>
+			</trans-unit>
+			<trans-unit id="pecc" resname="pecc">
+				<source>Pecc</source>
+				<target state="translated">Pecc</target>
+			</trans-unit>
+			<trans-unit id="peccs" resname="peccs">
+				<source>Peccs</source>
+				<target state="translated">Peccs</target>
 			</trans-unit>
 			<trans-unit id="phones" resname="phones">
 				<source>Phones</source>
