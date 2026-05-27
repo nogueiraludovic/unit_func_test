@@ -28,7 +28,7 @@ return [
         'hideTable' => true,
         'label' => 'name',
         'searchFields' => 'description,name',
-        'title' => 'LLL:EXT:vd_climate_policy/Resources/Private/Language/locallang_tca.xlf:dicateries',
+        'title' => 'LLL:EXT:vd_climate_policy/Resources/Private/Language/locallang_tca.xlf:dicasteries',
         'tstamp' => 'tstamp',
         'typeicon_classes' => [
             'default' => 'mimetypes-other-other'

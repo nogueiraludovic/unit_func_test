@@ -19,7 +19,7 @@
 				<source>Color</source>
 				<target state="translated">Couleur</target>
 			</trans-unit>
-			<trans-unit id="dicateries" resname="dicateries">
+			<trans-unit id="dicasteries" resname="dicasteries">
 				<source>Dicasteries</source>
 				<target state="translated">Dicastères</target>
 			</trans-unit>
