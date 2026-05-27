@@ -32,6 +32,6 @@ defined('TYPO3') === true || die;
     $GLOBALS['TYPO3_CONF_VARS']['SYS']['Objects'][\Vd\VdFrontend\Database\RecordRepository::class]['className'] =
         \Vd\VdClimatePolicy\XClasses\Database\RecordRepositoryXClass::class;
 
-    $GLOBALS['TYPO3_CONF_VARS']['SC_OPTIONS']['ext/install']['update'][\Vd\VdClimatePolicy\Updates\ClimatePolicyFilterSeederWizard::class]
-        = \Vd\VdClimatePolicy\Updates\ClimatePolicyFilterSeederWizard::class;
+    $GLOBALS['TYPO3_CONF_VARS']['SC_OPTIONS']['ext/install']['update'][\Vd\VdClimatePolicy\Updates\ClimatePolicyAddDefaultEntriesWizard::class]
+        = \Vd\VdClimatePolicy\Updates\ClimatePolicyAddDefaultEntriesWizard::class;
 })();

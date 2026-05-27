@@ -3,16 +3,24 @@
 /** @noinspection PhpFullyQualifiedNameUsageInspection */
 return [
     'columns' => [
-        'address' => [
+        'axis' => [
             'config' => [
-                'cols' => 20,
-                'default' => '',
-                'eval' => 'trim',
-                'rows' => 3,
-                'type' => 'text'
+                'default' => 0,
+                'disableNoMatchingValueElement' => true,
+                'eval' => 'required',
+                'foreign_table' => 'tx_vdclimatepolicy_domain_model_axis',
+                'items' => [
+                    [
+                        '',
+                        ''
+                    ]
+                ],
+                'minitems' => 1,
+                'renderType' => 'selectSingle',
+                'type' => 'select'
             ],
             'exclude' => true,
-            'label' => 'LLL:EXT:core/Resources/Private/Language/locallang_general.xlf:LGL.address'
+            'label' => 'LLL:EXT:vd_climate_policy/Resources/Private/Language/locallang_tca.xlf:axis'
         ],
         'bodytext' => [
             'config' => [
@@ -23,7 +31,7 @@ return [
             'exclude' => true,
             'label' => 'LLL:EXT:core/Resources/Private/Language/locallang_general.xlf:LGL.text'
         ],
-        'city' => [
+        'cities' => [
             'config' => [
                 'default' => '',
                 'eval' => 'trim',
@@ -31,9 +39,27 @@ return [
                 'type' => 'input'
             ],
             'exclude' => true,
-            'label' => 'LLL:EXT:core/Resources/Private/Language/locallang_general.xlf:LGL.city'
+            'label' => 'LLL:EXT:vd_climate_policy/Resources/Private/Language/locallang_tca.xlf:cities'
         ],
         'description' => \Vd\VdCore\Utility\TcaUtility::getFieldConfiguration('description'),
+        'dicatery' => [
+            'config' => [
+                'default' => 0,
+                'disableNoMatchingValueElement' => true,
+                'eval' => 'required',
+                'foreign_table' => 'tx_vdclimatepolicy_domain_model_dicastery',
+                'items' => [
+                    [
+                        '',
+                        ''
+                    ]
+                ],
+                'minitems' => 1,
+                'renderType' => 'selectSingle',
+                'type' => 'select'
+            ],
+            'label' => 'LLL:EXT:vd_climate_policy/Resources/Private/Language/locallang_tca.xlf:dicastery'
+        ],
         'email' => [
             'config' => [
                 'default' => '',
@@ -111,12 +137,12 @@ return [
             ],
             'label' => 'LLL:EXT:core/Resources/Private/Language/locallang_general.xlf:LGL.name'
         ],
-        'axis' => [
+        'pecc' => [
             'config' => [
                 'default' => 0,
                 'disableNoMatchingValueElement' => true,
                 'eval' => 'required',
-                'foreign_table' => 'tx_vdclimate_policy_domain_model_axis',
+                'foreign_table' => 'tx_vdclimatepolicy_domain_model_pecc',
                 'items' => [
                     [
                         '',
@@ -127,50 +153,14 @@ return [
                 'renderType' => 'selectSingle',
                 'type' => 'select'
             ],
-            'exclude' => true,
-            'label' => 'LLL:EXT:vd_climate_policy/Resources/Private/Language/locallang_tca.xlf:axis'
-        ],
-        'sector' => [
-            'config' => [
-                'default' => 0,
-                'disableNoMatchingValueElement' => true,
-                'eval' => 'required',
-                'foreign_table' => 'tx_vddirectory_domain_model_sector',
-                'items' => [
-                    [
-                        '',
-                        ''
-                    ]
-                ],
-                'minitems' => 1,
-                'renderType' => 'selectSingle',
-                'type' => 'select'
-            ],
-            'label' => 'LLL:EXT:vd_climate_policy/Resources/Private/Language/locallang_tca.xlf:sector'
-        ],
-        'service' => [
-            'config' => [
-                'default' => 0,
-                'disableNoMatchingValueElement' => true,
-                'foreign_table' => 'tx_vddirectory_domain_model_service',
-                'items' => [
-                    [
-                        '',
-                        ''
-                    ]
-                ],
-                'renderType' => 'selectSingle',
-                'type' => 'select'
-            ],
-            'exclude' => true,
-            'label' => 'LLL:EXT:vd_climate_policy/Resources/Private/Language/locallang_tca.xlf:service'
+            'label' => 'LLL:EXT:vd_climate_policy/Resources/Private/Language/locallang_tca.xlf:pecc'
         ],
         'theme' => [
             'config' => [
                 'default' => 0,
                 'disableNoMatchingValueElement' => true,
                 'eval' => 'required',
-                'foreign_table' => 'tx_vddirectory_domain_model_theme',
+                'foreign_table' => 'tx_vdclimatepolicy_domain_model_theme',
                 'items' => [
                     [
                         '',
@@ -202,17 +192,6 @@ return [
             ],
             'exclude' => true,
             'label' => 'LLL:EXT:core/Resources/Private/Language/locallang_general.xlf:LGL.www'
-        ],
-        'zip' => [
-            'config' => [
-                'default' => '',
-                'eval' => 'trim',
-                'max' => 255,
-                'size' => 10,
-                'type' => 'input'
-            ],
-            'exclude' => true,
-            'label' => 'LLL:EXT:core/Resources/Private/Language/locallang_general.xlf:LGL.zip'
         ]
     ],
     'ctrl' => [
@@ -226,7 +205,7 @@ return [
         ],
         'groupName' => 'vd_climate_policy',
         'label' => 'name',
-        'searchFields' => 'address,bodytext,city,description,email,name,www,zip',
+        'searchFields' => 'address,bodytext,description,email,name,www',
         'thumbnail' => 'logo',
         'title' => 'LLL:EXT:vd_climate_policy/Resources/Private/Language/locallang_tca.xlf:addresses',
         'tstamp' => 'tstamp',
@@ -236,10 +215,7 @@ return [
     ],
     'palettes' => [
         'contact' => [
-            'showitem' => 'email,--linebreak--,axis,--linebreak--,www'
-        ],
-        'location' => [
-            'showitem' => 'address,--linebreak--,zip,city'
+            'showitem' => 'email,--linebreak--,www'
         ]
     ],
     'types' => [
@@ -247,15 +223,13 @@ return [
             'showitem' => '
                 --div--;LLL:EXT:core/Resources/Private/Language/Form/locallang_tabs.xlf:general,
                     name,
+                    axis,
+                    theme,
+                    dicastery,
+                    pecc,
+                    towns,
                     bodytext,
                     logo,
-                --div--;LLL:EXT:core/Resources/Private/Language/locallang_general.xlf:LGL.address,
-                    --palette--;;location,
-                    --palette--;;contact,
-                --div--;LLL:EXT:core/Resources/Private/Language/Form/locallang_tabs.xlf:categories,
-                    sector,
-                    theme,
-                    service,
                 --div--;LLL:EXT:core/Resources/Private/Language/Form/locallang_tabs.xlf:access,
                     hidden,
                 --div--;LLL:EXT:core/Resources/Private/Language/Form/locallang_tabs.xlf:notes,
