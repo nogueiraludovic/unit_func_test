@@ -35,6 +35,14 @@
 				<source>Logo</source>
 				<target state="translated">Logo</target>
 			</trans-unit>
+			<trans-unit id="link_text" resname="link_text">
+				<source>Link text</source>
+				<target state="translated">Texte du lien</target>
+			</trans-unit>
+			<trans-unit id="links" resname="links">
+				<source>Links</source>
+				<target state="translated">Liens</target>
+			</trans-unit>
 			<trans-unit id="number" resname="number">
 				<source>Number</source>
 				<target state="translated">Numéro</target>
