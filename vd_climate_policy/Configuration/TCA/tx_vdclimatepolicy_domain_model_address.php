@@ -128,28 +128,6 @@ return [
             'exclude' => true,
             'label' => 'LLL:EXT:vd_climate_policy/Resources/Private/Language/locallang_tca.xlf:logo'
         ],
-        'l10n_diffsource' => [
-            'config' => [
-                'type' => 'passthrough'
-            ]
-        ],
-        'l10n_parent' => [
-            'displayCond' => 'FIELD:sys_language_uid:>:0',
-            'label' => 'LLL:EXT:core/Resources/Private/Language/locallang_general.xlf:LGL.l18n_parent',
-            'config' => [
-                'default' => 0,
-                'items' => [
-                    [
-                        '',
-                        0
-                    ]
-                ],
-                'foreign_table' => 'tx_vdclimatepolicy_domain_model_address',
-                'foreign_table_where' => 'AND {#tx_vdclimatepolicy_domain_model_address}.{#pid}=###CURRENT_PID### AND {#tx_vdclimatepolicy_domain_model_address}.{#sys_language_uid} IN (-1,0)',
-                'renderType' => 'selectSingle',
-                'type' => 'select'
-            ]
-        ],
         'name' => [
             'config' => [
                 'default' => '',
@@ -177,13 +155,6 @@ return [
             ],
             'label' => 'LLL:EXT:vd_climate_policy/Resources/Private/Language/locallang_tca.xlf:pecc'
         ],
-        'sys_language_uid' => [
-            'config' => [
-                'default' => 0,
-                'type' => 'language'
-            ],
-            'label' => 'LLL:EXT:core/Resources/Private/Language/locallang_general.xlf:LGL.language'
-        ],
         'theme' => [
             'config' => [
                 'default' => 0,
@@ -202,16 +173,12 @@ return [
             ],
             'label' => 'LLL:EXT:vd_climate_policy/Resources/Private/Language/locallang_tca.xlf:theme'
         ],
-        'www' => [
+        'links' => [
             'config' => [
                 'appearance' => [
                     'collapseAll' => true,
                     'expandSingle' => true,
                     'newRecordLinkPosition' => 'bottom',
-                    'showSynchronizationLink' => true,
-                    'showAllLocalizationLink' => true,
-                    'showPossibleLocalizationRecords' => true,
-                    'showRemovedLocalizationRecords' => true
                 ],
                 'foreign_field' => 'address',
                 'foreign_sortby' => 'sorting',
@@ -233,9 +200,6 @@ return [
         ],
         'groupName' => 'vd_climate_policy',
         'label' => 'name',
-        'languageField' => 'sys_language_uid',
-        'transOrigDiffSourceField' => 'l10n_diffsource',
-        'transOrigPointerField' => 'l10n_parent',
         'searchFields' => 'bodytext,cities,description,email,name',
         'thumbnail' => 'logo',
         'title' => 'LLL:EXT:vd_climate_policy/Resources/Private/Language/locallang_tca.xlf:addresses',
@@ -259,7 +223,6 @@ return [
                     logo,
                     --palette--;;contact,
                 --div--;LLL:EXT:core/Resources/Private/Language/Form/locallang_tabs.xlf:access,
-                    --palette--;;language,
                     hidden,
                 --div--;LLL:EXT:core/Resources/Private/Language/Form/locallang_tabs.xlf:notes,
                     description
@@ -268,10 +231,7 @@ return [
     ],
     'palettes' => [
         'contact' => [
-            'showitem' => 'email,--linebreak--,www'
-        ],
-        'language' => [
-            'showitem' => 'sys_language_uid,l10n_parent'
+            'showitem' => 'email,--linebreak--,links'
         ]
     ]
 ];

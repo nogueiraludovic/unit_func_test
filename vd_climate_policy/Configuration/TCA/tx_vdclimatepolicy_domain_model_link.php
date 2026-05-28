@@ -10,28 +10,6 @@ return [
         ],
         'description' => \Vd\VdCore\Utility\TcaUtility::getFieldConfiguration('description'),
         'hidden' => \Vd\VdCore\Utility\TcaUtility::getFieldConfiguration('hidden'),
-        'l10n_diffsource' => [
-            'config' => [
-                'type' => 'passthrough'
-            ]
-        ],
-        'l10n_parent' => [
-            'displayCond' => 'FIELD:sys_language_uid:>:0',
-            'label' => 'LLL:EXT:core/Resources/Private/Language/locallang_general.xlf:LGL.l18n_parent',
-            'config' => [
-                'default' => 0,
-                'items' => [
-                    [
-                        '',
-                        0
-                    ]
-                ],
-                'foreign_table' => 'tx_vdclimatepolicy_domain_model_link',
-                'foreign_table_where' => 'AND {#tx_vdclimatepolicy_domain_model_link}.{#pid}=###CURRENT_PID### AND {#tx_vdclimatepolicy_domain_model_link}.{#sys_language_uid} IN (-1,0)',
-                'renderType' => 'selectSingle',
-                'type' => 'select'
-            ]
-        ],
         'link' => [
             'config' => [
                 'default' => '',
@@ -51,13 +29,6 @@ return [
             ],
             'exclude' => true,
             'label' => 'LLL:EXT:core/Resources/Private/Language/locallang_general.xlf:LGL.www'
-        ],
-        'sys_language_uid' => [
-            'config' => [
-                'default' => 0,
-                'type' => 'language'
-            ],
-            'label' => 'LLL:EXT:core/Resources/Private/Language/locallang_general.xlf:LGL.language'
         ],
         'text' => [
             'config' => [
@@ -81,11 +52,8 @@ return [
         'groupName' => 'vd_climate_policy',
         'hideTable' => true,
         'label' => 'text',
-        'languageField' => 'sys_language_uid',
         'searchFields' => 'description,link,text',
         'sortby' => 'sorting',
-        'transOrigDiffSourceField' => 'l10n_diffsource',
-        'transOrigPointerField' => 'l10n_parent',
         'title' => 'LLL:EXT:vd_climate_policy/Resources/Private/Language/locallang_tca.xlf:links',
         'tstamp' => 'tstamp',
         'typeicon_classes' => [
@@ -99,16 +67,10 @@ return [
                     text,
                     link,
                 --div--;LLL:EXT:core/Resources/Private/Language/Form/locallang_tabs.xlf:access,
-                    --palette--;;language,
                     hidden,
                 --div--;LLL:EXT:core/Resources/Private/Language/Form/locallang_tabs.xlf:notes,
                     description
             '
-        ]
-    ],
-    'palettes' => [
-        'language' => [
-            'showitem' => 'sys_language_uid,l10n_parent'
         ]
     ]
 ];
