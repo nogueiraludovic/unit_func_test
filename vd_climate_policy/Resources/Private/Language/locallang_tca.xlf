@@ -27,6 +27,12 @@
 			<trans-unit id="logo" resname="logo">
 				<source>Logo</source>
 			</trans-unit>
+			<trans-unit id="link_text" resname="link_text">
+				<source>Link text</source>
+			</trans-unit>
+			<trans-unit id="links" resname="links">
+				<source>Links</source>
+			</trans-unit>
 			<trans-unit id="number" resname="number">
 				<source>Number</source>
 			</trans-unit>

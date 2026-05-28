@@ -173,25 +173,20 @@ return [
             ],
             'label' => 'LLL:EXT:vd_climate_policy/Resources/Private/Language/locallang_tca.xlf:theme'
         ],
-        'www' => [
+        'links' => [
             'config' => [
-                'default' => '',
-                'eval' => 'trim',
-                'fieldControl' => [
-                    'linkPopup' => [
-                        'options' => [
-                            'blindLinkFields' => 'class,params,target',
-                            'blindLinkOptions' => 'folder,mail'
-                        ]
-                    ]
+                'appearance' => [
+                    'collapseAll' => true,
+                    'expandSingle' => true,
+                    'newRecordLinkPosition' => 'bottom',
                 ],
-                'max' => 1024,
-                'renderType' => 'inputLink',
-                'size' => 50,
-                'type' => 'input'
+                'foreign_field' => 'address',
+                'foreign_sortby' => 'sorting',
+                'foreign_table' => 'tx_vdclimatepolicy_domain_model_link',
+                'type' => 'inline'
             ],
             'exclude' => true,
-            'label' => 'LLL:EXT:core/Resources/Private/Language/locallang_general.xlf:LGL.www'
+            'label' => 'LLL:EXT:vd_climate_policy/Resources/Private/Language/locallang_tca.xlf:links'
         ]
     ],
     'ctrl' => [
@@ -205,17 +200,12 @@ return [
         ],
         'groupName' => 'vd_climate_policy',
         'label' => 'name',
-        'searchFields' => 'bodytext,cities,description,email,name,www',
+        'searchFields' => 'bodytext,cities,description,email,name',
         'thumbnail' => 'logo',
         'title' => 'LLL:EXT:vd_climate_policy/Resources/Private/Language/locallang_tca.xlf:addresses',
         'tstamp' => 'tstamp',
         'typeicon_classes' => [
             'default' => 'mimetypes-other-other'
-        ]
-    ],
-    'palettes' => [
-        'contact' => [
-            'showitem' => 'email,--linebreak--,www'
         ]
     ],
     'types' => [
@@ -231,11 +221,17 @@ return [
                     towns,
                     bodytext,
                     logo,
+                    --palette--;;contact,
                 --div--;LLL:EXT:core/Resources/Private/Language/Form/locallang_tabs.xlf:access,
                     hidden,
                 --div--;LLL:EXT:core/Resources/Private/Language/Form/locallang_tabs.xlf:notes,
                     description
             '
+        ]
+    ],
+    'palettes' => [
+        'contact' => [
+            'showitem' => 'email,--linebreak--,links'
         ]
     ]
 ];

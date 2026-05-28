@@ -7,8 +7,13 @@ CREATE TABLE `tx_vdclimatepolicy_domain_model_address` (
 	`logo` int(10) UNSIGNED NOT NULL DEFAULT 0,
 	`name` varchar(255) COLLATE utf8mb4_unicode_ci NOT NULL DEFAULT '',
 	`pecc` int(10) UNSIGNED NOT NULL DEFAULT 0,
-	`theme` int(10) UNSIGNED NOT NULL DEFAULT 0,
-	`www` varchar(1024) COLLATE utf8mb4_unicode_ci NOT NULL DEFAULT ''
+	`theme` int(10) UNSIGNED NOT NULL DEFAULT 0
+);
+
+CREATE TABLE `tx_vdclimatepolicy_domain_model_link` (
+	`address` int(10) UNSIGNED NOT NULL DEFAULT 0,
+	`link` varchar(1024) COLLATE utf8mb4_unicode_ci NOT NULL DEFAULT '',
+	`text` varchar(255) COLLATE utf8mb4_unicode_ci NOT NULL DEFAULT ''
 );
 
 CREATE TABLE `tx_vdclimatepolicy_domain_model_axis` (
