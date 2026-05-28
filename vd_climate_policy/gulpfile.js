@@ -47,7 +47,7 @@ const scripts = () => {
     }))
     .pipe(condition(PROD === false, sourcemaps.init({})))
     .pipe(terser())
-    .pipe(concat('vd-directory.min.js'))
+    .pipe(concat('vd-climate-policy.min.js'))
     .pipe(condition(PROD === false, sourcemaps.write('', {})))
     .pipe(dest(PATHS.scripts.destination))
 }

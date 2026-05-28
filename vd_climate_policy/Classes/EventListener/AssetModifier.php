@@ -19,7 +19,7 @@ final class AssetModifier
 {
     public function __invoke(AfterInitializeActionEvent $event): void
     {
-        if ($event->getPage()['uid'] !== 1016212) {
+        if ($event->getPage()['uid'] !== 2025500) {
             return;
         }
 
@@ -31,10 +31,10 @@ final class AssetModifier
             $assetCollector->addStyleSheet('vd-climate-policy', $this->writeStyleSheetContentToTemporaryFile($cssForColor));
         }
 
-//        $assetCollector->addJavaScript(
-//            'vd-climate-policy',
-//            'EXT:vd_climate_policy/Resources/Public/JavaScript/vd-directory.min.js'
-//        );
+        $assetCollector->addJavaScript(
+            'vd-climate-policy',
+            'EXT:vd_climate_policy/Resources/Public/JavaScript/vd-climate-policy.min.js'
+        );
     }
 
     protected function getCssForColor(): string

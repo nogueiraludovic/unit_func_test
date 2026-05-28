@@ -37,16 +37,17 @@ return [
     'ctrl' => [
         'crdate' => 'crdate',
         'cruser_id' => 'cruser_id',
-        'default_sortby' => 'name',
+        'default_sortby' => 'number',
         'delete' => 'deleted',
         'descriptionColumn' => 'description',
         'enablecolumns' => [
             'disabled' => 'hidden'
         ],
         'groupName' => 'vd_climate_policy',
-        'hideTable' => true,
         'label' => 'name',
+        'label_userFunc' => \Vd\VdClimatePolicy\TCA\Form\LabelRenderer::class . '->forPecc',
         'searchFields' => 'description,name,number',
+        'sortby' => 'number',
         'title' => 'LLL:EXT:vd_climate_policy/Resources/Private/Language/locallang_tca.xlf:peccs',
         'tstamp' => 'tstamp',
         'typeicon_classes' => [

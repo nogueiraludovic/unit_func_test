@@ -24,11 +24,11 @@ class RecordRepository
 
     public function fetchSectorColors(): array
     {
-        $queryBuilder = $this->connection->getQueryBuilderForTable('tx_vddirectory_domain_model_sector');
+        $queryBuilder = $this->connection->getQueryBuilderForTable('tx_vdclimatepolicy_domain_model_pecc');
 
         $statement = $queryBuilder
             ->select('color', 'uid')
-            ->from('tx_vddirectory_domain_model_sector')
+            ->from('tx_vdclimatepolicy_domain_model_pecc')
             ->execute();
 
         while ($rows = $statement->fetchAssociative()) {
@@ -45,13 +45,16 @@ class RecordRepository
         }
 
         switch ($arguments['table']) {
-            case 'tx_vddirectory_domain_model_sector':
-                $field = 'sector';
+            case 'tx_vdclimatepolicy_domain_model_axis':
+                $field = 'axis';
                 break;
-            case 'tx_vddirectory_domain_model_service':
-                $field = 'service';
+            case 'tx_vdclimatepolicy_domain_model_dicastery':
+                $field = 'dicastery';
                 break;
-            case 'tx_vddirectory_domain_model_theme':
+            case 'tx_vdclimatepolicy_domain_model_pecc':
+                $field = 'pecc';
+                break;
+            case 'tx_vdclimatepolicy_domain_model_theme':
                 $field = 'theme';
                 break;
             default:
@@ -62,7 +65,7 @@ class RecordRepository
             return [];
         }
 
-        $queryBuilder = $this->connection->getQueryBuilderForTable('tx_vddirectory_domain_model_address');
+        $queryBuilder = $this->connection->getQueryBuilderForTable('tx_vdclimatepolicy_domain_model_address');
         $queryBuilder->setRestrictions(GeneralUtility::makeInstance(FrontendRestrictionContainer::class));
 
         $contentUid = (int)($arguments['contentUid'] ?? 0);
@@ -88,35 +91,44 @@ class RecordRepository
 
         $statement = $queryBuilder
             ->selectLiteral(
-                'DISTINCT `tx_vddirectory_domain_model_address`.`' . $field . '`',
+                'DISTINCT `tx_vdclimatepolicy_domain_model_address`.`' . $field . '`',
                 '`' . $arguments['table'] . '`.`name`',
                 '`' . $arguments['table'] . '`.`uid`'
             )
-            ->from('tx_vddirectory_domain_model_address')
+            ->from('tx_vdclimatepolicy_domain_model_address')
             ->join(
-                'tx_vddirectory_domain_model_address',
+                'tx_vdclimatepolicy_domain_model_address',
                 $arguments['table'],
                 $arguments['table'],
                 $queryBuilder->expr()->eq(
-                    'tx_vddirectory_domain_model_address.' . $field,
+                    'tx_vdclimatepolicy_domain_model_address.' . $field,
                     $queryBuilder->quoteIdentifier($arguments['table'] . '.uid')
                 )
             );
 
-        if (isset($arguments['sector']) === true) {
+        if (isset($arguments['axis']) === true) {
             $statement = $statement->andWhere(
                 $queryBuilder->expr()->eq(
-                    'tx_vddirectory_domain_model_address.sector',
-                    $queryBuilder->createNamedParameter($arguments['sector'], Connection::PARAM_INT)
+                    'tx_vdclimatepolicy_domain_model_address.axis',
+                    $queryBuilder->createNamedParameter($arguments['axis'], Connection::PARAM_INT)
                 )
             );
         }
 
-        if (isset($arguments['service']) === true) {
+        if (isset($arguments['dicastery']) === true) {
             $statement = $statement->andWhere(
                 $queryBuilder->expr()->eq(
-                    'tx_vddirectory_domain_model_address.service',
-                    $queryBuilder->createNamedParameter($arguments['service'], Connection::PARAM_INT)
+                    'tx_vdclimatepolicy_domain_model_address.dicastery',
+                    $queryBuilder->createNamedParameter($arguments['dicastery'], Connection::PARAM_INT)
+                )
+            );
+        }
+
+        if (isset($arguments['pecc']) === true) {
+            $statement = $statement->andWhere(
+                $queryBuilder->expr()->eq(
+                    'tx_vdclimatepolicy_domain_model_address.pecc',
+                    $queryBuilder->createNamedParameter($arguments['pecc'], Connection::PARAM_INT)
                 )
             );
         }
@@ -124,7 +136,7 @@ class RecordRepository
         if (isset($arguments['theme']) === true) {
             $statement = $statement->andWhere(
                 $queryBuilder->expr()->eq(
-                    'tx_vddirectory_domain_model_address.theme',
+                    'tx_vdclimatepolicy_domain_model_address.theme',
                     $queryBuilder->createNamedParameter($arguments['theme'], Connection::PARAM_INT)
                 )
             );

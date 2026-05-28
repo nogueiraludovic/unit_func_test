@@ -18,12 +18,12 @@ class AjaxMiddleware implements MiddlewareInterface
 {
     public function process(ServerRequestInterface $request, RequestHandlerInterface $handler): ResponseInterface
     {
-        if ($request->getUri()->getPath() !== '/directory/ajax') {
+        if ($request->getUri()->getPath() !== '/climate-policy/ajax') {
             return $handler->handle($request);
         }
 
         $queryParams = $request->getQueryParams();
-        $queryParams = $queryParams['tx_directory'] ?? [];
+        $queryParams = $queryParams['tx_climatepolicy'] ?? [];
 
         $records = GeneralUtility::makeInstance(RecordRepository::class)
             ->fetchSelectItemsByParentUids($queryParams);

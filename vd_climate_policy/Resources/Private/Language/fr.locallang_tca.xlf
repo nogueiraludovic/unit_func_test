@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <xliff version="1.2" xmlns="urn:oasis:names:tc:xliff:document:1.2">
-	<file datatype="plaintext" original="EXT:vd_directory/Resources/Private/Language/locallang_tca.xlf" source-language="en" target-language="fr">
+	<file datatype="plaintext" original="EXT:vd_climate_policy/Resources/Private/Language/locallang_tca.xlf" source-language="en" target-language="fr">
 		<header/>
 		<body>
-			<trans-unit id="addresses" resname="addresses">
+			<trans-unit id="addresses" resname="address">
 				<source>Addresses</source>
 				<target state="translated">Adresses</target>
 			</trans-unit>
@@ -14,6 +14,10 @@
 			<trans-unit id="axis" resname="axis">
 				<source>Axis</source>
 				<target state="translated">Axe</target>
+			</trans-unit>
+			<trans-unit id="cities" resname="cities">
+				<source>Cities</source>
+				<target state="translated">Communes</target>
 			</trans-unit>
 			<trans-unit id="color" resname="color">
 				<source>Color</source>

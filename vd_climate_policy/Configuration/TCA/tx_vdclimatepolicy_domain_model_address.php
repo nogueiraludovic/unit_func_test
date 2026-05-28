@@ -42,7 +42,7 @@ return [
             'label' => 'LLL:EXT:vd_climate_policy/Resources/Private/Language/locallang_tca.xlf:cities'
         ],
         'description' => \Vd\VdCore\Utility\TcaUtility::getFieldConfiguration('description'),
-        'dicatery' => [
+        'dicastery' => [
             'config' => [
                 'default' => 0,
                 'disableNoMatchingValueElement' => true,
@@ -205,7 +205,7 @@ return [
         ],
         'groupName' => 'vd_climate_policy',
         'label' => 'name',
-        'searchFields' => 'address,bodytext,description,email,name,www',
+        'searchFields' => 'bodytext,cities,description,email,name,www',
         'thumbnail' => 'logo',
         'title' => 'LLL:EXT:vd_climate_policy/Resources/Private/Language/locallang_tca.xlf:addresses',
         'tstamp' => 'tstamp',
@@ -224,6 +224,7 @@ return [
                 --div--;LLL:EXT:core/Resources/Private/Language/Form/locallang_tabs.xlf:general,
                     name,
                     axis,
+                    cities,
                     theme,
                     dicastery,
                     pecc,

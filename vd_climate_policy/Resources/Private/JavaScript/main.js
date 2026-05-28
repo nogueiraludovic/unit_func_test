@@ -11,33 +11,47 @@ document.addEventListener('VdFrontendContentLoaded', () => {
 
   for (const container of containers) {
     const contentUid = container.querySelector('input[name="tx_vdfrontend_recordlist[demand][contentUid]"]').value
-    const sectors = container.querySelector('select[data-field="sector"]')
-    const services = container.querySelector('select[data-field="service"]')
+    const axis = container.querySelector('select[data-field="axis"]')
+    const dicastery = container.querySelector('select[data-field="dicastery"]')
+    const pecc = container.querySelector('select[data-field="pecc"]')
     const themes = container.querySelector('select[data-field="theme"]')
+    const values = {
+      'axis': axis === null ? '' : axis.value,
+      'dicastery': dicastery === null ? '' : dicastery.value,
+      'pecc': pecc === null ? '' : pecc.value,
+      'theme': themes === null ? '' : themes.value
+    }
 
-    if (sectors !== null) {
-      sectors.addEventListener('change', (event) => {
-        updateOptions(contentUid, sectors, { 'sector': sectors.value, 'service': services.value, 'theme': themes.value })
-        updateOptions(contentUid, services, { 'sector': sectors.value, 'service': services.value, 'theme': themes.value })
-        updateOptions(contentUid, themes, { 'sector': sectors.value, 'service': services.value, 'theme': themes.value })
+    if (axis !== null) {
+      axis.addEventListener('change', (event) => {
+        updateAll(contentUid, axis, dicastery, pecc, themes, values)
       })
     }
 
-    if (services !== null) {
-      services.addEventListener('change', (event) => {
-        updateOptions(contentUid, sectors, { 'sector': sectors.value, 'service': services.value, 'theme': themes.value })
-        updateOptions(contentUid, services, { 'sector': sectors.value, 'service': services.value, 'theme': themes.value })
-        updateOptions(contentUid, themes, { 'sector': sectors.value, 'service': services.value, 'theme': themes.value })
+    if (dicastery !== null) {
+      dicastery.addEventListener('change', (event) => {
+        updateAll(contentUid, axis, dicastery, pecc, themes, values)
+      })
+    }
+
+    if (pecc !== null) {
+      pecc.addEventListener('change', (event) => {
+        updateAll(contentUid, axis, dicastery, pecc, themes, values)
       })
     }
 
     if (themes !== null) {
       themes.addEventListener('change', (event) => {
-        updateOptions(contentUid, sectors, { 'sector': sectors.value, 'service': services.value, 'theme': themes.value })
-        updateOptions(contentUid, services, { 'sector': sectors.value, 'service': services.value, 'theme': themes.value })
-        updateOptions(contentUid, themes, { 'sector': sectors.value, 'service': services.value, 'theme': themes.value })
+        updateAll(contentUid, axis, dicastery, pecc, themes, values)
       })
     }
+  }
+
+  function updateAll (contentUid, axis, dicastery, pecc, themes, values) {
+    updateOptions(contentUid, axis, values)
+    updateOptions(contentUid, dicastery, values)
+    updateOptions(contentUid, pecc, values)
+    updateOptions(contentUid, themes, values)
   }
 
   function updateOptions (contentUid, target, values = {}) {
@@ -58,37 +72,45 @@ document.addEventListener('VdFrontendContentLoaded', () => {
   function _buildUrl (contentUid, target, values = {}) {
     const params = new URLSearchParams()
 
-    const sector = String(values.sector || '')
-    const service = String(values.service || '')
+    const axis = String(values.axis || '')
+    const dicastery = String(values.dicastery || '')
+    const pecc = String(values.pecc || '')
     const theme = String(values.theme || '')
 
-    params.set('tx_directory[contentUid]', contentUid)
+    params.set('tx_climatepolicy[contentUid]', contentUid)
 
-    if (sector !== '') {
-      params.set('tx_directory[sector]', sector)
+    if (axis !== '') {
+      params.set('tx_climatepolicy[axis]', axis)
     }
 
-    if (service !== '') {
-      params.set('tx_directory[service]', service)
+    if (dicastery !== '') {
+      params.set('tx_climatepolicy[dicastery]', dicastery)
+    }
+
+    if (pecc !== '') {
+      params.set('tx_climatepolicy[pecc]', pecc)
     }
 
     switch (String(target.dataset.field || '')) {
-      case 'sector':
-        params.set('tx_directory[table]', 'tx_vddirectory_domain_model_sector')
+      case 'axis':
+        params.set('tx_climatepolicy[table]', 'tx_vdclimatepolicy_domain_model_axis')
         break
-      case 'service':
-        params.set('tx_directory[table]', 'tx_vddirectory_domain_model_service')
+      case 'dicastery':
+        params.set('tx_climatepolicy[table]', 'tx_vdclimatepolicy_domain_model_dicastery')
+        break
+      case 'pecc':
+        params.set('tx_climatepolicy[table]', 'tx_vdclimatepolicy_domain_model_pecc')
         break
       case 'theme':
-        params.set('tx_directory[table]', 'tx_vddirectory_domain_model_theme')
+        params.set('tx_climatepolicy[table]', 'tx_vdclimatepolicy_domain_model_theme')
         break
     }
 
     if (theme !== '') {
-      params.set('tx_directory[theme]', theme)
+      params.set('tx_climatepolicy[theme]', theme)
     }
 
-    return '/directory/ajax?' + params.toString()
+    return '/climate-policy/ajax?' + params.toString()
   }
 
   function _disableField (field) {

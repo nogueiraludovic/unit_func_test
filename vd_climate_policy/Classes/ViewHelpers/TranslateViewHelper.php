@@ -12,6 +12,6 @@ class TranslateViewHelper extends FluidTranslateViewHelper
     {
         parent::initializeArguments();
 
-        $this->overrideArgument('extensionName', 'string', '', false, 'VdDirectory');
+        $this->overrideArgument('extensionName', 'string', '', false, 'VdClimatePolicy');
     }
 }

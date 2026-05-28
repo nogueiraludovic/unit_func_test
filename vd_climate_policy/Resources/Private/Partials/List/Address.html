@@ -1,6 +1,6 @@
-<html data-namespace-typo3-fluid="true" xmlns:f="http://typo3.org/ns/TYPO3/CMS/Fluid/ViewHelpers" xmlns:vdd="http://typo3.org/ns/Vd/VdDirectory/ViewHelpers">
+<html data-namespace-typo3-fluid="true" xmlns:f="http://typo3.org/ns/TYPO3/CMS/Fluid/ViewHelpers" xmlns:vdcp="http://typo3.org/ns/Vd/VdClimatePolicy/ViewHelpers">
     <f:section name="Default">
-        <div class="vd-directory">
+        <div class="vd-climate-policy">
             <f:for as="record" each="{records}">
                 <div class="card card-{record.sector.0.uid} mb-3">
                     <div class="card-body pb-1">
@@ -13,26 +13,26 @@
                                 <f:if condition="{record.address} || {record.city} || {record.email} || {record.phones} || {record.www} || {record.zip}">
                                     <f:if condition="{record.phones}">
                                         <div class="row">
-                                            <div class="col-md-4"><i aria-hidden="true" class="fa-phone fa-solid"></i> <vdd:translate id="phones"/></div>
-                                            <div class="col-md-8">{record.phones -> vdd:format.phones()}</div>
+                                            <div class="col-md-4"><i aria-hidden="true" class="fa-phone fa-solid"></i> <vdcp:translate id="phones"/></div>
+                                            <div class="col-md-8">{record.phones -> vdcp:format.phones()}</div>
                                         </div>
                                     </f:if>
                                     <f:if condition="{record.email}">
                                         <div class="row">
-                                            <div class="col-md-4"><i aria-hidden="true" class="fa-envelope fa-solid"></i> <vdd:translate id="email"/></div>
+                                            <div class="col-md-4"><i aria-hidden="true" class="fa-envelope fa-solid"></i> <vdcp:translate id="email"/></div>
                                             <div class="col-md-8"><p><f:link.email email="{record.email}" id="address-email-link"/></p></div>
                                         </div>
                                     </f:if>
                                     <f:if condition="{record.www}">
                                         <div class="row">
-                                            <div class="col-md-4"><i aria-hidden="true" class="fa-globe fa-solid"></i> <vdd:translate id="www"/></div>
+                                            <div class="col-md-4"><i aria-hidden="true" class="fa-globe fa-solid"></i> <vdcp:translate id="www"/></div>
                                             <div class="col-md-8"><p><f:link.typolink additionalAttributes="{id: 'address-website-link'}" parameter="{record.www}"/></p></div>
                                         </div>
                                     </f:if>
                                     <f:if condition="{record.address} || {record.city} || {record.zip}">
                                         <div class="row">
-                                            <div class="col-md-4"><i aria-hidden="true" class="fa-map-location fa-solid"></i> <vdd:translate id="address"/></div>
-                                            <div class="col-md-8">{record -> vdd:format.address()}</div>
+                                            <div class="col-md-4"><i aria-hidden="true" class="fa-map-location fa-solid"></i> <vdcp:translate id="address"/></div>
+                                            <div class="col-md-8">{record -> vdcp:format.address()}</div>
                                         </div>
                                     </f:if>
                                 </f:if>

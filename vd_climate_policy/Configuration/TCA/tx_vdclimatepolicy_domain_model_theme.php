@@ -25,7 +25,6 @@ return [
             'disabled' => 'hidden'
         ],
         'groupName' => 'vd_climate_policy',
-        'hideTable' => true,
         'label' => 'name',
         'searchFields' => 'description,name',
         'title' => 'LLL:EXT:vd_climate_policy/Resources/Private/Language/locallang_tca.xlf:themes',

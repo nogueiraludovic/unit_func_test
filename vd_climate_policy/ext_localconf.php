@@ -11,16 +11,14 @@ defined('TYPO3') === true || die;
     \Vd\VdFrontend\Utility\FlexFormUtility::registerTable(
         'tx_vdclimatepolicy_domain_model_address',
         [
-            'address',
+            'axis',
             'bodytext',
-            'city',
+            'cities',
+            'dicastery',
             'email',
             'name',
-            'sector',
-            'service',
-            'theme',
-            'www',
-            'zip'
+            'pecc',
+            'theme'
         ],
         [
             'name'

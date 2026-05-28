@@ -1,4 +1,5 @@
 mod.web_list.tableDisplayOrder {
-  tx_vdclimatepolicy_domain_model_address.before = tx_vdclimatepolicy_domain_model_sector
-  tx_vdclimatepolicy_domain_model_theme.before = tx_vdclimatepolicy_domain_model_service
+  tx_vdclimatepolicy_domain_model_address.before = tx_vdclimatepolicy_domain_model_axis
+  tx_vdclimatepolicy_domain_model_dicastery.before = tx_vdclimatepolicy_domain_model_pecc
+  tx_vdclimatepolicy_domain_model_pecc.before = tx_vdclimatepolicy_domain_model_theme
 }
