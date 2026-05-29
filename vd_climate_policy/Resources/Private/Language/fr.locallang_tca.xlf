@@ -51,26 +51,6 @@
 				<source>Peccs</source>
 				<target state="translated">Peccs</target>
 			</trans-unit>
-			<trans-unit id="phones" resname="phones">
-				<source>Phones</source>
-				<target state="translated">Téléphones</target>
-			</trans-unit>
-			<trans-unit id="sector" resname="sector">
-				<source>Sector</source>
-				<target state="translated">Chapitre</target>
-			</trans-unit>
-			<trans-unit id="sectors" resname="sectors">
-				<source>Sectors</source>
-				<target state="translated">Chapitres</target>
-			</trans-unit>
-			<trans-unit id="service" resname="service">
-				<source>Service</source>
-				<target state="translated">Type de prestations</target>
-			</trans-unit>
-			<trans-unit id="services" resname="services">
-				<source>Services</source>
-				<target state="translated">Types de prestations</target>
-			</trans-unit>
 			<trans-unit id="theme" resname="theme">
 				<source>Theme</source>
 				<target state="translated">Thème</target>

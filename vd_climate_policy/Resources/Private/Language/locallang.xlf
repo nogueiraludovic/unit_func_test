@@ -3,9 +3,6 @@
 	<file datatype="plaintext" original="EXT:vd_climate_policy/Resources/Private/Language/locallang.xlf" source-language="en">
 		<header/>
 		<body>
-			<trans-unit id="address" resname="address">
-				<source>Address</source>
-			</trans-unit>
 			<trans-unit id="cities" resname="cities">
 				<source>Communes</source>
 			</trans-unit>
@@ -14,15 +11,6 @@
 			</trans-unit>
 			<trans-unit id="peccFile" resname="peccFile">
 				<source>PECC file</source>
-			</trans-unit>
-			<trans-unit id="email" resname="email">
-				<source>Mail</source>
-			</trans-unit>
-			<trans-unit id="phones" resname="phones">
-				<source>Phone(s)</source>
-			</trans-unit>
-			<trans-unit id="www" resname="www">
-				<source>Website</source>
 			</trans-unit>
 		</body>
 	</file>
