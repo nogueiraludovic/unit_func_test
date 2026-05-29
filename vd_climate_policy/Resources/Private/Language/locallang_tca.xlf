@@ -39,21 +39,6 @@
 			<trans-unit id="peccs" resname="peccs">
 				<source>Peccs</source>
 			</trans-unit>
-			<trans-unit id="phones" resname="phones">
-				<source>Phones</source>
-			</trans-unit>
-			<trans-unit id="sector" resname="sector">
-				<source>Sector</source>
-			</trans-unit>
-			<trans-unit id="sectors" resname="sectors">
-				<source>Sectors</source>
-			</trans-unit>
-			<trans-unit id="service" resname="service">
-				<source>Service</source>
-			</trans-unit>
-			<trans-unit id="services" resname="services">
-				<source>Services</source>
-			</trans-unit>
 			<trans-unit id="theme" resname="theme">
 				<source>Theme</source>
 			</trans-unit>
