@@ -14,9 +14,14 @@ final class AssetModifier
             return;
         }
 
-        $event->getAssetCollector()->addJavaScript(
-            'vd-climate-policy',
-            'EXT:vd_climate_policy/Resources/Public/JavaScript/vd-climate-policy.min.js'
-        );
+        $event->getAssetCollector()
+            ->addJavaScript(
+                'vd-climate-policy',
+                'EXT:vd_climate_policy/Resources/Public/JavaScript/vd-climate-policy.min.js'
+            )
+            ->addStyleSheet(
+                'vd-climate-policy',
+                'EXT:vd_climate_policy/Resources/Public/Css/bundle.min.css'
+            );
     }
 }

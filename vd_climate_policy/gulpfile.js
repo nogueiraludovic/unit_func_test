@@ -1,10 +1,15 @@
 'use strict'
 
+import autoprefixer from 'gulp-autoprefixer'
+import cleanCss from 'gulp-clean-css'
 import concat from 'gulp-concat'
 import condition from 'gulp-if'
+// noinspection JSUnresolvedReference
 import { deleteAsync } from 'del'
 import gulp from 'gulp'
 import plumber from 'gulp-plumber'
+import rename from 'gulp-rename'
+import scss from 'gulp-dart-scss'
 import sourcemaps from 'gulp-sourcemaps'
 import terser from 'gulp-terser'
 import webpack from 'webpack-stream'
@@ -14,6 +19,10 @@ const PATHS = {
   scripts: {
     destination: './Resources/Public/JavaScript',
     source: './Resources/Private/JavaScript/**/*.js'
+  },
+  styles: {
+    destination: './Resources/Public/Css',
+    source: './Resources/Private/Scss/main.scss'
   }
 }
 const PROD = process.env.NODE_ENV === 'production'
@@ -52,9 +61,28 @@ const scripts = () => {
     .pipe(dest(PATHS.scripts.destination))
 }
 
-const watcher = () => {
-  watch(PATHS.scripts.source, scripts)
+const styles = () => {
+  return src(PATHS.styles.source)
+    .pipe(plumber())
+    .pipe(condition(PROD === false, sourcemaps.init({})))
+    .pipe(scss({
+      quietDeps: true,
+      silenceDeprecations: ['import', 'legacy-js-api']
+    }))
+    .pipe(cleanCss())
+    .pipe(autoprefixer({cascade: false}))
+    .pipe(rename({
+      basename: 'bundle',
+      suffix: '.min'
+    }))
+    .pipe(condition(PROD === false, sourcemaps.write('', {})))
+    .pipe(dest(PATHS.styles.destination))
 }
 
-export const build = series(clean, scripts)
-export const development = series(scripts, watcher)
+const watcher = () => {
+  watch(PATHS.scripts.source, scripts)
+  watch(PATHS.styles.source, styles)
+}
+
+export const build = series(clean, parallel(scripts, styles))
+export const development = series(parallel(scripts, styles), watcher)

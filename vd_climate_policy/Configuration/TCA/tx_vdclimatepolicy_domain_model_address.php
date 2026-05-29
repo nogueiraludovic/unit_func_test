@@ -22,15 +22,6 @@ return [
             'exclude' => true,
             'label' => 'LLL:EXT:vd_climate_policy/Resources/Private/Language/locallang_tca.xlf:axis'
         ],
-        'bodytext' => [
-            'config' => [
-                'default' => '',
-                'enableRichtext' => true,
-                'type' => 'text'
-            ],
-            'exclude' => true,
-            'label' => 'LLL:EXT:core/Resources/Private/Language/locallang_general.xlf:LGL.text'
-        ],
         'cities' => [
             'config' => [
                 'default' => '',
@@ -59,16 +50,6 @@ return [
                 'type' => 'select'
             ],
             'label' => 'LLL:EXT:vd_climate_policy/Resources/Private/Language/locallang_tca.xlf:dicastery'
-        ],
-        'email' => [
-            'config' => [
-                'default' => '',
-                'eval' => 'trim,email',
-                'max' => 255,
-                'type' => 'input'
-            ],
-            'exclude' => true,
-            'label' => 'LLL:EXT:core/Resources/Private/Language/locallang_general.xlf:LGL.email'
         ],
         'hidden' => \Vd\VdCore\Utility\TcaUtility::getFieldConfiguration('hidden'),
         'name' => [
@@ -143,7 +124,7 @@ return [
         ],
         'groupName' => 'vd_climate_policy',
         'label' => 'name',
-        'searchFields' => 'bodytext,cities,description,name',
+        'searchFields' => 'cities,description,name',
         'title' => 'LLL:EXT:vd_climate_policy/Resources/Private/Language/locallang_tca.xlf:addresses',
         'tstamp' => 'tstamp',
         'typeicon_classes' => [
@@ -161,7 +142,6 @@ return [
                     dicastery,
                     pecc,
                     towns,
-                    bodytext,
                     links,
                 --div--;LLL:EXT:core/Resources/Private/Language/Form/locallang_tabs.xlf:access,
                     hidden,
