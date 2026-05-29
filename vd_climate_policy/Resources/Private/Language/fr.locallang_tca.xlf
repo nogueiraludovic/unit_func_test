@@ -31,10 +31,6 @@
 				<source>Dicastery</source>
 				<target state="translated">Dicastère</target>
 			</trans-unit>
-			<trans-unit id="logo" resname="logo">
-				<source>Logo</source>
-				<target state="translated">Logo</target>
-			</trans-unit>
 			<trans-unit id="link_text" resname="link_text">
 				<source>Link text</source>
 				<target state="translated">Texte du lien</target>

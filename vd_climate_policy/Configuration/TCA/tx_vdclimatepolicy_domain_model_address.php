@@ -71,63 +71,6 @@ return [
             'label' => 'LLL:EXT:core/Resources/Private/Language/locallang_general.xlf:LGL.email'
         ],
         'hidden' => \Vd\VdCore\Utility\TcaUtility::getFieldConfiguration('hidden'),
-        'logo' => [
-            'config' => \TYPO3\CMS\Core\Utility\ExtensionManagementUtility::getFileFieldTCAConfig(
-                'logo',
-                [
-                    'appearance' => [
-                        'collapseAll' => true,
-                        'createNewRelationLinkTitle' => 'LLL:EXT:frontend/Resources/Private/Language/locallang_ttc.xlf:images.addFileReference',
-                        'useSortable' => false
-                    ],
-                    'default' => 0,
-                    'maxitems' => 1,
-                    'overrideChildTca' => [
-                        'types' => [
-                            \TYPO3\CMS\Core\Resource\AbstractFile::FILETYPE_UNKNOWN => [
-                                'showitem' => '
-                                    --palette--;;imageoverlayPalette,
-                                    --palette--;;filePalette
-                                '
-                            ],
-                            \TYPO3\CMS\Core\Resource\AbstractFile::FILETYPE_TEXT => [
-                                'showitem' => '
-                                    --palette--;;imageoverlayPalette,
-                                    --palette--;;filePalette
-                                '
-                            ],
-                            \TYPO3\CMS\Core\Resource\AbstractFile::FILETYPE_IMAGE => [
-                                'showitem' => '
-                                    --palette--;;imageoverlayPalette,
-                                    --palette--;;filePalette
-                                '
-                            ],
-                            \TYPO3\CMS\Core\Resource\AbstractFile::FILETYPE_AUDIO => [
-                                'showitem' => '
-                                    --palette--;;audioOverlayPalette,
-                                    --palette--;;filePalette
-                                '
-                            ],
-                            \TYPO3\CMS\Core\Resource\AbstractFile::FILETYPE_VIDEO => [
-                                'showitem' => '
-                                    --palette--;;videoOverlayPalette,
-                                    --palette--;;filePalette
-                                '
-                            ],
-                            \TYPO3\CMS\Core\Resource\AbstractFile::FILETYPE_APPLICATION => [
-                                'showitem' => '
-                                    --palette--;;imageoverlayPalette,
-                                    --palette--;;filePalette
-                                '
-                            ]
-                        ]
-                    ]
-                ],
-                $GLOBALS['TYPO3_CONF_VARS']['GFX']['imagefile_ext']
-            ),
-            'exclude' => true,
-            'label' => 'LLL:EXT:vd_climate_policy/Resources/Private/Language/locallang_tca.xlf:logo'
-        ],
         'name' => [
             'config' => [
                 'default' => '',
@@ -178,7 +121,7 @@ return [
                 'appearance' => [
                     'collapseAll' => true,
                     'expandSingle' => true,
-                    'newRecordLinkPosition' => 'bottom',
+                    'newRecordLinkPosition' => 'bottom'
                 ],
                 'foreign_field' => 'address',
                 'foreign_sortby' => 'sorting',
@@ -200,8 +143,7 @@ return [
         ],
         'groupName' => 'vd_climate_policy',
         'label' => 'name',
-        'searchFields' => 'bodytext,cities,description,email,name',
-        'thumbnail' => 'logo',
+        'searchFields' => 'bodytext,cities,description,name',
         'title' => 'LLL:EXT:vd_climate_policy/Resources/Private/Language/locallang_tca.xlf:addresses',
         'tstamp' => 'tstamp',
         'typeicon_classes' => [
@@ -220,18 +162,12 @@ return [
                     pecc,
                     towns,
                     bodytext,
-                    logo,
-                    --palette--;;contact,
+                    links,
                 --div--;LLL:EXT:core/Resources/Private/Language/Form/locallang_tabs.xlf:access,
                     hidden,
                 --div--;LLL:EXT:core/Resources/Private/Language/Form/locallang_tabs.xlf:notes,
                     description
             '
-        ]
-    ],
-    'palettes' => [
-        'contact' => [
-            'showitem' => 'email,--linebreak--,links'
         ]
     ]
 ];

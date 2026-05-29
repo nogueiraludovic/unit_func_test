@@ -24,9 +24,6 @@
 			<trans-unit id="dicastery" resname="dicastery">
 				<source>Dicastery</source>
 			</trans-unit>
-			<trans-unit id="logo" resname="logo">
-				<source>Logo</source>
-			</trans-unit>
 			<trans-unit id="link_text" resname="link_text">
 				<source>Link text</source>
 			</trans-unit>

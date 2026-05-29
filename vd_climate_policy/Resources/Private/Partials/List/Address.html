@@ -4,44 +4,24 @@
             <f:for as="record" each="{records}">
                 <div class="card card-{record.sector.0.uid} mb-3">
                     <div class="card-body pb-1">
+                        <h3 class="card-title mt-0">{record.name}</h3>
                         <div class="row">
-                            <div class="col-md-10">
-                                <h3 class="card-title mt-0">{record.name}</h3>
-                                <f:if condition="{record.bodytext}">
-                                    <f:format.html>{record.bodytext}</f:format.html>
-                                </f:if>
-                                <f:if condition="{record.address} || {record.city} || {record.email} || {record.phones} || {record.www} || {record.zip}">
-                                    <f:if condition="{record.phones}">
-                                        <div class="row">
-                                            <div class="col-md-4"><i aria-hidden="true" class="fa-phone fa-solid"></i> <vdcp:translate id="phones"/></div>
-                                            <div class="col-md-8">{record.phones -> vdcp:format.phones()}</div>
-                                        </div>
-                                    </f:if>
-                                    <f:if condition="{record.email}">
-                                        <div class="row">
-                                            <div class="col-md-4"><i aria-hidden="true" class="fa-envelope fa-solid"></i> <vdcp:translate id="email"/></div>
-                                            <div class="col-md-8"><p><f:link.email email="{record.email}" id="address-email-link"/></p></div>
-                                        </div>
-                                    </f:if>
-                                    <f:if condition="{record.www}">
-                                        <div class="row">
-                                            <div class="col-md-4"><i aria-hidden="true" class="fa-globe fa-solid"></i> <vdcp:translate id="www"/></div>
-                                            <div class="col-md-8"><p><f:link.typolink additionalAttributes="{id: 'address-website-link'}" parameter="{record.www}"/></p></div>
-                                        </div>
-                                    </f:if>
-                                    <f:if condition="{record.address} || {record.city} || {record.zip}">
-                                        <div class="row">
-                                            <div class="col-md-4"><i aria-hidden="true" class="fa-map-location fa-solid"></i> <vdcp:translate id="address"/></div>
-                                            <div class="col-md-8">{record -> vdcp:format.address()}</div>
-                                        </div>
-                                    </f:if>
-                                </f:if>
+                            <div class="col-md-3"><vdcp:translate id="cities"/></div>
+                            <div class="col-md-9">{record.cities}</div>
+                        </div>
+                        <div class="row">
+                            <div class="col-md-3"><vdcp:translate id="links"/></div>
+                            <div class="col-md-9">
+                                <f:for as="link" each="{record.links}">
+                                    <f:link.typolink parameter="{link.link}">{link.text}</f:link.typolink>
+                                </f:for>
                             </div>
-                            <f:if condition="{record.logo.0}">
-                                <div class="col-md-2">
-                                    <f:image class="float-md-end float-md-right" image="{record.logo.0}" loading="lazy" maxHeight="100" maxWidth="100"/>
-                                </div>
-                            </f:if>
+                        </div>
+                        <div class="row">
+                            <div class="col-md-3"><vdcp:translate id="peccFile"/></div>
+                            <div class="col-md-9">
+                                <span class="square-pecc">{record.pecc.0.number}</span>&nbsp;{record.pecc.0.name}
+                            </div>
                         </div>
                     </div>
                 </div>
