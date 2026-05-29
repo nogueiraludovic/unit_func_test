@@ -2,15 +2,15 @@
     <f:section name="Default">
         <div class="vd-climate-policy">
             <f:for as="record" each="{records}">
-                <div class="card card-{record.sector.0.uid} mb-3">
+                <div class="card card-{record.sector.0.uid} mb-3" style="background-color: {record.pecc.0.color}">
                     <div class="card-body pb-1">
                         <h3 class="card-title mt-0">{record.name}</h3>
                         <div class="row">
-                            <div class="col-md-3"><vdcp:translate id="cities"/></div>
+                            <div class="col-md-3"><strong><vdcp:translate id="cities"/></strong></div>
                             <div class="col-md-9">{record.cities}</div>
                         </div>
                         <div class="row">
-                            <div class="col-md-3"><vdcp:translate id="links"/></div>
+                            <div class="col-md-3"><strong><vdcp:translate id="links"/></strong></div>
                             <div class="col-md-9">
                                 <f:for as="link" each="{record.links}">
                                     <f:link.typolink parameter="{link.link}">{link.text}</f:link.typolink>
@@ -18,7 +18,7 @@
                             </div>
                         </div>
                         <div class="row">
-                            <div class="col-md-3"><vdcp:translate id="peccFile"/></div>
+                            <div class="col-md-3"><strong><vdcp:translate id="peccFile"/></strong></div>
                             <div class="col-md-9">
                                 <span class="square-pecc">{record.pecc.0.number}</span>&nbsp;{record.pecc.0.name}
                             </div>
