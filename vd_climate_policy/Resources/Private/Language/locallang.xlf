@@ -6,6 +6,15 @@
 			<trans-unit id="address" resname="address">
 				<source>Address</source>
 			</trans-unit>
+			<trans-unit id="cities" resname="cities">
+				<source>Communes</source>
+			</trans-unit>
+			<trans-unit id="links" resname="links">
+				<source>Links</source>
+			</trans-unit>
+			<trans-unit id="peccFile" resname="peccFile">
+				<source>PECC file</source>
+			</trans-unit>
 			<trans-unit id="email" resname="email">
 				<source>Mail</source>
 			</trans-unit>

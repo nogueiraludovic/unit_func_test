@@ -7,6 +7,18 @@
 				<source>Address</source>
 				<target state="translated">Adresse</target>
 			</trans-unit>
+			<trans-unit id="cities" resname="cities">
+				<source>Communes</source>
+				<target state="translated">Communes</target>
+			</trans-unit>
+			<trans-unit id="links" resname="links">
+				<source>Links</source>
+				<target state="translated">Liens</target>
+			</trans-unit>
+			<trans-unit id="peccFile" resname="peccFile">
+				<source>PECC file</source>
+				<target state="translated">Fiche PECC</target>
+			</trans-unit>
 			<trans-unit id="email" resname="email">
 				<source>Mail</source>
 				<target state="translated">Courriel</target>
