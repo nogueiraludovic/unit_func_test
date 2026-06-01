@@ -1,5 +1,5 @@
 <html data-namespace-typo3-fluid="true" xmlns:f="http://typo3.org/ns/TYPO3/CMS/Fluid/ViewHelpers">
-    <h2 id="in-this-theme-title">Dans ce thème</h2>
+    <h2 id="in-this-theme-title"><f:translate id="in_this_theme"/></h2>
     <div class="vd-bg-pattern-green p-3 mb-1">
         <f:if condition="{prestations}">
             <f:then>
@@ -14,12 +14,12 @@
                 </ul>
             </f:then>
             <f:else>
-                <p>Pas de prestations à afficher. Veuillez vérifier la configuration de cet élément de contenu.</p>
+                <p><f:translate id="no_prestations_message"/></p>
             </f:else>
         </f:if>
         <p class="mb-0">
             <f:link.page class="btn btn-dark btn-sm" id="all-prestations-link" pageUid="{settings.shortListPageId}" title="Afficher toutes les prestations">
-                Voir moins<span class='visually-hidden'> de prestations</span>
+                <f:translate id="see_fewer"/><span class='visually-hidden'> de prestations</span>
             </f:link.page>
         </p>
     </div>

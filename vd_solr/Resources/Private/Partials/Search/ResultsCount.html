@@ -1,10 +1,16 @@
 <html data-namespace-typo3-fluid="true" xmlns:f="http://typo3.org/ns/TYPO3/Fluid/ViewHelpers">
     <f:if condition="{resultSet.allResultCount} > 1">
         <f:then>
-            <p>{resultSet.allResultCount} résultats trouvés{f:if(condition: categoryData, then: ' pour la catégorie "{categoryData.title}"')}</p>
+            <f:if condition="{categoryData}">
+                <f:then><p><f:translate extensionName="VdSolr" id="results_count_with_cat_plural" arguments="{0: resultSet.allResultCount, 1: categoryData.title}"/></p></f:then>
+                <f:else><p><f:translate extensionName="VdSolr" id="results_count_plural" arguments="{0: resultSet.allResultCount}"/></p></f:else>
+            </f:if>
         </f:then>
         <f:else if="{resultSet.allResultCount} == 1">
-            <p>{resultSet.allResultCount} résultat trouvé{f:if(condition: categoryData, then: ' pour la catégorie "{categoryData.title}"')}</p>
+            <f:if condition="{categoryData}">
+                <f:then><p><f:translate extensionName="VdSolr" id="result_count_with_cat_singular" arguments="{0: resultSet.allResultCount, 1: categoryData.title}"/></p></f:then>
+                <f:else><p><f:translate extensionName="VdSolr" id="result_count_singular" arguments="{0: resultSet.allResultCount}"/></p></f:else>
+            </f:if>
         </f:else>
     </f:if>
 </html>

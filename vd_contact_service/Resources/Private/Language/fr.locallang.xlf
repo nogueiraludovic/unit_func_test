@@ -19,6 +19,14 @@
 				<source>Write us</source>
 				<target state="translated">Nous écrire</target>
 			</trans-unit>
+			<trans-unit id="no_result_found" resname="no_result_found">
+				<source>No result found</source>
+				<target state="translated">Aucun résultat n'a été trouvée</target>
+			</trans-unit>
+			<trans-unit id="search_label" resname="search_label">
+				<source>Search for the competent entity by municipality or postal code (NPA)</source>
+				<target state="translated">Rechercher l'entité compétente selon la commune ou le numéro postal (NPA)</target>
+			</trans-unit>
 		</body>
 	</file>
 </xliff>

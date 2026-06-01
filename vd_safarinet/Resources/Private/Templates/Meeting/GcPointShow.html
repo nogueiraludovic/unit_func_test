@@ -5,23 +5,23 @@
             <p class="fw-bold">{point.seance.nomCourt}</p>
         </f:if>
         <f:if condition="{point.texte}">
-            <h2 id="text-title">Texte déposé</h2>
+            <h2 id="text-title"><f:translate id="deposited_text"/></h2>
             <f:format.raw>{point.texte}</f:format.raw>
         </f:if>
         <f:if condition="{point.conclusion}">
-            <h2 class="mt-5" id="conclusion-title">Conclusion</h2>
+            <h2 class="mt-5" id="conclusion-title"><f:translate id="conclusion"/></h2>
             <f:format.html>{point.conclusion}</f:format.html>
         </f:if>
         <f:if condition="{point.signataires.membre}">
             <div class="row">
                 <div class="col-xs-12 mt-5">
-                    <h2 id="cosigned-list-title">Liste exhaustive des cosignataires</h2>
+                    <h2 id="cosigned-list-title"><f:translate id="cosigners_list"/></h2>
                     <div class="table-responsive">
                         <table class="table table-striped">
                             <thead>
                                 <tr>
-                                    <th>Signataire</th>
-                                    <th>Parti</th>
+                                    <th><f:translate id="cosigner_col"/></th>
+                                    <th><f:translate id="party_col"/></th>
                                 </tr>
                             </thead>
                             <tbody>
@@ -40,10 +40,10 @@
         <f:if condition="{point.documents.document}">
             <f:if condition="{point.documents.document -> f:count()} == 1">
                 <f:then>
-                    <h2 id="document-title">Document</h2>
+                    <h2 id="document-title"><f:translate id="document"/></h2>
                 </f:then>
                 <f:else>
-                    <h2 id="documents-title">Documents</h2>
+                    <h2 id="documents-title"><f:translate id="documents"/></h2>
                 </f:else>
             </f:if>
             <ul>
@@ -55,14 +55,14 @@
         <f:if condition="{point.transcriptions.transacription}">
             <f:if condition="{point.transcriptions.transacription -> f:count()} > 1}">
                 <f:then>
-                    <h2 id="transcriptions-title">Transcriptions</h2>
+                    <h2 id="transcriptions-title"><f:translate id="transcriptions"/></h2>
                 </f:then>
                 <f:else>
-                    <h2 id="transcription-title">Transcription</h2>
+                    <h2 id="transcription-title"><f:translate id="transcription"/></h2>
                 </f:else>
             </f:if>
             <f:if condition="{point.urlVideo}">
-                <a class="btn btn-dark mb-4" href="{point.urlVideo}" id="video-link">Visionner le débat de ce point à l'ordre du jour</a>
+                <a class="btn btn-dark mb-4" href="{point.urlVideo}" id="video-link"><f:translate id="watch_debate"/></a>
                 <br/>
             </f:if>
             <f:for as="transacription" each="{point.transcriptions.transacription -> vds:format.toArrayList()}">
@@ -71,7 +71,7 @@
         </f:if>
         <f:if condition="{meetingGcId}">
             <f:link.action action="gcMeetingShow" arguments="{meetingId: meetingGcId}" class="btn btn-dark mt-3" controller="Meeting" id="back-link" pageUid="{settings.seanceGcDetailPageUid}">
-                Retour à l'ordre du jour
+                <f:translate id="back_to_agenda"/>
             </f:link.action>
         </f:if>
     </f:section>

@@ -160,6 +160,60 @@
             <trans-unit id="prestation.guichet.description">
                 <source>Obtenir la prestation au guichet</source>
             </trans-unit>
+		<trans-unit id="conditions_title">
+			<source>Quelles sont les conditions à remplir ?</source>
+		</trans-unit>
+		<trans-unit id="contact_us_button">
+			<source>Prendre contact</source>
+		</trans-unit>
+		<trans-unit id="contact_us_question">
+			<source>Vous avez une question ou besoin d'aide ?</source>
+		</trans-unit>
+		<trans-unit id="how_much_cost">
+			<source>Combien cela coûte-t-il ?</source>
+		</trans-unit>
+		<trans-unit id="how_to_proceed">
+			<source>Comment procéder ?</source>
+		</trans-unit>
+		<trans-unit id="in_this_theme">
+			<source>Dans ce thème</source>
+		</trans-unit>
+		<trans-unit id="legal_references">
+			<source>Références légales</source>
+		</trans-unit>
+		<trans-unit id="no_prestations_message">
+			<source>Pas de prestations à afficher...</source>
+		</trans-unit>
+		<trans-unit id="related_pages_forms">
+			<source>Pages et formulaires en lien</source>
+		</trans-unit>
+		<trans-unit id="related_procedures">
+			<source>Procédures liées</source>
+		</trans-unit>
+		<trans-unit id="required_documents">
+			<source>Quels documents sont requis ?</source>
+		</trans-unit>
+		<trans-unit id="see_all">
+			<source>Voir tout</source>
+		</trans-unit>
+		<trans-unit id="see_fewer">
+			<source>Voir moins</source>
+		</trans-unit>
+		<trans-unit id="what_is_delay">
+			<source>Quel est le délai ?</source>
+		</trans-unit>
+		<trans-unit id="who_can_help">
+			<source>Qui peut m'aider ?</source>
+		</trans-unit>
+		<trans-unit id="more_information">
+			<source>Plus d'informations</source>
+		</trans-unit>
+		<trans-unit id="less_information">
+			<source>Moins d'informations</source>
+		</trans-unit>
+		<trans-unit id="start_action">
+			<source>Commencer</source>
+		</trans-unit>
         </body>
     </file>
 </xliff>

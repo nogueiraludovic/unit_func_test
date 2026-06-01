@@ -5,7 +5,7 @@
             <div class="col-sm-12">
                 <div class="row">
                     <div class="col-sm-12 col-md-6">
-                        <strong class="heading">Sigle</strong>
+                        <strong class="heading"><f:translate id="acronym"/></strong>
                         <p>
                             <f:if condition="{group.sigle}">
                                 <f:then>{group.sigle}</f:then>
@@ -27,7 +27,7 @@
             <div class="col-sm-12">
                 <div class="row">
                     <div class="col-sm-12 col-md-6">
-                        <strong class="heading">Date de début de validité</strong>
+                        <strong class="heading"><f:translate id="validity_start_date"/></strong>
                         <p>
                             <f:if condition="{group.dateDebut}">
                                 <f:then><f:format.date date="{group.dateDebut}" format="d.m.Y"/></f:then>
@@ -36,7 +36,7 @@
                         </p>
                     </div>
                     <div class="col-sm-12 col-md-6">
-                        <strong class="heading">Date de fin de validité</strong>
+                        <strong class="heading"><f:translate id="validity_end_date"/></strong>
                         <p>
                             <f:if condition="{group.dateFin}">
                                 <f:then><f:format.date date="{group.dateFin}" format="d.m.Y"/></f:then>
@@ -49,7 +49,7 @@
             <div class="col-sm-12">
                 <div class="row">
                     <div class="col-sm-12 col-md-6">
-                        <strong class="heading">Adresse</strong>
+                        <strong class="heading"><f:translate id="address"/></strong>
                         <p>
                             <f:if condition="{group.adresse.npa} && {group.adresse.localite}">
                                 <f:then>{group.adresse.npa} {group.adresse.localite}</f:then>
@@ -58,7 +58,7 @@
                         </p>
                     </div>
                     <div class="col-sm-12 col-md-6">
-                        <strong class="heading">Téléphone</strong>
+                        <strong class="heading"><f:translate id="telephone"/></strong>
                         <p>
                             <f:if condition="{group.adresse.telephone}">
                                 <f:then><a href="tel:{group.adresse.telephone}" id="phone-link">{group.adresse.telephone}</a></f:then>
@@ -80,7 +80,7 @@
                         </p>
                     </div>
                     <div class="col-sm-12 col-md-6">
-                        <strong class="heading">Site web:</strong>
+                        <strong class="heading"><f:translate id="website"/></strong>
                         <p>
                             <f:if condition="{group.adresse.siteWeb}">
                                 <f:then><a href="{group.adresse.siteWeb}" id="website-link">{group.adresse.siteWeb}</a></f:then>
@@ -100,15 +100,15 @@
             </f:if>
             <f:if condition="{membres}">
                 <div class="col-xs-12 mb-4">
-                    <h2 id="members-list-title">Liste des membres</h2>
+                    <h2 id="members-list-title"><f:translate id="members_list"/></h2>
                     <div class="table-responsive">
                         <table class="table table-striped">
                             <thead>
                                 <tr>
-                                    <th>Nom et prénom</th>
-                                    <th>Rôle dans le groupe</th>
-                                    <th>Date de début d'appartenance au groupe</th>
-                                    <th>Date de fin d'appartenance au groupe</th>
+                                    <th><f:translate id="name_firstname_col"/></th>
+                                    <th><f:translate id="role_in_group_col"/></th>
+                                    <th><f:translate id="membership_start_date_col"/></th>
+                                    <th><f:translate id="membership_end_date_col"/></th>
                                 </tr>
                             </thead>
                             <tbody>

@@ -15,6 +15,134 @@
 				<source>No press release found.</source>
 				<target state="translated">Aucun communiqué de presse trouvé.</target>
 			</trans-unit>
+			<trans-unit id="day_label" resname="day_label">
+				<source>Day</source>
+				<target state="translated">Jour</target>
+			</trans-unit>
+			<trans-unit id="day_placeholder" resname="day_placeholder">
+				<source>DD</source>
+				<target state="translated">JJ</target>
+			</trans-unit>
+			<trans-unit id="decisions_type" resname="decisions_type">
+				<source>Conseil d'État decisions</source>
+				<target state="translated">décisions du Conseil d'État</target>
+			</trans-unit>
+			<trans-unit id="filter_results" resname="filter_results">
+				<source>Filter results</source>
+				<target state="translated">Filtrer les résultats</target>
+			</trans-unit>
+			<trans-unit id="month_label" resname="month_label">
+				<source>Month</source>
+				<target state="translated">Mois</target>
+			</trans-unit>
+			<trans-unit id="month_placeholder" resname="month_placeholder">
+				<source>MM</source>
+				<target state="translated">MM</target>
+			</trans-unit>
+			<trans-unit id="news_type" resname="news_type">
+				<source>News</source>
+				<target state="translated">actualités</target>
+			</trans-unit>
+			<trans-unit id="next_page" resname="next_page">
+				<source>Next page</source>
+				<target state="translated">Page suivante</target>
+			</trans-unit>
+			<trans-unit id="no_element_found" resname="no_element_found">
+				<source>No element matching your search was found.</source>
+				<target state="translated">Aucun élément correspondant à votre recherche n'a été trouvé.</target>
+			</trans-unit>
+			<trans-unit id="no_results" resname="no_results">
+				<source>No results</source>
+				<target state="translated">Aucun résultat</target>
+			</trans-unit>
+			<trans-unit id="no_results_query" resname="no_results_query">
+				<source>No results for "%1$s"</source>
+				<target state="translated">Aucun résultat pour « %1$s »</target>
+			</trans-unit>
+			<trans-unit id="page_of_total" resname="page_of_total">
+				<source>%1$s of %2$s</source>
+				<target state="translated">%1$s sur %2$s</target>
+			</trans-unit>
+			<trans-unit id="press_releases_type" resname="press_releases_type">
+				<source>Press releases</source>
+				<target state="translated">communiqués de presse</target>
+			</trans-unit>
+			<trans-unit id="previous_page" resname="previous_page">
+				<source>Previous page</source>
+				<target state="translated">Page précédente</target>
+			</trans-unit>
+			<trans-unit id="published_from" resname="published_from">
+				<source>Published from</source>
+				<target state="translated">Publié du</target>
+			</trans-unit>
+			<trans-unit id="published_on_prefix" resname="published_on_prefix">
+				<source>Published on</source>
+				<target state="translated">Publié le</target>
+			</trans-unit>
+			<trans-unit id="reset_button" resname="reset_button">
+				<source>Reset</source>
+				<target state="translated">Réinitialiser</target>
+			</trans-unit>
+			<trans-unit id="result_count_singular" resname="result_count_singular">
+				<source>%1$s result found</source>
+				<target state="translated">%1$s résultat trouvé</target>
+			</trans-unit>
+			<trans-unit id="result_count_query_singular" resname="result_count_query_singular">
+				<source>%1$s result for "%2$s"</source>
+				<target state="translated">%1$s résultat pour « %2$s »</target>
+			</trans-unit>
+			<trans-unit id="results_count_plural" resname="results_count_plural">
+				<source>%1$s results found</source>
+				<target state="translated">%1$s résultats trouvés</target>
+			</trans-unit>
+			<trans-unit id="results_count_query_plural" resname="results_count_query_plural">
+				<source>%1$s results for "%2$s"</source>
+				<target state="translated">%1$s résultats pour « %2$s »</target>
+			</trans-unit>
+			<trans-unit id="results_count_with_cat_plural" resname="results_count_with_cat_plural">
+				<source>%1$s results found for category "%2$s"</source>
+				<target state="translated">%1$s résultats trouvés pour la catégorie « %2$s »</target>
+			</trans-unit>
+			<trans-unit id="result_count_with_cat_singular" resname="result_count_with_cat_singular">
+				<source>%1$s result found for category "%2$s"</source>
+				<target state="translated">%1$s résultat trouvé pour la catégorie « %2$s »</target>
+			</trans-unit>
+			<trans-unit id="search_button" resname="search_button">
+				<source>Search</source>
+				<target state="translated">Rechercher</target>
+			</trans-unit>
+			<trans-unit id="search_field_label" resname="search_field_label">
+				<source>Search field</source>
+				<target state="translated">Champ de recherche</target>
+			</trans-unit>
+			<trans-unit id="search_in_type" resname="search_in_type">
+				<source>Search in %1$s</source>
+				<target state="translated">Rechercher dans les %1$s</target>
+			</trans-unit>
+			<trans-unit id="search_placeholder" resname="search_placeholder">
+				<source>Enter your search</source>
+				<target state="translated">Entrez votre recherche</target>
+			</trans-unit>
+			<trans-unit id="session_on_prefix" resname="session_on_prefix">
+				<source>Session of</source>
+				<target state="translated">Séance du</target>
+			</trans-unit>
+			<trans-unit id="submit_search" resname="submit_search">
+				<source>Submit search</source>
+				<target state="translated">Soumettre la recherche</target>
+			</trans-unit>
+			<trans-unit id="to_label" resname="to_label">
+				<source>to</source>
+				<target state="translated">au</target>
+			</trans-unit>
+			<trans-unit id="year_label" resname="year_label">
+				<source>Year</source>
+				<target state="translated">Année</target>
+			</trans-unit>
+			<trans-unit id="year_placeholder" resname="year_placeholder">
+				<source>YYYY</source>
+				<target state="translated">AAAA</target>
+			</trans-unit>
 		</body>
 	</file>
 </xliff>

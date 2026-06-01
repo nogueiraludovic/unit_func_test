@@ -1,5 +1,5 @@
 <html data-namespace-typo3-fluid="true" xmlns:f="http://typo3.org/ns/TYPO3/CMS/Fluid/ViewHelpers">
-    <h2 id="in-this-theme-title">Dans ce thème</h2>
+    <h2 id="in-this-theme-title"><f:translate id="in_this_theme"/></h2>
     <div class="vd-bg-pattern-green p-3 mb-1">
         <f:if condition="{prestations}">
             <ul class="nav vd-list-boxed flex-column">
@@ -15,7 +15,7 @@
         <f:if condition="{settings.longListPageId}">
             <p class="mb-0">
                 <f:link.page class="btn btn-dark btn-sm " id="prestations-list-link" pageUid="{settings.longListPageId}" title="Afficher toutes les prestations">
-                    Voir tout<span class='visually-hidden'>es les prestations</span>
+                    <f:translate id="see_all"/><span class='visually-hidden'>es les prestations</span>
                 </f:link.page>
             </p>
         </f:if>

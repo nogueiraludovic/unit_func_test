@@ -14,7 +14,7 @@
                         </p>
                     </div>
                     <div class="col-md-6 col-sm-12">
-                        <strong class="heading">Date du dépôt</strong>
+                        <strong class="heading"><f:translate id="deposit_date_col"/></strong>
                         <p>
                             <f:if condition="{object.dateDepot}">
                                 <f:then>
@@ -29,14 +29,14 @@
             <div class="col-sm-12">
                 <div class="row">
                     <div class="col-md-6 col-sm-12">
-                        <strong class="heading">Département pilote</strong>
+                        <strong class="heading"><f:translate id="pilot_department"/></strong>
                         <p><f:if condition="{object.pilote}">
                             <f:then>{object.pilote}</f:then>
                             <f:else>-</f:else>
                         </f:if></p>
                     </div>
                     <div class="col-md-6 col-sm-12">
-                        <strong class="heading">Département en appui</strong>
+                        <strong class="heading"><f:translate id="support_department"/></strong>
                         <p><f:if condition="{object.autre}">
                             <f:then>{object.autre}</f:then>
                             <f:else>-</f:else>
@@ -73,7 +73,7 @@
             <div class="col-sm-12">
                 <div class="row">
                     <div class="col-md-6 col-sm-12">
-                        <strong class="heading">Délais réponse du CE</strong>
+                        <strong class="heading"><f:translate id="ce_response_deadline"/></strong>
                         <p>
                             <f:if condition="{object.dateDelaiReponse}">
                                 <f:then>
@@ -86,7 +86,7 @@
                 </div>
             </div>
             <div class="col-sm-12 mb-4">
-                <strong class="heading">Dernière décision du GC</strong>
+                <strong class="heading"><f:translate id="last_gc_decision"/></strong>
                 <p><f:if condition="{object.derniereDecisionGC}">
                     <f:then>{object.derniereDecisionGC}</f:then>
                     <f:else>-</f:else>
@@ -94,19 +94,19 @@
             </div>
             <f:if condition="{object.texte}">
                 <div class="col-sm-12 mb-4">
-                    <h2 id="text-title">Texte déposé</h2>
+                    <h2 id="text-title"><f:translate id="deposited_text"/></h2>
                     <f:format.html>{object.texte}</f:format.html>
                 </div>
             </f:if>
             <f:if condition="{object.conclusion}">
                 <div class="col-sm-12 mb-4">
-                    <h2 id="conclusion-title">Conclusion</h2>
+                    <h2 id="conclusion-title"><f:translate id="conclusion"/></h2>
                     <f:format.html>{object.conclusion}</f:format.html>
                 </div>
             </f:if>
             <f:if condition="{object.documents.document}">
                 <div class="col-xs-12 mb-4">
-                    <h2 id="documents-title">Documents</h2>
+                    <h2 id="documents-title"><f:translate id="documents"/></h2>
                     <div class="table-responsive">
                         <table class="table table-striped">
                             <thead>
@@ -136,13 +136,13 @@
             </f:if>
             <f:if condition="{object.seances.seance}">
                 <div class="col-xs-12 mb-4">
-                    <h2 id="odj-meetings-title">Séances dont l'objet a été à l'ODJ</h2>
+                    <h2 id="odj-meetings-title"><f:translate id="meetings_with_object"/></h2>
                     <div class="table-responsive">
                         <table class="table table-striped">
                             <thead>
                                 <tr>
                                     <th>Date</th>
-                                    <th>Décision</th>
+                                    <th><f:translate id="decision_col"/></th>
                                 </tr>
                             </thead>
                             <tbody>
@@ -164,13 +164,13 @@
             </f:if>
             <f:if condition="{object.signataires.membre}">
                 <div class="col-xs-12 mb-4 mt-5">
-                    <h2 id="cosigners-list-title">Liste exhaustive des cosignataires</h2>
+                    <h2 id="cosigners-list-title"><f:translate id="cosigners_list"/></h2>
                     <div class="table-responsive">
                         <table class="table table-striped">
                             <thead>
                                 <tr>
-                                    <th>Signataire</th>
-                                    <th>Parti</th>
+                                    <th><f:translate id="cosigner_col"/></th>
+                                    <th><f:translate id="party_col"/></th>
                                 </tr>
                             </thead>
                             <tbody>

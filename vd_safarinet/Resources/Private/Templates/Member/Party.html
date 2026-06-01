@@ -38,11 +38,11 @@
                                 <br/>
                             </f:if>
                             <f:if condition="{party.adresse.telephone}">
-                                Tél: {party.adresse.telephone}
+                                <f:translate id="tel_label"/> {party.adresse.telephone}
                                 <br/>
                             </f:if>
                             <f:if condition="{party.adresse.fax}">
-                                Fax: {party.adresse.fax}
+                                <f:translate id="fax_label"/> {party.adresse.fax}
                                 <br/>
                             </f:if>
                             <f:if condition="{party.adresse.email}">

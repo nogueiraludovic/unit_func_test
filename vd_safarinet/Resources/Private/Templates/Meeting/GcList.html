@@ -5,8 +5,8 @@
             <f:for as="yearMeetings" each="{nextMeetingsByYear}" iteration="iterator">
                 <f:if condition="{iterator.isFirst}">
                     <f:if condition="{f:count(subject: yearMeetings)} > 1">
-                        <f:then><h2 id="next-meetings-title">Prochaines séances</h2></f:then>
-                        <f:else><h2 id="next-meeting-title">Prochaine séance</h2></f:else>
+                        <f:then><h2 id="next-meetings-title"><f:translate id="next_meetings"/></h2></f:then>
+                        <f:else><h2 id="next-meeting-title"><f:translate id="next_meeting"/></h2></f:else>
                     </f:if>
                 </f:if>
                 <f:for as="meeting" each="{yearMeetings}" iteration="iterator">
@@ -20,7 +20,7 @@
         </f:if>
         <f:if condition="{passedMeetingsByYear}">
             <f:for as="yearMeetings" each="{passedMeetingsByYear}" iteration="iterator" key="year">
-                <h2 id="meeting-title-{year}">{year} : Séances avec les décisions et commentaires</h2>
+                <h2 id="meeting-title-{year}"><f:translate id="year_meetings_title" arguments="{0: year}"/></h2>
                 <f:for as="meeting" each="{yearMeetings}">
                     <p>
                         <f:link.action action="gcMeetingShow" arguments="{meetingId: meeting.id}" controller="Meeting" id="meeting-details-link-{iterator.index}" pageUid="{settings.seanceGcDetailPageUid}">

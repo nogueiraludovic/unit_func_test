@@ -186,6 +186,75 @@
 			<trans-unit id="your_identity" resname="your_identity">
 				<source>Your identity</source>
 			</trans-unit>
-		</body>
+			<trans-unit id="access_denied_title" resname="access_denied_title">
+				<source>Access denied</source>
+			</trans-unit>
+			<trans-unit id="answers_heading" resname="answers_heading">
+				<source>Answers</source>
+			</trans-unit>
+			<trans-unit id="back_to_homepage" resname="back_to_homepage">
+				<source>Back to homepage</source>
+			</trans-unit>
+			<trans-unit id="error_403_back_home" resname="error_403_back_home">
+				<source>Go to the homepage</source>
+			</trans-unit>
+			<trans-unit id="error_403_message" resname="error_403_message">
+				<source>You do not have the rights to access this page.</source>
+			</trans-unit>
+			<trans-unit id="error_403_reasons_1" resname="error_403_reasons_1">
+				<source>You are not authenticated on the website.</source>
+			</trans-unit>
+			<trans-unit id="error_403_reasons_2" resname="error_403_reasons_2">
+				<source>You do not have the necessary privileges to access this page.</source>
+			</trans-unit>
+			<trans-unit id="error_404_back_home" resname="error_404_back_home">
+				<source>Go to the homepage</source>
+			</trans-unit>
+			<trans-unit id="error_404_message" resname="error_404_message">
+				<source>This page does not exist or is no longer available.</source>
+			</trans-unit>
+			<trans-unit id="error_404_reasons_1" resname="error_404_reasons_1">
+				<source>You may have mistyped the address.</source>
+			</trans-unit>
+			<trans-unit id="error_404_reasons_2" resname="error_404_reasons_2">
+				<source>The page may have been moved or deleted.</source>
+			</trans-unit>
+			<trans-unit id="error_404_reasons_3" resname="error_404_reasons_3">
+				<source>The link you followed may be outdated.</source>
+			</trans-unit>
+			<trans-unit id="error_500_back_home" resname="error_500_back_home">
+				<source>Go to the homepage</source>
+			</trans-unit>
+			<trans-unit id="error_500_message" resname="error_500_message">
+				<source>An unexpected error has occurred.</source>
+			</trans-unit>
+			<trans-unit id="error_500_reasons_1" resname="error_500_reasons_1">
+				<source>The website is experiencing a technical problem.</source>
+			</trans-unit>
+			<trans-unit id="error_500_reasons_2" resname="error_500_reasons_2">
+				<source>Please try again later.</source>
+			</trans-unit>
+			<trans-unit id="error_503_back_home" resname="error_503_back_home">
+				<source>Go to the homepage</source>
+			</trans-unit>
+			<trans-unit id="error_503_message" resname="error_503_message">
+				<source>The website is temporarily unavailable.</source>
+			</trans-unit>
+			<trans-unit id="error_503_reasons_1" resname="error_503_reasons_1">
+				<source>The website is undergoing maintenance.</source>
+			</trans-unit>
+			<trans-unit id="error_503_reasons_2" resname="error_503_reasons_2">
+				<source>Please try again in a few minutes.</source>
+			</trans-unit>
+			<trans-unit id="homepage_logo_title" resname="homepage_logo_title">
+				<source>Go to the Canton of Vaud website homepage</source>
+			</trans-unit>
+			<trans-unit id="page_not_found_title" resname="page_not_found_title">
+				<source>Page not found</source>
+			</trans-unit>
+			<trans-unit id="search_in_questions" resname="search_in_questions">
+				<source>Search in questions</source>
+			</trans-unit>
+					</body>
 	</file>
 </xliff>

@@ -78,6 +78,159 @@ v			</trans-unit>
 			<trans-unit id="top" resname="top">
 				<source>Top</source>
 			</trans-unit>
+			<trans-unit id="acronym" resname="acronym">
+				<source>Acronym</source>
+			</trans-unit>
+			<trans-unit id="address" resname="address">
+				<source>Address</source>
+			</trans-unit>
+			<trans-unit id="author_col" resname="author_col">
+				<source>Author</source>
+			</trans-unit>
+			<trans-unit id="back_to_agenda" resname="back_to_agenda">
+				<source>Back to agenda</source>
+			</trans-unit>
+			<trans-unit id="birth_year" resname="birth_year">
+				<source>Birth year:</source>
+			</trans-unit>
+			<trans-unit id="ce_response_deadline" resname="ce_response_deadline">
+				<source>CE response deadline</source>
+			</trans-unit>
+			<trans-unit id="conclusion" resname="conclusion">
+				<source>Conclusion</source>
+			</trans-unit>
+			<trans-unit id="cosigner_col" resname="cosigner_col">
+				<source>Signatory</source>
+			</trans-unit>
+			<trans-unit id="cosigners_list" resname="cosigners_list">
+				<source>Complete list of cosigners</source>
+			</trans-unit>
+			<trans-unit id="decision_col" resname="decision_col">
+				<source>Decision</source>
+			</trans-unit>
+			<trans-unit id="deposit_date_col" resname="deposit_date_col">
+				<source>Deposit date</source>
+			</trans-unit>
+			<trans-unit id="deposited_text" resname="deposited_text">
+				<source>Deposited text</source>
+			</trans-unit>
+			<trans-unit id="district" resname="district">
+				<source>District:</source>
+			</trans-unit>
+			<trans-unit id="document" resname="document">
+				<source>Document</source>
+			</trans-unit>
+			<trans-unit id="documents" resname="documents">
+				<source>Documents</source>
+			</trans-unit>
+			<trans-unit id="election_years" resname="election_years">
+				<source>Election year(s):</source>
+			</trans-unit>
+			<trans-unit id="fax_label" resname="fax_label">
+				<source>Fax:</source>
+			</trans-unit>
+			<trans-unit id="identifier_col" resname="identifier_col">
+				<source>Identifier</source>
+			</trans-unit>
+			<trans-unit id="interests_register" resname="interests_register">
+				<source>Interests register</source>
+			</trans-unit>
+			<trans-unit id="last_gc_decision" resname="last_gc_decision">
+				<source>Last GC decision</source>
+			</trans-unit>
+			<trans-unit id="meetings_with_object" resname="meetings_with_object">
+				<source>Meetings where the object was on the agenda</source>
+			</trans-unit>
+			<trans-unit id="membership_end_date_col" resname="membership_end_date_col">
+				<source>Group membership end date</source>
+			</trans-unit>
+			<trans-unit id="membership_start_date_col" resname="membership_start_date_col">
+				<source>Group membership start date</source>
+			</trans-unit>
+			<trans-unit id="mobile_phone" resname="mobile_phone">
+				<source>Mobile phone:</source>
+			</trans-unit>
+			<trans-unit id="name_firstname_col" resname="name_firstname_col">
+				<source>Last name and first name</source>
+			</trans-unit>
+			<trans-unit id="next_meeting" resname="next_meeting">
+				<source>Next meeting</source>
+			</trans-unit>
+			<trans-unit id="next_meetings" resname="next_meetings">
+				<source>Next meetings</source>
+			</trans-unit>
+			<trans-unit id="parliamentary_intervention_col" resname="parliamentary_intervention_col">
+				<source>Link to parliamentary intervention details</source>
+			</trans-unit>
+			<trans-unit id="party_col" resname="party_col">
+				<source>Party</source>
+			</trans-unit>
+			<trans-unit id="pilot_department" resname="pilot_department">
+				<source>Pilot department</source>
+			</trans-unit>
+			<trans-unit id="political_group" resname="political_group">
+				<source>Political group:</source>
+			</trans-unit>
+			<trans-unit id="private_email" resname="private_email">
+				<source>Personal email:</source>
+			</trans-unit>
+			<trans-unit id="private_phone" resname="private_phone">
+				<source>Personal phone:</source>
+			</trans-unit>
+			<trans-unit id="professional_email" resname="professional_email">
+				<source>Professional email:</source>
+			</trans-unit>
+			<trans-unit id="professional_phone" resname="professional_phone">
+				<source>Professional phone:</source>
+			</trans-unit>
+			<trans-unit id="result_found_singular" resname="result_found_singular">
+				<source>%1$s result found</source>
+			</trans-unit>
+			<trans-unit id="results_found_plural" resname="results_found_plural">
+				<source>%1$s results found</source>
+			</trans-unit>
+			<trans-unit id="role_col" resname="role_col">
+				<source>Role</source>
+			</trans-unit>
+			<trans-unit id="role_in_group_col" resname="role_in_group_col">
+				<source>Role in group</source>
+			</trans-unit>
+			<trans-unit id="see_all_decisions" resname="see_all_decisions">
+				<source>See all decisions of the</source>
+			</trans-unit>
+			<trans-unit id="siel_maintenance_message" resname="siel_maintenance_message">
+				<source>The SIEL service is currently experiencing IT issues. Everything is being done to resolve them as quickly as possible. Thank you for your understanding.</source>
+			</trans-unit>
+			<trans-unit id="support_department" resname="support_department">
+				<source>Support department</source>
+			</trans-unit>
+			<trans-unit id="tel_label" resname="tel_label">
+				<source>Tel:</source>
+			</trans-unit>
+			<trans-unit id="telephone" resname="telephone">
+				<source>Phone</source>
+			</trans-unit>
+			<trans-unit id="transcription" resname="transcription">
+				<source>Transcription</source>
+			</trans-unit>
+			<trans-unit id="transcriptions" resname="transcriptions">
+				<source>Transcriptions</source>
+			</trans-unit>
+			<trans-unit id="validity_end_date" resname="validity_end_date">
+				<source>End date of validity</source>
+			</trans-unit>
+			<trans-unit id="validity_start_date" resname="validity_start_date">
+				<source>Start date of validity</source>
+			</trans-unit>
+			<trans-unit id="watch_debate" resname="watch_debate">
+				<source>Watch the debate for this agenda item</source>
+			</trans-unit>
+			<trans-unit id="website" resname="website">
+				<source>Website:</source>
+			</trans-unit>
+			<trans-unit id="year_meetings_title" resname="year_meetings_title">
+				<source>%1$s: Meetings with decisions and comments</source>
+			</trans-unit>
 		</body>
 	</file>
 </xliff>

@@ -9,13 +9,13 @@
                 </section>
                 <f:if condition="{prestation.prerequisites}">
                     <section class="mb-5">
-                        <h2 id="conditions-title">Quelles sont les conditions à remplir ?</h2>
+                        <h2 id="conditions-title"><f:translate id="conditions_title"/></h2>
                         <f:format.html>{prestation.prerequisites}</f:format.html>
                     </section>
                 </f:if>
                 <f:if condition="{accessModalities -> f:count()} > 0">
                     <section class="accordion accordion-standalone mt-5 mb-5" id="accordion-modalities">
-                        <h2 class="mt-0" id="how-to">Comment procéder ?</h2>
+                        <h2 class="mt-0" id="how-to"><f:translate id="how_to_proceed"/></h2>
                         <f:for as="accessModality" each="{accessModalities}" iteration="iterator">
                             <div id="{iterator.index}" class="accordion-item mt-2">
                                 <h2 class="accordion-header mt-0" id="heading-modalities-{accessModality.uid}">
@@ -49,8 +49,8 @@
                             <div class="accordion-item mt-2">
                                 <h2 class="accordion-header mt-0" id="heading-other-emolument">
                                     <button aria-controls="collapse-other-emolument" aria-expanded="false" class="accordion-button collapsed" data-bs-target="#collapse-other-emolument" data-bs-toggle="collapse" data-search-field="1" type="button">
-                                        <span class="visually-hidden">Combien ça coûte ?</span>
-                                        <strong>Combien ça coûte ?</strong>
+                                        <span class="visually-hidden"><f:translate id="how_much_cost"/></span>
+                                        <strong><f:translate id="how_much_cost"/></strong>
                                     </button>
                                 </h2>
                                 <div class="accordion-collapse collapse" id="collapse-other-emolument">
@@ -62,11 +62,11 @@
                         </f:if>
                         <f:if condition="{prestation.helpLink}">
                             <section class="p-3 order-1 vd-bg-pattern-gray mt-5 mb-5">
-                                <h2 class="mt-0" id="help-support-title">Qui peut m'aider ?</h2>
-                                <p>Vous avez une question ou besoin d'aide ?</p>
+                                <h2 class="mt-0" id="help-support-title"><f:translate id="who_can_help"/></h2>
+                                <p><f:translate id="contact_us_question"/></p>
                                 <p class="d-flex justify-content-center">
-                                    <a class="btn btn-dark" href="{prestation.helpLink}" id="help-and-support-link" title="Prendre contact">
-                                        Prendre contact
+                                    <a class="btn btn-dark" href="{prestation.helpLink}" id="help-and-support-link" title="{f:translate(id: 'contact_us_button')}">
+                                        <f:translate id="contact_us_button"/>
                                     </a>
                                 </p>
                             </section>
@@ -75,8 +75,8 @@
                             <div class="accordion-item mt-2">
                                 <h2 class="accordion-header mt-0" id="heading-other-prestation">
                                     <button aria-controls="collapse-other-prestation" aria-expanded="false" class="accordion-button collapsed" data-bs-target="#collapse-other-prestation" data-bs-toggle="collapse" data-search-field="1" type="button">
-                                        <span class="visually-hidden">Démarches en relation</span>
-                                        <strong>Démarches en relation</strong>
+                                        <span class="visually-hidden"><f:translate id="related_procedures"/></span>
+                                        <strong><f:translate id="related_procedures"/></strong>
                                     </button>
                                 </h2>
                                 <div class="accordion-collapse collapse" id="collapse-other-prestation">
@@ -98,8 +98,8 @@
                             <div class="accordion-item mt-2">
                                 <h2 class="accordion-header mt-0" id="heading-other-reference">
                                     <button aria-controls="collapse-other-reference" aria-expanded="false" class="accordion-button collapsed" data-bs-target="#collapse-other-reference" data-bs-toggle="collapse" data-search-field="1" type="button">
-                                        <span class="visually-hidden">Références légales</span>
-                                        <strong>Références légales</strong>
+                                        <span class="visually-hidden"><f:translate id="legal_references"/></span>
+                                        <strong><f:translate id="legal_references"/></strong>
                                     </button>
                                 </h2>
                                 <div class="accordion-collapse collapse" id="collapse-other-reference">
@@ -119,8 +119,8 @@
                             <div class="accordion-item mt-2">
                                 <h2 class="accordion-header mt-0" id="heading-other-formulaire">
                                     <button aria-controls="collapse-other-formulaire" aria-expanded="false" class="accordion-button collapsed" data-bs-target="#collapse-other-formulaire" data-bs-toggle="collapse" data-search-field="1" type="button">
-                                        <span class="visually-hidden">Pages et formulaires en relation</span>
-                                        <strong>Pages et formulaires en relation</strong>
+                                        <span class="visually-hidden"><f:translate id="related_pages_forms"/></span>
+                                        <strong><f:translate id="related_pages_forms"/></strong>
                                     </button>
                                 </h2>
                                 <div class="accordion-collapse collapse" id="collapse-other-formulaire">
@@ -145,21 +145,21 @@
                 <div class="flex-grow-1">
                     <button aria-controls="more-info-collapse-{accessModality.uid}" aria-expanded="{f:if(condition: open, then: 'true', else: 'false')}" class="btn btn-more{f:if(condition: open, else: ' collapsed')} fs-6 p-0 pb-2 text-primary text-xs-start" data-bs-target="#more-info-collapse-{accessModality.uid}" data-bs-toggle="collapse" id="more-info-button" type="button">
                         <span aria-hidden="true" class="fa-chevron-down fa-solid text-inherit" id="more-info-icon"></span>
-                        <span class="link-text link-text-closed ps-1">{vdp:getHighLightTitles(before: 'Plus d\'informations ')}</span>
-                        <span class="link-text link-text-opened ps-1">{vdp:getHighLightTitles(before: 'Moins d\'informations ')}</span>
+                        <span class="link-text link-text-closed ps-1">{vdp:getHighLightTitles(before: '{f:translate(id: \'more_information\')} ')}</span>
+                        <span class="link-text link-text-opened ps-1">{vdp:getHighLightTitles(before: '{f:translate(id: \'less_information\')} ')}</span>
                     </button>
                 </div>
                 <div class="collapse highlight-dark mb-3 vd-highlight w-100 p-4{f:if(condition: open, then: ' show')}" id="more-info-collapse-{accessModality.uid}">
                     <f:if condition="{accessModality.requiredDocuments}">
-                        <h3 class="h5">Quels documents sont requis ?</h3>
+                        <h3 class="h5"><f:translate id="required_documents"/></h3>
                         <f:format.html>{accessModality.requiredDocuments}</f:format.html>
                     </f:if>
                     <f:if condition="{accessModality.cost}">
-                        <h3 class="h5">Combien ça coûte ?</h3>
+                        <h3 class="h5"><f:translate id="how_much_cost"/></h3>
                         <p>{accessModality.cost}.-</p>
                     </f:if>
                     <f:if condition="{accessModality.averageDelay}">
-                        <h3 class="h5">Quel est le délai ?</h3>
+                        <h3 class="h5"><f:translate id="what_is_delay"/></h3>
                         <f:format.html>{accessModality.averageDelay}</f:format.html>
                     </f:if>
                     <f:if condition="{accessModality.additionalInformations}">
@@ -176,8 +176,8 @@
                 </div>
             </f:if>
             <div class="d-flex flex-grow-1 justify-content-end">
-                <a class="btn btn-success" href="{vdp:accessModality(accessModality: accessModality)}" id="start-prestation-link" title="Commencer la prestation {title}">
-                    Commencer {f:translate(id: 'prestation.{accessModality.type}.title')}
+                <a class="btn btn-success" href="{vdp:accessModality(accessModality: accessModality)}" id="start-prestation-link" title="{f:translate(id: 'start_action')} {title}">
+                    <f:translate id="start_action"/> {f:translate(id: 'prestation.{accessModality.type}.title')}
                 </a>
             </div>
         </div>

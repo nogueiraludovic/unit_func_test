@@ -13,19 +13,19 @@
                 </div>
                 <div class="mb-4 member-detail member-detail-political">
                     <f:if condition="{member.arrondissement}">
-                        <p class="mb-1">Arrondissement : <span class="float-end">{member.arrondissement}</span></p>
+                        <p class="mb-1"><f:translate id="district"/> <span class="float-end">{member.arrondissement}</span></p>
                     </f:if>
                     <f:if condition="{member.parti}">
-                        <p class="mb-1">Groupe politique : <span class="float-end">{member.parti}</span></p>
+                        <p class="mb-1"><f:translate id="political_group"/> <span class="float-end">{member.parti}</span></p>
                     </f:if>
                 </div>
                 <div class="mb-4 member-detail member-detail-years">
                     <f:if condition="{member.dateNaissance}">
-                        <p class="mb-1">Année de naissance : <span class="float-end"><f:format.date date="{member.dateNaissance}" format="Y"/></span></p>
+                        <p class="mb-1"><f:translate id="birth_year"/> <span class="float-end"><f:format.date date="{member.dateNaissance}" format="Y"/></span></p>
                     </f:if>
                     <f:if condition="{member.historique.election}">
                         <p class="mb-1">
-                            Année(s) d'élection :
+                            <f:translate id="election_years"/>
                             <f:for as="election" each="{member.historique.election -> vds:format.toArrayList()}" iteration="iterator">
                                 <span class="float-end">
                                     <f:if condition="!{iterator.isFirst}">
@@ -60,29 +60,29 @@
                 </div>
                 <div class="mb-4 member-detail member-detail-mails">
                     <f:if condition="{member.adressePolitique.email}">
-                        <p class="mb-1">E-mail privé : <span class="float-end"><f:link.email email="{member.adressePolitique.email}" id="member-political-email-to"/></span></p>
+                        <p class="mb-1"><f:translate id="private_email"/> <span class="float-end"><f:link.email email="{member.adressePolitique.email}" id="member-political-email-to"/></span></p>
                     </f:if>
                     <f:if condition="{member.adresseProfessionnelle.email}">
-                        <p class="mb-1">E-mail prof. : <span class="float-end"><f:link.email email="{member.adresseProfessionnelle.email}" id="member-professionnal-email-to"/></span></p>
+                        <p class="mb-1"><f:translate id="professional_email"/> <span class="float-end"><f:link.email email="{member.adresseProfessionnelle.email}" id="member-professionnal-email-to"/></span></p>
                     </f:if>
                 </div>
                 <div class="member-detail member-detail-tel mb-4">
                     <f:if condition="{member.adressePolitique.telephone}">
                         <p class="mb-1">
-                            Tél. privé :
+                            <f:translate id="private_phone"/>
                             <span class="float-end"><a href="tel:{member.adressePolitique.telephone}" id="political-phone-link">{member.adressePolitique.telephone}</a></span>
                         </p>
                     </f:if>
                     <f:if condition="{member.adresseProfessionnelle.telephone}">
-                        <p class="mb-1">Tél. prof. : <span class="float-end"><a href="tel:{member.adresseProfessionnelle.telephone}" id="professionnal-phone-link">{member.adresseProfessionnelle.telephone}</a></span></p>
+                        <p class="mb-1"><f:translate id="professional_phone"/> <span class="float-end"><a href="tel:{member.adresseProfessionnelle.telephone}" id="professionnal-phone-link">{member.adresseProfessionnelle.telephone}</a></span></p>
                     </f:if>
                     <f:if condition="{member.adressePolitique.telephoneMobile}">
-                        <p class="mb-1">Tél mobile : <span class="float-end"><a href="tel:{member.adressePolitique.telephoneMobile}" id="political-mobile-phone-link">{member.adressePolitique.telephoneMobile}</a></span></p>
+                        <p class="mb-1"><f:translate id="mobile_phone"/> <span class="float-end"><a href="tel:{member.adressePolitique.telephoneMobile}" id="political-mobile-phone-link">{member.adressePolitique.telephoneMobile}</a></span></p>
                     </f:if>
                 </div>
                 <div class="member-detail member-detail-web mb-4">
                     <f:if condition="{member.adressePolitique.siteWeb}">
-                        <p class="mb-1">Site web : <span class="float-end"><a href="{member.adressePolitique.siteWebUrl}" id="political-website-link">{member.adressePolitique.siteWeb}</a></span></p>
+                        <p class="mb-1"><f:translate id="website"/> <span class="float-end"><a href="{member.adressePolitique.siteWebUrl}" id="political-website-link">{member.adressePolitique.siteWeb}</a></span></p>
                     </f:if>
                 </div>
             </div>
@@ -108,8 +108,8 @@
                     </f:if>
                     <f:if condition="{member.documents.document}">
                         <f:for as="document" each="{member.documents.document -> vds:format.toArrayList()}" iteration="iterator">
-                            <f:if condition="{document.type} == 'Registre des intérêts'">
-                                <li><f:link.page addQueryString="1" id="document-details-link-{iterator.index}" pageUid="{pageUid}" section="interests">Registre des intérêts</f:link.page></li>
+                            <f:if condition="{document.type} == '{f:translate(id: 'interests_register')}'">
+                                <li><f:link.page addQueryString="1" id="document-details-link-{iterator.index}" pageUid="{pageUid}" section="interests"><f:translate id="interests_register"/></f:link.page></li>
                             </f:if>
                         </f:for>
                     </f:if>
@@ -124,8 +124,8 @@
                         <table class="table table-striped">
                             <thead>
                                 <tr>
-                                    <th>Lien vers la page de détail de l'intervention parlementaire</th>
-                                    <th>Date du dépôt</th>
+                                    <th><f:translate id="parliamentary_intervention_col"/></th>
+                                    <th><f:translate id="deposit_date_col"/></th>
                                 </tr>
                             </thead>
                             <tbody>
@@ -158,7 +158,7 @@
                         <table class="table table-striped">
                             <thead>
                                 <tr>
-                                    <th>Rôle</th>
+                                    <th><f:translate id="role_col"/></th>
                                     <th><f:translate id="name"/></th>
                                 </tr>
                             </thead>
@@ -182,10 +182,10 @@
         </f:if>
         <f:if condition="{member.documents.document}">
             <f:for as="document" each="{member.documents.document -> vds:format.toArrayList()}">
-                <f:if condition="{document.type} == 'Registre des intérêts'">
+                <f:if condition="{document.type} == '{f:translate(id: 'interests_register')}'">
                     <div class="row">
                         <div class="col-xs-12 mb-4" id="interests">
-                            <h2 class="heading" id="interests-registery-title">Registre des intérêts</h2>
+                            <h2 class="heading" id="interests-registery-title"><f:translate id="interests_register"/></h2>
                             <span class="fa fa-download" aria-hidden="true"></span>&nbsp;<vds:document document="{document}"/>
                         </div>
                     </div>
