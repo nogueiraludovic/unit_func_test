@@ -339,6 +339,14 @@
 				<source>Search in questions</source>
 				<target state="translated">Rechercher dans les questions</target>
 			</trans-unit>
-					</body>
+			<trans-unit id="use_search_engine" resname="use_search_engine">
+				<source>Use the search engine</source>
+				<target state="translated">Utiliser le moteur de recherche</target>
+			</trans-unit>
+			<trans-unit id="what_you_can_do" resname="what_you_can_do">
+				<source>What you can do:</source>
+				<target state="translated">Ce que vous pouvez faire :</target>
+			</trans-unit>
+		</body>
 	</file>
 </xliff>

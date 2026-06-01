@@ -44,7 +44,7 @@
                 </f:if>
                 <f:if condition="{vdp:isInformationVisible()}">
                     <section id="4" class="accordion accordion-standalone mt-5 mb-5">
-                        <h2 class="mt-0" id="addition-information">Informations complémentaires</h2>
+                        <h2 class="mt-0" id="addition-information"><f:translate id="prestation.highlight.additional_informations"/></h2>
                         <f:if condition="{prestation.emolument}">
                             <div class="accordion-item mt-2">
                                 <h2 class="accordion-header mt-0" id="heading-other-emolument">
@@ -163,13 +163,13 @@
                         <f:format.html>{accessModality.averageDelay}</f:format.html>
                     </f:if>
                     <f:if condition="{accessModality.additionalInformations}">
-                        <h3 class="h5">Informations complémentaires</h3>
+                        <h3 class="h5"><f:translate id="tx_vdprestations_domain_model_accessmodality.additional_informations"/></h3>
                         <f:format.html>{accessModality.additionalInformations}</f:format.html>
                     </f:if>
                     <f:if condition="{online}">
                         <div class="d-flex flex-grow-1 justify-content-center">
-                            <a href="https://www.vd.ch/demande-mie" id="request-access-link-{iterator.index}" title="Demander l'accès au portail sécurisé">
-                                Demander l'accès au portail sécurisé
+                            <a href="https://www.vd.ch/demande-mie" id="request-access-link-{iterator.index}" title="{f:translate(id: 'request_portal_access')}">
+                                <f:translate id="request_portal_access"/>
                             </a>
                         </div>
                     </f:if>

@@ -255,6 +255,12 @@
 			<trans-unit id="search_in_questions" resname="search_in_questions">
 				<source>Search in questions</source>
 			</trans-unit>
-					</body>
+			<trans-unit id="use_search_engine" resname="use_search_engine">
+				<source>Use the search engine</source>
+			</trans-unit>
+			<trans-unit id="what_you_can_do" resname="what_you_can_do">
+				<source>What you can do:</source>
+			</trans-unit>
+		</body>
 	</file>
 </xliff>
