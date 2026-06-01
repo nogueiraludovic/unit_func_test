@@ -1,0 +1,17 @@
+<html data-namespace-typo3-fluid="true" xmlns:f="http://typo3.org/ns/TYPO3/CMS/Fluid/ViewHelpers">
+    <div class="vd-bg-pattern-bars-gray clearfix mt-3 py-4 print-none d-print-none">
+        <div class="container">
+            <h2 class="h4 mt-0">Rechercher dans les prestations</h2>
+            <form class="input-group vd-search-form-regular" action="#" role="search">
+                <label class="form-label visually-hidden" for="search-form-presta" id="search-form-label-presta">Rechercher dans les prestations</label>
+                <input id="search-form-presta" type="text" name="q" class="form-control search-bar" placeholder="Rechercher" aria-describedby="search-form-label-presta">
+                <span class="input-group-btn">
+                    <button aria-label="Rechercher" class="btn btn-dark" id="search-button" type="submit">
+                        <i aria-hidden="true" class="fa fa-search"></i>
+                    </button>
+                </span>
+            </form>
+        </div>
+    </div>
+    <f:asset.script identifier="prestation-p2-search" src="EXT:vd_prestations/Resources/Public/JavaScript/PrestationP2Search.js"/>
+</html>

@@ -1,0 +1,34 @@
+plugin.tx_solr.index.queue {
+  prestations = 1
+  prestations {
+    fields {
+      abstract = description
+      content = SOLR_CONTENT
+      content {
+        cObject = COA
+        cObject {
+          10 = TEXT
+          10 {
+            field = description
+            noTrimWrap = || |
+          }
+          20 < .10
+          20.field = emolument
+          30 < .10
+          30.field = prerequisites
+        }
+      }
+      keywords = theme_name
+      title = title
+      url = TEXT
+      url.typolink {
+        additionalParams = &tx_vdprestations_pi4[action]=show&tx_vdprestations_pi4[controller]=Prestation&tx_vdprestations_pi4[prestation]={field:uid}
+        additionalParams.insertData = 1
+        parameter = 2000180
+        returnLast = url
+        useCacheHash = 1
+      }
+    }
+    table = tx_vdprestations_domain_model_prestation
+  }
+}

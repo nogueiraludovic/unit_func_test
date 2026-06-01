@@ -1,0 +1,82 @@
+lib {
+  curators = COA
+  curators {
+    10 = TEXT
+    10 {
+      value = Service des curatelles, je suis déjà curatrice ou curateur|curatelle.volontaire@vd.ch
+      wrap = |[\n]
+    }
+    20 = CONTENT
+    20 {
+      renderObj = COA
+      renderObj {
+        10 = COA
+        10 {
+          10 = TEXT
+          10.field = name
+          20 = TEXT
+          20 {
+            field = address
+            if.isTrue.field = address
+            noTrimWrap = |, ||
+          }
+          30 = COA
+          30 {
+            10 = TEXT
+            10 {
+              field = postal_code
+              if.isTrue.field = locality
+              noTrimWrap = |, ||
+            }
+            20 = TEXT
+            20 {
+              field = locality
+              noTrimWrap = | ||
+            }
+          }
+        }
+        20 = TEXT
+        20.value = |
+        30 = TEXT
+        30 {
+          field = email_address
+          wrap = |,curatelle.volontaire@vd.ch
+        }
+        stdWrap.wrap = |[\n]
+      }
+      select {
+        orderBy = name
+        pidInList = 2012099
+      }
+      table = tx_vdcontactservice_domain_model_servicecontact
+    }
+  }
+  referer = TEXT
+  referer {
+    data = DB:pages:GP:tx_powermail_pi1|field|referer:title
+    data.ifEmpty = Formulaire de contact
+    typolink {
+      forceAbsoluteUrl = 1
+      parameter {
+        data = GP:tx_powermail_pi1|field|referer
+        ifEmpty = 1032247
+      }
+    }
+  }
+}
+
+##################################################
+
+plugin {
+  tx_form >
+  Tx_Formhandler >
+  tx_powermail {
+    settings.setup {
+      receiver.predefinedReceiver.becomeCurator {
+        email = TEXT
+        email.data = GP:tx_powermail_pi1|field|receiver
+      }
+      spamshield.methods.5._enable = 0
+    }
+  }
+}

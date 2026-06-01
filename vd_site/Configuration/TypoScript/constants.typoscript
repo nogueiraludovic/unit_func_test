@@ -1,0 +1,25 @@
+plugin {
+  tx_plainfaq_pi1.view.templateRootPath = EXT:vd_site/Resources/Private/Templates/
+  tx_seo.settings.xmlSitemap.sitemaps.pages {
+    additionalWhere = no_index=0 AND canonical_link='' AND uid NOT IN (1000057,1011084,1040579,2014687)
+    excludedDoktypes = 3,4,6,7,199,254,255
+  }
+}
+
+##################################################
+
+styles {
+  content {
+    allowTags := addToList(figcaption,figure)
+    links.extTarget =
+    textmedia {
+      maxW = 1320
+      maxWInText = 440
+    }
+  }
+  templates {
+    layoutRootPath = EXT:vd_site/Resources/Private/Layouts/ContentElement/
+    partialRootPath = EXT:vd_site/Resources/Private/Partials/ContentElement/
+    templateRootPath = EXT:vd_site/Resources/Private/Templates/ContentElement/
+  }
+}

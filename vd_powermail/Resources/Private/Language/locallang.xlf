@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xliff version="1.2" xmlns="urn:oasis:names:tc:xliff:document:1.2">
+	<file datatype="plaintext" original="EXT:vd_powermail/Resources/Private/Language/locallang.xlf" source-language="en">
+		<header/>
+		<body>
+			<trans-unit id="error_sr_only" resname="error_sr_only">
+				<source>Error:</source>
+			</trans-unit>
+			<trans-unit id="there_is_a_problem" resname="there_is_a_problem">
+				<source>There is a problem</source>
+			</trans-unit>
+		</body>
+	</file>
+</xliff>

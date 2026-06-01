@@ -1,0 +1,23 @@
+<html data-namespace-typo3-fluid="true" xmlns:f="http://typo3.org/ns/TYPO3/CMS/Fluid/ViewHelpers">
+    <f:switch expression="{newsItem.type}">
+        <f:case value="1">
+            <f:link.typolink additionalAttributes="{id: 'news-internal-url-link'}" class="{cssClass}" parameter="{newsItem.internalurl}">
+                {content -> f:format.raw()}
+            </f:link.typolink>
+        </f:case>
+        <f:case value="2">
+            <f:link.typolink
+                additionalAttributes="{id: 'news-external-url-link', rel: 'noreferrer'}"
+                class="{cssClass}"
+                parameter="{newsItem.externalurl}"
+            >
+                {content -> f:format.raw()}
+            </f:link.typolink>
+        </f:case>
+        <f:defaultCase>
+            <f:link.action action="detail" arguments="{news: newsItem}" class="{cssClass}" id="news-details-page-link-{newsItem.uid}" pageUid="{settings.detailPid}">
+                {content -> f:format.raw()}
+            </f:link.action>
+        </f:defaultCase>
+    </f:switch>
+</html>

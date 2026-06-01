@@ -1,0 +1,84 @@
+<soap:Envelope xmlns:soap="http://schemas.xmlsoap.org/soap/envelope/">
+    <soap:Body>
+        <ns2:rechercherObjetParIdResponse
+                xmlns:ns2="http://www.vd.ch/lmgc/wsdl/ListeMembresGrandConseil"
+                xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+                xsi:schemaLocation="http://www.vd.ch/lmgc/wsdl/ListeMembresGrandConseil ../../LMGC/ListeMembresGrandConseil.xsd ">
+            <return>
+                <autre>DFJC, DSAS</autre>
+                <commission>
+                    <id>12341</id>
+                    <nom>Commission des Finances</nom>
+                    <sigle>COFIN</sigle>
+                </commission>
+                <dateDelaiReponse>2016-12-03</dateDelaiReponse>
+                <dateDepot>2014-12-03</dateDepot>
+                <derniereDecisionGC>Pris en considération, 17.07.2015</derniereDecisionGC>
+                <documents>
+                    <document>
+                        <id>1172739</id>
+                        <titre>Objet et développement</titre>
+                        <type>Autre</type>
+                    </document>
+                    <document>
+                        <id>1168567</id>
+                        <titre>Dépôt</titre>
+                        <type>Autre</type>
+                    </document>
+                    <document>
+                        <id>1170888</id>
+                        <titre>Objet</titre>
+                        <type>Autre</type>
+                    </document>
+                </documents>
+                <id>14_POS_095</id>
+                <nom>Marion</nom>
+                <numTireAPart>14_POS_095</numTireAPart>
+                <pilote>DFIRE</pilote>
+                <prenom>Axel</prenom>
+                <seances>
+                    <seance>
+                        <dateSeance>2015-07-17</dateSeance>
+                        <decision>Pris en considération</decision>
+                        <id>1234512</id>
+                    </seance>
+                    <seance>
+                        <dateSeance>2015-03-03</dateSeance>
+                        <decision>Renvoyé à commission</decision>
+                        <id>1234512</id>
+                    </seance>
+                    <seance>
+                        <dateSeance>2015-02-17</dateSeance>
+                        <decision>Renvoyé pour suite des débats</decision>
+                        <id>1234512</id>
+                    </seance>
+                </seances>
+                <signataires>
+                    <membre>
+                        <id>100963</id>
+                        <nom>Schwaar</nom>
+                        <parti>SOC</parti>
+                        <politesse>Madame</politesse>
+                        <prenom>Valérie</prenom>
+                    </membre>
+                    <membre>
+                        <id>242347</id>
+                        <nom>Porchet</nom>
+                        <parti>VER</parti>
+                        <politesse>Madame</politesse>
+                        <prenom>Léonore</prenom>
+                    </membre>
+                    <membre>
+                        <id>147822</id>
+                        <nom>Blanc</nom>
+                        <parti>PLR</parti>
+                        <politesse>Monsieur</politesse>
+                        <prenom>Mathieu</prenom>
+                    </membre>
+                </signataires>
+                <texte><![CDATA[ <p>Lorem <strong>ipsum dolor </strong>sit amet<sup>note</sup>, consectetur<sub>autre note</sub> adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p><p>&nbsp;</p><p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p><ol><li>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</li><li>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed o eiusmodn tempor incididunt ut labore et dolore magna aliqua.</li><li>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.<ol><li>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</li></ol></li></ol><ul><li>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.<ul><li>Lorem ipsum dolor sit<ul><li>amet, consectetur adipiscing</li><li>elit, sed do eiusmod tempor i</li><li>ncididunt ut labore et dolore magna</li><li>aliqua.</li></ul></li></ul></li></ul><p>&nbsp;</p><p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p><p>&nbsp;</p><p><a href="http://dispatcher-prj-ev-bleusiel-nightly.apps-docker.elcadev.local/bleusiel_user/epi/#/interventions-parlementaires">lien</a></p>]]></texte>
+                <titre>Postulat Axel Marion et consorts - Pour un meilleur regard sur les émoluments et autres frais pour actes administratifs perçus par l'État</titre>
+            </return>
+        </ns2:rechercherObjetParIdResponse>
+    </soap:Body>
+</soap:Envelope>

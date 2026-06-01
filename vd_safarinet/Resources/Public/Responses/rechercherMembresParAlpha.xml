@@ -1,0 +1,33 @@
+<soap:Envelope xmlns:soap="http://schemas.xmlsoap.org/soap/envelope/">
+    <soap:Body>
+        <ns2:rechercherMembresParAlphaResponse
+                xmlns:ns2="http://www.vd.ch/lmgc/wsdl/ListeMembresGrandConseil"
+                xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+                xsi:schemaLocation="http://www.vd.ch/lmgc/wsdl/ListeMembresGrandConseil ../../LMGC/ListeMembresGrandConseil.xsd ">
+            <return>
+                <arrondissement>Ouest lausannois</arrondissement>
+                <id>280247</id>
+                <nom>Joly</nom>
+                <parti>VER</parti>
+                <politesse>Madame</politesse>
+                <prenom>Rebecca</prenom>
+            </return>
+            <return>
+                <arrondissement>Ouest lausannois</arrondissement>
+                <id>88468</id>
+                <nom>Rydlo</nom>
+                <parti>SOC</parti>
+                <politesse>Monsieur</politesse>
+                <prenom>Alexandre</prenom>
+            </return>
+            <return>
+                <arrondissement>Nyon</arrondissement>
+                <id>147847</id>
+                <nom>Treboux</nom>
+                <parti>UDC</parti>
+                <politesse>Monsieur</politesse>
+                <prenom>Maurice</prenom>
+            </return>
+        </ns2:rechercherMembresParAlphaResponse>
+    </soap:Body>
+</soap:Envelope>

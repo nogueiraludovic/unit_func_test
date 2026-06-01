@@ -1,0 +1,18 @@
+<html data-namespace-typo3-fluid="true" xmlns:f="http://typo3.org/ns/TYPO3/CMS/Fluid/ViewHelpers">
+    <f:layout/>
+    <f:section name="Content">
+        <f:if condition="{data.layout}">
+            <f:then>
+                <f:variable name="layout" value="{data.layout}"/>
+            </f:then>
+            <f:else>
+                <f:variable name="layout" value="dark"/>
+            </f:else>
+        </f:if>
+        <div class="highlight-{layout} vd-content-column vd-highlight">
+            <f:for as="child" each="{children_200}">
+                <f:format.raw>{child.renderedContent}</f:format.raw>
+            </f:for>
+        </div>
+    </f:section>
+</html>

@@ -1,0 +1,196 @@
+<html data-namespace-typo3-fluid="true" xmlns:f="http://typo3.org/ns/TYPO3/CMS/Fluid/ViewHelpers" xmlns:vd="http://typo3.org/ns/Vd/VdOcosp/ViewHelpers">
+    <f:layout/>
+    <f:section name="main">
+        <p>
+            <f:link.action id="dmde-refresh-link">
+                <f:translate id="LLL:EXT:vd_ocosp/Resources/Private/Language/locallang_frontend.xlf:new_search"/>
+            </f:link.action>
+        </p>
+        <h3>{dmde.professionAffichage}</h3>
+        <div>
+            <vd:wiki parseText="true">
+                <f:format.raw>{dmde.description}</f:format.raw>
+            </vd:wiki>
+        </div>
+        <div id="accordion" class="mb-1" role="tablist" aria-multiselectable="true">
+            <f:if condition="{dmde.videoZoom}">
+                <div class="card">
+                    <div class="card-header" role="tab" id="headingVideo">
+                            <h4>
+                                <a aria-expanded="true" aria-controls="collapseVideo" data-bs-toggle="collapse" href="#collapseVideo" id="zoom-video-collapse">
+                                    <f:translate id="LLL:EXT:vd_ocosp/Resources/Private/Language/locallang_frontend.xlf:label.video_zoom"/>
+                                </a>
+                            </h4>
+                    </div>
+                    <div id="collapseVideo" class="collapse show" role="tabpanel" aria-labelledby="headingVideo">
+                        <div class="card-block">
+                            <div>
+                                <vd:zoomMovie url="{dmde.videoZoom}"/>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </f:if>
+            <div class="card">
+                <div class="card-header" role="tab" id="headingFormation">
+                    <h4>
+                        <a aria-expanded="true" aria-controls="collapseFormation" data-bs-toggle="collapse" href="#collapseFormation" id="formation-collapse-button">
+                            <f:translate id="LLL:EXT:vd_ocosp/Resources/Private/Language/locallang_frontend.xlf:label.formation"/>
+                        </a>
+                    </h4>
+                </div>
+                <div id="collapseFormation" class="collapse show" role="tabpanel" aria-labelledby="headingFormation">
+                    <div class="card-block">
+                        <f:if condition="{dmde.formationDesc}">
+                            <div><f:format.raw><vd:wiki parseText="true"><f:format.raw>{dmde.formationDesc}</f:format.raw></vd:wiki></f:format.raw></div>
+                        </f:if>
+                        <f:if condition="{dmde.formation2}">
+                            <f:then>
+                                <ol>
+                                    <li>
+                                        <f:render arguments="{conditionsAdmission: dmde.conditionsAdmission, formation: dmde.formation, lieu: dmde.lieu, remarques: dmde.remarques}" partial="Display/Dmde/TrainingDetail"/>
+                                        <br/>
+                                    </li>
+                                    <li>
+                                        <f:render arguments="{conditionsAdmission: dmde.conditionsAdmission2, formation: dmde.formation2, lieu: dmde.lieu2, remarques: dmde.remarques2}" partial="Display/Dmde/TrainingDetail"/>
+                                    </li>
+                                </ol>
+                                <f:render arguments="{profession: dmde.professionId.0}" partial="Display/Dmde/UsefulLinks"/>
+                                <f:if condition="{dmde.diplomeId}">
+                                    <h5><f:translate id="LLL:EXT:vd_ocosp/Resources/Private/Language/locallang_frontend.xlf:label.titre_delivre"/></h5>
+                                    <p>
+                                        <f:if condition="{dmde.diplomeId.uid} == 2">
+                                            <f:then>{dmde.diplomeComplement}</f:then>
+                                            <f:else>{dmde.diplomeId.diplome}</f:else>
+                                        </f:if>
+                                    </p>
+                                </f:if>
+                                <f:if condition="{dmde.professionId.0.niveauCnc}">
+                                    <h5>
+                                        <f:translate id="LLL:EXT:vd_ocosp/Resources/Private/Language/locallang_frontend.xlf:label.niveau_cnc"/>
+                                    </h5>
+                                    <div class="mb-1">
+                                        <vd:wiki parseText="true">
+                                            <f:format.raw>{dmde.professionId.0.niveauCnc}</f:format.raw>
+                                        </vd:wiki>
+                                    </div>
+                                </f:if>
+                                <f:if condition="{dmde.remarques}">
+                                    <h5>
+                                        <f:translate id="LLL:EXT:vd_ocosp/Resources/Private/Language/locallang_frontend.xlf:label.remarques"/>
+                                    </h5>
+                                    <div class="mb-1">
+                                        <vd:wiki parseText="true">
+                                            <f:format.raw>{dmde.remarques}</f:format.raw>
+                                        </vd:wiki>
+                                    </div>
+                                </f:if>
+                            </f:then>
+                            <f:else>
+                                <f:render arguments="{conditionsAdmission: dmde.conditionsAdmission, formation: dmde.formation, lieu: dmde.lieu, dmde: dmde, settings: settings}" partial="Display/Dmde/TrainingDetail"/>
+                                <f:render arguments="{profession: dmde.professionId.0}" partial="Display/Dmde/UsefulLinks"/>
+                            </f:else>
+                        </f:if>
+                    </div>
+                </div>
+            </div>
+            <f:if condition="{dmde.adresse}">
+                <div class="card">
+                    <div class="card-header" role="tab" id="headingAdresses">
+                        <h4>
+                            <a aria-expanded="true" aria-controls="collapseAdresses" data-bs-toggle="collapse" href="#collapseAdresses" id="address-collapse-button">
+                                <f:translate id="LLL:EXT:vd_ocosp/Resources/Private/Language/locallang_frontend.xlf:label.adresses"/>
+                            </a>
+                        </h4>
+                    </div>
+                    <div id="collapseAdresses" class="collapse show" role="tabpanel" aria-labelledby="headingAdresses">
+                        <div class="card-block">
+                            <div>
+                                <vd:sortedFor each="{dmde.adresse}" as="address" sort="nom">
+                                    <div class="address">
+                                        <p>
+                                            <f:if condition="{address.nom}">
+                                                <strong>{address.nom}</strong><br/>
+                                            </f:if>
+                                            <f:if condition="{address.adresse}">
+                                                {address.adresse}<br/>
+                                            </f:if>
+                                            {address.codePostal} {address.ville}
+                                        </p>
+                                        <f:if condition="{address.siteWeb}">
+                                            <p><a href="{address.siteWeb}" id="website-link">{address.siteWeb}</a></p>
+                                        </f:if>
+                                    </div>
+                                </vd:sortedFor>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </f:if>
+        </div>
+        <f:if condition="{dmde.professionId.0.inscriptions -> f:count()}">
+            <f:if condition="{dmde.professionId.0.inscriptions}">
+                <h4><f:translate id="LLL:EXT:vd_ocosp/Resources/Private/Language/locallang_frontend.xlf:label.title.dmde_delais"/></h4>
+                <div id="accordionDeadlines" class="mb-1" role="tablist" aria-multiselectable="true">
+                    <vd:sortedFor as="inscription" each="{dmde.professionId.0.inscriptions}" iteration="iterator" sort="adresse.nom">
+                        <f:if condition="{inscription.uid}">
+                            <div class="card">
+                                <div class="card-header" role="tab" id="heading{iterator.cycle}">
+                                    <h4>
+                                        <a aria-expanded="true" aria-controls="collapse{iterator.cycle}" data-bs-toggle="collapse" data-parent="#accordionDeadlines" href="#collapse{iterator.cycle}" id="deadlines-collapse-button-{inscription.uid}">
+                                            {inscription.adresse.nom}
+                                        </a>
+                                    </h4>
+                                </div>
+                                <div id="collapse{iterator.cycle}"
+                                     class="collapse show"
+                                     role="tabpanel"
+                                     aria-labelledby="heading{iterator.cycle}">
+                                    <div class="card-block">
+                                        <p><f:link.external id="subscription-website-link" uri="{inscription.adresse.siteWeb}">{inscription.adresse.nom}</f:link.external></p>
+                                        <div class="mb-1">
+                                            <f:translate id="LLL:EXT:vd_ocosp/Resources/Private/Language/locallang_frontend.xlf:label.inscription"/>
+                                            :
+                                            <f:format.raw><vd:wiki parseLinks="true"><f:format.raw>{inscription.delaiInscription}</f:format.raw></vd:wiki></f:format.raw>
+                                        </div>
+                                        <p>
+                                            <f:translate id="LLL:EXT:vd_ocosp/Resources/Private/Language/locallang_frontend.xlf:label.examen"/>
+                                            : {inscription.dateExamen -> f:format.raw()}
+                                        </p>
+                                        <f:if condition="{inscription.urlExad}">
+                                            <f:for as="urlExad" each="{inscription.urlExad}">
+                                                <f:if condition="{urlExad.originalResource}">
+                                                    <p>
+                                                        <f:link.typolink additionalAttributes="{id: 'subscription-public-url-link'}" parameter="{urlExad.originalResource.publicUrl}">
+                                                            <f:translate id="LLL:EXT:vd_ocosp/Resources/Private/Language/locallang_frontend.xlf:label.download_pdf"/>
+                                                        </f:link.typolink>
+                                                    </p>
+                                                </f:if>
+                                            </f:for>
+                                        </f:if>
+                                    </div>
+                                </div>
+                            </div>
+                        </f:if>
+                    </vd:sortedFor>
+                </div>
+            </f:if>
+        </f:if>
+        <hr>
+        <div class="row text-secondary">
+            <div class="col-sm-4">
+                <f:translate id="LLL:EXT:vd_ocosp/Resources/Private/Language/locallang_frontend.xlf:label.date_maj"/>
+            </div>
+            <div class="col-sm-8">
+                <p>
+                    <f:format.date format="{f:translate(id: 'LLL:EXT:vd_ocosp/Resources/Private/Language/locallang_frontend.xlf:label.date_heure.format')}">{dmde.tstamp}</f:format.date>
+                </p>
+            </div>
+        </div>
+        <div class="mt-4">
+            <f:link.action action="search" arguments="{domain: dmde.domaineId}" id="search-domain-link">
+                <f:translate id="LLL:EXT:vd_ocosp/Resources/Private/Language/locallang_frontend.xlf:professions_domaine.metiers_same_domaine"/>
+            </f:link.action>
+        </div>
+    </f:section>
+</html>

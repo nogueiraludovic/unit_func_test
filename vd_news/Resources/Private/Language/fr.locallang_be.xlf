@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xliff version="1.2" xmlns="urn:oasis:names:tc:xliff:document:1.2">
+	<file datatype="plaintext" original="EXT:vd_news/Resources/Private/Language/locallang_be.xlf" source-language="en" target-language="fr">
+		<header/>
+		<body>
+			<trans-unit id="alias" resname="alias">
+				<source>Alias</source>
+				<target state="translated">Alias</target>
+			</trans-unit>
+			<trans-unit id="alias_of" resname="alias_of">
+				<source>Alias of: %s</source>
+				<target state="translated">Alias de : %s</target>
+			</trans-unit>
+			<trans-unit id="rss" resname="rss">
+				<source>RSS</source>
+				<target state="translated">RSS</target>
+			</trans-unit>
+			<trans-unit id="target" resname="target">
+				<source>Target</source>
+				<target state="translated">Cible</target>
+			</trans-unit>
+		</body>
+	</file>
+</xliff>

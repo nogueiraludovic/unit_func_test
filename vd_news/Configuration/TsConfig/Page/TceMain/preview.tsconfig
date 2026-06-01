@@ -1,0 +1,11 @@
+TCEMAIN.preview.tx_news_domain_model_news {
+  additionalGetParameters {
+    tx_vdnews_pi1 {
+      action = detail
+      controller = News
+    }
+  }
+  fieldToParameterMap.uid = tx_vdnews_pi1[news_preview]
+  previewPageId = 2000114
+  useCacheHash = 1
+}

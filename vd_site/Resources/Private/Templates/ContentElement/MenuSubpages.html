@@ -1,0 +1,12 @@
+<html data-namespace-typo3-fluid="true" xmlns:f="http://typo3.org/ns/TYPO3/CMS/Fluid/ViewHelpers">
+    <f:layout/>
+    <f:section name="Main">
+        <f:if condition="{menu}">
+            <ul class="vd-list-links">
+                <f:for as="page" each="{menu}" iteration="iterator">
+                    <li><a href="{page.link}" id="menu-subpage-link-{iterator.index}" title="{page.title}">{page.title}</a></li>
+                </f:for>
+            </ul>
+        </f:if>
+    </f:section>
+</html>

@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xliff version="1.2" xmlns="urn:oasis:names:tc:xliff:document:1.2">
+	<file datatype="plaintext" original="EXT:vd_safarinet/Resources/Private/Language/locallang.xlf" source-language="en" target-language="fr">
+		<header/>
+		<body>
+			<trans-unit id="alphabetic_order_list" resname="alphabetic_order_list">
+				<source>Alphabetic order list</source>
+				<target state="translated">Liste par ordre alphabétique</target>
+			</trans-unit>
+			<trans-unit id="and_the" resname="and_the">
+				<source>And the</source>
+				<target state="translated">Et le</target>
+			</trans-unit>
+			<trans-unit id="back_to_search" resname="back_to_search">
+				<source>Back to search</source>
+				<target state="translated">Retour à la recherche</target>
+			</trans-unit>
+			<trans-unit id="between_the" resname="between_the">
+				<source>Between the</source>
+				<target state="translated">Entre le</target>
+			</trans-unit>
+			<trans-unit id="ce_decisions" resname="ce_decisions">
+				<source>Decisions by the Conseil d'État</source>
+				<target state="translated">Décisions du Conseil d'État</target>
+			</trans-unit>
+			<trans-unit id="contact_address" resname="contact_address">
+				<source>Contact address</source>
+				<target state="translated">Adresse de contact</target>
+			</trans-unit>
+			<trans-unit id="deposited_objects" resname="deposited_objects">
+				<source>Deposited objects</source>
+				<target state="translated">Objets déposés</target>
+			</trans-unit>
+			<trans-unit id="districts_list" resname="districts_list">
+				<source>Districts list</source>
+				<target state="translated">Liste des arrondissements</target>
+			</trans-unit>
+			<trans-unit id="files_to_download" resname="files_to_download">
+				<source>Files to download</source>
+				<target state="translated">Fichier à télécharger</target>
+			</trans-unit>
+			<trans-unit id="further_informations" resname="further_informations">
+				<source>Further informations</source>
+				<target state="translated">Renseignements complémentaires</target>
+			</trans-unit>
+			<trans-unit id="groups" resname="groups">
+				<source>Groups</source>
+				<target state="translated">Groupes</target>
+			</trans-unit>
+			<trans-unit id="invalid_end_date" resname="invalid_end_date">
+				<source>Invalid end date</source>
+				<target state="translated">Date de fin invalide</target>
+			</trans-unit>
+			<trans-unit id="invalid_start_date" resname="invalid_start_date">
+				<source>Invalid start date</source>
+				<target state="translated">Date de début invalide</target>
+			</trans-unit>
+			<trans-unit id="link" resname="link">
+				<source>Link</source>
+				<target state="translated">Lien</target>
+			</trans-unit>
+			<trans-unit id="member" resname="member">
+				<source>Member</source>
+				<target state="translated">Membre</target>
+			</trans-unit>
+			<trans-unit id="members" resname="members">
+				<source>Members</source>
+				<target state="translated">Membres</target>
+			</trans-unit>
+			<trans-unit id="members_list" resname="members_list">
+				<source>Members list</source>
+				<target state="translated">Liste des membres</target>
+			</trans-unit>
+			<trans-unit id="name" resname="name">
+				<source>Name</source>
+				<target state="translated">Nom</target>
+			</trans-unit>
+			<trans-unit id="not_found" resname="not_found">
+				<source>Record not found</source>
+				<target state="translated">Cet enregistrement n'existe pas.</target>
+			</trans-unit>
+			<trans-unit id="no_result" resname="no_result">
+				<source>No result found.</source>
+				<target state="translated">Aucun résultat trouvé.</target>
+			</trans-unit>
+			<trans-unit id="politic_list" resname="politic_list">
+				<source>Political groups list</source>
+				<target state="translated">Liste par groupe politique</target>
+			</trans-unit>
+			<trans-unit id="share" resname="share">
+				<source>Share</source>
+				<target state="translated">Partager</target>
+			</trans-unit>
+			<trans-unit id="summary" resname="summary">
+				<source>Summary</source>
+				<target state="translated">Sommaire</target>
+			</trans-unit>
+			<trans-unit id="title" resname="title">
+				<source>Title</source>
+				<target state="translated">Titre</target>
+			</trans-unit>
+			<trans-unit id="top" resname="top">
+				<source>Top</source>
+				<target state="translated">Haut</target>
+			</trans-unit>
+		</body>
+	</file>
+</xliff>

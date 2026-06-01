@@ -1,0 +1,6 @@
+TCEMAIN.preview.tx_vdpressreleases_domain_model_pressrelease {
+  additionalGetParameters.no_cache = 1
+  fieldToParameterMap.uid = tx_vdpressreleases_pressrelease[pressRelease_preview]
+  previewPageId = 2000109
+  useCacheHash = 1
+}

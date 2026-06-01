@@ -1,0 +1,164 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xliff version="1.2" xmlns="urn:oasis:names:tc:xliff:document:1.2">
+	<file datatype="plaintext" original="EXT:vd_ocosp/Resources/Private/Language/locallang_db.xlf" source-language="en">
+		<header/>
+		<body>
+			<trans-unit id="adresse_next" resname="adresse_next">
+				<source>Address next</source>
+			</trans-unit>
+			<trans-unit id="address_type" resname="address_type">
+				<source>Address type</source>
+			</trans-unit>
+			<trans-unit id="address_type.I.association" resname="address_type.I.assoc">
+				<source>Association</source>
+			</trans-unit>
+			<trans-unit id="address_type.I.company" resname="address_type.I.company">
+				<source>Company</source>
+			</trans-unit>
+			<trans-unit id="address_type.I.other" resname="address_type.I.other">
+				<source>Other</source>
+			</trans-unit>
+			<trans-unit id="address_type.I.private_school" resname="address_type.I.private_school">
+				<source>Private school</source>
+			</trans-unit>
+			<trans-unit id="address_type.I.secondary_1_school" resname="address_type.I.secondary_1_school">
+				<source>Secondary I school</source>
+			</trans-unit>
+			<trans-unit id="address_type.I.secondary_2_school" resname="secondary_2_school.I.second_2">
+				<source>Secondary II school</source>
+			</trans-unit>
+			<trans-unit id="address_type.I.school_tertiary_level" resname="address_type.I.school_tertiary_level">
+				<source>School tertiary level</source>
+			</trans-unit>
+			<trans-unit id="addresses" resname="addresses">
+				<source>Addresses</source>
+			</trans-unit>
+			<trans-unit id="admission_requirements" resname="admission_requirements">
+				<source>Admission requirements</source>
+			</trans-unit>
+			<trans-unit id="admission_requirements_2" resname="admission_requirements_2">
+				<source>Admission requirements (2)</source>
+			</trans-unit>
+			<trans-unit id="additional_diploma" resname="additional_diploma">
+				<source>Additional diploma</source>
+			</trans-unit>
+			<trans-unit id="careers_schools" resname="careers_schools">
+				<source>Careers - Schools</source>
+			</trans-unit>
+			<trans-unit id="classes" resname="classes">
+				<source>Classes</source>
+			</trans-unit>
+			<trans-unit id="cnc_level" resname="cnc_level">
+				<source>CNC level</source>
+			</trans-unit>
+			<trans-unit id="deadline" resname="deadline">
+				<source>Deadline</source>
+			</trans-unit>
+			<trans-unit id="delivered_title" resname="delivered_title">
+				<source>Delivered title</source>
+			</trans-unit>
+			<trans-unit id="demand" resname="demand">
+				<source>Demand</source>
+			</trans-unit>
+			<trans-unit id="diploma" resname="diploma">
+				<source>Diploma</source>
+			</trans-unit>
+			<trans-unit id="diplomas" resname="diplomas">
+				<source>Diplomas</source>
+			</trans-unit>
+			<trans-unit id="domain" resname="domain">
+				<source>Domain</source>
+			</trans-unit>
+			<trans-unit id="domain_2" resname="domain_2">
+				<source>Domain (2)</source>
+			</trans-unit>
+			<trans-unit id="domains" resname="domains">
+				<source>Domains</source>
+			</trans-unit>
+			<trans-unit id="exam_date" resname="exam_date">
+				<source>Exam date</source>
+			</trans-unit>
+			<trans-unit id="external_id_on_orientation_ch" resname="external_id_on_orientation_ch">
+				<source>External ID on orientation.ch</source>
+			</trans-unit>
+			<trans-unit id="external_link_on_orientation_ch" resname="external_link_on_orientation_ch">
+				<source>Link to description of training at school (e.g. on orientation.ch)</source>
+			</trans-unit>
+			<trans-unit id="external_remarks" resname="external_remarks">
+				<source>External remarks</source>
+			</trans-unit>
+			<trans-unit id="female_name" resname="female_name">
+				<source>Female name</source>
+			</trans-unit>
+			<trans-unit id="formation" resname="formation">
+				<source>Formation</source>
+			</trans-unit>
+			<trans-unit id="formation_2" resname="formation_2">
+				<source>Formation (2)</source>
+			</trans-unit>
+			<trans-unit id="formation_descripction" resname="formation_descripction">
+				<source>Formation description</source>
+			</trans-unit>
+			<trans-unit id="former_names" resname="former_names">
+				<source>Former names</source>
+			</trans-unit>
+			<trans-unit id="hits" resname="hits">
+				<source>Hits</source>
+			</trans-unit>
+			<trans-unit id="im_domains" resname="im_domains">
+				<source>Jobs Info: Domains</source>
+			</trans-unit>
+			<trans-unit id="indemnities" resname="indemnities">
+				<source>Indemnities</source>
+			</trans-unit>
+			<trans-unit id="interests" resname="interests">
+				<source>Interests</source>
+			</trans-unit>
+			<trans-unit id="internal_remark" resname="internal_remark">
+				<source>Internal remark</source>
+			</trans-unit>
+			<trans-unit id="locations" resname="locations">
+				<source>Locations</source>
+			</trans-unit>
+			<trans-unit id="locations_2" resname="locations_2">
+				<source>Locations (2)</source>
+			</trans-unit>
+			<trans-unit id="male_name" resname="male_name">
+				<source>Male name</source>
+			</trans-unit>
+			<trans-unit id="name" resname="name">
+				<source>Name</source>
+			</trans-unit>
+			<trans-unit id="podcast_link" resname="podcast_link">
+				<source>Podcast link</source>
+			</trans-unit>
+			<trans-unit id="profession" resname="profession">
+				<source>Profession</source>
+			</trans-unit>
+			<trans-unit id="professions" resname="professions">
+				<source>Professions</source>
+			</trans-unit>
+			<trans-unit id="remarks" resname="remarks">
+				<source>Remarks</source>
+			</trans-unit>
+			<trans-unit id="remarks_2" resname="remarks_2">
+				<source>Remarks (2)</source>
+			</trans-unit>
+			<trans-unit id="results_page" resname="results_page">
+				<source>Results page</source>
+			</trans-unit>
+			<trans-unit id="subscription_deadline" resname="subscription_deadline">
+				<source>Subscription deadline</source>
+			</trans-unit>
+			<trans-unit id="subscriptions" resname="subscriptions">
+				<source>Subscriptions</source>
+			</trans-unit>
+			<trans-unit id="update_date" resname="update_date">
+				<source>Update date</source>
+			</trans-unit>
+			<trans-unit id="video_zoom" resname="video_zoom">
+				<source>Zoom video</source>
+			</trans-unit>
+		</body>
+	</file>
+</xliff>

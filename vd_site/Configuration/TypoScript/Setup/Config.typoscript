@@ -1,0 +1,37 @@
+config {
+  additionalHeaders {
+    100.header = Referrer-Policy: origin-when-cross-origin
+    110.header = Strict-Transport-Security: max-age=63072000; includeSubDomains
+  }
+  cache_period = 604800
+  contentObjectExceptionHandler = Vd\VdSite\ContentObject\Exception\ProductionExceptionHandler
+  contentObjectExceptionHandler.errorMessage = Désolé, nous rencontrons un problème d'affichage. Ce souci devrait être temporaire. Veuillez réessayer. Si cette erreur se répète veuillez envoyer un mail à <a href="javascript:linkTo_UnCryptMailto('qempxs.lipthiwoDzh2gl');">helpdesk(at)vd.ch</a><span class="d-none">Code: %s</span>
+  disablePrefixComment = 1
+  extTarget = {$styles.content.links.extTarget}
+  index_enable = 1
+  inlineStyle2TempFile = 1
+  removeDefaultJS = external
+  spamProtectEmailAddresses = 4
+  typolinkCheckRootline = 1
+  typolinkEnableLinksAcrossDomains = 1
+}
+
+##################################################
+
+[applicationContext matches '/^Development/']
+  config {
+    compressCss = 0
+    compressJs = 0
+    concatenateCss = 0
+    concatenateJs = 0
+  }
+[backend.user.isLoggedIn && traverse(request.getQueryParams(), 'no_cache') == 1]
+  config.no_cache = 1
+[traverse(page, 'uid') == {$pageNotFoundPageUid}]
+  config.additionalHeaders.10 {
+    header = Content-Type:text/html;charset=utf-8
+    httpResponseCode = 404
+  }
+[traverse(page, 'uid') in [1000894,1003350,1028453,2004813,2019269]]
+  config.cache_clearAtMidnight = 1
+[end]

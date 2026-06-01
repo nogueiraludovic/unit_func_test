@@ -1,0 +1,354 @@
+{
+	"openapi": "3.0.1",
+	"info": {
+		"title": "Egdws API",
+		"license": {
+			"name": "Apache 2.0",
+			"url": "http://springdoc.org"
+		},
+		"version": "v1"
+	},
+	"servers": [
+		{
+			"url": "http://localhost:9999/",
+			"description": "Server CO"
+		}
+	],
+	"paths": {
+		"/api/v1/permanences/": {
+			"get": {
+				"tags": [
+					"Permanences"
+				],
+				"summary": "Récupère toutes les permanences présentes et futures",
+				"operationId": "getAll",
+				"responses": {
+					"403": {
+						"description": "Accès interdit à la ressources"
+					},
+					"401": {
+						"description": "Information d'identification manquante ou incorrect"
+					},
+					"200": {
+						"description": "Les permanences présentes et futures",
+						"content": {
+							"*/*": {
+								"schema": {
+									"type": "array",
+									"items": {
+										"$ref": "#/components/schemas/Permanence"
+									}
+								}
+							}
+						}
+					}
+				}
+			}
+		},
+		"/api/v1/hello/{id}": {
+			"get": {
+				"tags": [
+					"Referentiels"
+				],
+				"summary": "Pour tester le webservice",
+				"operationId": "hello",
+				"parameters": [
+					{
+						"name": "id",
+						"in": "query",
+						"required": true,
+						"schema": {
+							"type": "string"
+						}
+					}
+				],
+				"responses": {
+					"200": {
+						"description": "Doit retourner 'hello world'",
+						"content": {
+							"*/*": {
+								"schema": {
+									"type": "string"
+								}
+							}
+						}
+					}
+				}
+			}
+		},
+		"/api/v1/avocats": {
+			"get": {
+				"tags": [
+					"Avocats"
+				],
+				"summary": "Récupère l'ensemble des avocats",
+				"operationId": "search",
+				"parameters": [
+					{
+						"name": "nom",
+						"in": "query",
+						"required": false,
+						"schema": {
+							"type": "string"
+						}
+					},
+					{
+						"name": "categorie",
+						"in": "query",
+						"required": false,
+						"schema": {
+							"type": "string"
+						}
+					},
+					{
+						"name": "lieu",
+						"in": "query",
+						"required": false,
+						"schema": {
+							"type": "string"
+						}
+					}
+				],
+				"responses": {
+					"403": {
+						"description": "Accès interdit à la ressources"
+					},
+					"401": {
+						"description": "Information d'identification manquante ou incorrect"
+					},
+					"200": {
+						"description": "l'ensemble des avocats",
+						"content": {
+							"*/*": {
+								"schema": {
+									"type": "array",
+									"items": {
+										"$ref": "#/components/schemas/Avocat"
+									}
+								}
+							}
+						}
+					}
+				}
+			}
+		},
+		"/api/v1/avocats/{id}": {
+			"get": {
+				"tags": [
+					"Avocats"
+				],
+				"summary": "Récupère les informations d'un Avocat par son ID",
+				"operationId": "getById",
+				"parameters": [
+					{
+						"name": "id",
+						"in": "path",
+						"required": true,
+						"schema": {
+							"type": "integer",
+							"format": "int64"
+						}
+					}
+				],
+				"responses": {
+					"403": {
+						"description": "Accès interdit à la ressources"
+					},
+					"401": {
+						"description": "Information d'identification manquante ou incorrect"
+					},
+					"404": {
+						"description": "Si aucun avocat ne correspond à l'ID fourni en paramètre",
+						"content": {
+							"*/*": {
+								"schema": {
+									"$ref": "#/components/schemas/Avocat"
+								}
+							}
+						}
+					},
+					"200": {
+						"description": "L'Avocat correspondant à l'ID fourni en paramètre",
+						"content": {
+							"*/*": {
+								"schema": {
+									"$ref": "#/components/schemas/Avocat"
+								}
+							}
+						}
+					}
+				}
+			}
+		},
+		"/api/v1/avocats/lieux": {
+			"get": {
+				"tags": [
+					"Avocats"
+				],
+				"summary": "Récupère l'ensemble des communes ou un avocat est présent",
+				"operationId": "getLieuxOfAvocats",
+				"responses": {
+					"403": {
+						"description": "Accès interdit à la ressources"
+					},
+					"401": {
+						"description": "Information d'identification manquante ou incorrect"
+					},
+					"200": {
+						"description": "liste de communes",
+						"content": {
+							"*/*": {
+								"schema": {
+									"type": "array",
+									"items": {
+										"type": "string"
+									}
+								}
+							}
+						}
+					}
+				}
+			}
+		},
+		"/api/v1/avocats/categories": {
+			"get": {
+				"tags": [
+					"Avocats"
+				],
+				"summary": "Récupère l'ensemble des communes ou un avocat est présent",
+				"operationId": "getCategorieOfAvocats",
+				"responses": {
+					"403": {
+						"description": "Accès interdit à la ressources"
+					},
+					"401": {
+						"description": "Information d'identification manquante ou incorrect"
+					},
+					"200": {
+						"description": "liste de catégories",
+						"content": {
+							"*/*": {
+								"schema": {
+									"type": "array",
+									"items": {
+										"type": "string"
+									}
+								}
+							}
+						}
+					}
+				}
+			}
+		}
+	},
+	"components": {
+		"schemas": {
+			"Intervenant": {
+				"type": "object",
+				"properties": {
+					"id": {
+						"type": "string"
+					},
+					"nom": {
+						"type": "string"
+					},
+					"prenom": {
+						"type": "string"
+					}
+				}
+			},
+			"Permanence": {
+				"type": "object",
+				"properties": {
+					"id": {
+						"type": "string"
+					},
+					"modificationDate": {
+						"type": "string",
+						"format": "date-time"
+					},
+					"startDate": {
+						"type": "string",
+						"format": "date-time"
+					},
+					"endDate": {
+						"type": "string",
+						"format": "date-time"
+					},
+					"magistrat": {
+						"$ref": "#/components/schemas/Intervenant"
+					},
+					"suppleant": {
+						"$ref": "#/components/schemas/Intervenant"
+					},
+					"section": {
+						"$ref": "#/components/schemas/Section"
+					}
+				}
+			},
+			"Section": {
+				"type": "object",
+				"properties": {
+					"libelleOfficePermanence": {
+						"type": "string"
+					}
+				}
+			},
+			"Avocat": {
+				"type": "object",
+				"properties": {
+					"id": {
+						"type": "integer",
+						"format": "int64"
+					},
+					"codeAvocat": {
+						"type": "integer",
+						"format": "int32"
+					},
+					"civilite": {
+						"type": "string"
+					},
+					"nom": {
+						"type": "string"
+					},
+					"prenom": {
+						"type": "string"
+					},
+					"titre": {
+						"type": "string"
+					},
+					"adresse1": {
+						"type": "string"
+					},
+					"adresse2": {
+						"type": "string"
+					},
+					"npa": {
+						"type": "string"
+					},
+					"lieu": {
+						"type": "string"
+					},
+					"telephone": {
+						"type": "string"
+					},
+					"telefax": {
+						"type": "string"
+					},
+					"email": {
+						"type": "string"
+					},
+					"categorieAvocat": {
+						"type": "string"
+					},
+					"dateInscrAuRegistre": {
+						"type": "string"
+					},
+					"dateAssermentation": {
+						"type": "string"
+					}
+				}
+			}
+		}
+	}
+}

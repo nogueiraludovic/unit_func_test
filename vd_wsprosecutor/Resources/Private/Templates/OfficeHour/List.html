@@ -1,0 +1,85 @@
+<html data-namespace-typo3-fluid="true" xmlns:f="http://typo3.org/ns/TYPO3/Fluid/ViewHelpers">
+    <f:layout name="List"/>
+    <f:section name="Content">
+        <h2><f:translate id="office_hours_table"/></h2>
+        <f:if condition="{officeHours}">
+            <f:then>
+                <f:if condition="{settings.pagination.enable}">
+                    <f:then>
+                        <f:if condition="{settings.pagination.insertAbove}">
+                            <f:render arguments="{pagination: pagination, paginator: paginator, recordUid: contentData.uid}" partial="Pagination/{paginationPartial}"/>
+                        </f:if>
+                        <f:render arguments="{officeHours: paginator.paginatedItems, officeHoursCount: officeHoursCount, recordUid: contentData.uid}" section="OfficeHourTable"/>
+                        <f:if condition="{settings.pagination.insertBelow}">
+                            <f:render arguments="{pagination: pagination, paginator: paginator, recordUid: contentData.uid}" partial="Pagination/{paginationPartial}"/>
+                        </f:if>
+                    </f:then>
+                    <f:else>
+                        <f:render arguments="{officeHours: officeHours, officeHoursCount: officeHoursCount, recordUid: contentData.uid}" section="OfficeHourTable"/>
+                    </f:else>
+                </f:if>
+            </f:then>
+            <f:else>
+                <p class="alert alert-info"><f:translate id="no_office_hour"/></p>
+            </f:else>
+        </f:if>
+    </f:section>
+    <f:section name="OfficeHourField">
+        <f:if condition="{field}">
+            <f:then>{field}</f:then>
+            <f:else>-</f:else>
+        </f:if>
+    </f:section>
+    <f:section name="OfficeHourTable">
+        <div class="table-responsive">
+            <p>
+                <f:if condition="{officeHoursCount} > 1">
+                    <f:then>
+                        <f:translate arguments="{0: officeHoursCount}" id="results_founded"/>
+                    </f:then>
+                    <f:else>
+                        <f:translate id="result_founded"/>
+                    </f:else>
+                </f:if>
+            </p>
+            <table class="table table-bordered table-hover table-striped" data-sortable="{recordUid}">
+                <thead class="table-dark">
+                    <tr>
+                        <th colspan="2" data-sort-default="1" data-sort-column-key="start-shift" data-sort-method="date" scope="col"><f:translate id="start_shift"/></th>
+                        <th colspan="2" data-sort-column-key="end-shift" data-sort-method="date" scope="col"><f:translate id="end_shift"/></th>
+                        <th data-sort-column-key="office" scope="col"><f:translate id="office"/></th>
+                        <th data-sort-column-key="magistrate" scope="col"><f:translate id="magistrate"/></th>
+                        <th data-sort-column-key="substitute" scope="col"><f:translate id="substitute"/></th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <f:for as="officeHour" each="{officeHours}">
+                        <tr>
+                            <td data-sort="{officeHour.start_shift}" data-sort-column-key="start-shift">
+                                <f:render arguments="{field: officeHour.start_shift_date_hour}" section="OfficeHourField"/>
+                            </td>
+                            <td data-sort="{officeHour.start_shift}" data-sort-column-key="start-shift">
+                                <f:render arguments="{field: officeHour.start_shift_day}" section="OfficeHourField"/>
+                            </td>
+                            <td data-sort="{officeHour.end_shift}" data-sort-column-key="end-shift">
+                                <f:render arguments="{field: officeHour.end_shift_date_hour}" section="OfficeHourField"/>
+                            </td>
+                            <td data-sort="{officeHour.end_shift}" data-sort-column-key="end-shift">
+                                <f:render arguments="{field: officeHour.end_shift_day}" section="OfficeHourField"/>
+                            </td>
+                            <td data-sort-column-key="office">
+                                <f:render arguments="{field: officeHour.office}" section="OfficeHourField"/>
+                            </td>
+                            <td data-sort-column-key="magistrate">
+                                <f:render arguments="{field: officeHour.magistrate_name}" section="OfficeHourField"/>
+                            </td>
+                            <td data-sort-column-key="substitute">
+                                <f:render arguments="{field: officeHour.substitute_name}" section="OfficeHourField"/>
+                            </td>
+                        </tr>
+                    </f:for>
+                </tbody>
+            </table>
+        </div>
+    </f:section>
+</html>

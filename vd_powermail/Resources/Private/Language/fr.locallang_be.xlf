@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xliff version="1.2" xmlns="urn:oasis:names:tc:xliff:document:1.2">
+	<file datatype="plaintext" original="EXT:vd_powermail/Resources/Private/Language/locallang_be.xlf" source-language="en" target-language="fr">
+		<header/>
+		<body>
+			<trans-unit id="become_curator" resname="become_curator">
+				<source>Become curator</source>
+				<target state="translated">Devenir curateur</target>
+			</trans-unit>
+			<trans-unit id="error_text" resname="error_text">
+				<source>Error text</source>
+				<target state="translated">Texte d'erreur</target>
+			</trans-unit>
+			<trans-unit id="help_text" resname="help_text">
+				<source>Help text</source>
+				<target state="translated">Texte d'aide</target>
+			</trans-unit>
+		</body>
+	</file>
+</xliff>

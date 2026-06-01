@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xliff version="1.2" xmlns="urn:oasis:names:tc:xliff:document:1.2">
+	<file datatype="plaintext" original="EXT:vd_publications_cg/Resources/Private/Language/locallang.xlf" source-language="en">
+		<header/>
+		<body>
+			<trans-unit id="creation_date" resname="creation_date">
+				<source>Creation date</source>
+			</trans-unit>
+			<trans-unit id="files" resname="files">
+				<source>Files</source>
+			</trans-unit>
+			<trans-unit id="last_update_date" resname="last_update_date">
+				<source>Last update date</source>
+			</trans-unit>
+			<trans-unit id="standard_number" resname="standard_number">
+				<source>DCG standards n° %s</source>
+			</trans-unit>
+			<trans-unit id="title" resname="title">
+				<source>Title</source>
+			</trans-unit>
+		</body>
+	</file>
+</xliff>

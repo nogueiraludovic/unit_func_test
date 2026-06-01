@@ -1,0 +1,30 @@
+<html data-namespace-typo3-fluid="true" xmlns:f="http://typo3.org/ns/fluid/ViewHelpers" xmlns:vds="http://typo3.org/ns/Vd/VdSafarinet/ViewHelpers">
+    <f:layout/>
+    <f:section name="Main">
+        <f:if condition="{meeting.documents.document}">
+            <f:for as="document" each="{meeting.documents.document -> vds:format.toArrayList()}">
+                <f:if condition="{document.type} == 'PV GC'">
+                    <h3><vds:document document="{document}"/></h3>
+                </f:if>
+            </f:for>
+        </f:if>
+        <f:if condition="{meeting.introduction}">
+            <f:format.raw>{meeting.introduction}</f:format.raw>
+        </f:if>
+        <f:if condition="{meeting.points.item}">
+            <f:for as="point" each="{meeting.points.item -> vds:format.toArrayList()}">
+               <div class="mb-4">
+                   <f:format.raw><vds:link meetingGcId="{meeting.id}" text="{point.intitule}"/></f:format.raw>
+               </div>
+            </f:for>
+        </f:if>
+        <f:if condition="{meeting.signature}">
+            <div class="mt-5">
+                <p class="mb-2">{meeting.signature}</p>
+            </div>
+        </f:if>
+        <f:if condition="{meeting.dateModification}">
+            <p>{meeting.dateModification -> f:format.date(format: '%d %B %Y')}</p>
+        </f:if>
+    </f:section>
+</html>

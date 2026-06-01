@@ -1,0 +1,1 @@
+plugin.tx_solr.index.queue.pages.fields.boost_textS = solr_boost

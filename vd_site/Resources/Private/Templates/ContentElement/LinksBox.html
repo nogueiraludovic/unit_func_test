@@ -1,0 +1,71 @@
+<html data-namespace-typo3-fluid="true" xmlns:f="http://typo3.org/ns/fluid/ViewHelpers">
+    <f:layout/>
+    <f:section name="Header"/>
+    <f:section name="Main">
+        <f:switch expression="{data.layout}">
+            <f:case value="light">
+                <f:variable name="backgroundColor" value="bg-light"/>
+                <f:variable name="borderColor" value="border-dark"/>
+            </f:case>
+            <f:case value="primary">
+                <f:variable name="backgroundColor" value="bg-primary-lighter"/>
+                <f:variable name="borderColor" value="border-primary-dark"/>
+            </f:case>
+            <f:case value="secondary">
+                <f:variable name="backgroundColor" value="bg-secondary-lighter"/>
+                <f:variable name="borderColor" value="border-secondary-dark"/>
+            </f:case>
+            <f:case value="tertiary">
+                <f:variable name="backgroundColor" value="bg-tertiary-lighter"/>
+                <f:variable name="borderColor" value="border-tertiary-dark"/>
+            </f:case>
+            <f:defaultCase>
+                <f:variable name="backgroundColor" value="bg-white"/>
+                <f:variable name="borderColor" value="border-dark"/>
+            </f:defaultCase>
+        </f:switch>
+        <div class="{backgroundColor} p-4 text-black">
+            <f:if condition="{data.header}">
+                <h3 class="mb-4 mt-0 text-inherit">{data.header}</h3>
+            </f:if>
+            <f:if condition="{links}">
+                <ul class="d-flex flex-column list-unstyled">
+                    <f:for as="link" each="{links}">
+                        <li class="text-inherit">
+                            <f:switch expression="{data.type}">
+                                <f:case value="news">
+                                    <f:render arguments="{borderColor: borderColor, link: link}" partial="LinksBox/News"/>
+                                </f:case>
+                                <f:case value="press_releases">
+                                    <f:render arguments="{borderColor: borderColor, link: link}" partial="LinksBox/PressRelease"/>
+                                </f:case>
+                                <f:case value="records">
+                                    <f:if condition="{link.data.table} == 'tx_news_domain_model_news'">
+                                        <f:then>
+                                            <f:render arguments="{borderColor: borderColor, link: link}" partial="LinksBox/News"/>
+                                        </f:then>
+                                        <f:else if="{link.data.table} == 'tx_vdpressreleases_domain_model_pressrelease'">
+                                            <f:render arguments="{borderColor: borderColor, link: link}" partial="LinksBox/PressRelease"/>
+                                        </f:else>
+                                        <f:else if="{link.data.table} == tx_vdprestations_domain_model_prestation">
+                                            <f:render arguments="{borderColor: borderColor, link: link}" partial="LinksBox/Service"/>
+                                        </f:else>
+                                    </f:if>
+                                </f:case>
+                                <f:case value="services">
+                                    <f:render arguments="{borderColor: borderColor, link: link}" partial="LinksBox/Service"/>
+                                </f:case>
+                                <f:defaultCase>
+                                    <f:link.typolink additionalAttributes="{id: 'link-{link.data.uid}'}" class="align-items-center border-bottom border-1 {borderColor} col-12 d-flex justify-content-between mb-4 pb-3 text-decoration-none text-inherit" parameter="{link.data.uri}">
+                                        {link.data.title} <span aria-hidden="true" class="fa-chevron-right fa-solid"></span>
+                                    </f:link.typolink>
+                                </f:defaultCase>
+                            </f:switch>
+                        </li>
+                    </f:for>
+                </ul>
+            </f:if>
+            <f:render arguments="{data: data}" partial="ContentElementLink"/>
+        </div>
+    </f:section>
+</html>

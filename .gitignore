@@ -1,1 +1,49 @@
-vd_climate_policy/node_modules/
+# phpStorm
+/.idea
+*.iml
+
+# php-cs-fixer
+.php-cs-fixer.cache
+
+# VS code
+/.vscode
+
+# Mac OSX files
+.DS_Store
+
+# Build directory
+/.build
+
+# dev
+.ddev/addon-metadata
+.ddev/commands
+.ddev/docker-compose.phpmyadmin.yaml
+.ddev/docker-compose.phpmyadmin_norouter.yaml
+.ddev/homeadditions
+.ddev/providers
+.ddev/web-build/*
+!.ddev/web-build/typo3.cron
+.ddev/xhprof
+.sass-cache
+/_ignore
+node_modules/
+npm-debug.log
+yarn-error.log
+
+# TYPO3
+.phpunit.cache/
+.phpunit.result.cache
+/var
+/vendor
+/htdocs/index.php
+/htdocs/typo3temp
+/htdocs/typo3conf
+/htdocs/typo3
+/htdocs/uploads
+/htdocs/fileadmin
+/repos
+/.env
+/auth.json
+
+# Xdebug profiling
+/profiling

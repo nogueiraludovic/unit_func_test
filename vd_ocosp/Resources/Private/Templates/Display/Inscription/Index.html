@@ -1,0 +1,91 @@
+<html data-namespace-typo3-fluid="true" xmlns:f="http://typo3.org/ns/TYPO3/CMS/Fluid/ViewHelpers" xmlns:vd="http://typo3.org/ns/Vd/VdOcosp/ViewHelpers">
+    <f:layout/>
+    <f:section name="main">
+        <f:form class="mb-1" method="post" name="search">
+            <fieldset>
+                <legend><f:translate id="LLL:EXT:vd_ocosp/Resources/Private/Language/locallang_frontend.xlf:title.delais.search"/></legend>
+                <div class="mb-3 row">
+                    <div class="col-md-6">
+                        <label class="form-label">
+                            <f:translate id="LLL:EXT:vd_ocosp/Resources/Private/Language/locallang_frontend.xlf:label.ecole_entreprise_assoc"/>
+                        </label>
+                        <f:form.textfield class="form-control" name="school" value="{school}"/>
+                    </div>
+                    <div class="col-md-6">
+                        <label class="form-label">
+                            <f:translate id="LLL:EXT:vd_ocosp/Resources/Private/Language/locallang_frontend.xlf:label.formation"/>
+                        </label>
+                        <f:form.textfield class="form-control" name="training" value="{training}"/>
+                    </div>
+                </div>
+            </fieldset>
+            <button class="btn btn-dark btn-sm mb-3 mb-sm-0 me-1" id="search-delais-button" type="submit">
+                <f:translate id="LLL:EXT:vd_ocosp/Resources/Private/Language/locallang_frontend.xlf:submit_button_label"/>
+            </button>
+            <f:link.action action="index" class="btn btn-secondary btn-sm mb-3 mb-sm-0" id="cancel-button">
+                <f:translate id="LLL:EXT:vd_ocosp/Resources/Private/Language/locallang_frontend.xlf:cancel_button_label"/>
+            </f:link.action>
+        </f:form>
+        <f:if condition="{inscriptions -> f:count()}">
+            <f:then>
+                <div class="table-responsive">
+                    <table class="mt-5 table table-striped">
+                        <thead>
+                            <tr>
+                                <th><f:translate id="LLL:EXT:vd_ocosp/Resources/Private/Language/locallang_frontend.xlf:label.formation"/></th>
+                                <th><f:translate id="LLL:EXT:vd_ocosp/Resources/Private/Language/locallang_frontend.xlf:label.ecole_entreprise_association"/></th>
+                                <th><f:translate id="LLL:EXT:vd_ocosp/Resources/Private/Language/locallang_frontend.xlf:label.inscription"/></th>
+                                <th><f:translate id="LLL:EXT:vd_ocosp/Resources/Private/Language/locallang_frontend.xlf:label.date_examen"/></th>
+                                <th><f:translate id="LLL:EXT:vd_ocosp/Resources/Private/Language/locallang_frontend.xlf:label.pdf"/></th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <f:for as="inscription" each="{inscriptions}">
+                                <tr>
+                                    <td>{inscription.formation}</td>
+                                    <td>
+                                        <f:variable name="adresse">{inscription.adresse}</f:variable>
+                                        <f:if condition="{adresse.siteWeb}">
+                                            <f:then>
+                                                <f:link.external id="address-website-link" uri="{adresse.siteWeb}">{adresse.nom}</f:link.external>
+                                                <br/>
+                                            </f:then>
+                                            <f:else>
+                                                {adresse.nom}
+                                                <br/>
+                                            </f:else>
+                                        </f:if>
+                                    </td>
+                                    <td>
+                                        <vd:wiki parseLinks="true"><f:format.raw>{inscription.delaiInscription}</f:format.raw></vd:wiki>
+                                    </td>
+                                    <td>
+                                        <vd:wiki parseLinks="true"><f:format.raw>{inscription.dateExamen}</f:format.raw></vd:wiki>
+                                    </td>
+                                    <td>
+                                        <f:if condition="{inscription.urlExad}">
+                                            <f:for as="urlExad" each="{inscription.urlExad}">
+                                                <f:if condition="{urlExad.originalResource}">
+                                                    <f:link.typolink additionalAttributes="{id: 'subscription-public-url-link'}" parameter="{urlExad.originalResource.publicUrl}">
+                                                        <f:translate id="LLL:EXT:vd_ocosp/Resources/Private/Language/locallang_frontend.xlf:label.download_pdf"/>
+                                                    </f:link.typolink>
+                                                </f:if>
+                                            </f:for>
+                                        </f:if>
+                                    </td>
+                                </tr>
+                            </f:for>
+                        </tbody>
+                    </table>
+                </div>
+            </f:then>
+            <f:else>
+                <f:if condition="{vd:hasFilter(domain: domain, school: school, training: training)}">
+                    <div class="alert alert-info mt-5">
+                        <f:translate id="LLL:EXT:vd_ocosp/Resources/Private/Language/locallang_frontend.xlf:label.search.none"/>
+                    </div>
+                </f:if>
+            </f:else>
+        </f:if>
+    </f:section>
+</html>

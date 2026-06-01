@@ -1,0 +1,8 @@
+"tx_vdmunicipalities_districts",,,,,,,,,
+,"uid","pid","deleted","id_district","name",,,
+,1,0,0,1,"Aigle",,,
+,2,0,0,2,"Broye-Vully",,,
+"tx_vdmunicipalities_municipalities",,,,,,,,
+,"uid","pid","deleted","id_district","name_lower","localites","npa"
+,1,1,0,1,"bern","Bern",3000
+,2,1,0,2,"zurich","Zürich",8000

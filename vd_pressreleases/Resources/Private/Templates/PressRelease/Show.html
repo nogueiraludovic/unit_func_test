@@ -1,0 +1,171 @@
+<html data-namespace-typo3-fluid="true" xmlns:f="http://typo3.org/ns/fluid/ViewHelpers" xmlns:vdp="http://typo3.org/ns/Vd/VdPressreleases/ViewHelpers">
+    <f:layout/>
+    <f:section name="Content">
+        <div class="container">
+            <div class="row">
+                <article class="col-md-8 vd-content-column">
+                    <header class="d-flex flex-column">
+                        <h1 class="h2 mt-0 order-2 px-4 py-4 vd-bg-pattern-bars-gray" id="page-title">{pressRelease.title}</h1>
+                        <div class="order-1">
+                            <p class="fw-bold mb-0 small text-uppercase">{pressRelease.type.title}</p>
+                            <f:if condition="{pressRelease.source}">
+                                <p class="mb-0 small">{pressRelease.source}</p>
+                            </f:if>
+                            <p class="fw-bold small">{f:translate(id: 'published_on')} {pressRelease.dateTime -> f:format.date(format: '%d %B %Y')}</p>
+                            <f:if condition="{pressRelease.partnerSources -> f:count()} <= 3}">
+                                <f:render arguments="{partnerSources: pressRelease.partnerSources}" section="Partners"/>
+                            </f:if>
+                            <f:if condition="{pressRelease.subtitle}">
+                                <p class="mb-0 text-uppercase">{pressRelease.subtitle}</p>
+                            </f:if>
+                        </div>
+                    </header>
+                    <f:if condition="{pressRelease.summary}">
+                        <div class="lead">
+                            <f:format.html>{pressRelease.summary}</f:format.html>
+                        </div>
+                    </f:if>
+                    <f:if condition="{pressRelease.bodyText}">
+                        <f:format.html>{pressRelease.bodyText}</f:format.html>
+                    </f:if>
+                    <f:if condition="{pressRelease.additionalText}">
+                        <aside class="vd-content-column">
+                            <div class="bg-light d-flex flex-column mb-4 mt-5 pb-3 pt-4 px-5 text-bg-light">
+                                <f:format.html>{pressRelease.additionalText}</f:format.html>
+                            </div>
+                        </aside>
+                    </f:if>
+                    <f:if condition="{pressRelease.signature}">
+                        <p class="mb-5 small text-xs-end">{pressRelease.signature}</p>
+                    </f:if>
+                    <f:if condition="{pressRelease.partnerSources -> f:count()} > 3">
+                        <f:render arguments="{partnerSources: pressRelease.partnerSources}" section="Partners"/>
+                    </f:if>
+                    <f:if condition="{pressRelease.contacts}">
+                        <h3 class="h5"><f:translate id="information"/></h3>
+                        <ul class="list-unstyled">
+                            <f:for as="contact" each="{pressRelease.contacts}">
+                                <li class="mb-0">{vdp:contact(contact: contact, pressRelease: pressRelease)}</li>
+                            </f:for>
+                        </ul>
+                    </f:if>
+                    <aside class="mb-5">
+                        <h2 class="visually-hidden" id="pdf-version-title">Version PDF</h2>
+                        <a class="btn btn-link ps-0" href="{f:if(condition: pressRelease.forcedpdfFile.0, else: pdf, then: pressRelease.forcedpdfFile.0.originalResource.publicUrl)}" id="pdf-link">
+                            <f:translate id="pdf_version"/>
+                        </a>
+                        <f:if condition="{pressRelease.additionalContents} || {pressRelease.files} || {pressRelease.images} || {pressRelease.publidocFiles} || {pressRelease.videos}">
+                            <h2 class="h5" id="annexes-title"><f:translate id="annexes"/></h2>
+                            <f:if condition="{pressRelease.videos}">
+                                <h3 class="h6"><f:translate id="videos"/></h3>
+                                <div class="row">
+                                    <f:for as="video" each="{pressRelease.videos}">
+                                        <figure class="col-xl-6 figure">
+                                            <div class="ratio ratio-16x9">
+                                                <f:media file="{video}" title="{video.originalResource.title}"/>
+                                            </div>
+                                            <f:if condition="{video.originalResource.description}">
+                                                <figcaption class="figure-caption">
+                                                    {video.originalResource.description -> f:format.stripTags() -> f:format.nl2br()}
+                                                </figcaption>
+                                            </f:if>
+                                        </figure>
+                                    </f:for>
+                                </div>
+                            </f:if>
+                            <f:if condition="{pressRelease.images}">
+                                <h3 class="h6"><f:translate id="images"/></h3>
+                                <ul class="list-unstyled row">
+                                    <f:for as="image" each="{pressRelease.images}" iteration="iterator">
+                                        <f:if condition="{image.originalResource.title} == ''">
+                                            <f:then>
+                                                <f:variable name="imageName" value="{image.originalResource.originalFile.name}"/>
+                                            </f:then>
+                                            <f:else>
+                                                <f:variable name="imageName" value="{image.originalResource.title}"/>
+                                            </f:else>
+                                        </f:if>
+                                        <li class="col-md-4 col-xs-6">
+                                            <figure class="figure">
+                                                <a href="{image.originalResource.publicUrl}" id="image-original-link-{iterator.index}">
+                                                    <f:image alt="{image.originalResource.alternative}" class="img-fluid" image="{image}" loading="lazy" maxWidth="290" title="{imageName}"/>
+                                                    <f:if condition="{image.originalResource.description}">
+                                                        <figcaption class="figure-caption">
+                                                            {image.originalResource.description -> f:format.stripTags() -> f:format.nl2br()}
+                                                        </figcaption>
+                                                    </f:if>
+                                                </a>
+                                            </figure>
+                                        </li>
+                                    </f:for>
+                                </ul>
+                            </f:if>
+                            <f:if condition="{pressRelease.files}">
+                                <h3 class="h6"><f:translate id="files"/></h3>
+                                <ul class="list-unstyled">
+                                    <f:for as="file" each="{pressRelease.files}" iteration="iterator">
+                                        <f:if condition="{file.originalResource.title} == ''">
+                                            <f:then>
+                                                <f:variable name="fileName" value="{file.originalResource.originalFile.name}"/>
+                                            </f:then>
+                                            <f:else>
+                                                <f:variable name="fileName" value="{file.originalResource.title}"/>
+                                            </f:else>
+                                        </f:if>
+                                        <li class="d-xs-flex mb-3 position-relative">
+                                            <f:image alt="{file.originalResource.alternative}" class="border border-5 me-3 img-fluid" image="{file}" loading="lazy" maxWidth="100" title="{fileName}"/>
+                                            <a class="stretched-link text-break" href="{file.originalResource.publicUrl}" id="file-original-link-{iterator.index}">
+                                                {fileName} ({file.originalResource.extension -> f:format.case(mode: 'upper')})
+                                            </a>
+                                        </li>
+                                    </f:for>
+                                </ul>
+                            </f:if>
+                            <f:if condition="{pressRelease.additionalContents} || {pressRelease.publidocFiles}">
+                                <h3 class="h5"><f:translate id="links"/></h3>
+                                <ul class="mb-1 vd-list-links">
+                                    <f:for as="additionalContent" each="{pressRelease.additionalContents}">
+                                        <li><f:render arguments="{link: additionalContent}" section="Link"/></li>
+                                    </f:for>
+                                    <f:for as="publidocFile" each="{pressRelease.publidocFiles}">
+                                        <li><f:render arguments="{link: publidocFile}" section="Link"/></li>
+                                    </f:for>
+                                </ul>
+                            </f:if>
+                        </f:if>
+                    </aside>
+                    <nav>
+                        <f:link.page class="btn btn-dark" id="back-link" pageUid="2000111" title="Retour sur la liste des communiqués">
+                            <f:translate id="back"/>
+                        </f:link.page>
+                    </nav>
+                </article>
+                <div class="col-md-4 vd-content-column vd-text-md-small">
+                    <f:cObject typoscriptObjectPath="lib.rightContent"/>
+                </div>
+            </div>
+        </div>
+    </f:section>
+    <f:section name="Link">
+        <f:if condition="{link.title}">
+            <f:then>
+                <f:link.typolink additionalAttributes="{id: 'press-release-link'}" parameter="{link.url}">{link.title}</f:link.typolink>
+            </f:then>
+            <f:else>
+                <f:link.typolink additionalAttributes="{id: 'press-release-link'}" parameter="{link.url}"/>
+            </f:else>
+        </f:if>
+    </f:section>
+    <f:section name="Partners">
+        <h2 class="visually-hidden" id="partners-list"><f:translate id="partners"/></h2>
+        <ul class="list-inline">
+            <f:for as="partnerSource" each="{partnerSources}">
+                <f:if condition="{partnerSource.logo}">
+                    <li class="list-inline-item">
+                        <f:image alt="{partnerSource.logo.alternative}" class="img-desaturate" image="{partnerSource.logo}" loading="lazy" maxHeight="75" maxWidth="150" title="{partnerSource.logo.title}"/>
+                    </li>
+                </f:if>
+            </f:for>
+        </ul>
+    </f:section>
+</html>

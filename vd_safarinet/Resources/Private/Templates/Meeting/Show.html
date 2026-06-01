@@ -1,0 +1,9 @@
+<html data-namespace-typo3-fluid="true" xmlns:f="http://typo3.org/ns/fluid/ViewHelpers" xmlns:vds="http://typo3.org/ns/Vd/VdSafarinet/ViewHelpers">
+    <f:layout/>
+    <f:section name="Main">
+        <f:for as="decision" each="{meeting.decisions.decision -> vds:format.toArrayList()}">
+            <f:render arguments="{decision: decision, pageUid: pageUid}" partial="Meeting/Decision"/>
+            <p class="mb-5 mt-1"><f:render partial="GoToTop"/></p>
+        </f:for>
+    </f:section>
+</html>

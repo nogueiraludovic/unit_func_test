@@ -1,0 +1,10 @@
+options.disableDelete = 1
+
+##################################################
+
+setup.override {
+  copyLevels = 1
+  edit_RTE = 1
+  lang = fr
+  titleLen = 250
+}

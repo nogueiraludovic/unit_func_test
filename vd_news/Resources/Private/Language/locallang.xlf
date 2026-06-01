@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xliff version="1.2" xmlns="urn:oasis:names:tc:xliff:document:1.2">
+	<file datatype="plaintext" original="EXT:vd_news/Resources/Private/Language/locallang.xlf" source-language="en">
+		<header/>
+		<body>
+			<trans-unit id="and" resname="and">
+				<source>and</source>
+			</trans-unit>
+			<trans-unit id="category" resname="category">
+				<source>Category: </source>
+			</trans-unit>
+			<trans-unit id="downloads" resname="downloads">
+				<source>Downloads</source>
+			</trans-unit>
+			<trans-unit id="from" resname="from">
+				<source>from</source>
+			</trans-unit>
+			<trans-unit id="images" resname="images">
+				<source>Images</source>
+			</trans-unit>
+			<trans-unit id="links" resname="links">
+				<source>Links</source>
+			</trans-unit>
+			<trans-unit id="medias" resname="medias">
+				<source>Medias</source>
+			</trans-unit>
+			<trans-unit id="news_list" resname="news_list">
+				<source>News list</source>
+			</trans-unit>
+			<trans-unit id="no_news" resname="no_news">
+				<source>No news for the moment.</source>
+			</trans-unit>
+			<trans-unit id="no_upcoming_event" resname="no_upcoming_event">
+				<source>No upcoming event.</source>
+			</trans-unit>
+			<trans-unit id="published_on" resname="published_on">
+				<source><![CDATA[<span class="visually-hidden">Published on</span> %s]]></source>
+			</trans-unit>
+			<trans-unit id="read_more" resname="read_more">
+				<source><![CDATA[Read the rest <span class="visually-hidden">of the article "%s"</span>]]></source>
+			</trans-unit>
+			<trans-unit id="related_news" resname="related_news-news">
+				<source>Related news</source>
+			</trans-unit>
+			<trans-unit id="share_this_news" resname="share_this_news">
+				<source>Share this news</source>
+			</trans-unit>
+			<trans-unit id="to" resname="to">
+				<source>to</source>
+			</trans-unit>
+		</body>
+	</file>
+</xliff>

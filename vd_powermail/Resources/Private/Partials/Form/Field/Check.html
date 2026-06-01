@@ -1,0 +1,15 @@
+<html data-namespace-typo3-fluid="true" xmlns:f="http://typo3.org/ns/TYPO3/CMS/Fluid/ViewHelpers" xmlns:p="http://typo3.org/ns/In2code/Powermail/ViewHelpers">
+    <div class="mb-3{p:Validation.ErrorClass(field: field, class: ' vd-form-group-danger')}">
+        <p class="mb-2"><p:string.escapeLabels>{field.title}</p:string.escapeLabels><f:if condition="!{field.mandatory}"> (facultatif)</f:if></p>
+        <f:render arguments="{errorText: field.errorText, marker: field.marker}" partial="Form/Error/FieldError"/>
+        <f:render arguments="{helpText: field.helpText}" partial="Form/HelpText"/>
+        <f:for as="setting" each="{field.modifiedSettings}" iteration="iterator">
+            <div class="form-check">
+                <f:form.checkbox additionalAttributes="{p:Validation.ValidationDataAttribute(field:field, iteration: iterator)}" checked="{p:Misc.PrefillMultiField(cycle: iterator.cycle, field: field, mail: mail)}" class="form-check-input" id="{field.marker}-{iterator.cycle}" property="{field.marker}." value="{setting.value}"/>
+                <label class="form-check-label" for="{field.marker}-{iterator.cycle}">
+                    <p:string.escapeLabels>{setting.label}</p:string.escapeLabels>
+                </label>
+            </div>
+        </f:for>
+    </div>
+</html>

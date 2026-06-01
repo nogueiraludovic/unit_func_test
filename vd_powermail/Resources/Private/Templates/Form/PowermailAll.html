@@ -1,0 +1,55 @@
+<html data-namespace-typo3-fluid="true" xmlns:f="http://typo3.org/ns/TYPO3/CMS/Fluid/ViewHelpers" xmlns:p="http://typo3.org/ns/In2code/Powermail/ViewHelpers">
+    <f:layout name="PowermailAll"/>
+    <f:section name="answer">
+        <f:if condition="{p:Condition.isNotExcludedFromPowermailAll(answer: answer, settings: settings, type: type)}">
+            <f:if condition="{settings.misc.showOnlyFilledValues}">
+                <f:then>
+                    <f:if condition="{p:Condition.IsNotEmpty(val: '{answer.value}')}">
+                        <f:render  arguments="{_all}"partial="PowermailAll/{section -> f:format.case(mode: 'capital')}"/>
+                    </f:if>
+                </f:then>
+                <f:else>
+                    <f:render arguments="{_all}" partial="PowermailAll/{section -> f:format.case(mode: 'capital')}"/>
+                </f:else>
+            </f:if>
+        </f:if>
+    </f:section>
+    <f:section name="mail">
+        <f:if condition="{mail.form.pages -> f:count()} > 1">
+            <f:then>
+                <f:groupedFor as="pages" each="{mail.answers}" groupBy="field.pages.title" groupKey="pageTitle">
+                    <h2 class="h3">{pageTitle}</h2>
+                    <table>
+                        <f:for as="answer" each="{pages}">
+                            <f:render arguments="{_all}" section="answer"/>
+                        </f:for>
+                    </table>
+                </f:groupedFor>
+            </f:then>
+            <f:else>
+                <table>
+                    <f:for as="answer" each="{mail.answers}">
+                        <f:render arguments="{_all}" section="answer"/>
+                    </f:for>
+                </table>
+            </f:else>
+        </f:if>
+    </f:section>
+    <f:section name="web">
+        <f:if condition="{mail.form.pages -> f:count()} > 1">
+            <f:then>
+                <f:groupedFor as="pages" each="{mail.answers}" groupBy="field.pages.title" groupKey="pageTitle">
+                    <h2 class="h3">{pageTitle}</h2>
+                    <f:for as="answer" each="{pages}">
+                        <f:render arguments="{_all}" section="answer"/>
+                    </f:for>
+                </f:groupedFor>
+            </f:then>
+            <f:else>
+                <f:for as="answer" each="{mail.answers}">
+                    <f:render arguments="{_all}" section="answer"/>
+                </f:for>
+            </f:else>
+        </f:if>
+    </f:section>
+</html>

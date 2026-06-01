@@ -1,0 +1,100 @@
+config.recordLinks {
+  news_category.typolink {
+    additionalParams {
+      data = field:uid
+      wrap = &tx_solr[filter][0]=category:|
+    }
+    parameter = {$newsListPageUid}
+    useCacheHash = 1
+  }
+  news < .news_category
+  news.typolink {
+    additionalParams.wrap = &tx_vdnews_pi1[action]=detail&tx_vdnews_pi1[controller]=News&tx_vdnews_pi1[news]=|
+    parameter = {$newsDefaultDetailPageUid}
+  }
+}
+
+##################################################
+
+page.10.dataProcessing.1686031450 = Vd\VdNews\DataProcessing\NewsProcessor
+
+##################################################
+
+plugin {
+  tx_news {
+    _LOCAL_LANG.default {
+      dateFormat = %d.%m.%Y
+      list_noagendafound = Aucun événement à venir.
+      list_nonewsfound = Aucune actualité pour le moment.
+      more-link = plus d'info
+      paginate_next = Page suivante
+      paginate_previous = Page précédente
+      published-on = Publié le
+      related-files = Téléchargements
+      related-images = Images
+      related-links = Liens
+      related-medias = Médias
+      related-news = Actualités associées
+      search-field = Champ de recherche
+      search-news = Rechercher dans les actualités
+      search-noresult = Aucune actualité ne correspond à ces critères de recherche.
+      search-start = Rechercher
+      search-subject = Recherche
+      share = Partager
+      share_this_news = Partager cette actualité
+    }
+    settings {
+      defaultDetailPid = {$newsDefaultDetailPageUid}
+      detail.errorHandling = pageNotFoundHandler
+      detailPid = {$newsDefaultDetailPageUid}
+      displayDummyIfNoMedia = 0
+      listPid = {$newsListPageUid}
+      opengraph {
+        site_name = {$siteTitle}
+        twitter.site = @EtatdeVaud
+      }
+      overrideFlexformSettingsIfEmpty := addToList(detailPid)
+      startingpoint = 28405
+    }
+    view {
+      layoutRootPaths.10 = EXT:vd_news/Resources/Private/Layouts/
+      partialRootPaths {
+        10 = EXT:vd_core/Resources/Private/Partials/
+        20 = EXT:vd_site/Resources/Private/Partials/
+        30 = EXT:vd_news/Resources/Private/Partials/
+      }
+      pluginNamespace = tx_vdnews_pi1
+      templateRootPaths.10 = EXT:vd_news/Resources/Private/Templates/
+    }
+  }
+  tx_vdnews.mvc.callDefaultActionIfActionCantBeResolved = 1
+}
+
+##################################################
+
+[backend.user.isLoggedIn]
+  plugin.tx_news.settings.enablePreviewOfHiddenRecords = 1
+[getTSFE() && getTSFE().type == 100]
+  pageNewsRSS = PAGE
+  pageNewsRSS {
+    10 < tt_content.list.20.vdnews_feed
+    10 {
+      settings {
+        displayXML {
+          xmlDesc = L'actualité du site de l'État de Vaud
+          xmlTitle = Actualités de l'État de Vaud
+        }
+        limit = 30
+      }
+      view.pluginNamespace = tx_vdnews_pi1
+    }
+    config {
+      additionalHeaders.10.header = Content-Type:application/xml;charset=utf-8
+      admPanel = 0
+      disableAllHeaderCode = 1
+      disablePrefixComment = 1
+      no_cache = 1
+    }
+    typeNum = 100
+  }
+[end]

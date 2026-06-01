@@ -1,0 +1,84 @@
+<T3DataStructure>
+    <sheets>
+        <general>
+            <ROOT>
+                <el>
+                    <settings.domain>
+                        <TCEforms>
+                            <config>
+                                <default>0</default>
+                                <disableNoMatchingValueElement>1</disableNoMatchingValueElement>
+                                <items>
+                                    <numIndex index="0">
+                                        <numIndex index="0">Veuillez choisir un domaine...</numIndex>
+                                        <numIndex index="1">0</numIndex>
+                                    </numIndex>
+                                </items>
+                                <itemsProcFunc>Vd\VdPrestations\TCA\Form\ItemRenderer->forDomains</itemsProcFunc>
+                                <renderType>selectSingle</renderType>
+                                <type>select</type>
+                            </config>
+                            <label>Domaine</label>
+                            <onChange>reload</onChange>
+                        </TCEforms>
+                    </settings.domain>
+                    <settings.theme>
+                        <TCEforms>
+                            <config>
+                                <default>0</default>
+                                <disableNoMatchingValueElement>1</disableNoMatchingValueElement>
+                                <items>
+                                    <numIndex index="0">
+                                        <numIndex index="0">Veuillez choisir un thème...</numIndex>
+                                        <numIndex index="1">0</numIndex>
+                                    </numIndex>
+                                </items>
+                                <itemsProcFunc>Vd\VdPrestations\TCA\Form\ItemRenderer->forThemes</itemsProcFunc>>
+                                <renderType>selectSingle</renderType>
+                                <type>select</type>
+                            </config>
+                            <displayCond>FIELD:settings.domain:!=:0</displayCond>
+                            <label>Theme</label>
+                            <onChange>reload</onChange>
+                        </TCEforms>
+                    </settings.theme>
+                    <settings.prestations>
+                        <TCEforms>
+                            <config>
+                                <default>0</default>
+                                <disableNoMatchingValueElement>1</disableNoMatchingValueElement>
+                                <itemsProcFunc>Vd\VdPrestations\TCA\Form\ItemRenderer->forServices</itemsProcFunc>
+                                <renderType>selectMultipleSideBySide</renderType>
+                                <type>select</type>
+                            </config>
+                            <displayCond>
+                                <and>
+                                    <domainReq>FIELD:settings.domain:!=:0</domainReq>
+                                    <themeReq>FIELD:settings.theme:!=:0</themeReq>
+                                </and>
+                            </displayCond>
+                            <label>Prestations</label>
+                        </TCEforms>
+                    </settings.prestations>
+                    <settings.longListPageId>
+                        <TCEforms>
+                            <config>
+                                <allowed>pages</allowed>
+                                <default>0</default>
+                                <foreign_table>pages</foreign_table>
+                                <internal_type>db</internal_type>
+                                <maxitems>1</maxitems>
+                                <size>1</size>
+                                <type>group</type>
+                            </config>
+                            <label>LLL:EXT:vd_prestations/Resources/Private/Language/locallang.xlf:settings.longListPageId</label>
+                        </TCEforms>
+                    </settings.longListPageId>
+                </el>
+                <TCEforms>
+                    <sheetTitle>Paramètres</sheetTitle>
+                </TCEforms>
+            </ROOT>
+        </general>
+    </sheets>
+</T3DataStructure>

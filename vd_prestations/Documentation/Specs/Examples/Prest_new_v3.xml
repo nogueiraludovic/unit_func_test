@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<evenementsPublication reset="false" xmlns="http://evd.vd.ch/xmlns/eVD-0038/3">
+    <evenement type="MODIFICATION">
+        <prestation>
+            <idMetierPrestation>100150</idMetierPrestation>
+            <titre>Autorisation d'exercer la profession d'intermédiaire
+                financier - demander
+            </titre>
+            <description>Autorisation d'exercer la profession
+                d'interm&amp;eacute;diaire financier - demander
+            </description>
+            <domaineMetier>État, Droit, Finances</domaineMetier>
+            <themeMetier>Communes</themeMetier>
+            <publicsCible>
+                <population>Communes</population>
+            </publicsCible>
+            <publicsCible>
+                <population>Entreprises</population>
+            </publicsCible>
+            <publicsCible>
+                <population>Particuliers</population>
+            </publicsCible>
+            <publicsCible>
+                <population>Services ACV</population>
+            </publicsCible>
+            <modaliteAcces typeModaliteAcces="poste">
+                <marcheASuivre>Autorisation d'exercer la profession
+                    d'interm&amp;eacute;diaire financier - demander
+                </marcheASuivre>
+                <ePayment>false</ePayment>
+                <lienExterne>true</lienExterne>
+                <lienAccesPrestation>
+                    https://validation.portail.etat-de-vaud.ch/cyberadmin/int-catprest/#/catalogue/prestation
+                </lienAccesPrestation>
+                <hiddenInShowdem>false</hiddenInShowdem>
+            </modaliteAcces>
+            <servicePrestataire>BIC</servicePrestataire>
+            <resultatPrestation>Autorisation d'exercer la profession
+                d'intermédiaire financier - demander
+            </resultatPrestation>
+            <actionBeneficiaire>DEMANDER</actionBeneficiaire>
+            <actionPrestataire
+                    xmlns:xs="http://www.w3.org/2001/XMLSchema"
+                    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:type="xs:string">DELIVRER
+            </actionPrestataire>
+            <prestationECH0070
+                    xmlns:xs="http://www.w3.org/2001/XMLSchema"
+                    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:type="xs:int">980
+            </prestationECH0070>
+            <typeMissionECH0145
+                    xmlns:xs="http://www.w3.org/2001/XMLSchema"
+                    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:type="xs:UNSIGNEDShort">66
+            </typeMissionECH0145>
+            <champMissionECH0145
+                    xmlns:xs="http://www.w3.org/2001/XMLSchema"
+                    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:type="xs:string">BF0862
+            </champMissionECH0145>
+            <groupeMissionECH0145
+                    xmlns:xs="http://www.w3.org/2001/XMLSchema"
+                    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:type="xs:string">BG0862
+            </groupeMissionECH0145>
+        </prestation>
+    </evenement>
+</evenementsPublication>

@@ -1,0 +1,51 @@
+<html data-namespace-typo3-fluid="true" xmlns:f="http://typo3.org/ns/TYPO3/CMS/Fluid/ViewHelpers">
+    <f:layout/>
+    <f:section name="main">
+        <f:flashMessages as="messages">
+            <f:render arguments="{messages: messages}" partial="FlashMessages"/>
+        </f:flashMessages>
+        <f:render arguments="{btnColor: 'btn-dark', keyword: keyword, resultPage: settings.resultpage}" partial="Display/Dmde/ProfessionForm"/>
+        <f:form method="post" action="search" id="tx_vdocosp_dmde_public_search_domain">
+            <fieldset>
+                <legend>
+                    <f:translate id="LLL:EXT:vd_ocosp/Resources/Private/Language/locallang_frontend.xlf:title.dmde.search.domaine"/>
+                </legend>
+                <div class="row">
+                    <div class="col-sm-9">
+                        <f:form.select name="domain" class="form-control" value="{domain}" options="{domains}" optionValueField="uid" optionLabelField="nom" prependOptionValue="0" prependOptionLabel="{f:translate(id: 'LLL:EXT:vd_ocosp/Resources/Private/Language/locallang_backend.xlf:dmde.select_all_domaine')}"/>
+                    </div>
+                    <div class="col-sm-3">
+                        <button class="btn btn-dark" id="search-domains-link" type="submit">
+                            <f:translate id="LLL:EXT:vd_ocosp/Resources/Private/Language/locallang_frontend.xlf:submit_button_label"/>
+                        </button>
+                    </div>
+                </div>
+            </fieldset>
+        </f:form>
+        <f:form method="post" action="search" id="tx_vdocosp_dmde_public_search_interests">
+            <fieldset>
+                <legend>
+                    <f:translate id="LLL:EXT:vd_ocosp/Resources/Private/Language/locallang_frontend.xlf:title.dmde.search.interet"/>
+                </legend>
+                    <div id="tx_vdocosp_search_results"></div>
+                    <div class="mb-3 row">
+                        <f:for as="interest" each="{interests}">
+                            <div class="col-xs-12 col-sm-6 col-md-4">
+                                <div class="form-check">
+                                    <label class="form-check-label form-label">
+                                        <f:form.checkbox class="form-check-input" name="interests[]" value="{interest.uid}"/>
+                                         {interest.nom}
+                                    </label>
+                                </div>
+                            </div>
+                        </f:for>
+                    </div>
+                    <div class="mb-3">
+                        <button class="btn btn-dark" id="tx_vdocosp_interests_search_button" type="submit">
+                            <f:translate id="LLL:EXT:vd_ocosp/Resources/Private/Language/locallang_frontend.xlf:submit_button_label"/>
+                        </button>
+                    </div>
+            </fieldset>
+        </f:form>
+    </f:section>
+</html>

@@ -1,0 +1,13 @@
+---
+services:
+  _defaults:
+    autoconfigure: true
+    autowire: true
+    public: false
+  Vd\VdWsprosecutor\:
+    resource: ../Classes/*
+  Vd\VdWsprosecutor\Command\CleanCommand:
+    tags:
+      -
+        command: vd_wsprosecutor:clean
+        name: console.command

@@ -1,0 +1,25 @@
+<html data-namespace-typo3-fluid="true" xmlns:f="http://typo3.org/ns/TYPO3/CMS/Fluid/ViewHelpers">
+    <f:form.validationResults>
+        <f:if condition="{validationResults.flattenedErrors}">
+            <f:for as="errors" each="{validationResults.flattenedErrors}">
+                <f:for as="error" each="{errors}">
+                    <f:if condition="{error.code} == {marker}">
+                        <div class="form-control-feedback text-danger" id="testInputErrorMessage">
+                            <span class="visually-hidden">
+                                <f:translate extensionName="VdPowermail" id="error_sr_only"/>
+                            </span>
+                            <f:if condition="{errorText}">
+                                <f:then>
+                                    {errorText}
+                                </f:then>
+                                <f:else>
+                                    <f:translate id="validationerror_{error.message}">{error.message}</f:translate>
+                                </f:else>
+                            </f:if>
+                        </div>
+                    </f:if>
+                </f:for>
+            </f:for>
+        </f:if>
+    </f:form.validationResults>
+</html>

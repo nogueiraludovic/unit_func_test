@@ -1,0 +1,7 @@
+RTE.default.preset = defaultNoSource
+
+##################################################
+
+[backend.user.isAdmin || usergroup('364,368')]
+  RTE.default.preset = default
+[end]

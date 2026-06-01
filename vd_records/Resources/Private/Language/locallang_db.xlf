@@ -1,0 +1,212 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xliff version="1.2" xmlns="urn:oasis:names:tc:xliff:document:1.2">
+	<file datatype="plaintext" original="EXT:vd_records/Resources/Private/Language/locallang_db.xlf" source-language="en">
+		<header/>
+		<body>
+			<trans-unit id="activity_domain" resname="activity_domain">
+				<source>Activity domain</source>
+			</trans-unit>
+			<trans-unit id="activity_domains" resname="activity_domains">
+				<source>Activity domains</source>
+			</trans-unit>
+			<trans-unit id="address_group" resname="address_group">
+				<source>Address group</source>
+			</trans-unit>
+			<trans-unit id="apprenticeships" resname="apprenticeships">
+				<source>Apprenticeships</source>
+			</trans-unit>
+			<trans-unit id="atev_id" resname="atev_id">
+				<source>ATEV ID</source>
+			</trans-unit>
+			<trans-unit id="attached_file" resname="attached_file">
+				<source>Attached file</source>
+			</trans-unit>
+			<trans-unit id="car_forms" resname="car_forms">
+				<source>Car forms</source>
+			</trans-unit>
+			<trans-unit id="categoryid" resname="categoryid">
+				<source>Category ID</source>
+			</trans-unit>
+			<trans-unit id="categoryid2" resname="categoryid2">
+				<source>Category ID 2</source>
+			</trans-unit>
+			<trans-unit id="categoryid3" resname="categoryid3">
+				<source>Category ID 3</source>
+			</trans-unit>
+			<trans-unit id="categoryid4" resname="categoryid4">
+				<source>Category ID 4</source>
+			</trans-unit>
+			<trans-unit id="categoryid5" resname="categoryid5">
+				<source>Category ID 5</source>
+			</trans-unit>
+			<trans-unit id="categoryid6" resname="categoryid6">
+				<source>Category ID 6</source>
+			</trans-unit>
+			<trans-unit id="code" resname="code">
+				<source>Code</source>
+			</trans-unit>
+			<trans-unit id="comments" resname="comments">
+				<source>Comments</source>
+			</trans-unit>
+			<trans-unit id="contacts" resname="contacts">
+				<source>Contacts</source>
+			</trans-unit>
+			<trans-unit id="courses_list" resname="courses_list">
+				<source>Courses list</source>
+			</trans-unit>
+			<trans-unit id="customers" resname="customers">
+				<source>Customers</source>
+			</trans-unit>
+			<trans-unit id="date_document" resname="date_document">
+				<source>Document date</source>
+			</trans-unit>
+			<trans-unit id="degree" resname="degree">
+				<source>Degree</source>
+			</trans-unit>
+			<trans-unit id="department_id" resname="department_id">
+				<source>Department ID</source>
+			</trans-unit>
+			<trans-unit id="departments" resname="departments">
+				<source>Departments</source>
+			</trans-unit>
+			<trans-unit id="dog_trainers" resname="dog_trainers">
+				<source>Dog trainers</source>
+			</trans-unit>
+			<trans-unit id="dog_trainers_profile" resname="dog_trainers_profile">
+				<source>Dog trainers profile</source>
+			</trans-unit>
+			<trans-unit id="domestic_violence_organizations_directory" resname="domestic_violence_organizations_directory">
+				<source>Directory of domestic violence organizations</source>
+			</trans-unit>
+			<trans-unit id="display_date_in_title" resname="display_date_in_title">
+				<source>Display date in title</source>
+			</trans-unit>
+			<trans-unit id="district" resname="district">
+				<source>District</source>
+			</trans-unit>
+			<trans-unit id="dual" resname="dual">
+				<source>Dual</source>
+			</trans-unit>
+			<trans-unit id="end_date_of_event" resname="end_date_of_event">
+				<source>End date of event</source>
+			</trans-unit>
+			<trans-unit id="energy_forms" resname="energy_forms">
+				<source>Energy forms</source>
+			</trans-unit>
+			<trans-unit id="file_category" resname="file_category">
+				<source>File category</source>
+			</trans-unit>
+			<trans-unit id="files" resname="files">
+				<source>Files</source>
+			</trans-unit>
+			<trans-unit id="filepath" resname="filepath">
+				<source>File</source>
+			</trans-unit>
+			<trans-unit id="filepathbyref1" resname="filepathbyref1">
+				<source>Reference file</source>
+			</trans-unit>
+			<trans-unit id="filepathbyref2" resname="filepathbyref2">
+				<source>Reference file 2</source>
+			</trans-unit>
+			<trans-unit id="filepathbyref3" resname="filepathbyref3">
+				<source>Reference file 3</source>
+			</trans-unit>
+			<trans-unit id="full_address" resname="full_address">
+				<source>Full address</source>
+			</trans-unit>
+			<trans-unit id="full_time" resname="full_time">
+				<source>Full time</source>
+			</trans-unit>
+			<trans-unit id="keywords" resname="keywords">
+				<source>Keywords (CSV)</source>
+			</trans-unit>
+			<trans-unit id="jobs" resname="jobs">
+				<source>Professions</source>
+			</trans-unit>
+			<trans-unit id="label" resname="label">
+				<source>Label</source>
+			</trans-unit>
+			<trans-unit id="learning_time" resname="learning_time">
+				<source>Learning time (year)</source>
+			</trans-unit>
+			<trans-unit id="link" resname="link">
+				<source>Link</source>
+			</trans-unit>
+			<trans-unit id="mails_list" resname="mails_list">
+				<source>Mails list</source>
+			</trans-unit>
+			<trans-unit id="mobile" resname="mobile">
+				<source>Mobile phone</source>
+			</trans-unit>
+			<trans-unit id="municipality" resname="municipality">
+				<source>Municipality</source>
+			</trans-unit>
+			<trans-unit id="navigation_forms" resname="navigation_forms">
+				<source>Navigation forms</source>
+			</trans-unit>
+			<trans-unit id="no" resname="no">
+				<source>Number</source>
+			</trans-unit>
+			<trans-unit id="offer" resname="offer">
+				<source>Offer</source>
+			</trans-unit>
+			<trans-unit id="parent_group" resname="parent_group">
+				<source>Parent group</source>
+			</trans-unit>
+			<trans-unit id="po_box" resname="po_box">
+				<source>P.O. Box</source>
+			</trans-unit>
+			<trans-unit id="professional_maturity" resname="professional_maturity">
+				<source>Integrated professional maturity</source>
+			</trans-unit>
+			<trans-unit id="recipient" resname="recipient">
+				<source>Recipient</source>
+			</trans-unit>
+			<trans-unit id="region" resname="region">
+				<source>Region</source>
+			</trans-unit>
+			<trans-unit id="regional_projects" resname="regional_projects">
+				<source>Regional projects</source>
+			</trans-unit>
+			<trans-unit id="school" resname="school">
+				<source>School(s)</source>
+			</trans-unit>
+			<trans-unit id="school_acronym" resname="school_acronym">
+				<source>School acronym</source>
+			</trans-unit>
+			<trans-unit id="school_name" resname="school_name">
+				<source>School name</source>
+			</trans-unit>
+			<trans-unit id="secri_files" resname="secri_files">
+				<source>Secri files</source>
+			</trans-unit>
+			<trans-unit id="security_cameras" resname="security_cameras">
+				<source>Security cameras</source>
+			</trans-unit>
+			<trans-unit id="services" resname="services">
+				<source>Services</source>
+			</trans-unit>
+			<trans-unit id="situation" resname="situation">
+				<source>Situation</source>
+			</trans-unit>
+			<trans-unit id="slots_list" resname="slots_list">
+				<source>List of slots</source>
+			</trans-unit>
+			<trans-unit id="super_contributor" resname="super_contributor">
+				<source>Super contributor</source>
+			</trans-unit>
+			<trans-unit id="synonyms" resname="synonyms">
+				<source>Synonyms</source>
+			</trans-unit>
+			<trans-unit id="vd_service" resname="vd_service">
+				<source>VD service</source>
+			</trans-unit>
+			<trans-unit id="vd_user_id" resname="vd_user_id">
+				<source>VD user ID (zsi...)</source>
+			</trans-unit>
+			<trans-unit id="web_adviser" resname="web_adviser">
+				<source>Web Adviser VD</source>
+			</trans-unit>
+		</body>
+	</file>
+</xliff>

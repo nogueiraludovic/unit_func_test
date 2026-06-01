@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xliff version="1.2" xmlns="urn:oasis:names:tc:xliff:document:1.2">
+	<file datatype="plaintext" original="EXT:vd_site/Resources/Private/Language/locallang_ttc.xlf" source-language="en" target-language="fr">
+		<header/>
+		<body>
+			<trans-unit id="CType.I.biocard" resname="CType.I.biocard">
+				<source>Short biography</source>
+				<target state="translated">Biographie courte</target>
+			</trans-unit>
+			<trans-unit id="CType.I.buttons" resname="CType.I.buttons">
+				<source>Buttons</source>
+				<target state="translated">Boutons</target>
+			</trans-unit>
+			<trans-unit id="CType.I.cards_group" resname="CType.I.cards_group">
+				<source>Cards group</source>
+				<target state="translated">Groupe de cartes</target>
+			</trans-unit>
+			<trans-unit id="CType.I.carousel" resname="CType.I.carousel">
+				<source>Carousel</source>
+				<target state="translated">Carrousel</target>
+			</trans-unit>
+			<trans-unit id="CType.I.citation" resname="CType.I.citation">
+				<source>Citation</source>
+				<target state="translated">Citation</target>
+			</trans-unit>
+			<trans-unit id="CType.I.links_box" resname="CType.I.links_box">
+				<source>Links box</source>
+				<target state="translated">Boîte de liens</target>
+			</trans-unit>
+			<trans-unit id="CType.I.menu_themes" resname="CType.I.menu_themes">
+				<source>Themes menu</source>
+				<target state="translated">Menu thématique</target>
+			</trans-unit>
+			<trans-unit id="CType.I.search_form" resname="CType.I.search_form">
+				<source>Search form</source>
+				<target state="translated">Formulaire de recherche</target>
+			</trans-unit>
+			<trans-unit id="palettes.carousel" resname="palettes.carousel">
+				<source>Carousel</source>
+				<target state="translated">Carrousel</target>
+			</trans-unit>
+			<trans-unit id="palettes.content_element_link" resname="palettes.content_element_link">
+				<source>Content element link</source>
+				<target state="translated">Lien de l'élément de contenu</target>
+			</trans-unit>
+			<trans-unit id="palettes.navigation" resname="palettes.navigation">
+				<source>Navigation</source>
+				<target state="translated">Navigation</target>
+			</trans-unit>
+			<trans-unit id="palettes.related_links" resname="palettes.related_links">
+				<source>Related links</source>
+				<target state="translated">Liens en relation</target>
+			</trans-unit>
+			<trans-unit id="tabs.icon" resname="tabs.icon">
+				<source>Icon</source>
+				<target state="translated">Icône</target>
+			</trans-unit>
+		</body>
+	</file>
+</xliff>

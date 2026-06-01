@@ -1,0 +1,49 @@
+lib {
+  contentElement {
+    dataProcessing.1692711709 = TYPO3\CMS\Frontend\DataProcessing\DatabaseQueryProcessor
+    dataProcessing.1692711709 {
+      as = pageData
+      pidInList = 0
+      table = pages
+      uidInList = this
+    }
+  }
+  parseFunc.tags.a {
+    append = FILES
+    append {
+      files {
+        data = parameters:href
+        replacement.10 {
+          replace =
+          search = t3://file?uid=
+        }
+      }
+      if {
+        equals = t3://file
+        value {
+          data = parameters:href
+          stdWrap.substring = 0,9
+        }
+      }
+      renderObj = TEXT
+      renderObj {
+        bytes = 1
+        bytes.labels = ' o| Ko| Mo| Go'
+        data = file:current:size
+        insertData = 1
+        noTrimWrap = | ({file:current:extension}, |)|
+      }
+    }
+  }
+  parseFunc_RTE {
+    externalBlocks := addToList(figcaption,figure)
+    externalBlocks {
+      figcaption {
+        callRecursive = 1
+        stripNL = 1
+      }
+      figure < .figcaption
+    }
+    tags.a < lib.parseFunc.tags.a
+  }
+}

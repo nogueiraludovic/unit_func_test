@@ -1,0 +1,40 @@
+<html data-namespace-typo3-fluid="true" xmlns:f="http://typo3.org/ns/TYPO3/CMS/Fluid/ViewHelpers" xmlns:vdc="http://typo3.org/ns/Vd/VdCore/ViewHelpers">
+    <f:if condition="{profession.dmde.externalId} || {profession.dmde.externalLink} || {profession.dmde.lienPodcast}">
+        <h5><f:translate id="LLL:EXT:vd_ocosp/Resources/Private/Language/locallang_frontend.xlf:label.useful_links"/></h5>
+        <ul>
+            <f:if condition="{profession.dmde.lienPodcast}">
+                <li>
+                    <a href="{profession.dmde.lienPodcast}" id="podcast-link">
+                        <f:translate id="LLL:EXT:vd_ocosp/Resources/Private/Language/locallang_frontend.xlf:professions_domaine.link_podcast"/>
+                    </a>
+                </li>
+            </f:if>
+            <f:if condition="{profession.dmde.externalId}">
+                <li>
+                    <a href="{settings.display.links.professionSearch}{profession.dmde.externalId}" id="profession-search-link">
+                        <f:translate id="LLL:EXT:vd_ocosp/Resources/Private/Language/locallang_frontend.xlf:professions_domaine.link_plus_metier"/>
+                    </a>
+                </li>
+            </f:if>
+            <f:if condition="{profession.dmde.externalLink}">
+                <li>
+                    <f:link.typolink additionalAttributes="{id: 'profession-dmde-external-link'}" parameter="{profession.dmde.externalLink}">
+                        <f:translate id="LLL:EXT:vd_ocosp/Resources/Private/Language/locallang_frontend.xlf:professions_domaine.link_formation"/>
+                    </f:link.typolink>
+                </li>
+            </f:if>
+            <vdc:stringContains haystack="{profession.nomMasc}" needle="{0: 'AFP', 1: 'CFC', 2: 'FPA'}">
+                <li>
+                    <a href="{settings.display.links.internshipList}" id="internships-list-link">
+                        <f:translate id="LLL:EXT:vd_ocosp/Resources/Private/Language/locallang_frontend.xlf:professions_domaine.link_places_apprentissage"/>
+                    </a>
+                </li>
+                <li>
+                    <f:link.page id="profession-internship-search-link" pageUid="{settings.display.links.internshipSearchPid}">
+                        <f:translate id="LLL:EXT:vd_ocosp/Resources/Private/Language/locallang_frontend.xlf:professions_domaine.link_chercher_places_apprentissage"/>
+                    </f:link.page>
+                </li>
+            </vdc:stringContains>
+        </ul>
+    </f:if>
+</html>

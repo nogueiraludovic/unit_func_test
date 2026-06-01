@@ -1,0 +1,37 @@
+TCEFORM.tt_content {
+  layout.types {
+    highlighting-container {
+      addItems {
+        dark = Fond vert foncé
+        light = Fond gris foncé
+      }
+      disabled = 0
+      label = Couleur de fond
+      removeItems = 0,1,2,3
+    }
+    section-container {
+      addItems {
+        white = Fond blanc
+        dark = Fond vert foncé
+        light = Fond gris
+        primary_light = Fond vert clair
+        secondary_light = Fond violet clair
+        tertiary_light = Fond bleu clair
+      }
+      disabled = 0
+      label = Couleur de fond
+      removeItems = 0,1,2,3
+    }
+  }
+  space_after_class.types {
+    1-column-container.disabled = 1
+    2-columns-left-width-container.disabled = 1
+    2-columns-right-width-container.disabled = 1
+    2-columns-same-width-container.disabled = 1
+    3-columns-same-width-container.disabled = 1
+    4-columns-same-width-container.disabled = 1
+    accordion-container.disabled = 1
+    highlighting-container.disabled = 1
+    tabs-container.disabled = 1
+  }
+}

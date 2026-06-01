@@ -1,0 +1,49 @@
+<html data-namespace-typo3-fluid="true" xmlns:f="http://typo3.org/ns/TYPO3/CMS/Fluid/ViewHelpers" xmlns:n="http://typo3.org/ns/GeorgRinger/News/ViewHelpers">
+    <f:if condition="{newsItem}">
+        <n:format.nothing>
+            <n:excludeDisplayedNews newsItem="{newsItem}"/>
+            <n:metaTag content="{newsItem.keywords}" name="keywords"/>
+            <f:if condition="{newsItem.description}">
+                <f:then>
+                    <n:metaTag content="{newsItem.description}" name="description"/>
+                    <n:metaTag content="{newsItem.description}" property="og:description"/>
+                </f:then>
+                <f:else>
+                    <f:if condition="{newsItem.teaser}">
+                        <f:then>
+                            <f:variable name="description" value="{newsItem.teaser -> f:format.crop(maxCharacters: 150)}"/>
+                        </f:then>
+                        <f:else if="{newsItem.bodytext}">
+                            <f:variable name="description" value="{newsItem.bodytext -> f:format.crop(maxCharacters: 150)}"/>
+                        </f:else>
+                    </f:if>
+                    <f:if condition="{description}">
+                        <n:metaTag content="{description -> f:format.stripTags()}" name="description"/>
+                        <n:metaTag content="{description -> f:format.stripTags()}" property="og:description"/>
+                    </f:if>
+                </f:else>
+            </f:if>
+            <f:if condition="{newsItem.falMedia.0}">
+                <f:then>
+                    <f:variable name="ogImage" value="{f:uri.image(image: newsItem.falMedia.0, maxWidth: 1200)}"/>
+                    <n:metaTag content="{ogImage}" forceAbsoluteUrl="1" property="og:image"/>
+                    <n:metaTag content="{n:imageSize(image: ogImage, property: 'width')}" property="og:image:width"/>
+                    <n:metaTag content="{n:imageSize(image: ogImage, property: 'height')}" property="og:image:height"/>
+                </f:then>
+                <f:else>
+                    <n:metaTag content="{f:uri.image(src: 'EXT:vd_site/Resources/Public/Images/logo_opengraph.png')}" forceAbsoluteUrl="1" property="og:image"/>
+                    <n:metaTag content="256" property="og:image:height"/>
+                    <n:metaTag content="256" property="og:image:width"/>
+                </f:else>
+            </f:if>
+            <n:metaTag content="{settings.opengraph.site_name}" property="og:site_name"/>
+            <n:metaTag content="{settings.opengraph.type}" property="og:type"/>
+            <n:metaTag content="" property="og:url" useCurrentDomain="1"/>
+            <f:if condition="{settings.opengraph.twitter.site}">
+                <n:metaTag content="{settings.opengraph.twitter.card}" name="twitter:card"/>
+                <n:metaTag content="{settings.opengraph.twitter.site}" name="twitter:site"/>
+            </f:if>
+        </n:format.nothing>
+        <f:render section="Content"/>
+    </f:if>
+</html>

@@ -1,0 +1,18 @@
+---
+services:
+  _defaults:
+    autoconfigure: true
+    autowire: true
+    public: false
+  Vd\VdOjvencheres\:
+    resource: ../Classes/*
+  Vd\VdOjvencheres\Command\ClearDataCommand:
+    tags:
+      -
+        command: ojv:clear_data
+        name: console.command
+  Vd\VdOjvencheres\Command\SwitchStatusCommand:
+    tags:
+      -
+        command: ojv:switch_status
+        name: console.command

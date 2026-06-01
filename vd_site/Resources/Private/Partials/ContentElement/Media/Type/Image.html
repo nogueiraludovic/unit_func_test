@@ -1,0 +1,32 @@
+<html data-namespace-typo3-fluid="true" xmlns:ce="http://typo3.org/ns/TYPO3/CMS/FluidStyledContent/ViewHelpers" xmlns:f="http://typo3.org/ns/TYPO3/CMS/Fluid/ViewHelpers">
+    <figure class="figure">
+        <f:if condition="{file.link}">
+            <f:then>
+                <f:link.typolink additionalAttributes="{id: 'file-link-{file.uid}'}" parameter="{file.link}" title="{file.title}">
+                    <f:render arguments="{dimensions: dimensions, file: file, settings: settings}" partial="Media/Rendering/Image"/>
+                </f:link.typolink>
+            </f:then>
+            <f:else>
+                <f:render arguments="{dimensions: dimensions, file: file, settings: settings}" partial="Media/Rendering/Image"/>
+            </f:else>
+        </f:if>
+        <f:if condition="{file.description} && {file.properties.owner}">
+            <f:then>
+                <figcaption class="figure-caption">
+                    {file.description}
+                    <span class="vd-figure-credits">{file.properties.owner}</span>
+                </figcaption>
+            </f:then>
+            <f:else if="{file.description}">
+                <figcaption class="figure-caption">
+                    {file.description}
+                </figcaption>
+            </f:else>
+            <f:else if="{file.properties.owner}">
+                <figcaption class="figure-caption">
+                    <span class="vd-figure-credits">{file.properties.owner}</span>
+                </figcaption>
+            </f:else>
+        </f:if>
+    </figure>
+</html>

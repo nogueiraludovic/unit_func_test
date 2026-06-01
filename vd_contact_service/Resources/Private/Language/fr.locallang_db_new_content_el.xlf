@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xliff version="1.2" xmlns="urn:oasis:names:tc:xliff:document:1.2">
+	<file datatype="plaintext" original="EXT:vd_contact_service/Resources/Private/Language/locallang_db_new_content_el.xlf" source-language="en" target-language="fr">
+		<header/>
+		<body>
+			<trans-unit id="plugins_vdcontactservice_contact_description" resname="plugins_vdcontactservice_contact_description">
+				<source>Display a service contact</source>
+				<target state="translated">Afficher le contact d'un service</target>
+			</trans-unit>
+			<trans-unit id="plugins_vdcontactservice_contact_title" resname="plugins_vdcontactservice_contact_title">
+				<source>Service contact</source>
+				<target state="translated">Contact d'un service</target>
+			</trans-unit>
+			<trans-unit id="plugins_vdcontactservice_search_description" resname="plugins_vdcontactservice_search_description">
+				<source>Display a search form for a service contact</source>
+				<target state="translated">Afficher un formulaire de recherche pour le contact d'un service</target>
+			</trans-unit>
+			<trans-unit id="plugins_vdcontactservice_search_title" resname="plugins_vdcontactservice_search_title">
+				<source>Service contact search</source>
+				<target state="translated">Recherche du contact d'un service</target>
+			</trans-unit>
+		</body>
+	</file>
+</xliff>

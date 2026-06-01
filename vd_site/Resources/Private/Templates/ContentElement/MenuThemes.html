@@ -1,0 +1,27 @@
+<html data-namespace-typo3-fluid="true" xmlns:f="http://typo3.org/ns/TYPO3/CMS/Fluid/ViewHelpers">
+    <f:layout/>
+    <f:section name="Main">
+        <f:if condition="{menu}">
+            <div class="border-0 mt-5 vd-nav-primary vd-nav-primary__menu-bg-sm">
+                <div class="row">
+                    <nav class="col-md-12 order-md-1" id="nav-primary">
+                        <ul class="list-unstyled mb-0 row">
+                            <f:for as="item" each="{menu}" iteration="iterator">
+                                <li class="vd-domain-item vd-domain-item--small col-sm-6 col-lg-4 mb-2">
+                                    <a class="vd-domain-item vd-domain-item--small vd-domain-item__link-container" href="{item.link}" id="menu-theme-link-{iterator.index}">
+                                        <span class="vd-domain-item__link vd-link-invisible h4">
+                                            {item.title}
+                                        </span>
+                                        <span class="vd-domain-item__text">
+                                            <span class="visually-hidden">(</span>{item.data.vd_nav_legend}<span class="visually-hidden">)</span>
+                                        </span>
+                                    </a>
+                                </li>
+                            </f:for>
+                        </ul>
+                    </nav>
+                </div>
+            </div>
+        </f:if>
+    </f:section>
+</html>

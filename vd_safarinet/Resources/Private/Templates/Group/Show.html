@@ -1,0 +1,158 @@
+<html data-namespace-typo3-fluid="true" xmlns:f="http://typo3.org/ns/fluid/ViewHelpers" xmlns:vds="http://typo3.org/ns/Vd/VdSafarinet/ViewHelpers">
+    <f:layout/>
+    <f:section name="Main">
+        <div class="row">
+            <div class="col-sm-12">
+                <div class="row">
+                    <div class="col-sm-12 col-md-6">
+                        <strong class="heading">Sigle</strong>
+                        <p>
+                            <f:if condition="{group.sigle}">
+                                <f:then>{group.sigle}</f:then>
+                                <f:else>-</f:else>
+                            </f:if>
+                        </p>
+                    </div>
+                    <div class="col-sm-12 col-md-6">
+                        <strong class="heading">Type</strong>
+                        <p>
+                            <f:if condition="{group.type}">
+                                <f:then>{group.type}</f:then>
+                                <f:else>-</f:else>
+                            </f:if>
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-sm-12">
+                <div class="row">
+                    <div class="col-sm-12 col-md-6">
+                        <strong class="heading">Date de début de validité</strong>
+                        <p>
+                            <f:if condition="{group.dateDebut}">
+                                <f:then><f:format.date date="{group.dateDebut}" format="d.m.Y"/></f:then>
+                                <f:else>-</f:else>
+                            </f:if>
+                        </p>
+                    </div>
+                    <div class="col-sm-12 col-md-6">
+                        <strong class="heading">Date de fin de validité</strong>
+                        <p>
+                            <f:if condition="{group.dateFin}">
+                                <f:then><f:format.date date="{group.dateFin}" format="d.m.Y"/></f:then>
+                                <f:else>-</f:else>
+                            </f:if>
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-sm-12">
+                <div class="row">
+                    <div class="col-sm-12 col-md-6">
+                        <strong class="heading">Adresse</strong>
+                        <p>
+                            <f:if condition="{group.adresse.npa} && {group.adresse.localite}">
+                                <f:then>{group.adresse.npa} {group.adresse.localite}</f:then>
+                                <f:else>-</f:else>
+                            </f:if>
+                        </p>
+                    </div>
+                    <div class="col-sm-12 col-md-6">
+                        <strong class="heading">Téléphone</strong>
+                        <p>
+                            <f:if condition="{group.adresse.telephone}">
+                                <f:then><a href="tel:{group.adresse.telephone}" id="phone-link">{group.adresse.telephone}</a></f:then>
+                                <f:else>-</f:else>
+                            </f:if>
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-sm-12">
+                <div class="row">
+                    <div class="col-sm-12 col-md-6">
+                        <strong class="heading">Email</strong>
+                        <p>
+                            <f:if condition="{group.adresse.email}">
+                                <f:then><f:link.email email="{group.adresse.email}" id="group-email-to"/></f:then>
+                                <f:else>-</f:else>
+                            </f:if>
+                        </p>
+                    </div>
+                    <div class="col-sm-12 col-md-6">
+                        <strong class="heading">Site web:</strong>
+                        <p>
+                            <f:if condition="{group.adresse.siteWeb}">
+                                <f:then><a href="{group.adresse.siteWeb}" id="website-link">{group.adresse.siteWeb}</a></f:then>
+                                <f:else>-</f:else>
+                            </f:if>
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <f:if condition="{group.membres.membre}">
+                <f:then>
+                    <f:variable name="membres" value="{group.membres.membre}"/>
+                </f:then>
+                <f:else if="{group.membres.0.membre}">
+                    <f:variable name="membres" value="{group.membres.0.membre}"/>
+                </f:else>
+            </f:if>
+            <f:if condition="{membres}">
+                <div class="col-xs-12 mb-4">
+                    <h2 id="members-list-title">Liste des membres</h2>
+                    <div class="table-responsive">
+                        <table class="table table-striped">
+                            <thead>
+                                <tr>
+                                    <th>Nom et prénom</th>
+                                    <th>Rôle dans le groupe</th>
+                                    <th>Date de début d'appartenance au groupe</th>
+                                    <th>Date de fin d'appartenance au groupe</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <f:for as="membre" each="{membres -> vds:format.toArrayList()}" iteration="iterator">
+                                    <tr>
+                                        <td>
+                                            <f:if condition="{membre.id} && {settings.memberDetailPageUid}">
+                                                <f:then>
+                                                    <div class="col-xs-12">
+                                                        <f:link.action action="show" arguments="{memberId: membre.id}" controller="Member" id="member-details-link-{iterator.index}" pageUid="{settings.memberDetailPageUid}">
+                                                            {membre.prenom} {membre.nom}
+                                                        </f:link.action>
+                                                    </div>
+                                                </f:then>
+                                                <f:else>
+                                                    {membre.prenom} {membre.nom}
+                                                </f:else>
+                                            </f:if>
+                                        </td>
+                                        <td>{membre.quality}</td>
+                                        <td>
+                                            <f:if condition="{membre.dateEntree}">
+                                                <f:then>
+                                                    <f:format.date date="{membre.dateEntree}" format="d.m.Y"/>
+                                                </f:then>
+                                                <f:else>-</f:else>
+                                            </f:if>
+                                        </td>
+                                        <td>
+                                            <f:if condition="{membre.dateFin}">
+                                                <f:then>
+                                                    <f:format.date date="{membre.dateFin}" format="d.m.Y"/>
+                                                </f:then>
+                                                <f:else>-</f:else>
+                                            </f:if>
+                                        </td>
+                                    </tr>
+                                </f:for>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+            </f:if>
+            <f:render arguments="{memberId: memberId}" partial="Member/Back"/>
+        </div>
+    </f:section>
+</html>

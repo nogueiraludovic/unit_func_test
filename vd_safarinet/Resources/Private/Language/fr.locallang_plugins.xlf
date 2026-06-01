@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xliff version="1.2" xmlns="urn:oasis:names:tc:xliff:document:1.2">
+	<file datatype="plaintext" original="EXT:vd_safarinet/Resources/Private/Language/locallang_plugins.xlf" source-language="en" target-language="fr">
+		<header/>
+		<body>
+			<trans-unit id="decision_show" resname="decision_show">
+				<source>Decision detail</source>
+				<target state="translated">Détail d'une décision</target>
+			</trans-unit>
+			<trans-unit id="gc_list" resname="gc_list">
+				<source>Great Council meeting list</source>
+				<target state="translated">Liste des séances du Grand Conseil</target>
+			</trans-unit>
+			<trans-unit id="gc_meeting_show" resname="gc_meeting_show">
+				<source>Great Council meeting detail</source>
+				<target state="translated">Détail d'une séance du Grand Conseil</target>
+			</trans-unit>
+			<trans-unit id="gc_point_show" resname="gc_point_show">
+				<source>Great Council point detail</source>
+				<target state="translated">Point séance du Grand Conseil</target>
+			</trans-unit>
+			<trans-unit id="group_show" resname="group_show">
+				<source>Group detail</source>
+				<target state="translated">Détail d'un groupe</target>
+			</trans-unit>
+			<trans-unit id="meeting_list" resname="meeting_list">
+				<source>Meeting list</source>
+				<target state="translated">Liste des décisions</target>
+			</trans-unit>
+			<trans-unit id="meeting_show" resname="meeting_show">
+				<source>Meeting detail</source>
+				<target state="translated">Détail d'une séance</target>
+			</trans-unit>
+			<trans-unit id="member_district" resname="member_district">
+				<source>District members list</source>
+				<target state="translated">Liste des membres par arrondissement</target>
+			</trans-unit>
+			<trans-unit id="member_list" resname="member_list">
+				<source>Alphabetic members list</source>
+				<target state="translated">Liste des membres par ordre alphabétique</target>
+			</trans-unit>
+			<trans-unit id="member_party" resname="member_party">
+				<source>Politic group members list</source>
+				<target state="translated">Liste des membres par groupe politique</target>
+			</trans-unit>
+			<trans-unit id="member_show" resname="member_show">
+				<source>Member detail</source>
+				<target state="translated">Détail d'un membre</target>
+			</trans-unit>
+			<trans-unit id="object_show" resname="object_show">
+				<source>Object detail</source>
+				<target state="translated">Détail d'un objet</target>
+			</trans-unit>
+		</body>
+	</file>
+</xliff>

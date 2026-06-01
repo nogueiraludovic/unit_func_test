@@ -1,0 +1,13 @@
+<html data-namespace-typo3-fluid="true" xmlns:f="http://typo3.org/ns/TYPO3/CMS/Fluid/ViewHelpers">
+    <f:layout/>
+    <f:section name="main">
+        <div class="highlight-dark vd-content-column vd-highlight">
+            <f:render arguments="{btnColor: 'btn-primary', keyword: keyword, resultPage: settings.resultpage}" partial="Display/Dmde/ProfessionForm"/>
+            <p>
+                <f:link.page id="search-results-page-link" pageUid="{settings.resultpage}">
+                    <f:translate id="LLL:EXT:vd_ocosp/Resources/Private/Language/locallang_frontend.xlf:advanced_search"/>
+                </f:link.page>
+            </p>
+        </div>
+    </f:section>
+</html>

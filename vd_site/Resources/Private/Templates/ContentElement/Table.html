@@ -1,0 +1,61 @@
+<html data-namespace-typo3-fluid="true" xmlns:f="http://typo3.org/ns/TYPO3/CMS/Fluid/ViewHelpers">
+    <f:layout/>
+    <f:section name="Main">
+        <f:if condition="{table}">
+            <div class="table-responsive">
+                <table class="table table-striped">
+                    <f:if condition="{data.table_caption}">
+                        <caption><f:format.stripTags>{data.table_caption}</f:format.stripTags></caption>
+                    </f:if>
+                    <f:for as="row" each="{table}" iteration="rowIterator">
+                        <f:if condition="{rowIterator.isFirst}">
+                            <f:then>
+                                <f:if condition="{data.table_header_position} == 1 || {data.table_header_position} == 3">
+                                    <f:then>
+                                        <thead>
+                                    </f:then>
+                                    <f:else>
+                                        <tbody>
+                                    </f:else>
+                                </f:if>
+                            </f:then>
+                            <f:else>
+                                <f:if condition="{rowIterator.isLast}">
+                                    <f:if condition="{data.table_tfoot}">
+                                        </tbody>
+                                        <tfoot>
+                                    </f:if>
+                                </f:if>
+                            </f:else>
+                        </f:if>
+                        <tr>
+                            <f:for as="cell" each="{row}" iteration="columnIterator">
+                                <f:render arguments="{_all}" partial="Table/Columns"/>
+                            </f:for>
+                        </tr>
+                        <f:if condition="{rowIterator.isFirst}">
+                            <f:then>
+                                <f:if condition="{data.table_header_position} == 1 || {data.table_header_position} == 3">
+                                    </thead>
+                                    <tbody>
+                                </f:if>
+                            </f:then>
+                            <f:else>
+                                <f:if condition="{rowIterator.isLast}">
+                                    <f:if condition="{data.table_tfoot}">
+                                        <f:then>
+                                            </tfoot>
+                                        </f:then>
+                                        <f:else>
+                                            </tbody>
+                                        </f:else>
+                                    </f:if>
+                                </f:if>
+                            </f:else>
+                        </f:if>
+                    </f:for>
+                </table>
+            </div>
+        </f:if>
+    </f:section>
+</html>

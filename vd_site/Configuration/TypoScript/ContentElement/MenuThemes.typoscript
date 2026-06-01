@@ -1,0 +1,12 @@
+tt_content.menu_themes =< lib.contentElement
+tt_content.menu_themes {
+  dataProcessing {
+    10 = TYPO3\CMS\Frontend\DataProcessing\MenuProcessor
+    10 {
+      as = menu
+      special = directory
+      special.value = 1002722
+    }
+  }
+  templateName = MenuThemes
+}

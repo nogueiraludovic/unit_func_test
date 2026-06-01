@@ -1,0 +1,42 @@
+<rss>
+    <ROOT>
+        <el>
+            <settings.displayXML.enable>
+                <TCEforms>
+                    <config>
+                        <default>1</default>
+                        <renderType>checkboxToggle</renderType>
+                        <type>check</type>
+                    </config>
+                    <label>LLL:EXT:core/Resources/Private/Language/locallang_common.xlf:enable</label>
+                    <onChange>reload</onChange>
+                </TCEforms>
+            </settings.displayXML.enable>
+            <settings.displayXML.xmlTitle>
+                <TCEforms>
+                    <config>
+                        <default>Actualités de l'État de Vaud</default>
+                        <eval>trim,required</eval>
+                        <type>input</type>
+                    </config>
+                    <displayCond>FIELD:settings.displayXML.enable:REQ:true</displayCond>
+                    <label>LLL:EXT:core/Resources/Private/Language/locallang_general.xlf:LGL.title</label>
+                </TCEforms>
+            </settings.displayXML.xmlTitle>
+            <settings.displayXML.xmlDesc>
+                <TCEforms>
+                    <config>
+                        <default>L'actualité du site de l'État de Vaud</default>
+                        <eval>trim,required</eval>
+                        <type>input</type>
+                    </config>
+                    <displayCond>FIELD:settings.displayXML.enable:REQ:true</displayCond>
+                    <label>LLL:EXT:core/Resources/Private/Language/locallang_general.xlf:LGL.description</label>
+                </TCEforms>
+            </settings.displayXML.xmlDesc>
+        </el>
+        <TCEforms>
+            <sheetTitle>LLL:EXT:vd_news/Resources/Private/Language/locallang_be.xlf:rss</sheetTitle>
+        </TCEforms>
+    </ROOT>
+</rss>

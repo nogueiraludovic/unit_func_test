@@ -1,0 +1,4 @@
+mod.web_list.tableDisplayOrder.tx_vdojvencheres_domain_model_item {
+  after = tx_vdojvencheres_domain_model_sale
+  before = pages
+}

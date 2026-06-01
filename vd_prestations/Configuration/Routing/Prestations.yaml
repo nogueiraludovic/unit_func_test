@@ -1,0 +1,23 @@
+---
+routeEnhancers:
+  PageTypeSuffix:
+    default: '/'
+    index: 'index'
+    map:
+      'go.to': 1493899567
+    type: PageType
+  Prestations:
+    aspects:
+      slug:
+        routeFieldName: path_segment
+        tableName: tx_vdprestations_domain_model_prestation
+        type: PersistedAliasMapper
+    defaultController: Prestation::show
+    namespace: tx_vdprestations_pi4
+    routes:
+      -
+        _arguments:
+          slug: prestation
+        _controller: Prestation::show
+        routePath: /{slug}
+    type: Extbase

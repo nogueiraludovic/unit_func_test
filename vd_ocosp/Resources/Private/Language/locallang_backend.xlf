@@ -1,0 +1,422 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<xliff version="1.0">
+	<file source-language="en" datatype="plaintext" original="messages" date="2016-06-17T12:48:32Z" product-name="Vd.VdOocosp">
+		<header/>
+		<body>
+			<trans-unit id="record_not_deleted" xml:space="preserve">
+				<source>Enregistrement non supprimé</source>
+			</trans-unit>
+			<trans-unit id="record_not_deleted_reason" xml:space="record_not_deleted_reason">
+				<source>L'enregistrement ne peut pas être supprimé parce qu'il est encore utilisé dans les endroits suivants :</source>
+			</trans-unit>
+			<trans-unit id="submit_button_label" xml:space="preserve">
+				<source>Click here to submit value</source>
+			</trans-unit>
+			<trans-unit id="label.date_maj" xml:space="preserve">
+				<source>Date de mise à jour</source>
+			</trans-unit>
+			<trans-unit id="character.max" xml:space="preserve">
+				<source>Max 1000 caractères</source>
+			</trans-unit>
+			<trans-unit id="label.annuler" xml:space="preserve">
+				<source>Annuler</source>
+			</trans-unit>
+			<trans-unit id="label.modifier" xml:space="preserve">
+				<source>Modifier</source>
+			</trans-unit>
+			<trans-unit id="label.detail" xml:space="preserve">
+				<source>Voir le détail</source>
+			</trans-unit>
+			<trans-unit id="label.supprimer" xml:space="preserve">
+				<source>Supprimer</source>
+			</trans-unit>
+			<trans-unit id="label.dupliquer" xml:space="preserve">
+				<source>Dupliquer</source>
+			</trans-unit>
+			<trans-unit id="label.deplacer.haut" xml:space="preserve">
+				<source>Déplacer vers le haut</source>
+			</trans-unit>
+			<trans-unit id="label.deplacer.bas" xml:space="preserve">
+				<source>Déplacer vers le bas</source>
+			</trans-unit>
+			<trans-unit id="label.recherche" xml:space="preserve">
+				<source>Recherche</source>
+			</trans-unit>
+			<trans-unit id="label.rechercher" xml:space="preserve">
+				<source>Rechercher</source>
+			</trans-unit>
+			<trans-unit id="label.mot_cle" xml:space="preserve">
+				<source>Mot-clé</source>
+			</trans-unit>
+			<trans-unit id="label.enregistrer" xml:space="preserve">
+				<source>Enregistrer</source>
+			</trans-unit>
+			<trans-unit id="label.retour" xml:space="preserve">
+				<source>Retour</source>
+			</trans-unit>
+			<trans-unit id="label.all" xml:space="preserve">
+				<source>Toutes</source>
+			</trans-unit>
+			<trans-unit id="label.yes" xml:space="preserve">
+				<source>Oui</source>
+			</trans-unit>
+			<trans-unit id="label.no" xml:space="preserve">
+				<source>Non</source>
+			</trans-unit>
+			<trans-unit id="label.aide.date" xml:space="preserve">
+				<source>jj/mm/yyyy</source>
+			</trans-unit>
+			<trans-unit id="label.aide.dateHeure" xml:space="preserve">
+				<source>jj/mm/yyyy hh:mm</source>
+			</trans-unit>
+			<trans-unit id="label.yes" xml:space="preserve">
+				<source>OUI</source>
+			</trans-unit>
+			<trans-unit id="label.no" xml:space="preserve">
+				<source>NON</source>
+			</trans-unit>
+			<trans-unit id="adresse.label.export" xml:space="preserve">
+				<source>Exporter</source>
+			</trans-unit>
+			<trans-unit id="adresse.label.dmde" xml:space="preserve">
+				<source>Des Métiers - Des Ecoles</source>
+			</trans-unit>
+			<trans-unit id="adresse.link.dmde" xml:space="preserve">
+				<source>Modifier la notice Des Métiers - Des Ecoles</source>
+			</trans-unit>
+			<trans-unit id="adresse_del_delais_linked" xml:space="preserve">
+				<source>Suppression impossible, l'adresse possède des délais d'inscription lié(s)</source>
+			</trans-unit>
+			<trans-unit id="adresse.liste.nom" xml:space="preserve">
+				<source>Nom</source>
+			</trans-unit>
+			<trans-unit id="adresse.liste.ville" xml:space="preserve">
+				<source>Ville</source>
+			</trans-unit>
+			<trans-unit id="adresse.liste.contact" xml:space="preserve">
+				<source>Contact</source>
+			</trans-unit>
+			<trans-unit id="adresse.liste.nb_inscrit" xml:space="preserve">
+				<source>Nb inscription</source>
+			</trans-unit>
+			<trans-unit id="adresse.form.typeAdresse" xml:space="preserve">
+				<source>Type</source>
+			</trans-unit>
+			<trans-unit id="adresse.form.nom" xml:space="preserve">
+				<source>Nom</source>
+			</trans-unit>
+			<trans-unit id="adresse.form.adresse" xml:space="preserve">
+				<source>Adresse</source>
+			</trans-unit>
+			<trans-unit id="adresse.form.adresse2" xml:space="preserve">
+				<source>Complément</source>
+			</trans-unit>
+			<trans-unit id="adresse.form.codePostal" xml:space="preserve">
+				<source>Code Postal</source>
+			</trans-unit>
+			<trans-unit id="adresse.form.ville" xml:space="preserve">
+				<source>Ville</source>
+			</trans-unit>
+			<trans-unit id="adresse.form.siteWeb" xml:space="preserve">
+				<source>Site Web</source>
+			</trans-unit>
+			<trans-unit id="adresse.form.tel" xml:space="preserve">
+				<source>Tél.</source>
+			</trans-unit>
+			<trans-unit id="adresse.form.fax" xml:space="preserve">
+				<source>Fax</source>
+			</trans-unit>
+			<trans-unit id="adresse.form.email" xml:space="preserve">
+				<source>Email</source>
+			</trans-unit>
+			<trans-unit id="adresse.form.remarques" xml:space="preserve">
+				<source>Remarques</source>
+			</trans-unit>
+			<trans-unit id="adresse.form.utilisation" xml:space="preserve">
+				<source>Utilisation</source>
+			</trans-unit>
+			<trans-unit id="adresse.form.delais" xml:space="preserve">
+				<source>Délais</source>
+			</trans-unit>
+			<trans-unit id="adresse.form.contact" xml:space="preserve">
+				<source>Contact</source>
+			</trans-unit>
+			<trans-unit id="adresse.form.formations" xml:space="preserve">
+				<source>Formations</source>
+			</trans-unit>
+			<trans-unit id="adresse.form.salaire" xml:space="preserve">
+				<source>Salaire</source>
+			</trans-unit>
+			<trans-unit id="adresse.form.infoMetier" xml:space="preserve">
+				<source>Info-Métiers</source>
+			</trans-unit>
+			<trans-unit id="adresse.form.horizon" xml:space="preserve">
+				<source>Horizon</source>
+			</trans-unit>
+			<trans-unit id="adresse.form.demandeDoc" xml:space="preserve">
+				<source>Demande Doc</source>
+			</trans-unit>
+			<trans-unit id="adresse.form.ecolInfo" xml:space="preserve">
+				<source>ecolInfo</source>
+			</trans-unit>
+			<trans-unit id="adresse.form.dateMaj" xml:space="preserve">
+				<source>Date de mise à jour</source>
+			</trans-unit>
+			<trans-unit id="diplome.liste.diplome" xml:space="preserve">
+				<source>Diplôme</source>
+			</trans-unit>
+			<trans-unit id="diplome.liste.definition" xml:space="preserve">
+				<source>Définition</source>
+			</trans-unit>
+			<trans-unit id="diplome.form.diplome" xml:space="preserve">
+				<source>Diplôme</source>
+			</trans-unit>
+			<trans-unit id="diplome.form.definition" xml:space="preserve">
+				<source>Définition</source>
+			</trans-unit>
+			<trans-unit id="interet.liste.nom" xml:space="preserve">
+				<source>Nom</source>
+			</trans-unit>
+			<trans-unit id="interet.form.nom" xml:space="preserve">
+				<source>Nom</source>
+			</trans-unit>
+			<trans-unit id="profession.liste.nomMasc" xml:space="preserve">
+				<source>Nom masculin</source>
+			</trans-unit>
+			<trans-unit id="profession.liste.nomFem" xml:space="preserve">
+				<source>Nom féminin</source>
+			</trans-unit>
+			<trans-unit id="profession.liste.mots_cles" xml:space="preserve">
+				<source>Mots-clés</source>
+			</trans-unit>
+			<trans-unit id="profession.label.none" xml:space="preserve">
+				<source>Aucune Profession existante.</source>
+			</trans-unit>
+			<trans-unit id="profession.label.search.none" xml:space="preserve">
+				<source>Aucune Profession ne correspond à la recherche demandée.</source>
+			</trans-unit>
+			<trans-unit id="profession.form.projetConsultation" xml:space="preserve">
+				<source>Projet en consultation</source>
+			</trans-unit>
+			<trans-unit id="profession.form.reglementAbroge" xml:space="preserve">
+				<source>Profession abrogée</source>
+			</trans-unit>
+			<trans-unit id="domaine.liste.nom" xml:space="preserve">
+				<source>Nom</source>
+			</trans-unit>
+			<trans-unit id="domaine.form.nom" xml:space="preserve">
+				<source>Nom</source>
+			</trans-unit>
+			<trans-unit id="domaine.form.demande" xml:space="preserve">
+				<source>Des Métiers - Des Ecoles</source>
+			</trans-unit>
+			<trans-unit id="domaine.form.delais" xml:space="preserve">
+				<source>Délais d'inscription</source>
+			</trans-unit>
+			<trans-unit id="inscription.liste.formation" xml:space="preserve">
+				<source>Formation</source>
+			</trans-unit>
+			<trans-unit id="inscription.liste.ecole" xml:space="preserve">
+				<source>Ecole, entreprise ou association</source>
+			</trans-unit>
+			<trans-unit id="inscription.liste.inscription" xml:space="preserve">
+				<source>Inscription</source>
+			</trans-unit>
+			<trans-unit id="inscription.liste.examen" xml:space="preserve">
+				<source>Examen</source>
+			</trans-unit>
+			<trans-unit id="inscription.liste.tel" xml:space="preserve">
+				<source>Téléphone</source>
+			</trans-unit>
+			<trans-unit id="inscription.search.ecole" xml:space="preserve">
+				<source>Ecole, entreprise ou association</source>
+			</trans-unit>
+			<trans-unit id="inscription.search.formation" xml:space="preserve">
+				<source>Formation</source>
+			</trans-unit>
+			<trans-unit id="inscription.form.adresse" xml:space="preserve">
+				<source>Adresse</source>
+			</trans-unit>
+			<trans-unit id="inscription.form.diplome" xml:space="preserve">
+				<source>Diplôme</source>
+			</trans-unit>
+			<trans-unit id="inscription.form.domaine" xml:space="preserve">
+				<source>Domaine</source>
+			</trans-unit>
+			<trans-unit id="inscription.form.formation" xml:space="preserve">
+				<source>Formation</source>
+			</trans-unit>
+			<trans-unit id="inscription.form.delaisInscription" xml:space="preserve">
+				<source>Délais d'inscription</source>
+			</trans-unit>
+			<trans-unit id="inscription.form.dateExamen" xml:space="preserve">
+				<source>Date d'examen</source>
+			</trans-unit>
+			<trans-unit id="inscription.form.profession" xml:space="preserve">
+				<source>Profession</source>
+			</trans-unit>
+			<trans-unit id="inscription.form.urlExad" xml:space="preserve">
+				<source>Fichier PDF</source>
+			</trans-unit>
+			<trans-unit id="inscription.form.file" xml:space="preserve">
+				<source>Fichier existant:</source>
+			</trans-unit>
+			<trans-unit id="inscription.del.file" xml:space="preserve">
+				<source>Supprimer le fichier</source>
+			</trans-unit>
+			<trans-unit id="inscription.form.no_profession_dispo" xml:space="preserve">
+				<source>Aucune profession disponible</source>
+			</trans-unit>
+			<trans-unit id="inscription.form.liste_professions" xml:space="preserve">
+				<source>Liste des professions</source>
+			</trans-unit>
+			<trans-unit id="inscription.form.profession.add" xml:space="preserve">
+				<source>Ajouter</source>
+			</trans-unit>
+			<trans-unit id="inscription.form.profession.legend" xml:space="preserve">
+				<source>Profession</source>
+			</trans-unit>
+			<trans-unit id="dmde.select_all_domaine" xml:space="preserve">
+				<source>Tous</source>
+			</trans-unit>
+			<trans-unit id="dmde.liste.profession" xml:space="preserve">
+				<source>Profession</source>
+			</trans-unit>
+			<trans-unit id="dmde.liste.complement" xml:space="preserve">
+				<source>Complément professions</source>
+			</trans-unit>
+			<trans-unit id="dmde.liste.dmde" xml:space="preserve">
+				<source>Des métiers des écoles</source>
+			</trans-unit>
+			<trans-unit id="dmde.form.str" xml:space="preserve">
+				<source>Nom de la profession</source>
+			</trans-unit>
+			<trans-unit id="dmde.form.type" xml:space="preserve">
+				<source>Recherche dans</source>
+			</trans-unit>
+			<trans-unit id="dmde.form.type_dmde" xml:space="preserve">
+				<source>Des métiers des écoles uniquement</source>
+			</trans-unit>
+			<trans-unit id="dmde.form.type_prof" xml:space="preserve">
+				<source>Toutes les professions</source>
+			</trans-unit>
+			<trans-unit id="dmde.form.domaine" xml:space="preserve">
+				<source>Domaine</source>
+			</trans-unit>
+			<trans-unit id="dmde.select_choose_domaine" xml:space="preserve">
+				<source>Choisissez un domaine...</source>
+			</trans-unit>
+			<trans-unit id="dmde.select_choose_interet" xml:space="preserve">
+				<source>Choisissez un intérêt...</source>
+			</trans-unit>
+			<trans-unit id="dmde.select_choose_diplome" xml:space="preserve">
+				<source>Choisissez un titre...</source>
+			</trans-unit>
+			<trans-unit id="dmde.form.complement" xml:space="preserve">
+				<source>Complément profession</source>
+			</trans-unit>
+			<trans-unit id="dmde.form.profession" xml:space="preserve">
+				<source>Profession</source>
+			</trans-unit>
+			<trans-unit id="dmde.form.domaine_principal" xml:space="preserve">
+				<source>Domaine principal</source>
+			</trans-unit>
+			<trans-unit id="dmde.form.domaine_secondaire" xml:space="preserve">
+				<source>Domaine secondaire</source>
+			</trans-unit>
+			<trans-unit id="dmde.form.interets" xml:space="preserve">
+				<source>Intérêts</source>
+			</trans-unit>
+			<trans-unit id="dmde.form.interet_1" xml:space="preserve">
+				<source>Intérêt 1</source>
+			</trans-unit>
+			<trans-unit id="dmde.form.interet_2" xml:space="preserve">
+				<source>Intérêt 2</source>
+			</trans-unit>
+			<trans-unit id="dmde.form.interet_3" xml:space="preserve">
+				<source>Intérêt 3</source>
+			</trans-unit>
+			<trans-unit id="dmde.form.interet_4" xml:space="preserve">
+				<source>Intérêt 4</source>
+			</trans-unit>
+			<trans-unit id="dmde.form.diplome" xml:space="preserve">
+				<source>Titre délivré</source>
+			</trans-unit>
+			<trans-unit id="dmde.form.diplome_complement" xml:space="preserve">
+				<source>Complément titre délivré</source>
+			</trans-unit>
+			<trans-unit id="dmde.form.video_zoom" xml:space="preserve">
+				<source>Lien vidéo Zoom</source>
+			</trans-unit>
+			<trans-unit id="dmde.form.video_zoom.help" xml:space="preserve">
+				<source>Veuillez saisir l'URL du fichier MP4 et non celle de la page HTML</source>
+			</trans-unit>
+			<trans-unit id="dmde.form.photo_preview" xml:space="preserve">
+				<source>Voir la photo</source>
+			</trans-unit>
+			<trans-unit id="dmde.form.description" xml:space="preserve">
+				<source>Description</source>
+			</trans-unit>
+			<trans-unit id="dmde.form.description_temp" xml:space="preserve">
+				<source>Description importée</source>
+			</trans-unit>
+			<trans-unit id="dmde.form.formation_description" xml:space="preserve">
+				<source>Description des formations</source>
+			</trans-unit>
+			<trans-unit id="dmde.form.formation" xml:space="preserve">
+				<source>Formation</source>
+			</trans-unit>
+			<trans-unit id="dmde.form.lieu" xml:space="preserve">
+				<source>Lieu</source>
+			</trans-unit>
+			<trans-unit id="dmde.form.condition_admission" xml:space="preserve">
+				<source>Condition d'admission</source>
+			</trans-unit>
+			<trans-unit id="dmde.form.remarques" xml:space="preserve">
+				<source>Remarques</source>
+			</trans-unit>
+			<trans-unit id="dmde.form.formation2" xml:space="preserve">
+				<source>Formation secondaire</source>
+			</trans-unit>
+			<trans-unit id="dmde.form.lieu2" xml:space="preserve">
+				<source>Lieu secondaire</source>
+			</trans-unit>
+			<trans-unit id="dmde.form.condition_admission2" xml:space="preserve">
+				<source>Condition d'admission secondaire</source>
+			</trans-unit>
+			<trans-unit id="dmde.form.remarques2" xml:space="preserve">
+				<source>Remarques secondaire</source>
+			</trans-unit>
+			<trans-unit id="dmde.form.remarque_interne" xml:space="preserve">
+				<source>Remarque interne</source>
+			</trans-unit>
+			<trans-unit id="dmde.form.salaire_mensuel" xml:space="preserve">
+				<source>Salaire</source>
+			</trans-unit>
+			<trans-unit id="dmde.form.salaire_horaire" xml:space="preserve">
+				<source>Source</source>
+			</trans-unit>
+			<trans-unit id="dmde.form.salaire_indemnite" xml:space="preserve">
+				<source>Indemnités</source>
+			</trans-unit>
+			<trans-unit id="dmde.form.dateMaj" xml:space="preserve">
+				<source>Date de mise à jour</source>
+			</trans-unit>
+			<trans-unit id="dmde.adresse.form.liste_adresse" xml:space="preserve">
+				<source>Liste des Adresses</source>
+			</trans-unit>
+			<trans-unit id="dmde.adresse.form.adresse.add" xml:space="preserve">
+				<source>Ajouter</source>
+			</trans-unit>
+			<trans-unit id="dmde.link.profession" xml:space="preserve">
+				<source>Modifier la profession</source>
+			</trans-unit>
+			<trans-unit id="dmde.link.adresse" xml:space="preserve">
+				<source>Modifier l'adresse</source>
+			</trans-unit>
+			<trans-unit id="dmde.link.add" xml:space="preserve">
+				<source>Ajouter une notice</source>
+			</trans-unit>
+		</body>
+	</file>
+</xliff>

@@ -1,0 +1,96 @@
+<html data-namespace-typo3-fluid="true" xmlns:f="http://typo3.org/ns/TYPO3/CMS/Fluid/ViewHelpers">
+    <f:if condition="{rowIterator.isFirst}">
+        <f:then>
+            <f:if condition="{data.table_header_position} == 1 || {data.table_header_position} == 3">
+                <f:then>
+                    <th scope="col">
+                </f:then>
+                <f:else>
+                    <f:if condition="{columnIterator.isFirst}">
+                        <f:then>
+                            <f:if condition="{data.table_header_position} == 2 || {data.table_header_position} == 3">
+                                <f:then>
+                                    <th scope="row">
+                                </f:then>
+                                <f:else>
+                                    <td>
+                                </f:else>
+                            </f:if>
+                        </f:then>
+                        <f:else>
+                            <td>
+                        </f:else>
+                    </f:if>
+                </f:else>
+            </f:if>
+        </f:then>
+        <f:else>
+            <f:if condition="{columnIterator.isFirst}">
+                <f:then>
+                    <f:if condition="{data.table_header_position} == 2 || {data.table_header_position} == 3">
+                        <f:then>
+                            <th scope="row">
+                        </f:then>
+                        <f:else>
+                            <td>
+                        </f:else>
+                    </f:if>
+                </f:then>
+                <f:else>
+                    <td>
+                </f:else>
+            </f:if>
+        </f:else>
+    </f:if>
+    <f:if condition="{cell} != ''">
+        <f:then>
+            <f:format.nl2br><f:format.stripTags allowedTags="<a><i>">{cell}</f:format.stripTags></f:format.nl2br>
+        </f:then>
+        <f:else>
+            &nbsp;
+        </f:else>
+    </f:if>
+    <f:if condition="{rowIterator.isFirst}">
+        <f:then>
+            <f:if condition="{data.table_header_position} == 1 || {data.table_header_position} == 3">
+                <f:then>
+                    </th>
+                </f:then>
+                <f:else>
+                    <f:if condition="{columnIterator.isFirst}">
+                        <f:then>
+                            <f:if condition="{data.table_header_position} == 2">
+                                <f:then>
+                                    </th>
+                                </f:then>
+                                <f:else>
+                                    </td>
+                                </f:else>
+                            </f:if>
+                        </f:then>
+                        <f:else>
+                            </td>
+                        </f:else>
+                    </f:if>
+                </f:else>
+            </f:if>
+        </f:then>
+        <f:else>
+            <f:if condition="{columnIterator.isFirst}">
+                <f:then>
+                    <f:if condition="{data.table_header_position} == 2 || {data.table_header_position} == 3">
+                        <f:then>
+                            </th>
+                        </f:then>
+                        <f:else>
+                            </td>
+                        </f:else>
+                    </f:if>
+                </f:then>
+                <f:else>
+                    </td>
+                </f:else>
+            </f:if>
+        </f:else>
+    </f:if>
+</html>

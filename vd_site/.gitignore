@@ -1,0 +1,8 @@
+Resources/Public/Css/*
+!Resources/Public/Css/Sitemap.xsl
+Resources/Public/Foehn
+Resources/Public/Fonts
+Resources/Public/Icons/font-awesome
+Resources/Public/JavaScript/*
+!Resources/Public/JavaScript/Backend
+!Resources/Public/JavaScript/Frontend

@@ -1,0 +1,31 @@
+<html data-namespace-typo3-fluid="true" xmlns:f="http://typo3.org/ns/TYPO3/CMS/Fluid/ViewHelpers">
+    <f:form action="search" class="input-group vd-search-form-regular" hiddenFieldClassName="d-none">
+        <label class="form-label visually-hidden" for="search-form" id="search-form-label">
+            Rechercher l'entité compétente selon la commune ou le numéro postal (NPA)
+        </label>
+        <f:form.textfield additionalAttributes="{aria-describedby: 'search-form-label', autocomplete: 'off'}" class="form-control" id="search-form" name="term" placeholder="Rechercher" value="{term}"/>
+        <span class="input-group-btn">
+            <button aria-label="Recherche" class="btn btn-dark" id="search-button" type="submit">
+                <i aria-hidden="true" class="fa fa-search"></i>
+            </button>
+        </span>
+    </f:form>
+    <f:if condition="{term}">
+        <f:if condition="{matches}">
+            <f:then>
+                <ul class="mt-3">
+                    <f:for as="match" each="{matches}" iteration="iterator">
+                        <li class="nav-item">
+                            <f:link.page class="nav-link d-inline-block" id="municipality-{iterator.index}" pageUid="{match.page.uid}">
+                                {match.municipality.nameLower}
+                            </f:link.page>
+                        </li>
+                    </f:for>
+                </ul>
+            </f:then>
+            <f:else>
+                <p class="mt-3">Aucun résultat n'a été trouvée</p>
+            </f:else>
+        </f:if>
+    </f:if>
+</html>

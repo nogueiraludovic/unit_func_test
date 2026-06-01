@@ -1,0 +1,16 @@
+plugin.tx_vdwsprosecutor_officehourlist {
+  settings.pagination {
+    enable = 0
+    insertAbove = 0
+    insertBelow = 1
+    itemsPerPage = 10
+    partial = Ajax
+  }
+  view {
+    partialRootPaths {
+      10 = EXT:vd_core/Resources/Private/Partials/
+      20 = EXT:vd_wsprosecutor/Resources/Private/Partials/
+    }
+    pluginNamespace = tx_vdwsprosecutor_list
+  }
+}

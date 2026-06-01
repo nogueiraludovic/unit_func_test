@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xliff version="1.2" xmlns="urn:oasis:names:tc:xliff:document:1.2">
+	<file datatype="plaintext" original="EXT:vd_site/Resources/Private/Language/locallang_db.xlf" source-language="en">
+		<header/>
+		<body>
+			<trans-unit id="author" resname="author">
+				<source>Author</source>
+			</trans-unit>
+			<trans-unit id="biography" resname="biography">
+				<source>Biography</source>
+			</trans-unit>
+			<trans-unit id="cards" resname="cards">
+				<source>Cards</source>
+			</trans-unit>
+			<trans-unit id="carousel_items" resname="carousel_items">
+				<source>Carousel items</source>
+			</trans-unit>
+			<trans-unit id="citation" resname="citation">
+				<source>Citation</source>
+			</trans-unit>
+			<trans-unit id="free" resname="free">
+				<source>Free</source>
+			</trans-unit>
+			<trans-unit id="google_tags_id" resname="google_tags_id">
+				<source>Google Tags ID</source>
+			</trans-unit>
+			<trans-unit id="icon" resname="icon">
+				<source>Icon</source>
+			</trans-unit>
+			<trans-unit id="limit" resname="limit">
+				<source>Limit</source>
+			</trans-unit>
+			<trans-unit id="link" resname="link">
+				<source>Link</source>
+			</trans-unit>
+			<trans-unit id="links" resname="links">
+				<source>Links</source>
+			</trans-unit>
+			<trans-unit id="news" resname="news">
+				<source>News</source>
+			</trans-unit>
+			<trans-unit id="owner" resname="owner">
+				<source>Owner</source>
+			</trans-unit>
+			<trans-unit id="press_releases" resname="press_releases">
+				<source>Press releases</source>
+			</trans-unit>
+			<trans-unit id="queue_item" resname="queue_item">
+				<source>Crawl queue item</source>
+			</trans-unit>
+			<trans-unit id="related_links" resname="related_links">
+				<source>Related links</source>
+			</trans-unit>
+			<trans-unit id="related_records" resname="related_records">
+				<source>Records</source>
+			</trans-unit>
+			<trans-unit id="related_services" resname="related_services">
+				<source>Services</source>
+			</trans-unit>
+			<trans-unit id="services_domain" resname="services_domain">
+				<source>Domain</source>
+			</trans-unit>
+			<trans-unit id="services_theme" resname="services_theme">
+				<source>Theme</source>
+			</trans-unit>
+			<trans-unit id="suggestions" resname="suggestions">
+				<source>Suggestions (comma separated list)</source>
+			</trans-unit>
+			<trans-unit id="title" resname="title">
+				<source>Title</source>
+			</trans-unit>
+			<trans-unit id="vd_hide_menu_button" resname="vd_hide_menu_button">
+				<source>Hide the button to open the main menu</source>
+			</trans-unit>
+			<trans-unit id="vd_nav_legend" resname="vd_nav_legend">
+				<source>Navigation legend</source>
+			</trans-unit>
+			<trans-unit id="vd_show_menu" resname="vd_show_menu">
+				<source>Open the main menu</source>
+			</trans-unit>
+		</body>
+	</file>
+</xliff>

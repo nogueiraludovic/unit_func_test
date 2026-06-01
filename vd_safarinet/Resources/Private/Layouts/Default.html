@@ -1,0 +1,15 @@
+<html data-namespace-typo3-fluid="true" xmlns:f="http://typo3.org/ns/fluid/ViewHelpers">
+    <f:if condition="{error}">
+        <f:then>
+            <div class="highlight-dark vd-content-column vd-highlight">
+                <div class="mb-0">
+                    <h2 id="warning-title">Attention</h2>
+                    <p>Le service SIEL connaît actuellement des problèmes informatiques. Tout est mis en œuvre pour les résoudre au plus vite. Nous vous remercions pour votre compréhension.</p>
+                </div>
+            </div>
+        </f:then>
+        <f:else>
+            <f:render section="Main"/>
+        </f:else>
+    </f:if>
+</html>

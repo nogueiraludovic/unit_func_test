@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xliff version="1.2" xmlns="urn:oasis:names:tc:xliff:document:1.2">
+	<file datatype="plaintext" original="EXT:vd_publications_cg/Resources/Private/Language/locallang_tca.xlf" source-language="en" target-language="fr">
+		<header/>
+		<body>
+			<trans-unit id="document" resname="document">
+				<source>Document</source>
+				<target state="translated">Document</target>
+			</trans-unit>
+			<trans-unit id="number" resname="number">
+				<source>Number</source>
+				<target state="translated">Numéro</target>
+			</trans-unit>
+			<trans-unit id="publication_date" resname="publication_date">
+				<source>Publication date</source>
+				<target state="translated">Date de publication</target>
+			</trans-unit>
+			<trans-unit id="publisher" resname="publisher">
+				<source>Publisher</source>
+				<target state="translated">Publicateur</target>
+			</trans-unit>
+			<trans-unit id="text" resname="text">
+				<source>Text</source>
+				<target state="translated">Texte</target>
+			</trans-unit>
+		</body>
+	</file>
+</xliff>

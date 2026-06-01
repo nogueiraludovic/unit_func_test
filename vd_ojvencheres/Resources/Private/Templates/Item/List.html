@@ -1,0 +1,48 @@
+<html data-namespace-typo3-fluid="true" xmlns:f="http://typo3.org/ns/TYPO3/CMS/Fluid/ViewHelpers">
+    <f:layout/>
+    <f:section name="Content">
+        <f:if condition="{settings.hidePagination}">
+            <f:then>
+                <f:render arguments="{_all}" section="Items"/>
+            </f:then>
+            <f:else>
+                <f:variable name="items" value="{paginator.paginatedItems}"/>
+                <f:render arguments="{_all}" section="Items"/>
+                <f:render arguments="{pagination: pagination, paginator: paginator}" partial="Pagination/Default"/>
+            </f:else>
+        </f:if>
+    </f:section>
+    <f:section name="Items">
+        <f:form action="list" hiddenFieldClassName="d-none" method="post" object="{demand}" objectName="demand">
+            <legend><f:translate id="search_legend"/></legend>
+            <div class="row">
+                <div class="col-md-6 mb-3">
+                    <label class="form-label" for="search-word"><f:translate id="search_items"/></label>
+                    <f:form.textfield class="form-control" id="search-word" property="searchWord" value="{demand.searchWord}"/>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-6 mb-3">
+                    <label class="form-label" for="categories"><f:translate id="item_categories"/></label>
+                    <f:form.select class="form-select" data="{ajax: 'disabled', field: 'categories'}" id="categories" options="{categories}" optionLabelField="name" optionValueField="uid" property="category" value="{demand.category}"/>
+                </div>
+                <div class="col-md-6 mb-3">
+                    <label class="form-label" for="sub-categories"><f:translate id="item_sub_categories"/></label>
+                    <f:form.select class="form-select" data="{field: 'subCategories'}" id="sub-categories" options="{subCategories}" optionLabelField="name" optionValueField="uid" property="subCategory" value="{demand.subCategory}"/>
+                </div>
+            </div>
+            <div class="mb-3">
+                <f:form.button class="btn btn-dark mb-3 mb-sm-0 me-1" id="submit-search" type="submit">
+                    <f:translate id="search"/>
+                </f:form.button>
+                <f:if condition="{demand.search}">
+                    <f:link.action action="reset" class="btn btn-secondary mb-3 mb-sm-0" id="search-reset-button">
+                        <f:translate id="reset"/>
+                    </f:link.action>
+                </f:if>
+            </div>
+        </f:form>
+        <f:link.page id="email-alert-link" pageUid="{settings.item.alertPid}}">Alertes emails</f:link.page>
+        <f:render arguments="{items: items, numberOfRecords: numberOfRecords, showNumberOfRecords: 1}" partial="List/Items"/>
+    </f:section>
+</html>

@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xliff version="1.2" xmlns="urn:oasis:names:tc:xliff:document:1.2">
+	<file datatype="plaintext" original="EXT:vd_site/Resources/Private/Language/locallang_db_new_content_el.xlf" source-language="en" target-language="fr">
+		<header/>
+		<body>
+			<trans-unit id="common_biocard_description" resname="common_biocard_description">
+				<source>Content element to display a short biography.</source>
+				<target state="translated">Élément de contenu affichant une courte biographie.</target>
+			</trans-unit>
+			<trans-unit id="common_buttons_description" resname="common_buttons_description">
+				<source>Content element to display a list of buttons.</source>
+				<target state="translated">Élément de contenu affichant une liste de boutons.</target>
+			</trans-unit>
+			<trans-unit id="common_carousel_description" resname="common_carousel_description">
+				<source>Content element to display a carousel.</source>
+				<target state="translated">Élément de contenu affichant un carrousel.</target>
+			</trans-unit>
+			<trans-unit id="common_citation_description" resname="common_citation_description">
+				<source>Content element to display a citation.</source>
+				<target state="translated">Élément de contenu affichant une citation.</target>
+			</trans-unit>
+			<trans-unit id="common_card_description" resname="common_card_description">
+				<source>Content element to display a card.</source>
+				<target state="translated">Élément de contenu affichant une carte.</target>
+			</trans-unit>
+			<trans-unit id="common_cards_group_description" resname="common_cards_group_description">
+				<source>Content element to display a group of cards.</source>
+				<target state="translated">Élément de contenu affichant un groupe de cartes.</target>
+			</trans-unit>
+			<trans-unit id="common_links_box_description" resname="common_links_box_description">
+				<source>Content element to display a list of links in a box.</source>
+				<target state="translated">Élément de contenu affichant une liste de liens dans une boîte.</target>
+			</trans-unit>
+			<trans-unit id="common_biocard_title" resname="common_biocard_title">
+				<source>Short biography</source>
+				<target state="translated">Biographie courte</target>
+			</trans-unit>
+			<trans-unit id="common_buttons_title" resname="common_buttons_title">
+				<source>Buttons</source>
+				<target state="translated">Boutons</target>
+			</trans-unit>
+			<trans-unit id="common_card_title" resname="common_card_title">
+				<source>Card</source>
+				<target state="translated">Carte</target>
+			</trans-unit>
+			<trans-unit id="common_cards_group_title" resname="common_cards_group_title">
+				<source>Cards group</source>
+				<target state="translated">Groupe de carte</target>
+			</trans-unit>
+			<trans-unit id="common_carousel_title" resname="common_carousel_title">
+				<source>Carousel</source>
+				<target state="translated">Carrousel</target>
+			</trans-unit>
+			<trans-unit id="common_citation_title" resname="common_citation_title">
+				<source>Citation</source>
+				<target state="translated">Citation</target>
+			</trans-unit>
+			<trans-unit id="common_links_box_title" resname="common_links_box_title">
+				<source>Links box</source>
+				<target state="translated">Boîte de liens</target>
+			</trans-unit>
+			<trans-unit id="form_search_form_description" resname="form_search_form_description">
+				<source>Form to display a global search</source>
+				<target state="translated">Formulaire affichant une recherche globale</target>
+			</trans-unit>
+			<trans-unit id="form_search_form_title" resname="form_search_form_title">
+				<source>Search form</source>
+				<target state="translated">Formulaire de recherche</target>
+			</trans-unit>
+			<trans-unit id="menu_menu_themes_description" resname="menu_menu_themes_description">
+				<source>Menu to display a list of themes into 2 columns</source>
+				<target state="translated">Menu affichant une liste de thèmes séparée en 2 colonnes</target>
+			</trans-unit>
+			<trans-unit id="menu_menu_themes_title" resname="menu_menu_themes_title">
+				<source>Themes menu</source>
+				<target state="translated">Menu thématique</target>
+			</trans-unit>
+			<trans-unit id="plugin_plainfaq_description" resname="plugin_plainfaq_description">
+				<source>Plugin to display an FAQ with dynamic and static list</source>
+				<target state="translated">Plugin affichant une FAQ avec liste dynamique et statique</target>
+			</trans-unit>
+			<trans-unit id="plugin_plainfaq_title" resname="plugin_plainfaq_title">
+				<source>Frequently asked questions (FAQ)</source>
+				<target state="translated">Foires aux questions (FAQ)</target>
+			</trans-unit>
+		</body>
+	</file>
+</xliff>

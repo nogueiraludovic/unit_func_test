@@ -1,0 +1,36 @@
+<html data-namespace-typo3-fluid="true" xmlns:f="http://typo3.org/ns/TYPO3/CMS/Fluid/ViewHelpers">
+    <f:form method="post" action="index">
+        <fieldset>
+            <legend>
+                <f:translate id="LLL:EXT:vd_ocosp/Resources/Private/Language/locallang_backend.xlf:label.recherche"/>
+            </legend>
+            <div class="mb-3 row">
+                <div class="col-md-4">
+                    <f:translate id="LLL:EXT:vd_ocosp/Resources/Private/Language/locallang_backend.xlf:dmde.form.str"/>
+                </div>
+                <div class="col-md-8">
+                    <f:form.textfield name="keyword" class="form-control" placeholder="{f:translate(id: 'LLL:EXT:vd_ocosp/Resources/Private/Language/locallang_backend.xlf:label.mot_cle')}" value="{keyword}"/>
+                </div>
+            </div>
+            <div class="mb-3 row">
+                <div class="col-md-4">
+                    <f:translate id="LLL:EXT:vd_ocosp/Resources/Private/Language/locallang_backend.xlf:dmde.form.type"/>
+                </div>
+                <div class="col-md-8">
+                    <f:form.select name="type" class="form-control" value="{type}" options="{0: '{f:translate(id: \'LLL:EXT:vd_ocosp/Resources/Private/Language/locallang_backend.xlf:dmde.form.type_dmde\')}', 1: '{f:translate(id: \'LLL:EXT:vd_ocosp/Resources/Private/Language/locallang_backend.xlf:dmde.form.type_prof\')}'}"/>
+                </div>
+            </div>
+            <div class="mb-3 row{f:if(condition: '{type} == 1', then: ' d-none')}">
+                <div class="col-md-4">
+                    <f:translate id="LLL:EXT:vd_ocosp/Resources/Private/Language/locallang_backend.xlf:dmde.form.domaine"/>
+                </div>
+                <div class="col-md-8">
+                    <f:form.select name="domain" class="form-control" value="{domain}" options="{domains}" optionValueField="uid" optionLabelField="nom" prependOptionValue="0" prependOptionLabel="{f:translate(id: 'LLL:EXT:vd_ocosp/Resources/Private/Language/locallang_backend.xlf:dmde.select_all_domaine')}"/>
+                </div>
+            </div>
+            <button class="btn btn-secondary btn-sm" id="submit-search" type="submit">
+                <f:translate id="LLL:EXT:vd_ocosp/Resources/Private/Language/locallang_backend.xlf:label.rechercher"/>
+            </button>
+        </fieldset>
+    </f:form>
+</html>

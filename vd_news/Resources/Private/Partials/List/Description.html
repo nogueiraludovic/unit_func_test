@@ -1,0 +1,10 @@
+<html data-namespace-typo3-fluid="true" xmlns:f="http://typo3.org/ns/TYPO3/CMS/Fluid/ViewHelpers">
+    <f:if condition="{newsItem.teaser}">
+        <f:then>
+            <p itemprop="description">{newsItem.teaser -> f:format.stripTags()}</p>
+        </f:then>
+        <f:else if="{newsItem.bodytext}">
+            <p itemprop="description">{newsItem.bodytext -> f:format.stripTags() -> f:format.crop(maxCharacters: 150)}</p>
+        </f:else>
+    </f:if>
+</html>

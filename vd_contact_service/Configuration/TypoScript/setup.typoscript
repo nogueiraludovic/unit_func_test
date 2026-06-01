@@ -1,0 +1,16 @@
+config.recordLinks.tx_vdcontactservice_domain_model_service.typolink {
+  additionalParams {
+    wrap = &tx_powermail_pi1[referer]={TSFE:id}&tx_powermail_pi1[uid]={field:uid}
+    wrap.insertData = 1
+  }
+  parameter = 1032247
+  useCacheHash = 1
+}
+
+##################################################
+
+page.10.dataProcessing.1721886353 = Vd\VdContactService\DataProcessing\ServiceContactProcessor
+
+##################################################
+
+plugin.tx_vdcontactservice.settings.contactFormPid = 1032247

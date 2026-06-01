@@ -1,0 +1,26 @@
+<html data-namespace-typo3-fluid="true" xmlns:f="http://typo3.org/ns/fluid/ViewHelpers">
+    <f:section name="Link">
+        <f:link.action action="show" arguments="{prestation: carouselItem.data.uid}" class="text-decoration-none text-inherit vd-card-link" controller="Prestation" extensionName="VdPrestations" id="carousel-item-link-{carouselItem.data.uid}" pageUid="{settings.services.detailPid}" pluginName="Pi4">
+            {carouselItem.data.title}
+        </f:link.action>
+    </f:section>
+    <li aria-label="{carouselItem.data.title}" class="card w-80">
+        <article class="card-body pt-1">
+            <f:if condition="{sectionHeader}">
+                <f:then>
+                    <h3 class="card-title h4">
+                        <f:render section="Link" arguments="{carouselItem: carouselItem}"/>
+                    </h3>
+                </f:then>
+                <f:else>
+                    <h2 class="card-title h4">
+                        <f:render section="Link" arguments="{carouselItem: carouselItem}"/>
+                    </h2>
+                </f:else>
+            </f:if>
+            <f:if condition="{carouselItem.data.description}">
+                <p class="card-text">{carouselItem.data.description -> f:format.stripTags() -> f:format.crop(maxCharacters: 150)}</p>
+            </f:if>
+        </article>
+    </li>
+</html>

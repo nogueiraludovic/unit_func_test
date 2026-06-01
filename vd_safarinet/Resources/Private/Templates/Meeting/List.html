@@ -1,0 +1,24 @@
+<html data-namespace-typo3-fluid="true" xmlns:f="http://typo3.org/ns/fluid/ViewHelpers">
+    <f:layout/>
+    <f:section name="Main">
+        <div class="vd-teaser-list-striped">
+            <f:if condition="{paginator.paginatedItems}">
+                <p>
+                    <f:variable name="meetingsCount" value="{meetings -> f:count()}"/>
+                    <f:if condition="{meetingsCount} > 1">
+                        <f:then>{meetingsCount} résultats trouvés</f:then>
+                        <f:else>{meetingsCount} résultat trouvé</f:else>
+                    </f:if>
+                </p>
+                <f:for as="meeting" each="{paginator.paginatedItems}" iteration="iterator">
+                    <article class="d-flex flex-column mb-2 pb-3 pt-3 px-3 vd-teaser-list-striped-item">
+                        <f:link.action action="show" arguments="{meetingId: meeting.id}" controller="Meeting" id="meeting-details-link-{iterator.index}" pageUid="{settings.meetingDetailPageUid}">
+                            {meeting.nomCourt}
+                        </f:link.action>
+                    </article>
+                </f:for>
+                <f:render arguments="{pagination: pagination, paginator: paginator}" partial="Pagination/Default"/>
+            </f:if>
+        </div>
+    </f:section>
+</html>

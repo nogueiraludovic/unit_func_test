@@ -1,0 +1,63 @@
+# Necessary for the command executed via le backend.
+module.tx_vdsafarinet.settings {
+  decisionBackPageUid = 1004632
+  decisionDetailPageUid = 2003662
+  groupDetailPageUid = 2003659
+  meetingDetailPageUid = 2003661
+  memberDetailPageUid = 1029776
+  objectDetailPageUid = 2003658
+  pointGcDetailPageUid = 2017368
+  seanceGcDetailPageUid = 2017369
+}
+
+##################################################
+
+page.10.dataProcessing.1689251978 = Vd\VdSafarinet\DataProcessing\SielProcessor
+
+##################################################
+
+plugin {
+  tx_seo.config.xmlSitemap.sitemaps {
+    tx_vdsafarinet_ce {
+      config {
+        type = siel_ce
+        url {
+          additionalGetParameters.tx_vdsafarinet_safarinet {
+            action = show
+            controller = Decision
+          }
+          fieldToParameterMap.decisionId = tx_vdsafarinet_safarinet[decisionId]
+          pageId = 2003662
+        }
+      }
+      provider = Vd\VdSafarinet\XmlSitemap\SitemapDataProvider
+    }
+    tx_vdsafarinet_gc < .tx_vdsafarinet_ce
+    tx_vdsafarinet_gc.config {
+      type = siel_gc
+      url {
+        additionalGetParameters.tx_vdsafarinet_safarinet {
+          action = gcMeetingShow
+          controller = Meeting
+        }
+        fieldToParameterMap >
+        fieldToParameterMap.meetingId = tx_vdsafarinet_safarinet[meetingId]
+        pageId = 2017369
+      }
+    }
+  }
+  tx_vdsafarinet {
+    mvc.callDefaultActionIfActionCantBeResolved = 1
+    settings < module.tx_vdsafarinet.settings
+    view {
+      layoutRootPaths.10 = EXT:vd_safarinet/Resources/Private/Layouts/
+      partialRootPaths {
+        10 = EXT:vd_core/Resources/Private/Partials/
+        20 = EXT:vd_site/Resources/Private/Partials/
+        30 = EXT:vd_safarinet/Resources/Private/Partials/
+      }
+      pluginNamespace = tx_vdsafarinet_safarinet
+      templateRootPaths.10 = EXT:vd_safarinet/Resources/Private/Templates/
+    }
+  }
+}

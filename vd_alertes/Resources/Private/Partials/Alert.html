@@ -1,0 +1,78 @@
+<html data-namespace-typo3-fluid="true" xmlns:f="http://typo3.org/ns/TYPO3/CMS/Fluid/ViewHelpers">
+    <f:section name="Home">
+        <f:if condition="{alerts}">
+            <div class="container">
+                <div class="row">
+                    <f:for as="alert" each="{alerts}" iteration="iterator">
+                        <f:switch expression="{alert.data.color}">
+                            <f:case value="1">
+                                <f:variable name="color" value="green"/>
+                            </f:case>
+                            <f:case value="2">
+                                <f:variable name="color" value="darkgray"/>
+                            </f:case>
+                            <f:case value="3">
+                                <f:variable name="color" value="black"/>
+                            </f:case>
+                            <f:case value="4">
+                                <f:variable name="color" value="lightgray"/>
+                            </f:case>
+                            <f:defaultCase>
+                                <f:variable name="color" value="transparent"/>
+                            </f:defaultCase>
+                        </f:switch>
+                        <f:if condition="{iterator.isFirst}">
+                            <f:then>
+                                <f:variable name="margin" value="mb-4 mt-4"/>
+                            </f:then>
+                            <f:else>
+                                <f:variable name="margin" value="mb-4"/>
+                            </f:else>
+                        </f:if>
+                        <div class="col-md-4 {margin} offset-md-4">
+                            <div class="card vd-card-{color} vd-teaser-card">
+                                <f:for as="image" each="{alert.images}">
+                                    <f:image class="card-img-top w-100" height="250c" image="{image}" loading="lazy" width="410c"/>
+                                </f:for>
+                                <div class="card-body">
+                                    <h4 class="card-title mt-0">{alert.data.title}</h4>
+                                    <f:if condition="{alert.data.summary}">
+                                        <div class="card-text">
+                                            {alert.data.summary -> f:format.html()}
+                                        </div>
+                                    </f:if>
+                                    <f:if condition="{alert.data.link}">
+                                        <p class="card-text">
+                                            <f:link.page id="alert-more-{iterator.index}" pageUid="{alert.data.link}" title="{f:translate(extensionName: 'VdSite', id: 'more')}">
+                                                <f:translate extensionName="VdSite" id="more"/>
+                                            </f:link.page>
+                                        </p>
+                                    </f:if>
+                                </div>
+                            </div>
+                        </div>
+                    </f:for>
+                </div>
+            </div>
+        </f:if>
+    </f:section>
+    <f:section name="Service">
+        <f:if condition="{alerts}">
+            <f:for as="alert" each="{alerts}" iteration="iterator">
+                <div class="mb-4 vd-alert">
+                    <div class="highlight-dark vd-content-column vd-highlight">
+                        <div class="container-fluid">
+                            <h3>{alert.title}</h3>
+                            <f:if condition="{alert.summary}">
+                                <p><f:format.html>{alert.summary}</f:format.html></p>
+                            </f:if>
+                            <f:if condition="{alert.link}">
+                                <p class="mb-0"><f:link.typolink additionalAttributes="{id: 'alert-know-more-{iterator.index}'}" parameter="{alert.link}">En savoir plus</f:link.typolink></p>
+                            </f:if>
+                        </div>
+                    </div>
+                </div>
+            </f:for>
+        </f:if>
+    </f:section>
+</html>

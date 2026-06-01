@@ -1,0 +1,12 @@
+plugin.tx_vdsqlicalculetteaci_pi1 = USER_INT
+plugin.tx_vdsqlicalculetteaci_pi1 {
+  detailCalcul = 0
+  templateFolder = Tmpl17/
+  userFunc = Vd\VdSqliCalculetteAci\Plugin\AciCalculatorPlugin->main
+}
+
+##################################################
+
+[applicationContext matches '/^Development/']
+  plugin.tx_vdsqlicalculetteaci_pi1.detailCalcul = 1
+[end]

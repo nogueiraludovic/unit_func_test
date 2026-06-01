@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xliff version="1.2" xmlns="urn:oasis:names:tc:xliff:document:1.2">
+	<file datatype="plaintext" original="EXT:vd_directory/Resources/Private/Language/locallang.xlf" source-language="en" target-language="fr">
+		<header/>
+		<body>
+			<trans-unit id="address" resname="address">
+				<source>Address</source>
+				<target state="translated">Adresse</target>
+			</trans-unit>
+			<trans-unit id="email" resname="email">
+				<source>Mail</source>
+				<target state="translated">Courriel</target>
+			</trans-unit>
+			<trans-unit id="phones" resname="phones">
+				<source>Phone(s)</source>
+				<target state="translated">Téléphone(s)</target>
+			</trans-unit>
+			<trans-unit id="www" resname="www">
+				<source>Website</source>
+				<target state="translated">Site web</target>
+			</trans-unit>
+		</body>
+	</file>
+</xliff>

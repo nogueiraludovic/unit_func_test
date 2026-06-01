@@ -1,0 +1,136 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xliff version="1.2" xmlns="urn:oasis:names:tc:xliff:document:1.2">
+	<file datatype="plaintext" original="EXT:vd_prestations/Resources/Private/Language/locallang_db.xlf" source-language="en" target-language="fr">
+		<header/>
+		<body>
+			<trans-unit id="access_modalities" resname="access_modalities">
+				<source>Access modalities</source>
+				<target state="translated">Modalités d’accès</target>
+			</trans-unit>
+			<trans-unit id="action_client" resname="action_client">
+				<source>Client action</source>
+				<target state="translated">Action bénéficiaire</target>
+			</trans-unit>
+			<trans-unit id="action_service" resname="action_service">
+				<source>Service action</source>
+				<target state="translated">Action service</target>
+			</trans-unit>
+			<trans-unit id="additional_informations" resname="additional_informations">
+				<source>Additional informations</source>
+				<target state="translated">Informations complémentaires</target>
+			</trans-unit>
+			<trans-unit id="average_delay" resname="average_delay">
+				<source>Average delay</source>
+				<target state="translated">Délai moyen de traitement</target>
+			</trans-unit>
+			<trans-unit id="cost" resname="cost">
+				<source>Cost of service</source>
+				<target state="translated">Coût de la prestation</target>
+			</trans-unit>
+			<trans-unit id="domain_id" resname="domain_id">
+				<source>Domain ID</source>
+				<target state="translated">Domaine ID</target>
+			</trans-unit>
+			<trans-unit id="domain_name" resname="domain_name">
+				<source>Domain</source>
+				<target state="translated">Domaine</target>
+			</trans-unit>
+			<trans-unit id="emolument" resname="emolument">
+				<source>Emolument</source>
+				<target state="translated">Émolument</target>
+			</trans-unit>
+			<trans-unit id="epayment" resname="epayment">
+				<source>E-payment</source>
+				<target state="translated">E-payment</target>
+			</trans-unit>
+			<trans-unit id="external_id" resname="external_id">
+				<source>External ID</source>
+				<target state="translated">ID externe</target>
+			</trans-unit>
+			<trans-unit id="external_link" resname="external_link">
+				<source>External link</source>
+				<target state="translated">Lien externe</target>
+			</trans-unit>
+			<trans-unit id="hash" resname="hash">
+				<source>Hash</source>
+				<target state="translated">Hash</target>
+			</trans-unit>
+			<trans-unit id="help_link" resname="help_link">
+				<source>Help and support link</source>
+				<target state="translated">Lien aide et support</target>
+			</trans-unit>
+			<trans-unit id="howto" resname="howto">
+				<source>How to</source>
+				<target state="translated">Marche à suivre</target>
+			</trans-unit>
+			<trans-unit id="legal_references" resname="legal_references">
+				<source>Legal references</source>
+				<target state="translated">Références légales</target>
+			</trans-unit>
+			<trans-unit id="prerequisites" resname="prerequisites">
+				<source>Prerequisites</source>
+				<target state="translated">Conditions préalables</target>
+			</trans-unit>
+			<trans-unit id="prestations" resname="prestations">
+				<source>Services</source>
+				<target state="translated">Prestations</target>
+			</trans-unit>
+			<trans-unit id="related_pages" resname="related_pages">
+				<source>Related pages</source>
+				<target state="translated">Pages en relation</target>
+			</trans-unit>
+			<trans-unit id="related_prestations" resname="related_prestations">
+				<source>Related services</source>
+				<target state="translated">Prestations associées</target>
+			</trans-unit>
+			<trans-unit id="required_documents" resname="required_documents">
+				<source>Required documents</source>
+				<target state="translated">Documents requis</target>
+			</trans-unit>
+			<trans-unit id="result" resname="result">
+				<source>Result</source>
+				<target state="translated">Résultat de la prestation</target>
+			</trans-unit>
+			<trans-unit id="security" resname="security">
+				<source>Security</source>
+				<target state="translated">Sécurité</target>
+			</trans-unit>
+			<trans-unit id="security_level" resname="security_level">
+				<source>Security level</source>
+				<target state="translated">Niveau de sécurité</target>
+			</trans-unit>
+			<trans-unit id="service_name" resname="service_name">
+				<source>Service</source>
+				<target state="translated">Service</target>
+			</trans-unit>
+			<trans-unit id="target_audience" resname="target_audience">
+				<source>Target audience</source>
+				<target state="translated">Public cible</target>
+			</trans-unit>
+			<trans-unit id="target_audiences" resname="target_audiences">
+				<source>Target audiences</source>
+				<target state="translated">Publics cibles</target>
+			</trans-unit>
+			<trans-unit id="theme_id" resname="theme_id">
+				<source>Theme ID</source>
+				<target state="translated">Thème ID</target>
+			</trans-unit>
+			<trans-unit id="theme_name" resname="theme_name">
+				<source>Theme</source>
+				<target state="translated">Thème</target>
+			</trans-unit>
+			<trans-unit id="type" resname="type">
+				<source>Type</source>
+				<target state="translated">Type</target>
+			</trans-unit>
+			<trans-unit id="url" resname="url">
+				<source>URL</source>
+				<target state="translated">URL</target>
+			</trans-unit>
+			<trans-unit id="urls" resname="urls">
+				<source>URLs</source>
+				<target state="translated">URLs</target>
+			</trans-unit>
+		</body>
+	</file>
+</xliff>

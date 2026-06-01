@@ -1,0 +1,19 @@
+<?php
+
+$EM_CONF['vd_news'] = [
+    'author' => 'État de Vaud - DGNSI',
+    'author_email' => 'support.typo3@vd.ch',
+    'category' => 'plugin',
+    'constraints' => [
+        'depends' => [
+            'news' => '10.0.0-10.0.99',
+            'php' => '7.4.0-7.4.99',
+            'typo3' => '10.4.0-10.4.99',
+            'vd_core' => '10.4.0-10.4.99'
+        ]
+    ],
+    'description' => 'Default configuration for EXT:news.',
+    'state' => 'stable',
+    'title' => 'VD News',
+    'version' => '10.4.0'
+];

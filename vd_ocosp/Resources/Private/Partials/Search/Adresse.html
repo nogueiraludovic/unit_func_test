@@ -1,0 +1,15 @@
+<html data-namespace-typo3-fluid="true" xmlns:f="http://typo3.org/ns/TYPO3/CMS/Fluid/ViewHelpers">
+    <f:form method="post" action="index">
+        <fieldset>
+            <legend>
+                <f:translate id="LLL:EXT:vd_ocosp/Resources/Private/Language/locallang_backend.xlf:label.recherche"/>
+            </legend>
+            <div class="mb-3">
+                <f:form.textfield name="keyword" class="form-control" placeholder="{f:translate(id: 'LLL:EXT:vd_ocosp/Resources/Private/Language/locallang_backend.xlf:label.mot_cle')}" value="{keyword}"/>
+            </div>
+            <button class="btn btn-secondary btn-sm" id="submit-search" type="submit">
+                <f:translate id="LLL:EXT:vd_ocosp/Resources/Private/Language/locallang_backend.xlf:label.rechercher"/>
+            </button>
+        </fieldset>
+    </f:form>
+</html>

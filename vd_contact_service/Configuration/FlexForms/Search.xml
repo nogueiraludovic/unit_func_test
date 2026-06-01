@@ -1,0 +1,32 @@
+<T3DataStructure>
+    <sheets>
+        <general>
+            <ROOT>
+                <el>
+                    <settings.institution>
+                        <TCEforms>
+                            <config>
+                                <eval>required</eval>
+                                <foreign_table>tx_vdmunicipalitiessearch_institutions</foreign_table>
+                                <foreign_table_where>ORDER BY name</foreign_table_where>
+                                <items>
+                                    <numIndex index="0">
+                                        <numIndex index="0"/>
+                                        <numIndex index="1"/>
+                                    </numIndex>
+                                </items>
+                                <minitems>1</minitems>
+                                <renderType>selectSingle</renderType>
+                                <type>select</type>
+                            </config>
+                            <label>LLL:EXT:vd_contact_service/Resources/Private/Language/locallang_db.xlf:institution</label>
+                        </TCEforms>
+                    </settings.institution>
+                </el>
+                <TCEforms>
+                    <sheetTitle>LLL:EXT:core/Resources/Private/Language/Form/locallang_tabs.xlf:general</sheetTitle>
+                </TCEforms>
+            </ROOT>
+        </general>
+    </sheets>
+</T3DataStructure>

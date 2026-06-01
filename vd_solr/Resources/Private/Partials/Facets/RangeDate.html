@@ -1,0 +1,55 @@
+<html data-namespace-typo3-fluid="true" xmlns:f="http://typo3.org/ns/TYPO3/Fluid/ViewHelpers" xmlns:s="http://typo3.org/ns/ApacheSolrForTypo3/Solr/ViewHelpers" xmlns:vds="http://typo3.org/ns/Vd/VdSolr/ViewHelpers">
+    <f:variable name="currentYear" value="{f:format.date(date: 'today', format: 'Y')}"/>
+    <div class="row">
+        <div class="col-6">
+            <fieldset>
+                <legend class="h5 mt-0">Publié du</legend>
+                <div class="vd-form-flex">
+                    <div class="vd-form-flex__item vd-form-flex__item--2-char-width">
+                        <div class="mb-3">
+                            <label class="form-label visually-hidden" for="from-day">Jour</label>
+                            <f:form.textfield additionalAttributes="{max: 31, min: 1}" class="form-control" id="from-day" name="{pluginNamespace}[from][]" placeholder="JJ" type="number" value="{arguments.from.0}"/>
+                        </div>
+                    </div>
+                    <div class="vd-form-flex__item vd-form-flex__item--2-char-width">
+                        <div class="mb-3">
+                            <label class="form-label visually-hidden" for="from-month">Mois</label>
+                            <f:form.textfield additionalAttributes="{max: 12, min: 1}" class="form-control" id="from-month" name="{pluginNamespace}[from][]" placeholder="MM" type="number" value="{arguments.from.1}"/>
+                        </div>
+                    </div>
+                    <div class="vd-form-flex__item vd-form-flex__item--4-char-width">
+                        <div class="mb-3">
+                            <label class="form-label visually-hidden" for="from-year">Année</label>
+                            <f:form.textfield additionalAttributes="{max: currentYear, min: 1998}" class="form-control" id="from-year" name="{pluginNamespace}[from][]" placeholder="AAAA" type="number" value="{arguments.from.2}"/>
+                        </div>
+                    </div>
+                </div>
+            </fieldset>
+        </div>
+        <div class="col-6">
+            <fieldset>
+                <legend class="h5 mt-0">au</legend>
+                <div class="vd-form-flex">
+                    <div class="vd-form-flex__item vd-form-flex__item--2-char-width">
+                        <div class="mb-3">
+                            <label class="form-label visually-hidden" for="to-day">Jour</label>
+                            <f:form.textfield additionalAttributes="{max: 31, min: 1}" class="form-control" id="to-day" name="{pluginNamespace}[to][]" placeholder="JJ" type="number" value="{arguments.to.0}"/>
+                        </div>
+                    </div>
+                    <div class="vd-form-flex__item vd-form-flex__item--2-char-width">
+                        <div class="mb-3">
+                            <label class="form-label visually-hidden" for="to-month">Mois</label>
+                            <f:form.textfield additionalAttributes="{max: 12, min: 1}" class="form-control" id="to-month" name="{pluginNamespace}[to][]" placeholder="MM" type="number" value="{arguments.to.1}"/>
+                        </div>
+                    </div>
+                    <div class="vd-form-flex__item vd-form-flex__item--4-char-width">
+                        <div class="mb-3">
+                            <label class="form-label visually-hidden" for="to-year">Année</label>
+                            <f:form.textfield additionalAttributes="{max: currentYear, min: 1998}" class="form-control" id="to-year" name="{pluginNamespace}[to][]" placeholder="AAAA" type="number" value="{arguments.to.2}"/>
+                        </div>
+                    </div>
+                </div>
+            </fieldset>
+        </div>
+    </div>
+</html>

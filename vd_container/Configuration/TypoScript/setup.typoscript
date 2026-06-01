@@ -1,0 +1,43 @@
+lib {
+  containerContentElement =< lib.contentElement
+  containerContentElement {
+    dataProcessing.10 = B13\Container\DataProcessing\ContainerProcessor
+    layoutRootPaths.10 = EXT:vd_container/Resources/Private/Layouts/
+    partialRootPaths.10 = EXT:vd_container/Resources/Private/Partials/
+    templateRootPaths.10 = EXT:vd_container/Resources/Private/Templates/
+  }
+  contentElementRendering = RECORDS
+  contentElementRendering {
+    dontCheckPid = 1
+    source.current = 1
+    tables = tt_content
+  }
+}
+
+##################################################
+
+tt_content {
+  1-column-container =< lib.containerContentElement
+  1-column-container.templateName = 1Column
+  2-columns-left-width-container =< lib.containerContentElement
+  2-columns-left-width-container.templateName = 2ColumnsLeftWidth
+  2-columns-right-width-container =< lib.containerContentElement
+  2-columns-right-width-container.templateName = 2ColumnsRightWidth
+  2-columns-same-width-container =< lib.containerContentElement
+  2-columns-same-width-container.templateName = 2ColumnsSameWidth
+  3-columns-same-width-container =< lib.containerContentElement
+  3-columns-same-width-container.templateName = 3ColumnsSameWidth
+  4-columns-same-width-container =< lib.containerContentElement
+  4-columns-same-width-container.templateName = 4ColumnsSameWidth
+  accordion-container =< lib.containerContentElement
+  accordion-container {
+    dataProcessing.20 = Vd\VdCore\DataProcessing\FlexFormProcessor
+    templateName = Accordion
+  }
+  highlighting-container =< lib.containerContentElement
+  highlighting-container.templateName = Highlighting
+  section-container =< lib.containerContentElement
+  section-container.templateName = Section
+  tabs-container =< lib.containerContentElement
+  tabs-container.templateName = Tabs
+}

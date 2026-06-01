@@ -1,0 +1,67 @@
+---
+imports:
+  - { resource: EXT:rte_ckeditor/Configuration/RTE/Processing.yaml }
+  - { resource: EXT:rte_ckeditor/Configuration/RTE/Editor/Base.yaml }
+  - { resource: EXT:rte_ckeditor/Configuration/RTE/Editor/Plugins.yaml }
+  - { resource: EXT:vd_site/Configuration/RTE/SpecialChars.yaml }
+blindLinkFields: target
+buttons:
+  link:
+    properties:
+      class:
+        allowedClasses: btn btn-primary,btn btn-secondary,btn btn-dark,btn btn-link
+editor:
+  config:
+    contentsCss:
+      - EXT:rte_ckeditor/Resources/Public/Css/contents.css
+      - EXT:vd_site/Resources/Public/Foehn/dist/assets/styles/main.css
+      - EXT:vd_site/Resources/Public/Css/bundle.min.css
+    extraAllowedContent:
+      - '*(*)[data-*]'
+      - blockquote(*)
+      - figure(*)
+      - figcaption(*)
+    extraPlugins:
+      - abbr
+      - autolink
+      - find
+      - image2
+      - quote
+    format_tags: p;h3;h4;h5
+    removeButtons:
+      - Anchor
+      - HorizontalRule
+      - Image
+      - Strike
+      - Table
+      - Underline
+    removePlugins:
+      - image
+    stylesSet:
+      - { name: Bouton Vert, element: a, attributes: { class: btn btn-primary } }
+      - { name: Bouton Gris, element: a, attributes: { class: btn btn-secondary } }
+      - { name: Bouton Foncé, element: a, attributes: { class: btn btn-dark } }
+      - { name: Bouton Transparent, element: a, attributes: { class: btn btn-link } }
+    toolbarGroups:
+      - { name: styles, groups: [ format, styles ] }
+      - { name: basicstyles, groups: [ basicstyles ] }
+      - { name: paragraph, groups: [ list ] }
+      - { name: links, groups: [ links ] }
+      - { name: clipboard, groups: [ clipboard, undo ] }
+      - { name: insert, groups: [ insert ] }
+      - { name: tools, groups: [ specialchar ] }
+      - { name: document, groups: [ mode ] }
+  externalPlugins:
+    abbr:
+      resource: EXT:vd_site/Resources/Public/CKeditor/Plugins/abbr/
+    quote:
+      resource: EXT:vd_site/Resources/Public/CKeditor/Plugins/quote/
+processing:
+  allowAttributes:
+    - role
+  blockElementList: DIV,TABLE,BLOCKQUOTE,PRE,UL,OL,H1,H2,H3,H4,H5,H6,ADDRESS,DL,DD,HEADER,SECTION,FOOTER,NAV,ARTICLE,ASIDE,FIGCAPTION,FIGURE
+  entryHTMLparser_db:
+    keepNonMatchedTags: 1
+    stripEmptyTags:
+      tags: p
+      treatNonBreakingSpaceAsEmpty: 1

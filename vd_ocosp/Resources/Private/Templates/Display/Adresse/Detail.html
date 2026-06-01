@@ -1,0 +1,73 @@
+<html data-namespace-typo3-fluid="true" xmlns:f="http://typo3.org/ns/TYPO3/CMS/Fluid/ViewHelpers">
+    <f:layout/>
+    <f:section name="main">
+        <p>
+            <f:link.action action="index" class="btn btn-secondary btn-sm" id="ocosp-index-link">
+                <f:translate id="LLL:EXT:vd_ocosp/Resources/Private/Language/locallang_frontend.xlf:label.retour"/>
+            </f:link.action>
+        </p>
+        <form>
+            <div class="mb-3 row">
+                <label class="col-sm-4 col-form-label form-label">
+                    <f:translate id="LLL:EXT:vd_ocosp/Resources/Private/Language/locallang_frontend.xlf:label.nom"/>
+                </label>
+                <div class="col-sm-8">
+                    <p class="form-control-static">{adresse.nom}</p>
+                </div>
+            </div>
+            <div class="mb-3 row">
+                <label class="col-sm-4 col-form-label form-label">
+                    <f:translate id="LLL:EXT:vd_ocosp/Resources/Private/Language/locallang_frontend.xlf:label.rue"/>
+                </label>
+                <div class="col-sm-8">
+                    <p class="form-control-static">
+                        <f:if condition="{adresse.adresse}">
+                            {adresse.adresse}<br>
+                        </f:if>
+                        <f:if condition="{adresse.adresse2}">
+                            {adresse.adresse2}
+                        </f:if>
+                    </p>
+                </div>
+            </div>
+            <div class="mb-3 row">
+                <label class="col-sm-4 col-form-label form-label">
+                    <f:translate id="LLL:EXT:vd_ocosp/Resources/Private/Language/locallang_frontend.xlf:label.zip"/>
+                </label>
+                <div class="col-sm-8">
+                    <p class="form-control-static">{adresse.codePostal}</p>
+                </div>
+            </div>
+            <div class="mb-3 row">
+                <label class="col-sm-4 col-form-label form-label">
+                    <f:translate id="LLL:EXT:vd_ocosp/Resources/Private/Language/locallang_frontend.xlf:label.ville"/>
+                </label>
+                <div class="col-sm-8">
+                    <p class="form-control-static">{adresse.ville}</p>
+                </div>
+            </div>
+            <f:if condition="{adresse.siteWeb}">
+                <div class="mb-3 row">
+                    <label class="col-sm-4 col-form-label form-label">
+                        <f:translate id="LLL:EXT:vd_ocosp/Resources/Private/Language/locallang_frontend.xlf:label.site_web"/>
+                    </label>
+                    <div class="col-sm-8">
+                        <p class="form-control-static">
+                            <f:link.external id="address-website-link" uri="{adresse.siteWeb}">{adresse.siteWeb}</f:link.external>
+                        </p>
+                    </div>
+                </div>
+            </f:if>
+            <div class="mb-3 row text-secondary">
+                <div class="col-sm-4 col-form-label form-label">
+                    <f:translate id="LLL:EXT:vd_ocosp/Resources/Private/Language/locallang_frontend.xlf:label.date_maj"/>
+                </div>
+                <div class="col-sm-8">
+                    <p class="form-control-static">
+                        <f:format.date format="{f:translate(id: 'LLL:EXT:vd_ocosp/Resources/Private/Language/locallang_frontend.xlf:label.date_heure.format')}">{adresse.tstamp}</f:format.date>
+                    </p>
+                </div>
+            </div>
+        </form>
+    </f:section>
+</html>

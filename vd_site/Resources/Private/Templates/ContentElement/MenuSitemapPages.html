@@ -1,0 +1,56 @@
+<html data-namespace-typo3-fluid="true" xmlns:f="http://typo3.org/ns/TYPO3/CMS/Fluid/ViewHelpers">
+    <f:layout/>
+    <f:section name="Main">
+        <f:switch expression="{data.layout}">
+            <f:case value="0">
+                <ul class="list-unstyled">
+                    <f:for as="page" each="{menu}">
+                        <li class="my-3">
+                            <a class="vd-link-invisible d-inline-block" href="{page.link}" title="{page.title}">{page.title}</a>
+                            <f:if condition="{page.children}">
+                                <ul class="list-unstyled">
+                                    <f:for as="child" each="{page.children}">
+                                        <li class="ms-5 my-3">
+                                            <a class="vd-link-invisible d-inline-block" href="{child.link}" title="{child.title}">{child.title}</a>
+                                        </li>
+                                    </f:for>
+                                </ul>
+                            </f:if>
+                        </li>
+                    </f:for>
+                </ul>
+            </f:case>
+            <f:case value="5">
+                <ul>
+                    <f:for as="page" each="{menu}">
+                        <li>
+                            <a href="{page.link}" title="{page.title}">{page.title}</a>
+                            <f:render section="Main" arguments="{menu: page.children, data: data}"/>
+                        </li>
+                    </f:for>
+                </ul>
+            </f:case>
+            <f:case value="4">
+                <ul class="list-unstyled">
+                    <f:for as="page" each="{menu}">
+                        <li class="my-3">
+                            <f:render section="PageLink" arguments="{page: page, class: 'h3'}"/>
+                            <ul class="list-unstyled">
+                                <f:for as="child" each="{page.children}">
+                                    <li class="ms-5 my-3">
+                                        <f:render section="PageLink" arguments="{page: child, class: 'lead'}"/>
+                                    </li>
+                                </f:for>
+                            </ul>
+                        </li>
+                    </f:for>
+                </ul>
+            </f:case>
+        </f:switch>
+    </f:section>
+    <f:section name="PageLink">
+        <a class="vd-link-invisible d-inline-block" href="{page.link}" title="{page.title}">
+            <span class="{class}">{page.title}</span>
+        </a>
+    </f:section>
+</html>

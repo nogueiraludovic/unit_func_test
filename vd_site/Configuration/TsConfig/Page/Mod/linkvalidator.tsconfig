@@ -1,0 +1,44 @@
+mod.linkvalidator {
+  searchFields {
+    pages = canonical_link,url
+    sys_category = seo_text
+    sys_file_reference = link
+    sys_news = content
+    sys_redirect = target
+    tt_address = description,www
+    tt_content = bodytext,content_element_link,header_link
+    tx_news_domain_model_link = uri
+    tx_news_domain_model_news = bodytext,externalurl,internalurl
+    tx_news_domain_model_tag = seo_text
+    tx_plainfaq_domain_model_faq = answer
+    tx_powermail_domain_model_field = text
+    tx_powermail_domain_model_mail = body
+    tx_vdalertes_domain_model_home_alert = link,summary
+    tx_vdalertes_domain_model_service_alert = link,summary
+    tx_vdapprenticeship_apprenticeship = particularities
+    tx_vdbaserem_domain_model_job = activities,context,mission,training,trends_and_evolutions
+    tx_vdcontactdb_contact = comments
+    tx_vdcontactservice_domain_model_service = reference_page
+    tx_vdcontactservice_domain_model_servicecontact = additional_text,link,summary
+    tx_vdfilesdb_category = link
+    tx_vdfilesdb_file = link
+    tx_vdojvencheres_domain_model_objects = conditions,description,observations
+    tx_vdojvencheres_domain_model_objectsconditions = description
+    tx_vdojvencheres_domain_model_sales = observations
+    tx_vdojvencheres_domain_model_salesconditions = description
+    tx_vdpressreleases_domain_model_link = url
+    tx_vdpressreleases_domain_model_pressrelease = body_text,summary
+    tx_vdprestations_domain_model_accessmodality = url
+    tx_vdprestations_domain_model_prestation = description
+    tx_vdprestations_domain_model_url = url
+    tx_vdsite_domain_model_card = link
+    tx_vdsite_domain_model_carouselitem = link
+    tx_vdsite_domain_model_link = uri
+    tx_vdsmallads_domain_model_smallads = content
+  }
+  mail {
+    fromemail := getEnv(TYPO3_MAIL_DEFAULT_FROM_ADDRESS)
+    fromname = [vd.ch] Linkvalidator
+    subject = [vd.ch] Linkvalidator report
+  }
+}

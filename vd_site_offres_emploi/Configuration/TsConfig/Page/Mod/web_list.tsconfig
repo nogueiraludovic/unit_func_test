@@ -1,0 +1,4 @@
+mod.web_list {
+  allowedNewTables = sys_template
+  deniedNewTables >
+}

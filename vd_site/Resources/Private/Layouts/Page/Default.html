@@ -1,0 +1,125 @@
+<html data-namespace-typo3-fluid="true" xmlns:f="http://typo3.org/ns/TYPO3/CMS/Fluid/ViewHelpers" xmlns:n="http://typo3.org/ns/GeorgRinger/News/ViewHelpers" xmlns:vdc="http://typo3.org/ns/Vd/VdCore/ViewHelpers" xmlns:vds="http://typo3.org/ns/Vd/VdSite/ViewHelpers">
+    <f:asset.css href="EXT:vd_site/Resources/Public/Foehn/dist/assets/styles/main.css" identifier="foehn"/>
+    <f:asset.css href="EXT:vd_site/Resources/Public/Css/bundle.min.css" identifier="bundle"/>
+    <f:asset.script identifier="bootstrap" src="EXT:vd_site/Resources/Public/Foehn/dist/assets/scripts/bootstrap.min.js"/>
+    <f:asset.script identifier="bundle" src="EXT:vd_site/Resources/Public/JavaScript/bundle.min.js"/>
+    <f:asset.script identifier="detect" src="EXT:vd_site/Resources/Public/JavaScript/Frontend/detect.min.js"/>
+    <f:if condition="{baseRemData}">
+        <f:then>
+            <f:variable name="pageTitle" value="{baseRemData.mixed_title}"/>
+        </f:then>
+        <f:else if="{addressData}">
+            <f:variable name="pageTitle" value="{addressData.company}"/>
+        </f:else>
+        <f:else if="{itemData}">
+            <f:variable name="pageTitle" value="{itemData.titleWithCategory}"/>
+        </f:else>
+        <f:else if="{newsData}">
+            <f:if condition="{newsData.alternative_title}">
+                <f:then>
+                    <f:variable name="pageTitle" value="{newsData.alternative_title}"/>
+                </f:then>
+                <f:else>
+                    <f:variable name="pageTitle" value="{newsData.title}"/>
+                </f:else>
+            </f:if>
+        </f:else>
+        <f:else if="{pressReleaseData}">
+            <f:variable name="pageTitle" value="{pressReleaseData.title}"/>
+        </f:else>
+        <f:else if="{saleData}">
+            <f:variable name="pageTitle" value="{saleData.saleCategories.0.name}"/>
+        </f:else>
+        <f:else if="{serviceData}">
+            <f:variable name="pageTitle" value="{serviceData.title}"/>
+        </f:else>
+        <f:else if="{sielDecisionData}">
+            <f:variable name="pageTitle" value="{sielDecisionData.titre}"/>
+        </f:else>
+        <f:else if="{sielGroupData}">
+            <f:variable name="pageTitle" value="{sielGroupData.nom}"/>
+        </f:else>
+        <f:else if="{sielMemberData}">
+            <f:variable name="pageTitle" value="{sielMemberData.prenom} {sielMemberData.nom}, membre du Grand Conseil"/>
+        </f:else>
+        <f:else if="{sielMeetingData}">
+            <f:variable name="pageTitle" value="{sielMeetingData.nomCourt}"/>
+        </f:else>
+        <f:else if="{sielMeetingGcData}">
+            <f:variable name="pageTitle" value="{sielMeetingGcData.nomCourt}"/>
+        </f:else>
+        <f:else if="{sielObjectData}">
+            <f:variable name="pageTitle" value="{sielObjectData.titre}"/>
+        </f:else>
+        <f:else if="{sielPointGcData}">
+            <f:if condition="{sielPointGcData.idAffaire}">
+                <f:then>
+                    <f:variable name="pageTitle" value="{sielPointGcData.idAffaire} - {sielPointGcData.intitule}"/>
+                </f:then>
+                <f:else>
+                    <f:variable name="pageTitle" value="{sielPointGcData.intitule}"/>
+                </f:else>
+            </f:if>
+        </f:else>
+        <f:else>
+            <f:if condition="{data.seo_title}">
+                <f:then>
+                    <f:variable name="pageTitle" value="{data.seo_title}"/>
+                </f:then>
+                <f:else>
+                    <f:variable name="pageTitle" value="{data.title}"/>
+                </f:else>
+            </f:if>
+        </f:else>
+    </f:if>
+    <vdc:titleTag value="{pageTitle}"/>
+    <n:metaTag content="{pageTitle} | État de Vaud" property="og:title"/>
+    <f:if condition="{data.google_tags_id}">
+        <f:then>
+            <f:variable name="googleTagsId" value="{data.google_tags_id}"/>
+        </f:then>
+        <f:else>
+            <f:variable name="googleTagsId" value="GTM-PW7CHRL"/>
+        </f:else>
+    </f:if>
+    <f:asset.script identifier="google-tag-manager" priority="1">
+        (function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+        new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+        j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+        'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+        })(window,document,'script','dataLayer','<f:format.raw>{googleTagsId}</f:format.raw>');
+    </f:asset.script>
+    <noscript>
+        <iframe class="d-none invisible" height="0" src="https://www.googletagmanager.com/ns.html?id={googleTagsId}" width="0"></iframe>
+    </noscript>
+    <f:asset.script identifier="vd-prestations" priority="1">
+        window.Vaud = window.Vaud || {};
+        Vaud.baseUrl = '<f:format.raw>{site.configuration.settings.url}</f:format.raw>';
+        Vaud.prestationLoginPageUid = 2000009;
+        Vaud.prestationLoginUrl = '<f:format.raw>{site.configuration.settings.prestationsUrl}</f:format.raw>';
+    </f:asset.script>
+    <vds:validUrl url="{site.configuration.settings.matomoUrl}">
+        <f:asset.script identifier="matomo" priority="1">
+            var _paq = window._paq = window._paq || [];
+            _paq.push(['setDocumentTitle', document.domain + '/' + document.title]);
+            <f:if condition="{data.uid} == 2021187">
+                <f:then>
+                    _paq.push(['setDocumentTitle', '404/URL = ' + encodeURIComponent(document.location.pathname + document.location.search) + ' /From = ' + encodeURIComponent(document.referrer)]);
+                </f:then>
+                <f:else>
+                    _paq.push(['setDocumentTitle', document.domain + '/' + document.title]);
+                </f:else>
+            </f:if>
+            _paq.push(['trackPageView']);
+            _paq.push(['enableLinkTracking']);
+            (function() {
+              var u="<f:format.raw>{site.configuration.settings.matomoUrl}</f:format.raw>";
+              _paq.push(['setTrackerUrl', u + 'matomo.php']);
+              _paq.push(['setSiteId', '<f:format.raw>{site.configuration.settings.matomoSiteId}</f:format.raw>']);
+              var d=document, g=d.createElement('script'), s=d.getElementsByTagName('script')[0];
+              g.async=true; g.src=u + 'matomo.js'; s.parentNode.insertBefore(g,s);
+            })();
+        </f:asset.script>
+    </vds:validUrl>
+    <f:render section="main"/>
+</html>

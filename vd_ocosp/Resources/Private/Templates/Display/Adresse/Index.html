@@ -1,0 +1,51 @@
+<html data-namespace-typo3-fluid="true" xmlns:f="http://typo3.org/ns/TYPO3/CMS/Fluid/ViewHelpers">
+    <f:layout/>
+    <f:section name="main">
+        <f:if condition="{adresses -> f:count()}">
+            <f:then>
+                <f:render arguments="{keyword: keyword}" partial="Search/Adresse"/>
+                <div class="mt-1">
+                    <f:render arguments="{pagination: pagination, paginator: paginator}" partial="Pagination/SlidingWindow"/>
+                    <div class="table-responsive">
+                        <table class="table table-striped">
+                            <thead>
+                                <tr>
+                                    <th><f:translate id="LLL:EXT:vd_ocosp/Resources/Private/Language/locallang_frontend.xlf:label.nom"/></th>
+                                    <th><f:translate id="LLL:EXT:vd_ocosp/Resources/Private/Language/locallang_frontend.xlf:label.ville"/></th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <f:for as="adresse" each="{paginator.paginatedItems}">
+                                    <tr>
+                                        <td>
+                                            <f:link.action action="detail" arguments="{adresse: adresse}" id="address-details-link" title="{f:translate(id: 'LLL:EXT:vd_ocosp/Resources/Private/Language/locallang_frontend.xlf:label.modifier')}">
+                                                {adresse.nom}
+                                            </f:link.action>
+                                        </td>
+                                        <td>{adresse.ville}</td>
+                                    </tr>
+                                </f:for>
+                            </tbody>
+                        </table>
+                    </div>
+                    <f:render arguments="{pagination: pagination, paginator: paginator}" partial="Pagination/SlidingWindow"/>
+                </div>
+            </f:then>
+            <f:else>
+                <div class="alert alert-info">
+                    <f:if condition="{keyword}">
+                        <f:then>
+                            <f:translate id="LLL:EXT:vd_ocosp/Resources/Private/Language/locallang_frontend.xlf:label.search.none"/>
+                        </f:then>
+                        <f:else>
+                            <f:translate id="LLL:EXT:vd_ocosp/Resources/Private/Language/locallang_frontend.xlf:label.none"/>
+                        </f:else>
+                    </f:if>
+                </div>
+                <f:if condition="{keyword}">
+                    <f:render arguments="{keyword: keyword}" partial="Search/Adresse"/>
+                </f:if>
+            </f:else>
+        </f:if>
+    </f:section>
+</html>

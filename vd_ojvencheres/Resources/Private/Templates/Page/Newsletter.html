@@ -1,0 +1,48 @@
+<html data-namespace-typo3-fluid="true" xmlns:f="http://typo3.org/ns/TYPO3/CMS/Fluid/ViewHelpers">
+    <p align="center">
+        <f:link.page absolute="1" id="newsletter-details-link" pageUid="{pageUid}" style="color:#000;font-family:Helvetica,Verdana,Arial,Geneva,sans-serif;text-decoration:none">
+            <f:translate extensionName="VdOjvencheres" id="newsletter_detail"/>
+        </f:link.page>
+    </p>
+    <table align="center" bgcolor="#fff" cellpadding="0" cellspacing="5" width="550">
+        <tbody>
+            <tr>
+                <td width="550px">
+                    <f:image additionalAttributes="{border: 0}" alt="État de Vaud" height="154c" loading="lazy" src="EXT:vd_ojvencheres/Resources/Public/Images/Newsletter/Banner.jpg" width="600"/>
+                    <f:format.raw>{mainContent}</f:format.raw>
+                </td>
+            </tr>
+        </tbody>
+        <tfoot>
+            <tr>
+                <td valign="top" width="550">
+                    <p style="border-top-color:#40d940;border-top-style:solid;border-top-width:20px;font-size:10px;margin:5px;padding:5px 10px">
+                        <span>{f:translate(extensionName: 'VdOjvencheres', id: 'newsletter_copyright')} - {year}</span>
+                        <span style="float:right;font-family:Helvetica,Verdana,Arial,Geneva,sans-serif">
+                            <f:switch expression="{pageUid}">
+                                <f:case value="1062946">
+                                    <f:variable name="unsubscribePid" value="1062954"/>
+                                </f:case>
+                                <f:case value="1062947">
+                                    <f:variable name="unsubscribePid" value="1062955"/>
+                                </f:case>
+                                <f:case value="1062948">
+                                    <f:variable name="unsubscribePid" value="1062956"/>
+                                </f:case>
+                                <f:case value="1062949">
+                                    <f:variable name="unsubscribePid" value="1062957"/>
+                                </f:case>
+                                <f:case value="1062950">
+                                    <f:variable name="unsubscribePid" value="1062958"/>
+                                </f:case>
+                            </f:switch>
+                            <f:link.page absolute="1" id="newsletter-unsubscribe-link" pageUid="{unsubscribePid}" style="color:#000;font-family:Helvetica,Verdana,Arial,Geneva,sans-serif;text-decoration:none">
+                                <f:translate extensionName="VdOjvencheres" id="newsletter_unsubscribe"/>
+                            </f:link.page>
+                        </span>
+                    </p>
+                </td>
+            </tr>
+        </tfoot>
+    </table>
+</html>

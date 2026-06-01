@@ -1,0 +1,24 @@
+<html data-namespace-typo3-fluid="true" xmlns:f="http://typo3.org/ns/TYPO3/CMS/Fluid/ViewHelpers">
+    <nav aria-label="{f:translate(id: 'LLL:EXT:vd_site/Resources/Private/Language/locallang.xlf:breadcrumb')}" class="pb-1">
+        <h2 class="visually-hidden"><f:translate id="LLL:EXT:vd_site/Resources/Private/Language/locallang.xlf:breadcrumb"/></h2>
+        <ol class="breadcrumb">
+            <f:for as="item" each="{breadcrumbItems}" iteration="iterator">
+                <f:if condition="{breadcrumbExtendedValue} == '' && {item.current}">
+                    <f:then>
+                        <li aria-current="page" class="visually-hidden">{item.title}</li>
+                    </f:then>
+                    <f:else>
+                        <li class="breadcrumb-item">
+                            <a href="{item.link}" id="breadcrumb-item-{iterator.index}" title="{item.title}">
+                                {item.title}
+                            </a>
+                        </li>
+                    </f:else>
+                </f:if>
+            </f:for>
+            <f:if condition="{breadcrumbExtendedValue}">
+                {breadcrumbExtendedValue -> f:format.raw()}
+            </f:if>
+        </ol>
+    </nav>
+</html>

@@ -1,0 +1,40 @@
+<html data-namespace-typo3-fluid="true" xmlns:f="http://typo3.org/ns/fluid/ViewHelpers">
+    <f:layout/>
+    <f:section name="Main">
+        <h2 id="alphabetic-order-list-title"><f:translate id="alphabetic_order_list"/></h2>
+        <f:if condition="{groups}">
+            <f:then>
+                <ul class="list-inline pl-0 vd-list-links">
+                    <f:for as="membres" each="{groups}" iteration="iterator" key="group">
+                        <li class="list-inline-item"><a href="{f:uri.typolink(parameter: pageData.uid)}#{group}" id="group-link-{iterator.index}">{group}</a></li>
+                    </f:for>
+                </ul>
+                <f:for as="membres" each="{groups}" key="group">
+                    <h2 id="{group}">
+                        <f:if condition="{membres -> f:count()} > 1">
+                            <f:then>
+                                {group} ({membres -> f:count()} {f:translate(id: 'members')})
+                            </f:then>
+                            <f:else>
+                                {group} ({membres -> f:count()} {f:translate(id: 'member')})
+                            </f:else>
+                        </f:if>
+                    </h2>
+                    <ul class="vd-list-links">
+                        <f:for as="membre" each="{membres}" iteration="iterator">
+                            <li>
+                                <f:link.action action="show" arguments="{memberId: membre.id}" class="d-inline-block" controller="Member" id="member-details-link-{iterator.index}" pageUid="{settings.memberDetailPageUid}">
+                                    {membre.nom} {membre.prenom} <f:if condition="{membre.parti}">({membre.parti})</f:if>
+                                </f:link.action>
+                            </li>
+                        </f:for>
+                    </ul>
+                    <f:render partial="GoToTop"/>
+                </f:for>
+            </f:then>
+            <f:else>
+                <p class="fw-bold small"><f:translate id="no_result"/></p>
+            </f:else>
+        </f:if>
+    </f:section>
+</html>

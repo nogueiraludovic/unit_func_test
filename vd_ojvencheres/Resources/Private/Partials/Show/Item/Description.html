@@ -1,0 +1,8 @@
+<html data-namespace-typo3-fluid="true" xmlns:f="http://typo3.org/ns/TYPO3/CMS/Fluid/ViewHelpers">
+    <f:if condition="{item.description}">
+        <dl class="row">
+            <dt class="col-md-4"><f:translate id="description"/></dt>
+            <dd class="col-md-8"><f:format.html>{item.description}</f:format.html></dd>
+        </dl>
+    </f:if>
+</html>

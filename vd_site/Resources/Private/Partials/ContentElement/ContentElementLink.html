@@ -1,0 +1,17 @@
+<html data-namespace-typo3-fluid="true" xmlns:f="http://typo3.org/ns/fluid/ViewHelpers">
+    <f:if condition="{data.content_element_link} && {data.content_element_link_text}">
+        <f:then>
+            <div class="d-flex">
+                <f:link.typolink additionalAttributes="{aria-label: data.content_element_link_text, id: 'content-element-link-{data.uid}'}" class="align-items-center col-12 d-flex justify-content-between text-decoration-none text-inherit" parameter="{data.content_element_link}">
+                    <span class="text-decoration-underline">
+                        {data.content_element_link_text}
+                    </span>
+                    <i aria-hidden="true" class="fa-arrow-right fa-solid"></i>
+                </f:link.typolink>
+            </div>
+        </f:then>
+        <f:else>
+            <f:link.typolink additionalAttributes="{id: 'content-element-link'}" class="arrow-right d-flex text-inherit" parameter="{data.content_element_link}"/>
+        </f:else>
+    </f:if>
+</html>

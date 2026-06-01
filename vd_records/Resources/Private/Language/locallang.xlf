@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xliff version="1.2" xmlns="urn:oasis:names:tc:xliff:document:1.2">
+	<file datatype="plaintext" original="EXT:vd_records/Resources/Private/Language/locallang.xlf" source-language="en">
+		<header/>
+		<body>
+			<trans-unit id="address" resname="address">
+				<source>Address</source>
+			</trans-unit>
+			<trans-unit id="authorization_date" resname="authorization_date">
+				<source>Authorization date</source>
+			</trans-unit>
+			<trans-unit id="category" resname="category">
+				<source>Category</source>
+			</trans-unit>
+			<trans-unit id="contact" resname="contact">
+				<source>Contact</source>
+			</trans-unit>
+			<trans-unit id="dated" resname="dated">
+				<source>Dated</source>
+			</trans-unit>
+			<trans-unit id="decision_year" resname="decision_year">
+				<source>Decision year</source>
+			</trans-unit>
+			<trans-unit id="description" resname="description">
+				<source>Description</source>
+			</trans-unit>
+			<trans-unit id="download_presentation" resname="download_presentation">
+				<source>Download the presentation</source>
+			</trans-unit>
+			<trans-unit id="email" resname="email">
+				<source>Email</source>
+			</trans-unit>
+			<trans-unit id="keywords" resname="keywords">
+				<source>Keywords</source>
+			</trans-unit>
+			<trans-unit id="link" resname="link">
+				<source>Link</source>
+			</trans-unit>
+			<trans-unit id="municipality" resname="municipality">
+				<source>Municipality</source>
+			</trans-unit>
+			<trans-unit id="number" resname="number">
+				<source>Number</source>
+			</trans-unit>
+			<trans-unit id="phone" resname="phone">
+				<source>Phone</source>
+			</trans-unit>
+			<trans-unit id="profile" resname="profile">
+				<source>Profile</source>
+			</trans-unit>
+			<trans-unit id="project_sponsor" resname="project_sponsor">
+				<source>Project sponsor</source>
+			</trans-unit>
+			<trans-unit id="sector_concerned" resname="sector_concerned">
+				<source>Sector concerned</source>
+			</trans-unit>
+			<trans-unit id="service" resname="service">
+				<source>Service</source>
+			</trans-unit>
+			<trans-unit id="thematic" resname="thematic">
+				<source>Thematic</source>
+			</trans-unit>
+			<trans-unit id="www" resname="www">
+				<source>www</source>
+			</trans-unit>
+		</body>
+	</file>
+</xliff>

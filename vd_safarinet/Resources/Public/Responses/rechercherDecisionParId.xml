@@ -1,0 +1,32 @@
+<soap:Envelope xmlns:soap="http://schemas.xmlsoap.org/soap/envelope/">
+    <soap:Body>
+        <ns2:rechercherDecisionParIdResponse
+                xmlns:ns2="http://www.vd.ch/lmgc/wsdl/SeanceConseilEtat"
+                xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+                xsi:schemaLocation="http://www.vd.ch/lmgc/wsdl/SeanceConseilEtat ../../LMGC/SeanceConseilEtat.xsd ">
+            <decision>
+                <documents>
+                    <document>
+                        <id>1186671</id>
+                        <titre>Consultation - Modification de la loi fédérale sur la formation professionnelle : renforcement de la formation professionnelle supérieure - Lettre du CE</titre>
+                        <type>annexe</type>
+                    </document>
+                    <document>
+                        <id>1186672</id>
+                        <titre>Consultation - documents annexes</titre>
+                        <type>annexe</type>
+                    </document>
+                </documents>
+                <id>510980</id>
+                <renseignementsComplementaires>DFJC, Séverin Bez, directeur général de l'enseignement postobligatoire, 021 316 63 06 ; Susana Camarda, juriste, 021 316 63 14</renseignementsComplementaires>
+                <resume>Le Conseil d'État conditionne son soutien aux mesures proposées par le Conseil fédéral visant au renforcement de la formation professionnelle supérieure. En effet, afin d'éviter que le projet de modification de la loi ne conduise à un affaiblissement de la formation professionnelle initiale, le Conseil d'État demande que l'augmentation des charges liées au financement des cours de préparation aux examens professionnels y compris supérieurs soit entièrement prise en charge par la Confédération. Il propose donc deux modifications législatives permettant de pérenniser cette demande.</resume>
+                <seance>
+                    <dateSeance>2015-04-22</dateSeance>
+                    <id>494568</id>
+                    <nomCourt>Séance du Conseil d'État du mercredi 22 avril 2015</nomCourt>
+                </seance>
+                <titre>Consultation fédérale : renforcement de la formation professionnelle supérieure</titre>
+            </decision>
+        </ns2:rechercherDecisionParIdResponse>
+    </soap:Body>
+</soap:Envelope>

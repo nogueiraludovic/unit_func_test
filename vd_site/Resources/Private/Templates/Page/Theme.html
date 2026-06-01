@@ -1,0 +1,53 @@
+<html data-namespace-typo3-fluid="true" xmlns:f="http://typo3.org/ns/TYPO3/CMS/Fluid/ViewHelpers">
+    <f:layout/>
+    <f:section name="main">
+        <f:render arguments="{_all}" partial="Header"/>
+        <div class="vd-bg-pattern-gray">
+            <div class="container">
+                <f:render arguments="{breadcrumbExtendedValue: breadcrumbExtendedValue, breadcrumbItems: breadcrumbItems}" partial="Breadcrumb"/>
+            </div>
+        </div>
+        <main id="main">
+            <div class="vd-bg-pattern-gray">
+                <f:render arguments="{pageTitle: pageTitle}" partial="Page/Seo/PageTitle"/>
+            </div>
+            <div class="container mt-5 vd-content">
+                <!--TYPO3SEARCH_begin-->
+                <div class="row mt-5">
+                    <div class="col-lg-4 mb-3">
+                        <nav class="p-1" aria-labelledby="access-direct-{data.uid}">
+                            <ul class="vd-menu-list-links">
+                                <f:for as="item" each="{themeMostVisitedNavItems}" iteration="iterator">
+                                    <li class="nav-item">
+                                        <a class="nav-link" href="{item.link}" id="most-visited-nav-item-link-{iterator.index}" title="{item.title}">{item.title}</a>
+                                    </li>
+                                </f:for>
+                            </ul>
+                        </nav>
+                    </div>
+                    <div class="col-lg-8">
+                        <h2 class="visually-hidden"><f:translate id="LLL:EXT:vd_site/Resources/Private/Language/locallang.xlf:themes"/></h2>
+                        <ul class="list-unstyled row" aria-labelledby="{data.uid}">
+                            <f:for as="item" each="{themeNavItems}" iteration="iterator">
+                                <li class="vd-domain-item vd-domain-item--big mb-4 col-md-6">
+                                    <a class="vd-link-invisible vd-domain-item__link h2" href="{item.link}" id="theme-nav-item-link-{iterator.index}">
+                                        {item.title}
+                                    </a>
+                                    <f:if condition="{item.data.vd_nav_legend}">
+                                    <span class="vd-domain-item__text">
+                                        <span class="visually-hidden">(</span>
+                                        {item.data.vd_nav_legend}
+                                        <span class="visually-hidden">)</span>
+                                    </span>
+                                    </f:if>
+                                </li>
+                            </f:for>
+                        </ul>
+                    </div>
+                </div>
+                <!--TYPO3SEARCH_end-->
+            </div>
+        </main>
+        <f:render arguments="{_all}" partial="Footer"/>
+    </f:section>
+</html>

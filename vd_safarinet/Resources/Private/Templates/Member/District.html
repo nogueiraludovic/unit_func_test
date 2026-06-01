@@ -1,0 +1,43 @@
+<html data-namespace-typo3-fluid="true" xmlns:f="http://typo3.org/ns/fluid/ViewHelpers" xmlns:vds="http://typo3.org/ns/Vd/VdSafarinet/ViewHelpers">
+    <f:layout/>
+    <f:section name="Main">
+        <h2 id="districts-title"><f:translate id="districts_list"/></h2>
+        <f:if condition="{districts}">
+            <f:then>
+                <ul class="vd-list-links">
+                    <f:for as="district" each="{districts}" iteration="iterator" key="index">
+                        <li><a href="{f:uri.typolink(parameter: pageData.uid)}#district-{index}" id="distric-link-{iterator.index}">{district.nom}</a></li>
+                    </f:for>
+                </ul>
+                <f:for as="district" each="{districts}" key="index">
+                    <f:variable name="membres" value="{district.membres -> vds:format.toArrayList()}"/>
+                    <f:variable name="membresCount" value="{membres -> f:count()}"/>
+                    <h2 id="district-{index}">
+                        <f:if condition="{membresCount} > 1">
+                            <f:then>
+                                {district.nom} ({membresCount} {f:translate(id: 'members')})
+                            </f:then>
+                            <f:else>
+                                {district.nom} ({membresCount} {f:translate(id: 'member')})
+                            </f:else>
+                        </f:if>
+                    </h2>
+                    <ul class="vd-list-links">
+                        <f:for as="membre" each="{membres}" iteration="iterator">
+                            <li>
+                                <f:link.action action="show" arguments="{memberId: membre.id}" class="d-inline-block" controller="Member" id="member-details-link-{iterator.index}" pageUid="{settings.memberDetailPageUid}">
+                                    {membre.nom} {membre.prenom} <f:if condition="{membre.parti}">({membre.parti})</f:if>
+                                </f:link.action>
+                            </li>
+                        </f:for>
+                    </ul>
+                    <f:render partial="GoToTop"/>
+                    <br/>
+                </f:for>
+            </f:then>
+            <f:else>
+                <p class="fw-bold small"><f:translate id="no_result"/></p>
+            </f:else>
+        </f:if>
+    </f:section>
+</html>

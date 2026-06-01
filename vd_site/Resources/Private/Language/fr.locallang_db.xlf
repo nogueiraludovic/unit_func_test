@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xliff version="1.2" xmlns="urn:oasis:names:tc:xliff:document:1.2">
+	<file datatype="plaintext" original="EXT:vd_site/Resources/Private/Language/locallang_db.xlf" source-language="en" target-language="fr">
+		<header/>
+		<body>
+			<trans-unit id="author" resname="author">
+				<source>Author</source>
+				<target state="translated">Auteur</target>
+			</trans-unit>
+			<trans-unit id="biography" resname="biography">
+				<source>Biography</source>
+				<target state="translated">Biographie</target>
+			</trans-unit>
+			<trans-unit id="cards" resname="cards">
+				<source>Cards</source>
+				<target state="translated">Cartes</target>
+			</trans-unit>
+			<trans-unit id="carousel_items" resname="carousel_items">
+				<source>Carousel items</source>
+				<target state="translated">Éléments du carrousel</target>
+			</trans-unit>
+			<trans-unit id="citation" resname="citation">
+				<source>Citation</source>
+				<target state="translated">Citation</target>
+			</trans-unit>
+			<trans-unit id="free" resname="free">
+				<source>Free</source>
+				<target state="translated">Libre</target>
+			</trans-unit>
+			<trans-unit id="google_tags_id" resname="google_tags_id">
+				<source>Google Tags ID</source>
+				<target state="translated">ID Google Tags</target>
+			</trans-unit>
+			<trans-unit id="icon" resname="icon">
+				<source>Icon</source>
+				<target state="translated">Icône</target>
+			</trans-unit>
+			<trans-unit id="limit" resname="limit">
+				<source>Limit</source>
+				<target state="translated">Limite</target>
+			</trans-unit>
+			<trans-unit id="link" resname="link">
+				<source>Link</source>
+				<target state="translated">Lien</target>
+			</trans-unit>
+			<trans-unit id="links" resname="links">
+				<source>Links</source>
+				<target state="translated">Liens</target>
+			</trans-unit>
+			<trans-unit id="news" resname="news">
+				<source>News</source>
+				<target state="translated">Actualités</target>
+			</trans-unit>
+			<trans-unit id="owner" resname="owner">
+				<source>Owner</source>
+				<target state="translated">Propriétaire</target>
+			</trans-unit>
+			<trans-unit id="press_releases" resname="press_releases">
+				<source>Press releases</source>
+				<target state="translated">Communiqués de presse</target>
+			</trans-unit>
+			<trans-unit id="queue_item" resname="queue_item">
+				<source>Crawl queue item</source>
+				<target state="translated">Crawl queue item</target>
+			</trans-unit>
+			<trans-unit id="related_links" resname="related_links">
+				<source>Related links</source>
+				<target state="translated">Liens en relation</target>
+			</trans-unit>
+			<trans-unit id="related_records" resname="related_records">
+				<source>Records</source>
+				<target state="translated">Enregistrements</target>
+			</trans-unit>
+			<trans-unit id="related_services" resname="related_services">
+				<source>Services</source>
+				<target state="translated">Prestations</target>
+			</trans-unit>
+			<trans-unit id="services_domain" resname="services_domain">
+				<source>Domain</source>
+				<target state="translated">Domaine</target>
+			</trans-unit>
+			<trans-unit id="services_theme" resname="services_theme">
+				<source>Theme</source>
+				<target state="translated">Thème</target>
+			</trans-unit>
+			<trans-unit id="suggestions" resname="suggestions">
+				<source>Suggestions (comma separated list)</source>
+				<target state="translated">Suggestions (liste séparée par des virgules)</target>
+			</trans-unit>
+			<trans-unit id="title" resname="title">
+				<source>Title</source>
+				<target state="translated">Titre</target>
+			</trans-unit>
+			<trans-unit id="vd_hide_menu_button" resname="vd_hide_menu_button">
+				<source>Hide the button to open the main menu</source>
+				<target state="translated">Cacher le bouton pour ouvrir le menu principal</target>
+			</trans-unit>
+			<trans-unit id="vd_nav_legend" resname="vd_nav_legend">
+				<source>Navigation legend</source>
+				<target state="translated">Légende de navigation</target>
+			</trans-unit>
+			<trans-unit id="vd_show_menu" resname="vd_show_menu">
+				<source>Open the main menu</source>
+				<target state="translated">Ouvrir le menu principal</target>
+			</trans-unit>
+		</body>
+	</file>
+</xliff>

@@ -1,0 +1,31 @@
+<html data-namespace-typo3-fluid="true" xmlns:f="http://typo3.org/ns/TYPO3/CMS/Fluid/ViewHelpers">
+    <f:layout/>
+    <f:section name="Main">
+        <f:if condition="{menu}">
+            <f:switch expression="{data.layout}">
+                <f:case value="0">
+                    <ul class="vd-list-links">
+                        <f:for as="page" each="{menu}" iteration="iterator">
+                            <li><a href="{page.link}" id="menu-link-{data.uid}-{iterator.index}" title="{page.title}">{page.title}</a></li>
+                        </f:for>
+                    </ul>
+                </f:case>
+                <f:case value="4">
+                    <ul class="list-unstyled">
+                        <li class="my-3">
+                            <ul class="list-unstyled">
+                                <f:for as="page" each="{menu}" iteration="iterator">
+                                    <li class="ms-5 my-3">
+                                        <a class="vd-link-invisible" href="{page.link}" id="menu-link-{data.uid}-{iterator.index}" title="{page.title}">
+                                            <span class="lead">{page.title}</span>
+                                        </a>
+                                    </li>
+                                </f:for>
+                            </ul>
+                        </li>
+                    </ul>
+                </f:case>
+            </f:switch>
+        </f:if>
+    </f:section>
+</html>

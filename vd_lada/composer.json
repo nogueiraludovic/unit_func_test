@@ -1,0 +1,30 @@
+{
+	"name": "vd/vd-lada",
+	"description": "List of adapted housing with support.",
+	"license": "GPL-3.0-or-later",
+	"type": "typo3-cms-extension",
+	"version": "10.4.0",
+	"authors": [
+		{
+			"name": "État de Vaud - DGNSI",
+			"email": "support.typo3@vd.ch",
+			"homepage": "https://www.vd.ch",
+			"role": "Developer"
+		}
+	],
+	"require": {
+		"php": "^7.4",
+		"typo3/cms-core": "^10.4",
+		"vd/vd-frontend": "^10.4"
+	},
+	"autoload": {
+		"psr-4": {
+			"Vd\\VdLada\\": "Classes/"
+		}
+	},
+	"extra": {
+		"typo3/cms": {
+			"extension-key": "vd_lada"
+		}
+	}
+}

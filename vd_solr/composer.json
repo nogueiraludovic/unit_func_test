@@ -1,0 +1,32 @@
+{
+	"name": "vd/vd-solr",
+	"description": "Solr templates and configuration.",
+	"license": "GPL-3.0-or-later",
+	"type": "typo3-cms-extension",
+	"version": "10.4.0",
+	"authors": [
+		{
+			"name": "État de Vaud - DGNSI",
+			"email": "support.typo3@vd.ch",
+			"homepage": "https://www.vd.ch",
+			"role": "Developer"
+		}
+	],
+	"require": {
+		"php": "^7.4",
+		"apache-solr-for-typo3/solr": "^11.2",
+		"typo3/cms-core": "^10.4",
+		"vd/vd-core": "^10.4",
+		"vd/vd-news": "@dev"
+	},
+	"autoload": {
+		"psr-4": {
+			"Vd\\VdSolr\\": "Classes/"
+		}
+	},
+	"extra": {
+		"typo3/cms": {
+			"extension-key": "vd_solr"
+		}
+	}
+}

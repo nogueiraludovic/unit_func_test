@@ -1,0 +1,94 @@
+@import 'EXT:vd_solr/Configuration/TypoScript/IndexQueue/News.typoscript'
+@import 'EXT:vd_solr/Configuration/TypoScript/IndexQueue/Pages.typoscript'
+@import 'EXT:vd_solr/Configuration/TypoScript/IndexQueue/PressReleases.typoscript'
+@import 'EXT:vd_solr/Configuration/TypoScript/IndexQueue/Prestation.typoscript'
+
+##################################################
+
+plugin.tx_solr {
+  index.fieldProcessingInstructions.datetime_dateS = timestampToIsoDate
+  search {
+    faceting = 1
+    faceting {
+      facets.type {
+        label >
+        manualSortOrder = pages,tx_news_domain_model_news,tx_vdpressreleases_domain_model_pressrelease,tx_vdprestations_domain_model_prestation,siel_gc,siel_ce
+        renderingInstruction = CASE
+        renderingInstruction {
+          key.field = optionValue
+          pages = TEXT
+          pages.value = Pages
+          siel_ce = TEXT
+          siel_ce.value = Conseil d'État
+          siel_gc = TEXT
+          siel_gc.value = Grand Conseil
+          tx_news_domain_model_news = TEXT
+          tx_news_domain_model_news.value = Actualités
+          tx_vdpressreleases_domain_model_pressrelease = TEXT
+          tx_vdpressreleases_domain_model_pressrelease.value = Communiqués de presse
+          tx_vdprestations_domain_model_prestation = TEXT
+          tx_vdprestations_domain_model_prestation.value = Prestations
+        }
+      }
+      keepAllFacetsOnSelection = 1
+    }
+    query {
+      allowEmptyQuery = 1
+      boostFunction = recip(ms(NOW,created),3.16e-11,1,1)
+      boostQuery {
+        lastYear = created:[NOW/DAY-1YEAR TO *]^5.0
+        oneYear = created:[NOW/DAY-2YEARS TO NOW/DAY-1YEAR]^3.0
+        twoYearsPlus = created:[NOW/DAY-5YEARS TO NOW/DAY-2YEARS]^2.0
+      }
+      minimumMatch = 6<90%
+      queryFields = title^30.0,content^20.0,content_textS^20.0,boost_textS^10.0,description^4.0,keywords^2.0,abstract^1.0,subtitle^1.0,subtitle_textS^1.0,navtitle^1.0,author^1.0
+    }
+    results {
+      resultsHighlighting = 1
+      resultsHighlighting {
+        fragmentSize = 200
+        highlightFields = content,title
+        wrap = <mark>|</mark>
+      }
+    }
+  }
+  settings {
+    newsListPageUid = {$newsListPageUid}
+    searchPageUid = {$searchPageUid}
+  }
+  statistics = 1
+  view.templateFiles.results.availableTemplates {
+    news {
+      file = NewsResults
+      label = Actualités
+    }
+    pressReleases {
+      file = PressReleasesResults
+      label = Communiqués de presse
+    }
+    siel {
+      file = SielResults
+      label = Grand Conseil
+    }
+  }
+}
+
+##################################################
+
+[traverse(page, 'uid') != {$searchPageUid}]
+  plugin.tx_solr.search {
+    faceting.facets {
+      category {
+        field = category_intM
+        partialName = None
+      }
+      creationDateRange {
+        field = datetime_dateS
+        type = dateRange
+      }
+      type >
+    }
+    query.sortBy = datetime_dateS desc
+    results.resultsHighlighting.highlightFields = abstract,content,content_textS,title
+  }
+[end]

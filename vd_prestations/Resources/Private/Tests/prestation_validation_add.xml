@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?><evenementsPublication xmlns="http://www.vd.ch/cyber/catalog/typo3/1" reset="false">
+    <evenement type="AJOUT">
+        <prestation>
+            <idMetierPrestation>001241</idMetierPrestation>
+            <titre>Signaler un mineur en danger dans son développement</titre>
+            <description>&lt;p&gt;Vous avez connaissance d'une situation d'un mineur en danger dans son développement physique, psychique, affectif ou social. Si les parents n'y remédient pas, vous pouvez signaler la situation simultanément à la Direction générale de l'enfance et de la jeunesse (DGEJ, anciennement SPJ) et à l'Autorité de protection de l'enfant (Justice de paix) au moyen d'un formulaire électronique.&lt;/p&gt;
+                &lt;p&gt; &lt;/p&gt;
+                &lt;p&gt;Les professionnels exerçant une profession, une charge ou une fonction en relation avec les mineurs, ont l'obligation de signaler, cas échéant par l'intermédiaire de leur hiérarchie. L'auteur du signalement informe les parents et le mineur capable de discernement de sa démarche, sauf si cela entraîne dans l’immédiat des risques supplémentaires pour le mineur ou lorsque celui-ci est victime d’infractions commises par des membres de sa famille.&lt;/p&gt;
+                &lt;p&gt; &lt;/p&gt;
+                &lt;p&gt;Le formulaire de signalement ne peut pas être utilisé par un parent pour signaler l’autre parent. En cas de conflit lié à la séparation ou le cadre du droit de visite, le parent doit s’adresser en premier lieu à l’autorité judiciaire (Justice de paix ou Tribunal d’arrondissement). Au besoin, le parent peut s’adresser à l’ORPM (heure de bureau) du lieu de domicile de l’enfant pour obtenir un conseil. Pour savoir quel est l'ORPM compétent en fonction du lieu de domicile, veuillez consulter la fonction de recherche sur la &lt;a href="https://www.vd.ch/toutes-les-autorites/departements/departement-de-la-jeunesse-de-lenvironnement-et-de-la-securite-djes/direction-generale-de-lenfance-et-de-la-jeunesse-dgej/orpm" target="_blank" rel="noopener"&gt;page internet suivante&lt;/a&gt;.&lt;/p&gt;</description>
+            <domaineMetier>Population</domaineMetier>
+            <themeMetier>Enfance, jeunesse et famille</themeMetier>
+            <publicsCibles>
+                <population>Communes</population>
+            </publicsCibles>
+            <publicsCibles>
+                <population>Entreprises</population>
+            </publicsCibles>
+            <publicsCibles>
+                <population>Particuliers</population>
+            </publicsCibles>
+            <lienAide>https://vd.ch/index.php?id=1003609&amp;no_cache=1</lienAide>
+            <pagesEnRelation>
+                <titrePage xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:type="xs:string">Accès au formulaire signalement</titrePage>
+                <urlPage>https://www.vd.ch/fileadmin/user_upload/themes/vie_privee/jeunesse/fichiers_pdf/Accès_au_formulaire_signalement2023.pdf</urlPage>
+            </pagesEnRelation>
+            <referencesLegaux>
+                <titreReferenceLegale>Loi du 4 mai 2004 sur la protection des mineurs (LProMin), article 13</titreReferenceLegale>
+                <urlReferenceLegale>https://prestations.vd.ch/pub/blv-publication/actes/consolide/850.41?key=1543824855273&amp;id=781fe426-5621-4eb9-945b-6fdabc74ba6b</urlReferenceLegale>
+            </referencesLegaux>
+            <modaliteAcces typeModaliteAcces="online">
+                <marcheASuivre>&lt;p&gt;Cliquez sur le bouton "Commencer" pour remplir le formulaire.&lt;/p&gt;
+                    &lt;p&gt;Vous avez la possibilité d'enregistrer une demande avec la fonction "Finir la demande plus tard".&lt;/p&gt;
+                    &lt;p&gt;La prestation est aussi accessible depuis l'espace sécurisé.&lt;/p&gt;
+                    &lt;p&gt; &lt;/p&gt;</marcheASuivre>
+                <ePayment>false</ePayment>
+                <niveauSecurite>PUBLIC</niveauSecurite>
+                <lienExterne>true</lienExterne>
+                <lienAccesPrestation>https://prestations.vd.ch/pub/001241/</lienAccesPrestation>
+            </modaliteAcces>
+            <resultatPrestation>Signalement d'un mineur en danger dans son développement</resultatPrestation>
+            <actionBeneficiaire>DEPOSER</actionBeneficiaire>
+            <actionPrestataire xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:type="xs:string">ENREGISTRER</actionPrestataire>
+        </prestation>
+    </evenement>
+</evenementsPublication>

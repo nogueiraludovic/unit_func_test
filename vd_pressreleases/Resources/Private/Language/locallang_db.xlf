@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<xliff version="1.0">
+	<file source-language="en" datatype="plaintext" original="messages" date="2016-09-15T12:08:49Z" product-name="vd_pressreleases">
+		<header/>
+		<body>
+			<trans-unit id="additional_contents" resname="additional_contents">
+				<source>Links/Additional Contents</source>
+			</trans-unit>
+			<trans-unit id="additional_text" resname="additional_text">
+				<source>Additional Text</source>
+			</trans-unit>
+			<trans-unit id="body_text" resname="body_text">
+				<source>Body Text</source>
+			</trans-unit>
+			<trans-unit id="anonymize" resname="anonymize">
+				<source>Anonymize</source>
+			</trans-unit>
+			<trans-unit id="anonymize_time" resname="anonymize_time">
+				<source>Anonymize Time (if empty, 15 days)</source>
+			</trans-unit>
+			<trans-unit id="contacts" resname="contacts">
+				<source>Contact persons</source>
+			</trans-unit>
+			<trans-unit id="crdate" resname="crdate">
+				<source>Creation date</source>
+			</trans-unit>
+			<trans-unit id="date_time" resname="date_time">
+				<source>Press release date</source>
+			</trans-unit>
+			<trans-unit id="department" resname="department">
+				<source>Department</source>
+			</trans-unit>
+			<trans-unit id="description" resname="description">
+				<source>Description</source>
+			</trans-unit>
+			<trans-unit id="email" resname="email">
+				<source>Email</source>
+			</trans-unit>
+			<trans-unit id="files" resname="files">
+				<source>Files for download (TYPO3)</source>
+			</trans-unit>
+			<trans-unit id="files_relay" resname="files_relay">
+				<source>Original press release PDF</source>
+			</trans-unit>
+			<trans-unit id="forcedpdf_file" resname="forcedpdf_file">
+				<source>PDF to prioritize</source>
+			</trans-unit>
+			<trans-unit id="function" resname="function">
+				<source>Function</source>
+			</trans-unit>
+			<trans-unit id="images" resname="images">
+				<source>Images</source>
+			</trans-unit>
+			<trans-unit id="keywords" resname="keywords">
+				<source>Keywords (separated by commas)</source>
+			</trans-unit>
+			<trans-unit id="links" resname="links">
+				<source>Links</source>
+			</trans-unit>
+			<trans-unit id="logo" resname="logo">
+				<source>Logo</source>
+			</trans-unit>
+			<trans-unit id="name" resname="name">
+				<source>Name</source>
+			</trans-unit>
+			<trans-unit id="partner_source_infos" resname="partner_source_infos">
+				<source>Partners source infos</source>
+			</trans-unit>
+			<trans-unit id="partner_sources" resname="partner_sources">
+				<source>Partner Sources (maximum 3)</source>
+			</trans-unit>
+			<trans-unit id="path_segment" resname="path_segment">
+				<source>URL segment</source>
+			</trans-unit>
+			<trans-unit id="phone" resname="phone">
+				<source>Phone</source>
+			</trans-unit>
+			<trans-unit id="press_release" resname="press_release">
+				<source>Press Release</source>
+			</trans-unit>
+			<trans-unit id="press_releases" resname="press_releases">
+				<source>Press Releases</source>
+			</trans-unit>
+			<trans-unit id="publidoc_files" resname="publidoc_files">
+				<source>Files to download (Publidoc)</source>
+			</trans-unit>
+			<trans-unit id="service" resname="service">
+				<source>Service</source>
+			</trans-unit>
+			<trans-unit id="signature" resname="signature">
+				<source>Signature</source>
+			</trans-unit>
+			<trans-unit id="source" resname="source">
+				<source>Source</source>
+			</trans-unit>
+			<trans-unit id="source_id" resname="source_id">
+				<source>Source Id</source>
+			</trans-unit>
+			<trans-unit id="summary" resname="summary">
+				<source>Summary</source>
+			</trans-unit>
+			<trans-unit id="subtitle" resname="subtitle">
+				<source>Surtitle</source>
+			</trans-unit>
+			<trans-unit id="title" resname="title">
+				<source>Title</source>
+			</trans-unit>
+			<trans-unit id="type" resname="type">
+				<source>Type of press release</source>
+			</trans-unit>
+			<trans-unit id="types" resname="types">
+				<source>Types of press release</source>
+			</trans-unit>
+			<trans-unit id="url" resname="url">
+				<source>URL</source>
+			</trans-unit>
+			<trans-unit id="videos" resname="videos">
+				<source>Videos</source>
+			</trans-unit>
+		</body>
+	</file>
+</xliff>

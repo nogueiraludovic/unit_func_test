@@ -1,0 +1,59 @@
+<html data-namespace-typo3-fluid="true" xmlns:f="http://typo3.org/ns/TYPO3/Fluid/ViewHelpers">
+    <f:layout/>
+    <f:section name="Content">
+        <h2 class="mt-5"><f:translate arguments="{0: now}" id="office_hours_of"/></h2>
+        <h3>MPa</h3>
+        <dl>
+            <f:if condition="{hasCantonalGuard}">
+                <f:for as="officeHours" each="{mpVdSection}" key="office">
+                    <f:render arguments="{office: office, officeHours: officeHours}" section="OfficeHour"/>
+                </f:for>
+            </f:if>
+            <f:for as="officeHours" each="{mpSection}" key="office">
+                <f:render arguments="{office: office, officeHours: officeHours}" section="OfficeHour"/>
+            </f:for>
+            <f:if condition="!{hasCantonalGuard}">
+                <f:for as="officeHours" each="{mpVdSection}" key="office">
+                    <f:render arguments="{office: office, officeHours: officeHours}" section="OfficeHour"/>
+                </f:for>
+            </f:if>
+        </dl>
+        <h3>DIVAS</h3>
+        <dl>
+            <f:for as="officeHours" each="{divasSection}" key="office">
+                <f:render arguments="{office: office, officeHours: officeHours}" section="OfficeHour"/>
+            </f:for>
+        </dl>
+        <h3><f:translate id="courts"/></h3>
+        <dl>
+            <f:for as="officeHours" each="{tmSection}" key="office">
+                <f:render arguments="{office: office, officeHours: officeHours}" section="OfficeHour"/>
+            </f:for>
+        </dl>
+    </f:section>
+    <f:section name="OfficeHour">
+        <f:if condition="{officeHours}">
+            <div class="border-bottom mt-2 row">
+                <f:for as="officeHour" each="{officeHours}" iteration="iterator">
+                    <dt class="col-sm-5{f:if(condition: '!{iterator.isFirst}', then: ' visually-hidden')}">{office}</dt>
+                    <dd class="col-sm-7{f:if(condition: '!{iterator.isFirst}', then:' offset-sm-5 small')}">
+                        <f:if condition="{officeHour.starting_soon} && !{officeHour.ending_soon}">
+                            <f:then>
+                                {officeHour.magistrate_name} ({f:translate(arguments: {0: officeHour.start_shift_hour}, id: 'from')})
+                            </f:then>
+                            <f:else if="!{officeHour.starting_soon} && {officeHour.ending_soon}">
+                                {officeHour.magistrate_name} ({f:translate(arguments: {0: officeHour.end_shift_hour}, id: 'to')})
+                            </f:else>
+                            <f:else if="{officeHour.starting_soon} && {officeHour.ending_soon}">
+                                {officeHour.magistrate_name} ({f:translate(arguments: {0: officeHour.start_shift_hour}, id: 'from')}, {f:translate(arguments: {0: officeHour.end_shift_hour}, id: 'to')})
+                            </f:else>
+                            <f:else>
+                                {officeHour.magistrate_name}
+                            </f:else>
+                        </f:if>
+                    </dd>
+                </f:for>
+            </div>
+        </f:if>
+    </f:section>
+</html>

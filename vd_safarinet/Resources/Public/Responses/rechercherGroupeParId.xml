@@ -1,0 +1,51 @@
+<soap:Envelope xmlns:soap="http://schemas.xmlsoap.org/soap/envelope/">
+    <soap:Body>
+        <ns2:rechercherGroupeParIdResponse
+                xmlns:ns2="http://www.vd.ch/lmgc/wsdl/ListeMembresGrandConseil"
+                xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+                xsi:schemaLocation="http://www.vd.ch/lmgc/wsdl/ListeMembresGrandConseil ../../LMGC/ListeMembresGrandConseil.xsd ">
+            <return>
+                <actif>Oui</actif>
+                <adresse>
+                    <adresse>rue de la barre 1</adresse>
+                    <canton>VD</canton>
+                    <email>test@mail.com</email>
+                    <localite>Lausanne</localite>
+                    <npa>1010</npa>
+                    <pays>Suisse</pays>
+                    <siteWeb>www.vd.ch</siteWeb>
+                    <telephone>021 212 21 21</telephone>
+                </adresse>
+                <dateDebut>2013-01-10</dateDebut>
+                <id>156470</id>
+                <membres>
+                    <membre>
+                        <dateEntree>2013-01-10</dateEntree>
+                        <id>147847</id>
+                        <nom>Treboux</nom>
+                        <prenom>M.</prenom>
+                        <qualite>Membre</qualite>
+                    </membre>
+                    <membre>
+                        <dateEntree>2013-01-10</dateEntree>
+                        <dateFin>2017-01-10</dateFin>
+                        <id>74999</id>
+                        <nom>Tosato</nom>
+                        <prenom>O.</prenom>
+                        <qualite>Membre</qualite>
+                    </membre>
+                    <membre>
+                        <dateEntree>2013-01-10</dateEntree>
+                        <id>147842</id>
+                        <nom>Podio</nom>
+                        <prenom>S.</prenom>
+                        <qualite>Membre</qualite>
+                    </membre>
+                </membres>
+                <nom>Commission Postulat 12_POS_017</nom>
+                <sigle>12_POS_017</sigle>
+                <type>Commission parlementaire ad-hoc</type>
+            </return>
+        </ns2:rechercherGroupeParIdResponse>
+    </soap:Body>
+</soap:Envelope>

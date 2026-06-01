@@ -1,0 +1,17 @@
+<html data-namespace-typo3-fluid="true" xmlns:f="http://typo3.org/ns/TYPO3/CMS/Fluid/ViewHelpers">
+    <f:if condition="{form}">
+        <f:then>
+            <f:form action="{action}" addQueryString="{settings.misc.addQueryString}" name="field" section="c{ttContentData.uid}">
+                <f:render arguments="{_all}" partial="Form/Error/FormError"/>
+                <f:for as="page" each="{form.pages}">
+                    <f:render arguments="{_all}" partial="Form/Page"/>
+                </f:for>
+                <f:form.hidden name="mail[form]" value="{form.uid}"/>
+                <f:render arguments="{form: form}" partial="Misc/HoneyPod"/>
+            </f:form>
+        </f:then>
+        <f:else>
+            <f:translate id="error_no_form"/>
+        </f:else>
+    </f:if>
+</html>

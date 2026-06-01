@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xliff version="1.2" xmlns="urn:oasis:names:tc:xliff:document:1.2">
+	<file datatype="plaintext" original="EXT:vd_apprenticeship/Resources/Private/Language/locallang.xlf" source-language="en">
+		<header/>
+		<body>
+			<trans-unit id="address" resname="address">
+				<source>Address</source>
+			</trans-unit>
+			<trans-unit id="animals" resname="animals">
+				<source>Animals</source>
+			</trans-unit>
+			<trans-unit id="apprenticeships" resname="apprenticeships">
+				<source>Apprenticeships</source>
+			</trans-unit>
+			<trans-unit id="available_places" resname="available_places">
+				<source>Available places</source>
+			</trans-unit>
+			<trans-unit id="crops" resname="crops">
+				<source>Crops</source>
+			</trans-unit>
+			<trans-unit id="dgav_apprenticeship_position" resname="dgav_apprenticeship_position">
+				<source>DGAV apprenticeship position</source>
+			</trans-unit>
+			<trans-unit id="email_address" resname="email_address">
+				<source>Email address</source>
+			</trans-unit>
+			<trans-unit id="exploitation_information" resname="exploitation_information">
+				<source>Exploitation information</source>
+			</trans-unit>
+			<trans-unit id="exploitation_type" resname="exploitation_type">
+				<source>Exploitation type</source>
+			</trans-unit>
+			<trans-unit id="full_name" resname="full_name">
+				<source>First and last name</source>
+			</trans-unit>
+			<trans-unit id="german_apprenticeship" resname="german_apprenticeship">
+				<source>Apprenticeship CH-German</source>
+			</trans-unit>
+			<trans-unit id="locality" resname="locality">
+				<source>Locality</source>
+			</trans-unit>
+			<trans-unit id="misc" resname="misc">
+				<source>Miscellaneous about the trainer, family, accommodation</source>
+			</trans-unit>
+			<trans-unit id="mobile_phone" resname="mobile_phone">
+				<source>Mobile phone</source>
+			</trans-unit>
+			<trans-unit id="more_details" resname="more_details">
+				<source>More details</source>
+			</trans-unit>
+			<trans-unit id="no" resname="no">
+				<source>No</source>
+			</trans-unit>
+			<trans-unit id="particularities" resname="particularities">
+				<source>Particularity(ies)</source>
+			</trans-unit>
+			<trans-unit id="phone" resname="phone">
+				<source>Phone</source>
+			</trans-unit>
+			<trans-unit id="profession" resname="profession">
+				<source>Profession</source>
+			</trans-unit>
+			<trans-unit id="published_on" resname="published_on">
+				<source>Published on %s</source>
+			</trans-unit>
+			<trans-unit id="region" resname="region">
+				<source>Region</source>
+			</trans-unit>
+			<trans-unit id="slug" resname="slug">
+				<source>URL Segment</source>
+			</trans-unit>
+			<trans-unit id="trainer_contact" resname="trainer_contact">
+				<source>Trainer contact</source>
+			</trans-unit>
+			<trans-unit id="yes" resname="yes">
+				<source>Yes</source>
+			</trans-unit>
+		</body>
+	</file>
+</xliff>

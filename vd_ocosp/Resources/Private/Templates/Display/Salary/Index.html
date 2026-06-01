@@ -1,0 +1,34 @@
+<html data-namespace-typo3-fluid="true" xmlns:f="http://typo3.org/ns/TYPO3/CMS/Fluid/ViewHelpers">
+    <f:layout/>
+    <f:section name="main">
+        <f:if condition="{salaries}">
+            <div class="mt-1">
+                <p>
+                    <f:link.action action="export" class="btn btn-secondary btn-sm" id="export-salaries-link">
+                        <f:translate id="LLL:EXT:vd_ocosp/Resources/Private/Language/locallang_backend.xlf:adresse.label.export"/>
+                    </f:link.action>
+                </p>
+                <div class="table-responsive">
+                    <table class="table table-striped">
+                        <thead>
+                            <tr>
+                                <th><f:translate id="LLL:EXT:vd_ocosp/Resources/Private/Language/locallang_frontend.xlf:label.nom"/></th>
+                                <th><f:translate id="LLL:EXT:vd_ocosp/Resources/Private/Language/locallang_frontend.xlf:label.salaire_mensuel"/></th>
+                                <th><f:translate id="LLL:EXT:vd_ocosp/Resources/Private/Language/locallang_frontend.xlf:label.salaire_horaire"/></th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <f:for as="salary" each="{salaries}">
+                                <tr>
+                                    <td>{salary.profession}</td>
+                                    <td>{salary.salaireMensuel}</td>
+                                    <td>{salary.salaireHoraire}</td>
+                                </tr>
+                            </f:for>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </f:if>
+    </f:section>
+</html>

@@ -52,6 +52,21 @@ return [
             'label' => 'LLL:EXT:vd_climate_policy/Resources/Private/Language/locallang_tca.xlf:dicastery'
         ],
         'hidden' => \Vd\VdCore\Utility\TcaUtility::getFieldConfiguration('hidden'),
+        'links' => [
+            'config' => [
+                'appearance' => [
+                    'collapseAll' => true,
+                    'expandSingle' => true,
+                    'newRecordLinkPosition' => 'bottom'
+                ],
+                'foreign_field' => 'address',
+                'foreign_sortby' => 'sorting',
+                'foreign_table' => 'tx_vdclimatepolicy_domain_model_link',
+                'type' => 'inline'
+            ],
+            'exclude' => true,
+            'label' => 'LLL:EXT:vd_climate_policy/Resources/Private/Language/locallang_tca.xlf:links'
+        ],
         'name' => [
             'config' => [
                 'default' => '',
@@ -96,21 +111,6 @@ return [
                 'type' => 'select'
             ],
             'label' => 'LLL:EXT:vd_climate_policy/Resources/Private/Language/locallang_tca.xlf:theme'
-        ],
-        'links' => [
-            'config' => [
-                'appearance' => [
-                    'collapseAll' => true,
-                    'expandSingle' => true,
-                    'newRecordLinkPosition' => 'bottom'
-                ],
-                'foreign_field' => 'address',
-                'foreign_sortby' => 'sorting',
-                'foreign_table' => 'tx_vdclimatepolicy_domain_model_link',
-                'type' => 'inline'
-            ],
-            'exclude' => true,
-            'label' => 'LLL:EXT:vd_climate_policy/Resources/Private/Language/locallang_tca.xlf:links'
         ]
     ],
     'ctrl' => [
@@ -125,7 +125,7 @@ return [
         'groupName' => 'vd_climate_policy',
         'label' => 'name',
         'searchFields' => 'cities,description,name',
-        'title' => 'LLL:EXT:vd_climate_policy/Resources/Private/Language/locallang_tca.xlf:addresses',
+        'title' => 'LLL:EXT:vd_climate_policy/Resources/Private/Language/locallang_tca.xlf:climate_policy',
         'tstamp' => 'tstamp',
         'typeicon_classes' => [
             'default' => 'mimetypes-other-other'
@@ -136,13 +136,12 @@ return [
             'showitem' => '
                 --div--;LLL:EXT:core/Resources/Private/Language/Form/locallang_tabs.xlf:general,
                     name,
-                    axis,
                     cities,
+                    links,
+                    axis,
                     theme,
                     dicastery,
                     pecc,
-                    towns,
-                    links,
                 --div--;LLL:EXT:core/Resources/Private/Language/Form/locallang_tabs.xlf:access,
                     hidden,
                 --div--;LLL:EXT:core/Resources/Private/Language/Form/locallang_tabs.xlf:notes,

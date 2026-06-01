@@ -1,0 +1,296 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xliff version="1.2" xmlns="urn:oasis:names:tc:xliff:document:1.2">
+	<file datatype="plaintext" original="EXT:vd_ojvencheres/Resources/Private/Language/locallang.xlf" source-language="en" target-language="fr">
+		<header/>
+		<body>
+			<trans-unit id="address" resname="address">
+				<source>Address</source>
+				<target state="translated">Adresse</target>
+			</trans-unit>
+			<trans-unit id="all_categories" resname="all_categories">
+				<source>All categories</source>
+				<target state="translated">Toutes les catégories</target>
+			</trans-unit>
+			<trans-unit id="all_main_item_categories" resname="all_main_item_categories">
+				<source>All categories</source>
+				<target state="translated">Toutes les catégories</target>
+			</trans-unit>
+			<trans-unit id="all_main_offices" resname="all_main_offices">
+				<source>All offices</source>
+				<target state="translated">Tous les offices</target>
+			</trans-unit>
+			<trans-unit id="all_sales_categories" resname="all_sales_categories">
+				<source>All sale types</source>
+				<target state="translated">Tous les types de vente</target>
+			</trans-unit>
+			<trans-unit id="all_sub_categories" resname="all_sub_categories">
+				<source>All sub-categories</source>
+				<target state="translated">Toutes les sous-catégories</target>
+			</trans-unit>
+			<trans-unit id="brand" resname="brand">
+				<source>Brand</source>
+				<target state="translated">Marque</target>
+			</trans-unit>
+			<trans-unit id="building_year" resname="building_year">
+				<source>Building year</source>
+				<target state="translated">Année de construction</target>
+			</trans-unit>
+			<trans-unit id="canceled" resname="canceled">
+				<source>Canceled</source>
+				<target state="translated">Annulée</target>
+			</trans-unit>
+			<trans-unit id="categories" resname="categories">
+				<source>Categories</source>
+				<target state="translated">Catégories</target>
+			</trans-unit>
+			<trans-unit id="circulation_year" resname="circulation_year">
+				<source>Circulation year</source>
+				<target state="translated">Année de mise en circulation</target>
+			</trans-unit>
+			<trans-unit id="city" resname="city">
+				<source>City</source>
+				<target state="translated">Localité</target>
+			</trans-unit>
+			<trans-unit id="color" resname="color">
+				<source>Color</source>
+				<target state="translated">Couleur</target>
+			</trans-unit>
+			<trans-unit id="contact" resname="contact">
+				<source>Contact</source>
+				<target state="translated">Contact</target>
+			</trans-unit>
+			<trans-unit id="description" resname="description">
+				<source>Description</source>
+				<target state="translated">Descriptif</target>
+			</trans-unit>
+			<trans-unit id="discount" resname="discount">
+				<source>Discount</source>
+				<target state="translated">Rabais</target>
+			</trans-unit>
+			<trans-unit id="district" resname="district">
+				<source>District</source>
+				<target state="translated">District</target>
+			</trans-unit>
+			<trans-unit id="documents" resname="documents">
+				<source>Document(s)</source>
+				<target state="translated">Document(s)</target>
+			</trans-unit>
+			<trans-unit id="exposure" resname="exposure">
+				<source>Exhibition/visit of auction items</source>
+				<target state="translated">Exposition/visite des objets de la vente</target>
+			</trans-unit>
+			<trans-unit id="in_progress" resname="in_progress">
+				<source>In progress</source>
+				<target state="translated">En cours</target>
+			</trans-unit>
+			<trans-unit id="item_categories" resname="item_categories">
+				<source>Item categories</source>
+				<target state="translated">Catégories d'objet</target>
+			</trans-unit>
+			<trans-unit id="item_detail" resname="item_detail">
+				<source>Item detail</source>
+				<target state="translated">Détail de l'objet</target>
+			</trans-unit>
+			<trans-unit id="item_sub_categories" resname="item_sub_categories">
+				<source>Item sub-categories</source>
+				<target state="translated">Sous-catégories d'objet</target>
+			</trans-unit>
+			<trans-unit id="items_for_sale" resname="items_for_sale">
+				<source>Item(s) for sale</source>
+				<target state="translated">Objet(s) en vente</target>
+			</trans-unit>
+			<trans-unit id="kilometer" resname="kilometer">
+				<source>Kilometres travelled</source>
+				<target state="translated">Kilométrage compteur</target>
+			</trans-unit>
+			<trans-unit id="latest_expertise" resname="latest_expertise">
+				<source>Latest expertise</source>
+				<target state="translated">Dernière expertise</target>
+			</trans-unit>
+			<trans-unit id="locate_google_maps" resname="locate_google_maps">
+				<source>Locate on Google Maps ></source>
+				<target state="translated">Localiser sur Google Maps ></target>
+			</trans-unit>
+			<trans-unit id="locate_item" resname="locate_item">
+				<source>Locate the item</source>
+				<target state="translated">Localiser l'objet</target>
+			</trans-unit>
+			<trans-unit id="locate_sale" resname="locate_sale">
+				<source>Locate the sale</source>
+				<target state="translated">Localiser le lieu de la vente</target>
+			</trans-unit>
+			<trans-unit id="managed_by" resname="managed_by">
+				<source>Managed by</source>
+				<target state="translated">Géré(e) par</target>
+			</trans-unit>
+			<trans-unit id="model" resname="model">
+				<source>Model</source>
+				<target state="translated">Modèle</target>
+			</trans-unit>
+			<trans-unit id="municipality" resname="municipality">
+				<source>Municipality</source>
+				<target state="translated">Commune</target>
+			</trans-unit>
+			<trans-unit id="newsletter_copyright" resname="newsletter_copyright">
+				<source>Copyright(c) Ordre judiciaire vaudois</source>
+				<target state="translated">Copyright(c) Ordre judiciaire vaudois</target>
+			</trans-unit>
+			<trans-unit id="newsletter_detail" resname="newsletter_detail">
+				<source>If this message is not displayed correctly, click here</source>
+				<target state="translated">Si ce message ne s'affiche pas correctement, cliquer ici</target>
+			</trans-unit>
+			<trans-unit id="newsletter_title" resname="newsletter_title">
+				<source>Debt collection and bankruptcy office sales and auctions</source>
+				<target state="translated">Ventes et enchères des offices des poursuites et faillites</target>
+			</trans-unit>
+			<trans-unit id="newsletter_unsubscribe" resname="newsletter_unsubscribe">
+				<source>To unsubscribe, click here</source>
+				<target state="translated">Pour se désabonner, cliquer ici</target>
+			</trans-unit>
+			<trans-unit id="next" resname="next">
+				<source>Next</source>
+				<target state="translated">Suivant</target>
+			</trans-unit>
+			<trans-unit id="no_current_sale" resname="no_current_sale">
+				<source>No current sale</source>
+				<target state="translated">Aucune vente en cours</target>
+			</trans-unit>
+			<trans-unit id="no_result" resname="no_result">
+				<source>No results with these search criteria</source>
+				<target state="translated">Aucun résultat avec ces critères de recherche</target>
+			</trans-unit>
+			<trans-unit id="observations" resname="observations">
+				<source>Observation(s)</source>
+				<target state="translated">Observation(s)</target>
+			</trans-unit>
+			<trans-unit id="office_estimation" resname="office_estimation">
+				<source>Office estimate based on expert report</source>
+				<target state="translated">Estimation office selon rapport d'expertise</target>
+			</trans-unit>
+			<trans-unit id="offices" resname="offices">
+				<source>Offices</source>
+				<target state="translated">Offices</target>
+			</trans-unit>
+			<trans-unit id="one_result_found" resname="one_result_found">
+				<source><![CDATA[<strong>1</strong> result found]]></source>
+				<target state="translated"><![CDATA[<strong>1</strong> résultat trouvé]]></target>
+			</trans-unit>
+			<trans-unit id="parcel_number" resname="parcel_number">
+				<source>Parcel number</source>
+				<target state="translated">Numéro de parcelle</target>
+			</trans-unit>
+			<trans-unit id="park_information" resname="park_information">
+				<source>Parking information</source>
+				<target state="translated">Information parking</target>
+			</trans-unit>
+			<trans-unit id="po_box" resname="po_box">
+				<source>P.O. Box</source>
+				<target state="translated">Case postale</target>
+			</trans-unit>
+			<trans-unit id="previous" resname="previous">
+				<source>Previous</source>
+				<target state="translated">Précédent</target>
+			</trans-unit>
+			<trans-unit id="reply_address" resname="reply_address">
+				<source>Reply address</source>
+				<target state="translated">Adresse de réponse</target>
+			</trans-unit>
+			<trans-unit id="reset" resname="reset">
+				<source>Reset</source>
+				<target state="translated">Réinitialiser</target>
+			</trans-unit>
+			<trans-unit id="results_found" resname="results_found">
+				<source><![CDATA[<strong>%d</strong> results found]]></source>
+				<target state="translated"><![CDATA[<strong>%d</strong> résultats trouvés]]></target>
+			</trans-unit>
+			<trans-unit id="room" resname="room">
+				<source>Room</source>
+				<target state="translated">Emplacement</target>
+			</trans-unit>
+			<trans-unit id="rooms_number" resname="rooms_number">
+				<source>Number of room(s)</source>
+				<target state="translated">Nombre de pièce(s)</target>
+			</trans-unit>
+			<trans-unit id="sale_canceled" resname="sale_canceled">
+				<source>Sale CANCELED</source>
+				<target state="translated">Vente ANNULÉE</target>
+			</trans-unit>
+			<trans-unit id="sale_conditions" resname="sale_conditions">
+				<source>Sale conditions</source>
+				<target state="translated">Conditions de vente</target>
+			</trans-unit>
+			<trans-unit id="sale_conditions_information" resname="sale_conditions_information">
+				<source>Sale conditions and information ></source>
+				<target state="translated">Conditions et informations de la vente ></target>
+			</trans-unit>
+			<trans-unit id="sale_date" resname="sale_date">
+				<source>Sale date</source>
+				<target state="translated">Date de la vente</target>
+			</trans-unit>
+			<trans-unit id="sale_place" resname="sale_place">
+				<source>Sale place</source>
+				<target state="translated">Lieu de la vente</target>
+			</trans-unit>
+			<trans-unit id="sale_schedule" resname="sale_schedule">
+				<source>Date(s) and time(s) of sale</source>
+				<target state="translated">Date(s) et heure(s) de la vente</target>
+			</trans-unit>
+			<trans-unit id="sale_types" resname="sale_types">
+				<source>Sale types</source>
+				<target state="translated">Types de vente</target>
+			</trans-unit>
+			<trans-unit id="search" resname="search">
+				<source>Search</source>
+				<target state="translated">Rechercher</target>
+			</trans-unit>
+			<trans-unit id="search_items" resname="search_items">
+				<source>Search items</source>
+				<target state="translated">Recherche d'objets</target>
+			</trans-unit>
+			<trans-unit id="search_legend" resname="search_legend">
+				<source>Search in the register of bankruptcy sales and auctions</source>
+				<target state="translated">Rechercher dans le registre de ventes et enchères des poursuites et des faillites</target>
+			</trans-unit>
+			<trans-unit id="secondary_office" resname="secondary_office">
+				<source>Secondary office(s)</source>
+				<target state="translated">Office(s) secondaire(s)</target>
+			</trans-unit>
+			<trans-unit id="see_all_items" resname="see_all_items">
+				<source>See all items</source>
+				<target state="translated">Voir tous les objets</target>
+			</trans-unit>
+			<trans-unit id="see_full_description" resname="see_full_description">
+				<source>See full description</source>
+				<target state="translated">Voir le descriptif complet</target>
+			</trans-unit>
+			<trans-unit id="see_full_sale_description" resname="see_full_sale_description">
+				<source>See full description of the sale</source>
+				<target state="translated">Voir le descriptif complet de la vente</target>
+			</trans-unit>
+			<trans-unit id="see_item_detail" resname="see_all_items">
+				<source>See item detail</source>
+				<target state="translated">Voir le détail de l'objet</target>
+			</trans-unit>
+			<trans-unit id="start_price" resname="start_price">
+				<source>Start price</source>
+				<target state="translated">Prix de départ</target>
+			</trans-unit>
+			<trans-unit id="submission_deadline" resname="submission_deadline">
+				<source>Submission deadline</source>
+				<target state="translated">Délai de soumission</target>
+			</trans-unit>
+			<trans-unit id="surface" resname="surface">
+				<source>Surface</source>
+				<target state="translated">Surface</target>
+			</trans-unit>
+			<trans-unit id="type" resname="type">
+				<source>Type</source>
+				<target state="translated">Type</target>
+			</trans-unit>
+			<trans-unit id="zip_code" resname="zip_code">
+				<source>ZIP</source>
+				<target state="translated">NPA</target>
+			</trans-unit>
+		</body>
+	</file>
+</xliff>

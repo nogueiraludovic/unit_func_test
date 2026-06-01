@@ -1,0 +1,71 @@
+[62771 in tree.rootLineIds]
+  TCEFORM.tx_vdojvencheres_domain_model_sale {
+    main_office.PAGE_TSCONFIG_ID = 14
+    secondary_office.PAGE_TSCONFIG_ID = 14
+  }
+[62783 in tree.rootLineIds]
+  TCEFORM.tx_vdojvencheres_domain_model_sale {
+    main_office.PAGE_TSCONFIG_ID = 13
+    secondary_office.PAGE_TSCONFIG_ID = 13
+  }
+[62795 in tree.rootLineIds]
+  TCEFORM.tx_vdojvencheres_domain_model_sale {
+    main_office.PAGE_TSCONFIG_ID = 12
+    secondary_office.PAGE_TSCONFIG_ID = 12
+  }
+[62807 in tree.rootLineIds]
+  TCEFORM.tx_vdojvencheres_domain_model_sale {
+    main_office.PAGE_TSCONFIG_ID = 11
+    secondary_office.PAGE_TSCONFIG_ID = 11
+  }
+[62819 in tree.rootLineIds]
+  TCEFORM.tx_vdojvencheres_domain_model_sale {
+    main_office.PAGE_TSCONFIG_ID = 10
+    secondary_office.PAGE_TSCONFIG_ID = 10
+  }
+[62830 in tree.rootLineIds]
+  TCEFORM.tx_vdojvencheres_domain_model_sale {
+    main_office.PAGE_TSCONFIG_ID = 9
+    secondary_office.PAGE_TSCONFIG_ID = 9
+  }
+[62841 in tree.rootLineIds]
+  TCEFORM.tx_vdojvencheres_domain_model_sale {
+    main_office.PAGE_TSCONFIG_ID = 1
+    secondary_office.PAGE_TSCONFIG_ID = 1
+  }
+[62852 in tree.rootLineIds]
+  TCEFORM.tx_vdojvencheres_domain_model_sale {
+    main_office.PAGE_TSCONFIG_ID = 8
+    secondary_office.PAGE_TSCONFIG_ID = 8
+  }
+[62863 in tree.rootLineIds]
+  TCEFORM.tx_vdojvencheres_domain_model_sale {
+    main_office.PAGE_TSCONFIG_ID = 7
+    secondary_office.PAGE_TSCONFIG_ID = 7
+  }
+[62874 in tree.rootLineIds]
+  TCEFORM.tx_vdojvencheres_domain_model_sale {
+    main_office.PAGE_TSCONFIG_ID = 6
+    secondary_office.PAGE_TSCONFIG_ID = 6
+  }
+[62885 in tree.rootLineIds]
+  TCEFORM.tx_vdojvencheres_domain_model_sale {
+    main_office.PAGE_TSCONFIG_ID = 5
+    secondary_office.PAGE_TSCONFIG_ID = 5
+  }
+[62896 in tree.rootLineIds]
+  TCEFORM.tx_vdojvencheres_domain_model_sale {
+    main_office.PAGE_TSCONFIG_ID = 4
+    secondary_office.PAGE_TSCONFIG_ID = 4
+  }
+[62907 in tree.rootLineIds]
+  TCEFORM.tx_vdojvencheres_domain_model_sale {
+    main_office.PAGE_TSCONFIG_ID = 3
+    secondary_office.PAGE_TSCONFIG_ID = 3
+  }
+[62932 in tree.rootLineIds]
+  TCEFORM.tx_vdojvencheres_domain_model_sale {
+    main_office.PAGE_TSCONFIG_ID = 2
+    secondary_office.PAGE_TSCONFIG_ID = 2
+  }
+[end]

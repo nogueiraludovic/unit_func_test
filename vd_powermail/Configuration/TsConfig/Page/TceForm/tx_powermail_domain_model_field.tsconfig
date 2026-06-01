@@ -1,0 +1,10 @@
+TCEFORM.tx_powermail_domain_model_field {
+  css.disabled = 1
+  description.disabled = 1
+  feuser_value.disabled = 1
+  multiselect.disabled = 1
+  prefill_value.disabled = 1
+  sys_language_uid.disabled = 1
+  type.keepItems = check,date,hidden,input,radio,select,submit,text,textarea,turnstileCaptcha
+  validation.keepItems = 0,1,2,4,7
+}

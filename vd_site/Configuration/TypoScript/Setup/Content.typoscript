@@ -1,0 +1,14 @@
+tt_content {
+  menu_abstract.dataProcessing.10.titleField = title // nav_title
+  menu_pages.dataProcessing.10.titleField = title // nav_title
+  menu_section.dataProcessing.10 {
+    dataProcessing {
+      20.where >
+      30 = Vd\VdSite\DataProcessing\SectionProcessor
+    }
+    titleField = title // nav_title
+  }
+  menu_sitemap_pages.dataProcessing.10.titleField = title // nav_title
+  menu_subpages.dataProcessing.10.titleField = title // nav_title
+  table.dataProcessing.10.fieldDelimiter.char.cObject.ifEmpty = 124
+}

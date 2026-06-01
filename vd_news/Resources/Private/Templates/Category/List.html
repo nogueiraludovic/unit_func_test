@@ -1,0 +1,12 @@
+<html data-namespace-typo3-fluid="true" xmlns:f="http://typo3.org/ns/TYPO3/CMS/Fluid/ViewHelpers" xmlns:vdn="http://typo3.org/ns/Vd/VdNews/ViewHelpers">
+    <f:if condition="{categories}">
+        <f:then>
+            <p>{vdn:format.categories(categories: categories)}</p>
+        </f:then>
+        <f:else>
+            <div class="no-news-found">
+                <f:translate extensionName="News" id="list_nocategoriesfound"/>
+            </div>
+        </f:else>
+    </f:if>
+</html>

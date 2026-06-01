@@ -1,0 +1,82 @@
+mod.wizards.newContentElement.wizardItems {
+  common {
+    elements {
+      biocard {
+        description = LLL:EXT:vd_site/Resources/Private/Language/locallang_db_new_content_el.xlf:common_biocard_description
+        iconIdentifier = mimetypes-x-content-login
+        title = LLL:EXT:vd_site/Resources/Private/Language/locallang_db_new_content_el.xlf:common_biocard_title
+        tt_content_defValues.CType = biocard
+      }
+      buttons {
+        description = LLL:EXT:vd_site/Resources/Private/Language/locallang_db_new_content_el.xlf:common_buttons_description
+        iconIdentifier = content-menu-thumbnail
+        title = LLL:EXT:vd_site/Resources/Private/Language/locallang_db_new_content_el.xlf:common_buttons_title
+        tt_content_defValues.CType = buttons
+      }
+      cards_group {
+        description = LLL:EXT:vd_site/Resources/Private/Language/locallang_db_new_content_el.xlf:common_cards_group_description
+        iconIdentifier = content-card-group
+        title = LLL:EXT:vd_site/Resources/Private/Language/locallang_db_new_content_el.xlf:common_cards_group_title
+        tt_content_defValues.CType = cards_group
+      }
+      carousel {
+        description = LLL:EXT:vd_site/Resources/Private/Language/locallang_db_new_content_el.xlf:common_carousel_description
+        iconIdentifier = content-carousel
+        title = LLL:EXT:vd_site/Resources/Private/Language/locallang_db_new_content_el.xlf:common_carousel_title
+        tt_content_defValues.CType = carousel
+      }
+      citation {
+        description = LLL:EXT:vd_site/Resources/Private/Language/locallang_db_new_content_el.xlf:common_citation_description
+        iconIdentifier = content-quote
+        title = LLL:EXT:vd_site/Resources/Private/Language/locallang_db_new_content_el.xlf:common_citation_title
+        tt_content_defValues.CType = citation
+      }
+      links_box {
+        description = LLL:EXT:vd_site/Resources/Private/Language/locallang_db_new_content_el.xlf:common_links_box_description
+        iconIdentifier = content-listgroup
+        title = LLL:EXT:vd_site/Resources/Private/Language/locallang_db_new_content_el.xlf:common_links_box_title
+        tt_content_defValues.CType = links_box
+      }
+    }
+    show := addToList(biocard)
+    show := addToList(buttons)
+    show := addToList(cards_group)
+    show := addToList(carousel)
+    show := addToList(citation)
+    show := addToList(links_box)
+  }
+  menu {
+    elements.menu_themes {
+      description = LLL:EXT:vd_site/Resources/Private/Language/locallang_db_new_content_el.xlf:menu_menu_themes_description
+      iconIdentifier = content-text-columns
+      title = LLL:EXT:vd_site/Resources/Private/Language/locallang_db_new_content_el.xlf:menu_menu_themes_title
+      tt_content_defValues.CType = menu_themes
+    }
+    show := addToList(menu_themes)
+  }
+  forms {
+    elements.search_form {
+      description = LLL:EXT:vd_site/Resources/Private/Language/locallang_db_new_content_el.xlf:form_search_form_description
+      iconIdentifier = content-elements-searchform
+      title = LLL:EXT:vd_site/Resources/Private/Language/locallang_db_new_content_el.xlf:form_search_form_title
+      tt_content_defValues.CType = search_form
+    }
+    show := addToList(search_form)
+  }
+  plugins {
+    elements {
+      plainfaq {
+        description = LLL:EXT:vd_site/Resources/Private/Language/locallang_db_new_content_el.xlf:plugin_plainfaq_description
+        iconIdentifier = content-plain-faq
+        title = LLL:EXT:vd_site/Resources/Private/Language/locallang_db_new_content_el.xlf:plugin_plainfaq_title
+        tt_content_defValues {
+          CType = list
+          list_type = plainfaq_pi1
+        }
+      }
+      tx_ttaddress_listview >
+    }
+    show := addToList(plainfaq)
+    show := removeFromList(tx_ttaddress_listview)
+  }
+}

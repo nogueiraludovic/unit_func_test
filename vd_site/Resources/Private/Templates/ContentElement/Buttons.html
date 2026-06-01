@@ -1,0 +1,17 @@
+<html data-namespace-typo3-fluid="true" xmlns:f="http://typo3.org/ns/fluid/ViewHelpers">
+    <f:layout/>
+    <f:section name="Main">
+        <f:if condition="{buttons}">
+            <ul class="list-unstyled row">
+                <f:for as="button" each="{buttons}">
+                    <li class="col-12 col-md-4 mb-3">
+                        <f:link.typolink additionalAttributes="{id: 'button-link-{button.data.uid}'}" class="p-2 text-decoration-none vd-btn-tiles__link" parameter="{button.data.uri}">
+                            {button.data.title}
+                        </f:link.typolink>
+                    </li>
+                </f:for>
+            </ul>
+        </f:if>
+        <f:render arguments="{data: data}" partial="ContentElementLink"/>
+    </f:section>
+</html>

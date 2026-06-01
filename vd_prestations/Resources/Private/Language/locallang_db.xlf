@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xliff version="1.2" xmlns="urn:oasis:names:tc:xliff:document:1.2">
+	<file datatype="plaintext" original="EXT:vd_prestations/Resources/Private/Language/locallang_db.xlf" source-language="en">
+		<header/>
+		<body>
+			<trans-unit id="access_modalities" resname="access_modalities">
+				<source>Access modalities</source>
+			</trans-unit>
+			<trans-unit id="action_client" resname="action_client">
+				<source>Client action</source>
+			</trans-unit>
+			<trans-unit id="action_service" resname="action_service">
+				<source>Service action</source>
+			</trans-unit>
+			<trans-unit id="additional_informations" resname="additional_informations">
+				<source>Additional informations</source>
+			</trans-unit>
+			<trans-unit id="average_delay" resname="average_delay">
+				<source>Average delay</source>
+			</trans-unit>
+			<trans-unit id="cost" resname="cost">
+				<source>Cost of service</source>
+			</trans-unit>
+			<trans-unit id="domain_id" resname="domain_id">
+				<source>Domain ID</source>
+			</trans-unit>
+			<trans-unit id="domain_name" resname="domain_name">
+				<source>Domain</source>
+			</trans-unit>
+			<trans-unit id="emolument" resname="emolument">
+				<source>Emolument</source>
+			</trans-unit>
+			<trans-unit id="epayment" resname="epayment">
+				<source>E-payment</source>
+			</trans-unit>
+			<trans-unit id="external_id" resname="external_id">
+				<source>External ID</source>
+			</trans-unit>
+			<trans-unit id="external_link" resname="external_link">
+				<source>External link</source>
+			</trans-unit>
+			<trans-unit id="hash" resname="hash">
+				<source>Hash</source>
+			</trans-unit>
+			<trans-unit id="help_link" resname="help_link">
+				<source>Help and support link</source>
+			</trans-unit>
+			<trans-unit id="howto" resname="howto">
+				<source>How to</source>
+			</trans-unit>
+			<trans-unit id="legal_references" resname="legal_references">
+				<source>Legal references</source>
+			</trans-unit>
+			<trans-unit id="prerequisites" resname="prerequisites">
+				<source>Prerequisites</source>
+			</trans-unit>
+			<trans-unit id="prestations" resname="prestations">
+				<source>Services</source>
+			</trans-unit>
+			<trans-unit id="related_pages" resname="related_pages">
+				<source>Related pages</source>
+			</trans-unit>
+			<trans-unit id="related_prestations" resname="related_prestations">
+				<source>Related services</source>
+			</trans-unit>
+			<trans-unit id="required_documents" resname="required_documents">
+				<source>Required documents</source>
+			</trans-unit>
+			<trans-unit id="result" resname="result">
+				<source>Result</source>
+			</trans-unit>
+			<trans-unit id="security" resname="security">
+				<source>Security</source>
+			</trans-unit>
+			<trans-unit id="security_level" resname="security_level">
+				<source>Security level</source>
+			</trans-unit>
+			<trans-unit id="service_name" resname="service_name">
+				<source>Service</source>
+			</trans-unit>
+			<trans-unit id="target_audience" resname="target_audience">
+				<source>Target audience</source>
+			</trans-unit>
+			<trans-unit id="target_audiences" resname="target_audiences">
+				<source>Target audiences</source>
+			</trans-unit>
+			<trans-unit id="theme_id" resname="theme_id">
+				<source>Theme ID</source>
+			</trans-unit>
+			<trans-unit id="theme_name" resname="theme_name">
+				<source>Theme</source>
+			</trans-unit>
+			<trans-unit id="type" resname="type">
+				<source>Type</source>
+			</trans-unit>
+			<trans-unit id="url" resname="url">
+				<source>URL</source>
+			</trans-unit>
+			<trans-unit id="urls" resname="urls">
+				<source>URLs</source>
+			</trans-unit>
+		</body>
+	</file>
+</xliff>

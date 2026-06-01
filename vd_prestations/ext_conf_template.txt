@@ -1,0 +1,4 @@
+#cat=basic/enable/10;type=boolean;label=Enable log of responses from the webservice
+debug = 0
+#cat=basic/basic/10;type=integer;label=Page dans laquelle les enregistrements des prestations sont stockés
+storagePid = 2000185

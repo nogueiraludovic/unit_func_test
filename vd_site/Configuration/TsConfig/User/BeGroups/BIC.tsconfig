@@ -1,0 +1,12 @@
+options.contextMenu.table.pages.tree {
+  disableItems >
+  disableItems = exportT3d,importT3d,mountAsTreeRoot
+}
+
+##################################################
+
+setup.override {
+  copyLevels = 99
+  lang = fr
+  recursiveDelete = 1
+}

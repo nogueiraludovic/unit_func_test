@@ -1,0 +1,24 @@
+---
+services:
+  _defaults:
+    autoconfigure: true
+    autowire: true
+    public: false
+  Vd\VdPrestations\:
+    resource: ../Classes/*
+  Vd\VdPrestations\Command\ComputeTargetPageCommand:
+    tags:
+      -
+        command: prestation:computetargetpage
+        name: console.command
+  Vd\VdPrestations\Command\RemoveOrphansCommand:
+    tags:
+      -
+        command: prestation:remove_orphans
+        name: console.command
+  Vd\VdPrestations\EventListener\EntityPersistedEventListener:
+    tags:
+      -
+        event: TYPO3\CMS\Extbase\Event\Persistence\EntityPersistedEvent
+        identifier: vd-prestations/entity-persisted
+        name: event.listener

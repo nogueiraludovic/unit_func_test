@@ -1,0 +1,4 @@
+mod.web_list.tableDisplayOrder {
+  tx_vdcontactservice_domain_model_servicecontact.before = tx_vdcontactservice_domain_model_service
+  tx_vdcontactservice_domain_model_service.before = tx_vdcontactservice_domain_model_department
+}

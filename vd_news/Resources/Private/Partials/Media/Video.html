@@ -1,0 +1,17 @@
+<html data-namespace-typo3-fluid="true" xmlns:f="http://typo3.org/ns/TYPO3/CMS/Fluid/ViewHelpers">
+    <f:if condition="{width}">
+        <f:then>
+            <div class="ratio ratio-16x9" style="width:{width}px">
+                <f:media file="{media}"/>
+            </div>
+        </f:then>
+        <f:else>
+            <div class="ratio ratio-16x9">
+                <f:media file="{media}"/>
+            </div>
+        </f:else>
+    </f:if>
+    <f:if condition="{media.description}">
+        <figcaption class="figure-caption">{media.description}</figcaption>
+    </f:if>
+</html>

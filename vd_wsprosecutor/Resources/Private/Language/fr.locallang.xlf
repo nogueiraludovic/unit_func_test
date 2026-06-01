@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xliff version="1.2" xmlns="urn:oasis:names:tc:xliff:document:1.2">
+	<file datatype="plaintext" original="EXT:vd_wsprosecutor/Resources/Private/Language/locallang.xlf" source-language="en" target-language="fr">
+		<header/>
+		<body>
+			<trans-unit id="cantonal_guard" resname="cantonal_guard">
+				<source>Cantonal guard MP</source>
+				<target state="translated">Garde cantonale MP</target>
+			</trans-unit>
+			<trans-unit id="courts" resname="courts">
+				<source>Courts</source>
+				<target state="translated">Tribunaux</target>
+			</trans-unit>
+			<trans-unit id="end_shift" resname="end_shift">
+				<source>End of shift</source>
+				<target state="translated">Fin de garde</target>
+			</trans-unit>
+			<trans-unit id="from" resname="from">
+				<source>from %s</source>
+				<target state="translated">dès %s</target>
+			</trans-unit>
+			<trans-unit id="magistrate" resname="magistrate">
+				<source>Magistrate</source>
+				<target state="translated">Magistrat</target>
+			</trans-unit>
+			<trans-unit id="no_office_hour" resname="no_office_hour">
+				<source>No office hour</source>
+				<target state="translated">Aucune permanence</target>
+			</trans-unit>
+			<trans-unit id="office" resname="office">
+				<source>Office</source>
+				<target state="translated">Office</target>
+			</trans-unit>
+			<trans-unit id="office_hours_of" resname="office_hours_of">
+				<source>Office hours of %s</source>
+				<target state="translated">Permanences du %s</target>
+			</trans-unit>
+			<trans-unit id="office_hours_table" resname="office_hours_table">
+				<source>Table of office hours</source>
+				<target state="translated">Tableau des permanences</target>
+			</trans-unit>
+			<trans-unit id="result_founded" resname="result_founded">
+				<source>1 result founded</source>
+				<target state="translated">1 résultat trouvé</target>
+			</trans-unit>
+			<trans-unit id="results_founded" resname="results_founded">
+				<source>%s results founded</source>
+				<target state="translated">%s résultats trouvés</target>
+			</trans-unit>
+			<trans-unit id="start_shift" resname="start_shift">
+				<source>Start of shift</source>
+				<target state="translated">Début de garde</target>
+			</trans-unit>
+			<trans-unit id="substitute" resname="substitute">
+				<source>Substitute</source>
+				<target state="translated">Suppléant</target>
+			</trans-unit>
+			<trans-unit id="to" resname="to">
+				<source>to %s</source>
+				<target state="translated">jusqu'à %s</target>
+			</trans-unit>
+		</body>
+	</file>
+</xliff>

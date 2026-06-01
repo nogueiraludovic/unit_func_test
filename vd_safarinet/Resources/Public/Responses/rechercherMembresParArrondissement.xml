@@ -1,0 +1,55 @@
+<soap:Envelope xmlns:soap="http://schemas.xmlsoap.org/soap/envelope/">
+    <soap:Body>
+        <ns2:rechercherMembresParArrondissementResponse
+                xmlns:ns2="http://www.vd.ch/lmgc/wsdl/ListeMembresGrandConseil"
+                xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+                xsi:schemaLocation="http://www.vd.ch/lmgc/wsdl/ListeMembresGrandConseil ../../LMGC/ListeMembresGrandConseil.xsd ">
+            <return>
+                <membres>
+                    <arrondissement>Lausanne / Lausanne-Ville</arrondissement>
+                    <id>100963</id>
+                    <nom>Schwaar</nom>
+                    <parti>SOC</parti>
+                    <politesse>Madame</politesse>
+                    <prenom>Valérie</prenom>
+                </membres>
+                <membres>
+                    <arrondissement>Lausanne / Lausanne-Ville</arrondissement>
+                    <id>242347</id>
+                    <nom>Porchet</nom>
+                    <parti>VER</parti>
+                    <politesse>Madame</politesse>
+                    <prenom>Léonore</prenom>
+                </membres>
+                <membres>
+                    <arrondissement>Lausanne / Lausanne-Ville</arrondissement>
+                    <id>147822</id>
+                    <nom>Blanc</nom>
+                    <parti>PLR</parti>
+                    <politesse>Monsieur</politesse>
+                    <prenom>Mathieu</prenom>
+                </membres>
+                <nom>Lausanne / Lausanne-Ville</nom>
+            </return>
+            <return>
+                <membres>
+                    <arrondissement>Jura - Nord vaudois / Yverdon</arrondissement>
+                    <id>79895</id>
+                    <nom>Jaquier</nom>
+                    <parti>PLR</parti>
+                    <politesse>Monsieur</politesse>
+                    <prenom>Rémy</prenom>
+                </membres>
+                <membres>
+                    <arrondissement>Jura - Nord vaudois / Yverdon</arrondissement>
+                    <id>270649</id>
+                    <nom>Glauser Krug</nom>
+                    <parti>VER</parti>
+                    <politesse>Madame</politesse>
+                    <prenom>Sabine</prenom>
+                </membres>
+                <nom>Jura - Nord vaudois / Yverdon</nom>
+            </return>
+        </ns2:rechercherMembresParArrondissementResponse>
+    </soap:Body>
+</soap:Envelope>

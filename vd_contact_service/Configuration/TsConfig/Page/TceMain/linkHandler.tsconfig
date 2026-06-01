@@ -1,0 +1,9 @@
+TCEMAIN.linkHandler.tx_vdcontactservice_domain_model_service {
+  configuration {
+    pageTreeMountPoints = 2005863
+    table = tx_vdcontactservice_domain_model_service
+  }
+  handler = TYPO3\CMS\Recordlist\LinkHandler\RecordLinkHandler
+  label = LLL:EXT:vd_contact_service/Resources/Private/Language/locallang_browse_links.xlf:service
+  scanAfter = page
+}

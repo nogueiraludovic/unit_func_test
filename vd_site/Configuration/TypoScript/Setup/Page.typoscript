@@ -1,0 +1,337 @@
+page = PAGE
+page {
+  10 = FLUIDTEMPLATE
+  10 {
+    dataProcessing {
+      10 = TYPO3\CMS\Frontend\DataProcessing\SiteProcessor
+      20 = TYPO3\CMS\Frontend\DataProcessing\MenuProcessor
+      20 {
+        as = topNavItems
+        special = directory
+        special.value = 2000004
+      }
+      30 < .20
+      30 {
+        as = mainNavItems
+        special.value = 1002722
+      }
+      40 < .20
+      40 {
+        as = leftFooterNavItems
+        special.value = 2004650
+      }
+      50 < .20
+      50 {
+        as = rightFooterNavItems
+        special.value = 2004651
+      }
+      60 < .20
+      60 {
+        as = sidebarNavItems
+        if {
+          equals.data = pagelayout
+          value = pagets__2_col_navigation
+        }
+        levels = 3
+        entryLevel = 4
+        special >
+        special = list
+        special.field = pages
+      }
+      70 < .20
+      70 {
+        as = themeMostVisitedNavItems
+        if {
+          equals.field = backend_layout
+          value = pagets__theme
+        }
+      }
+      80 < .70
+      80 {
+        as = themeNavItems
+        special {
+          data = TSFE:id
+          value >
+        }
+      }
+      90 < .20
+      90 {
+        as = breadcrumbItems
+        special = rootline
+        special.range = 0|-1
+        titleField = subtitle // nav_title // title
+      }
+    }
+    layoutRootPaths.10 = EXT:vd_site/Resources/Private/Layouts/Page/
+    partialRootPaths {
+      10 = EXT:vd_site/Resources/Private/Partials/
+      20 = EXT:vd_site/Resources/Private/Partials/Page/
+    }
+    templateName = TEXT
+    templateName.cObject = TEXT
+    templateName.cObject {
+      case = uppercamelcase
+      field = backend_layout
+      ifEmpty {
+        data = levelfield:-2,backend_layout_next_level,slide
+        ifEmpty = 1_col
+      }
+      required = 1
+      split {
+        1.current = 1
+        cObjNum = 1
+        token = pagets__
+      }
+    }
+    templateRootPaths.10 = EXT:vd_site/Resources/Private/Templates/Page/
+    variables {
+      breadcrumbExtendedValue = COA
+      headline < styles.content.get
+      headline.select.where = {#colPos}=3
+      leftContent < styles.content.get
+      leftContent.select.where = {#colPos}=2
+      mainContent < styles.content.get
+      rightContent < styles.content.get
+      rightContent.select.where = {#colPos}=1
+    }
+  }
+  headerData {
+    10 = TEXT
+    10 {
+      value = noarchive
+      wrap = <meta content="|" name="robots"/>
+    }
+    20 = COA
+    20 {
+      10 = IMG_RESOURCE
+      10 {
+        file = EXT:vd_site/Resources/Public/Foehn/dist/assets/img/favicon-apple-touch-icon.png
+        stdWrap.wrap = <link href="{$url}|" rel="apple-touch-icon"/>
+      }
+      20 = IMG_RESOURCE
+      20 {
+        file = EXT:vd_site/Resources/Public/Foehn/dist/assets/img/favicon-32x32.png
+        stdWrap.wrap = <link href="{$url}|" rel="icon" sizes="32x32" type="image/png"/>
+      }
+      30 = IMG_RESOURCE
+      30 {
+        file = EXT:vd_site/Resources/Public/Foehn/dist/assets/img/favicon-16x16.png
+        stdWrap.wrap = <link href="{$url}|" rel="icon" sizes="16x16" type="image/png"/>
+      }
+      40 = TEXT
+      40 {
+        data = path:EXT:vd_site/Resources/Public/Foehn/dist/assets/manifest/site.webmanifest
+        wrap = <link rel="manifest" href="{$url}|"/>
+      }
+      50 = IMG_RESOURCE
+      50 {
+        file = EXT:vd_site/Resources/Public/Foehn/dist/assets/svg/favicon-safari-pinned-tab.svg
+        stdWrap.wrap = <link color="#47d647" href="{$url}|" rel="mask-icon"/>
+      }
+    }
+  }
+  meta {
+    msapplication-tilecolor = #283549
+    msapplication-tileimage {
+      cObject = TEXT
+      cObject.typolink {
+        forceAbsoluteUrl = 1
+        parameter {
+          cObject = IMG_RESOURCE
+          cObject.file = EXT:vd_site/Resources/Public/Foehn/dist/assets/img/favicon-mstile-150x150.png
+        }
+        returnLast = url
+      }
+    }
+    og:description {
+      attribute = property
+      data = levelfield:-1,description,slide
+    }
+    og:image < .msapplication-tileimage
+    og:image.cObject {
+      if.isFalse.field = og_image
+      typolink.parameter.cObject.file = EXT:vd_site/Resources/Public/Images/logo_opengraph.png
+    }
+    robots = index,follow
+    theme-color = #fff
+    twitter:card = summary
+    twitter:card.attribute = property
+    twitter:image < .og:image
+    twitter:image.cObject.if.isFalse.field = twitter_image
+    twitter:site = @EtatdeVaud
+    twitter:site.attribute = property
+    viewport = width=device-width,initial-scale=1
+    X-UA-Compatible = IE=edge
+    X-UA-Compatible.httpEquivalent = 1
+  }
+  shortcutIcon = EXT:vd_site/Resources/Public/Foehn/dist/assets/img/favicon.ico
+}
+
+##################################################
+
+seo_sitemap.config.cache_period = 86400
+
+##################################################
+
+[traverse(page, 'uid') == {$plugin.tx_vdbaserem.detailPid}]
+  page.10 {
+    dataProcessing {
+      1643704464 = Vd\VdFrontend\DataProcessing\RecordProcessor
+      1643704464.as = baseRemData
+    }
+    variables.breadcrumbExtendedValue.10 = RECORDS
+    variables.breadcrumbExtendedValue.10 {
+      conf.tx_vdbaserem_domain_model_job = TEXT
+      conf.tx_vdbaserem_domain_model_job {
+        field = mixed_title
+        htmlSpecialChars = 1
+      }
+      dontCheckPid = 1
+      source {
+        data = GP:tx_vdfrontend_recorddetail|record
+        intval = 1
+      }
+      tables = tx_vdbaserem_domain_model_job
+      wrap = <li aria-current="page" class="visually-hidden">|</li>
+    }
+  }
+[traverse(page, 'uid') == 1062979]
+  page {
+    10.variables.breadcrumbExtendedValue.10 = USER
+    10.variables.breadcrumbExtendedValue.10 {
+      userFunc = Vd\VdOjvencheres\PageTitle\BreadcrumbPageTitle->render
+      wrap = <li aria-current="page" class="visually-hidden">|</li>
+    }
+  }
+[traverse(page, 'uid') == 1003061]
+  page.10.dataProcessing.70.special.value = 2000056
+[traverse(page, 'uid') == 1003063]
+  page.10.dataProcessing.70.special.value = 2000059
+[traverse(page, 'uid') == 1003058]
+  page.10.dataProcessing.70.special.value = 2000053
+[traverse(page, 'uid') == 1003057]
+  page.10.dataProcessing.70.special.value = 2000051
+[traverse(page, 'uid') == 1003064]
+  page.10.dataProcessing.70.special.value = 2000060
+[traverse(page, 'uid') == 1000035]
+  page.10.dataProcessing.70.special.value = 2005944
+[traverse(page, 'uid') == 1003059]
+  page.10.dataProcessing.70.special.value = 2000054
+[traverse(page, 'uid') == 1003065]
+  page.10.dataProcessing.70.special.value = 2000061
+[traverse(page, 'uid') == 1000014]
+  page.10.dataProcessing.70.special.value = 2000058
+[traverse(page, 'uid') == 1003060]
+  page.10.dataProcessing.70.special.value = 2000055
+[traverse(page, 'uid') == 1047979]
+  page.10.dataProcessing.70.special.value = 2000057
+[traverse(page, 'uid') == 1003205]
+  page.10.dataProcessing.70.special.value = 2000052
+[traverse(page, 'uid') == {$searchPageUid}]
+  page.10.variables {
+    noSocial = TEXT
+    noSocial.value = 1
+  }
+[traverse(page, 'uid') in [2018620,2021187]]
+  page.10.variables {
+    noSocial = TEXT
+    noSocial.value = 1
+    noTop < .noSocial
+  }
+[tree.level == 5]
+  page.10.dataProcessing.70.entryLevel = -2
+[tree.level == 6]
+  page.10.dataProcessing.70.entryLevel = -3
+[tree.level == 7]
+  page.10.dataProcessing.70.entryLevel = -4
+[traverse(page, 'backend_layout') == 'pagets__minimal']
+  page {
+    config.disableAllHeaderCode = 1
+    headerData >
+    meta >
+  }
+[traverse(request.getHeaders(), 'x-tx-solr-iq/0')]
+  page.10 {
+    dataProcessing >
+    variables >
+    variables.mainContent < styles.content.get
+  }
+[traverse(request.getQueryParams(), 'tx_vdnews_pi1/news') > 0]
+  page {
+    meta.description >
+    10.variables.breadcrumbExtendedValue.10 = RECORDS
+    10.variables.breadcrumbExtendedValue.10 {
+      conf.tx_news_domain_model_news = TEXT
+      conf.tx_news_domain_model_news {
+        field = title
+        htmlSpecialChars = 1
+      }
+      dontCheckPid = 1
+      source {
+        data = GP:tx_vdnews_pi1|news
+        intval = 1
+      }
+      tables = tx_news_domain_model_news
+      wrap = <li aria-current="page" class="visually-hidden">|</li>
+    }
+  }
+[traverse(request.getQueryParams(), 'tx_vdpressreleases_pressrelease/pressRelease') > 0]
+  page {
+    headerData.10 >
+    meta {
+      keywords >
+      description >
+    }
+    10.variables.breadcrumbExtendedValue.10 = RECORDS
+    10.variables.breadcrumbExtendedValue.10 {
+      conf.tx_vdpressreleases_domain_model_pressrelease = TEXT
+      conf.tx_vdpressreleases_domain_model_pressrelease {
+        field = title
+        htmlSpecialChars = 1
+      }
+      dontCheckPid = 1
+      source {
+        data = GP:tx_vdpressreleases_pressrelease|pressRelease
+        intval = 1
+      }
+      tables = tx_vdpressreleases_domain_model_pressrelease
+      wrap = <li aria-current="page" class="visually-hidden">|</li>
+    }
+  }
+[traverse(request.getQueryParams(), 'tx_vdprestations_pi4/prestation') > 0]
+  page.10.variables.breadcrumbExtendedValue {
+    10 = RECORDS
+    10 {
+      conf.tx_vdprestations_domain_model_prestation = TEXT
+      conf.tx_vdprestations_domain_model_prestation {
+        field = domain_name
+        htmlSpecialChars = 1
+        typolink {
+          parameter = {field:domain_target_page}
+          parameter.insertData = 1
+        }
+      }
+      dontCheckPid = 1
+      source {
+        data = GP:tx_vdprestations_pi4|prestation
+        intval = 1
+      }
+      tables = tx_vdprestations_domain_model_prestation
+      wrap = <li class="breadcrumb-item">|</li>
+    }
+    20 < .10
+    20.conf.tx_vdprestations_domain_model_prestation {
+      field = theme_name
+      typolink.parameter = {field:theme_target_page}
+    }
+    30 < .10
+    30 {
+      conf.tx_vdprestations_domain_model_prestation {
+        field = title
+        htmlSpecialChars = 1
+        typolink >
+      }
+      wrap = <li aria-current="page" class="visually-hidden">|</li>
+    }
+  }
+[end]

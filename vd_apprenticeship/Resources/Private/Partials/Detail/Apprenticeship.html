@@ -1,0 +1,124 @@
+<html data-namespace-typo3-fluid="true" xmlns:f="http://typo3.org/ns/fluid/ViewHelpers" xmlns:vdc="http://typo3.org/ns/Vd/VdCore/ViewHelpers" xmlns:vdf="http://typo3.org/ns/Vd/VdFrontend/ViewHelpers">
+    <f:section name="Default">
+        <f:variable name="address" value="{record.address -> vdf:iterator.first()}"/>
+        <f:variable name="profession" value="{record.dgav_profession -> vdf:iterator.first()}"/>
+        <f:variable name="region" value="{record.region -> vdf:iterator.first()}"/>
+        <f:variable name="type" value="{record.dgav_type -> vdf:iterator.first()}"/>
+        <h1 class="mb-3 mt-0" id="page-title">
+            <span class="visually-hidden"><f:translate extensionName="VdApprenticeship" id="dgav_apprenticeship_position"/></span>
+            {address.company}
+        </h1>
+        <p>
+            <small>
+                {profession.name} - <f:translate arguments="{0: '{record.crdate -> f:format.date(format: \'%d.%m.%Y\')}'}" extensionName="VdApprenticeship" id="published_on"/>
+            </small>
+        </p>
+        <vdc:fal data="{address}" table="tt_address">
+            <f:variable name="image" value="{items -> vdf:iterator.first()}"/>
+            <f:if condition="{image}">
+                <f:image alt="{image.alternative}" class="img-fluid" height="360" image="{image}" loading="lazy" title="{image.title}" width="540"/>
+            </f:if>
+        </vdc:fal>
+        <h2 id="teacher-contact-title">
+            <f:translate extensionName="VdApprenticeship" id="trainer_contact"/>
+        </h2>
+        <f:if condition="{address.name}">
+            <dl class="row">
+                <dt class="col-md-4"><f:translate extensionName="VdApprenticeship" id="full_name"/></dt>
+                <dd class="col-md-8">{address.name}</dd>
+            </dl>
+        </f:if>
+        <f:if condition="{address.address}">
+            <dl class="row">
+                <dt class="col-md-4"><f:translate extensionName="VdApprenticeship" id="address"/></dt>
+                <dd class="col-md-8">{address.address}</dd>
+            </dl>
+        </f:if>
+        <f:if condition="{address.city} && {address.zip}">
+            <dl class="row">
+                <dt class="col-md-4"><f:translate extensionName="VdApprenticeship" id="locality"/></dt>
+                <dd class="col-md-8">{address.zip} {address.city}</dd>
+            </dl>
+        </f:if>
+        <f:if condition="{region.name}">
+            <dl class="row">
+                <dt class="col-md-4"><f:translate extensionName="VdApprenticeship" id="region"/></dt>
+                <dd class="col-md-8">{region.name}</dd>
+            </dl>
+        </f:if>
+        <dl class="row">
+            <dt class="col-md-4">
+                <f:translate extensionName="VdApprenticeship" id="german_apprenticeship"/>
+            </dt>
+            <dd class="col-md-8">
+                <f:if condition="{record.dgav_language}">
+                    <f:then>
+                        <f:translate extensionName="VdApprenticeship" id="yes"/>
+                    </f:then>
+                    <f:else>
+                        <f:translate extensionName="VdApprenticeship" id="no"/>
+                    </f:else>
+                </f:if>
+            </dd>
+        </dl>
+        <f:if condition="{address.phone}">
+            <dl class="row">
+                <dt class="col-md-4"><f:translate extensionName="VdApprenticeship" id="phone"/></dt>
+                <dd class="col-md-8">{address.phone -> vdf:format.phone() -> f:format.raw()}</dd>
+            </dl>
+        </f:if>
+        <f:if condition="{address.mobile}">
+            <dl class="row">
+                <dt class="col-md-4"><f:translate extensionName="VdApprenticeship" id="mobile_phone"/></dt>
+                <dd class="col-md-8">{address.mobile -> vdf:format.phone() -> f:format.raw()}</dd>
+            </dl>
+        </f:if>
+        <f:if condition="{address.email}">
+            <dl class="row">
+                <dt class="col-md-4"><f:translate extensionName="VdApprenticeship" id="email_address"/></dt>
+                <dd class="col-md-8">
+                    <f:link.email email="{address.email}" id="apprenticeship-email">
+                        {address.email}
+                    </f:link.email>
+                </dd>
+            </dl>
+        </f:if>
+        <f:if condition="{record.available_places}">
+            <h2 id="available-places-title"><f:translate extensionName="VdApprenticeship" id="available_places"/></h2>
+            <ul class="list-unstyled mb-0">
+                <f:for as="availablePlace" each="{record.available_places}">
+                    <li>{availablePlace.title}</li>
+                </f:for>
+            </ul>
+        </f:if>
+        <h2 id="exploitation-info-title">
+            <f:translate extensionName="VdApprenticeship" id="exploitation_information"/>
+        </h2>
+        <f:if condition="{record.dgav_animals}">
+            <dl class="row">
+                <dt class="col-md-4"><f:translate extensionName="VdApprenticeship" id="animals"/></dt>
+                <dd class="col-md-8">{record.dgav_animals -> f:format.nl2br()}</dd>
+            </dl>
+        </f:if>
+        <f:if condition="{record.dgav_farming_products}">
+            <dl class="row">
+                <dt class="col-md-4"><f:translate extensionName="VdApprenticeship" id="crops"/></dt>
+                <dd class="col-md-8">{record.dgav_farming_products -> f:format.nl2br()}</dd>
+            </dl>
+        </f:if>
+        <f:if condition="{type.name}">
+            <dl class="row">
+                <dt class="col-md-4"><f:translate extensionName="VdApprenticeship" id="exploitation_type"/></dt>
+                <dd class="col-md-8">{type.name}</dd>
+            </dl>
+        </f:if>
+        <f:if condition="{record.dgav_divers}">
+            <h2 id="misc-title"><f:translate extensionName="VdApprenticeship" id="misc"/></h2>
+            <p>{record.dgav_divers -> f:format.nl2br()}</p>
+        </f:if>
+        <f:if condition="{record.particularities}">
+            <h2 id="particularities-title"><f:translate extensionName="VdApprenticeship" id="particularities"/></h2>
+            <f:format.html>{record.particularities}</f:format.html>
+        </f:if>
+    </f:section>
+</html>

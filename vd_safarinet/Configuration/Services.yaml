@@ -1,0 +1,23 @@
+---
+services:
+  _defaults:
+    autoconfigure: true
+    autowire: true
+    public: false
+  Vd\VdSafarinet\:
+    resource: ../Classes/*
+  Vd\VdSafarinet\Command\MemberLinksCommand:
+    tags:
+      -
+        command: vd_safarint:memberlinks
+        name: console.command
+  Vd\VdSafarinet\Solr\Command\IndexDecisionCommand:
+    tags:
+      -
+        command: solr:index_decisions
+        name: console.command
+  Vd\VdSafarinet\Solr\Command\IndexSeanceCommand:
+    tags:
+      -
+        command: solr:index_seances
+        name: console.command

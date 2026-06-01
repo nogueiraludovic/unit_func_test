@@ -1,0 +1,11 @@
+<html data-namespace-typo3-fluid="true" xmlns:f="http://typo3.org/ns/fluid/ViewHelpers">
+    <f:layout/>
+    <f:section name="Main">
+        <f:render arguments="{decision: decision, pageUid: pageUid}" partial="Meeting/Decision"/>
+        <f:if condition="{settings.decisionBackPageUid}">
+            <f:link.page class="btn btn-dark mt-3" id="back-to-search-link" pageUid="{settings.decisionBackPageUid}">
+                <f:translate id="back_to_search"/>
+            </f:link.page>
+        </f:if>
+    </f:section>
+</html>

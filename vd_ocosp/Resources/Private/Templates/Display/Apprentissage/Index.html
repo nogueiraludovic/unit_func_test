@@ -1,0 +1,22 @@
+<html data-namespace-typo3-fluid="true" xmlns:f="http://typo3.org/ns/TYPO3/CMS/Fluid/ViewHelpers" xmlns:vd="http://typo3.org/ns/Vd/VdOcosp/ViewHelpers">
+    <f:layout/>
+    <f:section name="main">
+        <f:groupedFor as="results" each="{professions}" groupBy="domaineId.nom" groupKey="domain">
+            <h4>{domain}</h4>
+            <div class="row">
+                <vd:sortedFor as="result" each="{results}" iteration="iterator" sort="professionAffichage">
+                    <div class="col-md-6">
+                        <p>
+                            <f:link.action action="detail" arguments="{dmde: result}" controller="Display\Dmde" id="dmde-page-link-{iterator.index}" pageUid="{settings.display.dmdePageId}" pluginName="displaydmdeadvancedsearch">
+                                {result.professionId.0.fullName}
+                            </f:link.action>
+                        </p>
+                    </div>
+                    <f:if condition="{iterator.isEven}">
+                        </div><div class="row">
+                    </f:if>
+                </vd:sortedFor>
+            </div>
+        </f:groupedFor>
+    </f:section>
+</html>

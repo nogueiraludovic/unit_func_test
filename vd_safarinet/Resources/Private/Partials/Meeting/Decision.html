@@ -1,0 +1,40 @@
+<html data-namespace-typo3-fluid="true" xmlns:f="http://typo3.org/ns/fluid/ViewHelpers" xmlns:vds="http://typo3.org/ns/Vd/VdSafarinet/ViewHelpers">
+    <f:if condition="{decision}">
+        <div class="col-md-12 pl-0 pr-0" id="{decision.id}">
+            <h2 class="decition-title heading">{decision.titre}</h2>
+            <f:if condition="{decision.resume}">
+                <div class="mt-4">
+                    <f:format.raw>{decision.resume}</f:format.raw>
+                </div>
+            </f:if>
+            <f:if condition="{decision.renseignementsComplementaires}">
+                <h3 class="further-info-title h4"><f:translate id="further_informations"/></h3>
+                <p>{decision.renseignementsComplementaires}</p>
+            </f:if>
+            <f:if condition="{decision.documents.document}">
+                <h3 class="downloads-title h4"><f:translate id="files_to_download"/></h3>
+                <ul class="list-unstyled">
+                    <f:for as="document" each="{decision.documents.document -> vds:format.toArrayList()}">
+                        <li>
+                            <span aria-hidden="true" class="fa fa-download"></span>&nbsp;<vds:document document="{document}"/>
+                        </li>
+                    </f:for>
+                </ul>
+            </f:if>
+            <f:if condition="{decision.seance}">
+                <h3 class="all-decisions-title h4"><f:translate id="ce_decisions"/></h3>
+                <p>Voir toutes les décisions de la
+                    <f:link.action action="show" arguments="{meetingId: decision.seance.id}" controller="Meeting" pageUid="{settings.meetingDetailPageUid}">
+                        {decision.seance.nomCourt -> f:format.case(mode:'uncapital')}
+                    </f:link.action>
+                </p>
+            </f:if>
+            <f:if condition="{settings.decisionDetailPageUid}">
+                <div class="text-center mt-4">
+                    <h3 class="h4 mb-1 vd-heading-light-alt"><f:translate id="share"/></h3>
+                    <f:render arguments="{currentPageUid: pageUid}" partial="Page/Seo/Share"/>
+                </div>
+            </f:if>
+        </div>
+    </f:if>
+</html>

@@ -1,0 +1,2 @@
+@import 'EXT:vd_site_offres_emploi/Configuration/TsConfig/Page/Mod/*.tsconfig'
+@import 'EXT:vd_site_offres_emploi/Configuration/TsConfig/Page/TceForm/pages.tsconfig'

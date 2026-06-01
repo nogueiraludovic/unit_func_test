@@ -1,0 +1,78 @@
+<soap:Envelope xmlns:soap="http://schemas.xmlsoap.org/soap/envelope/">
+    <soap:Body>
+        <ns2:rechercherSeanceCeResponse
+                xmlns:ns2="http://www.vd.ch/lmgc/wsdl/SeanceConseilEtat"
+                xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+                xsi:schemaLocation="http://www.vd.ch/lmgc/wsdl/SeanceConseilEtat ../../LMGC/SeanceConseilEtat.xsd ">
+            <return>
+                <dateSeance>2015-04-22</dateSeance>
+                <decisions>
+                    <decision>
+                        <documents>
+                            <document>
+                                <id>1186671</id>
+                                <titre>Consultation - Modification de la loi fédérale sur la formation professionnelle : renforcement de la formation professionnelle supérieure - Lettre du CE
+                                </titre>
+                                <type>annexe</type>
+                            </document>
+                            <document>
+                                <id>1186672</id>
+                                <titre>Consultation - documents annexes</titre>
+                                <type>annexe</type>
+                            </document>
+                        </documents>
+                        <id>510980</id>
+                        <idFictif>1</idFictif>
+                        <renseignementsComplementaires>DFJC, Séverin Bez, directeur général de l'enseignement postobligatoire, 021 316 63 06 ; Susana Camarda, juriste, 021 316 63 14</renseignementsComplementaires>
+                        <resume>Le Conseil d'État conditionne son soutien aux mesures proposées par le Conseil fédéral visant au renforcement de la formation professionnelle supérieure. En effet, afin d'éviter que le projet de modification de la loi ne conduise à un affaiblissement de la formation professionnelle initiale, le Conseil d'État demande que l'augmentation des charges liées au financement des cours de préparation aux examens professionnels y compris supérieurs soit entièrement prise en charge par la Confédération. Il propose donc deux modifications législatives permettant de pérenniser cette demande.</resume>
+                        <titre>Consultation fédérale : renforcement de la formation professionnelle supérieure</titre>
+                    </decision>
+                    <decision>
+                        <documents>
+                            <document>
+                                <id>1186680</id>
+                                <titre>Audition fédérale relative à l'ordonnance sur le contrôle de l'origine licite des produits de la pêche importés - Lettre du CE</titre>
+                                <type>annexe</type>
+                            </document>
+                        </documents>
+                        <id>512955</id>
+                        <idFictif>2</idFictif>
+                        <renseignementsComplementaires>DTE, Giovanni Peduto, vétérinaire cantonal, 021 316 39 11</renseignementsComplementaires>
+                        <resume>Cette ordonnance vise à garantir, par un contrôle approprié de la chaîne d'approvisionnement, qu'aucun produit issu de la pêche illicite, non déclarée et non réglementée, ne soit importé en Suisse et que la légalité des captures soit assurée. Le Conseil d'État accueille favorablement le projet d'ordonnance.</resume>
+                        <titre>Consultation fédérale : ordonnance sur le contrôle de l'origine licite des produits de la pêche importés</titre>
+                    </decision>
+                    <decision>
+                        <documents>
+                            <document>
+                                <id>1186683</id>
+                                <titre>Consultation fédérale : Révision partielle de la loi sur la navigation intérieure - Lettre du CE</titre>
+                                <type>annexe</type>
+                            </document>
+                        </documents>
+                        <id>512951</id>
+                        <idFictif>3</idFictif>
+                        <renseignementsComplementaires>DTE, Pascal Chatagny, chef du Service des automobiles et de la navigation, 021 316 88 04</renseignementsComplementaires>
+                        <resume>Le Conseil d'État a informé les autorités fédérales qu'il est favorable au principe d'une introduction d'un dossier de sécurité pour l'admission des bateaux à passagers. Il est également favorable à l'introduction des tests d'alcoolémie dans l'haleine (éthylotests) en tant que moyen de preuve simplifié. En revanche, il demande à la Confédération la création d'une base légale relative à des registres centraux de navigation, tels qu'ils existent dans le domaine de la circulation routière.</resume>
+                        <titre>Consultation fédérale : révision partielle de la loi sur la navigation intérieure</titre>
+                    </decision>
+                    <decision>
+                        <documents>
+                            <document>
+                                <id>1186661</id>
+                                <titre>Réponse du Conseil d'État à l'interpellation François Brélaz - Et si la compagnie Uber débarquait dans le canton ? - Texte adopté par CE</titre>
+                                <type>annexe</type>
+                            </document>
+                        </documents>
+                        <id>505292</id>
+                        <idFictif>4</idFictif>
+                        <renseignementsComplementaires>DECS, Albert von Braun, chef de la Police cantonale du commerce, 021 316 46 01</renseignementsComplementaires>
+                        <resume>Dans sa réponse à une interpellation du député François Brélaz, le Conseil d'État confirme que les activités de la société Uber seraient soumises aux règlements communaux et intercommunaux qui régissent actuellement les services de taxis. Ceux-ci suffisent à donner une réponse adéquate aux activités de la société Uber. Le Canton entend respecter la compétence communale en la matière et n'envisage pas de légiférer sur le plan cantonal.</resume>
+                        <titre>Arrivée des taxis Uber dans le canton de Vaud</titre>
+                    </decision>
+                </decisions>
+                <id>494568</id>
+                <nomCourt>Séance du Conseil d'État du mercredi 22 avril 2015</nomCourt>
+            </return>
+        </ns2:rechercherSeanceCeResponse>
+    </soap:Body>
+</soap:Envelope>

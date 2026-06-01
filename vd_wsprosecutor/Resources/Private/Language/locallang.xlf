@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xliff version="1.2" xmlns="urn:oasis:names:tc:xliff:document:1.2">
+	<file datatype="plaintext" original="EXT:vd_wsprosecutor/Resources/Private/Language/locallang.xlf" source-language="en">
+		<header/>
+		<body>
+			<trans-unit id="cantonal_guard" resname="cantonal_guard">
+				<source>Cantonal guard MP</source>
+			</trans-unit>
+			<trans-unit id="courts" resname="courts">
+				<source>Courts</source>
+			</trans-unit>
+			<trans-unit id="end_shift" resname="end_shift">
+				<source>End of shift</source>
+			</trans-unit>
+			<trans-unit id="from" resname="from">
+				<source>from %s</source>
+			</trans-unit>
+			<trans-unit id="magistrate" resname="magistrate">
+				<source>Magistrate</source>
+			</trans-unit>
+			<trans-unit id="no_office_hour" resname="no_office_hour">
+				<source>No office hour</source>
+			</trans-unit>
+			<trans-unit id="office" resname="office">
+				<source>Office</source>
+			</trans-unit>
+			<trans-unit id="office_hours_of" resname="office_hours_of">
+				<source>Office hours of %s</source>
+			</trans-unit>
+			<trans-unit id="office_hours_table" resname="office_hours_table">
+				<source>Table of office hours</source>
+			</trans-unit>
+			<trans-unit id="result_founded" resname="result_founded">
+				<source>1 result founded</source>
+			</trans-unit>
+			<trans-unit id="results_founded" resname="results_founded">
+				<source>%s results founded</source>
+			</trans-unit>
+			<trans-unit id="start_shift" resname="start_shift">
+				<source>Start of shift</source>
+			</trans-unit>
+			<trans-unit id="substitute" resname="substitute">
+				<source>Substitute</source>
+			</trans-unit>
+			<trans-unit id="to" resname="to">
+				<source>to %s</source>
+			</trans-unit>
+		</body>
+	</file>
+</xliff>

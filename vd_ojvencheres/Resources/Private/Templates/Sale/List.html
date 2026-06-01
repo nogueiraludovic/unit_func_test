@@ -1,0 +1,101 @@
+<html data-namespace-typo3-fluid="true" xmlns:f="http://typo3.org/ns/TYPO3/CMS/Fluid/ViewHelpers">
+    <f:layout/>
+    <f:section name="Content">
+        <f:if condition="{settings.hidePagination}">
+            <f:then>
+                <f:render arguments="{_all}" section="Sales"/>
+            </f:then>
+            <f:else>
+                <f:variable name="sales" value="{paginator.paginatedItems}"/>
+                <f:render arguments="{_all}" section="Sales"/>
+                <f:render arguments="{pagination: pagination, paginator: paginator}" partial="Pagination/Default"/>
+            </f:else>
+        </f:if>
+    </f:section>
+    <f:section name="Sales">
+        <f:form action="list" hiddenFieldClassName="d-none" method="post" object="{demand}" objectName="demand">
+            <div class="row">
+                <div class="col-md-6 mb-3">
+                    <label class="form-label" for="sales-categories"><f:translate id="sale_types"/></label>
+                    <f:form.select class="form-select" data="{field: 'salesCategories'}" id="sales-categories" options="{salesCategories}" optionLabelField="name" optionValueField="uid" property="saleCategory" value="{demand.saleCategory}"/>
+                </div>
+                <div class="col-md-6 mb-3">
+                    <label class="form-label" for="main-item-categories"><f:translate id="categories"/></label>
+                    <f:form.select class="form-select" data="{field: 'mainItemCategories'}" id="main-item-categories" options="{mainItemCategories}" optionLabelField="name" optionValueField="uid" property="itemCategory" value="{demand.itemCategory}"/>
+                </div>
+                <div class="col-md-6 mb-3">
+                    <label class="form-label" for="main-offices"><f:translate id="offices"/></label>
+                    <f:form.select class="form-select" data="{field: 'mainOffices'}" id="main-offices" options="{mainOffices}" optionLabelField="name" optionValueField="uid" property="mainOffice" value="{demand.mainOffice}"/>
+                </div>
+            </div>
+            <div class="mb-3">
+                <f:form.button class="btn btn-dark mb-3 mb-sm-0 me-1" id="submit-search" type="submit">
+                    <f:translate id="search"/>
+                </f:form.button>
+                <f:if condition="{demand.search}">
+                    <f:link.action action="reset" class="btn btn-secondary mb-3 mb-sm-0" id="search-reset-button">
+                        <f:translate id="reset"/>
+                    </f:link.action>
+                </f:if>
+            </div>
+        </f:form>
+        <f:if condition="{sales}">
+            <f:then>
+                <f:render arguments="{numberOfRecords: numberOfRecords}" partial="NumberOfRecords"/>
+                <f:for as="sale" each="{sales}" iteration="iterator">
+                    <div class="row">
+                        <div class="col-md-6">
+                            <f:if condition="{sale.saleDate}">
+                                <h3 class="mb-0">
+                                    <f:link.action action="show" arguments="{sale: sale}" id="sale-details-link-{iterator.index}" pageUid="{settings.sale.detailPid}" title="{f:translate(id: 'see_full_sale_description')}">
+                                        <f:format.date format="%d.%m.%Y">{sale.saleDate.0.saleDate}</f:format.date>
+                                    </f:link.action>
+                                </h3>
+                            </f:if>
+                            <p class="h4 mt-2">{sale.city}</p>
+                            <dl>
+                                <dt>Type de vente</dt>
+                                <f:for as="category" each="{sale.saleCategories}">
+                                    <dd class="mb-3">{category.name}</dd>
+                                </f:for>
+                                <dt>Statut</dt>
+                                <dd class="mb-3">
+                                    <f:if condition="{sale.status} == 2 || {sale.status} == 3">
+                                        <f:then>
+                                            <span class="badge badge-pill bg-danger"><f:translate id="canceled"/></span>
+                                        </f:then>
+                                        <f:else>
+                                            <span class="badge badge-pill bg-secondary"><f:translate id="in_progress"/></span>
+                                        </f:else>
+                                    </f:if>
+                                </dd>
+                                <f:if condition="{sale.saleItems}">
+                                    <dt><f:translate id="items_for_sale"/></dt>
+                                    <f:for as="item" each="{sale.saleItems}">
+                                        <dd class="mb-1">{item.title}</dd>
+                                    </f:for>
+                                </f:if>
+                            </dl>
+                        </div>
+                        <div class="col-md-5 offset-md-1">
+                            <f:for as="item" each="{sale.saleItems}" iteration="saleItemsIterator">
+                                <f:if condition="{item.pictures} && {saleItemsIterator.index} < 4">
+                                    <f:image alt="{item.pictures.0.alternative}" class="img-fluid mb-2" image="{item.pictures.0}" loading="lazy" width="290"/>
+                                </f:if>
+                            </f:for>
+                        </div>
+                    </div>
+                    <p>
+                        <f:link.action action="show" arguments="{sale: sale}" class="btn btn-success" id="sale-details-second-link-{iterator.index}" pageUid="{settings.sale.detailPid}" title="{f:translate(id: 'see_full_sale_description')}">
+                            <f:translate id="see_full_description"/>
+                        </f:link.action>
+                    </p>
+                    <hr class="mb-5 me-0 ms-0 mt-5 vd-separator vd-separator-green-pattern"/>
+                </f:for>
+            </f:then>
+            <f:else>
+                <p class="alert alert-warning"><f:translate id="no_current_sale"/></p>
+            </f:else>
+        </f:if>
+    </f:section>
+</html>

@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xliff version="1.2" xmlns="urn:oasis:names:tc:xliff:document:1.2">
+	<file datatype="plaintext" original="EXT:vd_wsprosecutor/Resources/Private/Language/locallang_db_new_content_el.xlf" source-language="en">
+		<header/>
+		<body>
+			<trans-unit id="plugins_vdwsprosecutor_officehourcurrent_description" resname="plugins_vdwsprosecutor_officehourcurrent_description">
+				<source>Displays current prosecutor's office hours.</source>
+			</trans-unit>
+			<trans-unit id="plugins_vdwsprosecutor_officehourcurrent_title" resname="plugins_vdwsprosecutor_officehourcurrent_title">
+				<source>Prosecutors - Office hours of the day</source>
+			</trans-unit>
+			<trans-unit id="plugins_vdwsprosecutor_officehourlist_description" resname="plugins_vdwsprosecutor_officehourlist_description">
+				<source>Displays current and future prosecutor's office hours.</source>
+			</trans-unit>
+			<trans-unit id="plugins_vdwsprosecutor_officehourlist_title" resname="plugins_vdwsprosecutor_officehourlist_title">
+				<source>Prosecutors - Table of office hours</source>
+			</trans-unit>
+		</body>
+	</file>
+</xliff>

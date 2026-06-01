@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xliff version="1.2" xmlns="urn:oasis:names:tc:xliff:document:1.2">
+	<file original="" product-name="Vd.VdOcosp" source-language="en" datatype="plaintext">
+		<body>
+			<trans-unit id="displayAdresses" xml:space="preserve">
+				<source>OCOSP Display: Addresses</source>
+			</trans-unit>
+			<trans-unit id="displayApprentissages" xml:space="preserve">
+				<source>OCOSP Display: Apprenticeships</source>
+			</trans-unit>
+			<trans-unit id="displayDmde" xml:space="preserve">
+				<source>OCOSP Display: DMDE</source>
+			</trans-unit>
+			<trans-unit id="displayDmdeAdvancedSearch" xml:space="preserve">
+				<source>OCOSP Display: Advanced search</source>
+			</trans-unit>
+			<trans-unit id="displayDmdeSimpleSearch" xml:space="preserve">
+				<source>OCOSP Display: Simple search</source>
+			</trans-unit>
+			<trans-unit id="displayInscription" xml:space="preserve">
+				<source>OCOSP Display: Registration deadlines</source>
+			</trans-unit>
+			<trans-unit id="displayProfession" xml:space="preserve">
+				<source>OCOSP Display: Professions</source>
+			</trans-unit>
+			<trans-unit id="displaySalary" xml:space="preserve">
+				<source>OCOSP Display: Salaries</source>
+			</trans-unit>
+		</body>
+	</file>
+</xliff>

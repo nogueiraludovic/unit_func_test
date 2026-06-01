@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xliff version="1.0">
+	<file source-language="en" datatype="plaintext" original="messages" date="2011-10-17T20:22:33Z" product-name="lang">
+		<header/>
+		<body>
+			<trans-unit id="address_plugin" xml:space="preserve">
+				<source>OCOSP - Address Plugin</source>
+			</trans-unit>
+			<trans-unit id="search" xml:space="preserve">
+				<source>Rechercher</source>
+			</trans-unit>
+			<trans-unit id="search_type_name" xml:space="preserve">
+				<source>Rechercher un métier...</source>
+			</trans-unit>
+			<trans-unit id="search_results_title" xml:space="preserve">
+				<source>Résultats</source>
+			</trans-unit>
+			<trans-unit id="search_no_results" xml:space="preserve">
+				<source>La recherche n'a produit aucun résultat.</source>
+			</trans-unit>
+			<trans-unit id="search_min_length" xml:space="preserve">
+				<source>Veuillez saisir au moins 3 caractères.</source>
+			</trans-unit>
+			<trans-unit id="training" xml:space="preserve">
+				<source>Formation</source>
+			</trans-unit>
+			<trans-unit id="movie" xml:space="preserve">
+				<source>Film Zoom sur les métiers</source>
+			</trans-unit>
+			<trans-unit id="school_directions" xml:space="preserve">
+				<source>Adresses</source>
+			</trans-unit>
+			<trans-unit id="location" xml:space="preserve">
+				<source>Lieu(x)</source>
+			</trans-unit>
+			<trans-unit id="enrollment_requirements" xml:space="preserve">
+				<source>Conditions d'admission</source>
+			</trans-unit>
+			<trans-unit id="diplomas" xml:space="preserve">
+				<source>Titre(s) délivré(s)</source>
+			</trans-unit>
+			<trans-unit id="remarks" xml:space="preserve">
+				<source>Remarque(s)</source>
+			</trans-unit>
+			<trans-unit id="deadlines" xml:space="preserve">
+				<source>Délais d'inscription et examens d'admission</source>
+			</trans-unit>
+			<trans-unit id="exam_date" xml:space="preserve">
+				<source>Examen:</source>
+			</trans-unit>
+			<trans-unit id="registration" xml:space="preserve">
+				<source>Inscription:</source>
+			</trans-unit>
+			<trans-unit id="download_pdf" xml:space="preserve">
+				<source>Télécharger le fichier PDF</source>
+			</trans-unit>
+			<trans-unit id="back_to_list" xml:space="preserve">
+				<source>Retour à la liste</source>
+			</trans-unit>
+			<trans-unit id="new_search" xml:space="preserve">
+				<source>Nouvelle recherche</source>
+			</trans-unit>
+			<trans-unit id="search_code_city" xml:space="preserve">
+				<source>Saisir un code postal ou une localité (au moins 3 lettres)...</source>
+			</trans-unit>
+			<trans-unit id="back_to_job" xml:space="preserve">
+				<source>Retour à la profession</source>
+			</trans-unit>
+			<trans-unit id="work_location" xml:space="preserve">
+				<source>Lieu de travail</source>
+			</trans-unit>
+			<trans-unit id="application_address" xml:space="preserve">
+				<source>Adresse de candidature</source>
+			</trans-unit>
+			<trans-unit id="additional_information" xml:space="preserve">
+				<source>Informations complémentaires</source>
+			</trans-unit>
+			<trans-unit id="id" xml:space="preserve">
+				<source>ID: %d</source>
+			</trans-unit>
+			<trans-unit id="all_locations" xml:space="preserve">
+				<source>Tous les lieux</source>
+			</trans-unit>
+			<trans-unit id="date_modified" xml:space="preserve">
+				<source>Date de mise à jour:</source>
+			</trans-unit>
+			<trans-unit id="search_by_domain" xml:space="preserve">
+				<source>Recherche par domaine</source>
+			</trans-unit>
+			<trans-unit id="select_a_domain" xml:space="preserve">
+				<source>Choisissez un domaine...</source>
+			</trans-unit>
+		</body>
+	</file>
+</xliff>

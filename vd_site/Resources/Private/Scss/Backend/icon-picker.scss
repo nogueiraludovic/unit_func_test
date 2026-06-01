@@ -1,0 +1,61 @@
+@charset "utf-8";
+@use '../../../../node_modules/@fortawesome/fontawesome-free/scss/variables' with (
+  $font-path: '../../Fonts/font-awesome'
+);
+@use '../../../../node_modules/@fortawesome/fontawesome-free/scss/fa' as fa;
+@use '../../../../node_modules/@fortawesome/fontawesome-free/scss/fontawesome';
+@use '../../../../node_modules/@fortawesome/fontawesome-free/scss/brands' as fa-brands;
+@use '../../../../node_modules/@fortawesome/fontawesome-free/scss/regular' as fa-regular;
+@use '../../../../node_modules/@fortawesome/fontawesome-free/scss/solid' as fa-solid;
+
+.formengine-field-font-awesome {
+  position: relative;
+
+  .btn-delete {
+    position: absolute;
+    right: 0;
+    top: 0;
+  }
+
+  .empty {
+    padding: 6px;
+  }
+
+  .icon-current {
+    i {
+      margin-bottom: 9px;
+    }
+  }
+
+  .item {
+    border: transparent;
+    padding: 0;
+
+    a {
+      border-left: 1px solid transparent;
+      border-right: 1px solid transparent;
+      color: #c0c1c1;
+      display: block;
+      padding: 6px;
+
+      .fa-brands,
+      .fa-regular,
+      .fa-solid {
+        vertical-align: middle;
+      }
+    }
+
+    &.active,
+    &:active,
+    &:focus,
+    &:hover {
+      a {
+        color: #000;
+      }
+    }
+  }
+
+  .label-dark {
+    background-color: #000;
+  }
+}

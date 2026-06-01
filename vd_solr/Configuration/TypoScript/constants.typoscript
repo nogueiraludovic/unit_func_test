@@ -1,0 +1,5 @@
+plugin.tx_solr.view {
+  layoutRootPath = EXT:vd_solr/Resources/Private/Layouts/
+  partialRootPath = EXT:vd_solr/Resources/Private/Partials/
+  templateRootPath = EXT:vd_solr/Resources/Private/Templates/
+}

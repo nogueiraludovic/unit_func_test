@@ -1,0 +1,25 @@
+[1062945 in tree.rootLineIds]
+  page >
+  page = PAGE
+  page {
+    10 = FLUIDTEMPLATE
+    10 {
+      file = EXT:vd_ojvencheres/Resources/Private/Templates/Page/Newsletter.html
+      variables {
+        mainContent < styles.content.get
+        pageUid = TEXT
+        pageUid.data = TSFE:id
+        year = TEXT
+        year {
+          data = date:U
+          strftime = %Y
+        }
+      }
+    }
+    bodyTagAdd = style="background-color:#f2f2f2;font-family:Helvetica,Verdana,Arial,Geneva,sans-serif;font-size:0.75em;font-style:normal;font-variant:normal;font-weight:normal;line-height:1.3em"
+    config {
+      removeDefaultCss = 1
+      removeDefaultJS = 1
+    }
+  }
+[end]

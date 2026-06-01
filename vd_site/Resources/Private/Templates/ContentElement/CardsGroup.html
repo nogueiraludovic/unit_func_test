@@ -1,0 +1,42 @@
+<html data-namespace-typo3-fluid="true" xmlns:f="http://typo3.org/ns/fluid/ViewHelpers">
+    <f:layout/>
+    <f:section name="Main">
+        <f:if condition="{cards}">
+            <div class="text-center vd-nowcard">
+                <ul class="list-unstyled row">
+                    <f:for as="card" each="{cards}">
+                        <li class="{columnsCssClasses} mt-3">
+                            <div class="item position-relative">
+                                <f:if condition="{card.images.0}">
+                                    <f:then>
+                                        <f:image additionalAttributes="{role: 'presentation'}" alt="{card.images.0.alternative}" class="img-fluid" height="112c" image="{card.images.0}" loading="lazy" title="{card.images.0.title}" width="112c"/>
+                                    </f:then>
+                                    <f:else if="{card.data.icon}">
+                                        <i aria-hidden="true" class="{card.data.icon} fa-7x text-primary"></i>
+                                    </f:else>
+                                </f:if>
+                                <p class="mb-0 mt-2">
+                                    <f:if condition="{card.data.link}">
+                                        <f:then>
+                                            <f:link.typolink additionalAttributes="{id: 'card-link-{card.data.uid}'}" class="stretched-link text-black" parameter="{card.data.link}">
+                                                {card.data.title}
+                                            </f:link.typolink>
+                                        </f:then>
+                                        <f:else>
+                                            {card.data.title}
+                                        </f:else>
+                                    </f:if>
+                                </p>
+                                <f:if condition="{card.data.text}">
+                                    <p class="mb-0 mt-2 small">{card.data.text -> f:format.stripTags() -> f:format.crop(maxCharacters: 150)}</p>
+                                </f:if>
+                                <i aria-hidden="true" class="fa-arrow-right fa-solid"></i>
+                            </div>
+                        </li>
+                    </f:for>
+                </ul>
+            </div>
+            <f:render arguments="{data: data}" partial="ContentElementLink"/>
+        </f:if>
+    </f:section>
+</html>

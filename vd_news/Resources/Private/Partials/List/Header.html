@@ -1,0 +1,13 @@
+<html data-namespace-typo3-fluid="true" xmlns:f="http://typo3.org/ns/TYPO3/CMS/Fluid/ViewHelpers" xmlns:vdn="http://typo3.org/ns/Vd/VdNews/ViewHelpers">
+    <header>
+        <h3 itemprop="headline"><f:render arguments="{content: newsItem.title, cssClass: 'vd-link-invisible', newsItem: newsItem}" partial="List/Link"/></h3>
+        <p class="small">
+            <time datetime="{newsItem.datetime -> f:format.date(format: 'c')}">
+                <f:format.raw><vdn:translate arguments="{0: '{f:format.date(date: newsItem.datetime, format: \'%d.%m.%Y\')}'}" id="published_on"/></f:format.raw>
+            </time>
+            <f:if condition="{newsItem.categories}">
+                - <span class="visually-hidden">{vdn:translate(id: 'category')}</span>{vdn:format.categories(categories: newsItem.categories, listPid: settings.listPid)}
+            </f:if>
+        </p>
+    </header>
+</html>

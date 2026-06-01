@@ -1,0 +1,55 @@
+page.10.dataProcessing {
+  1686043317 = Vd\VdOjvencheres\DataProcessing\ItemProcessor
+  1686044596 = Vd\VdOjvencheres\DataProcessing\SaleProcessor
+}
+
+##################################################
+
+plugin {
+  tx_seo.config.xmlSitemap.sitemaps {
+    tx_vdojvencheres_item {
+      config {
+        table = tx_vdojvencheres_domain_model_item
+        url {
+          additionalGetParameters.tx_vdojvencheres_item {
+            action = show
+            controller = Item
+          }
+          fieldToParameterMap.uid = tx_vdojvencheres_item[item]
+          pageId = 1062979
+        }
+      }
+      provider = Vd\VdOjvencheres\XmlSitemap\SitemapDataProvider
+    }
+    tx_vdojvencheres_sale {
+      config {
+        table = tx_vdojvencheres_domain_model_sale
+        url {
+          additionalGetParameters.tx_vdojvencheres_sale {
+            action = show
+            controller = Sale
+          }
+          fieldToParameterMap.uid = tx_vdojvencheres_sale[sale]
+          pageId = 1062981
+        }
+      }
+      provider = Vd\VdOjvencheres\XmlSitemap\SitemapDataProvider
+    }
+  }
+  tx_vdojvencheres {
+    settings {
+      item {
+        alertPid = 1062959
+        allPid = 1011279
+        detailPid = 1062979
+      }
+      sale.detailPid = 1062981
+    }
+    view.partialRootPaths.10 = EXT:vd_core/Resources/Private/Partials/
+  }
+  tx_vdojvencheres_itemlist.view.pluginNamespace = tx_vdojvencheres_item
+  tx_vdojvencheres_itemshow.view.pluginNamespace = tx_vdojvencheres_item
+  tx_vdojvencheres_newsletter.view.pluginNamespace = tx_vdojvencheres_item
+  tx_vdojvencheres_salelist.view.pluginNamespace = tx_vdojvencheres_sale
+  tx_vdojvencheres_saleshow.view.pluginNamespace = tx_vdojvencheres_sale
+}

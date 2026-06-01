@@ -1,0 +1,78 @@
+<html data-namespace-typo3-fluid="true" xmlns:f="http://typo3.org/ns/TYPO3/Fluid/ViewHelpers" xmlns:n="http://typo3.org/ns/GeorgRinger/News/ViewHelpers" xmlns:s="http://typo3.org/ns/ApacheSolrForTypo3/Solr/ViewHelpers" xmlns:vdc="http://typo3.org/ns/Vd/VdCore/ViewHelpers" xmlns:vdn="http://typo3.org/ns/Vd/VdNews/ViewHelpers">
+    <f:variable name="type" value="actualtiés"/>
+    <f:render arguments="{_all}" partial="Search/Form" section="Records"/>
+    <f:if condition="{resultSet.allResultCount} > 0">
+        <f:then>
+            <n:headerData>
+                <link href="{f:uri.page(additionalParams: {type: 100})}" rel="alternate" title="RSS 2.0" type="application/rss+xml"/>
+            </n:headerData>
+            <f:render arguments="{_all}" partial="Search/ResultsCount"/>
+            <f:if condition="{resultSet.hasSearched}">
+                <s:widget.resultPaginate resultSet="{resultSet}">
+                    <div class="row">
+                        <f:for as="document" each="{documents}" iteration="iterator">
+                            <f:variable name="url" value="{s:uri.result.addSearchWordList(searchWords: resultSet.usedQuery.query, url: document.url)}"/>
+                            <article aria-label="{document.title}" class="col-md-6" itemscope="itemscope" itemtype="https://schema.org/Article">
+                                <header>
+                                    <h2 class="h3 mt-0" itemprop="headline">
+                                        <a class="vd-link-invisible" href="{url}" id="document-link-{iterator.index}">
+                                            {s:document.highlightResult(document: document, fieldName: 'title', resultSet: resultSet)}
+                                        </a>
+                                    </h2>
+                                </header>
+                                <p class="small">
+                                    <time datetime="{document.datetime_dateS -> f:format.date(format: 'c')}">
+                                        Publié le {document.datetime_dateS -> f:format.date(format: '%d %B %Y')}
+                                    </time>
+                                    <f:if condition="{document.category_intM}">
+                                        - <span class="visually-hidden">{vdn:translate(id: 'category')}</span>{vdn:format.categories(categories: document.category_intM)}
+                                    </f:if>
+                                </p>
+                                <f:if condition="{document.subtype_intS} == 3">
+                                    <f:then>
+                                        <f:variable name="documentUid" value="{document.alias_intS}"/>
+                                    </f:then>
+                                    <f:else>
+                                        <f:variable name="documentUid" value="{document.uid}"/>
+                                    </f:else>
+                                </f:if>
+                                <vdc:fal as="files" data="{document.fields}" field="fal_media" table="tx_news_domain_model_news">
+                                    <f:if condition="{files.0}">
+                                        <figure class="d-block figure">
+                                            <f:if condition="{files.0.type} == 2">
+                                                <f:then>
+                                                    <a class="vd-link-invisible" href="{url}" id="document-file-link-{iterator.index}">
+                                                        <img alt="{files.0.alternative}" class="img-fluid" height="360" loading="lazy" srcset="{f:uri.image(height: '427c', image: files.0, width: 640)} 320w, {f:uri.image(height: '427c', image: files.0, width: 640)} 720w, {f:uri.image(height: '640c', image: files.0, width: 960)} 960w, {f:uri.image(height: '1067c', image: files.0, width: 1600)} 1140w" title="{files.0.title}" width="540"/>
+                                                    </a>
+                                                </f:then>
+                                                <f:else if="{files.0.type} == 4">
+                                                    <div class="mb-3 ratio ratio-16x9">
+                                                        <f:media file="{files.0}" height="380" width="680"/>
+                                                    </div>
+                                                </f:else>
+                                            </f:if>
+                                        </figure>
+                                    </f:if>
+                                </vdc:fal>
+                                <f:if condition="{document.abstract}">
+                                    <f:then>
+                                        <p itemprop="description">{s:document.highlightResult(document: document, fieldName: 'abstract', resultSet: resultSet) -> f:format.crop(maxCharacters: 340)}</p>
+                                    </f:then>
+                                    <f:else>
+                                        <p itemprop="description">{s:document.highlightResult(document: document, fieldName: 'content', resultSet: resultSet) -> f:format.crop(maxCharacters: 340)}</p>
+                                    </f:else>
+                                </f:if>
+                                <footer>
+                                    <p><a href="{url}" id="document-read-more-link-{iterator.index}">Lire la suite</a></p>
+                                </footer>
+                            </article>
+                        </f:for>
+                    </div>
+                </s:widget.resultPaginate>
+            </f:if>
+        </f:then>
+        <f:else>
+            <f:render arguments="{title: '{f:translate(id: \'no_results_for_news\')}'}" partial="Search/NoResult"/>
+        </f:else>
+    </f:if>
+</html>

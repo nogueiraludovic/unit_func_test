@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xliff version="1.2" xmlns="urn:oasis:names:tc:xliff:document:1.2">
+	<file datatype="plaintext" original="EXT:vd_municipalities/Resources/Private/Language/locallang_db.xlf" source-language="en">
+		<header/>
+		<body>
+			<trans-unit id="districts" resname="districts">
+				<source>Districts</source>
+			</trans-unit>
+			<trans-unit id="id_district" resname="id_district">
+				<source>District ID</source>
+			</trans-unit>
+			<trans-unit id="id_municipality" resname="id_municipality">
+				<source>Municipality ID</source>
+			</trans-unit>
+			<trans-unit id="id_object" resname="id_object">
+				<source>Object ID</source>
+			</trans-unit>
+			<trans-unit id="id_state" resname="id_state">
+				<source>State ID</source>
+			</trans-unit>
+			<trans-unit id="idex2000" resname="idex2000">
+				<source>IDEX 2000</source>
+			</trans-unit>
+			<trans-unit id="institution" resname="institution">
+				<source>Institution</source>
+			</trans-unit>
+			<trans-unit id="institutions" resname="institutions">
+				<source>Institutions</source>
+			</trans-unit>
+			<trans-unit id="localities" resname="localities">
+				<source>Localities (CSV)</source>
+			</trans-unit>
+			<trans-unit id="municipalities" resname="municipalities">
+				<source>Municipalities</source>
+			</trans-unit>
+			<trans-unit id="name_lower" resname="name_lower">
+				<source>Name (lowercase)</source>
+			</trans-unit>
+			<trans-unit id="name_lower15" resname="name_lower15">
+				<source>Name (lowercase 15)</source>
+			</trans-unit>
+			<trans-unit id="name_upper" resname="name_upper">
+				<source>Name (uppercase)</source>
+			</trans-unit>
+			<trans-unit id="name_upper15" resname="name_upper15">
+				<source>Name (uppercase 15)</source>
+			</trans-unit>
+			<trans-unit id="npa" resname="npa">
+				<source>ZIP (CSV)</source>
+			</trans-unit>
+			<trans-unit id="surface" resname="surface">
+				<source>Surface</source>
+			</trans-unit>
+		</body>
+	</file>
+</xliff>

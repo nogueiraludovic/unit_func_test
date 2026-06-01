@@ -1,0 +1,39 @@
+@charset "utf-8";
+@import './node_modules/tablesort/tablesort';
+
+.vd-wsprosecutor {
+  .vd-pagination__link span {
+    pointer-events: none;
+  }
+
+  table {
+    position: relative;
+
+    th {
+      user-select: none;
+
+      &[aria-sort] {
+        &:not(.no-sort) {
+          &:after {
+            opacity: 1;
+          }
+        }
+      }
+
+      &[role="columnheader"] {
+        &:not(.no-sort) {
+          &:after {
+            border-color: #fff transparent;
+            margin-top: 11px;
+          }
+
+          &:hover {
+            &:after {
+              opacity: 1;
+            }
+          }
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xliff version="1.2" xmlns="urn:oasis:names:tc:xliff:document:1.2">
+	<file datatype="plaintext" original="EXT:vd_contact_service/Resources/Private/Language/locallang_db.xlf" source-language="en" target-language="fr">
+		<header/>
+		<body>
+			<trans-unit id="account_number" resname="account_number">
+				<source>CCP</source>
+				<target state="translated">CCP</target>
+			</trans-unit>
+			<trans-unit id="additional_text" resname="additional_text">
+				<source>Additional text</source>
+				<target state="translated">Texte additionnel</target>
+			</trans-unit>
+			<trans-unit id="additional_title" resname="additional_title">
+				<source>Additional title</source>
+				<target state="translated">Titre additionnel</target>
+			</trans-unit>
+			<trans-unit id="code" resname="code">
+				<source>Code</source>
+				<target state="translated">Code</target>
+			</trans-unit>
+			<trans-unit id="department" resname="department">
+				<source>Department</source>
+				<target state="translated">Département</target>
+			</trans-unit>
+			<trans-unit id="email_display_type" resname="email_display_type">
+				<source>Email display type</source>
+				<target state="translated">Type d'affichage de l'email</target>
+			</trans-unit>
+			<trans-unit id="institution" resname="institution">
+				<source>Institution</source>
+				<target state="translated">Institution</target>
+			</trans-unit>
+			<trans-unit id="link" resname="link">
+				<source>Link</source>
+				<target state="translated">Lien</target>
+			</trans-unit>
+			<trans-unit id="link_label" resname="link_label">
+				<source>Link label</source>
+				<target state="translated">Label du lien</target>
+			</trans-unit>
+			<trans-unit id="locality" resname="locality">
+				<source>Municipality</source>
+				<target state="translated">Commune</target>
+			</trans-unit>
+			<trans-unit id="person_function" resname="person_function">
+				<source>Function of the person</source>
+				<target state="translated">Fonction de la personne</target>
+			</trans-unit>
+			<trans-unit id="person_name" resname="person_name">
+				<source>Name of a person</source>
+				<target state="translated">Nom d'une personne</target>
+			</trans-unit>
+			<trans-unit id="postal_box" resname="postal_box">
+				<source>P.O. Box</source>
+				<target state="translated">Case postale</target>
+			</trans-unit>
+			<trans-unit id="postal_code" resname="postal_code">
+				<source>Postal code</source>
+				<target state="translated">NPA</target>
+			</trans-unit>
+			<trans-unit id="reference_page" resname="reference_page">
+				<source>Authority page</source>
+				<target state="translated">Page de l'autorité</target>
+			</trans-unit>
+			<trans-unit id="service" resname="service">
+				<source>Service</source>
+				<target state="translated">Service</target>
+			</trans-unit>
+			<trans-unit id="service_contact" resname="service_contact">
+				<source>Service contact</source>
+				<target state="translated">Contact d'un service</target>
+			</trans-unit>
+			<trans-unit id="service_contact_hidden" resname="service_contact_hidden">
+				<source>Do not display the service contact on the page</source>
+				<target state="translated">Ne pas afficher le contact du service sur la page</target>
+			</trans-unit>
+			<trans-unit id="service_contact_hidden_subpages" resname="service_contact_hidden_subpages">
+				<source>Do not display the service contact on the children's pages</source>
+				<target state="translated">Ne pas afficher le contact du service sur les pages enfants</target>
+			</trans-unit>
+			<trans-unit id="services" resname="services">
+				<source>Services</source>
+				<target state="translated">Services</target>
+			</trans-unit>
+			<trans-unit id="summary" resname="summary">
+				<source>Summary</source>
+				<target state="translated">Résumé</target>
+			</trans-unit>
+		</body>
+	</file>
+</xliff>

@@ -1,0 +1,53 @@
+<html data-namespace-typo3-fluid="true" xmlns:f="http://typo3.org/ns/TYPO3/CMS/Fluid/ViewHelpers" xmlns:vd="http://typo3.org/ns/Vd/VdNews/ViewHelpers">
+    <f:section name="Agenda">
+        <li aria-label="{newsItem.title}" class="d-flex flex-column">
+            <h3 class="mt-1 order-2"><f:render arguments="{content: newsItem.title, newsItem: newsItem}" partial="List/Link"/></h3>
+            <p class="d-flex justify-content-center mt-3 order-1 vd-bg-pattern-gray">
+                <time datetime="{newsItem.datetime -> f:format.date(format: 'c')}">
+                    <span class="d-flex flex-column p-3">
+                        <f:if condition="{newsItem.eventEndDate}">
+                            <span class="text-center">{vd:translate(id: 'from')}</span>
+                        </f:if>
+                        <span class="h1 my-1 text-center">
+                            <f:format.date format="%d">{newsItem.datetime}</f:format.date>
+                        </span>
+                        <span class="my-1 text-center">
+                            <f:format.date format="%B">{newsItem.datetime}</f:format.date>
+                        </span>
+                    </span>
+                </time>
+                <f:if condition="{newsItem.eventEndDate}">
+                    <time datetime="{newsItem.eventEndDate -> f:format.date(format: 'c')}">
+                        <span class="d-flex flex-column p-3">
+                            <span class="text-center">{vd:translate(id: 'to')}</span>
+                            <span class="h1 my-1 text-center">
+                                <f:format.date format="%d">{newsItem.eventEndDate}</f:format.date>
+                            </span>
+                            <span class="my-1 text-center">
+                                <f:format.date format="%B">{newsItem.eventEndDate}</f:format.date>
+                            </span>
+                        </span>
+                    </time>
+                </f:if>
+            </p>
+            <f:render arguments="{height: 360, linkImage: 1, newsItem: newsItem, width: 540}" partial="Media"/>
+            <f:render arguments="{newsItem: newsItem}" partial="List/Description"/>
+        </li>
+    </f:section>
+    <f:section name="Default">
+        <article aria-label="{newsItem.title}" class="col-md-6" itemscope="itemscope" itemtype="https://schema.org/Article">
+            <f:render arguments="{newsItem: newsItem}" partial="List/Header"/>
+            <f:render arguments="{height: 360, linkImage: 1, newsItem: newsItem, width: 540}" partial="Media"/>
+            <f:render arguments="{newsItem: newsItem}" partial="List/Description"/>
+            <f:render arguments="{newsItem: newsItem}" partial="List/ReadMore"/>
+        </article>
+    </f:section>
+    <f:section name="Latest">
+        <article aria-label="{newsItem.title}" itemscope="itemscope" itemtype="https://schema.org/Article">
+            <f:render arguments="{newsItem: newsItem}" partial="List/Header"/>
+            <f:render arguments="{height: 240, linkImage: 1, newsItem: newsItem, width: 360}" partial="Media"/>
+            <f:render arguments="{newsItem: newsItem}" partial="List/Description"/>
+            <f:render arguments="{newsItem: newsItem}" partial="List/ReadMore"/>
+        </article>
+    </f:section>
+</html>

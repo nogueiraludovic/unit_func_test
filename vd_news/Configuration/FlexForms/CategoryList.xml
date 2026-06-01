@@ -1,0 +1,34 @@
+<T3DataStructure>
+    <sheets>
+        <general>
+            <ROOT>
+                <el>
+                    <settings.categories>
+                        <TCEforms>
+                            <config>
+                                <foreign_table>sys_category</foreign_table>
+                                <foreign_table_where>AND (sys_category.sys_language_uid=0 OR sys_category.l10n_parent=0) ORDER BY sys_category.sorting</foreign_table_where>
+                                <renderMode>tree</renderMode>
+                                <renderType>selectTree</renderType>
+                                <size>15</size>
+                                <treeConfig>
+                                    <appearance>
+                                        <expandAll>TRUE</expandAll>
+                                        <maxLevels>99</maxLevels>
+                                        <showHeader>TRUE</showHeader>
+                                    </appearance>
+                                    <parentField>parent</parentField>
+                                </treeConfig>
+                                <type>select</type>
+                            </config>
+                            <label>LLL:EXT:news/Resources/Private/Language/locallang_be.xlf:flexforms_general.categories</label>
+                        </TCEforms>
+                    </settings.categories>
+                </el>
+                <TCEforms>
+                    <sheetTitle>LLL:EXT:core/Resources/Private/Language/Form/locallang_tabs.xlf:general</sheetTitle>
+                </TCEforms>
+            </ROOT>
+        </general>
+    </sheets>
+</T3DataStructure>

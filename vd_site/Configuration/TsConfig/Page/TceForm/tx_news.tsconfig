@@ -1,0 +1,4 @@
+tx_news.templateLayouts {
+  10 = Afficheur Agenda / Événements
+  20 = Afficheur News Latest
+}

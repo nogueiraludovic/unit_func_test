@@ -1,0 +1,40 @@
+<html data-namespace-typo3-fluid="true" xmlns:f="http://typo3.org/ns/TYPO3/Fluid/ViewHelpers" xmlns:s="http://typo3.org/ns/ApacheSolrForTypo3/Solr/ViewHelpers" xmlns:vdc="http://typo3.org/ns/Vd/VdCore/ViewHelpers">
+    <f:variable name="type" value="décisions du Conseil d'État"/>
+    <f:render arguments="{_all}" partial="Search/Form" section="Records"/>
+    <f:if condition="{arguments}">
+        <f:if condition="{resultSet.allResultCount} > 0">
+            <f:then>
+                <f:render arguments="{_all}" partial="Search/ResultsCount"/>
+                <f:if condition="{resultSet.hasSearched}">
+                    <s:widget.resultPaginate resultSet="{resultSet}">
+                        <div class="vd-teaser-list-striped">
+                            <f:for as="document" each="{documents}" iteration="iterator">
+                                <f:variable name="url" value="{s:uri.result.addSearchWordList(searchWords: resultSet.usedQuery.query, url: document.url)}"/>
+                                <article class="d-flex flex-column pt-3 px-3 vd-teaser-list-striped-item">
+                                    <header class="d-flex flex-column">
+                                        <h3 class="mt-0 order-2">
+                                            <a class="vd-link-invisible" href="{url}" id="document-link-{iterator.index}">
+                                                {s:document.highlightResult(document: document, fieldName: 'title', resultSet: resultSet) -> f:format.crop(maxCharacters: 340)}
+                                            </a>
+                                        </h3>
+                                    </header>
+                                    <p>{s:document.highlightResult(document: document, fieldName: 'content_textS', resultSet: resultSet) -> f:format.crop(maxCharacters: 340)}</p>
+                                    <footer>
+                                        <p class="fw-bold small">
+                                            <time datetime="{document.datetime_dateS -> f:format.date(format: 'c')}">
+                                                Séance du {document.datetime_dateS -> f:format.date(format: '%d %B %Y')}
+                                            </time>
+                                        </p>
+                                    </footer>
+                                </article>
+                            </f:for>
+                        </div>
+                    </s:widget.resultPaginate>
+                </f:if>
+            </f:then>
+            <f:else>
+                <f:render arguments="{title: '{f:translate(id: \'no_results_for_decision\')}'}" partial="Search/NoResult"/>
+            </f:else>
+        </f:if>
+    </f:if>
+</html>

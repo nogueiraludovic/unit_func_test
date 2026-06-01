@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xliff version="1.2" xmlns="urn:oasis:names:tc:xliff:document:1.2">
+	<file datatype="plaintext" original="EXT:vd_site/Resources/Private/Language/locallang_be.xlf" source-language="en" target-language="fr">
+		<header/>
+		<body>
+			<trans-unit id="aside_content" resname="no_result">
+				<source>Aside content</source>
+				<target state="translated">Contenu secondaire</target>
+			</trans-unit>
+			<trans-unit id="headline_content" resname="headline_content">
+				<source>Headline content</source>
+				<target state="translated">Contenu à la une</target>
+			</trans-unit>
+			<trans-unit id="main_content" resname="main_content">
+				<source>Main content</source>
+				<target state="translated">Contenu principal</target>
+			</trans-unit>
+			<trans-unit id="no_result" resname="no_result">
+				<source>No result for this search.</source>
+				<target state="translated">Aucun résultat pour cette recherche.</target>
+			</trans-unit>
+		</body>
+	</file>
+</xliff>

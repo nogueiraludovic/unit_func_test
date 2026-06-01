@@ -1,0 +1,7 @@
+---
+imports:
+  - { resource: EXT:vd_site/Configuration/RTE/Default.yaml }
+editor:
+  config:
+    removeButtons:
+      - Source

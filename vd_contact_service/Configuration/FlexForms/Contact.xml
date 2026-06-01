@@ -1,0 +1,23 @@
+<T3DataStructure>
+    <sheets>
+        <general>
+            <ROOT>
+                <el>
+                    <settings.serviceContact>
+                        <TCEforms>
+                            <config>
+                                <default>0</default>
+                                <renderType>serviceContact</renderType>
+                                <type>user</type>
+                            </config>
+                            <label>LLL:EXT:vd_contact_service/Resources/Private/Language/locallang_db.xlf:service_contact</label>
+                        </TCEforms>
+                    </settings.serviceContact>
+                </el>
+                <TCEforms>
+                    <sheetTitle>LLL:EXT:core/Resources/Private/Language/Form/locallang_tabs.xlf:general</sheetTitle>
+                </TCEforms>
+            </ROOT>
+        </general>
+    </sheets>
+</T3DataStructure>

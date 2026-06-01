@@ -1,0 +1,13 @@
+mod.web_layout {
+  BackendLayouts >
+  BackendLayouts {
+    default {
+      config.backend_layout {
+        colCount = 1
+        rowCount = 1
+      }
+      title = Par défaut
+    }
+  }
+  tt_content >
+}

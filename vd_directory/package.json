@@ -1,0 +1,32 @@
+{
+  "type": "module",
+  "name": "@vd/vd-directory",
+  "version": "10.4.0",
+  "description": "Directory of addresses.",
+  "license": "GPL-3.0-or-later",
+  "author": {
+    "name": "État de Vaud - DGNSI",
+    "email": "support.typo3@vd.ch",
+    "homepage": "https://www.vd.ch",
+    "role": "Developer"
+  },
+  "browserslist": [
+    "defaults"
+  ],
+  "scripts": {
+    "build": "NODE_ENV=production gulp build",
+    "development": "NODE_ENV=development gulp development"
+  },
+  "devDependencies": {
+    "del": "^8.0",
+    "gulp": "^5.0",
+    "gulp-concat": "^2.6",
+    "gulp-if": "^3.0",
+    "gulp-plumber": "^1.2",
+    "gulp-sourcemaps": "^3.0",
+    "gulp-terser": "^2.1",
+    "webpack": "^5.101",
+    "webpack-stream": "^7.0"
+  },
+  "private": true
+}

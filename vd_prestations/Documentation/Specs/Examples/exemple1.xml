@@ -1,0 +1,177 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<evenementsPublication reset="false" xmlns="http://evd.vd.ch/xmlns/eVD-0038/2">
+    <evenement type="AJOUT">
+        <prestation>
+            <idMetierPrestation>7TUVTS-BNGBJ6</idMetierPrestation>
+            <titre>Demander un acte d'authenticité du permis de
+                conduire suisse
+            </titre>
+            <description>&lt;div class=&quot;description col-md-9
+                ng-binding&quot;> &lt;p>Vous ne r&amp;eacute;sidez plus
+                en Suisse et vous devez &amp;eacute;changer votre permis
+                de conduire d&amp;eacute;livr&amp;eacute; par le canton
+                de Vaud. Certains &amp;eacute;tats demandent en plus du
+                permis de conduire, un acte confirmant
+                l'authenticit&amp;eacute; de votre permis de conduire
+                suisse ainsi qu'un extrait de vos &amp;eacute;ventuelles
+                infractions &amp;agrave; la circulation
+                routi&amp;egrave;re commises sur le territoire suisse
+                (extrait ADMAS).&lt;/p> &lt;p>Cet acte est
+                &amp;eacute;galement d&amp;eacute;livr&amp;eacute;
+                lorsque vous r&amp;eacute;sidez &amp;agrave;
+                l'&amp;eacute;tranger et que vous avez perdu le permis de
+                conduire suisse.&lt;/p> &lt;p>Un nouveau permis de
+                conduire suisse ne peut vous &amp;ecirc;tre
+                d&amp;eacute;livr&amp;eacute; car vous n'&amp;ecirc;tes
+                plus domicili&amp;eacute; en Suisse.&lt;/p> &lt;/div>
+            </description>
+            <domaineMetier>Mobilité</domaineMetier>
+            <themeMetier>Automobile</themeMetier>
+            <publicsCible>
+                <population>Particuliers</population>
+            </publicsCible>
+            <emolument xmlns:xs="http://www.w3.org/2001/XMLSchema"
+                       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+                       xsi:type="xs:string">L'&amp;eacute;molument doit
+                &amp;ecirc;tre vers&amp;eacute; avant la demande de la
+                prestation.&lt;br />&lt;br />
+            </emolument>
+            <conditionsPrealables
+                    xmlns:xs="http://www.w3.org/2001/XMLSchema"
+                    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+                    xsi:type="xs:string">&lt;ol> &lt;li>Etre titulaire ou
+                avoir &amp;eacute;t&amp;eacute; titulaire d'un permis de
+                conduire suisse&lt;/li> &lt;/ol>
+            </conditionsPrealables>
+            <prestationsEnRelation>
+                <titrePrestation>Demander une immatriculation avec ou
+                    sans cession de plaques
+                </titrePrestation>
+            </prestationsEnRelation>
+            <referencesLegaux>
+                <titreReferenceLegale>Ordonnance réglant l'admission des
+                    personnes et des véhicules à la circulation routière (OAC)
+                </titreReferenceLegale>
+                <urlReferenceLegale>https://www.admin.ch/opc/fr/classified-compilation/19760247/index.html
+                </urlReferenceLegale>
+            </referencesLegaux>
+            <modaliteAcces typeModaliteAcces="mail">
+                <marcheASuivre>&lt;ol> &lt;li>Cochez les cases qui
+                    conviennent, compl&amp;eacute;tez et signez le
+                    formulaire &lt;em>Demande d'un acte
+                    d'authenticit&amp;eacute; pour l'&amp;eacute;tranger
+                    (1237)&lt;/em> accessible par le bouton ci-contre ou
+                    ci-dessous;&lt;/li> &lt;li>Proc&amp;eacute;dez au
+                    paiement de l'&amp;eacute;molument de CHF 25.00
+                    (coordonn&amp;eacute;es de paiement disponibles sur le
+                    formulaire);&lt;/li> &lt;li>Imprimez et envoyez par
+                    e-mail le formulaire avec une copie de votre
+                    pi&amp;egrave;ce d'identit&amp;eacute; et de la preuve
+                    du paiement.&lt;/li> &lt;/ol>
+                </marcheASuivre>
+                <InformationsComplementaires>Cette prestation est aussi
+                    d&amp;eacute;livr&amp;eacute;e dans les centres
+                    d'Aigle, Nyon et Yverdon-les-Bains.
+                </InformationsComplementaires>
+                <coutTraitementDemande>25</coutTraitementDemande>
+                <documentsObligatoires>&lt;ul> &lt;li
+                    class=&quot;col-md-6 text-left text-muted ng-binding
+                    ng-scope&quot;>Le formulaire 1237 d&amp;ucirc;ment
+                    compl&amp;eacute;t&amp;eacute; et
+                    sign&amp;eacute;;&lt;/li> &lt;li class=&quot;col-md-6
+                    text-left text-muted ng-binding ng-scope&quot;>La
+                    preuve du paiement de CHF 25.00;&lt;/li> &lt;li
+                    class=&quot;col-md-6 text-left text-muted ng-binding
+                    ng-scope&quot;>Une copie de la pi&amp;egrave;ce
+                    d'identit&amp;eacute; - passeport.&lt;/li> &lt;/ul>
+                </documentsObligatoires>
+                <ePayment>false</ePayment>
+                <lienExterne>true</lienExterne>
+                <lienAccesPrestation>
+                    http://www.vd.ch/fileadmin/user_upload/themes/mobilite/automobile/fichiers_pdf/formul/4_1_F_1237_Demande_acte_authenticite_attestation_permis_conduire.pdf
+                </lienAccesPrestation>
+            </modaliteAcces>
+            <modaliteAcces typeModaliteAcces="guichet">
+                <marcheASuivre>&lt;ol> &lt;li>Cochez les cases qui
+                    conviennent, compl&amp;eacute;tez et signez le
+                    formulaire &lt;em>Demande d'un acte
+                    d'authenticit&amp;eacute; pour l'&amp;eacute;tranger
+                    (1237)&lt;/em> accessible par le bouton ci-contre ou
+                    ci-dessous;&lt;/li> &lt;li>Imprimez et
+                    d&amp;eacute;posez le formulaire avec une copie de
+                    votre pi&amp;egrave;ce d'identit&amp;eacute;;&lt;/li>
+                    &lt;li>Le paiement s'effectuera &amp;agrave; nos
+                    guichets contre la remise de l'acte
+                    d'authenticit&amp;eacute;.&lt;/li> &lt;/ol>
+                </marcheASuivre>
+                <InformationsComplementaires>Cette prestation est aussi
+                    d&amp;eacute;livr&amp;eacute;e dans les centres
+                    d'Aigle, Nyon et Yverdon-les-Bains.
+                </InformationsComplementaires>
+                <coutTraitementDemande>25</coutTraitementDemande>
+                <documentsObligatoires>&lt;ul> &lt;li
+                    class=&quot;col-md-6 text-left text-muted ng-binding
+                    ng-scope&quot;>Le formulaire 1237 d&amp;ucirc;ment
+                    compl&amp;eacute;t&amp;eacute; et
+                    sign&amp;eacute;;&lt;/li> &lt;li class=&quot;col-md-6
+                    text-left text-muted ng-binding ng-scope&quot;>La
+                    preuve du paiement de CHF 25.00;&lt;/li> &lt;li
+                    class=&quot;col-md-6 text-left text-muted ng-binding
+                    ng-scope&quot;>Une copie de la pi&amp;egrave;ce
+                    d'identit&amp;eacute; - passeport.&lt;/li> &lt;/ul>
+                </documentsObligatoires>
+                <ePayment>false</ePayment>
+                <lienExterne>true</lienExterne>
+                <lienAccesPrestation>
+                    http://www.vd.ch/fileadmin/user_upload/themes/mobilite/automobile/fichiers_pdf/formul/4_1_F_1237_Demande_acte_authenticite_attestation_permis_conduire.pdf
+                </lienAccesPrestation>
+            </modaliteAcces>
+            <modaliteAcces typeModaliteAcces="poste">
+                <marcheASuivre>&lt;ol> &lt;li>Cochez les cases qui
+                    conviennent, compl&amp;eacute;tez et signez le
+                    formulaire &lt;em>Demande d'un acte
+                    d'authenticit&amp;eacute; pour l'&amp;eacute;tranger
+                    (1237)&lt;/em> accessible par le bouton ci-contre ou
+                    ci-dessous;&lt;/li> &lt;li>Proc&amp;eacute;dez au
+                    paiement de l'&amp;eacute;molument de CHF 25.00
+                    (coordonn&amp;eacute;es de paiement disponibles sur le
+                    formulaire);&lt;/li> &lt;li>Imprimez et envoyez le
+                    formulaire avec une copie de votre pi&amp;egrave;ce
+                    d'identit&amp;eacute; et de la preuve du
+                    paiement.&lt;/li> &lt;/ol>
+                </marcheASuivre>
+                <InformationsComplementaires>Cette prestation est aussi
+                    d&amp;eacute;livr&amp;eacute;e dans les centres
+                    d'Aigle, Nyon et Yverdon-les-Bains.
+                </InformationsComplementaires>
+                <coutTraitementDemande>25</coutTraitementDemande>
+                <ePayment>false</ePayment>
+                <lienExterne>true</lienExterne>
+                <lienAccesPrestation>
+                    http://www.vd.ch/fileadmin/user_upload/themes/mobilite/automobile/fichiers_pdf/formul/4_1_F_1237_Demande_acte_authenticite_attestation_permis_conduire.pdf
+                </lienAccesPrestation>
+            </modaliteAcces>
+            <servicePrestataire>SAN</servicePrestataire>
+            <resultatPrestation>Acte d'authenticit&amp;eacute; du
+                permis de conduire suisse (1237)
+            </resultatPrestation>
+            <actionBeneficiaire>DEMANDER</actionBeneficiaire>
+            <actionPrestataire
+                    xmlns:xs="http://www.w3.org/2001/XMLSchema"
+                    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:type="xs:string">DELIVRER
+            </actionPrestataire>
+            <typeMissionECH0145
+                    xmlns:xs="http://www.w3.org/2001/XMLSchema"
+                    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:type="xs:UNSIGNEDShort">66
+            </typeMissionECH0145>
+            <champMissionECH0145
+                    xmlns:xs="http://www.w3.org/2001/XMLSchema"
+                    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:type="xs:string">BF0112
+            </champMissionECH0145>
+            <groupeMissionECH0145
+                    xmlns:xs="http://www.w3.org/2001/XMLSchema"
+                    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:type="xs:string">BG0112
+            </groupeMissionECH0145>
+        </prestation>
+    </evenement>
+</evenementsPublication>

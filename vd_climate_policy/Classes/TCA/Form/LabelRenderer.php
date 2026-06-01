@@ -6,8 +6,6 @@ namespace Vd\VdClimatePolicy\TCA\Form;
 
 use TYPO3\CMS\Backend\Utility\BackendUtility;
 
-use function implode;
-
 class LabelRenderer
 {
     public function forPecc(array &$parameters): void

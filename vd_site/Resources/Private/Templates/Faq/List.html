@@ -1,0 +1,61 @@
+<html data-namespace-typo3-fluid="true" xmlns:f="http://typo3.org/ns/TYPO3/CMS/Fluid/ViewHelpers">
+    <f:layout/>
+    <f:section name="main">
+        <div id="irfaq-{contentObjectData.uid}">
+            <div class="d-print-none irfaq-search-form my-1 px-4 py-4 vd-bg-pattern-bars-gray">
+                <h4 class="mt-0">Rechercher dans les questions</h4>
+                <form class="input-group vd-search-form-regular">
+                    <label class="form-label visually-hidden" for="search-form-faq-f-{contentObjectData.uid}" id="search-form-label-faq-{contentObjectData.uid}">
+                        Rechercher dans les questions
+                    </label>
+                    <input aria-describedby="search-form-label-faq-{contentObjectData.uid}" class="form-control search-form-faq" id="search-form-faq-f-{contentObjectData.uid}" maxlength="100" name="irfaq_search_words" type="text" value="">
+                    <input name="importantMessage" value="" type="hidden">
+                    <span class="input-group-btn">
+                        <button aria-label="Recherche" class="btn btn-dark" id="search-button" name="search" type="submit">
+                            <i aria-hidden="true" class="fa fa-search text-white"></i>
+                        </button>
+                    </span>
+                </form>
+            </div>
+            <h3>Questions</h3>
+            <f:if condition="{faqs}">
+                <f:if condition="{settings.templateLayout} == 1">
+                    <f:then>
+                        <div class="accordion" id="accordion-{contentObjectData.uid}">
+                            <f:for as="faq" each="{faqs}">
+                                <div class="accordion-item">
+                                    <h2 class="accordion-header mt-0" id="heading-{contentObjectData.uid}-{faq.uid}">
+                                        <button aria-controls="collapse-{contentObjectData.uid}-{faq.uid}" aria-expanded="false" class="accordion-button collapsed" data-bs-target="#collapse-{contentObjectData.uid}-{faq.uid}" data-bs-toggle="collapse" data-search-field="1" type="button">
+                                            {faq.question}
+                                        </button>
+                                    </h2>
+                                    <div aria-labelledby="heading-{contentObjectData.uid}-{faq.uid}" class="accordion-collapse collapse" data-bs-parent="#accordion-{contentObjectData.uid}" id="collapse-{contentObjectData.uid}-{faq.uid}">
+                                        <div class="accordion-body">
+                                            <f:format.html>{faq.answer}</f:format.html>
+                                        </div>
+                                    </div>
+                                </div>
+                            </f:for>
+                        </div>
+                    </f:then>
+                    <f:else>
+                        <ul class="vd-list-links">
+                            <f:for as="faq" each="{faqs}">
+                                <li><a data-search-field="1" href="javascript:" id="faq-question-link-{faq.uid}" onclick="document.location.hash='#irfaq-{contentObjectData.uid}-{faq.uid}'">{faq.question}</a></li>
+                            </f:for>
+                        </ul>
+                        <h3 class="visually-hidden">Réponses</h3>
+                        <div class="irfaq-answers">
+                            <f:for as="faq" each="{faqs}">
+                                <article class="mb-4" id="irfaq-{contentObjectData.uid}-{faq.uid}">
+                                    <h4 class="mb-0" data-search-field="1">{faq.question}</h4>
+                                    <f:format.html>{faq.answer}</f:format.html>
+                                </article>
+                            </f:for>
+                        </div>
+                    </f:else>
+                </f:if>
+            </f:if>
+        </div>
+    </f:section>
+</html>

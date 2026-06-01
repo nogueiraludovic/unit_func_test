@@ -1,0 +1,14 @@
+---
+services:
+  _defaults:
+    autoconfigure: true
+    autowire: true
+    public: false
+  Vd\VdDirectory\:
+    resource: ../Classes/*
+  Vd\VdDirectory\EventListener\AssetModifier:
+    tags:
+      -
+        event: Vd\VdFrontend\Event\AfterInitializeActionEvent
+        identifier: vd-directory/asset-modifier
+        name: event.listener

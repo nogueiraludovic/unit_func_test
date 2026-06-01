@@ -1,0 +1,12 @@
+<html data-namespace-typo3-fluid="true" xmlns:f="http://typo3.org/ns/TYPO3/CMS/Fluid/ViewHelpers">
+    <f:layout/>
+    <f:section name="Main">
+        <f:if condition="{files}">
+            <ul>
+                <f:for as="file" each="{files}" iteration="iterator">
+                    <li><a href="{file.publicUrl}" id="file-upload-link-{iterator.index}"{f:if(condition: file.title, then: ' title="{file.title}"')}> {f:if(condition: file.properties.title, else: file.name, then: file.properties.title) -> f:format.htmlspecialchars()}</a> ({file.properties.extension}, {f:format.bytes(decimals: 2, value: file.properties.size)})</li>
+                </f:for>
+            </ul>
+        </f:if>
+    </f:section>
+</html>

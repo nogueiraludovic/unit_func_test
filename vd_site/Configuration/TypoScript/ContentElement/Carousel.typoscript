@@ -1,0 +1,127 @@
+tt_content.carousel =< lib.contentElement
+tt_content.carousel {
+  dataProcessing {
+    10 = TYPO3\CMS\Frontend\DataProcessing\DatabaseQueryProcessor
+    10 {
+      as = carouselItems
+      dataProcessing {
+        10 = TYPO3\CMS\Frontend\DataProcessing\FilesProcessor
+        10 {
+          as = images
+          if.isTrue.field = image
+          references {
+            fieldName = image
+            table = tx_vdsite_domain_model_carouselitem
+          }
+        }
+      }
+      if {
+        equals = free
+        value.field = type
+      }
+      orderBy = sorting
+      pidInList = this
+      table = tx_vdsite_domain_model_carouselitem
+      where {
+        data = field:uid
+        intval = 1
+        wrap = tx_vdsite_domain_model_carouselitem.parent=|
+      }
+    }
+    20 = TYPO3\CMS\Frontend\DataProcessing\DatabaseQueryProcessor
+    20 {
+      as = carouselItems
+      dataProcessing {
+        10 = TYPO3\CMS\Frontend\DataProcessing\FilesProcessor
+        10 {
+          as = images
+          if.isTrue.field = fal_media
+          references {
+            fieldName = fal_media
+            table = tx_news_domain_model_news
+          }
+        }
+      }
+      if {
+        equals = news
+        value.field = type
+      }
+      max {
+        field = limit
+        ifEmpty = 6
+      }
+      orderBy = datetime DESC
+      pidInList {
+        field = pages
+        ifEmpty = 28405
+      }
+      recursive.field = recursive
+      table = tx_news_domain_model_news
+    }
+    30 < .20
+    30 {
+      as = carouselItems
+      dataProcessing >
+      if.equals = press_releases
+      orderBy = date_time DESC
+      pidInList.ifEmpty = 2000107
+      table = tx_vdpressreleases_domain_model_pressrelease
+    }
+    40 = Vd\VdCore\DataProcessing\TcaGroupProcessor
+    40 {
+      allowed = tx_news_domain_model_news,tx_vdpressreleases_domain_model_pressrelease,tx_vdprestations_domain_model_prestation
+      as = carouselItems
+      dataProcessing {
+        10 = TYPO3\CMS\Frontend\DataProcessing\FilesProcessor
+        10 {
+          as = images
+          if.isTrue.field = fal_media
+          references {
+            fieldName = fal_media
+            table = tx_news_domain_model_news
+          }
+        }
+      }
+      field = related_records
+      if {
+        equals = records
+        value.field = type
+      }
+    }
+    50 < .20
+    50 {
+      andWhere {
+        field = services_theme
+        wrap = {#theme_id}='|'
+      }
+      as = carouselItems
+      dataProcessing >
+      if.equals = services
+      orderBy = title
+      pidInList.ifEmpty = 2000185
+      table = tx_vdprestations_domain_model_prestation
+      where {
+        field = services_domain
+        wrap = {#domain_id}='|'
+      }
+    }
+  }
+  settings {
+    news.detailPid = 2000114
+    pressReleases.detailPid = 2000109
+    services.detailPid = 2000180
+  }
+  templateName = Carousel
+}
+
+##################################################
+
+[traverse(page, 'uid') != 1000001]
+  tt_content.carousel.dataProcessing {
+    10 = Vd\VdSite\DataProcessing\DatabaseQueryProcessor
+    20 = Vd\VdSite\DataProcessing\DatabaseQueryProcessor
+    30 = Vd\VdSite\DataProcessing\DatabaseQueryProcessor
+    40 = Vd\VdSite\DataProcessing\TcaGroupProcessor
+    50 = Vd\VdSite\DataProcessing\DatabaseQueryProcessor
+  }
+[end]

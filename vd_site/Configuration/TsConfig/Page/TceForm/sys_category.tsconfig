@@ -1,0 +1,5 @@
+TCEFORM.sys_category {
+  shortcut.disabled = 1
+  single_pid.disabled = 1
+  sys_language_uid.disabled = 1
+}

@@ -1,0 +1,13 @@
+tt_content.search_form =< lib.contentElement
+tt_content.search_form {
+  dataProcessing {
+    10 = TYPO3\CMS\Frontend\DataProcessing\SiteProcessor
+    20 = Vd\VdCore\DataProcessing\FlexFormProcessor
+    20.dataProcessing.10 = Vd\VdSite\DataProcessing\SearchSuggestionsProcessor
+  }
+  templateName = SearchForm
+  variables {
+    searchForm < plugin.tx_solr_PiSearch_Search
+    searchForm.search.targetPage = {$searchPageUid}
+  }
+}

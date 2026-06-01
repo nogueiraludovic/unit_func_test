@@ -1,0 +1,136 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<evenementsPublication reset="false" xmlns="http://evd.vd.ch/xmlns/eVD-0038/2">
+    <evenement type="AJOUT">
+        <prestation>
+            <idMetierPrestation>3C6N35-HPQEEV</idMetierPrestation>
+            <titre>Demander l'autorisation d'engager un agent de sécurité</titre>
+            <description>&lt;div class=&quot;description col-md-9
+                ng-binding&quot;> &lt;p>Vous &amp;ecirc;tes une
+                entreprise de s&amp;eacute;curit&amp;eacute;, un
+                &amp;eacute;tablissement ou un commerce ? Vous souhaitez
+                employer, sous contrat de travail, une personne en
+                qualit&amp;eacute; d'agent de
+                s&amp;eacute;curit&amp;eacute; ?&lt;/p> &lt;p>Au
+                pr&amp;eacute;alable, vous avez l'obligation d'obtenir
+                une autorisation &amp;agrave; cet effet (carte
+                concordataire).&lt;/p> &lt;p>L'autorisation est valable
+                quatre ans et renouvelable sur demande.&lt;/p> &lt;/div>
+            </description>
+            <domaineMetier>Sécurité</domaineMetier>
+            <themeMetier>Police</themeMetier>
+            <publicsCible>
+                <population>Entreprises</population>
+            </publicsCible>
+            <emolument xmlns:xs="http://www.w3.org/2001/XMLSchema"
+                       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+                       xsi:type="xs:string">300.- par agent
+            </emolument>
+            <conditionsPrealables
+                    xmlns:xs="http://www.w3.org/2001/XMLSchema"
+                    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+                    xsi:type="xs:string">&lt;p>L'autorisation d'engager du
+                personnel n'est accord&amp;eacute;e que si l'agent de
+                s&amp;eacute;curit&amp;eacute; :&lt;/p> &lt;p>a. est de
+                nationalit&amp;eacute; suisse, ressortissant d'un État
+                membre de l'Union europ&amp;eacute;enne ou de
+                l'Association europ&amp;eacute;enne de
+                libre-&amp;eacute;change ou, pour les ressortissants
+                d'autres États &amp;eacute;trangers, titulaire d'un
+                permis d'&amp;eacute;tablissement ou d'un permis de
+                s&amp;eacute;jour depuis deux ans au moins ;&lt;/p>
+                &lt;p>b. a l'exercice des droits civils ;&lt;/p> &lt;p>c.
+                est solvable ou ne fait pas l'objet d'actes de
+                d&amp;eacute;faut de biens d&amp;eacute;finitifs ;&lt;/p>
+                &lt;p>d. offre, par ses
+                ant&amp;eacute;c&amp;eacute;dents, par son
+                caract&amp;egrave;re et son comportement, toute garantie
+                d'honorabilit&amp;eacute; concernant la sph&amp;egrave;re
+                d'activit&amp;eacute; envisag&amp;eacute;e. La commission
+                concordataire &amp;eacute;dicte une directive
+                &amp;agrave; cet &amp;eacute;gard.&lt;/p>
+            </conditionsPrealables>
+            <lienAide>http://www.vd.ch/autorites/departements/dis/police-cantonale/ou-nous-trouver/</lienAide>
+            <pagesEnRelation>
+                <titrePage xmlns:xs="http://www.w3.org/2001/XMLSchema"
+                           xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+                           xsi:type="xs:string">Pages d'information - Entreprises
+                    de sécurité
+                </titrePage>
+                <urlPage>http://www.vd.ch/themes/securite/police/entreprises-de-securite/</urlPage>
+            </pagesEnRelation>
+            <pagesEnRelation>
+                <titrePage xmlns:xs="http://www.w3.org/2001/XMLSchema"
+                           xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+                           xsi:type="xs:string">Directive pour remplir les demandes
+                </titrePage>
+                <urlPage>
+                    http://www.vd.ch/fileadmin/user_upload/organisation/dse/polcant/fichiers_doc/Directive_pour_remplir_les_demandes.pdf
+                </urlPage>
+            </pagesEnRelation>
+            <referencesLegaux>
+                <titreReferenceLegale>Concordat sur les entreprises de
+                    sécurité (C-ESéc) du 18 octobre 1996
+                </titreReferenceLegale>
+                <urlReferenceLegale>http://www.rsv.vd.ch/rsvsite/rsv_site/doc.fo.html?docId=5532&amp;form_name=resultats.xsp&amp;docType=concordat&amp;Pcurrent_version=9999&amp;PetatDoc=vigueur&amp;page_format=A4_3&amp;isRSV=true&amp;isSJL=true&amp;outformat=html&amp;isModifiante=false&amp;with_link=true&amp;num_cha=93&amp;base=RSV</urlReferenceLegale>
+            </referencesLegaux>
+            <modaliteAcces typeModaliteAcces="poste">
+                <marcheASuivre>&lt;div class=&quot;row ng-scope&quot;>
+                    &lt;p>Remplir la formule de demande d'autorisation
+                    concordataire, la munir de ses annexes et l'envoyer
+                    &amp;agrave;:&lt;/p> &lt;p>Bureau des entreprises de
+                    s&amp;eacute;curit&amp;eacute; Police cantonale
+                    vaudoise Centre Bl&amp;eacute;cherette 1014
+                    Lausanne&lt;/p> &lt;/div>
+                </marcheASuivre>
+                <delaiMoyenTraitementDemande>Si tout est en ordre et si
+                    la personne a toujours habit&amp;eacute; en Suisse ou
+                    dans le Canton de Vaud, la demande peut &amp;ecirc;tre
+                    trait&amp;eacute;e en quelques jours (~15 jours).
+                </delaiMoyenTraitementDemande>
+                <coutTraitementDemande>300</coutTraitementDemande>
+                <documentsObligatoires>Voir formule de demande
+                    d'autorisation. Photocopie de la pi&amp;egrave;ce
+                    d'identit&amp;eacute; doit &amp;ecirc;tre bien lisible
+                    Photos : deux, pas plus, r&amp;eacute;centes,
+                    coup&amp;eacute;es et en couleur, format 3,5 x 4,5 cm
+                    Attestation Office des poursuites : si il y a des
+                    poursuites = liste d&amp;eacute;taill&amp;eacute;e
+                    L'attestation de l'Office des Faillites n'est plus
+                    demand&amp;eacute;e, que si n&amp;eacute;cessaire.
+                    Casier Judiciaire : si il y a une inscription = joindre
+                    l'ordonnance p&amp;eacute;nale y relative
+                    Renouvellement : joindre dans tous les cas la carte
+                    d'accr&amp;eacute;ditation &amp;agrave; renouveler
+                    L'autorit&amp;eacute; de protection de l'adulte est,
+                    dans le Canton de Vaud, la Justice de paix.
+                </documentsObligatoires>
+                <ePayment>false</ePayment>
+                <lienExterne>true</lienExterne>
+                <lienAccesPrestation>
+                    http://www.vd.ch/fileadmin/user_upload/organisation/dse/polcant/fichiers_doc/Pour_agent_et_chef_de_succursale.doc
+                </lienAccesPrestation>
+            </modaliteAcces>
+            <servicePrestataire>POLCANT</servicePrestataire>
+            <resultatPrestation>Accr&amp;eacute;ditation d&amp;rsquo;un
+                agent de s&amp;eacute;curit&amp;eacute;
+            </resultatPrestation>
+            <actionBeneficiaire>DEMANDER</actionBeneficiaire>
+            <actionPrestataire
+                    xmlns:xs="http://www.w3.org/2001/XMLSchema"
+                    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:type="xs:string">DELIVRER
+            </actionPrestataire>
+            <typeMissionECH0145
+                    xmlns:xs="http://www.w3.org/2001/XMLSchema"
+                    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:type="xs:UNSIGNEDShort">66
+            </typeMissionECH0145>
+            <champMissionECH0145
+                    xmlns:xs="http://www.w3.org/2001/XMLSchema"
+                    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:type="xs:string">BF0111
+            </champMissionECH0145>
+            <groupeMissionECH0145
+                    xmlns:xs="http://www.w3.org/2001/XMLSchema"
+                    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:type="xs:string">BG0111
+            </groupeMissionECH0145>
+        </prestation>
+    </evenement>
+</evenementsPublication>

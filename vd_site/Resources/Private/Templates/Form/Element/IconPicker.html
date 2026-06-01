@@ -1,0 +1,57 @@
+<html data-namespace-typo3-fluid="true" xmlns:core="http://typo3.org/ns/TYPO3/CMS/Core/ViewHelpers" xmlns:f="http://typo3.org/ns/TYPO3/CMS/Fluid/ViewHelpers">
+    <f:if condition="{icons}">
+        <f:then>
+            <div class="formengine-field-font-awesome">
+                <div class="icon-current text-center">
+                    <div class="icon-selected">
+                        <i aria-hidden="true" class="{input.value} fa-5x"></i>
+                        <br/>
+                        <span class="label label-dark">{input.value}</span>
+                    </div>
+                    <div class="btn btn-default btn-delete">
+                        <core:icon identifier="actions-delete" size="small"/>
+                    </div>
+                </div>
+                <div class="formengine-field-item t3js-formengine-field-item">
+                    <div class="form-control-wrap">
+                        <div class="form-wizards-wrap">
+                            <div class="form-wizards-element">
+                                <div class="form-control-clearable">
+                                    <input class="form-control t3js-clearable" data-formengine-action="filter" placeholder="{f:translate(id: 'LLL:EXT:core/Resources/Private/Language/locallang_core.xlf:labels.search')}"/>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="form-wizards-items-bottom">
+                    <div class="icon-list t3js-forms-select-single-icons">
+                        <div class="row">
+                            <f:for as="icon" each="{icons}" key="index">
+                                <div class="item{f:if(condition: '{icon.css} == {input.value}', then: ' active')}" data-keywords="{icon.name}" data-value="{icon.css}">
+                                    <a data-select-index="{index}" href="#" title="{icon.name}">
+                                        <span title="{icon.name}">
+                                            <span class="icon icon-{icon.identifier} icon-size-default icon-state-default t3js-icon" data-identifier="{icon.identifier}">
+                                                <span class="icon-markup">
+                                                    <f:if condition="{icon.css}">
+                                                        <i aria-hidden="true" class="{icon.css} fa-2x"></i>
+                                                    </f:if>
+                                                </span>
+                                            </span>
+                                        </span>
+                                    </a>
+                                </div>
+                            </f:for>
+                            <div class="empty hidden">
+                                <em><f:translate id="LLL:EXT:vd_site/Resources/Private/Language/locallang_be.xlf:no_result"/></em>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <input name="{input.name}" type="hidden" value="{input.value}"/>
+            </div>
+        </f:then>
+        <f:else>
+            <div class="alert alert-warning" role="alert">No icons collections registered</div>
+        </f:else>
+    </f:if>
+</html>

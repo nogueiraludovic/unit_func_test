@@ -1,0 +1,5 @@
+page.10.dataProcessing.1751006789 = Vd\VdApprenticeship\DataProcessing\ApprenticeshipProcessor
+
+##################################################
+
+plugin.tx_vdfrontend.view.partialRootPaths.1751006789 = EXT:vd_apprenticeship/Resources/Private/Partials/

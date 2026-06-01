@@ -1,0 +1,10 @@
+<html data-namespace-typo3-fluid="true" xmlns:f="http://typo3.org/ns/TYPO3/CMS/Fluid/ViewHelpers" xmlns:p="http://typo3.org/ns/In2code/Powermail/ViewHelpers">
+    <fieldset>
+        <f:if condition="{page.title}">
+            <legend>{page.title}</legend>
+        </f:if>
+        <f:for as="field" each="{page.fields}">
+            <f:render arguments="{_all}" partial="Form/Field/{p:String.Upper(string: field.type)}"/>
+        </f:for>
+    </fieldset>
+</html>

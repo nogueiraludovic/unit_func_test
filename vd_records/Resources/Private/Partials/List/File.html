@@ -1,0 +1,186 @@
+<html data-namespace-typo3-fluid="true" xmlns:f="http://typo3.org/ns/fluid/ViewHelpers" xmlns:vdf="http://typo3.org/ns/Vd/VdFrontend/ViewHelpers" xmlns:vdr="http://typo3.org/ns/Vd/VdRecords/ViewHelpers">
+    <f:section name="Apprenticeships">
+        <f:for as="record" each="{records}">
+            <f:variable name="category" value="{record.categoryid -> vdf:iterator.first()}"/>
+            <f:variable name="municipality" value="{record.vdmunicipalityid -> vdf:iterator.first()}"/>
+            <h3><f:link.typolink parameter="{record.link}">{record.title}</f:link.typolink></h3>
+            <f:if condition="{category} || {municipality}">
+                <dl class="row">
+                    <f:if condition="{category}">
+                        <dt class="col-md-4"><f:translate extensionName="VdRecords" id="category"/></dt>
+                        <dd class="col-md-8 mb-2"><f:link.typolink parameter="{category.link}">{category.title}</f:link.typolink></dd>
+                    </f:if>
+                    <f:if condition="{municipality}">
+                        <dt class="col-md-4"><f:translate extensionName="VdRecords" id="municipality"/></dt>
+                        <dd class="col-md-8 mb-2">{municipality.name_lower}</dd>
+                    </f:if>
+                </dl>
+            </f:if>
+        </f:for>
+    </f:section>
+    <f:section name="CarForms">
+        <f:for as="record" each="{records}">
+            <f:variable name="category" value="{record.categoryid -> vdf:iterator.first()}"/>
+            <h3><f:link.typolink parameter="{record.link}">{record.title}</f:link.typolink></h3>
+            <f:if condition="{category} || {record.no}">
+                <dl class="row">
+                    <f:if condition="{record.no}">
+                        <dt class="col-md-4"><f:translate extensionName="VdRecords" id="number"/></dt>
+                        <dd class="col-md-8 mb-2">{record.no}</dd>
+                    </f:if>
+                    <f:if condition="{category}">
+                        <dt class="col-md-4"></dt>
+                        <dd class="col-md-8 mb-2"><f:link.typolink parameter="{category.link}">{category.title}</f:link.typolink></dd>
+                    </f:if>
+                </dl>
+            </f:if>
+        </f:for>
+    </f:section>
+    <f:section name="CoursesList">
+        <f:for as="record" each="{records}">
+            <f:variable name="category" value="{record.categoryid2 -> vdf:iterator.first()}"/>
+            <h3><f:link.typolink parameter="{record.link}">{record.title}</f:link.typolink></h3>
+            <f:if condition="{category} || {record.description} || {record.keywords} || {record.link}">
+                <dl class="row">
+                    <f:if condition="{record.description}">
+                        <dt class="col-md-4"><f:translate extensionName="VdRecords" id="description"/></dt>
+                        <dd class="col-md-8 mb-2">{record.description -> f:format.raw()}</dd>
+                    </f:if>
+                    <f:if condition="{category}">
+                        <dt class="col-md-4"><f:translate extensionName="VdRecords" id="thematic"/></dt>
+                        <dd class="col-md-8 mb-2"><f:link.typolink parameter="{category.link}">{category.title}</f:link.typolink></dd>
+                    </f:if>
+                    <f:if condition="{record.link}">
+                        <dt class="col-md-4"><f:translate extensionName="VdRecords" id="link"/></dt>
+                        <dd class="col-md-8 mb-2"><f:link.typolink parameter="{record.link}">{record.link}</f:link.typolink></dd>
+                    </f:if>
+                    <f:if condition="{record.keywords}">
+                        <dt class="col-md-4"><f:translate extensionName="VdRecords" id="keywords"/></dt>
+                        <dd class="col-md-8 mb-2">{record.keywords}</dd>
+                    </f:if>
+                </dl>
+            </f:if>
+        </f:for>
+    </f:section>
+    <f:section name="EnergyForms">
+        <f:for as="record" each="{records}">
+            <f:variable name="category" value="{record.categoryid -> vdf:iterator.first()}"/>
+            <f:variable name="file" value="{record.filepath -> vdf:iterator.first()}"/>
+            <f:if condition="{file}">
+                <f:then>
+                    <h3><vdr:link.file file="{file}">{record.title}</vdr:link.file></h3>
+                </f:then>
+                <f:else>
+                    <h3>{record.title}</h3>
+                </f:else>
+            </f:if>
+            <f:if condition="{category} || {record.no}">
+                <dl class="row">
+                    <f:if condition="{record.no}">
+                        <dt class="col-md-4"><f:translate extensionName="VdRecords" id="number"/></dt>
+                        <dd class="col-md-8 mb-2">{record.no}</dd>
+                    </f:if>
+                    <f:if condition="{category}">
+                        <dt class="col-md-4"><f:translate extensionName="VdRecords" id="sector_concerned"/></dt>
+                        <dd class="col-md-8 mb-2">{category.title}</dd>
+                    </f:if>
+                </dl>
+            </f:if>
+        </f:for>
+    </f:section>
+    <f:section name="MailsList">
+        <f:for as="record" each="{records}">
+            <f:variable name="category" value="{record.categoryid -> vdf:iterator.first()}"/>
+            <h3>{record.title}</h3>
+            <f:if condition="{record.filepath}">
+                <ul class="h3 list-inline mt-1">
+                    <f:for as="file" each="{record.filepath}" iteration="iterator">
+                        <li class="list-inline-item">
+                            <f:if condition="{file}">
+                                <f:then>
+                                    <vdr:link.file file="{file}">doc {iterator.cycle}</vdr:link.file>
+                                </f:then>
+                                <f:else>
+                                    doc {iterator.cycle}
+                                </f:else>
+                            </f:if>
+                        </li>
+                    </f:for>
+                </ul>
+            </f:if>
+            <f:if condition="{category} || {record.datedocument} || {record.description}">
+                <dl class="row">
+                    <f:if condition="{record.datedocument}">
+                        <dt class="col-md-4"><f:translate extensionName="VdRecords" id="dated"/></dt>
+                        <dd class="col-md-8 mb-2">{record.datedocument -> f:format.date(format: 'd.m.Y')}</dd>
+                    </f:if>
+                    <f:if condition="{record.description}">
+                        <dt class="col-md-4"><f:translate extensionName="VdRecords" id="description"/></dt>
+                        <dd class="col-md-8 mb-2">{record.description}</dd>
+                    </f:if>
+                    <f:if condition="{category}">
+                        <dt class="col-md-4"><f:translate extensionName="VdRecords" id="service"/></dt>
+                        <dd class="col-md-8 mb-2">{category.title}</dd>
+                    </f:if>
+                </dl>
+            </f:if>
+        </f:for>
+    </f:section>
+    <f:section name="NavigationForms">
+        <f:for as="record" each="{records}">
+            <f:variable name="category" value="{record.categoryid -> vdf:iterator.first()}"/>
+            <h3><f:link.typolink parameter="{record.link}">{record.title}</f:link.typolink></h3>
+            <f:if condition="{category} || {record.no}">
+                <dl class="row">
+                    <f:if condition="{record.no}">
+                        <dt class="col-md-4"><f:translate extensionName="VdRecords" id="number"/></dt>
+                        <dd class="col-md-8 mb-2">{record.no}</dd>
+                    </f:if>
+                    <f:if condition="{category}">
+                        <dt class="col-md-4"><f:translate extensionName="VdRecords" id="sector_concerned"/></dt>
+                        <dd class="col-md-8 mb-2"><f:link.typolink parameter="{category.link}">{category.title}</f:link.typolink></dd>
+                    </f:if>
+                </dl>
+            </f:if>
+        </f:for>
+    </f:section>
+    <f:section name="RegionalProjects">
+        <f:for as="record" each="{records}">
+            <h3><f:link.typolink parameter="{record.link}">{record.title}</f:link.typolink></h3>
+            <f:if condition="{record.datedocument} || {record.description}">
+                <dl class="row">
+                    <f:if condition="{record.description}">
+                        <dt class="col-md-4"><f:translate extensionName="VdRecords" id="project_sponsor"/></dt>
+                        <dd class="col-md-8 mb-2">{record.description -> f:format.nl2br()}</dd>
+                    </f:if>
+                    <f:if condition="{record.datedocument}">
+                        <dt class="col-md-4"><f:translate extensionName="VdRecords" id="decision_year"/></dt>
+                        <dd class="col-md-8 mb-2">{record.datedocument -> f:format.date(format: 'Y')}</dd>
+                    </f:if>
+                </dl>
+            </f:if>
+        </f:for>
+    </f:section>
+    <f:section name="SlotsList">
+        <f:for as="record" each="{records}">
+            <f:variable name="category" value="{record.categoryid2 -> vdf:iterator.first()}"/>
+            <h3><f:link.typolink parameter="{record.link}">{record.title}</f:link.typolink> {f:if(condition: category, then: ' - <span>{category.title}</span>')}</h3>
+            <f:if condition="{category} || {record.description} || {record.link}">
+                <dl class="row">
+                    <f:if condition="{record.description}">
+                        <dt class="visually-hidden"><f:translate extensionName="VdRecords" id="description"/></dt>
+                        <dd class="mb-2">{record.description -> f:format.raw()}</dd>
+                    </f:if>
+                    <f:if condition="{record.link}">
+                        <dt class="visually-hidden"><f:translate extensionName="VdRecords" id="link"/></dt>
+                        <dd class="mb-2">
+                            <f:link.typolink class="btn btn-download btn-secondary" parameter="{record.link}">
+                                <f:translate extensionName="VdRecords" id="download_presentation"/>
+                            </f:link.typolink>
+                        </dd>
+                    </f:if>
+                </dl>
+            </f:if>
+        </f:for>
+    </f:section>
+</html>

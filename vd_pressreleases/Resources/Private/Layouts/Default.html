@@ -1,0 +1,26 @@
+<html data-namespace-typo3-fluid="true" xmlns:f="http://typo3.org/ns/fluid/ViewHelpers" xmlns:n="http://typo3.org/ns/GeorgRinger/News/ViewHelpers">
+    <f:if condition="{pressRelease}">
+        <f:if condition="{pressRelease.summary}">
+            <f:then>
+                <f:variable name="ogDescription" value="{pressRelease.summary -> f:format.stripTags() -> f:format.crop(maxCharacters: settings.opengraph.crop.size)}"/>
+            </f:then>
+            <f:else>
+                <f:variable name="ogDescription" value="{pressRelease.bodyText -> f:format.stripTags() -> f:format.crop(maxCharacters: settings.opengraph.crop.size)}"/>
+            </f:else>
+        </f:if>
+        <n:metaTag content="{ogDescription}" name="description"/>
+        <f:if condition="{pressRelease.keywords}">
+            <n:metaTag content="{pressRelease.keywords}" name="keywords"/>
+        </f:if>
+        <n:metaTag content="{ogDescription}" property="og:description"/>
+        <n:metaTag content="{settings.opengraph.site_name}" property="og:site_name"/>
+        <n:metaTag content="{settings.opengraph.type}" property="og:type"/>
+        <n:metaTag content="" property="og:url" useCurrentDomain="1"/>
+        <f:if condition="{settings.opengraph.twitter.site}">
+            <n:metaTag content="{settings.opengraph.twitter.card}" name="twitter:card"/>
+            <n:metaTag content="{settings.opengraph.twitter.creator}" name="twitter:creator"/>
+            <n:metaTag content="{settings.opengraph.twitter.site}" name="twitter:site"/>
+        </f:if>
+        <f:render section="Content"/>
+    </f:if>
+</html>

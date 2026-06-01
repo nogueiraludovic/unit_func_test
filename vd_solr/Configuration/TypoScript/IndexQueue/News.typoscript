@@ -1,0 +1,273 @@
+plugin.tx_solr.index.queue {
+  news = 1
+  news {
+    additionalWhereClause = pid=28405
+    fields {
+      abstract = teaser
+      alias_intS = TEXT
+      alias_intS.field = alias
+      attachments.fields = related_files
+      author = author
+      authorEmail_stringS = author_email
+      category_intM = SOLR_RELATION
+      category_intM {
+        foreignLabelField = uid
+        localField = categories
+        multiValue = 1
+      }
+      category_stringM = SOLR_RELATION
+      category_stringM {
+        localField = categories
+        multiValue = 1
+      }
+      content = SOLR_CONTENT
+      content {
+        cObject = TEXT
+        cObject {
+          field = bodytext
+          noTrimWrap = || |
+        }
+      }
+      datetime_dateS = datetime
+      keywords = SOLR_MULTIVALUE
+      keywords.field = keywords
+      subtype_intS = TEXT
+      subtype_intS.field = type
+      tags_stringM < .category_stringM
+      tags_stringM.localField = tags
+      title = title
+      url = CASE
+      url {
+        default = TEXT
+        default.typolink {
+          additionalParams = &tx_vdnews_pi1[action]=detail&tx_vdnews_pi1[controller]=News&tx_vdnews_pi1[news]={field:uid}
+          additionalParams.insertData = 1
+          parameter = {$newsDefaultDetailPageUid}
+          returnLast = url
+          useCacheHash = 1
+        }
+        1 = TEXT
+        1 {
+          if.isTrue.field = internalurl
+          typolink {
+            parameter.field = internalurl
+            returnLast = url
+            useCacheHash = 1
+          }
+        }
+        2 = TEXT
+        2 {
+          field = externalurl
+          if.isTrue.field = externalurl
+        }
+        3 < .1
+        3 {
+          if.isTrue.field = aliasurl
+          typolink.parameter.field = aliasurl
+        }
+        key.field = type
+      }
+    }
+    table = tx_news_domain_model_news
+  }
+  manifestations_acv < .news
+  manifestations_acv.additionalWhereClause = pid=2004779
+  news_actualite_typo3 < .news
+  news_actualite_typo3.additionalWhereClause = pid=42271
+  news_acv < .news
+  news_acv.additionalWhereClause = pid=55689
+  news_bac < .news
+  news_bac.additionalWhereClause = pid=2000860
+  news_bci < .news
+  news_bci.additionalWhereClause = pid=50013
+  news_befh < .news
+  news_befh.additionalWhereClause = pid=37575
+  news_catastrophe < .news
+  news_catastrophe.additionalWhereClause = pid=66014
+  news_civess < .news
+  news_civess.additionalWhereClause = pid=2004955
+  news_conseil_etat < .news
+  news_conseil_etat.additionalWhereClause = pid=2004765
+  news_cour_des_comptes < .news
+  news_cour_des_comptes.additionalWhereClause = pid=2005155
+  news_deis < .news
+  news_deis.additionalWhereClause = pid=2004960
+  news_developpement_durable < .news
+  news_developpement_durable.additionalWhereClause = pid=42467
+  news_developpement_regional < .news
+  news_developpement_regional.additionalWhereClause = pid=41104
+  news_dfire < .news
+  news_dfire.additionalWhereClause = pid=2005175
+  news_dfjc < .news
+  news_dfjc.additionalWhereClause = pid=2004830
+  news_dgav_agrilogie < .news
+  news_dgav_agrilogie.additionalWhereClause = pid=60487
+  news_dge < .news
+  news_dge.additionalWhereClause = pid=2004810
+  news_dge-diren < .news
+  news_dge-diren.additionalWhereClause = pid=2006036
+  news_dge-direv < .news
+  news_dge-direv.additionalWhereClause = pid=2006039
+  news_dge-dirna < .news
+  news_dge-dirna.additionalWhereClause = pid=2006043
+  news_dgeo < .news
+  news_dgeo.additionalWhereClause = pid=2004845
+  news_dgep < .news
+  news_dgep.additionalWhereClause = pid=2004850
+  news_dges < .news
+  news_dges.additionalWhereClause = pid=2004855
+  news_dgf < .news
+  news_dgf.additionalWhereClause = pid=2005060
+  news_dgip < .news
+  news_dgip.additionalWhereClause = pid=2005080
+  news_dgmr < .news
+  news_dgmr.additionalWhereClause = pid=2005035
+  news_dgs < .news
+  news_dgs.additionalWhereClause = pid=48632
+  news_dgtl < .news
+  news_dgtl.additionalWhereClause = pid=43570
+  news_dirh < .news
+  news_dirh.additionalWhereClause = pid=2005000
+  news_dis < .news
+  news_dis.additionalWhereClause = pid=2004880
+  news_dsas < .news
+  news_dsas.additionalWhereClause = pid=2004930
+  news_dsi < .news
+  news_dsi.additionalWhereClause = pid=2005040
+  news_dte < .news
+  news_dte.additionalWhereClause = pid=2004800
+  news_grands_carnivores < .news
+  news_grands_carnivores.additionalWhereClause = pid=2025161
+  news_grand_conseil < .news
+  news_grand_conseil.additionalWhereClause = pid=2004760
+  news_info_117 < .news
+  news_info_117.additionalWhereClause = pid=50001
+  news_info_monde_penitenciaire < .news
+  news_info_monde_penitenciaire.additionalWhereClause = pid=45485
+  news_marches_publics < .news
+  news_marches_publics.additionalWhereClause = pid=43072
+  news_oaje < .news
+  news_oaje.additionalWhereClause = pid=2005045
+  news_octp < .news
+  news_octp.additionalWhereClause = pid=2004895
+  news_office_cantonal_du_registre_du_commerce < .news
+  news_office_cantonal_du_registre_du_commerce.additionalWhereClause = pid=41313
+  news_oit < .news
+  news_oit.additionalWhereClause = pid=49367
+  news_ojv < .news
+  news_ojv.additionalWhereClause = pid=2005085
+  news_ona < .news
+  news_ona.additionalWhereClause = pid=2025493
+  news_pocama < .news
+  news_pocama.additionalWhereClause = pid=48344
+  news_polcant_comm_press < .news
+  news_polcant_comm_press.additionalWhereClause = pid=26095
+  news_polcant_communiques_de_presse < .news
+  news_polcant_communiques_de_presse.additionalWhereClause = pid=26095
+  news_protection_des_donnees_et_information < .news
+  news_protection_des_donnees_et_information.additionalWhereClause = pid=2005190
+  news_registre_du_commerce < .news
+  news_registre_du_commerce.additionalWhereClause = pid=41313
+  news_san < .news
+  news_san.additionalWhereClause = pid=2004815
+  news_scl < .news
+  news_scl.additionalWhereClause = pid=2004910
+  news_scolarite_obligatoire < .news
+  news_scolarite_obligatoire.additionalWhereClause = pid=52388
+  news_sdt < .news
+  news_sdt.additionalWhereClause = pid=2004825
+  news_seps < .news
+  news_seps.additionalWhereClause = pid=2004990
+  news_serac < .news
+  news_serac.additionalWhereClause = pid=2004870
+  news_sg_dsas < .news
+  news_sg_dsas.additionalWhereClause = pid=2004935
+  news_spei < .news
+  news_spei.additionalWhereClause = pid=41104
+  news_spen < .news
+  news_spen.additionalWhereClause = pid=45485
+  news_spev < .news
+  news_spev.additionalWhereClause = pid=2005050
+  news_spj < .news
+  news_spj.additionalWhereClause = pid=2004865
+  news_spj_colloques < .news
+  news_spj_colloques.additionalWhereClause = pid=2004864
+  news_spop < .news
+  news_spop.additionalWhereClause = pid=2004995
+  news_sscm < .news
+  news_sscm.additionalWhereClause = pid=2004925
+  news_statistique_vaud < .news
+  news_statistique_vaud.additionalWhereClause = pid=2005070
+  news_violence_domestique < .news
+  news_violence_domestique.additionalWhereClause = pid=53525
+  project_befh < .news
+  project_befh.additionalWhereClause = pid=2004804
+  project_camac < .news
+  project_camac.additionalWhereClause = pid=2005014
+  project_civess < .news
+  project_civess.additionalWhereClause = pid=2004954
+  project_conseil_etat < .news
+  project_conseil_etat.additionalWhereClause = pid=2004764
+  project_cour_des_comptes < .news
+  project_cour_des_comptes.additionalWhereClause = pid=2005154
+  project_deis < .news
+  project_deis.additionalWhereClause = pid=2004959
+  project_dfire < .news
+  project_dfire.additionalWhereClause = pid=2005079
+  project_dfjc < .news
+  project_dfjc.additionalWhereClause = pid=2004829
+  project_dgcs < .news
+  project_dgcs.additionalWhereClause = pid=2004939
+  project_dge < .news
+  project_dge.additionalWhereClause = pid=2004809
+  project_dge-direv < .news
+  project_dge-direv.additionalWhereClause = pid=2006039
+  project_dge-dirna < .news
+  project_dge-dirna.additionalWhereClause = pid=2006043
+  project_dgeo < .news
+  project_dgeo.additionalWhereClause = pid=2004844
+  project_dgep < .news
+  project_dgep.additionalWhereClause = pid=2004849
+  project_dgf < .news
+  project_dgf.additionalWhereClause = pid=2005059
+  project_dgmr < .news
+  project_dgmr.additionalWhereClause = pid=2005034
+  project_dgs < .news
+  project_dgs.additionalWhereClause = pid=2004949
+  project_diren < .news
+  project_diren.additionalWhereClause = pid=2006035
+  project_dis < .news
+  project_dis.additionalWhereClause = pid=2004879
+  project_dsas < .news
+  project_dsas.additionalWhereClause = pid=2004929
+  project_dsi < .news
+  project_dsi.additionalWhereClause = pid=2005039
+  project_dte < .news
+  project_dte.additionalWhereClause = pid=2004799
+  project_grand_conseil < .news
+  project_grand_conseil.additionalWhereClause = pid=2004759
+  project_oit < .news
+  project_oit.additionalWhereClause = pid=2005019
+  project_registre_du_commerce < .news
+  project_registre_du_commerce.additionalWhereClause = pid=2005139
+  project_scl < .news
+  project_scl.additionalWhereClause = pid=2004909
+  project_sdt < .news
+  project_sdt.additionalWhereClause = pid=2004824
+  project_seps < .news
+  project_seps.additionalWhereClause = pid=2004989
+  project_serac < .news
+  project_serac.additionalWhereClause = pid=2004869
+  project_sg_dsas < .news
+  project_sg_dsas.additionalWhereClause = pid=2004934
+  project_spei < .news
+  project_spei.additionalWhereClause = pid=2004969
+  project_spen < .news
+  project_spen.additionalWhereClause = pid=2004919
+  project_spop < .news
+  project_spop.additionalWhereClause = pid=2004994
+  project_sscm < .news
+  project_sscm.additionalWhereClause = pid=2004924
+  project_statistique_vaud < .news
+  project_statistique_vaud.additionalWhereClause = pid=2005069
+}

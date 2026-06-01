@@ -1,0 +1,9 @@
+mod.wizards.newContentElement.wizardItems.plugins.elements.vdpressreleases_pressrelease {
+  description = LLL:EXT:vd_pressreleases/Resources/Private/Language/locallang_db_new_content_el.xlf:plugins_vdpressreleases_pressrelease_description
+  iconIdentifier = content-plugin
+  title = LLL:EXT:vd_pressreleases/Resources/Private/Language/locallang_db_new_content_el.xlf:pluginsvdpressreleases_pressrelease_title
+  tt_content_defValues {
+    CType = list
+    list_type = vdpressreleases_pressrelease
+  }
+}

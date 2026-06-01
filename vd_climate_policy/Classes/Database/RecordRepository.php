@@ -22,22 +22,6 @@ class RecordRepository
         $this->connection = GeneralUtility::makeInstance(ConnectionPool::class);
     }
 
-    public function fetchSectorColors(): array
-    {
-        $queryBuilder = $this->connection->getQueryBuilderForTable('tx_vdclimatepolicy_domain_model_pecc');
-
-        $statement = $queryBuilder
-            ->select('color', 'uid')
-            ->from('tx_vdclimatepolicy_domain_model_pecc')
-            ->execute();
-
-        while ($rows = $statement->fetchAssociative()) {
-            $records[] = $rows;
-        }
-
-        return $records ?? [];
-    }
-
     public function fetchSelectItemsByParentUids(array $arguments): array
     {
         if (isset($arguments['table']) === false) {

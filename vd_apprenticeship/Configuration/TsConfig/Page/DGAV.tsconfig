@@ -1,0 +1,22 @@
+mod.web_list {
+  allowedNewTables = tx_vdapprenticeship_apprenticeship,tx_vdapprenticeship_periods,tx_vdapprenticeship_profession,tx_vdapprenticeship_region,tx_vdapprenticeship_type
+  hideTables = tt_address
+}
+
+##################################################
+
+TCEFORM.tt_address {
+  birthday.disabled = 1
+  country.disabled = 1
+  description.disabled = 1
+  endtime.disabled = 1
+  fax.disabled = 1
+  fe_group.disabled = 1
+  gender.disabled = 1
+  hidden.disabled = 1
+  name.disabled = 1
+  slug.disabled = 1
+  starttime.disabled = 1
+  title.disabled = 1
+  www.disabled = 1
+}

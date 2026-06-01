@@ -1,0 +1,5 @@
+TCEFORM.tx_powermail_domain_model_form {
+  css.disabled = 1
+  note.disabled = 1
+  sys_language_uid.disabled = 1
+}

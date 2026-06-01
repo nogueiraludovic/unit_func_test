@@ -1,0 +1,69 @@
+<html data-namespace-typo3-fluid="true" xmlns:f="http://typo3.org/ns/TYPO3/Fluid/ViewHelpers" xmlns:s="http://typo3.org/ns/ApacheSolrForTypo3/Solr/ViewHelpers/">
+    <f:render arguments="{additionalFilters: additionalFilters, pluginNamespace: pluginNamespace, regular: 1, search: search}" partial="Search/Form"/>
+    <f:if condition="{resultSet.hasSearched}">
+        <f:if condition="{resultSet.usedSearchRequest.contextTypoScriptConfiguration.searchFaceting}">
+            <s:facet.area.group facets="{resultSet.facets.available}">
+                <nav class="mb-5">
+                    <h2 class="h5" id="filter-results-title">Filtrer les résultats</h2>
+                    <ul class="nav nav-pills">
+                        <li class="nav-item">
+                            <f:link.page addQueryString="1" argumentsToBeExcludedFromQueryString="{0: 'tx_solr[filter]'}" class="{f:if(condition: resultSet.facets.used, else: 'active ')}nav-link" id="all-facets-link" pageUid="{settings.searchPageUid}">
+                                Tout
+                            </f:link.page>
+                        </li>
+                        <f:for as="facet" each="{areaFacets}">
+                            <f:for as="option" each="{facet.options}" iteration="iterator">
+                                <li class="nav-item">
+                                    <a class="{f:if(condition: option.selected, then: 'active ')}nav-link" href="{s:uri.facet.setFacetItem(facet: facet, facetItem: option)}" id="facet-link-{iterator.index}">
+                                        {option.label}
+                                    </a>
+                                </li>
+                            </f:for>
+                        </f:for>
+                    </ul>
+                </nav>
+            </s:facet.area.group>
+        </f:if>
+    </f:if>
+    <f:if condition="{arguments.q}">
+        <f:then>
+            <f:if condition="{resultSet.allResultCount} > 1">
+                <f:then>
+                    <h2 id="result-count-title">{resultSet.allResultCount} résultats pour "{arguments.q}"</h2>
+                </f:then>
+                <f:else if="{resultSet.allResultCount} == 1">
+                    <h2 id="result-count-title">{resultSet.allResultCount} résultat pour "{arguments.q}"</h2>
+                </f:else>
+                <f:else>
+                    <h2 id="result-count-title">Aucun résultat pour "{arguments.q}"</h2>
+                </f:else>
+            </f:if>
+        </f:then>
+        <f:else if="{resultSet.allResultCount} > 1">
+            <h2 id="result-count-title">{resultSet.allResultCount} résultats</h2>
+        </f:else>
+        <f:else if="{resultSet.allResultCount} == 1">
+            <h2 id="result-count-title">{resultSet.allResultCount} résultat</h2>
+        </f:else>
+        <f:else>
+            <h2 id="result-count-title">Aucun résultat</h2>
+        </f:else>
+    </f:if>
+    <f:if condition="{resultSet.hasSearched}">
+        <s:widget.resultPaginate resultSet="{resultSet}">
+            <ol class="list-unstyled" start="{pagination.resultCountStart}">
+                <f:for as="document" each="{documents}" iteration="iterator">
+                    <li class="results-entry">
+                        <h3>
+                            <a href="{s:uri.result.addSearchWordList(searchWords: resultSet.usedQuery.query, url: document.url)}" id="document-link-{iterator.index}">
+                                {s:document.highlightResult(document: document, fieldName: 'title', resultSet: resultSet)}
+                            </a>
+                        </h3>
+                        <strong>{document.url}</strong>
+                        <p>{s:document.highlightResult(document: document, fieldName: 'content', resultSet: resultSet)}</p>
+                    </li>
+                </f:for>
+            </ol>
+        </s:widget.resultPaginate>
+    </f:if>
+</html>

@@ -1,0 +1,10 @@
+<html data-namespace-typo3-fluid="true" xmlns:f="http://typo3.org/ns/TYPO3/CMS/Fluid/ViewHelpers">
+    <figure class="video">
+        <div class="ratio ratio-16x9 video-embed">
+            <f:render arguments="{dimensions: dimensions, file: file, settings: settings}" partial="Media/Rendering/Video"/>
+        </div>
+        <f:if condition="{file.description}">
+            <figcaption class="video-caption">{file.description}</figcaption>
+        </f:if>
+    </figure>
+</html>

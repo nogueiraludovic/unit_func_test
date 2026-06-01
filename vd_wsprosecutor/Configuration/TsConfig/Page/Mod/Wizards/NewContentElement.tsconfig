@@ -1,0 +1,17 @@
+mod.wizards.newContentElement.wizardItems.plugins.elements {
+  vdwsprosecutor_officehourcurrent {
+    description = LLL:EXT:vd_wsprosecutor/Resources/Private/Language/locallang_db_new_content_el.xlf:plugins_vdwsprosecutor_officehourcurrent_description
+    iconIdentifier = content-plugin
+    title = LLL:EXT:vd_wsprosecutor/Resources/Private/Language/locallang_db_new_content_el.xlf:plugins_vdwsprosecutor_officehourcurrent_title
+    tt_content_defValues {
+      CType = list
+      list_type = vdwsprosecutor_officehourcurrent
+    }
+  }
+  vdwsprosecutor_officehourlist < .vdwsprosecutor_officehourcurrent
+  vdwsprosecutor_officehourlist {
+    description = LLL:EXT:vd_wsprosecutor/Resources/Private/Language/locallang_db_new_content_el.xlf:plugins_vdwsprosecutor_officehourlist_description
+    title = LLL:EXT:vd_wsprosecutor/Resources/Private/Language/locallang_db_new_content_el.xlf:plugins_vdwsprosecutor_officehourlist_title
+    tt_content_defValues.list_type = vdwsprosecutor_officehourlist
+  }
+}

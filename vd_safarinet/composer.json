@@ -1,0 +1,39 @@
+{
+	"name": "vd/vd-safarinet",
+	"description": "Manage \"Conseil d'État\" and \"Grand Conseil\" meetings and information.",
+	"license": "GPL-3.0-or-later",
+	"type": "typo3-cms-extension",
+	"version": "10.4.0",
+	"authors": [
+		{
+			"name": "État de Vaud - DGNSI",
+			"email": "support.typo3@vd.ch",
+			"homepage": "https://www.vd.ch",
+			"role": "Developer"
+		}
+	],
+	"require": {
+		"php": "^7.4",
+		"ext-curl": "*",
+		"ext-json": "*",
+		"ext-libxml": "*",
+		"ext-simplexml": "*",
+		"typo3/cms-core": "^10.4",
+		"typo3/cms-seo": "^10.4",
+		"vd/vd-core": "^10.4",
+		"vd/vd-solr": "@dev"
+	},
+	"suggest": {
+		"typo3/cms-seo": "SEO features for TYPO3."
+	},
+	"autoload": {
+		"psr-4": {
+			"Vd\\VdSafarinet\\": "Classes/"
+		}
+	},
+	"extra": {
+		"typo3/cms": {
+			"extension-key": "vd_safarinet"
+		}
+	}
+}

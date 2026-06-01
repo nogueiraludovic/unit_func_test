@@ -1,0 +1,48 @@
+<T3DataStructure>
+    <sheets>
+        <general>
+            <ROOT>
+                <el>
+                    <accordionDisplay>
+                        <TCEforms>
+                            <config>
+                                <default>1</default>
+                                <disableNoMatchingValueElement>1</disableNoMatchingValueElement>
+                                <items>
+                                    <numIndex index="0">
+                                        <numIndex index="0">LLL:EXT:vd_container/Resources/Private/Language/locallang_be.xlf:accordion_display.I.0</numIndex>
+                                        <numIndex index="1">0</numIndex>
+                                    </numIndex>
+                                    <numIndex index="1">
+                                        <numIndex index="0">LLL:EXT:vd_container/Resources/Private/Language/locallang_be.xlf:accordion_display.I.1</numIndex>
+                                        <numIndex index="1">1</numIndex>
+                                    </numIndex>
+                                    <numIndex index="2">
+                                        <numIndex index="0">LLL:EXT:vd_container/Resources/Private/Language/locallang_be.xlf:accordion_display.I.2</numIndex>
+                                        <numIndex index="1">2</numIndex>
+                                    </numIndex>
+                                </items>
+                                <renderType>selectSingle</renderType>
+                                <type>select</type>
+                            </config>
+                            <label>LLL:EXT:vd_container/Resources/Private/Language/locallang_be.xlf:accordion_display</label>
+                        </TCEforms>
+                    </accordionDisplay>
+                    <accordionKeep>
+                        <TCEforms>
+                            <config>
+                                <default>1</default>
+                                <renderType>checkboxToggle</renderType>
+                                <type>check</type>
+                            </config>
+                            <label>LLL:EXT:vd_container/Resources/Private/Language/locallang_be.xlf:accordion_keep</label>
+                        </TCEforms>
+                    </accordionKeep>
+                </el>
+                <TCEforms>
+                    <sheetTitle>LLL:EXT:core/Resources/Private/Language/Form/locallang_tabs.xlf:general</sheetTitle>
+                </TCEforms>
+            </ROOT>
+        </general>
+    </sheets>
+</T3DataStructure>

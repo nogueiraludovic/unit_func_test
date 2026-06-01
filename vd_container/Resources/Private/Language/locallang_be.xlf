@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xliff version="1.2" xmlns="urn:oasis:names:tc:xliff:document:1.2">
+	<file datatype="plaintext" original="EXT:vd_container/Resources/Private/Language/locallang_be.xlf" source-language="en">
+		<header/>
+		<body>
+			<trans-unit id="accordion" resname="accordion">
+				<source>Accordion</source>
+			</trans-unit>
+			<trans-unit id="accordion_display" resname="accordion_display">
+				<source>Accordion display</source>
+			</trans-unit>
+			<trans-unit id="accordion_display.I.0" resname="accordion_display.I.0">
+				<source>Open the first item (per default)</source>
+			</trans-unit>
+			<trans-unit id="accordion_display.I.1" resname="accordion_display.I.1">
+				<source>Open all items</source>
+			</trans-unit>
+			<trans-unit id="accordion_display.I.2" resname="accordion_display.I.2">
+				<source>Close all items</source>
+			</trans-unit>
+			<trans-unit id="accordion_keep" resname="accordion_keep">
+				<source>Keep the opened/closed state</source>
+			</trans-unit>
+			<trans-unit id="background_color" resname="background_color">
+				<source>Background Color</source>
+			</trans-unit>
+			<trans-unit id="background_color.I.dark" resname="background_color.I.dark">
+				<source>Dark</source>
+			</trans-unit>
+			<trans-unit id="background_color.I.light" resname="background_color.I.light">
+				<source>Light</source>
+			</trans-unit>
+			<trans-unit id="center" resname="center">
+				<source>Center</source>
+			</trans-unit>
+			<trans-unit id="center_left" resname="center_left">
+				<source>Center-left</source>
+			</trans-unit>
+			<trans-unit id="center_right" resname="center_right">
+				<source>Center-right</source>
+			</trans-unit>
+			<trans-unit id="four_columns_same" resname="four_columns_same">
+				<source>4 columns, same gap</source>
+			</trans-unit>
+			<trans-unit id="highlight" resname="highlight">
+				<source>Highlight</source>
+			</trans-unit>
+			<trans-unit id="left" resname="left">
+				<source>Left</source>
+			</trans-unit>
+			<trans-unit id="main" resname="main">
+				<source>Main</source>
+			</trans-unit>
+			<trans-unit id="one_column" resname="one_column">
+				<source>1 column</source>
+			</trans-unit>
+			<trans-unit id="right" resname="right">
+				<source>Right</source>
+			</trans-unit>
+			<trans-unit id="section_background_color" resname="section_background_color">
+				<source>Section (with background color)</source>
+			</trans-unit>
+			<trans-unit id="tabs" resname="tabs">
+				<source>Tabs</source>
+			</trans-unit>
+			<trans-unit id="three_columns_same" resname="three_columns_same">
+				<source>3 columns, same gap</source>
+			</trans-unit>
+			<trans-unit id="two_columns_left" resname="two_columns_left">
+				<source>2 columns, left gap</source>
+			</trans-unit>
+			<trans-unit id="two_columns_right" resname="two_columns_right">
+				<source>2 columns, right gap</source>
+			</trans-unit>
+			<trans-unit id="two_columns_same" resname="two_columns_same">
+				<source>2 columns, same gap</source>
+			</trans-unit>
+		</body>
+	</file>
+</xliff>

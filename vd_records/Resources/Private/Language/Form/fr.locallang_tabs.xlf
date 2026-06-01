@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xliff version="1.2" xmlns="urn:oasis:names:tc:xliff:document:1.2">
+	<file datatype="plaintext" original="EXT:vd_records/Resources/Private/Language/Form/locallang_tabs.xlf" source-language="en" target-language="fr">
+		<header/>
+		<body>
+			<trans-unit id="agenda_events" resname="agenda_events">
+				<source>Agenda / Events</source>
+				<target state="translated">Agenda / Événements</target>
+			</trans-unit>
+			<trans-unit id="other" resname="other">
+				<source>Other</source>
+				<target state="translated">Autres</target>
+			</trans-unit>
+			<trans-unit id="professions" resname="professions">
+				<source>Professions</source>
+				<target state="translated">Professions</target>
+			</trans-unit>
+		</body>
+	</file>
+</xliff>

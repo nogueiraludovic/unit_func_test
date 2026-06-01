@@ -1,0 +1,10 @@
+<html data-namespace-typo3-fluid="true" xmlns:f="http://typo3.org/ns/TYPO3/CMS/Fluid/ViewHelpers">
+    <f:if condition="{numberOfRecords} == 1">
+        <f:then>
+            <p><f:format.raw><f:translate id="one_result_found"/></f:format.raw></p>
+        </f:then>
+        <f:else if="{numberOfRecords} > 0}">
+            <p><f:format.raw><f:translate arguments="{0: numberOfRecords}" id="results_found"/></f:format.raw></p>
+        </f:else>
+    </f:if>
+</html>

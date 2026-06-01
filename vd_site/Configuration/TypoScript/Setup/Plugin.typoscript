@@ -1,0 +1,106 @@
+plugin {
+  tx_min {
+    assetCollector {
+      compressCss = 0
+      compressInlineCss = 0
+      compressInlineJs = 0
+      compressJs = 0
+    }
+    tinysource.protectCode.30 = /(<script.*?>.*?<\/script>)/is
+  }
+  tx_plainfaq_pi1.settings.orderField = sorting
+  tx_seo.config {
+    xmlSitemap.sitemaps {
+      culture {
+        config {
+          additionalWhere = {$plugin.tx_seo.settings.xmlSitemap.sitemaps.pages.additionalWhere}
+          excludedDoktypes = {$plugin.tx_seo.settings.xmlSitemap.sitemaps.pages.excludedDoktypes}
+          rootPage = 1003061
+        }
+        provider = TYPO3\CMS\Seo\XmlSitemap\PagesXmlSitemapDataProvider
+      }
+      communiques {
+        config {
+          lastModifiedField = tstamp
+          pid = 2000107
+          recursive = 0
+          sortField = date_time
+          table = tx_vdpressreleases_domain_model_pressrelease
+          url {
+            fieldToParameterMap.uid = tx_vdpressreleases_pressrelease[pressRelease]
+            pageId = 2000109
+            useCacheHash = 1
+          }
+        }
+        provider = TYPO3\CMS\Seo\XmlSitemap\RecordsXmlSitemapDataProvider
+      }
+      conseilEtat < .communiques
+      conseilEtat.config {
+        additionalWhere = type NOT IN(1,2)
+        changeFreqField = sitemap_changefreq
+        pid = 2004765
+        priorityField = sitemap_priority
+        sortField = sorting
+        table = tx_news_domain_model_news
+        url {
+          additionalGetParameters.tx_vdnews_pi1 {
+            action = detail
+            controller = News
+          }
+          fieldToParameterMap.uid = tx_vdnews_pi1[news]
+          pageId = {$newsDefaultDetailPageUid}
+        }
+      }
+      grandConseil < .conseilEtat
+      grandConseil.config.pid = 2004760
+      economie < .culture
+      economie.config.rootPage = 1003063
+      environnement < .culture
+      environnement.config.rootPage = 1003058
+      etat < .culture
+      etat.config.rootPage = 1003057
+      formation < .culture
+      formation.config.rootPage = 1003064
+      justice < .culture
+      justice.config.rootPage = 1000035
+      mobilite < .culture
+      mobilite.config.rootPage = 1003059
+      news < .conseilEtat
+      news.config.pid = 28405
+      population < .culture
+      population.config.rootPage = 1003065
+      prestations < .communiques
+      prestations.config {
+        pid = 2000185
+        sortField = tstamp
+        table = tx_vdprestations_domain_model_prestation
+        url {
+          additionalGetParameters.tx_vdprestations_pi4 {
+            action = show
+            controller = Prestation
+          }
+          fieldToParameterMap.uid = tx_vdprestations_pi4[prestation]
+          pageId = 2000180
+        }
+      }
+      sante < .culture
+      sante.config.rootPage = 1000014
+      securite < .culture
+      securite.config.rootPage = 1003060
+      soutien < .culture
+      soutien.config.rootPage = 1047979
+      territoires < .culture
+      territoires.config.rootPage = 1003205
+      themes < .culture
+      themes.config.rootPage = 1002722
+    }
+    xslFile = EXT:vd_site/Resources/Public/Css/Sitemap.xsl
+  }
+  tx_vdsqlicalculetteaci_pi1.templateFolder = Tmpl17/
+}
+
+##################################################
+
+[applicationContext matches '/^Development/']
+  plugin.tx_min.tinysource.enable = 0
+[end]

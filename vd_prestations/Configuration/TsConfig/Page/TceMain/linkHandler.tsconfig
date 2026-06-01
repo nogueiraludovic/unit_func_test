@@ -1,0 +1,9 @@
+TCEMAIN.linkHandler.tx_vdprestations {
+  configuration {
+    pageTreeMountPoints = 2000185
+    table = tx_vdprestations_domain_model_prestation
+  }
+  handler = TYPO3\CMS\Recordlist\LinkHandler\RecordLinkHandler
+  label = LLL:EXT:vd_prestations/Resources/Private/Language/locallang_db.xlf:prestations
+  scanAfter = page
+}

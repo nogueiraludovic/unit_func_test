@@ -1,0 +1,21 @@
+---
+routeEnhancers:
+  PressReleases:
+    aspects:
+      title:
+        routeFieldName: path_segment
+        tableName: tx_vdpressreleases_domain_model_pressrelease
+        type: PersistedAliasMapper
+    defaultController: PressRelease::show
+    limitToPages:
+      - 2000109
+    namespace: tx_vdpressreleases_pressrelease
+    requirements:
+      title: '[a-zA-Z0-9].*'
+    routes:
+      -
+        _arguments:
+          title: pressRelease
+        _controller: PressRelease::show
+        routePath: /communique/{title}
+    type: Extbase

@@ -1,0 +1,12 @@
+TCEMAIN.preview.tx_vdprestations_domain_model_prestation {
+  additionalGetParameters {
+    no_cache = 1
+    tx_vdprestations_pi4 {
+      action = show
+      controller = Prestation
+    }
+  }
+  fieldToParameterMap.uid = tx_vdprestations_pi4[prestation]
+  previewPageId = 2000180
+  useCacheHash = 1
+}

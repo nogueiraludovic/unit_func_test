@@ -1,0 +1,378 @@
+/* Vues de liste */
+
+table.tx_ocosp-liste {
+  width: 100%;
+  margin-bottom: 20px;
+}
+
+table.tx_ocosp-liste  th {
+  text-align: left;
+  padding: 3px;
+  vertical-align: top;
+  font-size: 12px;
+  font-weight: bold;
+  border-bottom: 1px solid #c4c4c4;
+}
+
+table.tx_ocosp-liste  th span.titre {
+  color: #000;
+  float: right;
+  font-size: 11px;
+}
+
+table.tx_ocosp-liste  td {
+  padding: 5px;
+  vertical-align: top;
+  font-size: 12px;
+  border-bottom: 1px solid #c4c4c4;
+}
+
+table.tx_ocosp-liste  td.actions {
+  width: 60px;
+}
+
+td.actions img {
+  margin: 0 5px;
+  border: 0;
+}
+
+table.tx_ocosp-liste  td a {
+  font-size: 12px;
+}
+
+span.error {
+  color: red;
+  display: block;
+  margin-top: 5px;
+}
+
+table.netinfluence_paging_container {
+
+}
+
+table.netinfluence_paging_container td {
+  padding: 4px;
+}
+
+table.table_form {
+
+}
+
+table.table_form td, table.table_form th {
+  padding: 4px;
+  vertical-align: top;
+  text-align: left;
+}
+
+table.table_form td {
+  padding: 2px;
+}
+
+input.text_input,
+input.text_input_big,
+input.text_input_date,
+textarea.text_input,
+textarea.text_input_big,
+textarea.text_input_trace {
+  border: 1px solid #ccc;
+  width: 350px;
+  padding: 3px;
+}
+
+input.text_input_date {
+  width: 150px;
+}
+
+input.text_input_big {
+  width: 350px;
+}
+
+textarea.text_input {
+  height: 100px;
+}
+
+textarea.text_input_trace {
+  height: 350px;
+}
+
+textarea.text_input_big {
+  height: 150px;
+}
+
+input[type="button"].text_input {
+  width: 100px;
+}
+
+input[type="submit"].text_input {
+  width: 100px;
+}
+
+input[type="checkbox"].text_input {
+  width: 20px;
+}
+
+select {
+  width: 250px;
+  border: 1px solid #ddd;
+}
+
+hr.sep {
+  border-color: #ddd;
+  height: 1px;
+}
+
+/* @group Liste des domaines sur la HomePage */
+
+table.tx_ocosp-liste-domaine {
+
+}
+
+table.tx_ocosp-liste-domaine td {
+  padding: 5px;
+  padding-right: 70px;
+  padding-left: 0px;
+}
+
+table.tx_ocosp-liste-domaine td a {
+  font-size: 12px;
+}
+
+/* @end */
+
+fieldset.search_form {
+  background-repeat: repeat-x;
+  background-position: left bottom;
+  border-right: none;
+  border-left: none;
+  border-bottom: none;
+  border-top: 1px solid #B2CC2B;
+  margin-bottom: 20px;
+  text-align: left;
+}
+
+fieldset.search_form legend {
+  padding-left: 5px;
+  padding-right: 5px;
+}
+
+input.search_medium,
+input.search_small,
+select.select_medium,
+select.select_big,
+input.button {
+  border: 1px solid #ccc;
+  padding: 4px;
+  font-size: 11px;
+  width: 200px;
+  background-color: #fff;
+}
+
+select.select_big {
+  width: 400px;
+}
+
+input.search_small {
+  width: 50px;
+}
+
+input.button {
+  text-align: center;
+  margin: 5px;
+  padding: 4px;
+  width: 80px;
+}
+
+table.tx_ocosp_search_table {
+  margin-bottom: 10px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+table.tx_ocosp_search_table td,
+table.tx_ocosp_search_table th {
+  padding: 0px 15px;
+  text-align: left;
+}
+
+table.tx_ocosp_search_table th {
+  padding-top: 7px;
+  font-weight: normal;
+}
+
+div.form_action {
+  text-align: center;
+  padding-top: 10px;
+}
+
+div.form_action a.button {
+  border: 1px solid #989795;
+  padding: 4px 7px;
+  font-size: 11px;
+  background-color: #fff;
+  text-decoration: none;
+}
+
+form {
+  margin: 0;
+}
+
+table.tx_ocosp-liste-domaine td.domaine {
+  /*color: #27588a;*/
+  font-weight: bold;
+  font-size: 16px;
+  padding: 10px 0;
+}
+
+table.tx_ocosp-liste-domaine td.sep {
+  padding: 10px;
+}
+
+div#tx_ocosp_sub_link {
+  margin: 20px 0;
+}
+
+div#tx_ocosp_sub_link a.button {
+  border: 1px solid #989795;
+  padding: 4px 7px;
+  font-size: 11px;
+  background-color: #e6e6e6;
+  text-decoration: none;
+  margin-right: 5px;
+}
+
+table.tx_ocosp-form {
+
+}
+
+table.tx_ocosp-form th {
+  text-align: left;
+  padding: 5px;
+  vertical-align: top;
+}
+
+table.tx_ocosp-form td {
+  text-align: left;
+  padding: 5px;
+}
+
+table.tx_ocosp-detail {
+
+}
+
+table.tx_ocosp-detail th {
+  text-align: left;
+  padding: 5px;
+  vertical-align: top;
+}
+
+table.tx_ocosp-detail td {
+  text-align: left;
+  padding: 5px;
+}
+
+/* @group Pagination */
+
+div.paging {
+  background-color: #F2F2F2;
+  margin-bottom: 20px;
+  padding: 7px 5px;
+  min-height: 20px;
+  *height: 20px;
+}
+
+div.paging div.pages {
+  float: right;
+}
+
+div.paging div.infos {
+  font-weight: bold;
+  color: #000;
+  float: left;
+}
+
+div.paging div.pages a {
+  border: 0px solid #989795;
+  margin: 0 3px;
+  color: #CC6600;
+  text-decoration: none;
+}
+
+div.paging div.pages a:hover {
+  text-decoration: underline;
+}
+
+div.paging div.pages a.current {
+  font-weight: bold;
+  color: #000;
+}
+
+/* @end */
+
+#tx_ocosp_inscriptions_wrapper .paging {
+  margin-top: 10px;
+}
+#tx_ocosp_inscriptions_wrapper table.dataTable thead th, table.dataTable thead td {
+  padding: 0 18px 10px 18px;
+}
+
+/* @end */
+
+/* Above this comment: legacy stylesheet by Netinfluence */
+
+.tx-vdocosp .ui-collapsible-inset .ui-collapsible-content {
+  border-left: 1px solid #ccc;
+  border-right: 1px solid #ccc;
+  border-bottom: 1px solid #ccc;
+}
+.tx-vdocosp .address p {
+  margin: 4px 0;
+}
+.tx-vdocosp .address {
+  margin-bottom: 16px;
+}
+.tx-vdocosp blockquote {
+  margin-left: 20px;
+}
+.tx-vdocosp .description ol,
+.tx-vdocosp .description ul {
+  padding-left: 30px;
+}
+.tx_ocosp_dmde_photo {
+  vertical-align: top;
+  padding-right: 8px;
+}
+
+.tx-vdocosp {
+  margin-bottom: 30px;
+}
+
+.tx-vdocosp .message-error,
+.tx-vdocosp .message-warning {
+  color: #3a87ad;
+  padding: 2px 35px 2px 14px;
+  margin-bottom: 10px;
+  margin-top: 20px;
+  text-shadow: 0 1px 0 rgba(255, 255, 255, 0.5);
+  font-weight: bold;
+  background-color: #d9edf7;
+  border: 1px solid #bce8f1;
+  -webkit-border-radius: 4px;
+  -moz-border-radius: 4px;
+  border-radius: 4px;
+}
+
+/** Styles for search by interests in Desktop section */
+table#tx_vdocosp_interests_search {
+  border: none;
+  padding: 0;
+}
+table#tx_vdocosp_interests_search tr,
+table#tx_vdocosp_interests_search td {
+  border: none;
+  padding: 0;
+  vertical-align: top;
+}
+#tx_vdocosp_search_results p {
+  padding: 4px;
+  background-color: #f2f2f2;
+}

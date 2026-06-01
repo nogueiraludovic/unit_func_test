@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xliff version="1.2" xmlns="urn:oasis:names:tc:xliff:document:1.2">
+	<file datatype="plaintext" original="EXT:vd_records/Resources/Private/Language/locallang.xlf" source-language="en" target-language="fr">
+		<header/>
+		<body>
+			<trans-unit id="address" resname="address">
+				<source>Address</source>
+				<target state="translated">Adresse</target>
+			</trans-unit>
+			<trans-unit id="authorization_date" resname="authorization_date">
+				<source>Authorization date</source>
+				<target state="translated">Date d'autorisation</target>
+			</trans-unit>
+			<trans-unit id="category" resname="category">
+				<source>Category</source>
+				<target state="translated">Catégorie</target>
+			</trans-unit>
+			<trans-unit id="contact" resname="contact">
+				<source>Contact</source>
+				<target state="translated">Contact</target>
+			</trans-unit>
+			<trans-unit id="dated" resname="dated">
+				<source>Dated</source>
+				<target state="translated">Daté du</target>
+			</trans-unit>
+			<trans-unit id="email" resname="email">
+				<source>Email</source>
+				<target state="translated">E-mail</target>
+			</trans-unit>
+			<trans-unit id="decision_year" resname="decision_year">
+				<source>Decision year</source>
+				<target state="translated">Année de décision</target>
+			</trans-unit>
+			<trans-unit id="description" resname="description">
+				<source>Description</source>
+				<target state="translated">Description</target>
+			</trans-unit>
+			<trans-unit id="download_presentation" resname="download_presentation">
+				<source>Download the presentation</source>
+				<target state="translated">Télécharger la présentation</target>
+			</trans-unit>
+			<trans-unit id="keywords" resname="keywords">
+				<source>Keywords</source>
+				<target state="translated">Mot clés</target>
+			</trans-unit>
+			<trans-unit id="link" resname="link">
+				<source>Link</source>
+				<target state="translated">Lien</target>
+			</trans-unit>
+			<trans-unit id="municipality" resname="municipality">
+				<source>Municipality</source>
+				<target state="translated">Commune</target>
+			</trans-unit>
+			<trans-unit id="number" resname="number">
+				<source>Number</source>
+				<target state="translated">Numéro</target>
+			</trans-unit>
+			<trans-unit id="phone" resname="phone">
+				<source>Phone</source>
+				<target state="translated">Téléphone</target>
+			</trans-unit>
+			<trans-unit id="profile" resname="profile">
+				<source>Profile</source>
+				<target state="translated">Profil</target>
+			</trans-unit>
+			<trans-unit id="project_sponsor" resname="project_sponsor">
+				<source>Project sponsor</source>
+				<target state="translated">Porteur de projet</target>
+			</trans-unit>
+			<trans-unit id="sector_concerned" resname="sector_concerned">
+				<source>Sector concerned</source>
+				<target state="translated">Secteur concerné</target>
+			</trans-unit>
+			<trans-unit id="service" resname="service">
+				<source>Service</source>
+				<target state="translated">Service</target>
+			</trans-unit>
+			<trans-unit id="thematic" resname="thematic">
+				<source>Thematic</source>
+				<target state="translated">Thématique</target>
+			</trans-unit>
+			<trans-unit id="www" resname="www">
+				<source>www</source>
+				<target state="translated">www</target>
+			</trans-unit>
+		</body>
+	</file>
+</xliff>

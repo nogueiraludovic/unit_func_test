@@ -1,0 +1,103 @@
+mod.web_layout {
+  BackendLayouts {
+    1_col {
+      config.backend_layout {
+        colCount = 12
+        rowCount = 1
+        rows.1.columns.1 {
+          colPos = 0
+          colspan = 12
+          disallowed.CType = section-container
+          name = LLL:EXT:vd_site/Resources/Private/Language/locallang_be.xlf:main_content
+        }
+      }
+      title = 1 colonne (par défaut)
+    }
+    1_col_white_headline < .1_col
+    1_col_white_headline.title = 1 colonne avec en-tête
+    2_col {
+      config.backend_layout {
+        colCount = 12
+        rowCount = 1
+        rows.1.columns.1 {
+          colPos = 0
+          colspan = 12
+          disallowed.CType = section-container
+          name = LLL:EXT:vd_site/Resources/Private/Language/locallang_be.xlf:main_content
+        }
+      }
+      title = 2 colonnes
+    }
+    2_col_navigation < .2_col
+    2_col_navigation.title = 2 colonnes (navigation + colonne de droite éditable)
+    2_col_search {
+      config.backend_layout {
+        colCount = 12
+        rowCount = 2
+        rows {
+          1.columns.1 {
+            colPos = 3
+            colspan = 12
+            disallowed.CType = section-container
+            name = LLL:EXT:vd_site/Resources/Private/Language/locallang_be.xlf:headline_content
+          }
+          2.columns.1 {
+            colPos = 0
+            colspan = 12
+            disallowed.CType = section-container
+            name = LLL:EXT:vd_site/Resources/Private/Language/locallang_be.xlf:main_content
+          }
+        }
+      }
+      title = 2 colonnes (plugin de recherche)
+    }
+    home < .1_col
+    home {
+      config.backend_layout.rows.1.columns.1.disallowed >
+      title = Page d'accueil
+    }
+    minimal < .1_col
+    minimal.title = Minimal
+    no_headline < .1_col
+    no_headline.title = Sans en-tête
+    no_headline_center < .1_col
+    no_headline_center.title = Sans en-tête centré
+    theme {
+      config.backend_layout {
+        colCount = 0
+        rowCount = 0
+      }
+      title = Thèmes
+    }
+  }
+  tt_content.preview.list.ttaddress_listview >
+}
+
+##################################################
+
+[backend.user.isAdmin || like(','~backend.user.userGroupList~',', '*,152,*')]
+  mod.web_layout.BackendLayouts {
+    2_col.config.backend_layout.rows.1.columns {
+      1.colspan = 8
+      2 {
+        allowed {
+          CType = list,menu_subpages,text,textpic,html,shortcut,1-column-container,2-columns-left-width-container,2-columns-right-width-container,2-columns-same-width-container,3-columns-same-width-container,4-columns-same-width-container,accordion-container,highlighting-container,tabs-container
+          list_type = vdcontactservice_contact
+        }
+        colPos = 1
+        colspan = 4
+        name = LLL:EXT:vd_site/Resources/Private/Language/locallang_be.xlf:aside_content
+      }
+    }
+    2_col_navigation.config < .2_col.config
+    2_col_search.config.backend_layout.rows.2.columns {
+      1.colspan = 8
+      2 {
+        allowed < mod.web_layout.BackendLayouts.2_col.config.backend_layout.rows.1.columns.2.allowed
+        colPos = 1
+        colspan = 4
+        name = LLL:EXT:vd_site/Resources/Private/Language/locallang_be.xlf:aside_content
+      }
+    }
+  }
+[end]

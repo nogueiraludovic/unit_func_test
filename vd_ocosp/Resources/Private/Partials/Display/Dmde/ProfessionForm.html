@@ -1,0 +1,20 @@
+<html data-namespace-typo3-fluid="true" xmlns:f="http://typo3.org/ns/TYPO3/CMS/Fluid/ViewHelpers">
+    <f:form action="search" id="tx_vdocosp_dmde_public_search_keyword" method="post" pageUid="{resultPage}" pluginName="DisplayDmdeAdvancedSearch">
+        <fieldset>
+            <legend>
+                <f:translate id="LLL:EXT:vd_ocosp/Resources/Private/Language/locallang_frontend.xlf:title.dmde.search.metier"/>
+            </legend>
+            <div class="row">
+                <div class="col-sm-9">
+                    <f:form.textfield class="form-control" id="tx_vdocosp_metier_search" name="keyword" placeholder="{f:translate(id: 'LLL:EXT:vd_ocosp/Resources/Private/Language/locallang_frontend.xlf:label.mot_cle')}" value="{keyword}"/>
+                    <f:form.hidden id="tx_vdocosp_metier_id" name="profession"/>
+                </div>
+                <div class="col-sm-3">
+                    <button class="btn {btnColor}" id="submit-search" type="submit">
+                        <f:translate id="LLL:EXT:vd_ocosp/Resources/Private/Language/locallang_frontend.xlf:submit_button_label"/>
+                    </button>
+                </div>
+            </div>
+        </fieldset>
+    </f:form>
+</html>

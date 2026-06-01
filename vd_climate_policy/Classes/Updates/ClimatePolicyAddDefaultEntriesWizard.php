@@ -55,7 +55,7 @@ class ClimatePolicyAddDefaultEntriesWizard implements UpgradeWizardInterface
         '22',
         '23'
     ];
-    protected const STORAGE_PID = 2025501;
+    protected const STORAGE_PID = 2025716;
     protected const THEMES = [
         'Alimentation',
         'Biodiversité',

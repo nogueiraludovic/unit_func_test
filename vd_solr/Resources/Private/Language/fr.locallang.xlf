@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xliff version="1.2" xmlns="urn:oasis:names:tc:xliff:document:1.2">
+	<file datatype="plaintext" original="EXT:vd_solr/Resources/Private/Language/locallang.xlf" source-language="en" target-language="fr">
+		<header/>
+		<body>
+			<trans-unit id="no_results_for_decision" resname="no_results_for_decision">
+				<source>No decision found.</source>
+				<target state="translated">Aucune décision trouvée.</target>
+			</trans-unit>
+			<trans-unit id="no_results_for_news" resname="no_results_for_news">
+				<source>No news found.</source>
+				<target state="translated">Aucune actualité trouvée.</target>
+			</trans-unit>
+			<trans-unit id="no_results_for_press_release" resname="no_results_for_press_release">
+				<source>No press release found.</source>
+				<target state="translated">Aucun communiqué de presse trouvé.</target>
+			</trans-unit>
+		</body>
+	</file>
+</xliff>

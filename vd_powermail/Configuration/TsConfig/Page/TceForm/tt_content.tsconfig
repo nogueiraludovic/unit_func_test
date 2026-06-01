@@ -1,0 +1,20 @@
+TCEFORM.tt_content {
+  list_type.removeItems := addToList(powermail_pi2)
+  pi_flexform.powermail_pi1 {
+    main {
+      settings\.flexform\.main\.confirmation.disabled = 1
+      settings\.flexform\.main\.moresteps.disabled = 1
+      settings\.flexform\.main\.optin.disabled = 1
+      settings\.flexform\.main\.pid.disabled = 1
+    }
+    receiver.settings\.flexform\.receiver\.type.keepItems = 0,2
+    sender {
+      settings\.flexform\.sender\.email.disabled = 1
+      settings\.flexform\.sender\.name.disabled = 1
+    }
+  }
+}
+
+##################################################
+
+tx_powermail.flexForm.predefinedReceivers.addFieldOptions.becomeCurator = LLL:EXT:vd_powermail/Resources/Private/Language/locallang_be.xlf:become_curator

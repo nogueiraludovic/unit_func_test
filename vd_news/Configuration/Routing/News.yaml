@@ -1,0 +1,25 @@
+---
+routeEnhancers:
+  News:
+    aspects:
+      title:
+        routeFieldName: path_segment
+        tableName: tx_news_domain_model_news
+        type: PersistedAliasMapper
+    defaultController: News::list
+    namespace: tx_vdnews_pi1
+    limitToPages:
+      - 2000114
+    requirements:
+      title: '[a-zA-Z0-9].*'
+    routes:
+      -
+        _arguments:
+          title: news
+        _controller: News::detail
+        routePath: /news/{title}
+    type: Extbase
+  PageTypeSuffix:
+    map:
+      flux.rss: 100
+    type: PageType

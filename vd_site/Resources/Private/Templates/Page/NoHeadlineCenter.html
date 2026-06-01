@@ -1,0 +1,31 @@
+<html data-namespace-typo3-fluid="true" xmlns:f="http://typo3.org/ns/TYPO3/CMS/Fluid/ViewHelpers">
+    <f:layout/>
+    <f:section name="main">
+        <f:render arguments="{_all}" partial="Header"/>
+        <div class="vd-bg-pattern-gray">
+            <div class="container">
+                <f:render arguments="{breadcrumbExtendedValue: breadcrumbExtendedValue, breadcrumbItems: breadcrumbItems}" partial="Breadcrumb"/>
+            </div>
+        </div>
+        <main id="main">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-8 push-md-2">
+                        <f:render arguments="{pageTitle: pageTitle}" partial="Page/Seo/PageTitle"/>
+                    </div>
+                </div>
+            </div>
+            <!--TYPO3SEARCH_begin-->
+            <f:format.raw>{headline}</f:format.raw>
+            <div class="container mt-1 vd-content">
+                <div class="row">
+                    <div class="col-md-8 push-md-2 vd-content-column">
+                        <f:format.raw>{mainContent}</f:format.raw>
+                    </div>
+                </div>
+            </div>
+            <!--TYPO3SEARCH_end-->
+        </main>
+        <f:render arguments="{_all}" partial="Footer"/>
+    </f:section>
+</html>

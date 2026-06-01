@@ -1,0 +1,6 @@
+setup.override {
+  edit_docModuleUpload = 1
+  edit_RTE = 1
+  recursiveDelete = 0
+  titleLen = 60
+}

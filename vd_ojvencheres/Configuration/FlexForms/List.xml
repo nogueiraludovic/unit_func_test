@@ -1,0 +1,36 @@
+<T3DataStructure>
+    <sheets>
+        <general>
+            <ROOT>
+                <el>
+                    <settings.hidePagination>
+                        <TCEforms>
+                            <config>
+                                <default>0</default>
+                                <renderType>checkboxToggle</renderType>
+                                <type>check</type>
+                            </config>
+                            <label>Cacher la pagination</label>
+                            <onChange>reload</onChange>
+                        </TCEforms>
+                    </settings.hidePagination>
+                    <settings.list.paginate.itemsPerPage>
+                        <TCEforms>
+                            <config>
+                                <default>10</default>
+                                <eval>int</eval>
+                                <size>10</size>
+                                <type>input</type>
+                            </config>
+                            <displayCond>FIELD:settings.hidePagination:REQ:false</displayCond>
+                            <label>Nombre d'élément par page</label>
+                        </TCEforms>
+                    </settings.list.paginate.itemsPerPage>
+                </el>
+                <TCEforms>
+                    <sheetTitle>LLL:EXT:core/Resources/Private/Language/Form/locallang_tabs.xlf:general</sheetTitle>
+                </TCEforms>
+            </ROOT>
+        </general>
+    </sheets>
+</T3DataStructure>

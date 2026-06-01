@@ -1,0 +1,5 @@
+TCEMAIN.permissions {
+  everybody = 31
+  group = 31
+  user = 31
+}

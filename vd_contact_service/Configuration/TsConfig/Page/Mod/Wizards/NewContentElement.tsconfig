@@ -1,0 +1,20 @@
+mod.wizards.newContentElement.wizardItems.plugins.elements {
+  vdcontactservice_contact {
+    description = LLL:EXT:vd_contact_service/Resources/Private/Language/locallang_db_new_content_el.xlf:plugins_vdcontactservice_contact_description
+    iconIdentifier = content-plugin
+    title = LLL:EXT:vd_contact_service/Resources/Private/Language/locallang_db_new_content_el.xlf:plugins_vdcontactservice_contact_title
+    tt_content_defValues {
+      CType = list
+      list_type = vdcontactservice_contact
+    }
+  }
+  vdcontactservice_search {
+    description = LLL:EXT:vd_contact_service/Resources/Private/Language/locallang_db_new_content_el.xlf:plugins_vdcontactservice_search_description
+    iconIdentifier = content-plugin
+    title = LLL:EXT:vd_contact_service/Resources/Private/Language/locallang_db_new_content_el.xlf:plugins_vdcontactservice_search_title
+    tt_content_defValues {
+      CType = list
+      list_type = vdcontactservice_search
+    }
+  }
+}

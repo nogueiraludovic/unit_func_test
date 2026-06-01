@@ -1,0 +1,94 @@
+<html data-namespace-typo3-fluid="true" xmlns:f="http://typo3.org/ns/fluid/ViewHelpers" xmlns:vdf="http://typo3.org/ns/Vd/VdFrontend/ViewHelpers">
+    <f:section name="DogTrainers">
+        <f:for as="record" each="{records}">
+            <f:variable name="address" value="{record.address -> f:format.nl2br()}"/>
+            <f:variable name="locality" value="{record.zip} {record.city}"/>
+            <h3 class="name">{record.title} {record.name}</h3>
+            <f:if condition="{address} || {locality} || {record.email} || {record.phone} || {record.tx_vdttaddressextprofilmonichien_profil} || {record.www}">
+                <dl class="row">
+                    <f:if condition="{record.phone}">
+                        <dt class="col-md-4"><f:translate extensionName="VdRecords" id="phone"/></dt>
+                        <dd class="col-md-8 mb-2">{record.phone -> vdf:format.phone() -> f:format.raw()}</dd>
+                    </f:if>
+                    <f:if condition="{address} || {locality}">
+                        <dt class="col-md-4"><f:translate extensionName="VdRecords" id="address"/></dt>
+                        <dd class="col-md-8 mb-2"><vdf:format.list cssClasses="list-unstyled" list="{0: address, 1: locality}"/></dd>
+                    </f:if>
+                    <f:if condition="{record.tx_vdttaddressextprofilmonichien_profil}">
+                        <dt class="col-md-4"><f:translate extensionName="VdRecords" id="profile"/></dt>
+                        <dd class="col-md-8 mb-2"><vdf:format.list cssClasses="list-unstyled" list="{record.tx_vdttaddressextprofilmonichien_profil}"/></dd>
+                    </f:if>
+                    <f:if condition="{record.email}">
+                        <dt class="col-md-4"><f:translate extensionName="VdRecords" id="email"/></dt>
+                        <dd class="col-md-8 mb-2"><f:link.email email="{record.email}">{record.email}</f:link.email></dd>
+                    </f:if>
+                    <f:if condition="{record.www}">
+                        <dt class="col-md-4"><f:translate extensionName="VdRecords" id="www"/></dt>
+                        <dd class="col-md-8 mb-2"><f:link.typolink parameter="{record.www}"/></dd>
+                    </f:if>
+                </dl>
+            </f:if>
+        </f:for>
+    </f:section>
+    <f:section name="DomesticViolenceOrganizationsDirectory">
+        <f:for as="record" each="{records}">
+            <f:variable name="address" value="{record.address -> f:format.nl2br()}"/>
+            <f:variable name="locality" value="{record.zip} {record.city}"/>
+            <h3 class="name">{record.name}</h3>
+            <f:if condition="{address} || {locality} || {record.email} || {record.phone} || {record.tx_vdaddrgeneral_categoryid1} || {record.tx_vdaddrgeneral_categoryid2} || {record.tx_vdaddrgeneral_categoryid3} || {record.www}">
+                <dl class="row">
+                    <f:if condition="{record.tx_vdaddrgeneral_categoryid1} || {record.tx_vdaddrgeneral_categoryid2} || {record.tx_vdaddrgeneral_categoryid3}">
+                        <dt class="col-md-4"></dt>
+                        <dd class="col-md-8 mb-2">
+                            <vdf:format.list cssClasses="list-unstyled mb-0" list="{record.tx_vdaddrgeneral_categoryid1}"/>
+                            <vdf:format.list cssClasses="list-unstyled mb-0" list="{record.tx_vdaddrgeneral_categoryid2}"/>
+                            <vdf:format.list cssClasses="list-unstyled mb-0" list="{record.tx_vdaddrgeneral_categoryid3}"/>
+                        </dd>
+                    </f:if>
+                    <f:if condition="{address} || {locality}">
+                        <dt class="col-md-4"><f:translate extensionName="VdRecords" id="address"/></dt>
+                        <dd class="col-md-8 mb-2"><vdf:format.list cssClasses="list-unstyled" list="{0: address, 1: locality}"/></dd>
+                    </f:if>
+                    <f:if condition="{record.email}">
+                        <dt class="col-md-4"><f:translate extensionName="VdRecords" id="email"/></dt>
+                        <dd class="col-md-8 mb-2"><f:link.email email="{record.email}">{record.email}</f:link.email></dd>
+                    </f:if>
+                    <f:if condition="{record.phone}">
+                        <dt class="col-md-4"><f:translate extensionName="VdRecords" id="phone"/></dt>
+                        <dd class="col-md-8 mb-2">{record.phone -> vdf:format.phone() -> f:format.raw()}</dd>
+                    </f:if>
+                    <f:if condition="{record.www}">
+                        <dt class="col-md-4"><f:translate extensionName="VdRecords" id="www"/></dt>
+                        <dd class="col-md-8 mb-2"><f:link.typolink parameter="{record.www}"/></dd>
+                    </f:if>
+                </dl>
+            </f:if>
+        </f:for>
+    </f:section>
+    <f:section name="SecurityCameras">
+        <f:for as="record" each="{records}">
+            <f:variable name="address" value="{record.address -> f:format.nl2br()}"/>
+            <f:variable name="description" value="{record.description -> f:format.html() -> f:format.stripTags(allowedTags: '<a>') -> f:format.nl2br()}"/>
+            <f:variable name="email" value="{f:link.email(email: record.email)}"/>
+            <f:variable name="phone" value="{record.phone -> vdf:format.phone()}"/>
+            <f:variable name="locality" value="{record.zip} {record.city}"/>
+            <h3 class="name">{record.name}</h3>
+            <f:if condition="{address} || {locality} || {record.birthday}">
+                <dl class="row">
+                    <f:if condition="{address} || {locality}">
+                        <dt class="col-md-4"><f:translate extensionName="VdRecords" id="address"/></dt>
+                        <dd class="col-md-8 mb-2"><vdf:format.list cssClasses="list-unstyled" list="{0: address, 1: locality}"/></dd>
+                    </f:if>
+                    <f:if condition="{description} || {email} || {phone}">
+                        <dt class="col-md-4"><f:translate extensionName="VdRecords" id="contact"/></dt>
+                        <dd class="col-md-8 mb-2"><vdf:format.list cssClasses="list-unstyled" list="{0: phone, 1: email, 2: description}"/></dd>
+                    </f:if>
+                    <f:if condition="{record.birthday}">
+                        <dt class="col-md-4"><f:translate extensionName="VdRecords" id="authorization_date"/></dt>
+                        <dd class="col-md-8 mb-2">{record.birthday -> f:format.date(format: 'd.m.Y')}</dd>
+                    </f:if>
+                </dl>
+            </f:if>
+        </f:for>
+    </f:section>
+</html>

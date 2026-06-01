@@ -1,0 +1,196 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?><wsdl:definitions xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/" xmlns:sch="http://www.vd.ch/lmgc/wsdl/SeanceConseilEtat" xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" xmlns:tns="http://www.vd.ch/lmgc/wsdl/SeanceGrandConseil" targetNamespace="http://www.vd.ch/lmgc/wsdl/SeanceGrandConseil">
+    <wsdl:types>
+        <xs:schema xmlns="http://www.vd.ch/lmgc/wsdl/SeanceConseilEtat" xmlns:tns="http://www.vd.ch/lmgc/wsdl/SeanceConseilEtat" xmlns:xs="http://www.w3.org/2001/XMLSchema" attributeFormDefault="unqualified" elementFormDefault="unqualified" targetNamespace="http://www.vd.ch/lmgc/wsdl/SeanceConseilEtat">
+            <xs:element name="rechercherSeanceCe" type="tns:rechercherSeanceCe"/>
+            <xs:element name="rechercherSeanceCeResponse" type="tns:rechercherSeanceCeResponse"/>
+            <xs:element name="rechercherSeancesCe" type="tns:rechercherSeancesCe"/>
+            <xs:element name="rechercherSeancesCeResponse" type="tns:rechercherSeancesCeResponse"/>
+            <xs:element name="rechercherDecisions" type="tns:rechercherDecisions"/>
+            <xs:element name="rechercherDecisionsResponse" type="tns:rechercherDecisionsResponse"/>
+            <xs:element name="rechercherDecisionParId" type="tns:rechercherDecisionParId"/>
+            <xs:element name="rechercherDecisionParIdResponse" type="tns:rechercherDecisionParIdResponse"/>
+            <xs:complexType name="rechercherSeanceCe">
+                <xs:sequence>
+                    <xs:element name="idSeance" type="xs:long"/>
+                </xs:sequence>
+            </xs:complexType>
+            <xs:complexType name="rechercherSeanceCeResponse">
+                <xs:sequence>
+                    <xs:element minOccurs="0" name="return" type="tns:seanceCE"/>
+                </xs:sequence>
+            </xs:complexType>
+            <xs:complexType name="seanceCE">
+                <xs:sequence>
+                    <xs:element minOccurs="0" name="dateSeance" type="xs:date"/>
+                    <xs:element minOccurs="0" name="decisions" type="tns:decisions"/>
+                    <xs:element minOccurs="0" name="id" type="xs:long"/>
+                    <xs:element minOccurs="0" name="nomCourt" type="xs:string"/>
+                </xs:sequence>
+            </xs:complexType>
+            <xs:complexType name="decisions">
+                <xs:sequence>
+                    <xs:element maxOccurs="unbounded" minOccurs="0" name="decision" nillable="true" type="tns:decision"/>
+                </xs:sequence>
+            </xs:complexType>
+            <xs:complexType name="decision">
+                <xs:sequence>
+                    <xs:element minOccurs="0" name="documents" type="tns:documents"/>
+                    <xs:element minOccurs="0" name="id" type="xs:string"/>
+                    <xs:element minOccurs="0" name="idFictif" type="xs:long"/>
+                    <xs:element minOccurs="0" name="renseignementsComplementaires" type="xs:string"/>
+                    <xs:element minOccurs="0" name="resume" type="xs:string"/>
+                    <xs:element minOccurs="0" name="seance" type="tns:seanceCE"/>
+                    <xs:element minOccurs="0" name="titre" type="xs:string"/>
+                </xs:sequence>
+            </xs:complexType>
+            <xs:complexType name="documents">
+                <xs:sequence>
+                    <xs:element maxOccurs="unbounded" minOccurs="0" name="document" nillable="true" type="tns:document"/>
+                </xs:sequence>
+            </xs:complexType>
+            <xs:complexType name="document">
+                <xs:sequence>
+                    <xs:element minOccurs="0" name="id" type="xs:long"/>
+                    <xs:element minOccurs="0" name="titre" type="xs:string"/>
+                    <xs:element minOccurs="0" name="type" type="xs:string"/>
+                    <xs:element minOccurs="0" name="description" type="xs:string"/>
+                </xs:sequence>
+            </xs:complexType>
+            <xs:complexType name="rechercherSeancesCe">
+                <xs:sequence>
+                    <xs:element minOccurs="0" name="dateDebut" type="xs:date"/>
+                    <xs:element minOccurs="0" name="dateFin" type="xs:date"/>
+                </xs:sequence>
+            </xs:complexType>
+            <xs:complexType name="rechercherSeancesCeResponse">
+                <xs:sequence>
+                    <xs:element maxOccurs="unbounded" minOccurs="0" name="return" type="tns:seanceCE"/>
+                </xs:sequence>
+            </xs:complexType>
+            <xs:complexType name="rechercherDecisions">
+                <xs:sequence>
+                    <xs:element minOccurs="0" name="dateDebut" type="xs:date"/>
+                    <xs:element minOccurs="0" name="dateFin" type="xs:date"/>
+                    <xs:element minOccurs="0" name="rechercher" type="xs:string"/>
+                </xs:sequence>
+            </xs:complexType>
+            <xs:complexType name="rechercherDecisionsResponse">
+                <xs:sequence>
+                    <xs:element maxOccurs="unbounded" minOccurs="0" name="return" nillable="true" type="tns:decision"/>
+                </xs:sequence>
+            </xs:complexType>
+            <xs:complexType name="rechercherDecisionParId">
+                <xs:sequence>
+                    <xs:element name="idDecision" type="xs:string"/>
+                </xs:sequence>
+            </xs:complexType>
+            <xs:complexType name="rechercherDecisionParIdResponse">
+                <xs:sequence>
+                    <xs:element minOccurs="0" name="decision" nillable="true" type="tns:decision"/>
+                </xs:sequence>
+            </xs:complexType>
+        </xs:schema>
+    </wsdl:types>
+    <wsdl:message name="rechercherSeanceCe">
+        <wsdl:part element="sch:rechercherSeanceCe" name="rechercherSeanceCe">
+        </wsdl:part>
+    </wsdl:message>
+    <wsdl:message name="rechercherDecisionParIdResponse">
+        <wsdl:part element="sch:rechercherDecisionParIdResponse" name="rechercherDecisionParIdResponse">
+        </wsdl:part>
+    </wsdl:message>
+    <wsdl:message name="rechercherSeanceCeResponse">
+        <wsdl:part element="sch:rechercherSeanceCeResponse" name="rechercherSeanceCeResponse">
+        </wsdl:part>
+    </wsdl:message>
+    <wsdl:message name="rechercherSeancesCe">
+        <wsdl:part element="sch:rechercherSeancesCe" name="rechercherSeancesCe">
+        </wsdl:part>
+    </wsdl:message>
+    <wsdl:message name="rechercherDecisionParId">
+        <wsdl:part element="sch:rechercherDecisionParId" name="rechercherDecisionParId">
+        </wsdl:part>
+    </wsdl:message>
+    <wsdl:message name="rechercherDecisionsResponse">
+        <wsdl:part element="sch:rechercherDecisionsResponse" name="rechercherDecisionsResponse">
+        </wsdl:part>
+    </wsdl:message>
+    <wsdl:message name="rechercherDecisions">
+        <wsdl:part element="sch:rechercherDecisions" name="rechercherDecisions">
+        </wsdl:part>
+    </wsdl:message>
+    <wsdl:message name="rechercherSeancesCeResponse">
+        <wsdl:part element="sch:rechercherSeancesCeResponse" name="rechercherSeancesCeResponse">
+        </wsdl:part>
+    </wsdl:message>
+    <wsdl:portType name="DecisionCEPort">
+        <wsdl:operation name="rechercherSeanceCe">
+            <wsdl:input message="tns:rechercherSeanceCe" name="rechercherSeanceCe">
+            </wsdl:input>
+            <wsdl:output message="tns:rechercherSeanceCeResponse" name="rechercherSeanceCeResponse">
+            </wsdl:output>
+        </wsdl:operation>
+        <wsdl:operation name="rechercherDecisionParId">
+            <wsdl:input message="tns:rechercherDecisionParId" name="rechercherDecisionParId">
+            </wsdl:input>
+            <wsdl:output message="tns:rechercherDecisionParIdResponse" name="rechercherDecisionParIdResponse">
+            </wsdl:output>
+        </wsdl:operation>
+        <wsdl:operation name="rechercherSeancesCe">
+            <wsdl:input message="tns:rechercherSeancesCe" name="rechercherSeancesCe">
+            </wsdl:input>
+            <wsdl:output message="tns:rechercherSeancesCeResponse" name="rechercherSeancesCeResponse">
+            </wsdl:output>
+        </wsdl:operation>
+        <wsdl:operation name="rechercherDecisions">
+            <wsdl:input message="tns:rechercherDecisions" name="rechercherDecisions">
+            </wsdl:input>
+            <wsdl:output message="tns:rechercherDecisionsResponse" name="rechercherDecisionsResponse">
+            </wsdl:output>
+        </wsdl:operation>
+    </wsdl:portType>
+    <wsdl:binding name="DecisionCEPortSoap11" type="tns:DecisionCEPort">
+        <soap:binding style="document" transport="http://schemas.xmlsoap.org/soap/http"/>
+        <wsdl:operation name="rechercherSeanceCe">
+            <soap:operation soapAction=""/>
+            <wsdl:input name="rechercherSeanceCe">
+                <soap:body use="literal"/>
+            </wsdl:input>
+            <wsdl:output name="rechercherSeanceCeResponse">
+                <soap:body use="literal"/>
+            </wsdl:output>
+        </wsdl:operation>
+        <wsdl:operation name="rechercherDecisionParId">
+            <soap:operation soapAction=""/>
+            <wsdl:input name="rechercherDecisionParId">
+                <soap:body use="literal"/>
+            </wsdl:input>
+            <wsdl:output name="rechercherDecisionParIdResponse">
+                <soap:body use="literal"/>
+            </wsdl:output>
+        </wsdl:operation>
+        <wsdl:operation name="rechercherSeancesCe">
+            <soap:operation soapAction=""/>
+            <wsdl:input name="rechercherSeancesCe">
+                <soap:body use="literal"/>
+            </wsdl:input>
+            <wsdl:output name="rechercherSeancesCeResponse">
+                <soap:body use="literal"/>
+            </wsdl:output>
+        </wsdl:operation>
+        <wsdl:operation name="rechercherDecisions">
+            <soap:operation soapAction=""/>
+            <wsdl:input name="rechercherDecisions">
+                <soap:body use="literal"/>
+            </wsdl:input>
+            <wsdl:output name="rechercherDecisionsResponse">
+                <soap:body use="literal"/>
+            </wsdl:output>
+        </wsdl:operation>
+    </wsdl:binding>
+    <wsdl:service name="DecisionCEPortService">
+        <wsdl:port binding="tns:DecisionCEPortSoap11" name="DecisionCEPortSoap11">
+            <soap:address location="http://slv7824v.etat-de-vaud.ch:10000/institutions/pre-siel/ws/decisionCE"/>
+        </wsdl:port>
+    </wsdl:service>
+</wsdl:definitions>

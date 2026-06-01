@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<evenementsPublication reset="false" xmlns="http://evd.vd.ch/xmlns/eVD-0038/2">
+    <evenement type="AJOUT">
+        <prestation>
+            <idMetierPrestation>JFMHK2-GH7FG2</idMetierPrestation>
+            <titre>Demander une autorisation d'exploiter une animalerie
+                de laboratoire
+            </titre>
+            <description>Vous souhaiter exploiter une animalerie de
+                laboratoire? Une demande d'autorisation doit
+                &amp;ecirc;tre adress&amp;eacute;e au SCAV
+            </description>
+            <domaineMetier>Vie privée</domaineMetier>
+            <themeMetier>Animaux</themeMetier>
+            <publicsCible>
+                <population>Entreprises</population>
+            </publicsCible>
+            <referencesLegaux>
+                <titreReferenceLegale>OPAn</titreReferenceLegale>
+                <urlReferenceLegale>https://www.admin.ch/opc/fr/classified-compilation/20022103/</urlReferenceLegale>
+            </referencesLegaux>
+            <modaliteAcces typeModaliteAcces="poste">
+                <marcheASuivre>Un dossier de demande d'autorisation d'une
+                    animalerie de laboratoire doit &amp;ecirc;tre
+                    adress&amp;eacute; par courrier au SCAV
+                </marcheASuivre>
+                <ePayment>false</ePayment>
+                <lienExterne>true</lienExterne>
+                <lienAccesPrestation>
+                    http://www.vd.ch/autorites/departements/dte/consommation-et-affaires-veterinaires/
+                </lienAccesPrestation>
+            </modaliteAcces>
+            <servicePrestataire>SCAV</servicePrestataire>
+            <resultatPrestation>Autorisation d'exploiter une animalerie
+                de laboratoire
+            </resultatPrestation>
+            <actionBeneficiaire>DEMANDER</actionBeneficiaire>
+            <actionPrestataire
+                    xmlns:xs="http://www.w3.org/2001/XMLSchema"
+                    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:type="xs:string">DELIVRER
+            </actionPrestataire>
+            <typeMissionECH0145
+                    xmlns:xs="http://www.w3.org/2001/XMLSchema"
+                    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:type="xs:UNSIGNEDShort">66
+            </typeMissionECH0145>
+            <champMissionECH0145
+                    xmlns:xs="http://www.w3.org/2001/XMLSchema"
+                    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:type="xs:string">BF0492
+            </champMissionECH0145>
+            <groupeMissionECH0145
+                    xmlns:xs="http://www.w3.org/2001/XMLSchema"
+                    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:type="xs:string">BG0492
+            </groupeMissionECH0145>
+        </prestation>
+    </evenement>
+</evenementsPublication>
+

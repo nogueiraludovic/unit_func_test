@@ -1,0 +1,276 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xliff version="1.2" xmlns="urn:oasis:names:tc:xliff:document:1.2">
+	<file datatype="plaintext" original="EXT:vd_ojvencheres/Resources/Private/Language/locallang_db.xlf" source-language="en" target-language="fr">
+		<header/>
+		<body>
+			<trans-unit id="address" resname="address">
+				<source>Address</source>
+				<target state="translated">Adresse</target>
+			</trans-unit>
+			<trans-unit id="brand" resname="brand">
+				<source>Brand</source>
+				<target state="translated">Marque</target>
+			</trans-unit>
+			<trans-unit id="building_year" resname="building_year">
+				<source>Building year</source>
+				<target state="translated">Année de construction</target>
+			</trans-unit>
+			<trans-unit id="canceled" resname="canceled">
+				<source>Canceled</source>
+				<target state="translated">Annulé</target>
+			</trans-unit>
+			<trans-unit id="circulation_year" resname="circulation_year">
+				<source>Circulation year</source>
+				<target state="translated">Année de mise en circulation</target>
+			</trans-unit>
+			<trans-unit id="city" resname="city">
+				<source>City</source>
+				<target state="translated">Localité</target>
+			</trans-unit>
+			<trans-unit id="color" resname="color">
+				<source>Color</source>
+				<target state="translated">Couleur</target>
+			</trans-unit>
+			<trans-unit id="complement" resname="complement">
+				<source>Complement</source>
+				<target state="translated">Complément</target>
+			</trans-unit>
+			<trans-unit id="contact" resname="contact">
+				<source>Contact person</source>
+				<target state="translated">Personne de contact</target>
+			</trans-unit>
+			<trans-unit id="description" resname="description">
+				<source>Description</source>
+				<target state="translated">Description</target>
+			</trans-unit>
+			<trans-unit id="discount" resname="discount">
+				<source>Discount</source>
+				<target state="translated">Rabais</target>
+			</trans-unit>
+			<trans-unit id="district" resname="district">
+				<source>District</source>
+				<target state="translated">District</target>
+			</trans-unit>
+			<trans-unit id="documents" resname="documents">
+				<source>Document(s)</source>
+				<target state="translated">Document(s)</target>
+			</trans-unit>
+			<trans-unit id="effective_publication_date" resname="effective_publication_date">
+				<source>Effective publication date</source>
+				<target state="translated">Date de publication effective</target>
+			</trans-unit>
+			<trans-unit id="email" resname="email">
+				<source>Mail of contact person</source>
+				<target state="translated">Mail de la personne de contact</target>
+			</trans-unit>
+			<trans-unit id="estimation" resname="estimation">
+				<source>Office estimate based on expert report</source>
+				<target state="translated">Estimation office selon rapport d'expertise</target>
+			</trans-unit>
+			<trans-unit id="expense_statement" resname="expense_statement">
+				<source>Expense statement</source>
+				<target state="translated">État des charges</target>
+			</trans-unit>
+			<trans-unit id="expertise_date" resname="expertise_date">
+				<source>Latest expertise</source>
+				<target state="translated">Dernière expertise</target>
+			</trans-unit>
+			<trans-unit id="expertise_report" resname="expertise_report">
+				<source>Expertise report</source>
+				<target state="translated">Rapport d'expertise</target>
+			</trans-unit>
+			<trans-unit id="exposure" resname="exposure">
+				<source>Exhibition/visit of auction items</source>
+				<target state="translated">Exposition/visite des objets de la vente</target>
+			</trans-unit>
+			<trans-unit id="invalid_phone" resname="invalid_phone">
+				<source>Phone number is not valid</source>
+				<target state="translated">Numéro de téléphone non valide</target>
+			</trans-unit>
+			<trans-unit id="invalid_year" resname="invalid_year">
+				<source>Year is not valid</source>
+				<target state="translated">Année non valide</target>
+			</trans-unit>
+			<trans-unit id="invalid_zip" resname="invalid_zip">
+				<source>ZIP code is not valid</source>
+				<target state="translated">Code Zip non valide</target>
+			</trans-unit>
+			<trans-unit id="item_categories" resname="item_categories">
+				<source>Items sub-categories</source>
+				<target state="translated">Sous-catégories d'objets</target>
+			</trans-unit>
+			<trans-unit id="item_conditions" resname="item_conditions">
+				<source>General conditions of use</source>
+				<target state="translated">Conditions générales d'objet</target>
+			</trans-unit>
+			<trans-unit id="item_type" resname="item_type">
+				<source>Item type</source>
+				<target state="translated">Type d'objet</target>
+			</trans-unit>
+			<trans-unit id="items" resname="items">
+				<source>Items</source>
+				<target state="translated">Objets</target>
+			</trans-unit>
+			<trans-unit id="keywords" resname="keywords">
+				<source>Keywords</source>
+				<target state="translated">Mots clés</target>
+			</trans-unit>
+			<trans-unit id="kilometer" resname="kilometer">
+				<source>Kilometres travelled</source>
+				<target state="translated">Kilométrage compteur</target>
+			</trans-unit>
+			<trans-unit id="lot_sale_name" resname="lot_sale_name">
+				<source>Lot sale name</source>
+				<target state="translated">Nom de la vente du lot</target>
+			</trans-unit>
+			<trans-unit id="lots" resname="lots">
+				<source>Lots</source>
+				<target state="translated">Lots</target>
+			</trans-unit>
+			<trans-unit id="main_office" resname="main_office">
+				<source>Main office</source>
+				<target state="translated">Office principal</target>
+			</trans-unit>
+			<trans-unit id="model" resname="model">
+				<source>Model</source>
+				<target state="translated">Modèle</target>
+			</trans-unit>
+			<trans-unit id="municipality" resname="municipality">
+				<source>Municipality</source>
+				<target state="translated">Commune</target>
+			</trans-unit>
+			<trans-unit id="name" resname="name">
+				<source>Name</source>
+				<target state="translated">Nom</target>
+			</trans-unit>
+			<trans-unit id="observations" resname="observations">
+				<source>Observation(s)</source>
+				<target state="translated">Observation(s)</target>
+			</trans-unit>
+			<trans-unit id="office_pid" resname="office_pid">
+				<source>Office page on vd.ch</source>
+				<target state="translated">Page de l'office sur vd.ch</target>
+			</trans-unit>
+			<trans-unit id="offices" resname="offices">
+				<source>Offices</source>
+				<target state="translated">Offices</target>
+			</trans-unit>
+			<trans-unit id="other_documents" resname="other_documents">
+				<source>Other document(s)</source>
+				<target state="translated">Autre(s) document(s)</target>
+			</trans-unit>
+			<trans-unit id="parcel_number" resname="parcel_number">
+				<source>Parcel number</source>
+				<target state="translated">Numéro de parcelle</target>
+			</trans-unit>
+			<trans-unit id="parent_category" resname="parent_category">
+				<source>Parent category</source>
+				<target state="translated">Catégorie parente</target>
+			</trans-unit>
+			<trans-unit id="park_information" resname="park_information">
+				<source>Parking information</source>
+				<target state="translated">Information parking</target>
+			</trans-unit>
+			<trans-unit id="path_segment" resname="path_segment">
+				<source>URL segment</source>
+				<target state="translated">Segment d'URL</target>
+			</trans-unit>
+			<trans-unit id="phone" resname="phone">
+				<source>Phone number of contact person</source>
+				<target state="translated">Téléphone de la personne de contact</target>
+			</trans-unit>
+			<trans-unit id="pictures" resname="pictures">
+				<source>Picture(s)</source>
+				<target state="translated">Photo(s)</target>
+			</trans-unit>
+			<trans-unit id="po_box" resname="po_box">
+				<source>P.O. Box</source>
+				<target state="translated">Case postale</target>
+			</trans-unit>
+			<trans-unit id="postal_code" resname="postal_code">
+				<source>P.O. Box</source>
+				<target state="translated">Case postale</target>
+			</trans-unit>
+			<trans-unit id="price" resname="price">
+				<source>Start price</source>
+				<target state="translated">Prix de départ</target>
+			</trans-unit>
+			<trans-unit id="pub_date" resname="pub_date">
+				<source>Scheduled publication date</source>
+				<target state="translated">Date de publication programmée</target>
+			</trans-unit>
+			<trans-unit id="reply_address" resname="reply_address">
+				<source>Reply address</source>
+				<target state="translated">Adresse de réponse</target>
+			</trans-unit>
+			<trans-unit id="room" resname="room">
+				<source>Room</source>
+				<target state="translated">Emplacement</target>
+			</trans-unit>
+			<trans-unit id="rooms_number" resname="rooms_number">
+				<source>Number of room(s)</source>
+				<target state="translated">Nombre de pièce(s)</target>
+			</trans-unit>
+			<trans-unit id="sale" resname="sale">
+				<source>Sale</source>
+				<target state="translated">Vente</target>
+			</trans-unit>
+			<trans-unit id="sale_categories" resname="sale_categories">
+				<source>Sale type</source>
+				<target state="translated">Type de vente</target>
+			</trans-unit>
+			<trans-unit id="sale_conditions" resname="sale_conditions">
+				<source>Terms and conditions of sale</source>
+				<target state="translated">Conditions générales de vente</target>
+			</trans-unit>
+			<trans-unit id="sale_conditions_file" resname="sale_conditions_file">
+				<source>Conditions of sale</source>
+				<target state="translated">Conditions de la vente</target>
+			</trans-unit>
+			<trans-unit id="sale_date" resname="sale_date">
+				<source>Sale date</source>
+				<target state="translated">Date de vente</target>
+			</trans-unit>
+			<trans-unit id="sale_place" resname="sale_place">
+				<source>Sale place</source>
+				<target state="translated">Lieu de la vente</target>
+			</trans-unit>
+			<trans-unit id="sale_schedule" resname="sale_schedule">
+				<source>Sale schedule</source>
+				<target state="translated">Horaire de la vente</target>
+			</trans-unit>
+			<trans-unit id="sales" resname="sales">
+				<source>Sales</source>
+				<target state="translated">Ventes</target>
+			</trans-unit>
+			<trans-unit id="secondary_office" resname="secondary_office">
+				<source>Secondary office(s)</source>
+				<target state="translated">Office(s) secondaire(s)</target>
+			</trans-unit>
+			<trans-unit id="selectable" resname="selectable">
+				<source>Selectable</source>
+				<target state="translated">Selectable</target>
+			</trans-unit>
+			<trans-unit id="status" resname="status">
+				<source>Status</source>
+				<target state="translated">Statut</target>
+			</trans-unit>
+			<trans-unit id="sub_category" resname="sub_category">
+				<source>Type</source>
+				<target state="translated">Type</target>
+			</trans-unit>
+			<trans-unit id="submission_deadline" resname="submission_deadline">
+				<source>Submission deadline</source>
+				<target state="translated">Délai de soumission</target>
+			</trans-unit>
+			<trans-unit id="surface" resname="surface">
+				<source>Surface</source>
+				<target state="translated">Surface</target>
+			</trans-unit>
+			<trans-unit id="zip_code" resname="zip_code">
+				<source>ZIP</source>
+				<target state="translated">NPA</target>
+			</trans-unit>
+		</body>
+	</file>
+</xliff>

@@ -1,0 +1,22 @@
+<html data-namespace-typo3-fluid="true" xmlns:f="http://typo3.org/ns/TYPO3/CMS/Fluid/ViewHelpers">
+    <table>
+        <tr>
+            <td>
+                <f:translate id="LLL:EXT:vd_ocosp/Resources/Private/Language/locallang_frontend.xlf:label.nom"/>
+            </td>
+            <td>
+                <f:translate id="LLL:EXT:vd_ocosp/Resources/Private/Language/locallang_frontend.xlf:label.salaire_mensuel"/>
+            </td>
+            <td>
+                <f:translate id="LLL:EXT:vd_ocosp/Resources/Private/Language/locallang_frontend.xlf:label.salaire_horaire"/>
+            </td>
+        </tr>
+        <f:for as="salary" each="{salaries}">
+            <tr>
+                <td>{salary.profession}</td>
+                <td>{salary.salaireMensuel}</td>
+                <td>{salary.salaireHoraire}</td>
+            </tr>
+        </f:for>
+    </table>
+</html>

@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<evenementsPublication reset="false" xmlns="http://evd.vd.ch/xmlns/eVD-0038/2">
+    <evenement type="AJOUT">
+        <prestation>
+            <idMetierPrestation>Q475VG-QR4TGR</idMetierPrestation>
+            <titre>Commander des actes d'état civil pour particuliers</titre>
+            <description>&lt;div class=&quot;description col-md-9
+                ng-binding&quot;> &lt;p>Vous d&amp;eacute;sirez commander
+                un acte d'&amp;eacute;tat civil, soit&lt;/p> &lt;ul>
+                &lt;li>Acte de reconnaissance&lt;/li> &lt;li>Acte de
+                naissance&lt;/li> &lt;li>Acte de mariage&lt;/li>
+                &lt;li>Acte de d&amp;eacute;c&amp;egrave;s&lt;/li>
+                &lt;li>Certificat de famille&lt;/li> &lt;li>Certificat de
+                partenariat&lt;/li> &lt;li>Certificat individuel de
+                l'&amp;eacute;tat civil&lt;/li> &lt;li>Acte
+                d'origine&lt;/li> &lt;/ul> &lt;/div>
+            </description>
+            <domaineMetier>Vie privée</domaineMetier>
+            <themeMetier>État civil</themeMetier>
+            <publicsCible>
+                <population>Communes</population>
+            </publicsCible>
+            <publicsCible>
+                <population>Entreprises</population>
+            </publicsCible>
+            <publicsCible>
+                <population>Particuliers</population>
+            </publicsCible>
+            <publicsCible>
+                <population>Services ACV</population>
+            </publicsCible>
+            <emolument xmlns:xs="http://www.w3.org/2001/XMLSchema"
+                       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+                       xsi:type="xs:string">&lt;div class=&quot;row
+                ng-scope&quot;> &lt;p>Les &amp;eacute;moluments varient
+                en fonction de l'acte command&amp;eacute;.&lt;/p>
+                &lt;p>Les frais de port sont fix&amp;eacute;s en fonction
+                du lieu de destination de l'acte, en Suisse ou
+                &amp;agrave; l'&amp;eacute;tranger.&lt;/p> &lt;/div>
+            </emolument>
+            <conditionsPrealables
+                    xmlns:xs="http://www.w3.org/2001/XMLSchema"
+                    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+                    xsi:type="xs:string">&lt;p>Un acte d'&amp;eacute;tat
+                civil peut &amp;ecirc;tre command&amp;eacute; :&lt;/p>
+                &lt;ul> &lt;li>pour soi-m&amp;ecirc;me&lt;/li>
+                &lt;li>pour son enfant mineur&lt;/li> &lt;li>pour son
+                conjoint&lt;/li> &lt;li>pour une personne
+                d&amp;eacute;c&amp;eacute;d&amp;eacute;e avec un lien de
+                parent&amp;eacute; direct&lt;/li> &lt;li>pour une autre
+                personne avec une procuration&lt;/li> &lt;/ul>
+            </conditionsPrealables>
+            <lienAide>http://www.vd.ch/formulaire-de-contact/?from=20</lienAide>
+            <referencesLegaux>
+                <titreReferenceLegale>Ordonnance sur l'état civil (OEC;
+                    RS 211.112.2) articles 44a, 45, 47 et 81
+                </titreReferenceLegale>
+                <urlReferenceLegale>https://www.admin.ch/opc/fr/classified-compilation/20040234/index.html
+                </urlReferenceLegale>
+            </referencesLegaux>
+            <modaliteAcces typeModaliteAcces="online">
+                <marcheASuivre>&lt;ul> &lt;li>acc&amp;eacute;dez au
+                    formulaire de commande par le bouton&lt;/li>
+                    &lt;li>s&amp;eacute;lectionnez l'acte
+                    souhait&amp;eacute;&lt;/li> &lt;li>remplissez le
+                    formulaire et joignez les documents
+                    demand&amp;eacute;s&lt;/li> &lt;/ul> &lt;p>Le paiement
+                    peut se faire par facture ou directement en
+                    ligne.&lt;/p> &lt;p>&lt;strong>La d&amp;eacute;livrance
+                    ne se fait qu'apr&amp;egrave;s r&amp;eacute;ception du paiement.&lt;/strong>&lt;/p>
+                </marcheASuivre>
+                <delaiMoyenTraitementDemande>2 jours ouvrables
+                    apr&amp;egrave;s r&amp;eacute;ception du paiement
+                </delaiMoyenTraitementDemande>
+                <documentsObligatoires>Scan ou photo du document
+                    d'identit&amp;eacute; et de l'&amp;eacute;ventuelle procuration
+                </documentsObligatoires>
+                <ePayment>true</ePayment>
+                <niveauSecurite>PUBLIC</niveauSecurite>
+                <lienExterne>true</lienExterne>
+                <lienAccesPrestation>https://secure.vd.ch/prestations/geststarfoa/</lienAccesPrestation>
+            </modaliteAcces>
+            <modaliteAcces typeModaliteAcces="telephone">
+                <marcheASuivre>&lt;p>Appelez le Centre administratif de
+                    l'&amp;eacute;tat civil au 021 557 07 07.&lt;/p>
+                    &lt;p>Des documents pourraient vous &amp;ecirc;tre
+                    demand&amp;eacute;s selon la situation. Une facture
+                    vous parviendra pour le paiement.&lt;/p>
+                    &lt;p>&lt;strong>La d&amp;eacute;livrance ne se fait
+                    qu'apr&amp;egrave;s r&amp;eacute;ception du paiement.&lt;/strong>&lt;/p>
+                </marcheASuivre>
+                <delaiMoyenTraitementDemande>2 jours ouvrables
+                    apr&amp;egrave;s r&amp;eacute;ception du paiement
+                </delaiMoyenTraitementDemande>
+                <ePayment>false</ePayment>
+                <lienExterne>true</lienExterne>
+                <lienAccesPrestation>http://www.vd.ch/themes/vie-privee/etat-civil/direction-de-letat-civil/
+                </lienAccesPrestation>
+            </modaliteAcces>
+            <servicePrestataire>SPOP</servicePrestataire>
+            <resultatPrestation>Acte d'&amp;eacute;tat civil</resultatPrestation>
+            <actionBeneficiaire>COMMANDER</actionBeneficiaire>
+            <actionPrestataire
+                    xmlns:xs="http://www.w3.org/2001/XMLSchema"
+                    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:type="xs:string">DELIVRER
+            </actionPrestataire>
+            <typeMissionECH0145
+                    xmlns:xs="http://www.w3.org/2001/XMLSchema"
+                    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:type="xs:UNSIGNEDShort">66
+            </typeMissionECH0145>
+            <champMissionECH0145
+                    xmlns:xs="http://www.w3.org/2001/XMLSchema"
+                    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:type="xs:string">BF0045
+            </champMissionECH0145>
+            <groupeMissionECH0145
+                    xmlns:xs="http://www.w3.org/2001/XMLSchema"
+                    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:type="xs:string">BG0045
+            </groupeMissionECH0145>
+        </prestation>
+    </evenement>
+</evenementsPublication>
+

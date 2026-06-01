@@ -1,0 +1,16 @@
+<html data-namespace-typo3-fluid="true" xmlns:f="http://typo3.org/ns/TYPO3/CMS/Fluid/ViewHelpers">
+    <f:if condition="{newsItem.mediaPreviews}">
+        <f:alias map="{media: newsItem.mediaPreviews.0}">
+            <figure class="d-block figure">
+                <f:if condition="{media.originalResource.type} == 2">
+                    <f:then>
+                        <f:render arguments="{_all}" partial="Media/Image"/>
+                    </f:then>
+                    <f:else if="{media.originalResource.type} == 4">
+                        <f:render arguments="{_all}" partial="Media/Video"/>
+                    </f:else>
+                </f:if>
+            </figure>
+        </f:alias>
+    </f:if>
+</html>

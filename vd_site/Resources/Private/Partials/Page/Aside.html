@@ -1,0 +1,20 @@
+<html data-namespace-typo3-fluid="true" xmlns:f="http://typo3.org/ns/TYPO3/CMS/Fluid/ViewHelpers">
+    <f:variable name="additionalContent" value="{additionalContent -> f:spaceless()}"/>
+    <f:if condition="{additionalContent} || {rightContent} || {serviceContact}">
+        <div class="col-md-4 vd-content vd-content-column">
+            <f:if condition="{additionalContent}">
+                <f:format.raw>{additionalContent}</f:format.raw>
+            </f:if>
+            <f:if condition="{rightContent} || {serviceContact}">
+                <aside class="vd-text-md-small">
+                    <f:if condition="{rightContent}">
+                        <!--TYPO3SEARCH_begin-->
+                        <f:format.raw>{rightContent}</f:format.raw>
+                        <!--TYPO3SEARCH_end-->
+                    </f:if>
+                    <f:format.raw>{serviceContact}</f:format.raw>
+                </aside>
+            </f:if>
+        </div>
+    </f:if>
+</html>

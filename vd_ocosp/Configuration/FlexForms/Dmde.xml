@@ -1,0 +1,36 @@
+<T3DataStructure>
+    <sheets>
+        <sDEF>
+            <ROOT>
+                <el>
+                    <settings.resultpage>
+                        <TCEforms>
+                            <config>
+                                <allowed>pages</allowed>
+                                <default>0</default>
+                                <foreign_table>pages</foreign_table>
+                                <internal_type>db</internal_type>
+                                <maxitems>1</maxitems>
+                                <minitems>1</minitems>
+                                <size>1</size>
+                                <type>group</type>
+                                <wizards>
+                                    <suggest>
+                                        <default>
+                                            <searchWholePhrase>1</searchWholePhrase>
+                                        </default>
+                                        <type>suggest</type>
+                                    </suggest>
+                                </wizards>
+                            </config>
+                            <label>LLL:EXT:vd_ocosp/Resources/Private/Language/locallang_db.xlf:results_page</label>
+                        </TCEforms>
+                    </settings.resultpage>
+                </el>
+                <TCEforms>
+                    <sheetTitle>LLL:EXT:core/Resources/Private/Language/Form/locallang_tabs.xlf:general</sheetTitle>
+                </TCEforms>
+            </ROOT>
+        </sDEF>
+    </sheets>
+</T3DataStructure>

@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xliff version="1.2" xmlns="urn:oasis:names:tc:xliff:document:1.2">
+	<file datatype="plaintext" original="EXT:vd_pressreleases/Resources/Private/Language/Form/locallang_tabs.xlf" source-language="en">
+		<header/>
+		<body>
+			<trans-unit id="links" resname="links">
+				<source>Links</source>
+			</trans-unit>
+			<trans-unit id="medias" resname="medias">
+				<source>Medias</source>
+			</trans-unit>
+			<trans-unit id="press_releases" resname="press_releases">
+				<source>Press releases</source>
+			</trans-unit>
+			<trans-unit id="seo" resname="seo">
+				<source>SEO</source>
+			</trans-unit>
+			<trans-unit id="texts" resname="texts">
+				<source>Texts</source>
+			</trans-unit>
+			<trans-unit id="transmitter" resname="transmitter">
+				<source>Transmitter</source>
+			</trans-unit>
+		</body>
+	</file>
+</xliff>

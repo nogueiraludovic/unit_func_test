@@ -1,0 +1,216 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xliff version="1.2" xmlns="urn:oasis:names:tc:xliff:document:1.2">
+	<file datatype="plaintext" original="EXT:vd_ocosp/Resources/Private/Language/locallang_db.xlf" source-language="en" target-language="fr">
+		<header/>
+		<body>
+			<trans-unit id="adresse_next" resname="adresse_next">
+				<source>Address next</source>
+				<target state="translated">Adresse suite</target>
+			</trans-unit>
+			<trans-unit id="address_type" resname="address_type">
+				<source>Address type</source>
+				<target state="translated">Type d'adresse</target>
+			</trans-unit>
+			<trans-unit id="address_type.I.association" resname="address_type.I.assoc">
+				<source>Association</source>
+				<target state="translated">Association</target>
+			</trans-unit>
+			<trans-unit id="address_type.I.company" resname="address_type.I.company">
+				<source>Company</source>
+				<target state="translated">Entreprise</target>
+			</trans-unit>
+			<trans-unit id="address_type.I.other" resname="address_type.I.other">
+				<source>Other</source>
+				<target state="translated">Autre</target>
+			</trans-unit>
+			<trans-unit id="address_type.I.private_school" resname="address_type.I.private_school">
+				<source>Private school</source>
+				<target state="translated">École privée</target>
+			</trans-unit>
+			<trans-unit id="address_type.I.secondary_1_school" resname="address_type.I.secondary_1_school">
+				<source>Secondary I school</source>
+				<target state="translated">École degré secondaire I</target>
+			</trans-unit>
+			<trans-unit id="address_type.I.secondary_2_school" resname="secondary_2_school.I.second_2">
+				<source>Secondary II school</source>
+				<target state="translated">École degré secondaire II</target>
+			</trans-unit>
+			<trans-unit id="address_type.I.school_tertiary_level" resname="address_type.I.school_tertiary_level">
+				<source>School tertiary level</source>
+				<target state="translated">École degré tertiaire</target>
+			</trans-unit>
+			<trans-unit id="addresses" resname="addresses">
+				<source>Addresses</source>
+				<target state="translated">Adresses</target>
+			</trans-unit>
+			<trans-unit id="admission_requirements" resname="admission_requirements">
+				<source>Admission requirements</source>
+				<target state="translated">Conditions d'admission</target>
+			</trans-unit>
+			<trans-unit id="admission_requirements_2" resname="admission_requirements_2">
+				<source>Admission requirements (2)</source>
+				<target state="translated">Conditions d'admission (2)</target>
+			</trans-unit>
+			<trans-unit id="additional_diploma" resname="additional_diploma">
+				<source>Additional diploma</source>
+				<target state="translated">Diplôme complément</target>
+			</trans-unit>
+			<trans-unit id="careers_schools" resname="careers_schools">
+				<source>Careers - Schools</source>
+				<target state="translated">Des métiers - Des écoles</target>
+			</trans-unit>
+			<trans-unit id="classes" resname="classes">
+				<source>Classes</source>
+				<target state="translated">Classes</target>
+			</trans-unit>
+			<trans-unit id="cnc_level" resname="cnc_level">
+				<source>CNC level</source>
+				<target state="translated">Niveau CNC</target>
+			</trans-unit>
+			<trans-unit id="deadline" resname="deadline">
+				<source>Deadline</source>
+				<target state="translated">Délai</target>
+			</trans-unit>
+			<trans-unit id="delivered_title" resname="delivered_title">
+				<source>Delivered title</source>
+				<target state="translated">Titre délivré</target>
+			</trans-unit>
+			<trans-unit id="demand" resname="demand">
+				<source>Demand</source>
+				<target state="translated">Demande</target>
+			</trans-unit>
+			<trans-unit id="diploma" resname="diploma">
+				<source>Diploma</source>
+				<target state="translated">Diplôme</target>
+			</trans-unit>
+			<trans-unit id="diplomas" resname="diplomas">
+				<source>Diplomas</source>
+				<target state="translated">Diplômes</target>
+			</trans-unit>
+			<trans-unit id="domain" resname="domain">
+				<source>Domain</source>
+				<target state="translated">Domaine</target>
+			</trans-unit>
+			<trans-unit id="domain_2" resname="domain_2">
+				<source>Domain (2)</source>
+				<target state="translated">Domaine (2)</target>
+			</trans-unit>
+			<trans-unit id="domains" resname="domains">
+				<source>Domains</source>
+				<target state="translated">Domaines</target>
+			</trans-unit>
+			<trans-unit id="exam_date" resname="exam_date">
+				<source>Exam date</source>
+				<target state="translated">Date d'examen</target>
+			</trans-unit>
+			<trans-unit id="external_id_on_orientation_ch" resname="external_id_on_orientation_ch">
+				<source>External ID on orientation.ch</source>
+				<target state="translated">ID externe sur orientation.ch</target>
+			</trans-unit>
+			<trans-unit id="external_link_on_orientation_ch" resname="external_link_on_orientation_ch">
+				<source>Link to description of training at school (e.g. on orientation.ch)</source>
+				<target state="translated">Lien vers la description de la formation à l'école (par exemple sur orientation.ch)</target>
+			</trans-unit>
+			<trans-unit id="external_remarks" resname="external_remarks">
+				<source>External remarks</source>
+				<target state="translated">Remarques extérieures</target>
+			</trans-unit>
+			<trans-unit id="female_name" resname="female_name">
+				<source>Female name</source>
+				<target state="translated">Nom féminin</target>
+			</trans-unit>
+			<trans-unit id="formation" resname="formation">
+				<source>Formation</source>
+				<target state="translated">Formation</target>
+			</trans-unit>
+			<trans-unit id="formation_2" resname="formation_2">
+				<source>Formation (2)</source>
+				<target state="translated">Formation (2)</target>
+			</trans-unit>
+			<trans-unit id="formation_descripction" resname="formation_descripction">
+				<source>Formation description</source>
+				<target state="translated">Description de la formation</target>
+			</trans-unit>
+			<trans-unit id="former_names" resname="former_names">
+				<source>Former names</source>
+				<target state="translated">Anciennes dénominations</target>
+			</trans-unit>
+			<trans-unit id="hits" resname="hits">
+				<source>Hits</source>
+				<target state="translated">Hits</target>
+			</trans-unit>
+			<trans-unit id="im_domains" resname="im_domains">
+				<source>Jobs Info: Domains</source>
+				<target state="translated">Info Métiers : Domaines</target>
+			</trans-unit>
+			<trans-unit id="indemnities" resname="indemnities">
+				<source>Indemnities</source>
+				<target state="translated">Indemnites</target>
+			</trans-unit>
+			<trans-unit id="interests" resname="interests">
+				<source>Interests</source>
+				<target state="translated">Intérêts</target>
+			</trans-unit>
+			<trans-unit id="internal_remark" resname="internal_remark">
+				<source>Internal remark</source>
+				<target state="translated">Remarque interne</target>
+			</trans-unit>
+			<trans-unit id="locations" resname="locations">
+				<source>Locations</source>
+				<target state="translated">Lieux</target>
+			</trans-unit>
+			<trans-unit id="locations_2" resname="locations_2">
+				<source>Locations (2)</source>
+				<target state="translated">Lieux (2)</target>
+			</trans-unit>
+			<trans-unit id="male_name" resname="male_name">
+				<source>Male name</source>
+				<target state="translated">Nom masculin</target>
+			</trans-unit>
+			<trans-unit id="name" resname="name">
+				<source>Name</source>
+				<target state="translated">Nom</target>
+			</trans-unit>
+			<trans-unit id="podcast_link" resname="podcast_link">
+				<source>Podcast link</source>
+				<target state="translated">Lien Podcast</target>
+			</trans-unit>
+			<trans-unit id="profession" resname="profession">
+				<source>Profession</source>
+				<target state="translated">Profession</target>
+			</trans-unit>
+			<trans-unit id="professions" resname="professions">
+				<source>Professions</source>
+				<target state="translated">Professions</target>
+			</trans-unit>
+			<trans-unit id="remarks" resname="remarks">
+				<source>Remarks</source>
+				<target state="translated">Remarques</target>
+			</trans-unit>
+			<trans-unit id="remarks_2" resname="remarks_2">
+				<source>Remarks (2)</source>
+				<target state="translated">Remarques (2)</target>
+			</trans-unit>
+			<trans-unit id="results_page" resname="results_page">
+				<source>Results page</source>
+				<target state="translated">Page des résultats</target>
+			</trans-unit>
+			<trans-unit id="subscription_deadline" resname="subscription_deadline">
+				<source>Subscription deadline</source>
+				<target state="translated">Délai inscription</target>
+			</trans-unit>
+			<trans-unit id="subscriptions" resname="subscriptions">
+				<source>Subscriptions</source>
+				<target state="translated">Inscriptions</target>
+			</trans-unit>
+			<trans-unit id="update_date" resname="update_date">
+				<source>Update date</source>
+				<target state="translated">Date de mise à jour</target>
+			</trans-unit>
+			<trans-unit id="video_zoom" resname="video_zoom">
+				<source>Zoom video</source>
+				<target state="translated">Vidéo zoom</target>
+			</trans-unit>
+		</body>
+	</file>
+</xliff>

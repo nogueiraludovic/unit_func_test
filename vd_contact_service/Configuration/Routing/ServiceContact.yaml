@@ -1,0 +1,16 @@
+---
+routeEnhancers:
+  ContactService:
+    aspects:
+      referer:
+        type: StaticIdentifierMapper
+      uid:
+        type: StaticIdentifierMapper
+    limitToPages:
+      - 1032247
+    namespace: tx_powermail_pi1
+    requirements:
+      referer: '[a-zA-Z0-9].*'
+      uid: '[a-zA-Z0-9].*'
+    routePath: /service-contact/{uid}/{referer}
+    type: Plugin

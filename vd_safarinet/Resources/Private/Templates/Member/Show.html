@@ -1,0 +1,196 @@
+<html data-namespace-typo3-fluid="true" xmlns:f="http://typo3.org/ns/fluid/ViewHelpers" xmlns:vds="http://typo3.org/ns/Vd/VdSafarinet/ViewHelpers">
+    <f:layout/>
+    <f:section name="Main">
+        <div class="row">
+            <div class="col-md-8 col-md-push-4 member-description">
+                <div class="mb-4 member-detail member-detail-various">
+                    <f:if condition="{member.qualite}">
+                        <p class="mb-1">{member.qualite}</p>
+                    </f:if>
+                    <f:if condition="{member.profession}">
+                        <p class="mb-1">{member.profession}</p>
+                    </f:if>
+                </div>
+                <div class="mb-4 member-detail member-detail-political">
+                    <f:if condition="{member.arrondissement}">
+                        <p class="mb-1">Arrondissement : <span class="float-end">{member.arrondissement}</span></p>
+                    </f:if>
+                    <f:if condition="{member.parti}">
+                        <p class="mb-1">Groupe politique : <span class="float-end">{member.parti}</span></p>
+                    </f:if>
+                </div>
+                <div class="mb-4 member-detail member-detail-years">
+                    <f:if condition="{member.dateNaissance}">
+                        <p class="mb-1">Année de naissance : <span class="float-end"><f:format.date date="{member.dateNaissance}" format="Y"/></span></p>
+                    </f:if>
+                    <f:if condition="{member.historique.election}">
+                        <p class="mb-1">
+                            Année(s) d'élection :
+                            <f:for as="election" each="{member.historique.election -> vds:format.toArrayList()}" iteration="iterator">
+                                <span class="float-end">
+                                    <f:if condition="!{iterator.isFirst}">
+                                        <f:then><f:format.date date="{election.dateElection}" format="Y"/>,&nbsp;</f:then>
+                                        <f:else><f:format.date date="{election.dateElection}" format="Y"/></f:else>
+                                    </f:if>
+                                </span>
+                            </f:for>
+                        </p>
+                    </f:if>
+                </div>
+                <div class="mb-4 member-detail member-detail-address">
+                    <p class="mb-1">
+                        <f:if condition="{member.adressePolitique.adresse}">
+                            {member.adressePolitique.adresse}
+                            <br/>
+                        </f:if>
+                        <f:if condition="{member.adressePolitique.npa}">
+                            <f:then>
+                                {member.adressePolitique.npa}
+                                <f:if condition="{member.adressePolitique.localite}">
+                                    &nbsp;{member.adressePolitique.localite}
+                                </f:if>
+                            </f:then>
+                            <f:else>
+                                <f:if condition="{member.adressePolitique.canton}">
+                                    {member.adressePolitique.canton}
+                                </f:if>
+                            </f:else>
+                        </f:if>
+                    </p>
+                </div>
+                <div class="mb-4 member-detail member-detail-mails">
+                    <f:if condition="{member.adressePolitique.email}">
+                        <p class="mb-1">E-mail privé : <span class="float-end"><f:link.email email="{member.adressePolitique.email}" id="member-political-email-to"/></span></p>
+                    </f:if>
+                    <f:if condition="{member.adresseProfessionnelle.email}">
+                        <p class="mb-1">E-mail prof. : <span class="float-end"><f:link.email email="{member.adresseProfessionnelle.email}" id="member-professionnal-email-to"/></span></p>
+                    </f:if>
+                </div>
+                <div class="member-detail member-detail-tel mb-4">
+                    <f:if condition="{member.adressePolitique.telephone}">
+                        <p class="mb-1">
+                            Tél. privé :
+                            <span class="float-end"><a href="tel:{member.adressePolitique.telephone}" id="political-phone-link">{member.adressePolitique.telephone}</a></span>
+                        </p>
+                    </f:if>
+                    <f:if condition="{member.adresseProfessionnelle.telephone}">
+                        <p class="mb-1">Tél. prof. : <span class="float-end"><a href="tel:{member.adresseProfessionnelle.telephone}" id="professionnal-phone-link">{member.adresseProfessionnelle.telephone}</a></span></p>
+                    </f:if>
+                    <f:if condition="{member.adressePolitique.telephoneMobile}">
+                        <p class="mb-1">Tél mobile : <span class="float-end"><a href="tel:{member.adressePolitique.telephoneMobile}" id="political-mobile-phone-link">{member.adressePolitique.telephoneMobile}</a></span></p>
+                    </f:if>
+                </div>
+                <div class="member-detail member-detail-web mb-4">
+                    <f:if condition="{member.adressePolitique.siteWeb}">
+                        <p class="mb-1">Site web : <span class="float-end"><a href="{member.adressePolitique.siteWebUrl}" id="political-website-link">{member.adressePolitique.siteWeb}</a></span></p>
+                    </f:if>
+                </div>
+            </div>
+            <f:if condition="{member.documents.document}">
+                <f:for as="document" each="{member.documents.document -> vds:format.toArrayList()}">
+                    <f:if condition="{document.type} == 'Photo de profil'">
+                        <div class="col-md-4 col-md-float-8 member-picture text-center">
+                            <img alt="Portrait de {member.prenom} {member.nom}" class="img-fluid" loading="lazy" src="{vds:document(document: document, urlOnly: 1)}"/>
+                        </div>
+                    </f:if>
+                </f:for>
+            </f:if>
+        </div>
+        <div class="row">
+            <div class="col-xs-12 mb-4 mt-5">
+                <h2 class="heading" id="summary-title"><f:translate id="summary"/></h2>
+                <ul class="vd-list-links">
+                    <f:if condition="{member.objets.objet}">
+                        <li><f:link.page addQueryString="1" id="member-object-link" pageUid="{pageUid}" section="objects"><f:translate id="deposited_objects"/></f:link.page></li>
+                    </f:if>
+                    <f:if condition="{member.groupes.groupe}">
+                        <li><f:link.page addQueryString="1" id="member-group-link" pageUid="{pageUid}" section="groups"><f:translate id="groups"/></f:link.page></li>
+                    </f:if>
+                    <f:if condition="{member.documents.document}">
+                        <f:for as="document" each="{member.documents.document -> vds:format.toArrayList()}" iteration="iterator">
+                            <f:if condition="{document.type} == 'Registre des intérêts'">
+                                <li><f:link.page addQueryString="1" id="document-details-link-{iterator.index}" pageUid="{pageUid}" section="interests">Registre des intérêts</f:link.page></li>
+                            </f:if>
+                        </f:for>
+                    </f:if>
+                </ul>
+            </div>
+        </div>
+        <f:if condition="{member.objets.objet}">
+            <div class="row">
+                <div class="col-xs-12 mb-4">
+                    <h2 class="heading" id="objects"><f:translate id="deposited_objects"/></h2>
+                    <div class="mt-4 spin table-responsive">
+                        <table class="table table-striped">
+                            <thead>
+                                <tr>
+                                    <th>Lien vers la page de détail de l'intervention parlementaire</th>
+                                    <th>Date du dépôt</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <f:for as="object" each="{member.objets.objet -> vds:format.toArrayList()}" iteration="iterator">
+                                    <tr>
+                                        <td>
+                                            <f:link.action action="show" arguments="{memberId: member.id, objectId: object.id}" controller="Object" id="member-object-link-{iterator.index}" pageUid="{settings.objectDetailPageUid}">
+                                                {object.titre}
+                                            </f:link.action>
+                                        </td>
+                                        <f:if condition="{object.dateDepot}">
+                                            <td>
+                                                <f:format.date date="{object.dateDepot}" format="d.m.Y"/>
+                                            </td>
+                                        </f:if>
+                                    </tr>
+                                </f:for>
+                            </tbody>
+                        </table>
+                        <p><f:render partial="GoToTop"/></p>
+                    </div>
+                </div>
+            </div>
+        </f:if>
+        <f:if condition="{member.groupes.groupe}">
+            <div class="row">
+                <div class="col-xs-12 mb-4" id="groups">
+                    <h2 class="heading"><f:translate id="groups"/></h2>
+                    <div class="mt-4 spin table-responsive">
+                        <table class="table table-striped">
+                            <thead>
+                                <tr>
+                                    <th>Rôle</th>
+                                    <th><f:translate id="name"/></th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <f:for as="group" each="{member.groupes.groupe -> vds:format.toArrayList()}" iteration="iterator">
+                                    <tr>
+                                        <td>{group.qualite}</td>
+                                        <td>
+                                            <f:link.action action="show" arguments="{groupId: group.id, memberId: member.id}" controller="Group" id="member-group-link-{iterator.index}" pageUid="{settings.groupDetailPageUid}">
+                                                {group.nom}
+                                            </f:link.action>
+                                        </td>
+                                    </tr>
+                                </f:for>
+                            </tbody>
+                        </table>
+                        <p><f:render partial="GoToTop"/></p>
+                    </div>
+                </div>
+            </div>
+        </f:if>
+        <f:if condition="{member.documents.document}">
+            <f:for as="document" each="{member.documents.document -> vds:format.toArrayList()}">
+                <f:if condition="{document.type} == 'Registre des intérêts'">
+                    <div class="row">
+                        <div class="col-xs-12 mb-4" id="interests">
+                            <h2 class="heading" id="interests-registery-title">Registre des intérêts</h2>
+                            <span class="fa fa-download" aria-hidden="true"></span>&nbsp;<vds:document document="{document}"/>
+                        </div>
+                    </div>
+                </f:if>
+            </f:for>
+        </f:if>
+    </f:section>
+</html>

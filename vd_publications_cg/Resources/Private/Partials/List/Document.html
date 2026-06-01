@@ -1,0 +1,40 @@
+<html data-namespace-typo3-fluid="true" xmlns:f="http://typo3.org/ns/TYPO3/CMS/Fluid/ViewHelpers" xmlns:vdf="http://typo3.org/ns/Vd/VdFrontend/ViewHelpers" xmlns:vdpcg="http://typo3.org/ns/Vd/VdPublicationsCg/ViewHelpers">
+    <f:section name="Default">
+        <f:for as="record" each="{records}">
+            <h3 class="h3"><vdpcg:translate arguments="{0: record.number}" id="standard_number"/></h3>
+            <dl class="row">
+                <f:if condition="{record.text}">
+                    <dt class="col-md-4"><vdpcg:translate id="title"/></dt>
+                    <dd class="col-md-8 mb-3">{record.text -> f:format.stripTags() -> f:format.nl2br()}</dd>
+                </f:if>
+                <f:if condition="{record.publication_date}">
+                    <dt class="col-md-4"><vdpcg:translate id="last_update_date"/></dt>
+                    <dd class="col-md-8 mb-3">{record.publication_date -> f:format.date(format: 'd.m.Y')}</dd>
+                </f:if>
+                <f:variable name="files" value="{vdf:relation(field: 'files', record: record, table: 'tx_vdpublicationscg_domain_model_document')}"/>
+                <f:if condition="{files}">
+                    <dt class="col-md-4"><vdpcg:translate id="files"/></dt>
+                    <dd class="col-md-8">
+                        <ul class="list-unstyled">
+                            <f:for as="file" each="{files}" iteration="iterator">
+                                <li>
+                                    <f:if condition="{file.title}">
+                                        <f:then>
+                                            <f:variable name="title" value="{file.title}"/>
+                                        </f:then>
+                                        <f:else>
+                                            <f:variable name="title" value="{file.name}"/>
+                                        </f:else>
+                                    </f:if>
+                                    <a href="{file.publicUrl}" id="file-link-{iterator.index}">{title}</a>
+                                    <span class="ms-1">({file.extension -> f:format.case(mode: 'upper')}, {file.size -> f:format.bytes()})</span>
+                                </li>
+                            </f:for>
+                        </ul>
+                    </dd>
+                </f:if>
+            </dl>
+            <hr/>
+        </f:for>
+    </f:section>
+</html>

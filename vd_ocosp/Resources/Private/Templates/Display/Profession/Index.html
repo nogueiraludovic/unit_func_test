@@ -1,0 +1,49 @@
+<html data-namespace-typo3-fluid="true" xmlns:f="http://typo3.org/ns/TYPO3/CMS/Fluid/ViewHelpers">
+    <f:layout/>
+    <f:section name="main">
+        <f:if condition="{professions -> f:count()}">
+            <f:then>
+                <f:render arguments="{consult: consult, keyword: keyword, repealed: repealed, year: year}" partial="Search/Profession"/>
+                <div class="mt-1">
+                    <f:render arguments="{pagination: pagination, paginator: paginator}" partial="Pagination/SlidingWindow"/>
+                    <div class="table-responsive">
+                        <table class="table table-striped">
+                            <thead>
+                                <tr>
+                                    <th><f:translate id="LLL:EXT:vd_ocosp/Resources/Private/Language/locallang_backend.xlf:profession.liste.nomMasc"/></th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <f:for as="profession" each="{paginator.paginatedItems}">
+                                    <tr>
+                                        <td>
+                                            <f:link.action action="detail" arguments="{profession: profession}" id="profession-details-link">
+                                                {profession.nomMasc} / {profession.nomFem}
+                                            </f:link.action>
+                                        </td>
+                                    </tr>
+                                </f:for>
+                            </tbody>
+                        </table>
+                    </div>
+                    <f:render arguments="{pagination: pagination, paginator: paginator}" partial="Pagination/SlidingWindow"/>
+                </div>
+            </f:then>
+            <f:else>
+                <div class="alert alert-info">
+                    <f:if condition="{hasSearch}">
+                        <f:then>
+                            <f:translate id="LLL:EXT:vd_ocosp/Resources/Private/Language/locallang_backend.xlf:profession.label.search.none"/>
+                        </f:then>
+                        <f:else>
+                            <f:translate id="LLL:EXT:vd_ocosp/Resources/Private/Language/locallang_backend.xlf:profession.label.none"/>
+                        </f:else>
+                    </f:if>
+                </div>
+                <f:if condition="{hasSearch}">
+                    <f:render arguments="{consult: consult, keyword: keyword, repealed: repealed, year: year}" partial="Search/Profession"/>
+                </f:if>
+            </f:else>
+        </f:if>
+    </f:section>
+</html>

@@ -1,0 +1,2 @@
+#cat=basic/enable/10;type=boolean;label=Enable log of responses from the webservice
+debug = 0

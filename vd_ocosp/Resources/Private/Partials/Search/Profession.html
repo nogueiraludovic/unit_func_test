@@ -1,0 +1,55 @@
+<html data-namespace-typo3-fluid="true" xmlns:f="http://typo3.org/ns/TYPO3/CMS/Fluid/ViewHelpers">
+    <f:form method="post" action="index">
+        <fieldset>
+            <legend>
+                <f:translate id="LLL:EXT:vd_ocosp/Resources/Private/Language/locallang_backend.xlf:label.recherche"/>
+            </legend>
+            <div class="mb-3">
+                <label class="form-label">
+                    <f:translate id="LLL:EXT:vd_ocosp/Resources/Private/Language/locallang_backend.xlf:profession.form.projetConsultation"/>
+                </label>
+                <div class="form-check form-check-inline">
+                    <label class="form-check-label">
+                        <f:form.radio class="form-check-input" name="consult" value="" checked="{f:if(condition: '{consult} == \'\'', then: 'checked')}"/> <f:translate id="LLL:EXT:vd_ocosp/Resources/Private/Language/locallang_backend.xlf:label.all"/>
+                    </label>
+                </div>
+                <div class="form-check form-check-inline">
+                    <label class="form-check-label">
+                        <f:form.radio class="form-check-input" name="consult" value="o" checked="{f:if(condition: '{consult} == \'o\'', then: 'checked')}"/> <f:translate id="LLL:EXT:vd_ocosp/Resources/Private/Language/locallang_backend.xlf:label.yes"/>
+                    </label>
+                </div>
+                <div class="form-check form-check-inline">
+                    <label class="form-check-label">
+                        <f:form.radio class="form-check-input" name="consult" value="n" checked="{f:if(condition: '{consult} == \'n\'', then: 'checked')}"/> <f:translate id="LLL:EXT:vd_ocosp/Resources/Private/Language/locallang_backend.xlf:label.no"/>
+                    </label>
+                </div>
+            </div>
+            <div class="mb-3">
+                <label class="form-label">
+                    <f:translate id="LLL:EXT:vd_ocosp/Resources/Private/Language/locallang_backend.xlf:profession.form.reglementAbroge"/>
+                </label>
+                <div class="form-check form-check-inline">
+                    <label class="form-check-label">
+                        <f:form.radio class="form-check-input" name="repealed" value="" checked="{f:if(condition: '{repealed} == \'\'', then: 'checked')}"/> <f:translate id="LLL:EXT:vd_ocosp/Resources/Private/Language/locallang_backend.xlf:label.all"/>
+                    </label>
+                </div>
+                <div class="form-check form-check-inline">
+                    <label class="form-check-label">
+                        <f:form.radio class="form-check-input" name="repealed" value="o" checked="{f:if(condition: '{repealed} == \'o\'', then: 'checked')}"/> <f:translate id="LLL:EXT:vd_ocosp/Resources/Private/Language/locallang_backend.xlf:label.yes"/>
+                    </label>
+                </div>
+                <div class="form-check form-check-inline">
+                    <label class="form-check-label">
+                        <f:form.radio class="form-check-input" name="repealed" value="n" checked="{f:if(condition: '{repealed} == \'n\'', then: 'checked')}"/> <f:translate id="LLL:EXT:vd_ocosp/Resources/Private/Language/locallang_backend.xlf:label.no"/>
+                    </label>
+                </div>
+            </div>
+            <div class="mb-3">
+                <f:form.textfield name="keyword" class="form-control" placeholder="{f:translate(id: 'LLL:EXT:vd_ocosp/Resources/Private/Language/locallang_backend.xlf:label.mot_cle')}" value="{keyword}"/>
+            </div>
+            <button class="btn btn-secondary btn-sm" id="submit-search" type="submit">
+                <f:translate id="LLL:EXT:vd_ocosp/Resources/Private/Language/locallang_backend.xlf:label.rechercher"/>
+            </button>
+        </fieldset>
+    </f:form>
+</html>

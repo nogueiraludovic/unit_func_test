@@ -1,0 +1,138 @@
+<html data-namespace-typo3-fluid="true" xmlns:f="http://typo3.org/ns/TYPO3/CMS/Fluid/ViewHelpers" xmlns:vdcs="http://typo3.org/ns/Vd/VdContactService/ViewHelpers">
+    <f:if condition="{serviceContact}">
+        <address itemscope itemtype="http://schema.org/GovernmentOrganization">
+            <f:if condition="{serviceContact.service.name}">
+                <div class="h2 mt-0" id="service-contact-title" itemprop="name">
+                    <f:if condition="{serviceContact.service.referencePage}">
+                        <f:link.typolink additionalAttributes="{id: 'service-contact-reference-page-link', itemprop: 'url'}" parameter="{serviceContact.service.referencePage}" title="Pages du service {serviceContact.service.name}">
+                            {serviceContact.service.name}
+                        </f:link.typolink>
+                    </f:if>
+                </div>
+            </f:if>
+            <f:if condition="{serviceContact.name}">
+                <p class="h4 mt-0 vd-heading-light-alt" id="service-contact-name">{serviceContact.name}</p>
+            </f:if>
+            <f:format.html>{serviceContact.summary}</f:format.html>
+            <f:if condition="{serviceContact.personFunction} || {serviceContact.personName}">
+                <p class="mb-0" itemtype="http://schema.org/Person">
+                    <f:if condition="{serviceContact.personName}">
+                        <span itemprop="name">{serviceContact.personName}</span>
+                        <br/>
+                    </f:if>
+                    <f:if condition="{serviceContact.personFunction}">
+                        <span itemprop="jobTitle">{serviceContact.personFunction}</span>
+                        <br/>
+                    </f:if>
+                </p>
+            </f:if>
+            <f:if condition="{serviceContact.address} || {serviceContact.locality}">
+                <p itemprop="address" itemscope itemtype="http://schema.org/PostalAddress">
+                    <f:if condition="{serviceContact.address}">
+                        <span itemprop="streetAddress">{serviceContact.address}</span>
+                        <br/>
+                    </f:if>
+                    <f:if condition="{serviceContact.postalBox}">
+                        <f:if condition="{serviceContact.postalBox} == '-'">
+                            <f:then>
+                                <f:translate extensionName="VdContactService" id="po_box"/>
+                                <br/>
+                            </f:then>
+                            <f:else>
+                                <f:translate extensionName="VdContactService" id="po_box"/>
+                                <span itemprop="postOfficeBoxNumber">{serviceContact.postalBox}</span>
+                                <br/>
+                            </f:else>
+                        </f:if>
+                    </f:if>
+                    <f:if condition="{serviceContact.postalCode}">
+                        <span itemprop="postalCode">{serviceContact.postalCode}</span>&nbsp;
+                    </f:if>
+                    <f:if condition="{serviceContact.locality}">
+                        <span itemprop="addressLocality">{serviceContact.locality}</span>
+                    </f:if>
+                    <span class="visually-hidden" itemprop="addressCountry">
+                        <f:translate extensionName="VdContactService" id="switzerland"/>
+                    </span>
+                </p>
+            </f:if>
+            <p>
+                <f:if condition="{serviceContact.telephone}">
+                    <a href="tel:{serviceContact.telephone -> vdcs:format.telephone()}" id="service-contact-phone-link" itemprop="telephone">{serviceContact.telephone}</a>
+                    <br/>
+                </f:if>
+                <f:if condition="{serviceContact.internetFax}">
+                    <f:link.email email="{serviceContact.internetFax}" id="service-contact-internet-fax-email"/>
+                    <br/>
+                </f:if>
+                <f:if condition="{serviceContact.emailAddress}">
+                    <f:if condition="{serviceContact.emailDisplayType} == 1">
+                        <f:link.email email="{serviceContact.emailAddress}" id="service-contact-email"/>
+                        <br/>
+                    </f:if>
+                    <f:if condition="{serviceContact.emailDisplayType} == 3">
+                        <f:link.email email="{serviceContact.emailAddress}" id="service-contact-email"/>
+                        <br/>
+                    </f:if>
+                </f:if>
+                <f:if condition="{serviceContact.address}">
+                    <a href="https://www.google.ch/maps/search/{f:format.urlencode(value: '{serviceContact.address}, {serviceContact.postalBox} {serviceContact.locality}')}" id="google-maps-link">
+                        <f:translate extensionName="VdContactService" id="see_on_google_maps"/>
+                    </a>
+                    <br/>
+                </f:if>
+                <f:if condition="{serviceContact.link}">
+                    <f:link.typolink additionalAttributes="{id: 'service-contact-link'}" parameter="{serviceContact.link}">
+                        <f:if condition="{serviceContact.linkLabel}">
+                            <f:then>
+                                {serviceContact.linkLabel}
+                            </f:then>
+                            <f:else>
+                                {serviceContact.link}
+                            </f:else>
+                        </f:if>
+                    </f:link.typolink>
+                </f:if>
+            </p>
+            <f:if condition="{serviceContact.emailDisplayType} == 2 || {serviceContact.emailDisplayType} == 3">
+                <p>
+                    <f:if condition="{settings.contactFormPid}">
+                        <f:link.page additionalParams="{tx_powermail_pi1: {referer: page.uid, uid: serviceContact.uid}}" class="btn btn-dark" id="service-contact-contact-form-link" pageUid="{settings.contactFormPid}" title="Nous écrire Formulaire de contact">
+                            <f:translate extensionName="VdContactService" id="write_us"/>
+                        </f:link.page>
+                    </f:if>
+                </p>
+            </f:if>
+            <f:if condition="{serviceContact.additionalText -> f:format.stripTags()} || {serviceContact.additionalTitle}">
+                <div itemscope itemtype="http://schema.org/GovernmentBuilding">
+                    <f:if condition="{serviceContact.additionalTitle}">
+                        <h3 id="service-contact-additional-title">{serviceContact.additionalTitle}</h3>
+                    </f:if>
+                    <f:if condition="{serviceContact.additionalText}">
+                        <f:format.html>{serviceContact.additionalText}</f:format.html>
+                    </f:if>
+                </div>
+            </f:if>
+            <f:if condition="{serviceContact.accountNumber}">
+                <h3 id="service-contact-account-number-title">
+                    CCP
+                    <f:if condition="{serviceContact.name}">
+                        <span class="visually-hidden">{serviceContact.name}</span>
+                    </f:if>
+                </h3>
+                <p>{serviceContact.accountNumber}</p>
+            </f:if>
+            <f:if condition="{serviceContact.image}">
+                <img alt="" class="img-fluid" itemprop="image"
+                     loading="lazy"
+                     src="{f:uri.image(height: '640c', image: serviceContact.image, width: '960')}"
+                     srcset="{f:uri.image(height: '210c', image: serviceContact.image, width: '320')} 320w,
+                         {f:uri.image(height: '360c', image: serviceContact.image, width: '540')} 540w,
+                         {f:uri.image(height: '480c', image: serviceContact.image, width: '720')} 720w,
+                         {f:uri.image(height: '640c', image: serviceContact.image, width: '960')} 960w,
+                         {f:uri.image(height: '760c', image: serviceContact.image, width: '1140')} 1140w"
+                />
+            </f:if>
+        </address>
+    </f:if>
+</html>

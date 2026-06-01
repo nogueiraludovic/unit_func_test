@@ -1,0 +1,31 @@
+<html data-namespace-typo3-fluid="true" xmlns:f="http://typo3.org/ns/TYPO3/CMS/Fluid/ViewHelpers" xmlns:vds="http://typo3.org/ns/Vd/VdSite/ViewHelpers">
+    <f:layout/>
+    <f:section name="Main">
+        <f:if condition="{menu}">
+            <ul class="vd-list-links">
+                <f:for as="page" each="{menu}">
+                    <f:if condition="{page.content}">
+                        <f:for as="element" each="{page.content}" iteration="iterator">
+                            <f:if condition="{element.data.header}">
+                                <li>
+                                    <vds:security.ifBeUserAuthenticated>
+                                        <f:then>
+                                            <f:link.page addQueryString="1" id="element-list-link-{iterator.index}" pageUid="{element.data.pid}" section="{element.data.uid}" title="{element.data.header}">
+                                                {element.data.header}
+                                            </f:link.page>
+                                        </f:then>
+                                        <f:else>
+                                            <a href="{page.link}#c{element.data.uid}" id="element-list-link-{iterator.index}" title="{element.data.header}">
+                                                {element.data.header}
+                                            </a>
+                                        </f:else>
+                                    </vds:security.ifBeUserAuthenticated>
+                                </li>
+                            </f:if>
+                        </f:for>
+                    </f:if>
+                </f:for>
+            </ul>
+        </f:if>
+    </f:section>
+</html>

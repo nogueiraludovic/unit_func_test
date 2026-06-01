@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xliff version="1.2" xmlns="urn:oasis:names:tc:xliff:document:1.2">
+	<file datatype="plaintext" original="EXT:vd_lada/Resources/Private/Language/locallang.xlf" source-language="en">
+		<header/>
+		<body>
+			<trans-unit id="address" resname="address">
+				<source>Address</source>
+			</trans-unit>
+			<trans-unit id="contact_person" resname="contact_person">
+				<source>Contact person</source>
+			</trans-unit>
+			<trans-unit id="detail" resname="detail">
+				<source>Detail</source>
+			</trans-unit>
+			<trans-unit id="documents" resname="documents">
+				<source>Documents</source>
+			</trans-unit>
+			<trans-unit id="email" resname="email">
+				<source>Email</source>
+			</trans-unit>
+			<trans-unit id="health_network" resname="health_network">
+				<source>Health network</source>
+			</trans-unit>
+			<trans-unit id="housing_type" resname="housing_type">
+				<source>Housing type</source>
+			</trans-unit>
+			<trans-unit id="lada_number" resname="lada_number">
+				<source>Number of units</source>
+			</trans-unit>
+			<trans-unit id="name" resname="name">
+				<source>Name</source>
+			</trans-unit>
+			<trans-unit id="near_ems" resname="near_ems">
+				<source>Near an EMS</source>
+			</trans-unit>
+			<trans-unit id="no" resname="no">
+				<source>No</source>
+			</trans-unit>
+			<trans-unit id="other_information" resname="other_information">
+				<source>Other information</source>
+			</trans-unit>
+			<trans-unit id="owner" resname="owner">
+				<source>Owner</source>
+			</trans-unit>
+			<trans-unit id="request_form" resname="request_form">
+				<source>Request form</source>
+			</trans-unit>
+			<trans-unit id="service_provider" resname="service_provider">
+				<source>Service provider</source>
+			</trans-unit>
+			<trans-unit id="telephone" resname="telephone">
+				<source>Phone</source>
+			</trans-unit>
+			<trans-unit id="www" resname="www">
+				<source>Website</source>
+			</trans-unit>
+			<trans-unit id="yes" resname="yes">
+				<source>Yes</source>
+			</trans-unit>
+		</body>
+	</file>
+</xliff>

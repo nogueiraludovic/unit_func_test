@@ -1,0 +1,24 @@
+TCEMAIN.preview {
+  tx_vdojvencheres_domain_model_item {
+    additionalGetParameters {
+      no_cache = 1
+      tx_vdojvencheres_item {
+        action = show
+        controller = Item
+      }
+    }
+    fieldToParameterMap.uid = tx_vdojvencheres_item[item_preview]
+    previewPageId = 1062979
+  }
+  tx_vdojvencheres_domain_model_sale {
+    additionalGetParameters {
+      no_cache = 1
+      tx_vdojvencheres_sale {
+        action = show
+        controller = Sale
+      }
+    }
+    fieldToParameterMap.uid = tx_vdojvencheres_sale[sale_preview]
+    previewPageId = 1062981
+  }
+}

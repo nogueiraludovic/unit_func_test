@@ -1,0 +1,16 @@
+plugin.tx_vdocosp {
+  adressePageId = 1028352
+  display {
+    dmdePageId = 1019085
+    internshipListUrl = https://www.orientation.ch/dyn/show/2930?cty_=VD
+    internshipSearchPid = 1019078
+    professionSearchUrl = https://www.orientation.ch/dyn/show/1900?id=
+  }
+  dmdePageId = 1028353
+  inscriptions {
+    allowedFiles = pdf
+    storage = 1:/ocosp_delais/
+  }
+  professionPageId = 1028350
+  storagePid = 28343
+}

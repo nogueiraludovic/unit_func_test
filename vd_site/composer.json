@@ -1,0 +1,36 @@
+{
+	"name": "vd/vd-site",
+	"description": "Main configuration for vd.ch.",
+	"license": "GPL-3.0-or-later",
+	"type": "typo3-cms-extension",
+	"version": "10.4.0",
+	"authors": [
+		{
+			"name": "État de Vaud - DGNSI",
+			"email": "support.typo3@vd.ch",
+			"homepage": "https://www.vd.ch",
+			"role": "Developer"
+		}
+	],
+	"require": {
+		"php": "^7.4",
+		"ext-simplexml": "*",
+		"friendsoftypo3/tt-address": "^6.1",
+		"georgringer/news": "^10.0",
+		"t3/min": "^2.1",
+		"typo3/cms-core": "^10.4",
+		"typo3/cms-seo": "^10.4",
+		"vd/vd-core": "^10.4",
+		"vd/vd-prestations": "@dev"
+	},
+	"autoload": {
+		"psr-4": {
+			"Vd\\VdSite\\": "Classes/"
+		}
+	},
+	"extra": {
+		"typo3/cms": {
+			"extension-key": "vd_site"
+		}
+	}
+}

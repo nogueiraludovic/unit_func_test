@@ -1,0 +1,42 @@
+<soap:Envelope xmlns:soap="http://schemas.xmlsoap.org/soap/envelope/">
+    <soap:Body>
+        <p:rechercherSeanceGc
+                xmlns:p="http://www.vd.ch/lmgc/wsdl/SeanceGrandConseil"
+                xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+                xsi:schemaLocation="http://www.vd.ch/lmgc/wsdl/SeanceGrandConseil ../../LMGC/SeanceGrandConseil.xsd ">
+            <return>
+                <dateModification>2019-10-17</dateModification>
+                <dateSeance>2019-10-08</dateSeance>
+                <documents>
+                    <document>
+                        <id>123451234</id>
+                        <titre>PV de la séance</titre>
+                        <type>PV GC</type>
+                    </document>
+                </documents>
+                <id>12345</id>
+                <introduction><![CDATA[<p>Les points 3,4 et 5 seront traités à 14h00</p><p>Présentation aux député-e-s du rapport n°56 d'audit de la Cour des comptes de 12h15 à 13h45 à la salle du Bicentenaire.</p>]]></introduction>
+                <nomCourt>Séance du mardi 8 octobre 2019</nomCourt>
+                <points>
+                    <item>
+                        <id>8fe6c52c-6352-401c-8d01-314c3b03b251</id>
+                        <intitule><![CDATA[1. Introduction]]></intitule>
+                    </item>
+                    <item>
+                        <id>8fe6c52c-6352-401c-8d01-314c3b03b252</id>
+                        <intitule><![CDATA[2. Dépots]]></intitule>
+                    </item>
+                    <item>
+                        <id>8fe6c52c-6352-401c-8d01-314c3b03b253</id>
+                        <intitule><![CDATA[<p> 2.1. <a href="{ID_DETAILS=8fe6c52c-6352-401c-8d01-314c3b03b25a}">(19_MOT_15)</a> Motion Pierre Stein - Pour tester le format de l'ordre du jour d'une séance. <em>Auteur : <a href="{ID_DEPUTE= 123412}">Pierre Stein</a>&nbsp;<a href="{ID_DEPUTE= 3213523}">Pierre Stein</a></em></p>]]></intitule>
+                    </item>
+                    <item>
+                        <id>8fe6c52c-6352-401c-8d01-314c3b03b254</id>
+                        <intitule><![CDATA[<p> 3. <a href="{ID_DETAILS=8fe6c52c-6352-401c-8d01-314c3b03b25a}">(17_MOT_105)</a> Motion Jérôme Christen et consorts - Pour obtenir une répartition plus équitable du financement des établissements scolaires entre l’État de Vaud et les Communes en matière de rénovations lourdes ou de nouvelles constructions. <em>Auteur : <a href="{ID_DEPUTE=123456}">Jérôme Christen</a></em>, <em>Rapporteur(s) de commission: <a href="{ID_DEPUTE=123456}">Rezso Stéphane</a></em>. <strong>Prise en considération</strong> </p>]]></intitule>
+                    </item>
+                </points>
+                <signature>Le Secrétariat général du Grand Conseil</signature>
+            </return>
+        </p:rechercherSeanceGc>
+    </soap:Body>
+</soap:Envelope>

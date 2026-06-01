@@ -1,0 +1,70 @@
+<html data-namespace-typo3-fluid="true" xmlns:f="http://typo3.org/ns/TYPO3/CMS/Fluid/ViewHelpers">
+    <h2 id="items-for-sale-title"><f:translate id="items_for_sale"/></h2>
+    <f:if condition="{items}">
+        <f:then>
+            <f:if condition="{showNumberOfRecords}">
+                <f:render arguments="{numberOfRecords: numberOfRecords}" partial="NumberOfRecords"/>
+            </f:if>
+            <f:for as="item" each="{items}" iteration="iterator">
+                <div class="mb-5 row">
+                    <div class="col-md-8 order-md-2">
+                        <h3>
+                            <f:link.action action="show" arguments="{item: item}" controller="Item" id="item-details-link-{iterator.index}" pageUid="{settings.item.detailPid}" title="{f:translate(id: 'see_item_detail')} {item.title}">
+                                {item.title}
+                            </f:link.action>
+                        </h3>
+                        <p><f:format.crop maxCharacters="400"><f:format.stripTags>{item.description}</f:format.stripTags></f:format.crop></p>
+                        <dl class="row">
+                            <f:if condition="{item.sale.status} == 2">
+                                <f:then>
+                                    <dt class="col-xs-6 col-lg-4">
+                                        <span class="text-danger"><f:translate id="sale_canceled"/></span>
+                                    </dt>
+                                </f:then>
+                                <f:else>
+                                    <dt class="col-lg-4 col-xs-6">
+                                        <f:for as="saleCategory" each="{item.sale.saleCategories}" iteration="saleCategoriesIterator">
+                                            <f:if condition="{saleCategory.uid} == 1">
+                                                <f:then>
+                                                    <f:translate id="submission_deadline"/>
+                                                </f:then>
+                                                <f:else if="{saleCategoriesIterator.isLast}">
+                                                    <f:translate id="sale_date"/>
+                                                </f:else>
+                                            </f:if>
+                                        </f:for>
+                                    </dt>
+                                    <dd class="col-lg-8 col-xs-6">
+                                        <ul class="list-unstyled mb-0">
+                                            <f:for as="saleDate" each="{item.sale.saleDate}">
+                                                <li><f:format.date format="%d %B %Y">{saleDate.saleDate}</f:format.date></li>
+                                            </f:for>
+                                        </ul>
+                                    </dd>
+                                </f:else>
+                            </f:if>
+                        </dl>
+                        <p>
+                            <f:link.action action="show" arguments="{item: item}" class="btn btn-success" controller="Item" id="item-details-second-link-{iterator.index}" pageUid="{settings.item.detailPid}" title="{f:translate(id: 'see_item_detail')} {item.title}">
+                                <f:translate id="see_item_detail"/>
+                            </f:link.action>
+                        </p>
+                    </div>
+                    <figure class="col-md-4 figure order-md-1">
+                        <f:if condition="{item.sale.status} == 2">
+                            <f:then>
+                                <f:image alt="{f:translate(id: 'canceled')}" class="img-fluid" loading="lazy" src="EXT:vd_ojvencheres/Resources/Public/Images/Canceled.png" width="230"/>
+                            </f:then>
+                            <f:else if="{item.pictures}">
+                                <f:image alt="{item.pictures.0.alternative}" class="img-fluid" image="{item.pictures.0}" loading="lazy" width="230"/>
+                            </f:else>
+                        </f:if>
+                    </figure>
+                </div>
+            </f:for>
+        </f:then>
+        <f:else>
+            <p class="alert alert-warning"><f:translate id="no_result"/></p>
+        </f:else>
+    </f:if>
+</html>

@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xliff version="1.2" xmlns="urn:oasis:names:tc:xliff:document:1.2">
+	<file datatype="plaintext" original="EXT:vd_wsprosecutor/Resources/Private/Language/locallang_db.xlf" source-language="en" target-language="fr">
+		<header/>
+		<body>
+			<trans-unit id="api_response" resname="api_response">
+				<source>API response</source>
+				<target state="translated">Réponse de l'API</target>
+			</trans-unit>
+			<trans-unit id="end_shift" resname="end_shift">
+				<source>End of shift</source>
+				<target state="translated">Fin de garde</target>
+			</trans-unit>
+			<trans-unit id="external_id" resname="external_id">
+				<source>External ID</source>
+				<target state="translated">ID externe</target>
+			</trans-unit>
+			<trans-unit id="magistrate" resname="magistrate">
+				<source>Magistrate</source>
+				<target state="translated">Magistrat</target>
+			</trans-unit>
+			<trans-unit id="office" resname="office">
+				<source>Office</source>
+				<target state="translated">Office</target>
+			</trans-unit>
+			<trans-unit id="prosecutors_office_hour" resname="prosecutors_office_hour">
+				<source>Prosecutor's office hour</source>
+				<target state="translated">Permanence des procureurs</target>
+			</trans-unit>
+			<trans-unit id="start_shift" resname="start_shift">
+				<source>Start of shift</source>
+				<target state="translated">Début de garde</target>
+			</trans-unit>
+			<trans-unit id="substitute" resname="substitute">
+				<source>Substitute</source>
+				<target state="translated">Suppléant</target>
+			</trans-unit>
+		</body>
+	</file>
+</xliff>

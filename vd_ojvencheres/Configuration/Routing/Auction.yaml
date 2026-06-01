@@ -1,0 +1,78 @@
+---
+routeEnhancers:
+  ItemList:
+    aspects:
+      page:
+        end: '500'
+        start: '1'
+        type: StaticRangeMapper
+    defaultController: Item::list
+    defaults:
+      page: 0
+    limitToPages:
+      - 1011279
+    namespace: tx_vdojvencheres_item
+    requirements:
+      page: \d+
+    routes:
+      -
+        _arguments:
+          page: page
+        _controller: Item::list
+        routePath: /page/{page}
+    type: Extbase
+  ItemShow:
+    aspects:
+      item:
+        routeFieldName: path_segment
+        tableName: tx_vdojvencheres_domain_model_item
+        type: PersistedAliasMapper
+    defaultController: Item::show
+    limitToPages:
+      - 1062979
+    namespace: tx_vdojvencheres_item
+    routes:
+      -
+        _arguments:
+          item: item
+        _controller: Item::show
+        routePath: /{item}
+    type: Extbase
+  SaleList:
+    aspects:
+      page:
+        end: '500'
+        start: '1'
+        type: StaticRangeMapper
+    defaultController: Sale::list
+    defaults:
+      page: 0
+    limitToPages:
+      - 1062987
+    namespace: tx_vdojvencheres_sale
+    requirements:
+      page: \d+
+    routes:
+      -
+        _arguments:
+          page: page
+        _controller: Sale::list
+        routePath: /page/{page}
+    type: Extbase
+  SaleShow:
+    aspects:
+      sale:
+        routeFieldName: uid
+        tableName: tx_vdojvencheres_domain_model_sale
+        type: PersistedAliasMapper
+    defaultController: Sale::show
+    limitToPages:
+      - 1062981
+    namespace: tx_vdojvencheres_sale
+    routes:
+      -
+        _arguments:
+          sale: sale
+        _controller: Sale::show
+        routePath: /{sale}
+    type: Extbase

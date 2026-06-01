@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<evenementsPublication reset="false" xmlns="http://evd.vd.ch/xmlns/eVD-0038/2">
+    <evenement type="AJOUT">
+        <prestation>
+            <idMetierPrestation>854PL2-RM917N</idMetierPrestation>
+            <titre>Annoncer et enregistrer le changement de détenteur
+                d'un arme
+            </titre>
+            <description>Vous ali&amp;eacute;nez (vendez, donnez, ou
+                c&amp;eacute;dez) une arme ou un
+                &amp;eacute;l&amp;eacute;ment essentiel d'arme
+                &amp;agrave; un nouveau d&amp;eacute;tenteur. Vous devez
+                l'annoncer &lt;strong>dans les 30 jours suivant la
+                conclusion du contrat&lt;/strong> au Bureau des armes.
+            </description>
+            <domaineMetier>Sécurité</domaineMetier>
+            <themeMetier>Police</themeMetier>
+            <publicsCible>
+                <population>Particuliers</population>
+            </publicsCible>
+            <emolument xmlns:xs="http://www.w3.org/2001/XMLSchema"
+                       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+                       xsi:type="xs:string">&lt;div class=&quot;row
+                ng-scope&quot;> &lt;p>Gratuit - compris dans
+                l'&amp;eacute;moluement de d&amp;eacute;livrance du
+                permis d'acquisition d'armes.&lt;/p> &lt;/div>
+            </emolument>
+            <conditionsPrealables
+                    xmlns:xs="http://www.w3.org/2001/XMLSchema"
+                    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+                    xsi:type="xs:string">&lt;div class=&quot;row
+                ng-scope&quot;> &lt;p>Toute personne qui
+                ali&amp;egrave;ne (c&amp;egrave;de/vend) une arme ou un
+                &amp;eacute;l&amp;eacute;ment essentiel d'arme doit,
+                &lt;strong>dans les 30 jours&lt;/strong> qui suivent la
+                conclusion du contrat, fournir une copie du permis
+                d'acquisition d'armes/contrat de l'acqu&amp;eacute;reur
+                au Bureau des armes de la Police cantonale
+                vaudoise.&lt;/p> &lt;/div>
+            </conditionsPrealables>
+            <lienAide>http://www.vd.ch/autorites/departements/dis/police-cantonale/ou-nous-trouver/</lienAide>
+            <pagesEnRelation>
+                <titrePage xmlns:xs="http://www.w3.org/2001/XMLSchema"
+                           xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+                           xsi:type="xs:string">Permis d'acquistion d'armes
+                </titrePage>
+                <urlPage>http://www.vd.ch/themes/securite/police/armes/permis-dacquisition-darmes/</urlPage>
+            </pagesEnRelation>
+            <referencesLegaux>
+                <titreReferenceLegale>Loi fédérale sur les armes, les
+                    accessoires d'armes et les munitions (LArm), art. 9c
+                </titreReferenceLegale>
+                <urlReferenceLegale>https://www.admin.ch/opc/fr/classified-compilation/19983208/index.html#a9c
+                </urlReferenceLegale>
+            </referencesLegaux>
+            <modaliteAcces typeModaliteAcces="poste">
+                <marcheASuivre>&lt;p>L'ali&amp;eacute;nateur transmet par
+                    courrier, l'exemplaire bleu du permis d'acquisition
+                    d'arme, duement compl&amp;eacute;t&amp;eacute; avec
+                    l'identification des armes
+                    tranf&amp;eacute;r&amp;eacute;es, au :&lt;/p>
+                    &lt;p>Bureau des armes Police cantonale vaudoise Centre
+                    Bl&amp;eacute;cherette 1014 Lausanne&lt;/p>
+                </marcheASuivre>
+                <documentsObligatoires>&lt;div class=&quot;row
+                    ng-scope&quot;> &lt;p class=&quot;col-md-6 text-left
+                    text-muted ng-binding ng-scope&quot;>Exemplaire bleu du
+                    permis d'acquisition d'armes.&lt;/p> &lt;/div>
+                </documentsObligatoires>
+                <ePayment>false</ePayment>
+                <lienExterne>true</lienExterne>
+                <lienAccesPrestation>http://www.vd.ch/themes/securite/police/armes/permis-dacquisition-darmes/
+                </lienAccesPrestation>
+            </modaliteAcces>
+            <servicePrestataire>POLCANT</servicePrestataire>
+            <resultatPrestation>Annonce d'un changement de
+                d&amp;eacute;tenteur d'arme
+            </resultatPrestation>
+            <actionBeneficiaire>ANNONCER</actionBeneficiaire>
+            <actionPrestataire
+                    xmlns:xs="http://www.w3.org/2001/XMLSchema"
+                    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:type="xs:string">ENREGISTRER
+            </actionPrestataire>
+            <typeMissionECH0145
+                    xmlns:xs="http://www.w3.org/2001/XMLSchema"
+                    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:type="xs:UNSIGNEDShort">66
+            </typeMissionECH0145>
+            <champMissionECH0145
+                    xmlns:xs="http://www.w3.org/2001/XMLSchema"
+                    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:type="xs:string">BF0111
+            </champMissionECH0145>
+            <groupeMissionECH0145
+                    xmlns:xs="http://www.w3.org/2001/XMLSchema"
+                    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:type="xs:string">BG0111
+            </groupeMissionECH0145>
+        </prestation>
+    </evenement>
+</evenementsPublication>
+

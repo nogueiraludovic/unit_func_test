@@ -1,0 +1,33 @@
+<html data-namespace-typo3-fluid="true" xmlns:f="http://typo3.org/ns/fluid/ViewHelpers">
+    <f:layout/>
+    <f:section name="Header"/>
+    <f:section name="Main">
+        <div class="row">
+            <f:if condition="{images.0}">
+                <div class="col-4 col-lg-2 col-sm-3 mt-3">
+                    <f:image alt="{images.0.alternative}" class="img-fluid rounded-circle" height="220c" image="{images.0}" loading="lazy" title="{images.0.title}" width="220c"/>
+                </div>
+            </f:if>
+            <div class="col-8 col-lg-10 col-sm-9">
+                <span class="h5">{data.header}</span>
+                <p>{data.bodytext -> f:format.stripTags() -> f:format.nl2br()}</p>
+                <f:if condition="{links}">
+                    <ul class="mb-0 vd-list-links">
+                        <f:for as="link" each="{links}">
+                            <f:if condition="{link.data.title}">
+                                <f:then>
+                                    <li class="mb-0">
+                                        <f:link.typolink additionalAttributes="{id: 'biocard-link-{link.data.uid}'}" parameter="{link.data.uri}">{link.data.title}</f:link.typolink>
+                                    </li>
+                                </f:then>
+                                <f:else>
+                                    <li class="mb-0"><f:link.typolink additionalAttributes="{id: 'biocard-link-{link.data.uid}'}" parameter="{link.data.title}"/></li>
+                                </f:else>
+                            </f:if>
+                        </f:for>
+                    </ul>
+                </f:if>
+            </div>
+        </div>
+    </f:section>
+</html>

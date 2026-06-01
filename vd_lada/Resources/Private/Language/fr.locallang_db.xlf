@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xliff version="1.2" xmlns="urn:oasis:names:tc:xliff:document:1.2">
+	<file datatype="plaintext" original="EXT:vd_lada/Resources/Private/Language/locallang_db.xlf" source-language="en" target-language="fr">
+		<header/>
+		<body>
+			<trans-unit id="contact_person" resname="contact_person">
+				<source>Contact person</source>
+				<target state="translated">Personne de contact</target>
+			</trans-unit>
+			<trans-unit id="detail_file" resname="detail_file">
+				<source>Detail file</source>
+				<target state="translated">Fichier de détail</target>
+			</trans-unit>
+			<trans-unit id="health_network" resname="health_network">
+				<source>Health network</source>
+				<target state="translated">Réseau de santé</target>
+			</trans-unit>
+			<trans-unit id="housing" resname="housing">
+				<source>Housing</source>
+				<target state="translated">Logement</target>
+			</trans-unit>
+			<trans-unit id="housing_type" resname="housing_type">
+				<source>Housing type</source>
+				<target state="translated">Type de logement</target>
+			</trans-unit>
+			<trans-unit id="near_ems" resname="near_ems">
+				<source>Near an EMS</source>
+				<target state="translated">Proche d'un EMS</target>
+			</trans-unit>
+			<trans-unit id="lada_number" resname="lada_number">
+				<source>Number of units</source>
+				<target state="translated">Nombre de logements</target>
+			</trans-unit>
+			<trans-unit id="locality" resname="locality">
+				<source>Locality</source>
+				<target state="translated">Localité</target>
+			</trans-unit>
+			<trans-unit id="owner" resname="owner">
+				<source>Owner</source>
+				<target state="translated">Propriétaire</target>
+			</trans-unit>
+			<trans-unit id="request_form" resname="request_form">
+				<source>Request form</source>
+				<target state="translated">Formulaire de demande</target>
+			</trans-unit>
+			<trans-unit id="service_provider" resname="service_provider">
+				<source>Service provider</source>
+				<target state="translated">Prestataire de service</target>
+			</trans-unit>
+		</body>
+	</file>
+</xliff>

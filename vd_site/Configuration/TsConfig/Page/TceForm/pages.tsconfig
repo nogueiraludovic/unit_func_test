@@ -1,0 +1,10 @@
+TCEFORM.pages {
+  alias.disabled = 1
+  backend_layout.removeItems = -1
+  backend_layout_next_level.removeItems = -1
+  doktype.removeItems = 6,255
+  fe_login_mode.disabled = 1
+  l18n_cfg.disabled = 1
+  layout.disabled = 1
+  target.disabled = 1
+}

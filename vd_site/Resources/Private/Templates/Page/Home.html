@@ -1,0 +1,14 @@
+<html data-namespace-typo3-fluid="true" xmlns:f="http://typo3.org/ns/TYPO3/CMS/Fluid/ViewHelpers">
+    <f:layout/>
+    <f:section name="main">
+        <f:render arguments="{_all}" partial="Header"/>
+        <main id="main">
+            <h1 class="container visually-hidden" id="page-title">Site officiel du Canton de Vaud</h1>
+            <f:render arguments="{alerts: homeAlerts}" partial="Alert" section="Home"/>
+            <!--TYPO3SEARCH_begin-->
+            <f:format.raw>{mainContent}</f:format.raw>
+            <!--TYPO3SEARCH_end-->
+        </main>
+        <f:render arguments="{_all}" partial="Footer"/>
+    </f:section>
+</html>

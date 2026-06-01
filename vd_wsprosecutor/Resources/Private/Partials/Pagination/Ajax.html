@@ -1,0 +1,36 @@
+<html data-namespace-typo3-fluid="true" xmlns:f="http://typo3.org/ns/TYPO3/CMS/Fluid/ViewHelpers" xmlns:tr="http://typo3.org/ns/Helhum/TyposcriptRendering/ViewHelpers">
+    <f:if condition="{paginator.numberOfPages} > 1">
+        <nav aria-label="{f:translate(extensionName: 'VdCore', id: 'pagination')}" class="vd-pagination">
+            <ul class="vd-pagination__list">
+                <f:if condition="{pagination.previousPageNumber}">
+                    <li class="vd-pagination__item vd-pagination__item--previous">
+                        <a class="vd-pagination__link" data-action="paginate" data-container="{recordUid}" data-url="{tr:uri.action(arguments: {page: pagination.previousPageNumber})}" href="{f:uri.action(arguments: {page: pagination.previousPageNumber})}" id="previous-page-link">
+                            <span class="vd-pagination__title">
+                                <span aria-hidden="true" class="fa-chevron-left fa-solid"></span>
+                                <f:translate extensionName="VdCore" id="previous_page"/>
+                            </span>
+                            <span class="visually-hidden">:</span>
+                            <span class="vd-pagination__label">
+                                <f:translate arguments="{0: pagination.previousPageNumber, 1: paginator.numberOfPages}" extensionName="VdCore" id="pagination_overall"/>
+                            </span>
+                        </a>
+                    </li>
+                </f:if>
+                <f:if condition="{pagination.nextPageNumber}">
+                    <li class="vd-pagination__item vd-pagination__item--next">
+                        <a class="vd-pagination__link" data-action="paginate" data-container="{recordUid}" data-url="{tr:uri.action(arguments: {page: pagination.nextPageNumber})}" href="{f:uri.action(arguments: {page: pagination.nextPageNumber})}" id="next-page-link">
+                            <span class="vd-pagination__title">
+                                <f:translate extensionName="VdCore" id="next_page"/>
+                                <span aria-hidden="true" class="fa-chevron-right fa-solid"></span>
+                            </span>
+                            <span class="visually-hidden">:</span>
+                            <span class="vd-pagination__label">
+                                <f:translate arguments="{0: pagination.nextPageNumber, 1: paginator.numberOfPages}" extensionName="VdCore" id="pagination_overall"/>
+                            </span>
+                        </a>
+                    </li>
+                </f:if>
+            </ul>
+        </nav>
+    </f:if>
+</html>

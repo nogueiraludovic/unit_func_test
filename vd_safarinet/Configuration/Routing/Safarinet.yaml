@@ -1,0 +1,82 @@
+---
+routeEnhancers:
+  VdSafarinet:
+    aspects:
+      decisionId:
+        type: StaticIdentifierMapper
+      groupId:
+        type: StaticIdentifierMapper
+      meetingGcId:
+        type: StaticIdentifierMapper
+      meetingId:
+        type: StaticIdentifierMapper
+      memberId:
+        type: StaticIdentifierMapper
+      objectId:
+        type: StaticIdentifierMapper
+      pointId:
+        type: StaticIdentifierMapper
+    namespace: tx_vdsafarinet_safarinet
+    limitToPages:
+      - 1001161
+      - 1004632
+      - 1029776
+      - 1029777
+      - 1029778
+      - 1029779
+      - 2003656
+      - 2003658
+      - 2003659
+      - 2003661
+      - 2003662
+      - 2017367
+      - 2017368
+      - 2017369
+    requirements:
+      decisionId: '[a-zA-Z0-9].*'
+      groupId: '[a-zA-Z0-9].*'
+      meetingGcId: '[a-zA-Z0-9].*'
+      meetingId: '[a-zA-Z0-9].*'
+      memberId: '[a-zA-Z0-9].*'
+      objectId: '[a-zA-Z0-9].*'
+      pointId: '[a-zA-Z0-9].*'
+    routes:
+      -
+        _arguments:
+          decisionId: decisionId
+        _controller: Decision::show
+        routePath: /id/{decisionId}
+      -
+        _arguments:
+          groupId: groupId
+          memberId: memberId
+        _controller: Group::show
+        routePath: /groupe/{groupId}/membre/{memberId}
+      -
+        _arguments:
+          meetingId: meetingId
+        _controller: Meeting::gcMeetingShow
+        routePath: /seance-gc/{meetingId}
+      -
+        _arguments:
+          pointId: pointId
+          meetingGcId: meetingGcId
+        _controller: Meeting::gcPointShow
+        routePath: /point/{pointId}/meeting/{meetingGcId}
+      -
+        _arguments:
+          meetingId: meetingId
+        _controller: Meeting::show
+        routePath: /seance/{meetingId}
+      -
+        _arguments:
+          memberId: memberId
+        _controller: Member::show
+        routePath: /membre/{memberId}
+      -
+        _arguments:
+          objectId: objectId
+          memberId: memberId
+        _controller: Object::show
+        routePath: /objet/{objectId}/membre/{memberId}
+    type: Extbase

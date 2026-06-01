@@ -1,0 +1,269 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- XSD for Typo3 in order to publish prestations in vd.ch website -->
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema"
+           xmlns:typo3="http://www.vd.ch/cyber/catalog/typo3/1"
+           targetNamespace="http://www.vd.ch/cyber/catalog/typo3/1"
+           elementFormDefault="qualified">
+    <xs:element name="evenementsPublication">
+        <xs:annotation>
+            <xs:documentation>Evenements de publication</xs:documentation>
+        </xs:annotation>
+        <xs:complexType>
+            <xs:sequence>
+                <xs:element name="evenement" maxOccurs="unbounded">
+                    <xs:annotation>
+                        <xs:documentation>Notification de publication</xs:documentation>
+                    </xs:annotation>
+                    <xs:complexType>
+                        <xs:sequence>
+                            <xs:element name="prestation" type="typo3:prestation">
+                                <xs:annotation>
+                                    <xs:documentation>Description d'une prestation</xs:documentation>
+                                </xs:annotation>
+                            </xs:element>
+                        </xs:sequence>
+                        <xs:attribute name="type" use="required">
+                            <xs:annotation>
+                                <xs:documentation>type d'évenement - AJOUT: nouvelle prestation - SUPPRESSION :
+                                    Dépublication - MODIFICATION: modification de prestation
+                                </xs:documentation>
+                            </xs:annotation>
+                            <xs:simpleType>
+                                <xs:restriction base="xs:string">
+                                    <xs:enumeration value="AJOUT"/>
+                                    <xs:enumeration value="SUPPRESSION"/>
+                                    <xs:enumeration value="MODIFICATION"/>
+                                </xs:restriction>
+                            </xs:simpleType>
+                        </xs:attribute>
+                    </xs:complexType>
+                </xs:element>
+            </xs:sequence>
+            <xs:attribute name="reset" type="xs:boolean" use="required">
+                <xs:annotation>
+                    <xs:documentation>type d'événement - RESET
+                        Si vrai, seules les prestations publiées sont envoyées => les systèmes abonnés doivent effacer
+                        leur référentiel de prestations, avant de traiter l'événement.
+                    </xs:documentation>
+                </xs:annotation>
+            </xs:attribute>
+        </xs:complexType>
+    </xs:element>
+    <xs:complexType name="prestation">
+        <xs:annotation>
+            <xs:documentation>Description d'une prestation</xs:documentation>
+        </xs:annotation>
+        <xs:sequence>
+            <xs:element name="idMetierPrestation">
+                <xs:annotation>
+                    <xs:documentation>Identifiant unique de la prestation</xs:documentation>
+                </xs:annotation>
+                <xs:simpleType>
+                    <xs:restriction base="xs:string"/>
+                </xs:simpleType>
+            </xs:element>
+            <xs:element name="titre">
+                <xs:annotation>
+                    <xs:documentation>Titre de la prestation</xs:documentation>
+                </xs:annotation>
+                <xs:simpleType>
+                    <xs:restriction base="xs:string"/>
+                </xs:simpleType>
+            </xs:element>
+            <xs:element name="description">
+                <xs:annotation>
+                    <xs:documentation>Description de la prestation</xs:documentation>
+                </xs:annotation>
+                <xs:simpleType>
+                    <xs:restriction base="xs:string"/>
+                </xs:simpleType>
+            </xs:element>
+            <xs:element name="domaineMetier" type="xs:string">
+                <xs:annotation>
+                    <xs:documentation>Domaine métier associé à la prestation</xs:documentation>
+                </xs:annotation>
+            </xs:element>
+            <xs:element name="themeMetier" type="xs:string">
+                <xs:annotation>
+                    <xs:documentation>Thème métier de la prestation</xs:documentation>
+                </xs:annotation>
+            </xs:element>
+            <xs:element name="publicsCibles" maxOccurs="unbounded">
+                <xs:annotation>
+                    <xs:documentation>Public cibles bénéficiaires de la prestation</xs:documentation>
+                </xs:annotation>
+                <xs:complexType>
+                    <xs:sequence>
+                        <xs:element name="population">
+                            <xs:annotation>
+                                <xs:documentation>Nom de la population</xs:documentation>
+                            </xs:annotation>
+                            <xs:simpleType>
+                                <xs:restriction base="xs:string">
+                                    <xs:enumeration value="Communes"/>
+                                    <xs:enumeration value="Entreprises"/>
+                                    <xs:enumeration value="Particuliers"/>
+                                    <xs:enumeration value="Services ACV"/>
+                                </xs:restriction>
+                            </xs:simpleType>
+                        </xs:element>
+                    </xs:sequence>
+                </xs:complexType>
+            </xs:element>
+            <xs:element name="emolument" minOccurs="0">
+                <xs:annotation>
+                    <xs:documentation>Tarif d'émolument de la prestation</xs:documentation>
+                </xs:annotation>
+            </xs:element>
+            <xs:element name="conditionsPrealables" minOccurs="0">
+                <xs:annotation>
+                    <xs:documentation>Conditions préables à remplir pour demander la prestation</xs:documentation>
+                </xs:annotation>
+            </xs:element>
+            <xs:element name="lienAide" type="xs:anyURI" minOccurs="0">
+                <xs:annotation>
+                    <xs:documentation>Lien d'aide et de support</xs:documentation>
+                </xs:annotation>
+            </xs:element>
+            <xs:element name="prestationsEnRelation" minOccurs="0" maxOccurs="unbounded">
+                <xs:annotation>
+                    <xs:documentation>Prestation en relation</xs:documentation>
+                </xs:annotation>
+                <xs:complexType>
+                    <xs:sequence>
+                        <xs:element name="idMetier" type="xs:string">
+                            <xs:annotation>
+                                <xs:documentation>ID métier de la prestation en relation</xs:documentation>
+                            </xs:annotation>
+                        </xs:element>
+                    </xs:sequence>
+                </xs:complexType>
+            </xs:element>
+            <xs:element name="pagesEnRelation" minOccurs="0" maxOccurs="unbounded">
+                <xs:annotation>
+                    <xs:documentation>Page en relation de complément d'information</xs:documentation>
+                </xs:annotation>
+                <xs:complexType>
+                    <xs:sequence>
+                        <xs:element name="titrePage">
+                            <xs:annotation>
+                                <xs:documentation>Titre de la page en relation</xs:documentation>
+                            </xs:annotation>
+                        </xs:element>
+                        <xs:element name="urlPage" type="xs:anyURI">
+                            <xs:annotation>
+                                <xs:documentation>Lien d'accès à la page</xs:documentation>
+                            </xs:annotation>
+                        </xs:element>
+                    </xs:sequence>
+                </xs:complexType>
+            </xs:element>
+            <xs:element name="referencesLegaux" minOccurs="0" maxOccurs="unbounded">
+                <xs:complexType>
+                    <xs:sequence>
+                        <xs:element name="titreReferenceLegale" type="xs:string">
+                            <xs:annotation>
+                                <xs:documentation>Titre de la reference legale</xs:documentation>
+                            </xs:annotation>
+                        </xs:element>
+                        <xs:element name="urlReferenceLegale" type="xs:anyURI">
+                            <xs:annotation>
+                                <xs:documentation>lien d'accès de la référence légale</xs:documentation>
+                            </xs:annotation>
+                        </xs:element>
+                    </xs:sequence>
+                </xs:complexType>
+            </xs:element>
+            <xs:element name="modaliteAcces" maxOccurs="unbounded">
+                <xs:complexType>
+                    <xs:sequence>
+                        <xs:element name="marcheASuivre" type="xs:string">
+                            <xs:annotation>
+                                <xs:documentation>Marche à suivre pour demander la prestation</xs:documentation>
+                            </xs:annotation>
+                        </xs:element>
+                        <xs:element name="InformationsComplementaires" type="xs:string" minOccurs="0">
+                            <xs:annotation>
+                                <xs:documentation>Informations complémentaires liées à la prestation</xs:documentation>
+                            </xs:annotation>
+                        </xs:element>
+                        <xs:element name="delaiMoyenTraitementDemande" type="xs:string" minOccurs="0">
+                            <xs:annotation>
+                                <xs:documentation>Délai moyen de délivrance de la prestation</xs:documentation>
+                            </xs:annotation>
+                        </xs:element>
+                        <xs:element name="coutTraitementDemande" type="xs:string" minOccurs="0">
+                            <xs:annotation>
+                                <xs:documentation>Cout de traitement de la demande</xs:documentation>
+                            </xs:annotation>
+                        </xs:element>
+                        <xs:element name="documentsObligatoires" type="xs:string" minOccurs="0">
+                            <xs:annotation>
+                                <xs:documentation>Documents obligatoires nécessaires à la demande</xs:documentation>
+                            </xs:annotation>
+                        </xs:element>
+                        <xs:element name="ePayment" type="xs:boolean" minOccurs="0">
+                            <xs:annotation>
+                                <xs:documentation>Possibilité d'effectuer un paiement en ligne</xs:documentation>
+                            </xs:annotation>
+                        </xs:element>
+                        <xs:element name="niveauSecurite" minOccurs="0">
+                            <xs:annotation>
+                                <xs:documentation>Niveau de sécurité de l'accès à la prestation</xs:documentation>
+                            </xs:annotation>
+                            <xs:simpleType>
+                                <xs:restriction base="xs:string">
+                                    <xs:enumeration value="PUBLIC"/>
+                                    <xs:enumeration value="LOGIN"/>
+                                    <xs:enumeration value="AUTHORIZATION"/>
+                                </xs:restriction>
+                            </xs:simpleType>
+                        </xs:element>
+                        <xs:element name="lienExterne" type="xs:boolean" minOccurs="0">
+                            <xs:annotation>
+                                <xs:documentation>Définit l'ouverture de l'accès à la prestation</xs:documentation>
+                            </xs:annotation>
+                        </xs:element>
+                        <xs:element name="lienAccesPrestation" type="xs:string">
+                            <xs:annotation>
+                                <xs:documentation>Lien d'accès à la prochaine étape du processus de demande
+                                </xs:documentation>
+                            </xs:annotation>
+                        </xs:element>
+                    </xs:sequence>
+                    <xs:attribute name="typeModaliteAcces">
+                        <xs:annotation>
+                            <xs:documentation>Type de modalités d'accès: - En ligne - Par téléphone - Par e-mail - Par
+                                Courrier - Au guichet
+                            </xs:documentation>
+                        </xs:annotation>
+                        <xs:simpleType>
+                            <xs:restriction base="xs:string">
+                                <xs:enumeration value="online"/>
+                                <xs:enumeration value="telephone"/>
+                                <xs:enumeration value="poste"/>
+                                <xs:enumeration value="mail"/>
+                                <xs:enumeration value="guichet"/>
+                            </xs:restriction>
+                        </xs:simpleType>
+                    </xs:attribute>
+                </xs:complexType>
+            </xs:element>
+            <xs:element name="resultatPrestation" type="xs:string">
+                <xs:annotation>
+                    <xs:documentation>Résultat de la prestation</xs:documentation>
+                </xs:annotation>
+            </xs:element>
+            <xs:element name="actionBeneficiaire" type="xs:string" minOccurs="0">
+                <xs:annotation>
+                    <xs:documentation>Action pour le bénéficiaire</xs:documentation>
+                </xs:annotation>
+            </xs:element>
+            <xs:element name="actionPrestataire" minOccurs="0">
+                <xs:annotation>
+                    <xs:documentation>Action pour le prestataire</xs:documentation>
+                </xs:annotation>
+            </xs:element>
+        </xs:sequence>
+    </xs:complexType>
+</xs:schema>

@@ -1,0 +1,19 @@
+<html data-namespace-typo3-fluid="true" xmlns:f="http://typo3.org/ns/fluid/ViewHelpers">
+    <f:switch expression="{link.data.type}">
+        <f:case value="1">
+            <f:link.typolink additionalAttributes="{id: 'news-link-{link.data.uid}'}" class="align-items-center border-bottom border-1 {borderColor} col-12 d-flex justify-content-between mb-4 pb-3 text-decoration-none text-inherit" parameter="{link.data.internalurl}">
+                {link.data.title} <span aria-hidden="true" class="fa-chevron-right fa-solid"></span>
+            </f:link.typolink>
+        </f:case>
+        <f:case value="2">
+            <f:link.typolink additionalAttributes="{id: 'news-link-{link.data.uid}', rel: 'noreferrer'}" class="align-items-center border-bottom border-1 {borderColor} col-12 d-flex justify-content-between mb-4 pb-3 text-decoration-none text-inherit" parameter="{link.data.externalurl}">
+                {link.data.title} <span aria-hidden="true" class="fa-chevron-right fa-solid"></span>
+            </f:link.typolink>
+        </f:case>
+        <f:defaultCase>
+            <f:link.action action="detail" arguments="{news: link.data.uid}" class="align-items-center border-bottom border-1 {borderColor} col-12 d-flex justify-content-between mb-4 pb-3 text-decoration-none text-inherit" controller="News" extensionName="VdNews" id="news-link-{link.data.uid}" pageUid="{settings.news.detailPid}" pluginName="Pi1">
+                {link.data.title} <span aria-hidden="true" class="fa-chevron-right fa-solid"></span>
+            </f:link.action>
+        </f:defaultCase>
+    </f:switch>
+</html>

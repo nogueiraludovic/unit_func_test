@@ -1,0 +1,5617 @@
+[
+	{
+		"id": "107e83e0-e658-40a8-8b91-9efc1e9089db",
+		"modificationDate": "2024-05-06T14:13:00",
+		"isDeleted": false,
+		"magistratModified": null,
+		"startDate": "2024-09-03T08:00:00",
+		"endDate": "2024-09-10T08:00:00",
+		"evenement": null,
+		"magistrat": {
+			"id": "ERE",
+			"nom": "REDONDO",
+			"prenom": "Eduardo",
+			"nomPrenom": "REDONDO Eduardo"
+		},
+		"suppleant": {
+			"id": "RBY",
+			"nom": "BOVY",
+			"prenom": "Carole",
+			"nomPrenom": "BOVY Carole"
+		},
+		"section": {
+			"libelleOfficePermanence": "TMIN"
+		}
+	},
+	{
+		"id": "85e891a7-dcf0-482a-a3b7-f62ea3ed9c06",
+		"modificationDate": "2024-08-07T15:44:00",
+		"isDeleted": false,
+		"magistratModified": null,
+		"startDate": "2024-09-05T08:00:00",
+		"endDate": "2024-09-09T08:00:00",
+		"evenement": null,
+		"magistrat": {
+			"id": "BRB",
+			"nom": "BAEHLER",
+			"prenom": "Bertrand",
+			"nomPrenom": "BAEHLER Bertrand"
+		},
+		"suppleant": {
+			"id": "DBT",
+			"nom": "BERTOLI PERRET",
+			"prenom": "Diane",
+			"nomPrenom": "BERTOLI PERRET Diane"
+		},
+		"section": {
+			"libelleOfficePermanence": "TMC"
+		}
+	},
+	{
+		"id": "d7078f7f-370a-4f46-b717-3dc64ede9d65",
+		"modificationDate": "2023-12-04T15:44:00",
+		"isDeleted": false,
+		"magistratModified": null,
+		"startDate": "2024-09-06T08:00:00",
+		"endDate": "2024-09-13T08:00:00",
+		"evenement": null,
+		"magistrat": {
+			"id": "BUF",
+			"nom": "BUFFAT",
+			"prenom": "Christian",
+			"nomPrenom": "BUFFAT Christian"
+		},
+		"suppleant": null,
+		"section": {
+			"libelleOfficePermanence": "Piquet DIVAS"
+		}
+	},
+	{
+		"id": "38096054-b97c-4eee-9942-e685c0ae3cb8",
+		"modificationDate": "2024-05-06T14:09:00",
+		"isDeleted": false,
+		"magistratModified": null,
+		"startDate": "2024-09-06T08:00:00",
+		"endDate": "2024-09-07T08:00:00",
+		"evenement": null,
+		"magistrat": {
+			"id": "MNU",
+			"nom": "COLLAUD",
+			"prenom": "Marlène",
+			"nomPrenom": "COLLAUD Marlène"
+		},
+		"suppleant": {
+			"id": "BBD",
+			"nom": "BUCHARD",
+			"prenom": "Bénédicte",
+			"nomPrenom": "BUCHARD Bénédicte"
+		},
+		"section": {
+			"libelleOfficePermanence": "MPa La Côte"
+		}
+	},
+	{
+		"id": "4657d5ff-a175-4169-8b3e-4ff55e7e8f5b",
+		"modificationDate": "2024-09-05T09:19:50.613",
+		"isDeleted": false,
+		"magistratModified": null,
+		"startDate": "2024-09-07T08:00:00",
+		"endDate": "2024-09-08T08:00:00",
+		"evenement": null,
+		"magistrat": {
+			"id": "BBD",
+			"nom": "BUCHARD",
+			"prenom": "Bénédicte",
+			"nomPrenom": "BUCHARD Bénédicte"
+		},
+		"suppleant": {
+			"id": "AAS",
+			"nom": "ASFA",
+			"prenom": "Aline",
+			"nomPrenom": "ASFA Aline"
+		},
+		"section": {
+			"libelleOfficePermanence": "MPa Est vaudois"
+		}
+	},
+	{
+		"id": "af16a966-6b46-4052-83ad-32f1040c586f",
+		"modificationDate": "2024-05-06T14:15:00",
+		"isDeleted": false,
+		"magistratModified": null,
+		"startDate": "2024-09-08T08:00:00",
+		"endDate": "2024-09-09T08:00:00",
+		"evenement": null,
+		"magistrat": {
+			"id": "DDM",
+			"nom": "DOMINGUEZ",
+			"prenom": "Diana",
+			"nomPrenom": "DOMINGUEZ Diana"
+		},
+		"suppleant": {
+			"id": "MNU",
+			"nom": "COLLAUD",
+			"prenom": "Marlène",
+			"nomPrenom": "COLLAUD Marlène"
+		},
+		"section": null
+	},
+	{
+		"id": "6e06094c-5163-4b50-bffc-50c37758474e",
+		"modificationDate": "2024-01-03T10:57:00",
+		"isDeleted": false,
+		"magistratModified": null,
+		"startDate": "2024-09-09T08:00:00",
+		"endDate": "2024-09-13T08:00:00",
+		"evenement": null,
+		"magistrat": {
+			"id": "JBC",
+			"nom": "BARUCHET",
+			"prenom": "Johann",
+			"nomPrenom": "BARUCHET Johann"
+		},
+		"suppleant": {
+			"id": "VWT",
+			"nom": "DE WATTEVILLE SUBILIA",
+			"prenom": "Valérie",
+			"nomPrenom": "DE WATTEVILLE SUBILIA Valérie"
+		},
+		"section": {
+			"libelleOfficePermanence": "MPa La Côte"
+		}
+	},
+	{
+		"id": "c0cdd35a-311d-4193-aacb-03ccb83fab9e",
+		"modificationDate": "2024-06-12T12:17:00",
+		"isDeleted": false,
+		"magistratModified": null,
+		"startDate": "2024-09-09T08:00:00",
+		"endDate": "2024-09-13T08:00:00",
+		"evenement": null,
+		"magistrat": {
+			"id": "FJL",
+			"nom": "JOLLIET",
+			"prenom": "Florence",
+			"nomPrenom": "JOLLIET Florence"
+		},
+		"suppleant": {
+			"id": "ASW",
+			"nom": "SCHWEIZER",
+			"prenom": "Alexandre",
+			"nomPrenom": "SCHWEIZER Alexandre"
+		},
+		"section": {
+			"libelleOfficePermanence": "MPa Nord vaudois"
+		}
+	},
+	{
+		"id": "84d7f6ad-05a6-4574-95ee-23c1a023805f",
+		"modificationDate": "2023-11-29T09:35:00",
+		"isDeleted": false,
+		"magistratModified": null,
+		"startDate": "2024-09-09T08:00:00",
+		"endDate": "2024-09-13T08:00:00",
+		"evenement": null,
+		"magistrat": {
+			"id": "MYO",
+			"nom": "BOURQUIN",
+			"prenom": "Myriam",
+			"nomPrenom": "BOURQUIN Myriam"
+		},
+		"suppleant": {
+			"id": "TAN",
+			"nom": "TAVARES",
+			"prenom": "Annick",
+			"nomPrenom": "TAVARES Annick"
+		},
+		"section": {
+			"libelleOfficePermanence": "MPa Est vaudois"
+		}
+	},
+	{
+		"id": "13d3119d-c1d0-4b6f-b736-d7cf235f8773",
+		"modificationDate": "2023-12-17T17:55:00",
+		"isDeleted": false,
+		"magistratModified": null,
+		"startDate": "2024-09-09T08:00:00",
+		"endDate": "2024-09-11T08:00:00",
+		"evenement": null,
+		"magistrat": {
+			"id": "JMU",
+			"nom": "MULLER",
+			"prenom": "Jérémie",
+			"nomPrenom": "MULLER Jérémie"
+		},
+		"suppleant": {
+			"id": "AYP",
+			"nom": "MAY",
+			"prenom": "Philomène",
+			"nomPrenom": "MAY Philomène"
+		},
+		"section": {
+			"libelleOfficePermanence": "MPa Lausanne"
+		}
+	},
+	{
+		"id": "5f466559-6701-48ca-82da-8e09cf8cb4f0",
+		"modificationDate": "2023-12-17T16:14:00",
+		"isDeleted": false,
+		"magistratModified": null,
+		"startDate": "2024-09-09T08:00:00",
+		"endDate": "2024-09-13T08:00:00",
+		"evenement": null,
+		"magistrat": {
+			"id": "CME",
+			"nom": "MATTHEY",
+			"prenom": "Cédric",
+			"nomPrenom": "MATTHEY Cédric"
+		},
+		"suppleant": {
+			"id": "PGN",
+			"nom": "GILLIERON",
+			"prenom": "Pascal",
+			"nomPrenom": "GILLIERON Pascal"
+		},
+		"section": {
+			"libelleOfficePermanence": "MPa Strada"
+		}
+	},
+	{
+		"id": "d44271e3-d2db-495c-9920-7b556a2c99dd",
+		"modificationDate": "2024-06-20T19:42:00",
+		"isDeleted": false,
+		"magistratModified": null,
+		"startDate": "2024-09-09T08:00:00",
+		"endDate": "2024-09-12T08:00:00",
+		"evenement": null,
+		"magistrat": {
+			"id": "JSE",
+			"nom": "SEREX",
+			"prenom": "Jessica",
+			"nomPrenom": "SEREX Jessica"
+		},
+		"suppleant": null,
+		"section": {
+			"libelleOfficePermanence": "TMC"
+		}
+	},
+	{
+		"id": "7d0da14f-c450-4a67-a853-e37701d25c02",
+		"modificationDate": "2024-05-06T14:14:00",
+		"isDeleted": false,
+		"magistratModified": null,
+		"startDate": "2024-09-10T08:00:00",
+		"endDate": "2024-09-17T08:00:00",
+		"evenement": null,
+		"magistrat": {
+			"id": "GSE",
+			"nom": "SÉCHAUD",
+			"prenom": "Géraldine",
+			"nomPrenom": "SÉCHAUD Géraldine"
+		},
+		"suppleant": {
+			"id": "ERE",
+			"nom": "REDONDO",
+			"prenom": "Eduardo",
+			"nomPrenom": "REDONDO Eduardo"
+		},
+		"section": {
+			"libelleOfficePermanence": "TMIN"
+		}
+	},
+	{
+		"id": "1c2b4255-409d-4291-9e5f-edf7df007978",
+		"modificationDate": "2023-12-17T17:55:00",
+		"isDeleted": false,
+		"magistratModified": null,
+		"startDate": "2024-09-11T08:00:00",
+		"endDate": "2024-09-13T08:00:00",
+		"evenement": null,
+		"magistrat": {
+			"id": "AYP",
+			"nom": "MAY",
+			"prenom": "Philomène",
+			"nomPrenom": "MAY Philomène"
+		},
+		"suppleant": {
+			"id": "JMU",
+			"nom": "MULLER",
+			"prenom": "Jérémie",
+			"nomPrenom": "MULLER Jérémie"
+		},
+		"section": {
+			"libelleOfficePermanence": "MPa Lausanne"
+		}
+	},
+	{
+		"id": "c3a0fb59-0f0b-48d1-8d8a-7c481157e9c3",
+		"modificationDate": "2024-08-07T15:45:00",
+		"isDeleted": false,
+		"magistratModified": null,
+		"startDate": "2024-09-12T08:00:00",
+		"endDate": "2024-09-17T08:00:00",
+		"evenement": null,
+		"magistrat": {
+			"id": "PAE",
+			"nom": "AESCHLIMANN",
+			"prenom": "Patricia",
+			"nomPrenom": "AESCHLIMANN Patricia"
+		},
+		"suppleant": {
+			"id": "ENE",
+			"nom": "NEYROUD",
+			"prenom": "Elina",
+			"nomPrenom": "NEYROUD Elina"
+		},
+		"section": {
+			"libelleOfficePermanence": "TMC"
+		}
+	},
+	{
+		"id": "6d874bfc-3ead-4712-9153-d58c4513c44e",
+		"modificationDate": "2024-07-02T11:49:00",
+		"isDeleted": false,
+		"magistratModified": null,
+		"startDate": "2024-09-13T08:00:00",
+		"endDate": "2024-09-19T08:00:00",
+		"evenement": null,
+		"magistrat": {
+			"id": "OJO",
+			"nom": "JOTTERAND",
+			"prenom": "Olivier",
+			"nomPrenom": "JOTTERAND Olivier"
+		},
+		"suppleant": null,
+		"section": {
+			"libelleOfficePermanence": "Piquet DIVAS"
+		}
+	},
+	{
+		"id": "631cf4d7-d02c-42c3-9a32-891e33530759",
+		"modificationDate": "2023-12-17T17:10:00",
+		"isDeleted": false,
+		"magistratModified": null,
+		"startDate": "2024-09-13T08:00:00",
+		"endDate": "2024-09-14T08:00:00",
+		"evenement": null,
+		"magistrat": {
+			"id": "RMG",
+			"nom": "BORNAND-MAGNENAT",
+			"prenom": "Roxane",
+			"nomPrenom": "BORNAND-MAGNENAT Roxane"
+		},
+		"suppleant": {
+			"id": "CMS",
+			"nom": "MASSON",
+			"prenom": "Camilla",
+			"nomPrenom": "MASSON Camilla"
+		},
+		"section": {
+			"libelleOfficePermanence": "MPa Lausanne"
+		}
+	},
+	{
+		"id": "195a74ff-bc5b-4618-aab2-510cf791e88a",
+		"modificationDate": "2023-12-17T17:10:00",
+		"isDeleted": false,
+		"magistratModified": null,
+		"startDate": "2024-09-14T08:00:00",
+		"endDate": "2024-09-15T08:00:00",
+		"evenement": null,
+		"magistrat": {
+			"id": "CMS",
+			"nom": "MASSON",
+			"prenom": "Camilla",
+			"nomPrenom": "MASSON Camilla"
+		},
+		"suppleant": {
+			"id": "CME",
+			"nom": "MATTHEY",
+			"prenom": "Cédric",
+			"nomPrenom": "MATTHEY Cédric"
+		},
+		"section": {
+			"libelleOfficePermanence": "MPa Est vaudois"
+		}
+	},
+	{
+		"id": "284a4431-6442-45ff-9138-1dd264181888",
+		"modificationDate": "2023-12-17T17:10:00",
+		"isDeleted": false,
+		"magistratModified": null,
+		"startDate": "2024-09-15T08:00:00",
+		"endDate": "2024-09-16T08:00:00",
+		"evenement": null,
+		"magistrat": {
+			"id": "CME",
+			"nom": "MATTHEY",
+			"prenom": "Cédric",
+			"nomPrenom": "MATTHEY Cédric"
+		},
+		"suppleant": {
+			"id": "VIY",
+			"nom": "IYNEDJIAN",
+			"prenom": "Vehanouche",
+			"nomPrenom": "IYNEDJIAN Vehanouche"
+		},
+		"section": null
+	},
+	{
+		"id": "4c6704ff-75ec-4bb9-9ebc-ba643d424050",
+		"modificationDate": "2023-12-17T17:11:00",
+		"isDeleted": false,
+		"magistratModified": null,
+		"startDate": "2024-09-16T08:00:00",
+		"endDate": "2024-09-17T08:00:00",
+		"evenement": null,
+		"magistrat": {
+			"id": "VIY",
+			"nom": "IYNEDJIAN",
+			"prenom": "Vehanouche",
+			"nomPrenom": "IYNEDJIAN Vehanouche"
+		},
+		"suppleant": {
+			"id": "RMG",
+			"nom": "BORNAND-MAGNENAT",
+			"prenom": "Roxane",
+			"nomPrenom": "BORNAND-MAGNENAT Roxane"
+		},
+		"section": {
+			"libelleOfficePermanence": "MPa Lausanne"
+		}
+	},
+	{
+		"id": "f1dab9d7-3c61-47e7-8344-c92d5b48c179",
+		"modificationDate": "2024-05-06T15:42:00",
+		"isDeleted": false,
+		"magistratModified": null,
+		"startDate": "2024-09-17T08:00:00",
+		"endDate": "2024-09-20T08:00:00",
+		"evenement": null,
+		"magistrat": {
+			"id": "VWT",
+			"nom": "DE WATTEVILLE SUBILIA",
+			"prenom": "Valérie",
+			"nomPrenom": "DE WATTEVILLE SUBILIA Valérie"
+		},
+		"suppleant": {
+			"id": "MHN",
+			"nom": "HENRY",
+			"prenom": "Marine",
+			"nomPrenom": "HENRY Marine"
+		},
+		"section": {
+			"libelleOfficePermanence": "MPa La Côte"
+		}
+	},
+	{
+		"id": "d0615d4b-2fb4-40b8-8eed-ccef86d1a112",
+		"modificationDate": "2023-11-28T09:18:00",
+		"isDeleted": false,
+		"magistratModified": null,
+		"startDate": "2024-09-17T08:00:00",
+		"endDate": "2024-09-20T08:00:00",
+		"evenement": null,
+		"magistrat": {
+			"id": "CCE",
+			"nom": "CORREIA",
+			"prenom": "Claudia",
+			"nomPrenom": "CORREIA Claudia"
+		},
+		"suppleant": {
+			"id": "FJL",
+			"nom": "JOLLIET",
+			"prenom": "Florence",
+			"nomPrenom": "JOLLIET Florence"
+		},
+		"section": {
+			"libelleOfficePermanence": "MPa Nord vaudois"
+		}
+	},
+	{
+		"id": "8e26e46c-ea07-4ba9-8cb5-40c789427d33",
+		"modificationDate": "2023-11-29T09:36:00",
+		"isDeleted": false,
+		"magistratModified": null,
+		"startDate": "2024-09-17T08:00:00",
+		"endDate": "2024-09-20T08:00:00",
+		"evenement": null,
+		"magistrat": {
+			"id": "OBU",
+			"nom": "BUTTET",
+			"prenom": "Olivier",
+			"nomPrenom": "BUTTET Olivier"
+		},
+		"suppleant": {
+			"id": "MYO",
+			"nom": "BOURQUIN",
+			"prenom": "Myriam",
+			"nomPrenom": "BOURQUIN Myriam"
+		},
+		"section": {
+			"libelleOfficePermanence": "MPa Est vaudois"
+		}
+	},
+	{
+		"id": "ba44ba3f-a679-487f-af33-6988b6138652",
+		"modificationDate": "2023-12-17T17:56:00",
+		"isDeleted": false,
+		"magistratModified": null,
+		"startDate": "2024-09-17T08:00:00",
+		"endDate": "2024-09-18T08:00:00",
+		"evenement": null,
+		"magistrat": {
+			"id": "JRA",
+			"nom": "RAPIN",
+			"prenom": "Jérémie",
+			"nomPrenom": "RAPIN Jérémie"
+		},
+		"suppleant": {
+			"id": "BDR",
+			"nom": "DENEREAZ",
+			"prenom": "Bernard",
+			"nomPrenom": "DENEREAZ Bernard"
+		},
+		"section": {
+			"libelleOfficePermanence": "MPa Lausanne"
+		}
+	},
+	{
+		"id": "380e8d86-f835-4d86-b96b-a3f931e9258a",
+		"modificationDate": "2024-05-08T12:13:00",
+		"isDeleted": false,
+		"magistratModified": null,
+		"startDate": "2024-09-17T08:00:00",
+		"endDate": "2024-09-20T08:00:00",
+		"evenement": null,
+		"magistrat": {
+			"id": "KDP",
+			"nom": "DU PASQUIER",
+			"prenom": "Karen",
+			"nomPrenom": "DU PASQUIER Karen"
+		},
+		"suppleant": {
+			"id": "NFN",
+			"nom": "FRANÇAIS",
+			"prenom": "Nicolas",
+			"nomPrenom": "FRANÇAIS Nicolas"
+		},
+		"section": {
+			"libelleOfficePermanence": "MPa Strada"
+		}
+	},
+	{
+		"id": "c0be33ec-ddfe-455e-8a00-abd0e54eeb73",
+		"modificationDate": "2024-08-07T15:48:00",
+		"isDeleted": false,
+		"magistratModified": null,
+		"startDate": "2024-09-17T08:00:00",
+		"endDate": "2024-09-20T08:00:00",
+		"evenement": null,
+		"magistrat": {
+			"id": "LAS",
+			"nom": "SUTER",
+			"prenom": "Laure-Anne",
+			"nomPrenom": "SUTER Laure-Anne"
+		},
+		"suppleant": null,
+		"section": {
+			"libelleOfficePermanence": "TMC"
+		}
+	},
+	{
+		"id": "dc21dcec-ea33-436d-922e-73f6925c2e6b",
+		"modificationDate": "2024-05-06T14:15:00",
+		"isDeleted": false,
+		"magistratModified": null,
+		"startDate": "2024-09-17T08:00:00",
+		"endDate": "2024-09-24T08:00:00",
+		"evenement": null,
+		"magistrat": {
+			"id": "VBK",
+			"nom": "BETTEX KOLTAKOV",
+			"prenom": "Valérie",
+			"nomPrenom": "BETTEX KOLTAKOV Valérie"
+		},
+		"suppleant": {
+			"id": "GSE",
+			"nom": "SÉCHAUD",
+			"prenom": "Géraldine",
+			"nomPrenom": "SÉCHAUD Géraldine"
+		},
+		"section": {
+			"libelleOfficePermanence": "TMIN"
+		}
+	},
+	{
+		"id": "4d869fdc-2281-4cac-9526-065b30bb80c7",
+		"modificationDate": "2023-12-17T17:56:00",
+		"isDeleted": false,
+		"magistratModified": null,
+		"startDate": "2024-09-18T08:00:00",
+		"endDate": "2024-09-20T08:00:00",
+		"evenement": null,
+		"magistrat": {
+			"id": "JRA",
+			"nom": "RAPIN",
+			"prenom": "Jérémie",
+			"nomPrenom": "RAPIN Jérémie"
+		},
+		"suppleant": {
+			"id": "BDR",
+			"nom": "DENEREAZ",
+			"prenom": "Bernard",
+			"nomPrenom": "DENEREAZ Bernard"
+		},
+		"section": {
+			"libelleOfficePermanence": "MPa Lausanne"
+		}
+	},
+	{
+		"id": "aa065350-ebf2-4a68-8c56-14ef1220c565",
+		"modificationDate": "2024-07-02T11:51:00",
+		"isDeleted": false,
+		"magistratModified": null,
+		"startDate": "2024-09-19T08:00:00",
+		"endDate": "2024-09-27T08:00:00",
+		"evenement": null,
+		"magistrat": {
+			"id": "SRB",
+			"nom": "VALCESCHINI",
+			"prenom": "Séverine",
+			"nomPrenom": "VALCESCHINI Séverine"
+		},
+		"suppleant": null,
+		"section": {
+			"libelleOfficePermanence": "Piquet DIVAS"
+		}
+	},
+	{
+		"id": "3399f729-2054-471e-9f37-96e69e4ab0e9",
+		"modificationDate": "2024-01-03T10:58:00",
+		"isDeleted": false,
+		"magistratModified": null,
+		"startDate": "2024-09-20T08:00:00",
+		"endDate": "2024-09-21T08:00:00",
+		"evenement": null,
+		"magistrat": {
+			"id": "CMI",
+			"nom": "MAIRE",
+			"prenom": "Christian",
+			"nomPrenom": "MAIRE Christian"
+		},
+		"suppleant": {
+			"id": "XCR",
+			"nom": "CHRISTE",
+			"prenom": "Xavier",
+			"nomPrenom": "CHRISTE Xavier"
+		},
+		"section": {
+			"libelleOfficePermanence": "MPa Nord vaudois"
+		}
+	},
+	{
+		"id": "541f73fc-f80b-41d7-bcf6-bea4113056d8",
+		"modificationDate": "2024-08-07T15:49:00",
+		"isDeleted": false,
+		"magistratModified": null,
+		"startDate": "2024-09-20T08:00:00",
+		"endDate": "2024-09-23T08:00:00",
+		"evenement": null,
+		"magistrat": {
+			"id": "DBT",
+			"nom": "BERTOLI PERRET",
+			"prenom": "Diane",
+			"nomPrenom": "BERTOLI PERRET Diane"
+		},
+		"suppleant": {
+			"id": "BRB",
+			"nom": "BAEHLER",
+			"prenom": "Bertrand",
+			"nomPrenom": "BAEHLER Bertrand"
+		},
+		"section": {
+			"libelleOfficePermanence": "TMC"
+		}
+	},
+	{
+		"id": "788cf899-a278-42e9-b886-cc45ea9ee2eb",
+		"modificationDate": "2024-01-03T10:58:00",
+		"isDeleted": false,
+		"magistratModified": null,
+		"startDate": "2024-09-21T08:00:00",
+		"endDate": "2024-09-22T08:00:00",
+		"evenement": null,
+		"magistrat": {
+			"id": "XCR",
+			"nom": "CHRISTE",
+			"prenom": "Xavier",
+			"nomPrenom": "CHRISTE Xavier"
+		},
+		"suppleant": {
+			"id": "BDR",
+			"nom": "DENEREAZ",
+			"prenom": "Bernard",
+			"nomPrenom": "DENEREAZ Bernard"
+		},
+		"section": {
+			"libelleOfficePermanence": "MPa La Côte"
+		}
+	},
+	{
+		"id": "cf680a4b-0311-4cba-be56-976afb8ee2a1",
+		"modificationDate": "2024-01-03T10:59:00",
+		"isDeleted": false,
+		"magistratModified": null,
+		"startDate": "2024-09-22T08:00:00",
+		"endDate": "2024-09-23T08:00:00",
+		"evenement": null,
+		"magistrat": {
+			"id": "BDR",
+			"nom": "DENEREAZ",
+			"prenom": "Bernard",
+			"nomPrenom": "DENEREAZ Bernard"
+		},
+		"suppleant": {
+			"id": "CMI",
+			"nom": "MAIRE",
+			"prenom": "Christian",
+			"nomPrenom": "MAIRE Christian"
+		},
+		"section": {
+			"libelleOfficePermanence": "MPa Lausanne"
+		}
+	},
+	{
+		"id": "5043d20f-a3dc-4258-86f5-8b410cfbc58a",
+		"modificationDate": "2024-05-06T14:05:00",
+		"isDeleted": false,
+		"magistratModified": null,
+		"startDate": "2024-09-23T08:00:00",
+		"endDate": "2024-09-27T08:00:00",
+		"evenement": null,
+		"magistrat": {
+			"id": "MHN",
+			"nom": "HENRY",
+			"prenom": "Marine",
+			"nomPrenom": "HENRY Marine"
+		},
+		"suppleant": {
+			"id": "PGT",
+			"nom": "GALEUCHET",
+			"prenom": "Patrick",
+			"nomPrenom": "GALEUCHET Patrick"
+		},
+		"section": {
+			"libelleOfficePermanence": "MPa La Côte"
+		}
+	},
+	{
+		"id": "4d9e38e6-8419-4033-b4d7-d2179816cbc3",
+		"modificationDate": "2023-11-28T09:24:00",
+		"isDeleted": false,
+		"magistratModified": null,
+		"startDate": "2024-09-23T08:00:00",
+		"endDate": "2024-09-27T08:00:00",
+		"evenement": null,
+		"magistrat": {
+			"id": "GMT",
+			"nom": "MORET",
+			"prenom": "Gabriel",
+			"nomPrenom": "MORET Gabriel"
+		},
+		"suppleant": {
+			"id": "CCE",
+			"nom": "CORREIA",
+			"prenom": "Claudia",
+			"nomPrenom": "CORREIA Claudia"
+		},
+		"section": {
+			"libelleOfficePermanence": "MPa Nord vaudois"
+		}
+	},
+	{
+		"id": "f2c8c681-ab1b-4b74-99ad-1c1b354b8d5d",
+		"modificationDate": "2023-11-29T09:37:00",
+		"isDeleted": false,
+		"magistratModified": null,
+		"startDate": "2024-09-23T08:00:00",
+		"endDate": "2024-09-27T08:00:00",
+		"evenement": null,
+		"magistrat": {
+			"id": "LRC",
+			"nom": "ROCCARO",
+			"prenom": "Laurie",
+			"nomPrenom": "ROCCARO Laurie"
+		},
+		"suppleant": {
+			"id": "OBU",
+			"nom": "BUTTET",
+			"prenom": "Olivier",
+			"nomPrenom": "BUTTET Olivier"
+		},
+		"section": {
+			"libelleOfficePermanence": "MPa Est vaudois"
+		}
+	},
+	{
+		"id": "73331ad5-719d-4fac-bceb-364fa80b3e5f",
+		"modificationDate": "2024-06-12T11:30:00",
+		"isDeleted": false,
+		"magistratModified": null,
+		"startDate": "2024-09-23T08:00:00",
+		"endDate": "2024-09-25T08:00:00",
+		"evenement": null,
+		"magistrat": {
+			"id": "JON",
+			"nom": "CORNU",
+			"prenom": "Jonathan",
+			"nomPrenom": "CORNU Jonathan"
+		},
+		"suppleant": {
+			"id": "RMG",
+			"nom": "BORNAND-MAGNENAT",
+			"prenom": "Roxane",
+			"nomPrenom": "BORNAND-MAGNENAT Roxane"
+		},
+		"section": {
+			"libelleOfficePermanence": "MPa Lausanne"
+		}
+	},
+	{
+		"id": "68529e4d-d410-40d9-9343-38a6e7f2ef3c",
+		"modificationDate": "2023-12-17T16:15:00",
+		"isDeleted": false,
+		"magistratModified": null,
+		"startDate": "2024-09-23T08:00:00",
+		"endDate": "2024-09-27T08:00:00",
+		"evenement": null,
+		"magistrat": {
+			"id": "PGN",
+			"nom": "GILLIERON",
+			"prenom": "Pascal",
+			"nomPrenom": "GILLIERON Pascal"
+		},
+		"suppleant": {
+			"id": "KDP",
+			"nom": "DU PASQUIER",
+			"prenom": "Karen",
+			"nomPrenom": "DU PASQUIER Karen"
+		},
+		"section": {
+			"libelleOfficePermanence": "MPa Strada"
+		}
+	},
+	{
+		"id": "0254409c-8885-4b8d-96f8-513c8177478a",
+		"modificationDate": "2024-08-07T15:51:00",
+		"isDeleted": false,
+		"magistratModified": null,
+		"startDate": "2024-09-23T08:00:00",
+		"endDate": "2024-09-26T08:00:00",
+		"evenement": null,
+		"magistrat": {
+			"id": "BRB",
+			"nom": "BAEHLER",
+			"prenom": "Bertrand",
+			"nomPrenom": "BAEHLER Bertrand"
+		},
+		"suppleant": null,
+		"section": {
+			"libelleOfficePermanence": "TMC"
+		}
+	},
+	{
+		"id": "b85cd2e3-69a8-4b23-b391-8bf0dffc7bb8",
+		"modificationDate": "2024-05-06T14:15:00",
+		"isDeleted": false,
+		"magistratModified": null,
+		"startDate": "2024-09-24T08:00:00",
+		"endDate": "2024-10-01T08:00:00",
+		"evenement": null,
+		"magistrat": {
+			"id": "JJQ",
+			"nom": "JEQUIER",
+			"prenom": "Julie",
+			"nomPrenom": "JEQUIER Julie"
+		},
+		"suppleant": {
+			"id": "VBK",
+			"nom": "BETTEX KOLTAKOV",
+			"prenom": "Valérie",
+			"nomPrenom": "BETTEX KOLTAKOV Valérie"
+		},
+		"section": {
+			"libelleOfficePermanence": "TMIN"
+		}
+	},
+	{
+		"id": "a86a4fe7-b127-4c78-a8be-252066dcb189",
+		"modificationDate": "2024-06-12T11:33:00",
+		"isDeleted": false,
+		"magistratModified": null,
+		"startDate": "2024-09-25T08:00:00",
+		"endDate": "2024-09-27T08:00:00",
+		"evenement": null,
+		"magistrat": {
+			"id": "RMG",
+			"nom": "BORNAND-MAGNENAT",
+			"prenom": "Roxane",
+			"nomPrenom": "BORNAND-MAGNENAT Roxane"
+		},
+		"suppleant": {
+			"id": "JON",
+			"nom": "CORNU",
+			"prenom": "Jonathan",
+			"nomPrenom": "CORNU Jonathan"
+		},
+		"section": {
+			"libelleOfficePermanence": "MPa Lausanne"
+		}
+	},
+	{
+		"id": "e1954312-8068-468d-bc19-968290bbfb48",
+		"modificationDate": "2024-06-12T10:21:00",
+		"isDeleted": false,
+		"magistratModified": null,
+		"startDate": "2024-09-26T08:00:00",
+		"endDate": "2024-09-30T08:00:00",
+		"evenement": null,
+		"magistrat": {
+			"id": "ENE",
+			"nom": "NEYROUD",
+			"prenom": "Elina",
+			"nomPrenom": "NEYROUD Elina"
+		},
+		"suppleant": {
+			"id": "MPH",
+			"nom": "WIEDLER",
+			"prenom": "Mélanie",
+			"nomPrenom": "WIEDLER Mélanie"
+		},
+		"section": {
+			"libelleOfficePermanence": "TMC"
+		}
+	},
+	{
+		"id": "b90b747b-b556-471e-ac72-23e9b015eb07",
+		"modificationDate": "2023-12-04T15:46:00",
+		"isDeleted": false,
+		"magistratModified": null,
+		"startDate": "2024-09-27T08:00:00",
+		"endDate": "2024-10-04T08:00:00",
+		"evenement": null,
+		"magistrat": {
+			"id": "MAO",
+			"nom": "BONVIN",
+			"prenom": "Magali",
+			"nomPrenom": "BONVIN Magali"
+		},
+		"suppleant": null,
+		"section": {
+			"libelleOfficePermanence": "Piquet DIVAS"
+		}
+	},
+	{
+		"id": "3d50a2cd-6319-44ee-821b-a357f115d9ff",
+		"modificationDate": "2023-12-17T17:12:00",
+		"isDeleted": false,
+		"magistratModified": null,
+		"startDate": "2024-09-27T08:00:00",
+		"endDate": "2024-09-28T08:00:00",
+		"evenement": null,
+		"magistrat": {
+			"id": "KDP",
+			"nom": "DU PASQUIER",
+			"prenom": "Karen",
+			"nomPrenom": "DU PASQUIER Karen"
+		},
+		"suppleant": {
+			"id": "ASW",
+			"nom": "SCHWEIZER",
+			"prenom": "Alexandre",
+			"nomPrenom": "SCHWEIZER Alexandre"
+		},
+		"section": null
+	},
+	{
+		"id": "3cee1360-0226-492f-8d8d-2b10fb78c658",
+		"modificationDate": "2024-01-03T11:01:00",
+		"isDeleted": false,
+		"magistratModified": null,
+		"startDate": "2024-09-28T08:00:00",
+		"endDate": "2024-09-29T08:00:00",
+		"evenement": null,
+		"magistrat": {
+			"id": "ASW",
+			"nom": "SCHWEIZER",
+			"prenom": "Alexandre",
+			"nomPrenom": "SCHWEIZER Alexandre"
+		},
+		"suppleant": {
+			"id": "VWT",
+			"nom": "DE WATTEVILLE SUBILIA",
+			"prenom": "Valérie",
+			"nomPrenom": "DE WATTEVILLE SUBILIA Valérie"
+		},
+		"section": {
+			"libelleOfficePermanence": "MPa Nord vaudois"
+		}
+	},
+	{
+		"id": "572eb3ec-1622-4a90-85bc-ffc6de567ecc",
+		"modificationDate": "2024-01-03T11:00:00",
+		"isDeleted": false,
+		"magistratModified": null,
+		"startDate": "2024-09-29T08:00:00",
+		"endDate": "2024-09-30T08:00:00",
+		"evenement": null,
+		"magistrat": {
+			"id": "VWT",
+			"nom": "DE WATTEVILLE SUBILIA",
+			"prenom": "Valérie",
+			"nomPrenom": "DE WATTEVILLE SUBILIA Valérie"
+		},
+		"suppleant": {
+			"id": "KDP",
+			"nom": "DU PASQUIER",
+			"prenom": "Karen",
+			"nomPrenom": "DU PASQUIER Karen"
+		},
+		"section": {
+			"libelleOfficePermanence": "MPa La Côte"
+		}
+	},
+	{
+		"id": "33405587-1104-482f-a663-8a9640446f51",
+		"modificationDate": "2024-01-03T11:01:00",
+		"isDeleted": false,
+		"magistratModified": null,
+		"startDate": "2024-09-30T08:00:00",
+		"endDate": "2024-10-04T08:00:00",
+		"evenement": null,
+		"magistrat": {
+			"id": "PGT",
+			"nom": "GALEUCHET",
+			"prenom": "Patrick",
+			"nomPrenom": "GALEUCHET Patrick"
+		},
+		"suppleant": {
+			"id": "SRD",
+			"nom": "RODIEUX",
+			"prenom": "Sophie",
+			"nomPrenom": "RODIEUX Sophie"
+		},
+		"section": {
+			"libelleOfficePermanence": "MPa La Côte"
+		}
+	},
+	{
+		"id": "bd59484b-02e6-4cd5-8884-3f9125bcecfb",
+		"modificationDate": "2024-06-13T09:46:00",
+		"isDeleted": false,
+		"magistratModified": null,
+		"startDate": "2024-09-30T08:00:00",
+		"endDate": "2024-10-02T08:00:00",
+		"evenement": null,
+		"magistrat": {
+			"id": "FJL",
+			"nom": "JOLLIET",
+			"prenom": "Florence",
+			"nomPrenom": "JOLLIET Florence"
+		},
+		"suppleant": {
+			"id": "GMT",
+			"nom": "MORET",
+			"prenom": "Gabriel",
+			"nomPrenom": "MORET Gabriel"
+		},
+		"section": {
+			"libelleOfficePermanence": "MPa Nord vaudois"
+		}
+	},
+	{
+		"id": "d0b44c7b-bf7b-4a9b-9544-868ffc967461",
+		"modificationDate": "2023-11-29T09:38:00",
+		"isDeleted": false,
+		"magistratModified": null,
+		"startDate": "2024-09-30T08:00:00",
+		"endDate": "2024-10-04T08:00:00",
+		"evenement": null,
+		"magistrat": {
+			"id": "KBE",
+			"nom": "BEN AMOR",
+			"prenom": "Karim",
+			"nomPrenom": "BEN AMOR Karim"
+		},
+		"suppleant": {
+			"id": "LRC",
+			"nom": "ROCCARO",
+			"prenom": "Laurie",
+			"nomPrenom": "ROCCARO Laurie"
+		},
+		"section": {
+			"libelleOfficePermanence": "MPa Est vaudois"
+		}
+	},
+	{
+		"id": "d49c7dbc-74fa-4502-89a2-f2c949119fa7",
+		"modificationDate": "2024-06-12T11:35:00",
+		"isDeleted": false,
+		"magistratModified": null,
+		"startDate": "2024-09-30T08:00:00",
+		"endDate": "2024-10-02T08:00:00",
+		"evenement": null,
+		"magistrat": {
+			"id": "MMR",
+			"nom": "MORET",
+			"prenom": "Marjorie",
+			"nomPrenom": "MORET Marjorie"
+		},
+		"suppleant": {
+			"id": "JRC",
+			"nom": "RACINE",
+			"prenom": "Joëlle",
+			"nomPrenom": "RACINE Joëlle"
+		},
+		"section": {
+			"libelleOfficePermanence": "MPa Lausanne"
+		}
+	},
+	{
+		"id": "e91ed024-ab77-4c3e-b7b4-6e9f02600a3e",
+		"modificationDate": "2024-05-08T12:12:00",
+		"isDeleted": false,
+		"magistratModified": null,
+		"startDate": "2024-09-30T08:00:00",
+		"endDate": "2024-10-04T08:00:00",
+		"evenement": null,
+		"magistrat": {
+			"id": "NFN",
+			"nom": "FRANÇAIS",
+			"prenom": "Nicolas",
+			"nomPrenom": "FRANÇAIS Nicolas"
+		},
+		"suppleant": {
+			"id": "PGN",
+			"nom": "GILLIERON",
+			"prenom": "Pascal",
+			"nomPrenom": "GILLIERON Pascal"
+		},
+		"section": {
+			"libelleOfficePermanence": "MPa Strada"
+		}
+	},
+	{
+		"id": "5775dae6-346b-44e4-a07f-ab99def8fbda",
+		"modificationDate": "2024-08-07T15:53:00",
+		"isDeleted": false,
+		"magistratModified": null,
+		"startDate": "2024-09-30T08:00:00",
+		"endDate": "2024-10-03T08:00:00",
+		"evenement": null,
+		"magistrat": {
+			"id": "JEM",
+			"nom": "MAS",
+			"prenom": "Jérémy",
+			"nomPrenom": "MAS Jérémy"
+		},
+		"suppleant": null,
+		"section": {
+			"libelleOfficePermanence": "TMC"
+		}
+	},
+	{
+		"id": "424c3067-53af-43f7-aa48-4f8398ae68b4",
+		"modificationDate": "2024-05-06T14:16:00",
+		"isDeleted": false,
+		"magistratModified": null,
+		"startDate": "2024-10-01T08:00:00",
+		"endDate": "2024-10-08T08:00:00",
+		"evenement": null,
+		"magistrat": {
+			"id": "RBY",
+			"nom": "BOVY",
+			"prenom": "Carole",
+			"nomPrenom": "BOVY Carole"
+		},
+		"suppleant": {
+			"id": "JJQ",
+			"nom": "JEQUIER",
+			"prenom": "Julie",
+			"nomPrenom": "JEQUIER Julie"
+		},
+		"section": {
+			"libelleOfficePermanence": "TMIN"
+		}
+	},
+	{
+		"id": "c1f2e29d-4930-447a-94f6-eb8fca5021e5",
+		"modificationDate": "2024-06-12T11:35:00",
+		"isDeleted": false,
+		"magistratModified": null,
+		"startDate": "2024-10-02T08:00:00",
+		"endDate": "2024-10-04T08:00:00",
+		"evenement": null,
+		"magistrat": {
+			"id": "MRN",
+			"nom": "TSCHOPP",
+			"prenom": "Maria",
+			"nomPrenom": "TSCHOPP Maria"
+		},
+		"suppleant": {
+			"id": "MMR",
+			"nom": "MORET",
+			"prenom": "Marjorie",
+			"nomPrenom": "MORET Marjorie"
+		},
+		"section": {
+			"libelleOfficePermanence": "MPa Lausanne"
+		}
+	},
+	{
+		"id": "7ef7b8fb-e88c-4073-b5b7-5de095b39cd6",
+		"modificationDate": "2024-06-13T09:56:00",
+		"isDeleted": false,
+		"magistratModified": null,
+		"startDate": "2024-10-02T08:00:00",
+		"endDate": "2024-10-04T08:00:00",
+		"evenement": null,
+		"magistrat": {
+			"id": "GMT",
+			"nom": "MORET",
+			"prenom": "Gabriel",
+			"nomPrenom": "MORET Gabriel"
+		},
+		"suppleant": {
+			"id": "FJL",
+			"nom": "JOLLIET",
+			"prenom": "Florence",
+			"nomPrenom": "JOLLIET Florence"
+		},
+		"section": {
+			"libelleOfficePermanence": "MPa Nord vaudois"
+		}
+	},
+	{
+		"id": "19daf473-5c88-4e56-881e-3f3503a76d88",
+		"modificationDate": "2024-08-07T15:53:00",
+		"isDeleted": false,
+		"magistratModified": null,
+		"startDate": "2024-10-03T08:00:00",
+		"endDate": "2024-10-07T08:00:00",
+		"evenement": null,
+		"magistrat": {
+			"id": "LAS",
+			"nom": "SUTER",
+			"prenom": "Laure-Anne",
+			"nomPrenom": "SUTER Laure-Anne"
+		},
+		"suppleant": {
+			"id": "SDE",
+			"nom": "DERISBOURG",
+			"prenom": "Sabine",
+			"nomPrenom": "DERISBOURG Sabine"
+		},
+		"section": {
+			"libelleOfficePermanence": "TMC"
+		}
+	},
+	{
+		"id": "b3c712b9-e9f0-4691-9b11-d9c642257a48",
+		"modificationDate": "2023-12-04T15:46:00",
+		"isDeleted": false,
+		"magistratModified": null,
+		"startDate": "2024-10-04T08:00:00",
+		"endDate": "2024-10-11T08:00:00",
+		"evenement": null,
+		"magistrat": {
+			"id": "JDZ",
+			"nom": "DÉLÈZE",
+			"prenom": "Julien",
+			"nomPrenom": "DÉLÈZE Julien"
+		},
+		"suppleant": null,
+		"section": {
+			"libelleOfficePermanence": "Piquet DIVAS"
+		}
+	},
+	{
+		"id": "7dad64ec-0165-4097-a2cb-5ccd2b812422",
+		"modificationDate": "2023-12-17T17:13:00",
+		"isDeleted": false,
+		"magistratModified": null,
+		"startDate": "2024-10-04T08:00:00",
+		"endDate": "2024-10-05T08:00:00",
+		"evenement": null,
+		"magistrat": {
+			"id": "AYP",
+			"nom": "MAY",
+			"prenom": "Philomène",
+			"nomPrenom": "MAY Philomène"
+		},
+		"suppleant": {
+			"id": "CDT",
+			"nom": "DELETRA",
+			"prenom": "Carole",
+			"nomPrenom": "DELETRA Carole"
+		},
+		"section": {
+			"libelleOfficePermanence": "MPa Lausanne"
+		}
+	},
+	{
+		"id": "089969fe-5a0c-4cc6-8ae5-5a321d2147f2",
+		"modificationDate": "2023-12-17T17:13:00",
+		"isDeleted": false,
+		"magistratModified": null,
+		"startDate": "2024-10-05T08:00:00",
+		"endDate": "2024-10-06T08:00:00",
+		"evenement": null,
+		"magistrat": {
+			"id": "CDT",
+			"nom": "DELETRA",
+			"prenom": "Carole",
+			"nomPrenom": "DELETRA Carole"
+		},
+		"suppleant": {
+			"id": "BBD",
+			"nom": "BUCHARD",
+			"prenom": "Bénédicte",
+			"nomPrenom": "BUCHARD Bénédicte"
+		},
+		"section": null
+	},
+	{
+		"id": "9949145b-a211-47be-acd7-cf84aa8ec816",
+		"modificationDate": "2023-12-17T17:14:00",
+		"isDeleted": false,
+		"magistratModified": null,
+		"startDate": "2024-10-06T08:00:00",
+		"endDate": "2024-10-07T08:00:00",
+		"evenement": null,
+		"magistrat": {
+			"id": "BBD",
+			"nom": "BUCHARD",
+			"prenom": "Bénédicte",
+			"nomPrenom": "BUCHARD Bénédicte"
+		},
+		"suppleant": {
+			"id": "AYP",
+			"nom": "MAY",
+			"prenom": "Philomène",
+			"nomPrenom": "MAY Philomène"
+		},
+		"section": {
+			"libelleOfficePermanence": "MPa Est vaudois"
+		}
+	},
+	{
+		"id": "bd87eff8-cc70-4c80-b90b-5977c0300a00",
+		"modificationDate": "2024-01-03T11:02:00",
+		"isDeleted": false,
+		"magistratModified": null,
+		"startDate": "2024-10-07T08:00:00",
+		"endDate": "2024-10-11T08:00:00",
+		"evenement": null,
+		"magistrat": {
+			"id": "SRD",
+			"nom": "RODIEUX",
+			"prenom": "Sophie",
+			"nomPrenom": "RODIEUX Sophie"
+		},
+		"suppleant": {
+			"id": "XCR",
+			"nom": "CHRISTE",
+			"prenom": "Xavier",
+			"nomPrenom": "CHRISTE Xavier"
+		},
+		"section": {
+			"libelleOfficePermanence": "MPa La Côte"
+		}
+	},
+	{
+		"id": "fe324f71-d1b6-4603-8cc9-ba90fef472ee",
+		"modificationDate": "2024-06-12T12:20:00",
+		"isDeleted": false,
+		"magistratModified": null,
+		"startDate": "2024-10-07T08:00:00",
+		"endDate": "2024-10-11T08:00:00",
+		"evenement": null,
+		"magistrat": {
+			"id": "CMI",
+			"nom": "MAIRE",
+			"prenom": "Christian",
+			"nomPrenom": "MAIRE Christian"
+		},
+		"suppleant": {
+			"id": "GMT",
+			"nom": "MORET",
+			"prenom": "Gabriel",
+			"nomPrenom": "MORET Gabriel"
+		},
+		"section": {
+			"libelleOfficePermanence": "MPa Nord vaudois"
+		}
+	},
+	{
+		"id": "5129aacd-8b15-4e3d-b630-7dd8f7704cbc",
+		"modificationDate": "2023-11-29T09:38:00",
+		"isDeleted": false,
+		"magistratModified": null,
+		"startDate": "2024-10-07T08:00:00",
+		"endDate": "2024-10-11T08:00:00",
+		"evenement": null,
+		"magistrat": {
+			"id": "OBU",
+			"nom": "BUTTET",
+			"prenom": "Olivier",
+			"nomPrenom": "BUTTET Olivier"
+		},
+		"suppleant": {
+			"id": "KBE",
+			"nom": "BEN AMOR",
+			"prenom": "Karim",
+			"nomPrenom": "BEN AMOR Karim"
+		},
+		"section": {
+			"libelleOfficePermanence": "MPa Est vaudois"
+		}
+	},
+	{
+		"id": "6ea354f7-8922-4f98-88d4-69bebfcf507d",
+		"modificationDate": "2023-12-17T17:57:00",
+		"isDeleted": false,
+		"magistratModified": null,
+		"startDate": "2024-10-07T08:00:00",
+		"endDate": "2024-10-09T08:00:00",
+		"evenement": null,
+		"magistrat": {
+			"id": "VIY",
+			"nom": "IYNEDJIAN",
+			"prenom": "Vehanouche",
+			"nomPrenom": "IYNEDJIAN Vehanouche"
+		},
+		"suppleant": {
+			"id": "JWG",
+			"nom": "WIGET",
+			"prenom": "Jasmine",
+			"nomPrenom": "WIGET Jasmine"
+		},
+		"section": {
+			"libelleOfficePermanence": "MPa Lausanne"
+		}
+	},
+	{
+		"id": "5af34477-2dfd-42bf-9222-f6a8f2f03dde",
+		"modificationDate": "2024-07-05T09:55:00",
+		"isDeleted": false,
+		"magistratModified": null,
+		"startDate": "2024-10-07T08:00:00",
+		"endDate": "2024-10-11T08:00:00",
+		"evenement": null,
+		"magistrat": {
+			"id": "CME",
+			"nom": "MATTHEY",
+			"prenom": "Cédric",
+			"nomPrenom": "MATTHEY Cédric"
+		},
+		"suppleant": {
+			"id": "PGN",
+			"nom": "GILLIERON",
+			"prenom": "Pascal",
+			"nomPrenom": "GILLIERON Pascal"
+		},
+		"section": {
+			"libelleOfficePermanence": "MPa Strada"
+		}
+	},
+	{
+		"id": "4f0d2ad8-f7be-466f-9ce6-9b5e6c50c71d",
+		"modificationDate": "2024-08-07T15:53:00",
+		"isDeleted": false,
+		"magistratModified": null,
+		"startDate": "2024-10-07T08:00:00",
+		"endDate": "2024-10-10T08:00:00",
+		"evenement": null,
+		"magistrat": {
+			"id": "BRB",
+			"nom": "BAEHLER",
+			"prenom": "Bertrand",
+			"nomPrenom": "BAEHLER Bertrand"
+		},
+		"suppleant": null,
+		"section": {
+			"libelleOfficePermanence": "TMC"
+		}
+	},
+	{
+		"id": "c5a07328-d6f1-4f98-8901-bf1f5b6a3162",
+		"modificationDate": "2024-05-06T14:17:00",
+		"isDeleted": false,
+		"magistratModified": null,
+		"startDate": "2024-10-08T08:00:00",
+		"endDate": "2024-10-15T08:00:00",
+		"evenement": null,
+		"magistrat": {
+			"id": "CHK",
+			"nom": "MARGUERAT",
+			"prenom": "Christophe",
+			"nomPrenom": "MARGUERAT Christophe"
+		},
+		"suppleant": {
+			"id": "RBY",
+			"nom": "BOVY",
+			"prenom": "Carole",
+			"nomPrenom": "BOVY Carole"
+		},
+		"section": {
+			"libelleOfficePermanence": "TMIN"
+		}
+	},
+	{
+		"id": "6db92885-fef1-484c-bef2-f5ad3404efcc",
+		"modificationDate": "2023-12-17T17:57:00",
+		"isDeleted": false,
+		"magistratModified": null,
+		"startDate": "2024-10-09T08:00:00",
+		"endDate": "2024-10-11T08:00:00",
+		"evenement": null,
+		"magistrat": {
+			"id": "JWG",
+			"nom": "WIGET",
+			"prenom": "Jasmine",
+			"nomPrenom": "WIGET Jasmine"
+		},
+		"suppleant": {
+			"id": "VIY",
+			"nom": "IYNEDJIAN",
+			"prenom": "Vehanouche",
+			"nomPrenom": "IYNEDJIAN Vehanouche"
+		},
+		"section": {
+			"libelleOfficePermanence": "MPa Lausanne"
+		}
+	},
+	{
+		"id": "e7c9c2d3-3a70-4f8d-9827-d8158798e908",
+		"modificationDate": "2024-08-07T15:54:00",
+		"isDeleted": false,
+		"magistratModified": null,
+		"startDate": "2024-10-10T08:00:00",
+		"endDate": "2024-10-14T08:00:00",
+		"evenement": null,
+		"magistrat": {
+			"id": "DBT",
+			"nom": "BERTOLI PERRET",
+			"prenom": "Diane",
+			"nomPrenom": "BERTOLI PERRET Diane"
+		},
+		"suppleant": {
+			"id": "LAS",
+			"nom": "SUTER",
+			"prenom": "Laure-Anne",
+			"nomPrenom": "SUTER Laure-Anne"
+		},
+		"section": {
+			"libelleOfficePermanence": "TMC"
+		}
+	},
+	{
+		"id": "a41f8880-93bd-4e24-97f6-10515c040b3e",
+		"modificationDate": "2023-12-04T15:46:00",
+		"isDeleted": false,
+		"magistratModified": null,
+		"startDate": "2024-10-11T08:00:00",
+		"endDate": "2024-10-18T08:00:00",
+		"evenement": null,
+		"magistrat": {
+			"id": "DJA",
+			"nom": "JAUNIN LUCIANI",
+			"prenom": "Dominique",
+			"nomPrenom": "JAUNIN LUCIANI Dominique"
+		},
+		"suppleant": null,
+		"section": {
+			"libelleOfficePermanence": "Piquet DIVAS"
+		}
+	},
+	{
+		"id": "a0f87ac1-f67a-47b5-b8d4-f52545aad724",
+		"modificationDate": "2023-12-17T17:14:00",
+		"isDeleted": false,
+		"magistratModified": null,
+		"startDate": "2024-10-11T08:00:00",
+		"endDate": "2024-10-12T08:00:00",
+		"evenement": null,
+		"magistrat": {
+			"id": "LAE",
+			"nom": "BRENLLA",
+			"prenom": "Laurence",
+			"nomPrenom": "BRENLLA Laurence"
+		},
+		"suppleant": {
+			"id": "XMA",
+			"nom": "MANRIQUEZ",
+			"prenom": "Ximena Paola",
+			"nomPrenom": "MANRIQUEZ Ximena Paola"
+		},
+		"section": {
+			"libelleOfficePermanence": "MPa Nord vaudois"
+		}
+	},
+	{
+		"id": "2d4c0345-900d-4f44-ab38-f63ec51269c4",
+		"modificationDate": "2023-12-17T17:15:00",
+		"isDeleted": false,
+		"magistratModified": null,
+		"startDate": "2024-10-12T08:00:00",
+		"endDate": "2024-10-13T08:00:00",
+		"evenement": null,
+		"magistrat": {
+			"id": "XMA",
+			"nom": "MANRIQUEZ",
+			"prenom": "Ximena Paola",
+			"nomPrenom": "MANRIQUEZ Ximena Paola"
+		},
+		"suppleant": {
+			"id": "AKA",
+			"nom": "KALBFUSS",
+			"prenom": "Anthony",
+			"nomPrenom": "KALBFUSS Anthony"
+		},
+		"section": {
+			"libelleOfficePermanence": "MPa Lausanne"
+		}
+	},
+	{
+		"id": "b58dc4f7-0d70-40be-acae-c78ed06b9f93",
+		"modificationDate": "2023-12-17T17:15:00",
+		"isDeleted": false,
+		"magistratModified": null,
+		"startDate": "2024-10-13T08:00:00",
+		"endDate": "2024-10-14T08:00:00",
+		"evenement": null,
+		"magistrat": {
+			"id": "AKA",
+			"nom": "KALBFUSS",
+			"prenom": "Anthony",
+			"nomPrenom": "KALBFUSS Anthony"
+		},
+		"suppleant": {
+			"id": "LAE",
+			"nom": "BRENLLA",
+			"prenom": "Laurence",
+			"nomPrenom": "BRENLLA Laurence"
+		},
+		"section": {
+			"libelleOfficePermanence": "MPa Lausanne"
+		}
+	},
+	{
+		"id": "4830e075-57e0-4d21-b05f-6f61fe14dd33",
+		"modificationDate": "2024-01-03T11:02:00",
+		"isDeleted": false,
+		"magistratModified": null,
+		"startDate": "2024-10-14T08:00:00",
+		"endDate": "2024-10-18T08:00:00",
+		"evenement": null,
+		"magistrat": {
+			"id": "XCR",
+			"nom": "CHRISTE",
+			"prenom": "Xavier",
+			"nomPrenom": "CHRISTE Xavier"
+		},
+		"suppleant": {
+			"id": "JBC",
+			"nom": "BARUCHET",
+			"prenom": "Johann",
+			"nomPrenom": "BARUCHET Johann"
+		},
+		"section": {
+			"libelleOfficePermanence": "MPa La Côte"
+		}
+	},
+	{
+		"id": "e7aa0b83-2112-4239-bb75-e6d1d40abc67",
+		"modificationDate": "2023-11-28T11:08:00",
+		"isDeleted": false,
+		"magistratModified": null,
+		"startDate": "2024-10-14T08:00:00",
+		"endDate": "2024-10-18T08:00:00",
+		"evenement": null,
+		"magistrat": {
+			"id": "FJL",
+			"nom": "JOLLIET",
+			"prenom": "Florence",
+			"nomPrenom": "JOLLIET Florence"
+		},
+		"suppleant": {
+			"id": "CMI",
+			"nom": "MAIRE",
+			"prenom": "Christian",
+			"nomPrenom": "MAIRE Christian"
+		},
+		"section": {
+			"libelleOfficePermanence": "MPa Nord vaudois"
+		}
+	},
+	{
+		"id": "b6c710cc-4bff-44fb-a8b6-2da8d5cb932d",
+		"modificationDate": "2023-11-29T09:39:00",
+		"isDeleted": false,
+		"magistratModified": null,
+		"startDate": "2024-10-14T08:00:00",
+		"endDate": "2024-10-18T08:00:00",
+		"evenement": null,
+		"magistrat": {
+			"id": "CMS",
+			"nom": "MASSON",
+			"prenom": "Camilla",
+			"nomPrenom": "MASSON Camilla"
+		},
+		"suppleant": {
+			"id": "OBU",
+			"nom": "BUTTET",
+			"prenom": "Olivier",
+			"nomPrenom": "BUTTET Olivier"
+		},
+		"section": {
+			"libelleOfficePermanence": "MPa Est vaudois"
+		}
+	},
+	{
+		"id": "8e7f8a16-7034-47e1-ae37-d0bb8086897b",
+		"modificationDate": "2024-08-02T16:25:00",
+		"isDeleted": false,
+		"magistratModified": null,
+		"startDate": "2024-10-14T08:00:00",
+		"endDate": "2024-10-16T08:00:00",
+		"evenement": null,
+		"magistrat": {
+			"id": "SJH",
+			"nom": "JOHNER",
+			"prenom": "Stephan",
+			"nomPrenom": "JOHNER Stephan"
+		},
+		"suppleant": {
+			"id": "JON",
+			"nom": "CORNU",
+			"prenom": "Jonathan",
+			"nomPrenom": "CORNU Jonathan"
+		},
+		"section": {
+			"libelleOfficePermanence": "MPa Lausanne"
+		}
+	},
+	{
+		"id": "19b4dcdc-a420-448f-8089-50b046451de1",
+		"modificationDate": "2024-07-05T09:55:00",
+		"isDeleted": false,
+		"magistratModified": null,
+		"startDate": "2024-10-14T08:00:00",
+		"endDate": "2024-10-18T08:00:00",
+		"evenement": null,
+		"magistrat": {
+			"id": "PGN",
+			"nom": "GILLIERON",
+			"prenom": "Pascal",
+			"nomPrenom": "GILLIERON Pascal"
+		},
+		"suppleant": {
+			"id": "LCI",
+			"nom": "CLIVAZ",
+			"prenom": "Laurence",
+			"nomPrenom": "CLIVAZ Laurence"
+		},
+		"section": {
+			"libelleOfficePermanence": "MPa Strada"
+		}
+	},
+	{
+		"id": "a9da3007-663e-441d-b454-519802b10a44",
+		"modificationDate": "2024-08-07T15:55:00",
+		"isDeleted": false,
+		"magistratModified": null,
+		"startDate": "2024-10-14T08:00:00",
+		"endDate": "2024-10-17T08:00:00",
+		"evenement": null,
+		"magistrat": {
+			"id": "SDE",
+			"nom": "DERISBOURG",
+			"prenom": "Sabine",
+			"nomPrenom": "DERISBOURG Sabine"
+		},
+		"suppleant": null,
+		"section": {
+			"libelleOfficePermanence": "TMC"
+		}
+	},
+	{
+		"id": "ce8d0fdc-32c7-48bd-a275-f02600d23925",
+		"modificationDate": "2024-05-06T14:18:00",
+		"isDeleted": false,
+		"magistratModified": null,
+		"startDate": "2024-10-15T08:00:00",
+		"endDate": "2024-10-22T08:00:00",
+		"evenement": null,
+		"magistrat": {
+			"id": "ERE",
+			"nom": "REDONDO",
+			"prenom": "Eduardo",
+			"nomPrenom": "REDONDO Eduardo"
+		},
+		"suppleant": {
+			"id": "CHK",
+			"nom": "MARGUERAT",
+			"prenom": "Christophe",
+			"nomPrenom": "MARGUERAT Christophe"
+		},
+		"section": {
+			"libelleOfficePermanence": "TMIN"
+		}
+	},
+	{
+		"id": "10b2601c-5988-4619-8a0b-452db3054407",
+		"modificationDate": "2024-08-02T16:25:00",
+		"isDeleted": false,
+		"magistratModified": null,
+		"startDate": "2024-10-16T08:00:00",
+		"endDate": "2024-10-18T08:00:00",
+		"evenement": null,
+		"magistrat": {
+			"id": "JON",
+			"nom": "CORNU",
+			"prenom": "Jonathan",
+			"nomPrenom": "CORNU Jonathan"
+		},
+		"suppleant": {
+			"id": "SJH",
+			"nom": "JOHNER",
+			"prenom": "Stephan",
+			"nomPrenom": "JOHNER Stephan"
+		},
+		"section": {
+			"libelleOfficePermanence": "MPa Lausanne"
+		}
+	},
+	{
+		"id": "1fa6c18a-326e-4dd2-8d1c-746ff5629955",
+		"modificationDate": "2024-08-07T15:55:00",
+		"isDeleted": false,
+		"magistratModified": null,
+		"startDate": "2024-10-17T08:00:00",
+		"endDate": "2024-10-21T08:00:00",
+		"evenement": null,
+		"magistrat": {
+			"id": "JEM",
+			"nom": "MAS",
+			"prenom": "Jérémy",
+			"nomPrenom": "MAS Jérémy"
+		},
+		"suppleant": {
+			"id": "DBT",
+			"nom": "BERTOLI PERRET",
+			"prenom": "Diane",
+			"nomPrenom": "BERTOLI PERRET Diane"
+		},
+		"section": {
+			"libelleOfficePermanence": "TMC"
+		}
+	},
+	{
+		"id": "3e31facf-b7b0-406a-ba55-b1ca2f960777",
+		"modificationDate": "2023-12-04T15:47:00",
+		"isDeleted": false,
+		"magistratModified": null,
+		"startDate": "2024-10-18T08:00:00",
+		"endDate": "2024-10-25T08:00:00",
+		"evenement": null,
+		"magistrat": {
+			"id": "EMM",
+			"nom": "MERMOUD",
+			"prenom": "Eric",
+			"nomPrenom": "MERMOUD Eric"
+		},
+		"suppleant": null,
+		"section": {
+			"libelleOfficePermanence": "Piquet DIVAS"
+		}
+	},
+	{
+		"id": "a4cdeda7-987f-4b16-bd2f-e9dd61682f4f",
+		"modificationDate": "2024-05-06T14:16:00",
+		"isDeleted": false,
+		"magistratModified": null,
+		"startDate": "2024-10-18T08:00:00",
+		"endDate": "2024-10-19T08:00:00",
+		"evenement": null,
+		"magistrat": {
+			"id": "MHN",
+			"nom": "HENRY",
+			"prenom": "Marine",
+			"nomPrenom": "HENRY Marine"
+		},
+		"suppleant": {
+			"id": "OBU",
+			"nom": "BUTTET",
+			"prenom": "Olivier",
+			"nomPrenom": "BUTTET Olivier"
+		},
+		"section": {
+			"libelleOfficePermanence": "MPa La Côte"
+		}
+	},
+	{
+		"id": "80768cf6-895e-424e-9959-910a37531a6b",
+		"modificationDate": "2024-06-12T12:21:00",
+		"isDeleted": false,
+		"magistratModified": null,
+		"startDate": "2024-10-19T08:00:00",
+		"endDate": "2024-10-20T08:00:00",
+		"evenement": null,
+		"magistrat": {
+			"id": "OBU",
+			"nom": "BUTTET",
+			"prenom": "Olivier",
+			"nomPrenom": "BUTTET Olivier"
+		},
+		"suppleant": {
+			"id": "CMI",
+			"nom": "MAIRE",
+			"prenom": "Christian",
+			"nomPrenom": "MAIRE Christian"
+		},
+		"section": {
+			"libelleOfficePermanence": "MPa Est vaudois"
+		}
+	},
+	{
+		"id": "0be04745-1392-41c0-9bdd-a89cc9429620",
+		"modificationDate": "2024-06-12T11:58:00",
+		"isDeleted": false,
+		"magistratModified": null,
+		"startDate": "2024-10-20T08:00:00",
+		"endDate": "2024-10-21T08:00:00",
+		"evenement": null,
+		"magistrat": {
+			"id": "CMI",
+			"nom": "MAIRE",
+			"prenom": "Christian",
+			"nomPrenom": "MAIRE Christian"
+		},
+		"suppleant": {
+			"id": "MHN",
+			"nom": "HENRY",
+			"prenom": "Marine",
+			"nomPrenom": "HENRY Marine"
+		},
+		"section": {
+			"libelleOfficePermanence": "MPa Nord vaudois"
+		}
+	},
+	{
+		"id": "f8bb1839-1c36-469b-89aa-e6c8d748d1ae",
+		"modificationDate": "2024-01-03T11:04:00",
+		"isDeleted": false,
+		"magistratModified": null,
+		"startDate": "2024-10-21T08:00:00",
+		"endDate": "2024-10-25T08:00:00",
+		"evenement": null,
+		"magistrat": {
+			"id": "JBC",
+			"nom": "BARUCHET",
+			"prenom": "Johann",
+			"nomPrenom": "BARUCHET Johann"
+		},
+		"suppleant": {
+			"id": "MNU",
+			"nom": "COLLAUD",
+			"prenom": "Marlène",
+			"nomPrenom": "COLLAUD Marlène"
+		},
+		"section": {
+			"libelleOfficePermanence": "MPa La Côte"
+		}
+	},
+	{
+		"id": "4a5859d7-5135-441a-b67f-d81cc49bf95c",
+		"modificationDate": "2023-11-28T11:12:00",
+		"isDeleted": false,
+		"magistratModified": null,
+		"startDate": "2024-10-21T08:00:00",
+		"endDate": "2024-10-25T08:00:00",
+		"evenement": null,
+		"magistrat": {
+			"id": "LAE",
+			"nom": "BRENLLA",
+			"prenom": "Laurence",
+			"nomPrenom": "BRENLLA Laurence"
+		},
+		"suppleant": {
+			"id": "FJL",
+			"nom": "JOLLIET",
+			"prenom": "Florence",
+			"nomPrenom": "JOLLIET Florence"
+		},
+		"section": {
+			"libelleOfficePermanence": "MPa Nord vaudois"
+		}
+	},
+	{
+		"id": "a1e5933b-9900-46bf-a9ce-2b7c12e2046f",
+		"modificationDate": "2023-11-29T09:40:00",
+		"isDeleted": false,
+		"magistratModified": null,
+		"startDate": "2024-10-21T08:00:00",
+		"endDate": "2024-10-25T08:00:00",
+		"evenement": null,
+		"magistrat": {
+			"id": "TAN",
+			"nom": "TAVARES",
+			"prenom": "Annick",
+			"nomPrenom": "TAVARES Annick"
+		},
+		"suppleant": {
+			"id": "CMS",
+			"nom": "MASSON",
+			"prenom": "Camilla",
+			"nomPrenom": "MASSON Camilla"
+		},
+		"section": {
+			"libelleOfficePermanence": "MPa Est vaudois"
+		}
+	},
+	{
+		"id": "d5cae095-7b6e-4f3b-8c25-69e2de26f85f",
+		"modificationDate": "2024-07-08T15:00:00",
+		"isDeleted": false,
+		"magistratModified": null,
+		"startDate": "2024-10-21T08:00:00",
+		"endDate": "2024-10-23T08:00:00",
+		"evenement": null,
+		"magistrat": {
+			"id": "JMU",
+			"nom": "MULLER",
+			"prenom": "Jérémie",
+			"nomPrenom": "MULLER Jérémie"
+		},
+		"suppleant": {
+			"id": "AYP",
+			"nom": "MAY",
+			"prenom": "Philomène",
+			"nomPrenom": "MAY Philomène"
+		},
+		"section": {
+			"libelleOfficePermanence": "MPa Lausanne"
+		}
+	},
+	{
+		"id": "df0ab66d-a851-4de4-b4ec-f939b3d8591c",
+		"modificationDate": "2023-12-17T16:17:00",
+		"isDeleted": false,
+		"magistratModified": null,
+		"startDate": "2024-10-21T08:00:00",
+		"endDate": "2024-10-25T08:00:00",
+		"evenement": null,
+		"magistrat": {
+			"id": "LCI",
+			"nom": "CLIVAZ",
+			"prenom": "Laurence",
+			"nomPrenom": "CLIVAZ Laurence"
+		},
+		"suppleant": {
+			"id": "CDT",
+			"nom": "DELETRA",
+			"prenom": "Carole",
+			"nomPrenom": "DELETRA Carole"
+		},
+		"section": {
+			"libelleOfficePermanence": "MPa Strada"
+		}
+	},
+	{
+		"id": "db65fa52-f036-4dba-b600-09c3896ff0fb",
+		"modificationDate": "2024-08-07T15:57:00",
+		"isDeleted": false,
+		"magistratModified": null,
+		"startDate": "2024-10-21T08:00:00",
+		"endDate": "2024-10-28T08:00:00",
+		"evenement": null,
+		"magistrat": {
+			"id": "JSE",
+			"nom": "SEREX",
+			"prenom": "Jessica",
+			"nomPrenom": "SEREX Jessica"
+		},
+		"suppleant": {
+			"id": "MPH",
+			"nom": "WIEDLER",
+			"prenom": "Mélanie",
+			"nomPrenom": "WIEDLER Mélanie"
+		},
+		"section": {
+			"libelleOfficePermanence": "TMC"
+		}
+	},
+	{
+		"id": "4fa45325-5112-4b9d-b6f0-0c89f5957ea9",
+		"modificationDate": "2024-05-06T14:18:00",
+		"isDeleted": false,
+		"magistratModified": null,
+		"startDate": "2024-10-22T08:00:00",
+		"endDate": "2024-10-29T08:00:00",
+		"evenement": null,
+		"magistrat": {
+			"id": "GSE",
+			"nom": "SÉCHAUD",
+			"prenom": "Géraldine",
+			"nomPrenom": "SÉCHAUD Géraldine"
+		},
+		"suppleant": {
+			"id": "ERE",
+			"nom": "REDONDO",
+			"prenom": "Eduardo",
+			"nomPrenom": "REDONDO Eduardo"
+		},
+		"section": {
+			"libelleOfficePermanence": "TMIN"
+		}
+	},
+	{
+		"id": "e9d11f26-c666-4ecc-97d0-097bfccd1835",
+		"modificationDate": "2024-07-08T15:00:00",
+		"isDeleted": false,
+		"magistratModified": null,
+		"startDate": "2024-10-23T08:00:00",
+		"endDate": "2024-10-25T08:00:00",
+		"evenement": null,
+		"magistrat": {
+			"id": "AYP",
+			"nom": "MAY",
+			"prenom": "Philomène",
+			"nomPrenom": "MAY Philomène"
+		},
+		"suppleant": {
+			"id": "JMU",
+			"nom": "MULLER",
+			"prenom": "Jérémie",
+			"nomPrenom": "MULLER Jérémie"
+		},
+		"section": {
+			"libelleOfficePermanence": "MPa Lausanne"
+		}
+	},
+	{
+		"id": "1b56656d-39bf-45bf-9524-3cfc92f3cccb",
+		"modificationDate": "2023-12-04T15:48:00",
+		"isDeleted": false,
+		"magistratModified": null,
+		"startDate": "2024-10-25T08:00:00",
+		"endDate": "2024-11-01T08:00:00",
+		"evenement": null,
+		"magistrat": {
+			"id": "OJO",
+			"nom": "JOTTERAND",
+			"prenom": "Olivier",
+			"nomPrenom": "JOTTERAND Olivier"
+		},
+		"suppleant": null,
+		"section": {
+			"libelleOfficePermanence": "Piquet DIVAS"
+		}
+	},
+	{
+		"id": "7ba3e961-abab-4515-9af2-8019e9d13834",
+		"modificationDate": "2024-01-03T11:05:00",
+		"isDeleted": false,
+		"magistratModified": null,
+		"startDate": "2024-10-25T08:00:00",
+		"endDate": "2024-10-26T08:00:00",
+		"evenement": null,
+		"magistrat": {
+			"id": "LRC",
+			"nom": "ROCCARO",
+			"prenom": "Laurie",
+			"nomPrenom": "ROCCARO Laurie"
+		},
+		"suppleant": {
+			"id": "SRD",
+			"nom": "RODIEUX",
+			"prenom": "Sophie",
+			"nomPrenom": "RODIEUX Sophie"
+		},
+		"section": {
+			"libelleOfficePermanence": "MPa Est vaudois"
+		}
+	},
+	{
+		"id": "49c47269-5762-40a5-bea2-f02f63bbc713",
+		"modificationDate": "2024-05-08T12:25:00",
+		"isDeleted": false,
+		"magistratModified": null,
+		"startDate": "2024-10-26T08:00:00",
+		"endDate": "2024-10-27T08:00:00",
+		"evenement": null,
+		"magistrat": {
+			"id": "SRD",
+			"nom": "RODIEUX",
+			"prenom": "Sophie",
+			"nomPrenom": "RODIEUX Sophie"
+		},
+		"suppleant": {
+			"id": "NFN",
+			"nom": "FRANÇAIS",
+			"prenom": "Nicolas",
+			"nomPrenom": "FRANÇAIS Nicolas"
+		},
+		"section": {
+			"libelleOfficePermanence": "MPa La Côte"
+		}
+	},
+	{
+		"id": "a7c509a2-b3b8-46ee-9396-cab062ccbe51",
+		"modificationDate": "2024-05-08T12:25:00",
+		"isDeleted": false,
+		"magistratModified": null,
+		"startDate": "2024-10-27T08:00:00",
+		"endDate": "2024-10-28T08:00:00",
+		"evenement": null,
+		"magistrat": {
+			"id": "NFN",
+			"nom": "FRANÇAIS",
+			"prenom": "Nicolas",
+			"nomPrenom": "FRANÇAIS Nicolas"
+		},
+		"suppleant": {
+			"id": "LRC",
+			"nom": "ROCCARO",
+			"prenom": "Laurie",
+			"nomPrenom": "ROCCARO Laurie"
+		},
+		"section": null
+	},
+	{
+		"id": "106c2215-51e8-4b77-8a2f-e4e9113bbe0f",
+		"modificationDate": "2024-01-03T11:05:00",
+		"isDeleted": false,
+		"magistratModified": null,
+		"startDate": "2024-10-28T08:00:00",
+		"endDate": "2024-11-01T08:00:00",
+		"evenement": null,
+		"magistrat": {
+			"id": "MNU",
+			"nom": "COLLAUD",
+			"prenom": "Marlène",
+			"nomPrenom": "COLLAUD Marlène"
+		},
+		"suppleant": {
+			"id": "VWT",
+			"nom": "DE WATTEVILLE SUBILIA",
+			"prenom": "Valérie",
+			"nomPrenom": "DE WATTEVILLE SUBILIA Valérie"
+		},
+		"section": {
+			"libelleOfficePermanence": "MPa La Côte"
+		}
+	},
+	{
+		"id": "e73f9db4-acaa-4b05-8618-6718fda2b0fa",
+		"modificationDate": "2023-11-28T11:19:00",
+		"isDeleted": false,
+		"magistratModified": null,
+		"startDate": "2024-10-28T08:00:00",
+		"endDate": "2024-11-01T08:00:00",
+		"evenement": null,
+		"magistrat": {
+			"id": "CCE",
+			"nom": "CORREIA",
+			"prenom": "Claudia",
+			"nomPrenom": "CORREIA Claudia"
+		},
+		"suppleant": {
+			"id": "LAE",
+			"nom": "BRENLLA",
+			"prenom": "Laurence",
+			"nomPrenom": "BRENLLA Laurence"
+		},
+		"section": {
+			"libelleOfficePermanence": "MPa Nord vaudois"
+		}
+	},
+	{
+		"id": "d80c3cb2-894e-47dd-874f-1149117289a3",
+		"modificationDate": "2023-11-29T09:41:00",
+		"isDeleted": false,
+		"magistratModified": null,
+		"startDate": "2024-10-28T08:00:00",
+		"endDate": "2024-11-01T08:00:00",
+		"evenement": null,
+		"magistrat": {
+			"id": "BBD",
+			"nom": "BUCHARD",
+			"prenom": "Bénédicte",
+			"nomPrenom": "BUCHARD Bénédicte"
+		},
+		"suppleant": {
+			"id": "TAN",
+			"nom": "TAVARES",
+			"prenom": "Annick",
+			"nomPrenom": "TAVARES Annick"
+		},
+		"section": {
+			"libelleOfficePermanence": "MPa Est vaudois"
+		}
+	},
+	{
+		"id": "64d8b9d4-cd5e-4357-bec3-28c709b01cb6",
+		"modificationDate": "2024-06-20T10:44:00",
+		"isDeleted": false,
+		"magistratModified": null,
+		"startDate": "2024-10-28T08:00:00",
+		"endDate": "2024-10-30T08:00:00",
+		"evenement": null,
+		"magistrat": {
+			"id": "AKA",
+			"nom": "KALBFUSS",
+			"prenom": "Anthony",
+			"nomPrenom": "KALBFUSS Anthony"
+		},
+		"suppleant": {
+			"id": "RMG",
+			"nom": "BORNAND-MAGNENAT",
+			"prenom": "Roxane",
+			"nomPrenom": "BORNAND-MAGNENAT Roxane"
+		},
+		"section": {
+			"libelleOfficePermanence": "MPa Lausanne"
+		}
+	},
+	{
+		"id": "24bcf583-348b-4b7f-8033-48fe6d8cab32",
+		"modificationDate": "2023-12-17T16:18:00",
+		"isDeleted": false,
+		"magistratModified": null,
+		"startDate": "2024-10-28T08:00:00",
+		"endDate": "2024-11-01T08:00:00",
+		"evenement": null,
+		"magistrat": {
+			"id": "CDT",
+			"nom": "DELETRA",
+			"prenom": "Carole",
+			"nomPrenom": "DELETRA Carole"
+		},
+		"suppleant": {
+			"id": "KDP",
+			"nom": "DU PASQUIER",
+			"prenom": "Karen",
+			"nomPrenom": "DU PASQUIER Karen"
+		},
+		"section": {
+			"libelleOfficePermanence": "MPa Strada"
+		}
+	},
+	{
+		"id": "894cb3ae-987f-49fd-bfa6-1a55363e4f2c",
+		"modificationDate": "2024-08-07T15:59:00",
+		"isDeleted": false,
+		"magistratModified": null,
+		"startDate": "2024-10-28T08:00:00",
+		"endDate": "2024-10-31T08:00:00",
+		"evenement": null,
+		"magistrat": {
+			"id": "LAS",
+			"nom": "SUTER",
+			"prenom": "Laure-Anne",
+			"nomPrenom": "SUTER Laure-Anne"
+		},
+		"suppleant": null,
+		"section": {
+			"libelleOfficePermanence": "TMC"
+		}
+	},
+	{
+		"id": "61e176c7-eb61-41a3-87fb-a99a39f39906",
+		"modificationDate": "2024-08-20T08:01:00",
+		"isDeleted": false,
+		"magistratModified": null,
+		"startDate": "2024-10-29T08:00:00",
+		"endDate": "2024-10-30T08:00:00",
+		"evenement": null,
+		"magistrat": {
+			"id": "BTA",
+			"nom": "TAILLEUR BOLLI",
+			"prenom": "Béatrice",
+			"nomPrenom": "TAILLEUR BOLLI Béatrice"
+		},
+		"suppleant": {
+			"id": "GSE",
+			"nom": "SÉCHAUD",
+			"prenom": "Géraldine",
+			"nomPrenom": "SÉCHAUD Géraldine"
+		},
+		"section": {
+			"libelleOfficePermanence": "TMIN"
+		}
+	},
+	{
+		"id": "12910ee6-f695-472d-a0f1-2a31f57919d1",
+		"modificationDate": "2024-06-20T10:43:00",
+		"isDeleted": false,
+		"magistratModified": null,
+		"startDate": "2024-10-30T08:00:00",
+		"endDate": "2024-11-01T08:00:00",
+		"evenement": null,
+		"magistrat": {
+			"id": "RMG",
+			"nom": "BORNAND-MAGNENAT",
+			"prenom": "Roxane",
+			"nomPrenom": "BORNAND-MAGNENAT Roxane"
+		},
+		"suppleant": {
+			"id": "AKA",
+			"nom": "KALBFUSS",
+			"prenom": "Anthony",
+			"nomPrenom": "KALBFUSS Anthony"
+		},
+		"section": {
+			"libelleOfficePermanence": "MPa Lausanne"
+		}
+	},
+	{
+		"id": "6dbd570d-ff7d-46a5-b930-b765b288d2b4",
+		"modificationDate": "2024-08-20T08:01:00",
+		"isDeleted": false,
+		"magistratModified": null,
+		"startDate": "2024-10-30T08:00:00",
+		"endDate": "2024-10-30T18:00:00",
+		"evenement": null,
+		"magistrat": {
+			"id": "JJQ",
+			"nom": "JEQUIER",
+			"prenom": "Julie",
+			"nomPrenom": "JEQUIER Julie"
+		},
+		"suppleant": {
+			"id": "GSE",
+			"nom": "SÉCHAUD",
+			"prenom": "Géraldine",
+			"nomPrenom": "SÉCHAUD Géraldine"
+		},
+		"section": {
+			"libelleOfficePermanence": "TMIN"
+		}
+	},
+	{
+		"id": "b390d4da-2edf-4108-a20f-6fbcb77e6512",
+		"modificationDate": "2024-08-20T08:03:00",
+		"isDeleted": false,
+		"magistratModified": null,
+		"startDate": "2024-10-30T18:00:00",
+		"endDate": "2024-11-05T08:00:00",
+		"evenement": null,
+		"magistrat": {
+			"id": "BTA",
+			"nom": "TAILLEUR BOLLI",
+			"prenom": "Béatrice",
+			"nomPrenom": "TAILLEUR BOLLI Béatrice"
+		},
+		"suppleant": {
+			"id": "GSE",
+			"nom": "SÉCHAUD",
+			"prenom": "Géraldine",
+			"nomPrenom": "SÉCHAUD Géraldine"
+		},
+		"section": {
+			"libelleOfficePermanence": "TMIN"
+		}
+	},
+	{
+		"id": "a19774fa-c405-4ad0-aa4a-310cf44c3be6",
+		"modificationDate": "2024-08-07T16:00:00",
+		"isDeleted": false,
+		"magistratModified": null,
+		"startDate": "2024-10-31T08:00:00",
+		"endDate": "2024-11-04T08:00:00",
+		"evenement": null,
+		"magistrat": {
+			"id": "BRB",
+			"nom": "BAEHLER",
+			"prenom": "Bertrand",
+			"nomPrenom": "BAEHLER Bertrand"
+		},
+		"suppleant": {
+			"id": "PAE",
+			"nom": "AESCHLIMANN",
+			"prenom": "Patricia",
+			"nomPrenom": "AESCHLIMANN Patricia"
+		},
+		"section": {
+			"libelleOfficePermanence": "TMC"
+		}
+	},
+	{
+		"id": "b9b828fc-76f2-4135-b307-e6655015cc6c",
+		"modificationDate": "2023-12-04T15:48:00",
+		"isDeleted": false,
+		"magistratModified": null,
+		"startDate": "2024-11-01T08:00:00",
+		"endDate": "2024-11-08T08:00:00",
+		"evenement": null,
+		"magistrat": {
+			"id": "BUF",
+			"nom": "BUFFAT",
+			"prenom": "Christian",
+			"nomPrenom": "BUFFAT Christian"
+		},
+		"suppleant": null,
+		"section": {
+			"libelleOfficePermanence": "Piquet DIVAS"
+		}
+	},
+	{
+		"id": "86e9f3bb-09eb-495e-9312-c420c9c88438",
+		"modificationDate": "2023-12-17T17:16:00",
+		"isDeleted": false,
+		"magistratModified": null,
+		"startDate": "2024-11-01T08:00:00",
+		"endDate": "2024-11-02T08:00:00",
+		"evenement": null,
+		"magistrat": {
+			"id": "MRN",
+			"nom": "TSCHOPP",
+			"prenom": "Maria",
+			"nomPrenom": "TSCHOPP Maria"
+		},
+		"suppleant": {
+			"id": "GMT",
+			"nom": "MORET",
+			"prenom": "Gabriel",
+			"nomPrenom": "MORET Gabriel"
+		},
+		"section": {
+			"libelleOfficePermanence": "MPa Lausanne"
+		}
+	},
+	{
+		"id": "b5042b34-58a4-4346-a960-7c629a94e268",
+		"modificationDate": "2024-01-03T11:06:00",
+		"isDeleted": false,
+		"magistratModified": null,
+		"startDate": "2024-11-02T08:00:00",
+		"endDate": "2024-11-03T08:00:00",
+		"evenement": null,
+		"magistrat": {
+			"id": "GMT",
+			"nom": "MORET",
+			"prenom": "Gabriel",
+			"nomPrenom": "MORET Gabriel"
+		},
+		"suppleant": {
+			"id": "MNU",
+			"nom": "COLLAUD",
+			"prenom": "Marlène",
+			"nomPrenom": "COLLAUD Marlène"
+		},
+		"section": {
+			"libelleOfficePermanence": "MPa Nord vaudois"
+		}
+	},
+	{
+		"id": "796916b6-43c0-4cbd-97f5-bde6e3862019",
+		"modificationDate": "2024-01-03T11:06:00",
+		"isDeleted": false,
+		"magistratModified": null,
+		"startDate": "2024-11-03T08:00:00",
+		"endDate": "2024-11-04T08:00:00",
+		"evenement": null,
+		"magistrat": {
+			"id": "MNU",
+			"nom": "COLLAUD",
+			"prenom": "Marlène",
+			"nomPrenom": "COLLAUD Marlène"
+		},
+		"suppleant": {
+			"id": "MRN",
+			"nom": "TSCHOPP",
+			"prenom": "Maria",
+			"nomPrenom": "TSCHOPP Maria"
+		},
+		"section": {
+			"libelleOfficePermanence": "MPa La Côte"
+		}
+	},
+	{
+		"id": "9301356d-eec4-4a29-aef7-3e36c601c415",
+		"modificationDate": "2024-01-03T11:08:00",
+		"isDeleted": false,
+		"magistratModified": null,
+		"startDate": "2024-11-04T08:00:00",
+		"endDate": "2024-11-08T08:00:00",
+		"evenement": null,
+		"magistrat": {
+			"id": "VWT",
+			"nom": "DE WATTEVILLE SUBILIA",
+			"prenom": "Valérie",
+			"nomPrenom": "DE WATTEVILLE SUBILIA Valérie"
+		},
+		"suppleant": {
+			"id": "PGT",
+			"nom": "GALEUCHET",
+			"prenom": "Patrick",
+			"nomPrenom": "GALEUCHET Patrick"
+		},
+		"section": {
+			"libelleOfficePermanence": "MPa La Côte"
+		}
+	},
+	{
+		"id": "d5bb5c4c-e1ae-4a55-91be-7073c8fc1179",
+		"modificationDate": "2024-06-13T12:08:00",
+		"isDeleted": false,
+		"magistratModified": null,
+		"startDate": "2024-11-04T08:00:00",
+		"endDate": "2024-11-06T08:00:00",
+		"evenement": null,
+		"magistrat": {
+			"id": "LAE",
+			"nom": "BRENLLA",
+			"prenom": "Laurence",
+			"nomPrenom": "BRENLLA Laurence"
+		},
+		"suppleant": {
+			"id": "CCE",
+			"nom": "CORREIA",
+			"prenom": "Claudia",
+			"nomPrenom": "CORREIA Claudia"
+		},
+		"section": {
+			"libelleOfficePermanence": "MPa Nord vaudois"
+		}
+	},
+	{
+		"id": "90822682-55a5-4f40-a3f3-03cae80d07fa",
+		"modificationDate": "2023-11-29T09:41:00",
+		"isDeleted": false,
+		"magistratModified": null,
+		"startDate": "2024-11-04T08:00:00",
+		"endDate": "2024-11-08T08:00:00",
+		"evenement": null,
+		"magistrat": {
+			"id": "EBJ",
+			"nom": "PASQUIER",
+			"prenom": "Elodie",
+			"nomPrenom": "PASQUIER Elodie"
+		},
+		"suppleant": {
+			"id": "BBD",
+			"nom": "BUCHARD",
+			"prenom": "Bénédicte",
+			"nomPrenom": "BUCHARD Bénédicte"
+		},
+		"section": {
+			"libelleOfficePermanence": "MPa Est vaudois"
+		}
+	},
+	{
+		"id": "7d254221-5fdc-4d3c-911d-ddc0b2779ab3",
+		"modificationDate": "2023-12-17T18:00:00",
+		"isDeleted": false,
+		"magistratModified": null,
+		"startDate": "2024-11-04T08:00:00",
+		"endDate": "2024-11-06T08:00:00",
+		"evenement": null,
+		"magistrat": {
+			"id": "JMU",
+			"nom": "MULLER",
+			"prenom": "Jérémie",
+			"nomPrenom": "MULLER Jérémie"
+		},
+		"suppleant": {
+			"id": "JWG",
+			"nom": "WIGET",
+			"prenom": "Jasmine",
+			"nomPrenom": "WIGET Jasmine"
+		},
+		"section": {
+			"libelleOfficePermanence": "MPa Lausanne"
+		}
+	},
+	{
+		"id": "cdd87c7d-f872-47fe-91df-db27f7e3c823",
+		"modificationDate": "2023-12-17T16:18:00",
+		"isDeleted": false,
+		"magistratModified": null,
+		"startDate": "2024-11-04T08:00:00",
+		"endDate": "2024-11-08T08:00:00",
+		"evenement": null,
+		"magistrat": {
+			"id": "KDP",
+			"nom": "DU PASQUIER",
+			"prenom": "Karen",
+			"nomPrenom": "DU PASQUIER Karen"
+		},
+		"suppleant": {
+			"id": "DDM",
+			"nom": "DOMINGUEZ",
+			"prenom": "Diana",
+			"nomPrenom": "DOMINGUEZ Diana"
+		},
+		"section": {
+			"libelleOfficePermanence": "MPa Strada"
+		}
+	},
+	{
+		"id": "cc8f0a26-e9c9-4f2e-bfa2-1bb0772ead92",
+		"modificationDate": "2024-08-07T16:06:00",
+		"isDeleted": false,
+		"magistratModified": null,
+		"startDate": "2024-11-04T08:00:00",
+		"endDate": "2024-11-07T08:00:00",
+		"evenement": null,
+		"magistrat": {
+			"id": "DBT",
+			"nom": "BERTOLI PERRET",
+			"prenom": "Diane",
+			"nomPrenom": "BERTOLI PERRET Diane"
+		},
+		"suppleant": null,
+		"section": {
+			"libelleOfficePermanence": "TMC"
+		}
+	},
+	{
+		"id": "7fe768c3-939d-46a5-a064-7c8b5092d97e",
+		"modificationDate": "2024-05-06T14:21:00",
+		"isDeleted": false,
+		"magistratModified": null,
+		"startDate": "2024-11-05T08:00:00",
+		"endDate": "2024-11-12T08:00:00",
+		"evenement": null,
+		"magistrat": {
+			"id": "JJQ",
+			"nom": "JEQUIER",
+			"prenom": "Julie",
+			"nomPrenom": "JEQUIER Julie"
+		},
+		"suppleant": {
+			"id": "BTA",
+			"nom": "TAILLEUR BOLLI",
+			"prenom": "Béatrice",
+			"nomPrenom": "TAILLEUR BOLLI Béatrice"
+		},
+		"section": {
+			"libelleOfficePermanence": "TMIN"
+		}
+	},
+	{
+		"id": "25eeb5a7-8328-49f3-a5ec-253716a3f3f2",
+		"modificationDate": "2023-12-17T18:00:00",
+		"isDeleted": false,
+		"magistratModified": null,
+		"startDate": "2024-11-06T08:00:00",
+		"endDate": "2024-11-08T08:00:00",
+		"evenement": null,
+		"magistrat": {
+			"id": "JWG",
+			"nom": "WIGET",
+			"prenom": "Jasmine",
+			"nomPrenom": "WIGET Jasmine"
+		},
+		"suppleant": {
+			"id": "JMU",
+			"nom": "MULLER",
+			"prenom": "Jérémie",
+			"nomPrenom": "MULLER Jérémie"
+		},
+		"section": {
+			"libelleOfficePermanence": "MPa Lausanne"
+		}
+	},
+	{
+		"id": "2d6a86b4-ff91-4533-870f-e6cbd5183fc8",
+		"modificationDate": "2024-06-13T12:09:00",
+		"isDeleted": false,
+		"magistratModified": null,
+		"startDate": "2024-11-06T08:00:00",
+		"endDate": "2024-11-08T08:00:00",
+		"evenement": null,
+		"magistrat": {
+			"id": "ASW",
+			"nom": "SCHWEIZER",
+			"prenom": "Alexandre",
+			"nomPrenom": "SCHWEIZER Alexandre"
+		},
+		"suppleant": {
+			"id": "CCE",
+			"nom": "CORREIA",
+			"prenom": "Claudia",
+			"nomPrenom": "CORREIA Claudia"
+		},
+		"section": {
+			"libelleOfficePermanence": "MPa Nord vaudois"
+		}
+	},
+	{
+		"id": "831888fc-e74f-43cd-acf0-2417e604b13b",
+		"modificationDate": "2024-08-07T16:07:00",
+		"isDeleted": false,
+		"magistratModified": null,
+		"startDate": "2024-11-07T08:00:00",
+		"endDate": "2024-11-11T08:00:00",
+		"evenement": null,
+		"magistrat": {
+			"id": "MPH",
+			"nom": "WIEDLER",
+			"prenom": "Mélanie",
+			"nomPrenom": "WIEDLER Mélanie"
+		},
+		"suppleant": {
+			"id": "SDE",
+			"nom": "DERISBOURG",
+			"prenom": "Sabine",
+			"nomPrenom": "DERISBOURG Sabine"
+		},
+		"section": {
+			"libelleOfficePermanence": "TMC"
+		}
+	},
+	{
+		"id": "c98ba15a-d118-4621-ae79-df18a0a65203",
+		"modificationDate": "2023-12-06T10:39:00",
+		"isDeleted": false,
+		"magistratModified": null,
+		"startDate": "2024-11-08T08:00:00",
+		"endDate": "2024-11-15T08:00:00",
+		"evenement": null,
+		"magistrat": {
+			"id": "HRP",
+			"nom": "RAPPAZ",
+			"prenom": "Hélène",
+			"nomPrenom": "RAPPAZ Hélène"
+		},
+		"suppleant": null,
+		"section": {
+			"libelleOfficePermanence": "Piquet DIVAS"
+		}
+	},
+	{
+		"id": "e3ff9c69-158a-4cbd-abc9-5bb041850ebe",
+		"modificationDate": "2023-12-17T17:17:00",
+		"isDeleted": false,
+		"magistratModified": null,
+		"startDate": "2024-11-08T08:00:00",
+		"endDate": "2024-11-09T08:00:00",
+		"evenement": null,
+		"magistrat": {
+			"id": "FJL",
+			"nom": "JOLLIET",
+			"prenom": "Florence",
+			"nomPrenom": "JOLLIET Florence"
+		},
+		"suppleant": {
+			"id": "CME",
+			"nom": "MATTHEY",
+			"prenom": "Cédric",
+			"nomPrenom": "MATTHEY Cédric"
+		},
+		"section": {
+			"libelleOfficePermanence": "MPa Nord vaudois"
+		}
+	},
+	{
+		"id": "585b7c39-daae-4cbe-963b-026d8d713eb2",
+		"modificationDate": "2023-12-17T17:17:00",
+		"isDeleted": false,
+		"magistratModified": null,
+		"startDate": "2024-11-09T08:00:00",
+		"endDate": "2024-11-10T08:00:00",
+		"evenement": null,
+		"magistrat": {
+			"id": "CME",
+			"nom": "MATTHEY",
+			"prenom": "Cédric",
+			"nomPrenom": "MATTHEY Cédric"
+		},
+		"suppleant": {
+			"id": "MMR",
+			"nom": "MORET",
+			"prenom": "Marjorie",
+			"nomPrenom": "MORET Marjorie"
+		},
+		"section": null
+	},
+	{
+		"id": "39b4894d-4650-4f5b-a32b-35a86d712e31",
+		"modificationDate": "2023-12-17T17:18:00",
+		"isDeleted": false,
+		"magistratModified": null,
+		"startDate": "2024-11-10T08:00:00",
+		"endDate": "2024-11-11T08:00:00",
+		"evenement": null,
+		"magistrat": {
+			"id": "MMR",
+			"nom": "MORET",
+			"prenom": "Marjorie",
+			"nomPrenom": "MORET Marjorie"
+		},
+		"suppleant": {
+			"id": "FJL",
+			"nom": "JOLLIET",
+			"prenom": "Florence",
+			"nomPrenom": "JOLLIET Florence"
+		},
+		"section": {
+			"libelleOfficePermanence": "MPa Lausanne"
+		}
+	},
+	{
+		"id": "d878c56e-5730-4ab5-96be-33d486e9b1e1",
+		"modificationDate": "2024-05-06T15:46:00",
+		"isDeleted": false,
+		"magistratModified": null,
+		"startDate": "2024-11-11T08:00:00",
+		"endDate": "2024-11-15T08:00:00",
+		"evenement": null,
+		"magistrat": {
+			"id": "PGT",
+			"nom": "GALEUCHET",
+			"prenom": "Patrick",
+			"nomPrenom": "GALEUCHET Patrick"
+		},
+		"suppleant": {
+			"id": "MHN",
+			"nom": "HENRY",
+			"prenom": "Marine",
+			"nomPrenom": "HENRY Marine"
+		},
+		"section": {
+			"libelleOfficePermanence": "MPa La Côte"
+		}
+	},
+	{
+		"id": "762b5d6d-818e-46c1-b998-f8be1c173293",
+		"modificationDate": "2024-01-19T09:18:00",
+		"isDeleted": false,
+		"magistratModified": null,
+		"startDate": "2024-11-11T08:00:00",
+		"endDate": "2024-11-12T08:00:00",
+		"evenement": null,
+		"magistrat": {
+			"id": "LAE",
+			"nom": "BRENLLA",
+			"prenom": "Laurence",
+			"nomPrenom": "BRENLLA Laurence"
+		},
+		"suppleant": {
+			"id": "CLR",
+			"nom": "ROSSIER-DAFFLON",
+			"prenom": "Charlotte",
+			"nomPrenom": "ROSSIER-DAFFLON Charlotte"
+		},
+		"section": {
+			"libelleOfficePermanence": "MPa Nord vaudois"
+		}
+	},
+	{
+		"id": "a4c50f5f-2b77-45e6-8d26-0a43a2820015",
+		"modificationDate": "2023-11-29T09:42:00",
+		"isDeleted": false,
+		"magistratModified": null,
+		"startDate": "2024-11-11T08:00:00",
+		"endDate": "2024-11-15T08:00:00",
+		"evenement": null,
+		"magistrat": {
+			"id": "OBU",
+			"nom": "BUTTET",
+			"prenom": "Olivier",
+			"nomPrenom": "BUTTET Olivier"
+		},
+		"suppleant": {
+			"id": "EBJ",
+			"nom": "PASQUIER",
+			"prenom": "Elodie",
+			"nomPrenom": "PASQUIER Elodie"
+		},
+		"section": {
+			"libelleOfficePermanence": "MPa Est vaudois"
+		}
+	},
+	{
+		"id": "a0e85340-0f70-488e-8239-05527c37f061",
+		"modificationDate": "2023-12-17T18:00:00",
+		"isDeleted": false,
+		"magistratModified": null,
+		"startDate": "2024-11-11T08:00:00",
+		"endDate": "2024-11-13T08:00:00",
+		"evenement": null,
+		"magistrat": {
+			"id": "JRA",
+			"nom": "RAPIN",
+			"prenom": "Jérémie",
+			"nomPrenom": "RAPIN Jérémie"
+		},
+		"suppleant": {
+			"id": "JON",
+			"nom": "CORNU",
+			"prenom": "Jonathan",
+			"nomPrenom": "CORNU Jonathan"
+		},
+		"section": {
+			"libelleOfficePermanence": "MPa Lausanne"
+		}
+	},
+	{
+		"id": "f033204f-39d0-43a3-8731-eb55b48d511a",
+		"modificationDate": "2024-05-08T12:14:00",
+		"isDeleted": false,
+		"magistratModified": null,
+		"startDate": "2024-11-11T08:00:00",
+		"endDate": "2024-11-15T08:00:00",
+		"evenement": null,
+		"magistrat": {
+			"id": "DDM",
+			"nom": "DOMINGUEZ",
+			"prenom": "Diana",
+			"nomPrenom": "DOMINGUEZ Diana"
+		},
+		"suppleant": {
+			"id": "NFN",
+			"nom": "FRANÇAIS",
+			"prenom": "Nicolas",
+			"nomPrenom": "FRANÇAIS Nicolas"
+		},
+		"section": {
+			"libelleOfficePermanence": "MPa Strada"
+		}
+	},
+	{
+		"id": "53949ba0-f59b-43e0-8002-7c651636ffd7",
+		"modificationDate": "2024-08-07T16:08:00",
+		"isDeleted": false,
+		"magistratModified": null,
+		"startDate": "2024-11-11T08:00:00",
+		"endDate": "2024-11-14T08:00:00",
+		"evenement": null,
+		"magistrat": {
+			"id": "PAE",
+			"nom": "AESCHLIMANN",
+			"prenom": "Patricia",
+			"nomPrenom": "AESCHLIMANN Patricia"
+		},
+		"suppleant": null,
+		"section": {
+			"libelleOfficePermanence": "TMC"
+		}
+	},
+	{
+		"id": "64607d71-7eed-4354-b38b-5960160ff022",
+		"modificationDate": "2024-02-02T16:28:00",
+		"isDeleted": false,
+		"magistratModified": null,
+		"startDate": "2024-11-12T08:00:00",
+		"endDate": "2024-11-13T08:00:00",
+		"evenement": null,
+		"magistrat": {
+			"id": "CCE",
+			"nom": "CORREIA",
+			"prenom": "Claudia",
+			"nomPrenom": "CORREIA Claudia"
+		},
+		"suppleant": {
+			"id": "CLR",
+			"nom": "ROSSIER-DAFFLON",
+			"prenom": "Charlotte",
+			"nomPrenom": "ROSSIER-DAFFLON Charlotte"
+		},
+		"section": {
+			"libelleOfficePermanence": "MPa Nord vaudois"
+		}
+	},
+	{
+		"id": "d55c87f6-19ba-4d9a-9745-e9938154d863",
+		"modificationDate": "2024-05-06T14:21:00",
+		"isDeleted": false,
+		"magistratModified": null,
+		"startDate": "2024-11-12T08:00:00",
+		"endDate": "2024-11-19T08:00:00",
+		"evenement": null,
+		"magistrat": {
+			"id": "CHK",
+			"nom": "MARGUERAT",
+			"prenom": "Christophe",
+			"nomPrenom": "MARGUERAT Christophe"
+		},
+		"suppleant": {
+			"id": "JJQ",
+			"nom": "JEQUIER",
+			"prenom": "Julie",
+			"nomPrenom": "JEQUIER Julie"
+		},
+		"section": {
+			"libelleOfficePermanence": "TMIN"
+		}
+	},
+	{
+		"id": "8f367c00-d5c3-4d4d-9dae-332479ea52c6",
+		"modificationDate": "2023-12-17T18:01:00",
+		"isDeleted": false,
+		"magistratModified": null,
+		"startDate": "2024-11-13T08:00:00",
+		"endDate": "2024-11-15T08:00:00",
+		"evenement": null,
+		"magistrat": {
+			"id": "JON",
+			"nom": "CORNU",
+			"prenom": "Jonathan",
+			"nomPrenom": "CORNU Jonathan"
+		},
+		"suppleant": {
+			"id": "JRA",
+			"nom": "RAPIN",
+			"prenom": "Jérémie",
+			"nomPrenom": "RAPIN Jérémie"
+		},
+		"section": {
+			"libelleOfficePermanence": "MPa Lausanne"
+		}
+	},
+	{
+		"id": "9d6f3e97-d652-4bbb-a1a7-7c3d746d56a4",
+		"modificationDate": "2024-02-02T16:29:00",
+		"isDeleted": false,
+		"magistratModified": null,
+		"startDate": "2024-11-13T08:00:00",
+		"endDate": "2024-11-14T08:00:00",
+		"evenement": null,
+		"magistrat": {
+			"id": "ASW",
+			"nom": "SCHWEIZER",
+			"prenom": "Alexandre",
+			"nomPrenom": "SCHWEIZER Alexandre"
+		},
+		"suppleant": {
+			"id": "CLR",
+			"nom": "ROSSIER-DAFFLON",
+			"prenom": "Charlotte",
+			"nomPrenom": "ROSSIER-DAFFLON Charlotte"
+		},
+		"section": {
+			"libelleOfficePermanence": "MPa Nord vaudois"
+		}
+	},
+	{
+		"id": "fde1d438-fbf4-40c3-996f-49ba46b770e8",
+		"modificationDate": "2024-08-07T16:08:00",
+		"isDeleted": false,
+		"magistratModified": null,
+		"startDate": "2024-11-14T08:00:00",
+		"endDate": "2024-11-18T08:00:00",
+		"evenement": null,
+		"magistrat": {
+			"id": "LAS",
+			"nom": "SUTER",
+			"prenom": "Laure-Anne",
+			"nomPrenom": "SUTER Laure-Anne"
+		},
+		"suppleant": {
+			"id": "BRB",
+			"nom": "BAEHLER",
+			"prenom": "Bertrand",
+			"nomPrenom": "BAEHLER Bertrand"
+		},
+		"section": {
+			"libelleOfficePermanence": "TMC"
+		}
+	},
+	{
+		"id": "d19bd09a-a485-425c-9b97-20549b5fb54a",
+		"modificationDate": "2024-01-19T09:20:00",
+		"isDeleted": false,
+		"magistratModified": null,
+		"startDate": "2024-11-14T08:00:00",
+		"endDate": "2024-11-15T08:00:00",
+		"evenement": null,
+		"magistrat": {
+			"id": "ASW",
+			"nom": "SCHWEIZER",
+			"prenom": "Alexandre",
+			"nomPrenom": "SCHWEIZER Alexandre"
+		},
+		"suppleant": {
+			"id": "CLR",
+			"nom": "ROSSIER-DAFFLON",
+			"prenom": "Charlotte",
+			"nomPrenom": "ROSSIER-DAFFLON Charlotte"
+		},
+		"section": {
+			"libelleOfficePermanence": "MPa Nord vaudois"
+		}
+	},
+	{
+		"id": "210a787d-be9f-4a9e-8ea7-187d92b38348",
+		"modificationDate": "2023-12-06T10:39:00",
+		"isDeleted": false,
+		"magistratModified": null,
+		"startDate": "2024-11-15T08:00:00",
+		"endDate": "2024-11-22T08:00:00",
+		"evenement": null,
+		"magistrat": {
+			"id": "SRB",
+			"nom": "VALCESCHINI",
+			"prenom": "Séverine",
+			"nomPrenom": "VALCESCHINI Séverine"
+		},
+		"suppleant": null,
+		"section": {
+			"libelleOfficePermanence": "Piquet DIVAS"
+		}
+	},
+	{
+		"id": "35d9fb2e-375d-4393-9de3-d217587434db",
+		"modificationDate": "2023-12-17T17:18:00",
+		"isDeleted": false,
+		"magistratModified": null,
+		"startDate": "2024-11-15T08:00:00",
+		"endDate": "2024-11-16T08:00:00",
+		"evenement": null,
+		"magistrat": {
+			"id": "PGN",
+			"nom": "GILLIERON",
+			"prenom": "Pascal",
+			"nomPrenom": "GILLIERON Pascal"
+		},
+		"suppleant": {
+			"id": "AYP",
+			"nom": "MAY",
+			"prenom": "Philomène",
+			"nomPrenom": "MAY Philomène"
+		},
+		"section": null
+	},
+	{
+		"id": "7dc81332-5819-4b0a-a67f-76910b07ff9e",
+		"modificationDate": "2023-12-17T17:18:00",
+		"isDeleted": false,
+		"magistratModified": null,
+		"startDate": "2024-11-16T08:00:00",
+		"endDate": "2024-11-17T08:00:00",
+		"evenement": null,
+		"magistrat": {
+			"id": "AYP",
+			"nom": "MAY",
+			"prenom": "Philomène",
+			"nomPrenom": "MAY Philomène"
+		},
+		"suppleant": {
+			"id": "CMI",
+			"nom": "MAIRE",
+			"prenom": "Christian",
+			"nomPrenom": "MAIRE Christian"
+		},
+		"section": {
+			"libelleOfficePermanence": "MPa Lausanne"
+		}
+	},
+	{
+		"id": "7386eb28-f5cf-45f0-8158-3465cea9c81e",
+		"modificationDate": "2024-01-19T09:22:00",
+		"isDeleted": false,
+		"magistratModified": null,
+		"startDate": "2024-11-17T08:00:00",
+		"endDate": "2024-11-18T08:00:00",
+		"evenement": null,
+		"magistrat": {
+			"id": "CCE",
+			"nom": "CORREIA",
+			"prenom": "Claudia",
+			"nomPrenom": "CORREIA Claudia"
+		},
+		"suppleant": {
+			"id": "PGN",
+			"nom": "GILLIERON",
+			"prenom": "Pascal",
+			"nomPrenom": "GILLIERON Pascal"
+		},
+		"section": {
+			"libelleOfficePermanence": "MPa Nord vaudois"
+		}
+	},
+	{
+		"id": "cd589854-93a7-4f22-880d-d288c098d843",
+		"modificationDate": "2024-05-06T14:06:00",
+		"isDeleted": false,
+		"magistratModified": null,
+		"startDate": "2024-11-18T08:00:00",
+		"endDate": "2024-11-22T08:00:00",
+		"evenement": null,
+		"magistrat": {
+			"id": "MHN",
+			"nom": "HENRY",
+			"prenom": "Marine",
+			"nomPrenom": "HENRY Marine"
+		},
+		"suppleant": {
+			"id": "SRD",
+			"nom": "RODIEUX",
+			"prenom": "Sophie",
+			"nomPrenom": "RODIEUX Sophie"
+		},
+		"section": {
+			"libelleOfficePermanence": "MPa La Côte"
+		}
+	},
+	{
+		"id": "18489aac-278b-4652-9427-0db392ccc870",
+		"modificationDate": "2023-11-28T11:44:00",
+		"isDeleted": false,
+		"magistratModified": null,
+		"startDate": "2024-11-18T08:00:00",
+		"endDate": "2024-11-22T08:00:00",
+		"evenement": null,
+		"magistrat": {
+			"id": "GMT",
+			"nom": "MORET",
+			"prenom": "Gabriel",
+			"nomPrenom": "MORET Gabriel"
+		},
+		"suppleant": {
+			"id": "ASW",
+			"nom": "SCHWEIZER",
+			"prenom": "Alexandre",
+			"nomPrenom": "SCHWEIZER Alexandre"
+		},
+		"section": {
+			"libelleOfficePermanence": "MPa Nord vaudois"
+		}
+	},
+	{
+		"id": "44709bba-f70d-483b-842d-fe18fb042573",
+		"modificationDate": "2023-11-29T09:43:00",
+		"isDeleted": false,
+		"magistratModified": null,
+		"startDate": "2024-11-18T08:00:00",
+		"endDate": "2024-11-22T08:00:00",
+		"evenement": null,
+		"magistrat": {
+			"id": "CMS",
+			"nom": "MASSON",
+			"prenom": "Camilla",
+			"nomPrenom": "MASSON Camilla"
+		},
+		"suppleant": {
+			"id": "OBU",
+			"nom": "BUTTET",
+			"prenom": "Olivier",
+			"nomPrenom": "BUTTET Olivier"
+		},
+		"section": {
+			"libelleOfficePermanence": "MPa Est vaudois"
+		}
+	},
+	{
+		"id": "4cc98918-c62d-4b35-b8f2-9318c745c5bc",
+		"modificationDate": "2023-12-17T18:01:00",
+		"isDeleted": false,
+		"magistratModified": null,
+		"startDate": "2024-11-18T08:00:00",
+		"endDate": "2024-11-20T08:00:00",
+		"evenement": null,
+		"magistrat": {
+			"id": "VIY",
+			"nom": "IYNEDJIAN",
+			"prenom": "Vehanouche",
+			"nomPrenom": "IYNEDJIAN Vehanouche"
+		},
+		"suppleant": {
+			"id": "SJH",
+			"nom": "JOHNER",
+			"prenom": "Stephan",
+			"nomPrenom": "JOHNER Stephan"
+		},
+		"section": {
+			"libelleOfficePermanence": "MPa Lausanne"
+		}
+	},
+	{
+		"id": "1b749854-fa19-4fb9-b2ef-45f8a112bf48",
+		"modificationDate": "2024-05-08T12:14:00",
+		"isDeleted": false,
+		"magistratModified": null,
+		"startDate": "2024-11-18T08:00:00",
+		"endDate": "2024-11-22T08:00:00",
+		"evenement": null,
+		"magistrat": {
+			"id": "NFN",
+			"nom": "FRANÇAIS",
+			"prenom": "Nicolas",
+			"nomPrenom": "FRANÇAIS Nicolas"
+		},
+		"suppleant": {
+			"id": "PGN",
+			"nom": "GILLIERON",
+			"prenom": "Pascal",
+			"nomPrenom": "GILLIERON Pascal"
+		},
+		"section": {
+			"libelleOfficePermanence": "MPa Strada"
+		}
+	},
+	{
+		"id": "3e11ee36-fcb0-495c-9cf9-1af91c0af528",
+		"modificationDate": "2024-08-07T16:09:00",
+		"isDeleted": false,
+		"magistratModified": null,
+		"startDate": "2024-11-18T08:00:00",
+		"endDate": "2024-11-21T08:00:00",
+		"evenement": null,
+		"magistrat": {
+			"id": "BRB",
+			"nom": "BAEHLER",
+			"prenom": "Bertrand",
+			"nomPrenom": "BAEHLER Bertrand"
+		},
+		"suppleant": null,
+		"section": {
+			"libelleOfficePermanence": "TMC"
+		}
+	},
+	{
+		"id": "19770d18-20ff-4c0a-8443-d802c49018a7",
+		"modificationDate": "2024-05-06T14:22:00",
+		"isDeleted": false,
+		"magistratModified": null,
+		"startDate": "2024-11-19T08:00:00",
+		"endDate": "2024-11-22T08:00:00",
+		"evenement": null,
+		"magistrat": {
+			"id": "ERE",
+			"nom": "REDONDO",
+			"prenom": "Eduardo",
+			"nomPrenom": "REDONDO Eduardo"
+		},
+		"suppleant": {
+			"id": "CHK",
+			"nom": "MARGUERAT",
+			"prenom": "Christophe",
+			"nomPrenom": "MARGUERAT Christophe"
+		},
+		"section": {
+			"libelleOfficePermanence": "TMIN"
+		}
+	},
+	{
+		"id": "76178de6-544f-44c4-8080-29c70c05f41c",
+		"modificationDate": "2023-12-17T18:01:00",
+		"isDeleted": false,
+		"magistratModified": null,
+		"startDate": "2024-11-20T08:00:00",
+		"endDate": "2024-11-22T08:00:00",
+		"evenement": null,
+		"magistrat": {
+			"id": "SJH",
+			"nom": "JOHNER",
+			"prenom": "Stephan",
+			"nomPrenom": "JOHNER Stephan"
+		},
+		"suppleant": {
+			"id": "VIY",
+			"nom": "IYNEDJIAN",
+			"prenom": "Vehanouche",
+			"nomPrenom": "IYNEDJIAN Vehanouche"
+		},
+		"section": {
+			"libelleOfficePermanence": "MPa Lausanne"
+		}
+	},
+	{
+		"id": "397c344e-9f21-4cb8-b051-aa4d090782bc",
+		"modificationDate": "2024-08-07T16:10:00",
+		"isDeleted": false,
+		"magistratModified": null,
+		"startDate": "2024-11-21T08:00:00",
+		"endDate": "2024-11-25T08:00:00",
+		"evenement": null,
+		"magistrat": {
+			"id": "DBT",
+			"nom": "BERTOLI PERRET",
+			"prenom": "Diane",
+			"nomPrenom": "BERTOLI PERRET Diane"
+		},
+		"suppleant": {
+			"id": "JSE",
+			"nom": "SEREX",
+			"prenom": "Jessica",
+			"nomPrenom": "SEREX Jessica"
+		},
+		"section": {
+			"libelleOfficePermanence": "TMC"
+		}
+	},
+	{
+		"id": "5186a61a-108b-464d-bbfa-d65d953deff7",
+		"modificationDate": "2023-12-04T15:49:00",
+		"isDeleted": false,
+		"magistratModified": null,
+		"startDate": "2024-11-22T08:00:00",
+		"endDate": "2024-11-29T08:00:00",
+		"evenement": null,
+		"magistrat": {
+			"id": "MAO",
+			"nom": "BONVIN",
+			"prenom": "Magali",
+			"nomPrenom": "BONVIN Magali"
+		},
+		"suppleant": null,
+		"section": {
+			"libelleOfficePermanence": "Piquet DIVAS"
+		}
+	},
+	{
+		"id": "3b60cd4b-4dad-47b5-9f99-ac043b214d8f",
+		"modificationDate": "2024-06-12T12:00:00",
+		"isDeleted": false,
+		"magistratModified": null,
+		"startDate": "2024-11-22T08:00:00",
+		"endDate": "2024-11-23T08:00:00",
+		"evenement": null,
+		"magistrat": {
+			"id": "FJL",
+			"nom": "JOLLIET",
+			"prenom": "Florence",
+			"nomPrenom": "JOLLIET Florence"
+		},
+		"suppleant": {
+			"id": "AKA",
+			"nom": "KALBFUSS",
+			"prenom": "Anthony",
+			"nomPrenom": "KALBFUSS Anthony"
+		},
+		"section": {
+			"libelleOfficePermanence": "MPa Nord vaudois"
+		}
+	},
+	{
+		"id": "4d40b4b1-0567-48b6-86cf-3bfe379e4d29",
+		"modificationDate": "2024-05-06T14:24:00",
+		"isDeleted": false,
+		"magistratModified": null,
+		"startDate": "2024-11-22T08:00:00",
+		"endDate": "2024-11-27T08:00:00",
+		"evenement": null,
+		"magistrat": {
+			"id": "RBY",
+			"nom": "BOVY",
+			"prenom": "Carole",
+			"nomPrenom": "BOVY Carole"
+		},
+		"suppleant": {
+			"id": "ERE",
+			"nom": "REDONDO",
+			"prenom": "Eduardo",
+			"nomPrenom": "REDONDO Eduardo"
+		},
+		"section": {
+			"libelleOfficePermanence": "TMIN"
+		}
+	},
+	{
+		"id": "b608e81d-faa2-4cea-ad5d-b41d1f02e39a",
+		"modificationDate": "2024-01-03T11:18:00",
+		"isDeleted": false,
+		"magistratModified": null,
+		"startDate": "2024-11-23T08:00:00",
+		"endDate": "2024-11-24T08:00:00",
+		"evenement": null,
+		"magistrat": {
+			"id": "AKA",
+			"nom": "KALBFUSS",
+			"prenom": "Anthony",
+			"nomPrenom": "KALBFUSS Anthony"
+		},
+		"suppleant": {
+			"id": "PGT",
+			"nom": "GALEUCHET",
+			"prenom": "Patrick",
+			"nomPrenom": "GALEUCHET Patrick"
+		},
+		"section": {
+			"libelleOfficePermanence": "MPa Lausanne"
+		}
+	},
+	{
+		"id": "80c2bf87-14dc-4489-8771-56712e7f254f",
+		"modificationDate": "2024-06-12T12:25:00",
+		"isDeleted": false,
+		"magistratModified": null,
+		"startDate": "2024-11-24T08:00:00",
+		"endDate": "2024-11-25T08:00:00",
+		"evenement": null,
+		"magistrat": {
+			"id": "PGT",
+			"nom": "GALEUCHET",
+			"prenom": "Patrick",
+			"nomPrenom": "GALEUCHET Patrick"
+		},
+		"suppleant": {
+			"id": "FJL",
+			"nom": "JOLLIET",
+			"prenom": "Florence",
+			"nomPrenom": "JOLLIET Florence"
+		},
+		"section": {
+			"libelleOfficePermanence": "MPa La Côte"
+		}
+	},
+	{
+		"id": "2ed8fe11-f83f-4823-9642-6316b8ec6ad0",
+		"modificationDate": "2024-05-06T15:47:00",
+		"isDeleted": false,
+		"magistratModified": null,
+		"startDate": "2024-11-25T08:00:00",
+		"endDate": "2024-11-29T08:00:00",
+		"evenement": null,
+		"magistrat": {
+			"id": "SRD",
+			"nom": "RODIEUX",
+			"prenom": "Sophie",
+			"nomPrenom": "RODIEUX Sophie"
+		},
+		"suppleant": {
+			"id": "MHN",
+			"nom": "HENRY",
+			"prenom": "Marine",
+			"nomPrenom": "HENRY Marine"
+		},
+		"section": {
+			"libelleOfficePermanence": "MPa La Côte"
+		}
+	},
+	{
+		"id": "e1b9ac8d-4498-4e4b-80a0-8e33e44e8338",
+		"modificationDate": "2024-06-12T12:02:00",
+		"isDeleted": false,
+		"magistratModified": null,
+		"startDate": "2024-11-25T08:00:00",
+		"endDate": "2024-11-27T08:00:00",
+		"evenement": null,
+		"magistrat": {
+			"id": "CCE",
+			"nom": "CORREIA",
+			"prenom": "Claudia",
+			"nomPrenom": "CORREIA Claudia"
+		},
+		"suppleant": {
+			"id": "GMT",
+			"nom": "MORET",
+			"prenom": "Gabriel",
+			"nomPrenom": "MORET Gabriel"
+		},
+		"section": {
+			"libelleOfficePermanence": "MPa Nord vaudois"
+		}
+	},
+	{
+		"id": "a4d7d201-1d39-4c77-af40-075d2868ba23",
+		"modificationDate": "2023-11-29T09:44:00",
+		"isDeleted": false,
+		"magistratModified": null,
+		"startDate": "2024-11-25T08:00:00",
+		"endDate": "2024-11-29T08:00:00",
+		"evenement": null,
+		"magistrat": {
+			"id": "LRC",
+			"nom": "ROCCARO",
+			"prenom": "Laurie",
+			"nomPrenom": "ROCCARO Laurie"
+		},
+		"suppleant": {
+			"id": "CMS",
+			"nom": "MASSON",
+			"prenom": "Camilla",
+			"nomPrenom": "MASSON Camilla"
+		},
+		"section": {
+			"libelleOfficePermanence": "MPa Est vaudois"
+		}
+	},
+	{
+		"id": "5e88197d-9e48-4160-8892-4438d7543573",
+		"modificationDate": "2023-12-17T18:02:00",
+		"isDeleted": false,
+		"magistratModified": null,
+		"startDate": "2024-11-25T08:00:00",
+		"endDate": "2024-11-27T08:00:00",
+		"evenement": null,
+		"magistrat": {
+			"id": "JRC",
+			"nom": "RACINE",
+			"prenom": "Joëlle",
+			"nomPrenom": "RACINE Joëlle"
+		},
+		"suppleant": {
+			"id": "XMA",
+			"nom": "MANRIQUEZ",
+			"prenom": "Ximena Paola",
+			"nomPrenom": "MANRIQUEZ Ximena Paola"
+		},
+		"section": {
+			"libelleOfficePermanence": "MPa Lausanne"
+		}
+	},
+	{
+		"id": "7322d86b-703c-44ff-8caf-ae6e0eaa732a",
+		"modificationDate": "2023-12-17T16:20:00",
+		"isDeleted": false,
+		"magistratModified": null,
+		"startDate": "2024-11-25T08:00:00",
+		"endDate": "2024-11-29T08:00:00",
+		"evenement": null,
+		"magistrat": {
+			"id": "PGN",
+			"nom": "GILLIERON",
+			"prenom": "Pascal",
+			"nomPrenom": "GILLIERON Pascal"
+		},
+		"suppleant": {
+			"id": "CME",
+			"nom": "MATTHEY",
+			"prenom": "Cédric",
+			"nomPrenom": "MATTHEY Cédric"
+		},
+		"section": {
+			"libelleOfficePermanence": "MPa Strada"
+		}
+	},
+	{
+		"id": "d8ea941f-4bef-4b71-b6b4-dc13332c899f",
+		"modificationDate": "2024-08-07T16:10:00",
+		"isDeleted": false,
+		"magistratModified": null,
+		"startDate": "2024-11-25T08:00:00",
+		"endDate": "2024-11-28T08:00:00",
+		"evenement": null,
+		"magistrat": {
+			"id": "PAE",
+			"nom": "AESCHLIMANN",
+			"prenom": "Patricia",
+			"nomPrenom": "AESCHLIMANN Patricia"
+		},
+		"suppleant": null,
+		"section": {
+			"libelleOfficePermanence": "TMC"
+		}
+	},
+	{
+		"id": "9abd33cb-31a7-45d3-9432-1f2cff9bd4b2",
+		"modificationDate": "2023-12-17T18:02:00",
+		"isDeleted": false,
+		"magistratModified": null,
+		"startDate": "2024-11-27T08:00:00",
+		"endDate": "2024-11-29T08:00:00",
+		"evenement": null,
+		"magistrat": {
+			"id": "XMA",
+			"nom": "MANRIQUEZ",
+			"prenom": "Ximena Paola",
+			"nomPrenom": "MANRIQUEZ Ximena Paola"
+		},
+		"suppleant": {
+			"id": "MRN",
+			"nom": "TSCHOPP",
+			"prenom": "Maria",
+			"nomPrenom": "TSCHOPP Maria"
+		},
+		"section": {
+			"libelleOfficePermanence": "MPa Lausanne"
+		}
+	},
+	{
+		"id": "e16b1e5c-cc34-4f4d-ba06-eb68f1597026",
+		"modificationDate": "2024-06-12T12:03:00",
+		"isDeleted": false,
+		"magistratModified": null,
+		"startDate": "2024-11-27T08:00:00",
+		"endDate": "2024-11-29T08:00:00",
+		"evenement": null,
+		"magistrat": {
+			"id": "CCE",
+			"nom": "CORREIA",
+			"prenom": "Claudia",
+			"nomPrenom": "CORREIA Claudia"
+		},
+		"suppleant": {
+			"id": "LAE",
+			"nom": "BRENLLA",
+			"prenom": "Laurence",
+			"nomPrenom": "BRENLLA Laurence"
+		},
+		"section": {
+			"libelleOfficePermanence": "MPa Nord vaudois"
+		}
+	},
+	{
+		"id": "c699ce81-9d78-431f-bbad-54e200115e40",
+		"modificationDate": "2024-05-06T14:25:00",
+		"isDeleted": false,
+		"magistratModified": null,
+		"startDate": "2024-11-27T08:00:00",
+		"endDate": "2024-12-03T08:00:00",
+		"evenement": null,
+		"magistrat": {
+			"id": "GSE",
+			"nom": "SÉCHAUD",
+			"prenom": "Géraldine",
+			"nomPrenom": "SÉCHAUD Géraldine"
+		},
+		"suppleant": {
+			"id": "RBY",
+			"nom": "BOVY",
+			"prenom": "Carole",
+			"nomPrenom": "BOVY Carole"
+		},
+		"section": {
+			"libelleOfficePermanence": "TMIN"
+		}
+	},
+	{
+		"id": "4bd9dea2-e731-4793-a1ff-d22440841970",
+		"modificationDate": "2024-08-07T16:11:00",
+		"isDeleted": false,
+		"magistratModified": null,
+		"startDate": "2024-11-28T08:00:00",
+		"endDate": "2024-12-02T08:00:00",
+		"evenement": null,
+		"magistrat": {
+			"id": "SDE",
+			"nom": "DERISBOURG",
+			"prenom": "Sabine",
+			"nomPrenom": "DERISBOURG Sabine"
+		},
+		"suppleant": {
+			"id": "BRB",
+			"nom": "BAEHLER",
+			"prenom": "Bertrand",
+			"nomPrenom": "BAEHLER Bertrand"
+		},
+		"section": {
+			"libelleOfficePermanence": "TMC"
+		}
+	},
+	{
+		"id": "a7e5abbb-8952-42a6-ac95-e722b6f096d4",
+		"modificationDate": "2023-12-04T15:50:00",
+		"isDeleted": false,
+		"magistratModified": null,
+		"startDate": "2024-11-29T08:00:00",
+		"endDate": "2024-12-06T08:00:00",
+		"evenement": null,
+		"magistrat": {
+			"id": "JDZ",
+			"nom": "DÉLÈZE",
+			"prenom": "Julien",
+			"nomPrenom": "DÉLÈZE Julien"
+		},
+		"suppleant": null,
+		"section": {
+			"libelleOfficePermanence": "Piquet DIVAS"
+		}
+	},
+	{
+		"id": "95f12784-7c85-4515-9baa-46e014f11ad9",
+		"modificationDate": "2023-12-17T17:20:00",
+		"isDeleted": false,
+		"magistratModified": null,
+		"startDate": "2024-11-29T08:00:00",
+		"endDate": "2024-11-30T08:00:00",
+		"evenement": null,
+		"magistrat": {
+			"id": "RMG",
+			"nom": "BORNAND-MAGNENAT",
+			"prenom": "Roxane",
+			"nomPrenom": "BORNAND-MAGNENAT Roxane"
+		},
+		"suppleant": {
+			"id": "KBE",
+			"nom": "BEN AMOR",
+			"prenom": "Karim",
+			"nomPrenom": "BEN AMOR Karim"
+		},
+		"section": {
+			"libelleOfficePermanence": "MPa Lausanne"
+		}
+	},
+	{
+		"id": "7b5cdbeb-751a-4ac1-a0eb-4dc47bba2a99",
+		"modificationDate": "2023-12-17T17:20:00",
+		"isDeleted": false,
+		"magistratModified": null,
+		"startDate": "2024-11-30T08:00:00",
+		"endDate": "2024-12-01T08:00:00",
+		"evenement": null,
+		"magistrat": {
+			"id": "KBE",
+			"nom": "BEN AMOR",
+			"prenom": "Karim",
+			"nomPrenom": "BEN AMOR Karim"
+		},
+		"suppleant": {
+			"id": "KDP",
+			"nom": "DU PASQUIER",
+			"prenom": "Karen",
+			"nomPrenom": "DU PASQUIER Karen"
+		},
+		"section": {
+			"libelleOfficePermanence": "MPa Est vaudois"
+		}
+	},
+	{
+		"id": "2afe321b-55a3-4611-b55c-c79ffab8cbce",
+		"modificationDate": "2023-12-17T17:20:00",
+		"isDeleted": false,
+		"magistratModified": null,
+		"startDate": "2024-12-01T08:00:00",
+		"endDate": "2024-12-02T08:00:00",
+		"evenement": null,
+		"magistrat": {
+			"id": "KDP",
+			"nom": "DU PASQUIER",
+			"prenom": "Karen",
+			"nomPrenom": "DU PASQUIER Karen"
+		},
+		"suppleant": {
+			"id": "RMG",
+			"nom": "BORNAND-MAGNENAT",
+			"prenom": "Roxane",
+			"nomPrenom": "BORNAND-MAGNENAT Roxane"
+		},
+		"section": null
+	},
+	{
+		"id": "5b1a6627-db0c-4a11-8beb-2d4c2f03bf66",
+		"modificationDate": "2024-05-06T14:06:00",
+		"isDeleted": false,
+		"magistratModified": null,
+		"startDate": "2024-12-02T08:00:00",
+		"endDate": "2024-12-06T08:00:00",
+		"evenement": null,
+		"magistrat": {
+			"id": "MHN",
+			"nom": "HENRY",
+			"prenom": "Marine",
+			"nomPrenom": "HENRY Marine"
+		},
+		"suppleant": {
+			"id": "JBC",
+			"nom": "BARUCHET",
+			"prenom": "Johann",
+			"nomPrenom": "BARUCHET Johann"
+		},
+		"section": {
+			"libelleOfficePermanence": "MPa La Côte"
+		}
+	},
+	{
+		"id": "e681e641-9b24-49c9-8de1-3c71785bfd8b",
+		"modificationDate": "2024-06-12T12:06:00",
+		"isDeleted": false,
+		"magistratModified": null,
+		"startDate": "2024-12-02T08:00:00",
+		"endDate": "2024-12-06T08:00:00",
+		"evenement": null,
+		"magistrat": {
+			"id": "FJL",
+			"nom": "JOLLIET",
+			"prenom": "Florence",
+			"nomPrenom": "JOLLIET Florence"
+		},
+		"suppleant": {
+			"id": "CCE",
+			"nom": "CORREIA",
+			"prenom": "Claudia",
+			"nomPrenom": "CORREIA Claudia"
+		},
+		"section": {
+			"libelleOfficePermanence": "MPa Nord vaudois"
+		}
+	},
+	{
+		"id": "1a7918f3-51d1-446e-84f1-fe370e03f3c6",
+		"modificationDate": "2023-11-29T09:44:00",
+		"isDeleted": false,
+		"magistratModified": null,
+		"startDate": "2024-12-02T08:00:00",
+		"endDate": "2024-12-06T08:00:00",
+		"evenement": null,
+		"magistrat": {
+			"id": "BBD",
+			"nom": "BUCHARD",
+			"prenom": "Bénédicte",
+			"nomPrenom": "BUCHARD Bénédicte"
+		},
+		"suppleant": {
+			"id": "LRC",
+			"nom": "ROCCARO",
+			"prenom": "Laurie",
+			"nomPrenom": "ROCCARO Laurie"
+		},
+		"section": {
+			"libelleOfficePermanence": "MPa Est vaudois"
+		}
+	},
+	{
+		"id": "8fcf6348-6970-4597-9bd9-daf39265497d",
+		"modificationDate": "2024-08-02T16:26:00",
+		"isDeleted": false,
+		"magistratModified": null,
+		"startDate": "2024-12-02T08:00:00",
+		"endDate": "2024-12-04T08:00:00",
+		"evenement": null,
+		"magistrat": {
+			"id": "AYP",
+			"nom": "MAY",
+			"prenom": "Philomène",
+			"nomPrenom": "MAY Philomène"
+		},
+		"suppleant": {
+			"id": "MMR",
+			"nom": "MORET",
+			"prenom": "Marjorie",
+			"nomPrenom": "MORET Marjorie"
+		},
+		"section": {
+			"libelleOfficePermanence": "MPa Lausanne"
+		}
+	},
+	{
+		"id": "465f4686-232e-4c75-9a2b-9c78fcfc52bf",
+		"modificationDate": "2024-07-05T09:56:00",
+		"isDeleted": false,
+		"magistratModified": null,
+		"startDate": "2024-12-02T08:00:00",
+		"endDate": "2024-12-06T08:00:00",
+		"evenement": null,
+		"magistrat": {
+			"id": "KDP",
+			"nom": "DU PASQUIER",
+			"prenom": "Karen",
+			"nomPrenom": "DU PASQUIER Karen"
+		},
+		"suppleant": {
+			"id": "CDT",
+			"nom": "DELETRA",
+			"prenom": "Carole",
+			"nomPrenom": "DELETRA Carole"
+		},
+		"section": {
+			"libelleOfficePermanence": "MPa Strada"
+		}
+	},
+	{
+		"id": "ef61eef1-f1c0-4777-9e06-3ca527212924",
+		"modificationDate": "2024-03-06T14:48:00",
+		"isDeleted": false,
+		"magistratModified": null,
+		"startDate": "2024-12-02T08:00:00",
+		"endDate": "2024-12-05T08:00:00",
+		"evenement": null,
+		"magistrat": {
+			"id": "MPH",
+			"nom": "WIEDLER",
+			"prenom": "Mélanie",
+			"nomPrenom": "WIEDLER Mélanie"
+		},
+		"suppleant": null,
+		"section": {
+			"libelleOfficePermanence": "TMC"
+		}
+	},
+	{
+		"id": "11ecca59-82f8-4a07-8152-d7b8d59044bf",
+		"modificationDate": "2024-05-06T14:26:00",
+		"isDeleted": false,
+		"magistratModified": null,
+		"startDate": "2024-12-03T08:00:00",
+		"endDate": "2024-12-05T08:00:00",
+		"evenement": null,
+		"magistrat": {
+			"id": "AUP",
+			"nom": "AUBERSON",
+			"prenom": "Patrick",
+			"nomPrenom": "AUBERSON Patrick"
+		},
+		"suppleant": {
+			"id": "GSE",
+			"nom": "SÉCHAUD",
+			"prenom": "Géraldine",
+			"nomPrenom": "SÉCHAUD Géraldine"
+		},
+		"section": {
+			"libelleOfficePermanence": "TMIN"
+		}
+	},
+	{
+		"id": "99b63ebf-4079-49a6-9e11-28de02e30db2",
+		"modificationDate": "2024-08-02T16:27:00",
+		"isDeleted": false,
+		"magistratModified": null,
+		"startDate": "2024-12-04T08:00:00",
+		"endDate": "2024-12-06T08:00:00",
+		"evenement": null,
+		"magistrat": {
+			"id": "MMR",
+			"nom": "MORET",
+			"prenom": "Marjorie",
+			"nomPrenom": "MORET Marjorie"
+		},
+		"suppleant": {
+			"id": "AYP",
+			"nom": "MAY",
+			"prenom": "Philomène",
+			"nomPrenom": "MAY Philomène"
+		},
+		"section": {
+			"libelleOfficePermanence": "MPa Lausanne"
+		}
+	},
+	{
+		"id": "29c31a42-380c-4dd8-b504-4c6a49e6ac3b",
+		"modificationDate": "2024-08-07T16:12:00",
+		"isDeleted": false,
+		"magistratModified": null,
+		"startDate": "2024-12-05T08:00:00",
+		"endDate": "2024-12-09T08:00:00",
+		"evenement": null,
+		"magistrat": {
+			"id": "JSE",
+			"nom": "SEREX",
+			"prenom": "Jessica",
+			"nomPrenom": "SEREX Jessica"
+		},
+		"suppleant": {
+			"id": "ENE",
+			"nom": "NEYROUD",
+			"prenom": "Elina",
+			"nomPrenom": "NEYROUD Elina"
+		},
+		"section": {
+			"libelleOfficePermanence": "TMC"
+		}
+	},
+	{
+		"id": "569625bd-ec20-4ee6-b604-2f7dff33b960",
+		"modificationDate": "2024-08-20T08:07:00",
+		"isDeleted": false,
+		"magistratModified": null,
+		"startDate": "2024-12-05T08:00:00",
+		"endDate": "2024-12-05T18:00:00",
+		"evenement": null,
+		"magistrat": {
+			"id": "BTA",
+			"nom": "TAILLEUR BOLLI",
+			"prenom": "Béatrice",
+			"nomPrenom": "TAILLEUR BOLLI Béatrice"
+		},
+		"suppleant": {
+			"id": "AUP",
+			"nom": "AUBERSON",
+			"prenom": "Patrick",
+			"nomPrenom": "AUBERSON Patrick"
+		},
+		"section": {
+			"libelleOfficePermanence": "TMIN"
+		}
+	},
+	{
+		"id": "bcee78bd-ff77-4f3e-bf0e-edd1d47ee0da",
+		"modificationDate": "2024-08-20T08:07:00",
+		"isDeleted": false,
+		"magistratModified": null,
+		"startDate": "2024-12-05T18:00:00",
+		"endDate": "2024-12-08T08:00:00",
+		"evenement": null,
+		"magistrat": {
+			"id": "JJQ",
+			"nom": "JEQUIER",
+			"prenom": "Julie",
+			"nomPrenom": "JEQUIER Julie"
+		},
+		"suppleant": {
+			"id": "AUP",
+			"nom": "AUBERSON",
+			"prenom": "Patrick",
+			"nomPrenom": "AUBERSON Patrick"
+		},
+		"section": {
+			"libelleOfficePermanence": "TMIN"
+		}
+	},
+	{
+		"id": "8e2741c0-ccd8-4d21-a275-570cd90c1e4c",
+		"modificationDate": "2023-12-04T15:50:00",
+		"isDeleted": false,
+		"magistratModified": null,
+		"startDate": "2024-12-06T08:00:00",
+		"endDate": "2024-12-13T08:00:00",
+		"evenement": null,
+		"magistrat": {
+			"id": "EMM",
+			"nom": "MERMOUD",
+			"prenom": "Eric",
+			"nomPrenom": "MERMOUD Eric"
+		},
+		"suppleant": null,
+		"section": {
+			"libelleOfficePermanence": "Piquet DIVAS"
+		}
+	},
+	{
+		"id": "5665721e-79ef-47e4-82db-30d1dc21a8f3",
+		"modificationDate": "2024-01-03T11:20:00",
+		"isDeleted": false,
+		"magistratModified": null,
+		"startDate": "2024-12-06T08:00:00",
+		"endDate": "2024-12-07T08:00:00",
+		"evenement": null,
+		"magistrat": {
+			"id": "VWT",
+			"nom": "DE WATTEVILLE SUBILIA",
+			"prenom": "Valérie",
+			"nomPrenom": "DE WATTEVILLE SUBILIA Valérie"
+		},
+		"suppleant": {
+			"id": "VIY",
+			"nom": "IYNEDJIAN",
+			"prenom": "Vehanouche",
+			"nomPrenom": "IYNEDJIAN Vehanouche"
+		},
+		"section": {
+			"libelleOfficePermanence": "MPa La Côte"
+		}
+	},
+	{
+		"id": "5de4fb85-1f97-4c55-b549-47a6f30be648",
+		"modificationDate": "2023-12-17T17:21:00",
+		"isDeleted": false,
+		"magistratModified": null,
+		"startDate": "2024-12-07T08:00:00",
+		"endDate": "2024-12-08T08:00:00",
+		"evenement": null,
+		"magistrat": {
+			"id": "VIY",
+			"nom": "IYNEDJIAN",
+			"prenom": "Vehanouche",
+			"nomPrenom": "IYNEDJIAN Vehanouche"
+		},
+		"suppleant": {
+			"id": "BDR",
+			"nom": "DENEREAZ",
+			"prenom": "Bernard",
+			"nomPrenom": "DENEREAZ Bernard"
+		},
+		"section": {
+			"libelleOfficePermanence": "MPa Lausanne"
+		}
+	},
+	{
+		"id": "d61dd383-2028-4636-820a-3c9ea1980835",
+		"modificationDate": "2024-01-03T11:20:00",
+		"isDeleted": false,
+		"magistratModified": null,
+		"startDate": "2024-12-08T08:00:00",
+		"endDate": "2024-12-09T08:00:00",
+		"evenement": null,
+		"magistrat": {
+			"id": "BDR",
+			"nom": "DENEREAZ",
+			"prenom": "Bernard",
+			"nomPrenom": "DENEREAZ Bernard"
+		},
+		"suppleant": {
+			"id": "VWT",
+			"nom": "DE WATTEVILLE SUBILIA",
+			"prenom": "Valérie",
+			"nomPrenom": "DE WATTEVILLE SUBILIA Valérie"
+		},
+		"section": {
+			"libelleOfficePermanence": "MPa Lausanne"
+		}
+	},
+	{
+		"id": "d9eb32f4-d175-4042-ad29-337787875e1a",
+		"modificationDate": "2024-06-21T09:03:00",
+		"isDeleted": false,
+		"magistratModified": null,
+		"startDate": "2024-12-08T08:00:00",
+		"endDate": "2024-12-11T08:00:00",
+		"evenement": null,
+		"magistrat": {
+			"id": "BTA",
+			"nom": "TAILLEUR BOLLI",
+			"prenom": "Béatrice",
+			"nomPrenom": "TAILLEUR BOLLI Béatrice"
+		},
+		"suppleant": {
+			"id": "AUP",
+			"nom": "AUBERSON",
+			"prenom": "Patrick",
+			"nomPrenom": "AUBERSON Patrick"
+		},
+		"section": {
+			"libelleOfficePermanence": "TMIN"
+		}
+	},
+	{
+		"id": "c96ad301-7ba1-4838-9b7c-631db4db0afb",
+		"modificationDate": "2024-01-03T11:21:00",
+		"isDeleted": false,
+		"magistratModified": null,
+		"startDate": "2024-12-09T08:00:00",
+		"endDate": "2024-12-13T08:00:00",
+		"evenement": null,
+		"magistrat": {
+			"id": "JBC",
+			"nom": "BARUCHET",
+			"prenom": "Johann",
+			"nomPrenom": "BARUCHET Johann"
+		},
+		"suppleant": {
+			"id": "MNU",
+			"nom": "COLLAUD",
+			"prenom": "Marlène",
+			"nomPrenom": "COLLAUD Marlène"
+		},
+		"section": {
+			"libelleOfficePermanence": "MPa La Côte"
+		}
+	},
+	{
+		"id": "8858ddd3-5213-4e78-b559-199e49a6cbb1",
+		"modificationDate": "2023-11-28T12:09:00",
+		"isDeleted": false,
+		"magistratModified": null,
+		"startDate": "2024-12-09T08:00:00",
+		"endDate": "2024-12-13T08:00:00",
+		"evenement": null,
+		"magistrat": {
+			"id": "CMI",
+			"nom": "MAIRE",
+			"prenom": "Christian",
+			"nomPrenom": "MAIRE Christian"
+		},
+		"suppleant": {
+			"id": "CCE",
+			"nom": "CORREIA",
+			"prenom": "Claudia",
+			"nomPrenom": "CORREIA Claudia"
+		},
+		"section": {
+			"libelleOfficePermanence": "MPa Nord vaudois"
+		}
+	},
+	{
+		"id": "60c16d51-e71e-4992-9f48-206748d01151",
+		"modificationDate": "2023-11-29T09:45:00",
+		"isDeleted": false,
+		"magistratModified": null,
+		"startDate": "2024-12-09T08:00:00",
+		"endDate": "2024-12-13T08:00:00",
+		"evenement": null,
+		"magistrat": {
+			"id": "KBE",
+			"nom": "BEN AMOR",
+			"prenom": "Karim",
+			"nomPrenom": "BEN AMOR Karim"
+		},
+		"suppleant": {
+			"id": "BBD",
+			"nom": "BUCHARD",
+			"prenom": "Bénédicte",
+			"nomPrenom": "BUCHARD Bénédicte"
+		},
+		"section": {
+			"libelleOfficePermanence": "MPa Est vaudois"
+		}
+	},
+	{
+		"id": "d0e9dc35-cbea-4c87-936f-789ce490f78f",
+		"modificationDate": "2023-12-17T18:03:00",
+		"isDeleted": false,
+		"magistratModified": null,
+		"startDate": "2024-12-09T08:00:00",
+		"endDate": "2024-12-11T08:00:00",
+		"evenement": null,
+		"magistrat": {
+			"id": "JWG",
+			"nom": "WIGET",
+			"prenom": "Jasmine",
+			"nomPrenom": "WIGET Jasmine"
+		},
+		"suppleant": {
+			"id": "JRA",
+			"nom": "RAPIN",
+			"prenom": "Jérémie",
+			"nomPrenom": "RAPIN Jérémie"
+		},
+		"section": {
+			"libelleOfficePermanence": "MPa Lausanne"
+		}
+	},
+	{
+		"id": "ffe328db-bdfe-468c-843f-e23bc1a03b44",
+		"modificationDate": "2023-12-17T16:21:00",
+		"isDeleted": false,
+		"magistratModified": null,
+		"startDate": "2024-12-09T08:00:00",
+		"endDate": "2024-12-13T08:00:00",
+		"evenement": null,
+		"magistrat": {
+			"id": "CDT",
+			"nom": "DELETRA",
+			"prenom": "Carole",
+			"nomPrenom": "DELETRA Carole"
+		},
+		"suppleant": {
+			"id": "LCI",
+			"nom": "CLIVAZ",
+			"prenom": "Laurence",
+			"nomPrenom": "CLIVAZ Laurence"
+		},
+		"section": {
+			"libelleOfficePermanence": "MPa Strada"
+		}
+	},
+	{
+		"id": "7ef5fb17-397b-4408-b10f-db00ac6311c7",
+		"modificationDate": "2024-08-07T16:12:00",
+		"isDeleted": false,
+		"magistratModified": null,
+		"startDate": "2024-12-09T08:00:00",
+		"endDate": "2024-12-12T08:00:00",
+		"evenement": null,
+		"magistrat": {
+			"id": "LAS",
+			"nom": "SUTER",
+			"prenom": "Laure-Anne",
+			"nomPrenom": "SUTER Laure-Anne"
+		},
+		"suppleant": null,
+		"section": {
+			"libelleOfficePermanence": "TMC"
+		}
+	},
+	{
+		"id": "39d7f6a1-2b9d-46df-89ce-487d87a26e84",
+		"modificationDate": "2023-12-17T18:03:00",
+		"isDeleted": false,
+		"magistratModified": null,
+		"startDate": "2024-12-11T08:00:00",
+		"endDate": "2024-12-13T08:00:00",
+		"evenement": null,
+		"magistrat": {
+			"id": "JRA",
+			"nom": "RAPIN",
+			"prenom": "Jérémie",
+			"nomPrenom": "RAPIN Jérémie"
+		},
+		"suppleant": {
+			"id": "JWG",
+			"nom": "WIGET",
+			"prenom": "Jasmine",
+			"nomPrenom": "WIGET Jasmine"
+		},
+		"section": {
+			"libelleOfficePermanence": "MPa Lausanne"
+		}
+	},
+	{
+		"id": "cda57115-6d64-4753-88e5-fed76033d5e3",
+		"modificationDate": "2024-05-06T14:28:00",
+		"isDeleted": false,
+		"magistratModified": null,
+		"startDate": "2024-12-11T08:00:00",
+		"endDate": "2024-12-17T08:00:00",
+		"evenement": null,
+		"magistrat": {
+			"id": "VBK",
+			"nom": "BETTEX KOLTAKOV",
+			"prenom": "Valérie",
+			"nomPrenom": "BETTEX KOLTAKOV Valérie"
+		},
+		"suppleant": {
+			"id": "BTA",
+			"nom": "TAILLEUR BOLLI",
+			"prenom": "Béatrice",
+			"nomPrenom": "TAILLEUR BOLLI Béatrice"
+		},
+		"section": {
+			"libelleOfficePermanence": "TMIN"
+		}
+	},
+	{
+		"id": "f465375b-226c-46d1-9dc7-e002c94e2dfd",
+		"modificationDate": "2024-08-07T16:15:00",
+		"isDeleted": false,
+		"magistratModified": null,
+		"startDate": "2024-12-12T08:00:00",
+		"endDate": "2024-12-16T08:00:00",
+		"evenement": null,
+		"magistrat": {
+			"id": "BRB",
+			"nom": "BAEHLER",
+			"prenom": "Bertrand",
+			"nomPrenom": "BAEHLER Bertrand"
+		},
+		"suppleant": {
+			"id": "PAE",
+			"nom": "AESCHLIMANN",
+			"prenom": "Patricia",
+			"nomPrenom": "AESCHLIMANN Patricia"
+		},
+		"section": {
+			"libelleOfficePermanence": "TMC"
+		}
+	},
+	{
+		"id": "88140e53-25a0-4473-ac0c-22ecfe9367a2",
+		"modificationDate": "2023-12-04T15:51:00",
+		"isDeleted": false,
+		"magistratModified": null,
+		"startDate": "2024-12-13T08:00:00",
+		"endDate": "2024-12-19T08:00:00",
+		"evenement": null,
+		"magistrat": {
+			"id": "OJO",
+			"nom": "JOTTERAND",
+			"prenom": "Olivier",
+			"nomPrenom": "JOTTERAND Olivier"
+		},
+		"suppleant": null,
+		"section": {
+			"libelleOfficePermanence": "Piquet DIVAS"
+		}
+	},
+	{
+		"id": "25d2c88b-38fe-4fba-bd3f-0f21664174c9",
+		"modificationDate": "2023-12-14T14:38:00",
+		"isDeleted": false,
+		"magistratModified": null,
+		"startDate": "2024-12-13T08:00:00",
+		"endDate": "2024-12-14T08:00:00",
+		"evenement": null,
+		"magistrat": {
+			"id": "CMS",
+			"nom": "MASSON",
+			"prenom": "Camilla",
+			"nomPrenom": "MASSON Camilla"
+		},
+		"suppleant": {
+			"id": "CCE",
+			"nom": "CORREIA",
+			"prenom": "Claudia",
+			"nomPrenom": "CORREIA Claudia"
+		},
+		"section": {
+			"libelleOfficePermanence": "MPa Est vaudois"
+		}
+	},
+	{
+		"id": "fca512f5-d8f3-4917-80a7-4ea01763b2ef",
+		"modificationDate": "2024-06-12T13:56:00",
+		"isDeleted": false,
+		"magistratModified": null,
+		"startDate": "2024-12-14T08:00:00",
+		"endDate": "2024-12-15T08:00:00",
+		"evenement": null,
+		"magistrat": {
+			"id": "CLR",
+			"nom": "ROSSIER-DAFFLON",
+			"prenom": "Charlotte",
+			"nomPrenom": "ROSSIER-DAFFLON Charlotte"
+		},
+		"suppleant": {
+			"id": "PGN",
+			"nom": "GILLIERON",
+			"prenom": "Pascal",
+			"nomPrenom": "GILLIERON Pascal"
+		},
+		"section": {
+			"libelleOfficePermanence": "MPa Nord vaudois"
+		}
+	},
+	{
+		"id": "adaafd81-8c0d-4797-9b89-9f620a24a243",
+		"modificationDate": "2023-12-17T17:22:00",
+		"isDeleted": false,
+		"magistratModified": null,
+		"startDate": "2024-12-15T08:00:00",
+		"endDate": "2024-12-16T08:00:00",
+		"evenement": null,
+		"magistrat": {
+			"id": "PGN",
+			"nom": "GILLIERON",
+			"prenom": "Pascal",
+			"nomPrenom": "GILLIERON Pascal"
+		},
+		"suppleant": {
+			"id": "CMS",
+			"nom": "MASSON",
+			"prenom": "Camilla",
+			"nomPrenom": "MASSON Camilla"
+		},
+		"section": null
+	},
+	{
+		"id": "55a48f9f-5db7-4bed-809c-075c2920e940",
+		"modificationDate": "2024-01-03T16:29:00",
+		"isDeleted": false,
+		"magistratModified": null,
+		"startDate": "2024-12-16T08:00:00",
+		"endDate": "2024-12-20T08:00:00",
+		"evenement": null,
+		"magistrat": {
+			"id": "MNU",
+			"nom": "COLLAUD",
+			"prenom": "Marlène",
+			"nomPrenom": "COLLAUD Marlène"
+		},
+		"suppleant": {
+			"id": "VWT",
+			"nom": "DE WATTEVILLE SUBILIA",
+			"prenom": "Valérie",
+			"nomPrenom": "DE WATTEVILLE SUBILIA Valérie"
+		},
+		"section": {
+			"libelleOfficePermanence": "MPa La Côte"
+		}
+	},
+	{
+		"id": "7708797f-1bb5-4b35-b826-cddde41dc5fb",
+		"modificationDate": "2023-11-28T12:12:00",
+		"isDeleted": false,
+		"magistratModified": null,
+		"startDate": "2024-12-16T08:00:00",
+		"endDate": "2024-12-20T08:00:00",
+		"evenement": null,
+		"magistrat": {
+			"id": "GMT",
+			"nom": "MORET",
+			"prenom": "Gabriel",
+			"nomPrenom": "MORET Gabriel"
+		},
+		"suppleant": {
+			"id": "CMI",
+			"nom": "MAIRE",
+			"prenom": "Christian",
+			"nomPrenom": "MAIRE Christian"
+		},
+		"section": {
+			"libelleOfficePermanence": "MPa Nord vaudois"
+		}
+	},
+	{
+		"id": "c092db10-37f7-478f-bdfe-5255fad39723",
+		"modificationDate": "2023-11-29T09:46:00",
+		"isDeleted": false,
+		"magistratModified": null,
+		"startDate": "2024-12-16T08:00:00",
+		"endDate": "2024-12-20T08:00:00",
+		"evenement": null,
+		"magistrat": {
+			"id": "OBU",
+			"nom": "BUTTET",
+			"prenom": "Olivier",
+			"nomPrenom": "BUTTET Olivier"
+		},
+		"suppleant": {
+			"id": "KBE",
+			"nom": "BEN AMOR",
+			"prenom": "Karim",
+			"nomPrenom": "BEN AMOR Karim"
+		},
+		"section": {
+			"libelleOfficePermanence": "MPa Est vaudois"
+		}
+	},
+	{
+		"id": "76cf0966-3ece-4307-b543-03cd48ad3415",
+		"modificationDate": "2023-12-17T18:03:00",
+		"isDeleted": false,
+		"magistratModified": null,
+		"startDate": "2024-12-16T08:00:00",
+		"endDate": "2024-12-18T08:00:00",
+		"evenement": null,
+		"magistrat": {
+			"id": "AKA",
+			"nom": "KALBFUSS",
+			"prenom": "Anthony",
+			"nomPrenom": "KALBFUSS Anthony"
+		},
+		"suppleant": {
+			"id": "XMA",
+			"nom": "MANRIQUEZ",
+			"prenom": "Ximena Paola",
+			"nomPrenom": "MANRIQUEZ Ximena Paola"
+		},
+		"section": {
+			"libelleOfficePermanence": "MPa Lausanne"
+		}
+	},
+	{
+		"id": "780a5722-3294-4ade-b24c-717de2c5aafb",
+		"modificationDate": "2023-12-17T16:22:00",
+		"isDeleted": false,
+		"magistratModified": null,
+		"startDate": "2024-12-16T08:00:00",
+		"endDate": "2024-12-20T08:00:00",
+		"evenement": null,
+		"magistrat": {
+			"id": "LCI",
+			"nom": "CLIVAZ",
+			"prenom": "Laurence",
+			"nomPrenom": "CLIVAZ Laurence"
+		},
+		"suppleant": {
+			"id": "KDP",
+			"nom": "DU PASQUIER",
+			"prenom": "Karen",
+			"nomPrenom": "DU PASQUIER Karen"
+		},
+		"section": {
+			"libelleOfficePermanence": "MPa Strada"
+		}
+	},
+	{
+		"id": "71ba56d7-73a0-4afc-9eb9-c799e4c44f20",
+		"modificationDate": "2024-08-07T16:16:00",
+		"isDeleted": false,
+		"magistratModified": null,
+		"startDate": "2024-12-16T08:00:00",
+		"endDate": "2024-12-19T08:00:00",
+		"evenement": null,
+		"magistrat": {
+			"id": "DBT",
+			"nom": "BERTOLI PERRET",
+			"prenom": "Diane",
+			"nomPrenom": "BERTOLI PERRET Diane"
+		},
+		"suppleant": null,
+		"section": {
+			"libelleOfficePermanence": "TMC"
+		}
+	},
+	{
+		"id": "41adf530-6a7e-4416-b6ac-254d70b62992",
+		"modificationDate": "2024-05-06T14:29:00",
+		"isDeleted": false,
+		"magistratModified": null,
+		"startDate": "2024-12-17T08:00:00",
+		"endDate": "2024-12-24T08:00:00",
+		"evenement": null,
+		"magistrat": {
+			"id": "CHK",
+			"nom": "MARGUERAT",
+			"prenom": "Christophe",
+			"nomPrenom": "MARGUERAT Christophe"
+		},
+		"suppleant": {
+			"id": "VBK",
+			"nom": "BETTEX KOLTAKOV",
+			"prenom": "Valérie",
+			"nomPrenom": "BETTEX KOLTAKOV Valérie"
+		},
+		"section": {
+			"libelleOfficePermanence": "TMIN"
+		}
+	},
+	{
+		"id": "632e3534-12a3-4950-baa8-b4c311f6b3c4",
+		"modificationDate": "2023-12-17T18:04:00",
+		"isDeleted": false,
+		"magistratModified": null,
+		"startDate": "2024-12-18T08:00:00",
+		"endDate": "2024-12-20T08:00:00",
+		"evenement": null,
+		"magistrat": {
+			"id": "XMA",
+			"nom": "MANRIQUEZ",
+			"prenom": "Ximena Paola",
+			"nomPrenom": "MANRIQUEZ Ximena Paola"
+		},
+		"suppleant": {
+			"id": "AKA",
+			"nom": "KALBFUSS",
+			"prenom": "Anthony",
+			"nomPrenom": "KALBFUSS Anthony"
+		},
+		"section": {
+			"libelleOfficePermanence": "MPa Lausanne"
+		}
+	},
+	{
+		"id": "bb8dc405-4a9c-4b13-8de0-9fcad1f42bf0",
+		"modificationDate": "2023-12-04T15:52:00",
+		"isDeleted": false,
+		"magistratModified": null,
+		"startDate": "2024-12-19T08:00:00",
+		"endDate": "2024-12-27T08:00:00",
+		"evenement": null,
+		"magistrat": {
+			"id": "DJA",
+			"nom": "JAUNIN LUCIANI",
+			"prenom": "Dominique",
+			"nomPrenom": "JAUNIN LUCIANI Dominique"
+		},
+		"suppleant": null,
+		"section": {
+			"libelleOfficePermanence": "Piquet DIVAS"
+		}
+	},
+	{
+		"id": "c751baca-f373-4a20-9647-6e9b33363545",
+		"modificationDate": "2024-08-07T16:16:00",
+		"isDeleted": false,
+		"magistratModified": null,
+		"startDate": "2024-12-19T08:00:00",
+		"endDate": "2024-12-23T08:00:00",
+		"evenement": null,
+		"magistrat": {
+			"id": "PAE",
+			"nom": "AESCHLIMANN",
+			"prenom": "Patricia",
+			"nomPrenom": "AESCHLIMANN Patricia"
+		},
+		"suppleant": {
+			"id": "DBT",
+			"nom": "BERTOLI PERRET",
+			"prenom": "Diane",
+			"nomPrenom": "BERTOLI PERRET Diane"
+		},
+		"section": {
+			"libelleOfficePermanence": "TMC"
+		}
+	},
+	{
+		"id": "26e121da-4ffb-4c3e-8b21-7be8409aadc4",
+		"modificationDate": "2024-01-03T11:23:00",
+		"isDeleted": false,
+		"magistratModified": null,
+		"startDate": "2024-12-20T08:00:00",
+		"endDate": "2024-12-21T08:00:00",
+		"evenement": null,
+		"magistrat": {
+			"id": "MRN",
+			"nom": "TSCHOPP",
+			"prenom": "Maria",
+			"nomPrenom": "TSCHOPP Maria"
+		},
+		"suppleant": {
+			"id": "MNU",
+			"nom": "COLLAUD",
+			"prenom": "Marlène",
+			"nomPrenom": "COLLAUD Marlène"
+		},
+		"section": {
+			"libelleOfficePermanence": "MPa Lausanne"
+		}
+	},
+	{
+		"id": "0ac5855e-e69f-4f3c-847f-f34ec7d20d2c",
+		"modificationDate": "2024-01-03T11:22:00",
+		"isDeleted": false,
+		"magistratModified": null,
+		"startDate": "2024-12-21T08:00:00",
+		"endDate": "2024-12-22T08:00:00",
+		"evenement": null,
+		"magistrat": {
+			"id": "MNU",
+			"nom": "COLLAUD",
+			"prenom": "Marlène",
+			"nomPrenom": "COLLAUD Marlène"
+		},
+		"suppleant": {
+			"id": "JWG",
+			"nom": "WIGET",
+			"prenom": "Jasmine",
+			"nomPrenom": "WIGET Jasmine"
+		},
+		"section": {
+			"libelleOfficePermanence": "MPa La Côte"
+		}
+	},
+	{
+		"id": "24edf131-3577-4139-84e7-177aafc1a524",
+		"modificationDate": "2023-12-17T17:23:00",
+		"isDeleted": false,
+		"magistratModified": null,
+		"startDate": "2024-12-22T08:00:00",
+		"endDate": "2024-12-23T08:00:00",
+		"evenement": null,
+		"magistrat": {
+			"id": "JWG",
+			"nom": "WIGET",
+			"prenom": "Jasmine",
+			"nomPrenom": "WIGET Jasmine"
+		},
+		"suppleant": {
+			"id": "MRN",
+			"nom": "TSCHOPP",
+			"prenom": "Maria",
+			"nomPrenom": "TSCHOPP Maria"
+		},
+		"section": {
+			"libelleOfficePermanence": "MPa Lausanne"
+		}
+	},
+	{
+		"id": "3dde5646-408a-4bb5-a38d-5e6e813c2c4b",
+		"modificationDate": "2023-10-09T09:27:00",
+		"isDeleted": false,
+		"magistratModified": null,
+		"startDate": "2024-12-23T08:00:00",
+		"endDate": "2024-12-24T08:00:00",
+		"evenement": null,
+		"magistrat": null,
+		"suppleant": null,
+		"section": {
+			"libelleOfficePermanence": "MPa La Côte"
+		}
+	},
+	{
+		"id": "5988ec66-87d6-48e3-bb5e-7aedb9860e0a",
+		"modificationDate": "2023-11-28T12:17:00",
+		"isDeleted": false,
+		"magistratModified": null,
+		"startDate": "2024-12-23T08:00:00",
+		"endDate": "2024-12-24T08:00:00",
+		"evenement": null,
+		"magistrat": {
+			"id": "CLR",
+			"nom": "ROSSIER-DAFFLON",
+			"prenom": "Charlotte",
+			"nomPrenom": "ROSSIER-DAFFLON Charlotte"
+		},
+		"suppleant": {
+			"id": "CMI",
+			"nom": "MAIRE",
+			"prenom": "Christian",
+			"nomPrenom": "MAIRE Christian"
+		},
+		"section": {
+			"libelleOfficePermanence": "MPa Nord vaudois"
+		}
+	},
+	{
+		"id": "de350d8e-9d60-4bda-a70d-0868488df6f3",
+		"modificationDate": "2023-11-29T09:47:00",
+		"isDeleted": false,
+		"magistratModified": null,
+		"startDate": "2024-12-23T08:00:00",
+		"endDate": "2024-12-24T08:00:00",
+		"evenement": null,
+		"magistrat": {
+			"id": "TAN",
+			"nom": "TAVARES",
+			"prenom": "Annick",
+			"nomPrenom": "TAVARES Annick"
+		},
+		"suppleant": {
+			"id": "OBU",
+			"nom": "BUTTET",
+			"prenom": "Olivier",
+			"nomPrenom": "BUTTET Olivier"
+		},
+		"section": {
+			"libelleOfficePermanence": "MPa Est vaudois"
+		}
+	},
+	{
+		"id": "bd34ea27-ae10-47c0-88f3-8f0be727048c",
+		"modificationDate": "2024-09-05T09:33:34.015",
+		"isDeleted": false,
+		"magistratModified": null,
+		"startDate": "2024-09-07T08:00:00",
+		"endDate": "2024-09-08T08:00:00",
+		"evenement": null,
+		"magistrat": {
+			"id": "JWG",
+			"nom": "WIGET",
+			"prenom": "Jasmine",
+			"nomPrenom": "WIGET Jasmine"
+		},
+		"suppleant": {
+			"id": "SRB",
+			"nom": "VALCESCHINI",
+			"prenom": "Séverine",
+			"nomPrenom": "VALCESCHINI Séverine"
+		},
+		"section": {
+			"libelleOfficePermanence": "MPa Lausanne"
+		}
+	},
+	{
+		"id": "7a77e487-0a93-4dbf-8502-d7f48b91826a",
+		"modificationDate": "2024-09-05T09:35:27.232",
+		"isDeleted": false,
+		"magistratModified": null,
+		"startDate": "2025-01-18T08:00:00",
+		"endDate": "2025-01-19T08:00:00",
+		"evenement": null,
+		"magistrat": {
+			"id": "BUF",
+			"nom": "BUFFAT",
+			"prenom": "Christian",
+			"nomPrenom": "BUFFAT Christian"
+		},
+		"suppleant": {
+			"id": "LCI",
+			"nom": "CLIVAZ",
+			"prenom": "Laurence",
+			"nomPrenom": "CLIVAZ Laurence"
+		},
+		"section": {
+			"libelleOfficePermanence": "MPa Lausanne"
+		}
+	},
+	{
+		"id": "a8265211-3023-409a-b66e-4badcd1968f1",
+		"modificationDate": "2024-09-05T09:38:37.506",
+		"isDeleted": false,
+		"magistratModified": null,
+		"startDate": "2024-10-05T08:00:00",
+		"endDate": "2024-10-06T08:00:00",
+		"evenement": null,
+		"magistrat": {
+			"id": "MAO",
+			"nom": "BONVIN",
+			"prenom": "Magali",
+			"nomPrenom": "BONVIN Magali"
+		},
+		"suppleant": null,
+		"section": {
+			"libelleOfficePermanence": "MPa Nord vaudois"
+		}
+	},
+	{
+		"id": "b29496f2-3e61-48f7-b0f2-17c8102f5058",
+		"modificationDate": "2023-12-17T18:04:00",
+		"isDeleted": false,
+		"magistratModified": null,
+		"startDate": "2024-12-23T08:00:00",
+		"endDate": "2024-12-24T08:00:00",
+		"evenement": null,
+		"magistrat": {
+			"id": "JRA",
+			"nom": "RAPIN",
+			"prenom": "Jérémie",
+			"nomPrenom": "RAPIN Jérémie"
+		},
+		"suppleant": {
+			"id": "BDR",
+			"nom": "DENEREAZ",
+			"prenom": "Bernard",
+			"nomPrenom": "DENEREAZ Bernard"
+		},
+		"section": {
+			"libelleOfficePermanence": "MPa Lausanne"
+		}
+	},
+	{
+		"id": "a933faa8-75df-4c9b-91ee-bd8def107d87",
+		"modificationDate": "2024-07-05T09:57:00",
+		"isDeleted": false,
+		"magistratModified": null,
+		"startDate": "2024-12-23T08:00:00",
+		"endDate": "2024-12-24T08:00:00",
+		"evenement": null,
+		"magistrat": {
+			"id": "CDT",
+			"nom": "DELETRA",
+			"prenom": "Carole",
+			"nomPrenom": "DELETRA Carole"
+		},
+		"suppleant": {
+			"id": "DDM",
+			"nom": "DOMINGUEZ",
+			"prenom": "Diana",
+			"nomPrenom": "DOMINGUEZ Diana"
+		},
+		"section": {
+			"libelleOfficePermanence": "MPa Strada"
+		}
+	},
+	{
+		"id": "a8a4efa3-8388-4fbd-b85f-ba4369d96c60",
+		"modificationDate": "2024-08-07T16:18:00",
+		"isDeleted": false,
+		"magistratModified": null,
+		"startDate": "2024-12-23T08:00:00",
+		"endDate": "2024-12-27T08:00:00",
+		"evenement": null,
+		"magistrat": {
+			"id": "ENE",
+			"nom": "NEYROUD",
+			"prenom": "Elina",
+			"nomPrenom": "NEYROUD Elina"
+		},
+		"suppleant": null,
+		"section": {
+			"libelleOfficePermanence": "TMC"
+		}
+	},
+	{
+		"id": "2557d30b-0578-4e99-9e37-878348c95051",
+		"modificationDate": "2024-01-03T11:23:00",
+		"isDeleted": false,
+		"magistratModified": null,
+		"startDate": "2024-12-24T08:00:00",
+		"endDate": "2024-12-25T08:00:00",
+		"evenement": null,
+		"magistrat": {
+			"id": "XCR",
+			"nom": "CHRISTE",
+			"prenom": "Xavier",
+			"nomPrenom": "CHRISTE Xavier"
+		},
+		"suppleant": {
+			"id": "MYO",
+			"nom": "BOURQUIN",
+			"prenom": "Myriam",
+			"nomPrenom": "BOURQUIN Myriam"
+		},
+		"section": {
+			"libelleOfficePermanence": "MPa La Côte"
+		}
+	},
+	{
+		"id": "3a48413d-074a-4f42-8c27-cf6490978eff",
+		"modificationDate": "2024-05-06T14:29:00",
+		"isDeleted": false,
+		"magistratModified": null,
+		"startDate": "2024-12-24T08:00:00",
+		"endDate": "2024-12-31T08:00:00",
+		"evenement": null,
+		"magistrat": {
+			"id": "ERE",
+			"nom": "REDONDO",
+			"prenom": "Eduardo",
+			"nomPrenom": "REDONDO Eduardo"
+		},
+		"suppleant": {
+			"id": "CHK",
+			"nom": "MARGUERAT",
+			"prenom": "Christophe",
+			"nomPrenom": "MARGUERAT Christophe"
+		},
+		"section": {
+			"libelleOfficePermanence": "TMIN"
+		}
+	},
+	{
+		"id": "9db3949c-a71a-476b-a2bc-a37076221d19",
+		"modificationDate": "2023-12-17T17:24:00",
+		"isDeleted": false,
+		"magistratModified": null,
+		"startDate": "2024-12-25T08:00:00",
+		"endDate": "2024-12-26T08:00:00",
+		"evenement": null,
+		"magistrat": {
+			"id": "MYO",
+			"nom": "BOURQUIN",
+			"prenom": "Myriam",
+			"nomPrenom": "BOURQUIN Myriam"
+		},
+		"suppleant": {
+			"id": "JON",
+			"nom": "CORNU",
+			"prenom": "Jonathan",
+			"nomPrenom": "CORNU Jonathan"
+		},
+		"section": {
+			"libelleOfficePermanence": "MPa Est vaudois"
+		}
+	},
+	{
+		"id": "63157ce6-04c3-49a4-a423-a685c56763c0",
+		"modificationDate": "2024-05-08T12:26:00",
+		"isDeleted": false,
+		"magistratModified": null,
+		"startDate": "2024-12-26T08:00:00",
+		"endDate": "2024-12-27T08:00:00",
+		"evenement": null,
+		"magistrat": {
+			"id": "JON",
+			"nom": "CORNU",
+			"prenom": "Jonathan",
+			"nomPrenom": "CORNU Jonathan"
+		},
+		"suppleant": {
+			"id": "NFN",
+			"nom": "FRANÇAIS",
+			"prenom": "Nicolas",
+			"nomPrenom": "FRANÇAIS Nicolas"
+		},
+		"section": {
+			"libelleOfficePermanence": "MPa Lausanne"
+		}
+	},
+	{
+		"id": "1a50aec1-7b8d-47c8-802d-4898fe629d51",
+		"modificationDate": "2023-12-04T15:52:00",
+		"isDeleted": false,
+		"magistratModified": null,
+		"startDate": "2024-12-27T08:00:00",
+		"endDate": "2025-01-03T08:00:00",
+		"evenement": null,
+		"magistrat": {
+			"id": "EMM",
+			"nom": "MERMOUD",
+			"prenom": "Eric",
+			"nomPrenom": "MERMOUD Eric"
+		},
+		"suppleant": null,
+		"section": {
+			"libelleOfficePermanence": "Piquet DIVAS"
+		}
+	},
+	{
+		"id": "a508a2da-1814-4374-bfc8-9390baad1fbb",
+		"modificationDate": "2024-05-08T12:27:00",
+		"isDeleted": false,
+		"magistratModified": null,
+		"startDate": "2024-12-27T08:00:00",
+		"endDate": "2024-12-28T08:00:00",
+		"evenement": null,
+		"magistrat": {
+			"id": "NFN",
+			"nom": "FRANÇAIS",
+			"prenom": "Nicolas",
+			"nomPrenom": "FRANÇAIS Nicolas"
+		},
+		"suppleant": {
+			"id": "JRA",
+			"nom": "RAPIN",
+			"prenom": "Jérémie",
+			"nomPrenom": "RAPIN Jérémie"
+		},
+		"section": null
+	},
+	{
+		"id": "d12a41b5-3ebc-4e74-bbb2-215df20133f7",
+		"modificationDate": "2024-08-07T16:19:00",
+		"isDeleted": false,
+		"magistratModified": null,
+		"startDate": "2024-12-27T08:00:00",
+		"endDate": "2024-12-30T08:00:00",
+		"evenement": null,
+		"magistrat": {
+			"id": "JEM",
+			"nom": "MAS",
+			"prenom": "Jérémy",
+			"nomPrenom": "MAS Jérémy"
+		},
+		"suppleant": null,
+		"section": {
+			"libelleOfficePermanence": "TMC"
+		}
+	},
+	{
+		"id": "03c93f35-df8e-4341-b1aa-a262858b1d5a",
+		"modificationDate": "2023-12-17T17:25:00",
+		"isDeleted": false,
+		"magistratModified": null,
+		"startDate": "2024-12-28T08:00:00",
+		"endDate": "2024-12-29T08:00:00",
+		"evenement": null,
+		"magistrat": {
+			"id": "JRA",
+			"nom": "RAPIN",
+			"prenom": "Jérémie",
+			"nomPrenom": "RAPIN Jérémie"
+		},
+		"suppleant": {
+			"id": "TAN",
+			"nom": "TAVARES",
+			"prenom": "Annick",
+			"nomPrenom": "TAVARES Annick"
+		},
+		"section": {
+			"libelleOfficePermanence": "MPa Lausanne"
+		}
+	},
+	{
+		"id": "4def3e95-89a5-4f4e-98a7-9708cd3ecd7a",
+		"modificationDate": "2024-01-03T11:25:00",
+		"isDeleted": false,
+		"magistratModified": null,
+		"startDate": "2024-12-29T08:00:00",
+		"endDate": "2024-12-30T08:00:00",
+		"evenement": null,
+		"magistrat": {
+			"id": "TAN",
+			"nom": "TAVARES",
+			"prenom": "Annick",
+			"nomPrenom": "TAVARES Annick"
+		},
+		"suppleant": {
+			"id": "XCR",
+			"nom": "CHRISTE",
+			"prenom": "Xavier",
+			"nomPrenom": "CHRISTE Xavier"
+		},
+		"section": {
+			"libelleOfficePermanence": "MPa Est vaudois"
+		}
+	},
+	{
+		"id": "d32c8bc1-6933-42b9-ad1a-c15fcc1b9784",
+		"modificationDate": "2024-01-03T16:28:00",
+		"isDeleted": false,
+		"magistratModified": null,
+		"startDate": "2024-12-30T08:00:00",
+		"endDate": "2024-12-31T08:00:00",
+		"evenement": null,
+		"magistrat": {
+			"id": "MNU",
+			"nom": "COLLAUD",
+			"prenom": "Marlène",
+			"nomPrenom": "COLLAUD Marlène"
+		},
+		"suppleant": {
+			"id": "VWT",
+			"nom": "DE WATTEVILLE SUBILIA",
+			"prenom": "Valérie",
+			"nomPrenom": "DE WATTEVILLE SUBILIA Valérie"
+		},
+		"section": {
+			"libelleOfficePermanence": "MPa La Côte"
+		}
+	},
+	{
+		"id": "801a62f0-d89e-4faf-8838-0a796a865ec2",
+		"modificationDate": "2023-10-09T09:32:00",
+		"isDeleted": false,
+		"magistratModified": null,
+		"startDate": "2024-12-30T08:00:00",
+		"endDate": "2024-12-31T08:00:00",
+		"evenement": null,
+		"magistrat": null,
+		"suppleant": null,
+		"section": {
+			"libelleOfficePermanence": "MPa Nord vaudois"
+		}
+	},
+	{
+		"id": "656c4c9f-814f-4cfa-9af8-d2682f0490fd",
+		"modificationDate": "2024-02-13T10:13:00",
+		"isDeleted": false,
+		"magistratModified": null,
+		"startDate": "2024-12-30T08:00:00",
+		"endDate": "2024-12-31T08:00:00",
+		"evenement": null,
+		"magistrat": {
+			"id": "TAN",
+			"nom": "TAVARES",
+			"prenom": "Annick",
+			"nomPrenom": "TAVARES Annick"
+		},
+		"suppleant": {
+			"id": "CMS",
+			"nom": "MASSON",
+			"prenom": "Camilla",
+			"nomPrenom": "MASSON Camilla"
+		},
+		"section": {
+			"libelleOfficePermanence": "MPa Est vaudois"
+		}
+	},
+	{
+		"id": "cc51e2f2-ef79-45f6-828f-d3b0f081d0cf",
+		"modificationDate": "2023-12-17T18:04:00",
+		"isDeleted": false,
+		"magistratModified": null,
+		"startDate": "2024-12-30T08:00:00",
+		"endDate": "2024-12-31T08:00:00",
+		"evenement": null,
+		"magistrat": {
+			"id": "SJH",
+			"nom": "JOHNER",
+			"prenom": "Stephan",
+			"nomPrenom": "JOHNER Stephan"
+		},
+		"suppleant": {
+			"id": "BDR",
+			"nom": "DENEREAZ",
+			"prenom": "Bernard",
+			"nomPrenom": "DENEREAZ Bernard"
+		},
+		"section": {
+			"libelleOfficePermanence": "MPa Lausanne"
+		}
+	},
+	{
+		"id": "7aec461a-c2cb-43ef-8637-e7c0cc4cac7c",
+		"modificationDate": "2023-12-17T16:22:00",
+		"isDeleted": false,
+		"magistratModified": null,
+		"startDate": "2024-12-30T08:00:00",
+		"endDate": "2024-12-31T08:00:00",
+		"evenement": null,
+		"magistrat": {
+			"id": "DDM",
+			"nom": "DOMINGUEZ",
+			"prenom": "Diana",
+			"nomPrenom": "DOMINGUEZ Diana"
+		},
+		"suppleant": {
+			"id": "CME",
+			"nom": "MATTHEY",
+			"prenom": "Cédric",
+			"nomPrenom": "MATTHEY Cédric"
+		},
+		"section": {
+			"libelleOfficePermanence": "MPa Strada"
+		}
+	},
+	{
+		"id": "12f45f1e-de98-4693-a265-2f536bd9d68e",
+		"modificationDate": "2024-08-07T16:20:00",
+		"isDeleted": false,
+		"magistratModified": null,
+		"startDate": "2024-12-30T08:00:00",
+		"endDate": "2025-01-06T08:00:00",
+		"evenement": null,
+		"magistrat": {
+			"id": "JSE",
+			"nom": "SEREX",
+			"prenom": "Jessica",
+			"nomPrenom": "SEREX Jessica"
+		},
+		"suppleant": {
+			"id": "LAS",
+			"nom": "SUTER",
+			"prenom": "Laure-Anne",
+			"nomPrenom": "SUTER Laure-Anne"
+		},
+		"section": {
+			"libelleOfficePermanence": "TMC"
+		}
+	},
+	{
+		"id": "af78fb7d-3a8f-479e-becc-2b7f46740760",
+		"modificationDate": "2023-12-17T17:26:00",
+		"isDeleted": false,
+		"magistratModified": null,
+		"startDate": "2024-12-31T08:00:00",
+		"endDate": "2025-01-01T08:00:00",
+		"evenement": null,
+		"magistrat": {
+			"id": "CME",
+			"nom": "MATTHEY",
+			"prenom": "Cédric",
+			"nomPrenom": "MATTHEY Cédric"
+		},
+		"suppleant": {
+			"id": "MMR",
+			"nom": "MORET",
+			"prenom": "Marjorie",
+			"nomPrenom": "MORET Marjorie"
+		},
+		"section": null
+	},
+	{
+		"id": "94eedb55-2c23-4436-ba46-51f2e2ad044c",
+		"modificationDate": "2024-05-06T14:30:00",
+		"isDeleted": false,
+		"magistratModified": null,
+		"startDate": "2024-12-31T08:00:00",
+		"endDate": "2025-01-02T08:00:00",
+		"evenement": null,
+		"magistrat": {
+			"id": "AUP",
+			"nom": "AUBERSON",
+			"prenom": "Patrick",
+			"nomPrenom": "AUBERSON Patrick"
+		},
+		"suppleant": {
+			"id": "ERE",
+			"nom": "REDONDO",
+			"prenom": "Eduardo",
+			"nomPrenom": "REDONDO Eduardo"
+		},
+		"section": {
+			"libelleOfficePermanence": "TMIN"
+		}
+	},
+	{
+		"id": "79bb0831-149e-4efd-bad4-019228f47205",
+		"modificationDate": "2023-12-17T17:26:00",
+		"isDeleted": false,
+		"magistratModified": null,
+		"startDate": "2025-01-01T08:00:00",
+		"endDate": "2025-01-02T08:00:00",
+		"evenement": null,
+		"magistrat": {
+			"id": "MMR",
+			"nom": "MORET",
+			"prenom": "Marjorie",
+			"nomPrenom": "MORET Marjorie"
+		},
+		"suppleant": {
+			"id": "LAE",
+			"nom": "BRENLLA",
+			"prenom": "Laurence",
+			"nomPrenom": "BRENLLA Laurence"
+		},
+		"section": {
+			"libelleOfficePermanence": "MPa Lausanne"
+		}
+	},
+	{
+		"id": "efab9cb9-8672-4623-bf1c-5282a33790b3",
+		"modificationDate": "2023-12-17T17:26:00",
+		"isDeleted": false,
+		"magistratModified": null,
+		"startDate": "2025-01-02T08:00:00",
+		"endDate": "2025-01-03T08:00:00",
+		"evenement": null,
+		"magistrat": {
+			"id": "LAE",
+			"nom": "BRENLLA",
+			"prenom": "Laurence",
+			"nomPrenom": "BRENLLA Laurence"
+		},
+		"suppleant": {
+			"id": "CME",
+			"nom": "MATTHEY",
+			"prenom": "Cédric",
+			"nomPrenom": "MATTHEY Cédric"
+		},
+		"section": {
+			"libelleOfficePermanence": "MPa Nord vaudois"
+		}
+	},
+	{
+		"id": "559c5194-7135-45f2-8a9b-06ec72670484",
+		"modificationDate": "2023-12-04T15:53:00",
+		"isDeleted": false,
+		"magistratModified": null,
+		"startDate": "2025-01-03T08:00:00",
+		"endDate": "2025-01-10T08:00:00",
+		"evenement": null,
+		"magistrat": {
+			"id": "BUF",
+			"nom": "BUFFAT",
+			"prenom": "Christian",
+			"nomPrenom": "BUFFAT Christian"
+		},
+		"suppleant": null,
+		"section": {
+			"libelleOfficePermanence": "Piquet DIVAS"
+		}
+	},
+	{
+		"id": "9429bcb4-d506-4031-ad5e-36d477bd89e8",
+		"modificationDate": "2024-09-05T09:22:33.473",
+		"isDeleted": false,
+		"magistratModified": null,
+		"startDate": "2025-01-11T08:00:00",
+		"endDate": "2025-01-12T08:00:00",
+		"evenement": null,
+		"magistrat": {
+			"id": "MAO",
+			"nom": "BONVIN",
+			"prenom": "Magali",
+			"nomPrenom": "BONVIN Magali"
+		},
+		"suppleant": {
+			"id": "BUF",
+			"nom": "BUFFAT",
+			"prenom": "Christian",
+			"nomPrenom": "BUFFAT Christian"
+		},
+		"section": {
+			"libelleOfficePermanence": "MPa Lausanne"
+		}
+	}
+]

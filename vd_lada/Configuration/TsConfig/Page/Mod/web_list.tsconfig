@@ -1,0 +1,4 @@
+mod.web_list.tableDisplayOrder {
+  tx_vdlada_domain_model_housing.before = tx_vdlada_domain_model_health_network
+  tx_vdlada_domain_model_housing_type.before = tx_vdlada_domain_model_health_network
+}

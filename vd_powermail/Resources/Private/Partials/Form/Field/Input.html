@@ -1,0 +1,23 @@
+<html data-namespace-typo3-fluid="true" xmlns:f="http://typo3.org/ns/TYPO3/CMS/Fluid/ViewHelpers" xmlns:p="http://typo3.org/ns/In2code/Powermail/ViewHelpers" xmlns:vdp="http://typo3.org/ns/Vd/VdPowermail/ViewHelpers">
+    <div class="mb-3{p:Validation.ErrorClass(field: field, class: ' vd-form-group-danger')}">
+        <f:render arguments="{field: field}" partial="Form/Label"/>
+        <f:render arguments="{errorText: field.errorText, marker: field.marker}" partial="Form/Error/FieldError"/>
+        <f:render arguments="{helpText: field.helpText}" partial="Form/HelpText"/>
+        <vdp:validation.hasError field="{field}">
+            <f:then>
+                <f:variable name="ariaDescribedBy" value="{f:if(condition: field.helpText, else: 'testInputErrorMessage', then: 'testInputErrorMessage testInputHelp')}"/>
+                <f:form.textfield additionalAttributes="{p:Validation.ValidationDataAttribute(additionalAttributes: '{aria-describedby: ariaDescribedBy, aria-invald: \'true\'}', field: field)}" class="form-control is-invalid" id="{field.marker}" placeholder="{field.placeholder}" property="{field.marker}" type="{p:Validation.FieldTypeFromValidation(field: field)}" value="{p:Misc.PrefillField(field: field, mail: mail)}"/>
+            </f:then>
+            <f:else>
+                <f:if condition="{field.helpText}">
+                    <f:then>
+                        <f:form.textfield additionalAttributes="{p:Validation.ValidationDataAttribute(additionalAttributes: '{aria-describedby: \'testInputHelp\'}', field: field)}" class="form-control" id="{field.marker}" placeholder="{field.placeholder}" property="{field.marker}" type="{p:Validation.FieldTypeFromValidation(field: field)}" value="{p:Misc.PrefillField(field: field, mail: mail)}"/>
+                    </f:then>
+                    <f:else>
+                        <f:form.textfield additionalAttributes="{p:Validation.ValidationDataAttribute(field: field)}" class="form-control" id="{field.marker}" placeholder="{field.placeholder}" property="{field.marker}" type="{p:Validation.FieldTypeFromValidation(field: field)}" value="{p:Misc.PrefillField(field: field, mail: mail)}"/>
+                    </f:else>
+                </f:if>
+            </f:else>
+        </vdp:validation.hasError>
+    </div>
+</html>

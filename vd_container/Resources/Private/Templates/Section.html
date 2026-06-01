@@ -1,0 +1,35 @@
+<html data-namespace-typo3-fluid="true" xmlns:f="http://typo3.org/ns/TYPO3/CMS/Fluid/ViewHelpers">
+    <f:if condition="{children_200}">
+        <f:switch expression="{data.layout}">
+            <f:case value="dark">
+                <f:variable name="css" value="bg-dark {data.space_after_class} text-bg-dark"/>
+            </f:case>
+            <f:case value="light">
+                <f:variable name="css" value="bg-light {data.space_after_class} text-bg-light"/>
+            </f:case>
+            <f:case value="primary_light">
+                <f:variable name="css" value="bg-primary-lighter {data.space_after_class} text-bg-light"/>
+            </f:case>
+            <f:case value="secondary_light">
+                <f:variable name="css" value="bg-secondary-lighter {data.space_after_class} text-bg-light"/>
+            </f:case>
+            <f:case value="tertiary_light">
+                <f:variable name="css" value="bg-tertiary-lighter {data.space_after_class} text-bg-light"/>
+            </f:case>
+            <f:defaultCase>
+                <f:variable name="css" value="bg-white {data.space_after_class} text-bg-white"/>
+            </f:defaultCase>
+        </f:switch>
+        <section class="{css}">
+            <div class="container">
+                <div class="row">
+                    <f:for as="child" each="{children_200}">
+                        <div class="col-md-12">
+                            <f:format.raw>{child.renderedContent}</f:format.raw>
+                        </div>
+                    </f:for>
+                </div>
+            </div>
+        </section>
+    </f:if>
+</html>

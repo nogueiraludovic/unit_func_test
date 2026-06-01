@@ -1,0 +1,196 @@
+<html data-namespace-typo3-fluid="true" xmlns:f="http://typo3.org/ns/fluid/ViewHelpers" xmlns:vds="http://typo3.org/ns/Vd/VdSafarinet/ViewHelpers">
+    <f:layout/>
+    <f:section name="Main">
+        <div class="row">
+            <div class="col-sm-12">
+                <div class="row">
+                    <div class="col-md-6 col-sm-12">
+                        <strong class="heading">Auteur</strong>
+                        <p>
+                            <f:if condition="{object.prenom} && {object.nom}">
+                                <f:then>{object.prenom} {object.nom}</f:then>
+                                <f:else>-</f:else>
+                            </f:if>
+                        </p>
+                    </div>
+                    <div class="col-md-6 col-sm-12">
+                        <strong class="heading">Date du dépôt</strong>
+                        <p>
+                            <f:if condition="{object.dateDepot}">
+                                <f:then>
+                                    <f:format.date date="{object.dateDepot}" format="d.m.Y"/>
+                                </f:then>
+                                <f:else>-</f:else>
+                            </f:if>
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-sm-12">
+                <div class="row">
+                    <div class="col-md-6 col-sm-12">
+                        <strong class="heading">Département pilote</strong>
+                        <p><f:if condition="{object.pilote}">
+                            <f:then>{object.pilote}</f:then>
+                            <f:else>-</f:else>
+                        </f:if></p>
+                    </div>
+                    <div class="col-md-6 col-sm-12">
+                        <strong class="heading">Département en appui</strong>
+                        <p><f:if condition="{object.autre}">
+                            <f:then>{object.autre}</f:then>
+                            <f:else>-</f:else>
+                        </f:if></p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-sm-12">
+                <div class="row">
+                    <div class="col-md-6 col-sm-12">
+                        <strong class="heading">Identifiant</strong>
+                        <p>
+                            <f:if condition="{object.id}">
+                                <f:then>{object.id}</f:then>
+                                <f:else>-</f:else>
+                            </f:if>
+                        </p>
+                    </div>
+                    <div class="col-md-6 col-sm-12">
+                        <strong class="heading">Commission</strong>
+                        <p>
+                            <f:if condition="{object.commission}">
+                                <f:then>
+                                    <f:link.action action="show" arguments="{groupId: object.commission.id, memberId: memberId}" controller="Group" id="object-commission-link" pageUid="{settings.groupDetailPageUid}" title="{object.commission.nom}">
+                                        {object.commission.sigle}
+                                    </f:link.action>
+                                </f:then>
+                                <f:else>-</f:else>
+                            </f:if>
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-sm-12">
+                <div class="row">
+                    <div class="col-md-6 col-sm-12">
+                        <strong class="heading">Délais réponse du CE</strong>
+                        <p>
+                            <f:if condition="{object.dateDelaiReponse}">
+                                <f:then>
+                                    <f:format.date date="{object.dateDelaiReponse}" format="d.m.Y"/>
+                                </f:then>
+                                <f:else>-</f:else>
+                            </f:if>
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-sm-12 mb-4">
+                <strong class="heading">Dernière décision du GC</strong>
+                <p><f:if condition="{object.derniereDecisionGC}">
+                    <f:then>{object.derniereDecisionGC}</f:then>
+                    <f:else>-</f:else>
+                </f:if></p>
+            </div>
+            <f:if condition="{object.texte}">
+                <div class="col-sm-12 mb-4">
+                    <h2 id="text-title">Texte déposé</h2>
+                    <f:format.html>{object.texte}</f:format.html>
+                </div>
+            </f:if>
+            <f:if condition="{object.conclusion}">
+                <div class="col-sm-12 mb-4">
+                    <h2 id="conclusion-title">Conclusion</h2>
+                    <f:format.html>{object.conclusion}</f:format.html>
+                </div>
+            </f:if>
+            <f:if condition="{object.documents.document}">
+                <div class="col-xs-12 mb-4">
+                    <h2 id="documents-title">Documents</h2>
+                    <div class="table-responsive">
+                        <table class="table table-striped">
+                            <thead>
+                                <tr>
+                                    <th><f:translate id="link"/></th>
+                                    <th>Type</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <f:for as="document" each="{object.documents.document -> vds:format.toArrayList()}">
+                                    <tr>
+                                        <td>
+                                            <span aria-hidden="true" class="fa fa-download"></span>&nbsp;<vds:document document="{document}"/>
+                                        </td>
+                                        <td>
+                                            <f:if condition="{document.type}">
+                                                <f:then>{document.type}</f:then>
+                                                <f:else>-</f:else>
+                                            </f:if>
+                                        </td>
+                                    </tr>
+                                </f:for>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+            </f:if>
+            <f:if condition="{object.seances.seance}">
+                <div class="col-xs-12 mb-4">
+                    <h2 id="odj-meetings-title">Séances dont l'objet a été à l'ODJ</h2>
+                    <div class="table-responsive">
+                        <table class="table table-striped">
+                            <thead>
+                                <tr>
+                                    <th>Date</th>
+                                    <th>Décision</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <f:for as="seance" each="{object.seances.seance -> vds:format.toArrayList()}">
+                                    <tr>
+                                        <td><f:format.date format="d.m.Y">{seance.dateSeance}</f:format.date></td>
+                                        <td>
+                                            <f:if condition="{seance.decision}">
+                                                <f:then>{seance.decision}</f:then>
+                                                <f:else>-</f:else>
+                                            </f:if>
+                                        </td>
+                                    </tr>
+                                </f:for>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+            </f:if>
+            <f:if condition="{object.signataires.membre}">
+                <div class="col-xs-12 mb-4 mt-5">
+                    <h2 id="cosigners-list-title">Liste exhaustive des cosignataires</h2>
+                    <div class="table-responsive">
+                        <table class="table table-striped">
+                            <thead>
+                                <tr>
+                                    <th>Signataire</th>
+                                    <th>Parti</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <f:for as="signataire" each="{object.signataires.membre -> vds:format.toArrayList()}">
+                                    <tr>
+                                        <td>{signataire.prenom} {signataire.nom}</td>
+                                        <td>
+                                            <f:if condition="{signataire.parti}">
+                                                <f:then>{signataire.parti}</f:then>
+                                                <f:else>-</f:else>
+                                            </f:if>
+                                        </td>
+                                    </tr>
+                                </f:for>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+            </f:if>
+            <f:render arguments="{memberId: memberId}" partial="Member/Back"/>
+        </div>
+    </f:section>
+</html>

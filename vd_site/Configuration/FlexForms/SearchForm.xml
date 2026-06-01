@@ -1,0 +1,24 @@
+<T3DataStructure>
+    <sheets>
+        <general>
+            <ROOT>
+                <el>
+                    <suggestions>
+                        <TCEforms>
+                            <config>
+                                <eval>trim</eval>
+                                <max>255</max>
+                                <placeholder>Permis C, Vacances, Piscines, Presse</placeholder>
+                                <type>input</type>
+                            </config>
+                            <label>LLL:EXT:vd_site/Resources/Private/Language/locallang_db.xlf:suggestions</label>
+                        </TCEforms>
+                    </suggestions>
+                </el>
+                <TCEforms>
+                    <sheetTitle>LLL:EXT:core/Resources/Private/Language/Form/locallang_tabs.xlf:general</sheetTitle>
+                </TCEforms>
+            </ROOT>
+        </general>
+    </sheets>
+</T3DataStructure>

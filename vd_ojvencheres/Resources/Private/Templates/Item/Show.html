@@ -1,0 +1,212 @@
+<html data-namespace-typo3-fluid="true" xmlns:f="http://typo3.org/ns/TYPO3/CMS/Fluid/ViewHelpers" xmlns:n="http://typo3.org/ns/GeorgRinger/News/ViewHelpers">
+    <f:for as="category" each="{item.itemCategories}">
+        <n:metaTag content="Switzerland" property="og:country-name"/>
+        <f:if condition="{item.description}">
+            <n:metaTag content="{item.description}" name="description"/>
+            <n:metaTag content="{item.description}" property="og:description"/>
+        </f:if>
+        <f:if condition="{item.sale.status} == 2">
+            <f:then>
+                <n:metaTag content="{f:uri.image(height: 486, src: 'EXT:vd_ojvencheres/Resources/Public/Images/Canceled.png', maxHeight: 486)}" forceAbsoluteUrl="1" property="og:image"/>
+            </f:then>
+            <f:else>
+                <f:if condition="{item.pictures}">
+                    <n:metaTag content="{f:uri.image(image: item.pictures.0, maxWidth: 1200)}" forceAbsoluteUrl="1" property="og:image"/>
+                </f:if>
+            </f:else>
+        </f:if>
+        <f:if condition="{item.city}">
+            <n:metaTag content="{item.city}" property="og:locality"/>
+        </f:if>
+        <f:if condition="{item.zipCode}">
+            <n:metaTag content="{item.zipCode}" property="og:postal-code"/>
+        </f:if>
+        <n:metaTag content="Site officiel du Canton de Vaud" property="og:site_name"/>
+        <f:if condition="{item.address}">
+            <n:metaTag content="{item.address}" property="og:street-address"/>
+        </f:if>
+        <n:metaTag content="article" property="og:type"/>
+        <n:metaTag content="" property="og:url" useCurrentDomain="1"/>
+        <f:if condition="{item.sale.status} == 2">
+            <f:then>
+                <f:image alt="{f:translate(id: 'canceled')}" class="img-fluid" loading="lazy" src="EXT:vd_ojvencheres/Resources/Public/Images/Canceled.png" width="730"/>
+            </f:then>
+            <f:else>
+                <f:if condition="{item.pictures}">
+                    <div class="carousel mb-5 slide" data-bs-ride="carousel" id="carousel">
+                        <div class="carousel-indicators">
+                            <f:for as="picture" each="{item.pictures}" iteration="iterator">
+                                <button aria-current="true" aria-label="Slide {iterator.index}"{f:if(condition: iterator.isFirst, then: ' class="active"')} data-bs-slide-to="{iterator.index}" data-bs-target="#carousel" type="button"></button>
+                            </f:for>
+                        </div>
+                        <div class="carousel-inner">
+                            <f:for as="picture" each="{item.pictures}" iteration="iterator">
+                                <div class="{f:if(condition: iterator.isFirst, then: 'active ')}carousel-item">
+                                    <f:image alt="{picture.alternative}" class="d-block img-fluid w-100" image="{picture}" loading="lazy" width="730"/>
+                                </div>
+                            </f:for>
+                        </div>
+                        <f:if condition="{item.pictures -> f:count()} > 1">
+                            <button class="carousel-control-prev" data-bs-slide="prev" data-bs-target="#carousel" type="button">
+                                <span aria-hidden="true" class="carousel-control-prev-icon"></span>
+                                <span class="visually-hidden">{f:translate(id: 'previous')}</span>
+                            </button>
+                            <button class="carousel-control-next" data-bs-slide="next" data-bs-target="#carousel" type="button">
+                                <span aria-hidden="true" class="carousel-control-next-icon"></span>
+                                <span class="visually-hidden">{f:translate(id: 'next')}</span>
+                            </button>
+                        </f:if>
+                    </div>
+                </f:if>
+            </f:else>
+        </f:if>
+        <f:render arguments="{property: item.itemSubCategories.0.name, label: 'type'}" partial="Show/Property"/>
+        <f:switch expression="{category.uid}">
+            <f:case value="3">
+                <f:render arguments="{item: item}" partial="Show/Item/Description"/>
+                <f:render arguments="{property: item.address, label: 'address'}" partial="Show/Property"/>
+                <f:render arguments="{property: item.zipCode, label: 'zip_code'}" partial="Show/Property"/>
+                <f:render arguments="{property: item.city, label: 'city'}" partial="Show/Property"/>
+                <f:render arguments="{property: item.municipality, label: 'municipality'}" partial="Show/Property"/>
+                <f:render arguments="{property: item.district, label: 'district'}" partial="Show/Property"/>
+                <f:if condition="{item.address} && {item.city} && {item.zipCode}">
+                    <dl class="row">
+                        <dt class="col-md-4"><f:translate id="locate_item"/></dt>
+                        <dd class="col-md-8">
+                            <a href="https://www.google.ch/maps/search/{f:format.urlencode(value: '{item.address}, {item.zipCode} {item.city}')}" id="google-maps-link">
+                                <f:translate id="locate_google_maps"/>
+                            </a>
+                        </dd>
+                    </dl>
+                </f:if>
+                <f:render arguments="{property: item.parcelnumber, label: 'parcel_number'}" partial="Show/Property"/>
+                <f:render arguments="{property: item.surface, label: 'surface'}" partial="Show/Property"/>
+                <f:render arguments="{property: item.year, label: 'building_year'}" partial="Show/Property"/>
+                <f:render arguments="{item: item, label: 'office_estimation'}" partial="Show/Item/Price"/>
+                <f:render arguments="{property: item.roomsnumber, label: 'rooms_number'}" partial="Show/Property"/>
+            </f:case>
+            <f:case value="4">
+                <f:render arguments="{item: item, label: 'start_price'}" partial="Show/Item/Price"/>
+                <f:render arguments="{property: item.brand, label: 'brand'}" partial="Show/Property"/>
+                <f:render arguments="{property: item.model, label: 'model'}" partial="Show/Property"/>
+                <f:render arguments="{property: item.color, label: 'color'}" partial="Show/Property"/>
+                <f:render arguments="{property: item.year, label: 'circulation_year'}" partial="Show/Property"/>
+                <f:if condition="{item.expertisedate}">
+                    <dl class="row">
+                        <dt class="col-md-4"><f:translate id="latest_expertise"/></dt>
+                        <dd class="col-md-8"><f:format.date format="%d.%m.%Y">@{item.expertisedate}</f:format.date></dd>
+                    </dl>
+                </f:if>
+                <f:if condition="{item.kilometer}">
+                    <dl class="row">
+                        <dt class="col-md-4"><f:translate id="kilometer"/></dt>
+                        <dd class="col-md-8"><f:format.number decimals="0" decimalSeparator="." thousandsSeparator="'">{item.kilometer}</f:format.number></dd>
+                    </dl>
+                </f:if>
+                <f:render arguments="{item: item}" partial="Show/Item/Description"/>
+                <f:render arguments="{item: item}" partial="Show/Item/Conditions"/>
+            </f:case>
+            <f:defaultCase>
+                <f:render arguments="{item: item, label: 'start_price'}" partial="Show/Item/Price"/>
+                <f:render arguments="{item: item}" partial="Show/Item/Description"/>
+                <f:render arguments="{item: item}" partial="Show/Item/Conditions"/>
+            </f:defaultCase>
+        </f:switch>
+        <f:if condition="{item.allDocuments}">
+            <dl class="row">
+                <dt class="col-md-4"><f:translate id="documents"/></dt>
+                <dd class="col-md-8">
+                    <f:for as="document" each="{item.allDocuments}" iteration="iterator">
+                        <div>
+                            <a href="{document.originalResource.publicUrl}" id="document-original-resource-link-{iterator.index}">
+                                <f:if condition="{document.originalResource.title}">
+                                    <f:then>
+                                        {document.originalResource.title}
+                                    </f:then>
+                                    <f:else>
+                                        {document.originalResource.originalFile.properties.name}
+                                    </f:else>
+                                </f:if>
+                            </a>
+                            - ({document.originalResource.originalFile.properties.size -> f:format.bytes(units: 'o,Ko,Mo,Go,To,Po,Eo,Zo,Yo')})
+                        </div>
+                    </f:for>
+                </dd>
+            </dl>
+        </f:if>
+        <f:if condition="{item.observations}">
+            <dl class="row">
+                <dt class="col-md-4"><f:translate id="observations"/></dt>
+                <dd class="col-md-8"><f:format.html>{item.observations}</f:format.html></dd>
+            </dl>
+        </f:if>
+        <f:if condition="{item.sale}">
+            <dl class="row">
+                <dt class="col-md-4">
+                    <f:if condition="{item.sale.saleCategories.0.status} < 2">
+                        <f:if condition="{item.sale.saleCategories.0.uid} == 1">
+                            <f:then>
+                                <f:translate id="submission_deadline"/>
+                            </f:then>
+                            <f:else>
+                                <f:translate id="sale_date"/>
+                            </f:else>
+                        </f:if>
+                    </f:if>
+                </dt>
+                <dd class="col-md-8">
+                    <f:if condition="{item.sale.status} == 2">
+                        <f:then>
+                            <span class="text-danger"><f:translate id="canceled"/></span>
+                        </f:then>
+                        <f:else>
+                            <ul class="list-unstyled mb-0">
+                                <f:for as="saleDate" each="{item.sale.saleDate}">
+                                    <li><f:format.date format="%d %B %Y">{saleDate.saleDate}</f:format.date></li>
+                                </f:for>
+                            </ul>
+                        </f:else>
+                    </f:if>
+                </dd>
+            </dl>
+        </f:if>
+        <f:if condition="{item.sale.city}">
+            <dl class="row">
+                <dt class="col-md-4">
+                    <f:if condition="{item.sale.saleCategories.0.uid} == 1">
+                        <f:then>
+                            <f:translate id="reply_address"/>
+                        </f:then>
+                        <f:else>
+                            <f:translate id="sale_place"/>
+                        </f:else>
+                    </f:if>
+                </dt>
+                <dd class="col-md-8">
+                    <f:if condition="{item.sale.address}">
+                        {item.sale.address},
+                    </f:if>
+                    <f:if condition="{item.sale.saleCategories.0.uid} == 1 && {item.sale.pobox}">
+                        <f:translate id="po_box"/> {item.sale.pobox},
+                    </f:if>
+                    <f:if condition="{item.sale.zipCode}">
+                        {item.sale.zipCode}
+                    </f:if>
+                    <f:if condition="{item.sale.city}">
+                        {item.sale.city}
+                    </f:if>
+                </dd>
+            </dl>
+        </f:if>
+        <f:if condition="{item.sale}">
+            <dl class="row">
+                <dt class="col-md-4"></dt>
+                <dd class="col-md-8">
+                    <f:link.action action="show" arguments="{sale: item.sale}" controller="Sale" id="sale-details-link" pageUid="{settings.sale.detailPid}">
+                        <f:translate id="sale_conditions_information"/>
+                    </f:link.action>
+                </dd>
+            </dl>
+        </f:if>
+    </f:for>
+</html>

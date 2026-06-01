@@ -1,0 +1,116 @@
+tt_address.label = name;last_name,first_name;email
+
+##################################################
+
+TCEFORM.tt_address {
+  building.disabled = 1
+  categories.disabled = 1
+  facebook.disabled = 1
+  instagram.disabled = 1
+  latitude.disabled = 1
+  linkedin.disabled = 1
+  longitude.disabled = 1
+  middle_name.disabled = 1
+  position.disabled = 1
+  region.disabled = 1
+  room.disabled = 1
+  skype.disabled = 1
+  slug.disabled = 1
+  sys_language_uid.disabled = 1
+  tiktok.disabled = 1
+  title_suffix.disabled = 1
+  twitter.disabled = 1
+  tx_vdaddrgeneral_case_postale.disabled = 1
+  tx_vdaddrgeneral_categoryid1.disabled = 1
+  tx_vdaddrgeneral_categoryid2.disabled = 1
+  tx_vdaddrgeneral_categoryid3.disabled = 1
+  tx_vdaddrgeneral_categoryid4.disabled = 1
+  tx_vdaddrgeneral_categoryid5.disabled = 1
+  tx_vdaddrgeneral_categoryid6.disabled = 1
+  tx_vdttaddressextprofilmonichien_profil.disabled = 1
+  tx_vdlisteprofessionsdb_schoolacronym.disabled = 1
+  tx_vdlisteprofessionsdb_schoolname.disabled = 1
+}
+
+##################################################
+
+[26345 in tree.rootLineIds]
+  TCEFORM.tt_address {
+    birthday.disabled = 1
+    country.disabled = 1
+    tx_vdaddrgeneral_case_postale.disabled = 0
+  }
+[38443 in tree.rootLineIds]
+  TCEFORM.tt_address {
+    birthday.disabled = 1
+    company.disabled = 1
+    country.disabled = 1
+    description.disabled = 1
+    fax.disabled = 1
+    image.disabled = 1
+    mobile.disabled = 1
+    tx_vdttaddressextprofilmonichien_profil.disabled = 0
+  }
+[45260 in tree.rootLineIds]
+  TCEFORM.tt_address {
+    address.disabled = 1
+    birthday.disabled = 1
+    city.disabled = 1
+    company.disabled = 1
+    country.disabled = 1
+    description.disabled = 1
+    fax.disabled = 1
+    first_name.disabled = 1
+    image.disabled = 1
+    phone.disabled = 1
+    title.disabled = 1
+    tx_vdlisteprofessionsdb_schoolacronym.disabled = 0
+    tx_vdlisteprofessionsdb_schoolname.disabled = 0
+    zip.disabled = 1
+  }
+[49233 in tree.rootLineIds]
+  TCEFORM.tt_address {
+    birthday.label = Date d'autorisation
+    company.disabled = 1
+    country.disabled = 1
+    fax.disabled = 1
+    first_name.disabled = 1
+    last_name.disabled = 1
+    mobile.disabled = 1
+    title.disabled = 1
+    tx_vdaddrgeneral_categoryid1 {
+      disabled = 0
+      label = Type d'installation
+      PAGE_TSCONFIG_ID = 66065
+    }
+  }
+[2016167 in tree.rootLineIds]
+  TCEFORM.tt_address {
+    birthday.disabled = 1
+    company.disabled = 1
+    country.disabled = 1
+    description.disabled = 1
+    fax.disabled = 1
+    first_name.disabled = 1
+    gender.disabled = 1
+    image.disabled = 1
+    last_name.disabled = 1
+    mobile.disabled = 1
+    title.disabled = 1
+    tx_vdaddrgeneral_categoryid1 {
+      disabled = 0
+      label = Domaines d'intervention
+      PAGE_TSCONFIG_ID = 2016170
+    }
+    tx_vdaddrgeneral_categoryid2 {
+      disabled = 0
+      label = Destinataires
+      PAGE_TSCONFIG_ID = 2016168
+    }
+    tx_vdaddrgeneral_categoryid3 {
+      disabled = 0
+      label = Prestations
+      PAGE_TSCONFIG_ID = 2016169
+    }
+  }
+[end]

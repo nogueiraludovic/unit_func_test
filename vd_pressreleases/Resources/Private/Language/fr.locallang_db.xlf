@@ -1,0 +1,160 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xliff version="1.2" xmlns="urn:oasis:names:tc:xliff:document:1.2">
+	<file datatype="plaintext" original="EXT:vd_pressreleases/Resources/Private/Language/locallang_db.xlf" source-language="en" target-language="fr">
+		<header/>
+		<body>
+			<trans-unit id="additional_contents" resname="additional_contents">
+				<source>Links/Additional Contents</source>
+				<target state="translated">Liens/Contenus complémentaires</target>
+			</trans-unit>
+			<trans-unit id="additional_text" resname="additional_text">
+				<source>Additional Text</source>
+				<target state="translated">Texte additionnel</target>
+			</trans-unit>
+			<trans-unit id="body_text" resname="body_text">
+				<source>Body Text</source>
+				<target state="translated">Corps du texte</target>
+			</trans-unit>
+			<trans-unit id="anonymize" resname="anonymize">
+				<source>Anonymize</source>
+				<target state="translated">Rendre anonyme</target>
+			</trans-unit>
+			<trans-unit id="anonymize_time" resname="anonymize_time">
+				<source>Anonymize Time (if empty, 15 days)</source>
+				<target state="translated">Date d'anonymat du contact (si vide, 15 jours)</target>
+			</trans-unit>
+			<trans-unit id="contacts" resname="contacts">
+				<source>Contact persons</source>
+				<target state="translated">Personnes de contact</target>
+			</trans-unit>
+			<trans-unit id="crdate" resname="crdate">
+				<source>Creation date</source>
+				<target state="translated">Date de création</target>
+			</trans-unit>
+			<trans-unit id="date_time" resname="date_time">
+				<source>Press release date</source>
+				<target state="translated">Date affichée du communiqué</target>
+			</trans-unit>
+			<trans-unit id="department" resname="department">
+				<source>Department</source>
+				<target state="translated">Département</target>
+			</trans-unit>
+			<trans-unit id="description" resname="description">
+				<source>Description</source>
+				<target state="translated">Description</target>
+			</trans-unit>
+			<trans-unit id="email" resname="email">
+				<source>Email</source>
+				<target state="translated">E-mail</target>
+			</trans-unit>
+			<trans-unit id="files" resname="files">
+				<source>Files for download (TYPO3)</source>
+				<target state="translated">Fichiers à télécharger (TYPO3)</target>
+			</trans-unit>
+			<trans-unit id="files_relay" resname="files_relay">
+				<source>Original press release PDF</source>
+				<target state="translated">PDF du CP d'origine</target>
+			</trans-unit>
+			<trans-unit id="forcedpdf_file" resname="forcedpdf_file">
+				<source>PDF to prioritize</source>
+				<target state="translated">PDF à prioriser</target>
+			</trans-unit>
+			<trans-unit id="function" resname="function">
+				<source>Function</source>
+				<target state="translated">Fonction</target>
+			</trans-unit>
+			<trans-unit id="images" resname="images">
+				<source>Images</source>
+				<target state="translated">Images</target>
+			</trans-unit>
+			<trans-unit id="keywords" resname="keywords">
+				<source>Keywords (separated by commas)</source>
+				<target state="translated">Mots-clés (séparés par des virgules)</target>
+			</trans-unit>
+			<trans-unit id="links" resname="links">
+				<source>Links</source>
+				<target state="translated">Liens</target>
+			</trans-unit>
+			<trans-unit id="logo" resname="logo">
+				<source>Logo</source>
+				<target state="translated">Logo</target>
+			</trans-unit>
+			<trans-unit id="name" resname="name">
+				<source>Name</source>
+				<target state="translated">Nom</target>
+			</trans-unit>
+			<trans-unit id="partner_source_infos" resname="partner_source_infos">
+				<source>Partners source infos</source>
+				<target state="translated">Émetteurs partenaires infos</target>
+			</trans-unit>
+			<trans-unit id="partner_sources" resname="partner_sources">
+				<source>Partner Sources (maximum 3)</source>
+				<target state="translated">Émetteurs partenaires (maximum 3)</target>
+			</trans-unit>
+			<trans-unit id="path_segment" resname="path_segment">
+				<source>URL segment</source>
+				<target state="translated">Segment d'URL</target>
+			</trans-unit>
+			<trans-unit id="phone" resname="phone">
+				<source>Phone</source>
+				<target state="translated">Téléphone</target>
+			</trans-unit>
+			<trans-unit id="press_release" resname="press_release">
+				<source>Press Release</source>
+				<target state="translated">Communiqué de presse</target>
+			</trans-unit>
+			<trans-unit id="press_releases" resname="press_releases">
+				<source>Press Releases</source>
+				<target state="translated">Communiqués de presse</target>
+			</trans-unit>
+			<trans-unit id="publidoc_files" resname="publidoc_files">
+				<source>Files to download (Publidoc)</source>
+				<target state="translated">Fichiers à télécharger (Publidoc)</target>
+			</trans-unit>
+			<trans-unit id="service" resname="service">
+				<source>Service</source>
+				<target state="translated">Service</target>
+			</trans-unit>
+			<trans-unit id="signature" resname="signature">
+				<source>Signature</source>
+				<target state="translated">Signature</target>
+			</trans-unit>
+			<trans-unit id="source" resname="source">
+				<source>Source</source>
+				<target state="translated">Émetteur</target>
+			</trans-unit>
+			<trans-unit id="source_id" resname="source_id">
+				<source>Source Id</source>
+				<target state="translated">ID source</target>
+			</trans-unit>
+			<trans-unit id="summary" resname="summary">
+				<source>Summary</source>
+				<target state="translated">Chapeau</target>
+			</trans-unit>
+			<trans-unit id="subtitle" resname="subtitle">
+				<source>Surtitle</source>
+				<target state="translated">Surtitre</target>
+			</trans-unit>
+			<trans-unit id="title" resname="title">
+				<source>Title</source>
+				<target state="translated">Titre</target>
+			</trans-unit>
+			<trans-unit id="type" resname="type">
+				<source>Type of press release</source>
+				<target state="translated">Nature de communiqué de presse</target>
+			</trans-unit>
+			<trans-unit id="types" resname="types">
+				<source>Types of press release</source>
+				<target state="translated">Natures de communiqué de presse</target>
+			</trans-unit>
+			<trans-unit id="url" resname="url">
+				<source>URL</source>
+				<target state="translated">URL</target>
+			</trans-unit>
+			<trans-unit id="videos" resname="videos">
+				<source>Videos</source>
+				<target state="translated">Vidéos</target>
+			</trans-unit>
+		</body>
+	</file>
+</xliff>

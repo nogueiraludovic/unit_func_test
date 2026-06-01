@@ -1,0 +1,26 @@
+<html data-namespace-typo3-fluid="true" xmlns:f="http://typo3.org/ns/TYPO3/CMS/Fluid/ViewHelpers">
+    <h2 id="in-this-theme-title">Dans ce thème</h2>
+    <div class="vd-bg-pattern-green p-3 mb-1">
+        <f:if condition="{prestations}">
+            <f:then>
+                <ul class="nav vd-list-boxed flex-column" id="vd-list-prestations">
+                    <f:for as="prestation" each="{prestations}" iteration="iterator">
+                        <li class="nav-item" id="prestation-row-{prestation.uid}">
+                            <f:link.action action="show" arguments="{prestation: prestation.uid}" class="nav-link d-inline-block" id="prestation-details-link-{iterator.index}" pageUid="{settings.singlePid}">
+                                <span class="prestation" data-identifier="{prestation.uid}">{prestation.title}</span>
+                            </f:link.action>
+                        </li>
+                    </f:for>
+                </ul>
+            </f:then>
+            <f:else>
+                <p>Pas de prestations à afficher. Veuillez vérifier la configuration de cet élément de contenu.</p>
+            </f:else>
+        </f:if>
+        <p class="mb-0">
+            <f:link.page class="btn btn-dark btn-sm" id="all-prestations-link" pageUid="{settings.shortListPageId}" title="Afficher toutes les prestations">
+                Voir moins<span class='visually-hidden'> de prestations</span>
+            </f:link.page>
+        </p>
+    </div>
+</html>

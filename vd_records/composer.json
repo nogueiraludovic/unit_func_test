@@ -1,0 +1,34 @@
+{
+	"name": "vd/vd-records",
+	"description": "Extension to add records and extend existing tables.",
+	"license": "GPL-3.0-or-later",
+	"type": "typo3-cms-extension",
+	"version": "10.4.0",
+	"authors": [
+		{
+			"name": "État de Vaud - DGNSI",
+			"email": "support.typo3@vd.ch",
+			"homepage": "https://www.vd.ch",
+			"role": "Developer"
+		}
+	],
+	"require": {
+		"php": "^7.4",
+		"friendsoftypo3/tt-address": "^6.1",
+		"georgringer/news": "^10.0",
+		"typo3/cms-core": "^10.4",
+		"vd/vd-core": "^10.4",
+		"vd/vd-frontend": "^10.4",
+		"vd/vd-municipalities": "@dev"
+	},
+	"autoload": {
+		"psr-4": {
+			"Vd\\VdRecords\\": "Classes/"
+		}
+	},
+	"extra": {
+		"typo3/cms": {
+			"extension-key": "vd_records"
+		}
+	}
+}

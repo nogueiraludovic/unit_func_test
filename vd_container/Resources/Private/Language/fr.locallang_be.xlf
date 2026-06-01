@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xliff version="1.2" xmlns="urn:oasis:names:tc:xliff:document:1.2">
+	<file datatype="plaintext" original="EXT:vd_container/Resources/Private/Language/locallang_be.xlf" source-language="en" target-language="fr">
+		<header/>
+		<body>
+			<trans-unit id="accordion" resname="accordion">
+				<source>Accordion</source>
+				<target state="translated">Accordéon</target>
+			</trans-unit>
+			<trans-unit id="accordion_display" resname="accordion_display">
+				<source>Accordion display</source>
+				<target state="translated">Affichage de l'accordéon</target>
+			</trans-unit>
+			<trans-unit id="accordion_display.I.0" resname="accordion_display.I.0">
+				<source>Open the first item (per default)</source>
+				<target state="translated">Ouvrir le premier élément (par défaut)</target>
+			</trans-unit>
+			<trans-unit id="accordion_display.I.1" resname="accordion_display.I.1">
+				<source>Open all items</source>
+				<target state="translated">Ouvrir tous les éléments</target>
+			</trans-unit>
+			<trans-unit id="accordion_display.I.2" resname="accordion_display.I.2">
+				<source>Close all items</source>
+				<target state="translated">Fermer tous les éléments</target>
+			</trans-unit>
+			<trans-unit id="accordion_keep" resname="accordion_keep">
+				<source>Keep the opened/closed state</source>
+				<target state="translated">Conserver l'état d'ouverture/fermeture</target>
+			</trans-unit>
+			<trans-unit id="background_color" resname="background_color">
+				<source>Background Color</source>
+				<target state="translated">Couleur de fond</target>
+			</trans-unit>
+			<trans-unit id="background_color.I.dark" resname="background_color.I.dark">
+				<source>Dark</source>
+				<target state="translated">Sombre</target>
+			</trans-unit>
+			<trans-unit id="background_color.I.light" resname="background_color.I.light">
+				<source>Light</source>
+				<target state="translated">Clair</target>
+			</trans-unit>
+			<trans-unit id="center" resname="center">
+				<source>Center</source>
+				<target state="translated">Centre</target>
+			</trans-unit>
+			<trans-unit id="center_left" resname="center_left">
+				<source>Center-left</source>
+				<target state="translated">Centre-gauche</target>
+			</trans-unit>
+			<trans-unit id="center_right" resname="center_right">
+				<source>Center-right</source>
+				<target state="translated">Centre-droite</target>
+			</trans-unit>
+			<trans-unit id="four_columns_same" resname="four_columns_same">
+				<source>4 columns, same gap</source>
+				<target state="translated">4 colonnes, largeur égale</target>
+			</trans-unit>
+			<trans-unit id="highlight" resname="highlight">
+				<source>Highlight</source>
+				<target state="translated">Mise en évidence</target>
+			</trans-unit>
+			<trans-unit id="left" resname="left">
+				<source>Left</source>
+				<target state="translated">Gauche</target>
+			</trans-unit>
+			<trans-unit id="main" resname="main">
+				<source>Main</source>
+				<target state="translated">Principal</target>
+			</trans-unit>
+			<trans-unit id="one_column" resname="one_column">
+				<source>1 column</source>
+				<target state="translated">1 colonne</target>
+			</trans-unit>
+			<trans-unit id="right" resname="right">
+				<source>Right</source>
+				<target state="translated">Droite</target>
+			</trans-unit>
+			<trans-unit id="section_background_color" resname="section_background_color">
+				<source>Section (with background color)</source>
+				<target state="translated">Section (avec fond de couleur)</target>
+			</trans-unit>
+			<trans-unit id="tabs" resname="tabs">
+				<source>Tabs</source>
+				<target state="translated">Onglets</target>
+			</trans-unit>
+			<trans-unit id="three_columns_same" resname="three_columns_same">
+				<source>3 columns, same gap</source>
+				<target state="translated">3 colonnes, largeur égale</target>
+			</trans-unit>
+			<trans-unit id="two_columns_left" resname="two_columns_left">
+				<source>2 columns, left gap</source>
+				<target state="translated">2 colonnes, largeur à gauche</target>
+			</trans-unit>
+			<trans-unit id="two_columns_right" resname="two_columns_right">
+				<source>2 columns, right gap</source>
+				<target state="translated">2 colonnes, largeur à droite</target>
+			</trans-unit>
+			<trans-unit id="two_columns_same" resname="two_columns_same">
+				<source>2 columns, same gap</source>
+				<target state="translated">2 colonnes, largeur égale</target>
+			</trans-unit>
+		</body>
+	</file>
+</xliff>

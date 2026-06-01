@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xliff version="1.2" xmlns="urn:oasis:names:tc:xliff:document:1.2">
+	<file datatype="plaintext" original="EXT:vd_safarinet/Resources/Private/Language/locallang.xlf" source-language="en" target-language="fr">
+		<header/>
+		<body>
+			<trans-unit id="alphabetic_order_list" resname="alphabetic_order_list">
+				<source>Alphabetic order list</source>
+			</trans-unit>
+			<trans-unit id="and_the" resname="and_the">
+				<source>And the</source>
+			</trans-unit>
+			<trans-unit id="back_to_search" resname="back_to_search">
+				<source>Back to search</source>
+			</trans-unit>
+			<trans-unit id="between_the" resname="between_the">
+				<source>Between the</source>
+			</trans-unit>
+			<trans-unit id="ce_decisions" resname="ce_decisions">
+				<source>Decisions by the Conseil d'État</source>
+			</trans-unit>
+			<trans-unit id="contact_address" resname="contact_address">
+				<source>Contact address</source>
+			</trans-unit>
+			<trans-unit id="deposited_objects" resname="deposited_objects">
+				<source>Deposited objects</source>
+			</trans-unit>
+			<trans-unit id="districts_list" resname="districts_list">
+				<source>Districts list</source>
+			</trans-unit>
+			<trans-unit id="files_to_download" resname="files_to_download">
+				<source>Files to download</source>
+			</trans-unit>
+			<trans-unit id="further_informations" resname="further_informations">
+				<source>Further informations</source>
+			</trans-unit>
+			<trans-unit id="groups" resname="groups">
+				<source>Groups</source>
+			</trans-unit>
+			<trans-unit id="invalid_end_date" resname="invalid_end_date">
+				<source>Invalid end date</source>
+			</trans-unit>
+			<trans-unit id="invalid_start_date" resname="invalid_start_date">
+				<source>Invalid start date</source>
+			</trans-unit>
+			<trans-unit id="link" resname="link">
+				<source>Link</source>
+			</trans-unit>
+			<trans-unit id="member" resname="member">
+				<source>Member</source>
+			</trans-unit>
+			<trans-unit id="members" resname="members">
+				<source>Members</source>
+			</trans-unit>
+			<trans-unit id="members_list" resname="members_list">
+				<source>Members list</source>
+v			</trans-unit>
+			<trans-unit id="name" resname="name">
+				<source>Name</source>
+			</trans-unit>
+			<trans-unit id="not_found" resname="not_found">
+				<source>Record not found</source>
+			</trans-unit>
+			<trans-unit id="no_result" resname="no_result">
+				<source>No result found.</source>
+			</trans-unit>
+			<trans-unit id="politic_list" resname="politic_list">
+				<source>Political groups list</source>
+			</trans-unit>
+			<trans-unit id="share" resname="share">
+				<source>Share</source>
+			</trans-unit>
+			<trans-unit id="summary" resname="summary">
+				<source>Summary</source>
+			</trans-unit>
+			<trans-unit id="title" resname="title">
+				<source>Title</source>
+			</trans-unit>
+			<trans-unit id="top" resname="top">
+				<source>Top</source>
+			</trans-unit>
+		</body>
+	</file>
+</xliff>

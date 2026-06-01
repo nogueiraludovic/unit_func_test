@@ -1,0 +1,10 @@
+options {
+  file_list.uploader.defaultAction = replace
+  hideModules.help := addToList(cshmanual)
+  pageTree {
+    altElementBrowserMountPoints = 1000001
+    doktypesToShowInNewPageDragArea = 1,3,4,199,254
+    excludeDoktypes = 6,255
+    showPageIdWithTitle = 1
+  }
+}

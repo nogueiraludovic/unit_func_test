@@ -1,0 +1,39 @@
+mod.wizards.newContentElement.wizardItems.vd_ojvencheres {
+  elements {
+    vdojvencheres_itemlist {
+      description = Affiche la liste des objets aux enchères
+      iconIdentifier = content-plugin
+      title = Liste des objets
+      tt_content_defValues {
+        CType = list
+        list_type = vdojvencheres_itemlist
+      }
+    }
+    vdojvencheres_itemshow < .vdojvencheres_itemlist
+    vdojvencheres_itemshow {
+      description = Affiche le détail d'un objet aux enchères
+      title = Détail d'un objet
+      tt_content_defValues.list_type = vdojvencheres_itemshow
+    }
+    vdojvencheres_newsletter < .vdojvencheres_itemlist
+    vdojvencheres_newsletter {
+      description = Affiche la liste des objets aux enchères pour la vue "newsletter"
+      title = Newsletter
+      tt_content_defValues.list_type = vdojvencheres_newsletter
+    }
+    vdojvencheres_salelist < .vdojvencheres_itemlist
+    vdojvencheres_salelist {
+      description = Affiche la liste des ventes aux enchères
+      title = Liste des ventes
+      tt_content_defValues.list_type = vdojvencheres_salelist
+    }
+    vdojvencheres_saleshow < .vdojvencheres_itemlist
+    vdojvencheres_saleshow {
+      description = Affiche le détail d'une vente aux enchères
+      title = Détail d'une vente
+      tt_content_defValues.list_type = vdojvencheres_saleshow
+    }
+  }
+  header = OJV Enchères
+  show = *
+}

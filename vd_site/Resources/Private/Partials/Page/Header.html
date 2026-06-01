@@ -1,0 +1,241 @@
+<html data-namespace-typo3-fluid="true" xmlns:f="http://typo3.org/ns/TYPO3/CMS/Fluid/ViewHelpers">
+    <div class="alert alert-cookie alert-dismissible alert-info d-none fade show" role="alert">
+        <button aria-label="Fermer" class="btn-close" data-bs-dismiss="alert" id="dismiss-cookie-banner-button" type="button"></button>
+        <div class="container">
+            <f:translate id="LLL:EXT:vd_site/Resources/Private/Language/locallang.xlf:cookie_warning_intro"/>
+            <br/>
+            <f:link.page id="cookie-policy-link" pageUid="{site.configuration.settings.cookiePolicyPageUid}">
+                <f:translate id="LLL:EXT:vd_site/Resources/Private/Language/locallang.xlf:cookie_warning_link_text"/>
+            </f:link.page>
+        </div>
+    </div>
+    <header class="header">
+        <nav aria-label="{f:translate(extensionName: 'VdSite', id: 'accessibility_menu_title')}" class="access-nav container fixed-top">
+            <ul class="list-unstyled mt-1">
+                <li>
+                    <a accesskey="1" class="btn btn-dark pt-0 visually-hidden visually-hidden-focusable" href="#main" id="accessibility-nav-link-main" title="[Alt+1] {f:translate(extensionName: 'VdSite', id: 'accessibility_top')}">
+                        <f:translate extensionName="VdSite" id="accessibility_top"/>
+                    </a>
+                </li>
+                <li>
+                    <a accesskey="2" class="btn btn-dark pt-0 visually-hidden visually-hidden-focusable" href="#search-form" id="accessibility-nav-link-search" title="[Alt+2] {f:translate(extensionName: 'VdSite', id: 'accessibility_search_form')}">
+                        <f:translate extensionName="VdSite" id="accessibility_search_form"/>
+                    </a>
+                </li>
+                <li>
+                    <a accesskey="3" class="btn btn-dark pt-0 visually-hidden visually-hidden-focusable" href="{f:uri.page(pageUid: site.configuration.settings.homePageUid)}" id="accessibility-nav-link-homepage" title="[Alt+3] {f:translate(extensionName: 'VdSite', id: 'accessibility_homepage')}">
+                        <f:translate extensionName="VdSite" id="accessibility_homepage"/>
+                    </a>
+                </li>
+                <li>
+                    <a accesskey="4" class="btn btn-dark pt-0 visually-hidden visually-hidden-focusable" href="{contactFormLink}" id="accessibility-nav-link-contact-form" title="[Alt+4] {f:translate(extensionName: 'VdSite', id: 'accessibility_contact_form')}">
+                        <f:translate extensionName="VdSite" id="accessibility_contact_form"/>
+                    </a>
+                </li>
+            </ul>
+        </nav>
+        <div class="container">
+            <div class="d-flex d-print-none flex-wrap justify-content-between justify-content-md-end">
+                <section class="align-items-center d-flex d-print-none">
+                    <h2 class="visually-hidden"><f:translate extensionName="VdSite" id="sub_navigation"/></h2>
+                    <ul class="list-inline small text-md-end">
+                        <f:for as="item" each="{topNavItems}" iteration="iterator">
+                            <li class="list-inline-item me-2">
+                                <a href="{item.link}" id="top-nav-item-link-{iterator.index}" title="{item.title}">{item.title}</a>
+                            </li>
+                        </f:for>
+                    </ul>
+                </section>
+                <section class="mb-3 small" id="login-section">
+                    <h2 class="visually-hidden"><f:translate extensionName="VdSite" id="your_identity"/></h2>
+                    <button aria-controls="login-form-collapse" aria-expanded="false" class="border-light btn btn-outline-primary fs-6 hover-bg-primary text-primary" data-bs-target="#login-form-collapse" data-bs-toggle="collapse" data-btn="login" id="login-form-button" type="button">
+                        <f:translate extensionName="VdSite" id="login"/> <span aria-hidden="true" class="fa-chevron-down fa-solid ms-1 text-inherit" id="login-button-icon"></span>
+                    </button>
+                </section>
+                <div class="border collapse p-3 shadow" id="login-form-collapse">
+                    <button aria-label="{f:translate(extensionName: 'VdSite', id: 'login_form_close')}" class="btn-close end-0 m-2 me-4 position-absolute" data-bs-target="#login-form-collapse" data-bs-toggle="collapse" type="button"></button>
+                    <div class="d-flex flex-column mb-3">
+                        <div class="d-flex flex-row justify-content-between mb-2">
+                            <div class="p-2">
+                                <h2 class="h4 mt-0"><f:translate extensionName="VdSite" id="secured_space"/></h2>
+                            </div>
+                        </div>
+                        <div class="mb-1 p-2">
+                            <span><f:format.raw><f:translate arguments="{0: site.configuration.settings.adminStepsPrestationUrl}" extensionName="VdSite" id="secured_space_intro"/></f:format.raw></span>
+                        </div>
+                        <div class="mb-3 p-2">
+                            <a class="btn btn-success mb-2 py-2 text-center w-100" href="{site.configuration.settings.prestationsConnectPageUrl}" id="login-prestations-link" target="_blank">
+                                <f:translate extensionName="VdSite" id="login"/>
+                                <span class="fa-external-link-alt fa-solid me-1 text-white"></span>
+                            </a>
+                            <f:link.action action="show" arguments="{prestation: site.configuration.settings.registerPrestationUid}" class="btn btn-secondary py-2 text-center w-100" controller="Prestation" extensionName="VdPrestations" id="register-page-link" pageUid="{site.configuration.settings.prestationsDetailPageUid}" pluginName="Pi4">
+                                <f:translate extensionName="VdSite" id="register"/>
+                            </f:link.action>
+                        </div>
+                        <div class="mb-2 p-2">
+                            <details>
+                                <summary><f:translate extensionName="VdSite" id="steps_examples"/></summary>
+                                <ul>
+                                    <li><f:translate extensionName="VdSite" id="steps_examples_1"/></li>
+                                    <li><f:translate extensionName="VdSite" id="steps_examples_2"/></li>
+                                    <li><f:translate extensionName="VdSite" id="steps_examples_3"/></li>
+                                    <li><f:translate extensionName="VdSite" id="steps_examples_4"/></li>
+                                    <li><f:translate extensionName="VdSite" id="steps_examples_5"/></li>
+                                    <li><f:translate extensionName="VdSite" id="steps_examples_6"/></li>
+                                    <li><f:translate extensionName="VdSite" id="steps_examples_7"/></li>
+                                </ul>
+                            </details>
+                        </div>
+                        <div class="p-2">
+                            <f:link.page id="online-help-prestations-link" pageUid="{site.configuration.settings.securedSpaceHelpPageUid}">
+                                <f:translate extensionName="VdSite" id="online_help"/>
+                            </f:link.page>
+                        </div>
+                    </div>
+                    <div class="mb-3 px-2">
+                        <hr class="opacity-25"/>
+                    </div>
+                    <div class="d-flex flex-column">
+                        <div class="d-flex flex-row justify-content-between mb-2">
+                            <div class="p-2">
+                                <h2 class="h4 mt-0"><f:translate extensionName="VdSite" id="iam_portal"/></h2>
+                            </div>
+                        </div>
+                        <div class="mb-1 p-2">
+                            <span><f:translate extensionName="VdSite" id="iam_portal_intro"/></span>
+                        </div>
+                        <div class="mb-1 p-2">
+                            <a class="btn btn-success py-2 text-center w-100" href="{site.configuration.settings.iamPortalUrl}" id="login-iam-link" target="_blank">
+                                <f:translate extensionName="VdSite" id="login"/>
+                                <span class="fa-external-link-alt fa-solid me-1 text-white"></span>
+                            </a>
+                        </div>
+                        <div class="mb-1 p-2">
+                            <details>
+                                <summary><f:translate extensionName="VdSite" id="applications_examples"/></summary>
+                                <ul>
+                                    <li><f:translate extensionName="VdSite" id="applications_examples_1"/></li>
+                                    <li><f:translate extensionName="VdSite" id="applications_examples_2"/></li>
+                                    <li><f:translate extensionName="VdSite" id="applications_examples_3"/></li>
+                                    <li><f:translate extensionName="VdSite" id="applications_examples_4"/></li>
+                                    <li><f:translate extensionName="VdSite" id="applications_examples_5"/></li>
+                                    <li><f:translate extensionName="VdSite" id="applications_examples_6"/></li>
+                                    <li><f:translate extensionName="VdSite" id="applications_examples_7"/></li>
+                                    <li><f:translate extensionName="VdSite" id="applications_examples_8"/></li>
+                                    <li><f:translate extensionName="VdSite" id="applications_examples_9"/></li>
+                                    <li><f:translate extensionName="VdSite" id="applications_examples_10"/></li>
+                                    <li><f:translate extensionName="VdSite" id="applications_examples_11"/></li>
+                                    <li><f:translate extensionName="VdSite" id="applications_examples_12"/></li>
+                                    <li><f:translate extensionName="VdSite" id="applications_examples_13"/></li>
+                                </ul>
+                            </details>
+                        </div>
+                        <div class="p-2">
+                            <f:link.page id="online-help-iam-link" pageUid="{site.configuration.settings.iamHelpPageUid}">
+                                <f:translate extensionName="VdSite" id="online_help"/>
+                            </f:link.page>
+                        </div>
+                    </div>
+                </div>
+                <div class="mb-3 small d-none" id="logout-section">
+                    <button aria-controls="logout-form-collapse" aria-expanded="false" class="border-light btn btn-outline-primary fs-6 hover-bg-primary text-primary" data-bs-target="#logout-form-collapse" data-bs-toggle="collapse" data-btn="logout" id="logout-form-button" type="button">
+                        <f:translate extensionName="VdSite" id="logout"/> <span aria-hidden="true" class="fa-chevron-down fa-solid ms-1 text-inherit" id="logout-button-icon"></span>
+                    </button>
+                </div>
+                <div class="border collapse p-3 shadow" id="logout-form-collapse">
+                    <button aria-label="{f:translate(extensionName: 'VdSite', id: 'login_form_close')}" class="btn-close end-0 m-2 me-4 mt-0 position-absolute" data-bs-target="#login-form-collapse" data-bs-toggle="collapse" type="button"></button>
+                    <div class="d-flex flex-column mt-3">
+                        <div class="mb-2 mt-2 p-2">
+                            <a class="btn btn-secondary mb-2 py-2 text-center w-100" href="{site.configuration.settings.prestationsHomePageUrl}" id="secured-space-link" target="_blank">
+                                <f:translate extensionName="VdSite" id="access_secured_space"/>
+                                <span class="fa-solid fa-user me-1 text-white"></span>
+                            </a>
+                            <a class="btn btn-secondary mb-2 py-2 text-center w-100" href="{site.configuration.settings.prestationsLogoutPageUrl}" id="logout-link">
+                                <f:translate extensionName="VdSite" id="logout"/>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <f:if condition="{site.configuration.settings.searchPageUid}">
+                    <section class="mb-3 small">
+                        <h2 class="visually-hidden"><f:translate extensionName="VdSite" id="search_section"/></h2>
+                        <f:link.page class="border-light btn btn-outline-primary fs-6 hover-bg-primary ms-1 text-primary" id="search-page-link" pageUid="{site.configuration.settings.searchPageUid}" title="{f:translate(extensionName: 'VdSite', id: 'search')}">
+                            <span aria-hidden="true" class="fa-search fa-solid text-inherit"></span>
+                        </f:link.page>
+                    </section>
+                </f:if>
+            </div>
+            <div class="row">
+                <div class="col-md-5">
+                    <f:link.page class="vd-logo vd-logo--alt" id="home-logo-link" pageUid="{site.configuration.settings.homePageUid}" title="{f:translate(extensionName: 'VdSite', id: 'logo_title')}">
+                        <f:if condition="{data.is_siteroot}">
+                            <div class="vd-logo__blason">
+                                <f:image alt="{f:translate(extensionName: 'VdSite', id: 'logo_alt')}" class="d-none d-md-block img-fluid" height="522" loading="lazy" src="EXT:vd_site/Resources/Public/Foehn/dist/assets/svg/logo/logo.svg" width="160"/>
+                                <f:image alt="{f:translate(extensionName: 'VdSite', id: 'logo_alt')}" class="d-md-none img-fluid" height="180" loading="lazy" src="EXT:vd_site/Resources/Public/Foehn/dist/assets/svg/logo/logo-square.svg" width="180"/>
+                            </div>
+                        </f:if>
+                        <f:image additionalAttributes="{aria-hidden: 'true'}" alt="{f:translate(extensionName: 'VdSite', id: 'state_of_vaud')}" class="vd-logo__image" src="EXT:vd_site/Resources/Public/Foehn/dist/assets/svg/ETATVAUD.svg"/>
+                    </f:link.page>
+                </div>
+            </div>
+        </div>
+        <div class="d-print-none vd-nav-primary">
+            <div class="container ">
+                <f:if condition="{data.vd_hide_menu_button}">
+                    <f:then>
+                        <div class="vd-nav-empty__button"></div>
+                    </f:then>
+                    <f:else>
+                        <div class="row">
+                            <div class="col-md-12 d-flex justify-content-md-end">
+                                <button aria-controls="nav-primary-container" aria-expanded="false" class="btn btn-primary btn-sm vd-nav-primary__button {f:if(condition: '{data.vd_show_menu} && {headline} == \'\'', then: 'js-closeMenuOnMobile__button', else: 'collapsed')} d-flex justify-content-between" data-bs-target="#nav-primary-container" data-bs-toggle="collapse" id="primary-nav-container-button" type="button">
+                                    <span>
+                                        <span class="vd-nav-primary__button--close">
+                                            <f:translate extensionName="VdSite" id="hide_themes"/>
+                                        </span>
+                                        <span class="vd-nav-primary__button--open">
+                                            <f:translate extensionName="VdSite" id="show_themes"/>
+                                        </span>
+                                    </span>
+                                    <span>
+                                        <span class="fa-chevron-down fa-solid vd-nav-primary__button--open"></span>
+                                        <span class=" fa-chevron-up fa-solid vd-nav-primary__button--close"></span>
+                                    </span>
+                                </button>
+                            </div>
+                        </div>
+                    </f:else>
+                </f:if>
+            </div>
+            <div class="vd-nav-primary__menu-container">
+                <div class="collapse clearfix{f:if(condition: '{data.vd_show_menu} && {headline} == \'\'', then: ' show js-closeMenuOnMobile__container')}" id="nav-primary-container">
+                    <div class="pb-3">
+                        <div class="container vd-nav-primary__menu-bg-md">
+                            <div class="vd-nav-primary__menu-bg-sm">
+                                <div class="row">
+                                    <nav class="col-md-12 mt-3 order-md-1" id="nav-primary">
+                                        <h2 class="visually-hidden"><f:translate extensionName="VdSite" id="browse_by_theme"/></h2>
+                                        <ul class="list-unstyled mb-0 row">
+                                            <f:for as="item" each="{mainNavItems}" iteration="iterator">
+                                                <li class="col-lg-4 col-sm-6 mb-2 vd-domain-item vd-domain-item--small">
+                                                    <a class="vd-domain-item vd-domain-item--small vd-domain-item__link-container" href="{item.link}" id="main-nav-item-link-{iterator.index}">
+                                                        <span class="vd-domain-item__link vd-link-invisible h4">
+                                                            {item.title}
+                                                        </span>
+                                                        <span class="vd-domain-item__text">
+                                                            <span class="visually-hidden">(</span>{item.data.vd_nav_legend}<span class="visually-hidden">)</span>
+                                                        </span>
+                                                    </a>
+                                                </li>
+                                            </f:for>
+                                        </ul>
+                                    </nav>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+</html>

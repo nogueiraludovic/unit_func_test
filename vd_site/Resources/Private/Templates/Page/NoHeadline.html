@@ -1,0 +1,15 @@
+<html data-namespace-typo3-fluid="true" xmlns:f="http://typo3.org/ns/TYPO3/CMS/Fluid/ViewHelpers">
+    <f:layout/>
+    <f:section name="main">
+        <f:render arguments="{_all}" partial="Header"/>
+        <div class="container py-1">
+            <f:render arguments="{breadcrumbExtendedValue: breadcrumbExtendedValue, breadcrumbItems: breadcrumbItems}" partial="Breadcrumb"/>
+        </div>
+        <main id="main">
+            <!--TYPO3SEARCH_begin-->
+            <f:format.raw>{mainContent}</f:format.raw>
+            <!--TYPO3SEARCH_end-->
+        </main>
+        <f:render arguments="{_all}" partial="Footer"/>
+    </f:section>
+</html>

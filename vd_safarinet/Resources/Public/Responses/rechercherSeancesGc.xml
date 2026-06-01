@@ -1,0 +1,19 @@
+<soap:Envelope xmlns:soap="http://schemas.xmlsoap.org/soap/envelope/">
+    <soap:Body>
+        <ns2:rechercherSeancesCeResponse
+                xmlns:ns2="http://www.vd.ch/lmgc/wsdl/SeanceConseilEtat"
+                xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+                xsi:schemaLocation="http://www.vd.ch/lmgc/wsdl/SeanceConseilEtat ../../LMGC/SeanceConseilEtat.xsd ">
+            <return>
+                <dateSeance>2000-12-18</dateSeance>
+                <id>59494</id>
+                <nomCourt>Séance du Conseil d'État du 18 décembre 2000</nomCourt>
+            </return>
+            <return>
+                <dateSeance>2000-09-25</dateSeance>
+                <id>59476</id>
+                <nomCourt>Séance du Conseil d'État du 25 septembre 2000</nomCourt>
+            </return>
+        </ns2:rechercherSeancesCeResponse>
+    </soap:Body>
+</soap:Envelope>

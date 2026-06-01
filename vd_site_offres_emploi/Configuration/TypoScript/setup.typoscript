@@ -1,0 +1,23 @@
+config.enableCspHeader = 0
+
+##################################################
+
+page = PAGE
+page {
+  10 = FLUIDTEMPLATE
+  10 {
+    templateName = Default
+    templateRootPaths.10 = EXT:vd_site_offres_emploi/Resources/Private/Templates/Page/
+  }
+  bodyTagAdd = data-host="https://fa-ewrg-dev1-saasfaeuraprod1.fa.ocs.oraclecloud.com" onload="replacecontent()"
+}
+
+##################################################
+
+[applicationContext == 'Production/Formation']
+  page.bodyTagAdd = data-host="https://fa-ewrg-test-saasfaeuraprod1.fa.ocs.oraclecloud.com" onload="replacecontent()"
+[applicationContext == 'Production/Validation']
+  page.bodyTagAdd = data-host="https://fa-ewrg-test-saasfaeuraprod1.fa.ocs.oraclecloud.com" onload="replacecontent()"
+[applicationContext == 'Production']
+  page.bodyTagAdd = data-host="https://fa-ewrg-saasfaeuraprod1.fa.ocs.oraclecloud.com" onload="replacecontent()"
+[end]

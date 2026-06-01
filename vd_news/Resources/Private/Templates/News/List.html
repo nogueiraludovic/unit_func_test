@@ -1,0 +1,71 @@
+<html data-namespace-typo3-fluid="true" xmlns:f="http://typo3.org/ns/TYPO3/CMS/Fluid/ViewHelpers" xmlns:n="http://typo3.org/ns/GeorgRinger/News/ViewHelpers" xmlns:vd="http://typo3.org/ns/Vd/VdNews/ViewHelpers">
+    <n:headerData>
+        <link href="{f:uri.page(additionalParams: {type: 100})}" rel="alternate" title="RSS 2.0" type="application/rss+xml"/>
+    </n:headerData>
+    <!--TYPO3SEARCH_end-->
+    <f:if condition="{news}">
+        <f:then>
+            <f:if condition="{data.uid} == 2000080">
+                <h2 class="visually-hidden" id="news-list-title"><vd:translate id="news_list"/></h2>
+            </f:if>
+            <f:if condition="{settings.hidePagination}">
+                <f:then>
+                    <f:if condition="{settings.templateLayout} == 10">
+                        <f:then>
+                            <ul class="list-unstyled">
+                                <f:for as="newsItem" each="{news}">
+                                    <f:render arguments="{newsItem: newsItem}" section="newsItem"/>
+                                </f:for>
+                            </ul>
+                        </f:then>
+                        <f:else>
+                            <f:for as="newsItem" each="{news}">
+                                <f:render arguments="{newsItem: newsItem}" section="newsItem"/>
+                            </f:for>
+                        </f:else>
+                    </f:if>
+                </f:then>
+                <f:else>
+                    <div class="row">
+                        <f:for as="newsItem" each="{paginator.paginatedItems}">
+                            <f:render arguments="{_all}" section="newsItem"/>
+                        </f:for>
+                    </div>
+                    <f:render arguments="{pagination: pagination, paginator: paginator}" partial="Pagination/Default"/>
+                </f:else>
+            </f:if>
+        </f:then>
+        <f:else>
+            <div class="no-news-found">
+                <f:if condition="{settings.templateLayout} == 10">
+                    <f:then>
+                        <vd:translate extensionName="VdNews" id="no_upcoming_event"/>
+                    </f:then>
+                    <f:else>
+                        <vd:translate extensionName="VdNews" id="no_news"/>
+                    </f:else>
+                </f:if>
+            </div>
+        </f:else>
+    </f:if>
+    <!--TYPO3SEARCH_begin-->
+    <f:section name="newsItem">
+        <f:if condition="{newsItem.type} == 3">
+            <f:variable name="newsItem" value="{newsItem.selectedArticle}"/>
+        </f:if>
+        <f:if condition="{newsItem} && {newsItem.title}">
+            <n:excludeDisplayedNews newsItem="{newsItem}"/>
+            <f:switch expression="{settings.templateLayout}">
+                <f:case value="10">
+                    <f:render arguments="{newsItem: newsItem}" partial="List/NewsItem" section="Agenda"/>
+                </f:case>
+                <f:case value="20">
+                    <f:render arguments="{newsItem: newsItem}" partial="List/NewsItem" section="Latest"/>
+                </f:case>
+                <f:defaultCase>
+                    <f:render arguments="{newsItem: newsItem}" partial="List/NewsItem" section="Default"/>
+                </f:defaultCase>
+            </f:switch>
+        </f:if>
+    </f:section>
+</html>

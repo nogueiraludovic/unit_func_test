@@ -1,0 +1,193 @@
+config.recordLinks.tx_vdpressreleases_pressrelease.typolink {
+  additionalParams {
+    data = field:uid
+    wrap = &tx_vdpressreleases_pressrelease[action]=show&tx_vdpressreleases_pressrelease[controller]=PressRelease&tx_vdpressreleases_pressrelease[pressRelease]=|
+  }
+  parameter = 2000109
+  useCacheHash = 1
+}
+
+##################################################
+
+lib {
+  rightContent = CONTENT
+  rightContent {
+    select {
+      pidInList.data = leveluid:2
+      where = {#colPos}=1
+    }
+    table = tt_content
+  }
+}
+
+##################################################
+
+page.10.dataProcessing.1686237136 = Vd\VdPressreleases\DataProcessing\PressReleaseProcessor
+
+##################################################
+
+plugin.tx_vdpressreleases {
+  features.skipDefaultArguments = 1
+  settings {
+    detailPageUid = 2000109
+    opengraph {
+      crop.size = 180
+      defaultMedia {
+        imgHeight = 256
+        imgWidth = 256
+        path = EXT:vd_site/Resources/Public/Images/logo_opengraph.png
+      }
+      site_name = Site officiel du Canton de Vaud
+      twitter {
+        card = summary
+        creator =
+        site = @EtatdeVaud
+      }
+      type = article
+    }
+    relayTypeUid = 7
+    siteTitle = {$siteTitle}
+  }
+  view {
+    layoutRootPaths.1 = EXT:vd_pressreleases/Resources/Private/Layouts/
+    partialRootPaths {
+      1 = EXT:vd_site/Resources/Private/Partials/
+      2 = EXT:vd_pressreleases/Resources/Private/Partials/
+    }
+    templateRootPaths.1 = EXT:vd_pressreleases/Resources/Private/Templates/
+  }
+}
+
+##################################################
+
+[getTSFE() && getTSFE().type == 1976]
+  printPR = PAGE
+  printPR {
+    10 = FLUIDTEMPLATE
+    10 {
+      dataProcessing.1723195301 = Vd\VdPressreleases\DataProcessing\PressReleaseProcessor
+      file = EXT:vd_pressreleases/Resources/Private/Templates/Pdf/Show.html
+    }
+    config {
+      no_cache = 1
+      removeDefaultCss = 1
+      removeDefaultJS = 1
+    }
+    typeNum = 1976
+  }
+[getTSFE() && getTSFE().type == 1990 && traverse(page, 'uid') == 2000111]
+  pagePressReleasesRSS = PAGE
+  pagePressReleasesRSS {
+    10 = COA
+    10 {
+      10 = TEXT
+      10 {
+        data = page:title
+        noTrimWrap = |<title>| de l'{$siteTitle}</title>|
+      }
+      20 = TEXT
+      20 {
+        typolink {
+          forceAbsoluteUrl = 1
+          parameter.data = leveluid:0
+          returnLast = url
+        }
+        wrap = <link>|</link>
+      }
+      30 = TEXT
+      30 {
+        data = page:vd_nav_legend
+        wrap = <description>|</description>
+      }
+      40 = TEXT
+      40 {
+        value = {$defaultLanguage}
+        wrap = <language>|</language>
+      }
+      50 = TEXT
+      50 {
+        data = date:U
+        date = r
+        wrap = <pubDate>|</pubDate>
+      }
+      60 < .50
+      60.wrap = <lastBuildDate>|</lastBuildDate>
+      70 < .50
+      70 {
+        typolink {
+          additionalParams = &type=1990
+          forceAbsoluteUrl = 1
+          parameter = t3://page?uid=current
+          returnLast = url
+        }
+        wrap = <atom:link href="|" rel="self" type="application/rss+xml"/>
+      }
+      80 = CONTENT
+      80 {
+        renderObj = COA
+        renderObj {
+          10 = TEXT
+          10 {
+            data = field:uid
+            wrap = <guid isPermaLink="false">press-release-|</guid>
+          }
+          20 = TEXT
+          20 {
+            data = field:date_time
+            date = r
+            wrap = <pubDate>|</pubDate>
+          }
+          30 = TEXT
+          30 {
+            field = title
+            htmlSpecialChars = 1
+            wrap = <title>|</title>
+          }
+          40 = TEXT
+          40 {
+            typolink {
+              additionalParams = &tx_vdpressreleases_pressrelease[action]=show&tx_vdpressreleases_pressrelease[controller]=PressRelease&tx_vdpressreleases_pressrelease[pressRelease]={field:uid}
+              additionalParams.insertData = 1
+              forceAbsoluteUrl = 1
+              parameter = 2000109
+              returnLast = url
+              useCacheHash = 1
+            }
+            wrap = <link>|</link>
+          }
+          50 = TEXT
+          50 {
+            field = summary
+            htmlSpecialChars = 1
+            stripHtml = 1
+            wrap = <description>|</description>
+          }
+          60 = TEXT
+          60 {
+            field = body_text
+            parseFunc =< lib.parseFunc_RTE
+            wrap = <content:encoded><![CDATA[|]]></content:encoded>
+          }
+          wrap = <item>|</item>
+        }
+        select {
+          max = 10
+          orderBy = date_time DESC
+          pidInList = 2000099
+          recursive = 99
+        }
+        table = tx_vdpressreleases_domain_model_pressrelease
+      }
+      wrap = <?xml version="1.0" encoding="UTF-8"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/"><channel>|</channel></rss>
+    }
+    config {
+      additionalHeaders.10.header = Content-Type:application/xml;charset=utf-8
+      admPanel = 0
+      disableAllHeaderCode = 1
+      disablePrefixComment = 1
+      linkVars >
+      metaCharset = utf-8
+    }
+    typeNum = 1990
+  }
+[end]

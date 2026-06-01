@@ -1,0 +1,49 @@
+<soap:Envelope xmlns:soap="http://schemas.xmlsoap.org/soap/envelope/">
+    <soap:Body>
+        <p:rechercherPointSeanceGcParId
+                xmlns:p="http://www.vd.ch/lmgc/wsdl/SeanceGrandConseil"
+                xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+                xsi:schemaLocation="http://www.vd.ch/lmgc/wsdl/SeanceGrandConseil ../../LMGC/SeanceGrandConseil.xsd ">
+            <return>
+                <documents>
+                    <document>
+                        <id>1020</id>
+                        <titre>Dépôt</titre>
+                        <type>Annexe</type>
+                    </document>
+                </documents>
+                <id>8fe6c52c-6352-401c-8d01-314c3b03b254</id>
+                <idAffaire>17_MOT_105</idAffaire>
+                <intitule>Motion Jérôme Christen et consorts - Pour obtenir une répartition plus équitable du financement des établissements scolaires entre l’État de Vaud et les Communes en matière de rénovations lourdes ou de nouvelles constructions.</intitule>
+                <seance>
+                    <id>12345</id>
+                    <nomCourt>Séance du mardi 8 octobre 2019, point 4 de l'ordre du jour</nomCourt>
+                </seance>
+                <texte><![CDATA[<p>Lorem <strong>ipsum dolor </strong>sit amet<sup>note</sup>, consectetur<sub>autre note</sub> adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p><p>&nbsp;</p><p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p><ol><li>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</li><li>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed o eiusmodn tempor incididunt ut labore et dolore magna aliqua.</li><li>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.<ol><li>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</li></ol></li></ol><ul><li>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.<ul><li>Lorem ipsum dolor sit<ul><li>amet, consectetur adipiscing</li><li>elit, sed do eiusmod tempor i</li><li>ncididunt ut labore et dolore magna</li><li>aliqua.</li></ul></li></ul></li></ul><p>&nbsp;</p><p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p><p>&nbsp;</p><p><a href="http://dispatcher-prj-ev-bleusiel-nightly.apps-docker.elcadev.local/bleusiel_user/epi/#/interventions-parlementaires">lien</a></p>]]></texte>
+                <urlVideo>https://le.video.vd.ch</urlVideo>
+                <transcriptions>
+                    <transacription>
+                        <id>8fe6c52c-6352-401c-8d01-314c3b03b251</id>
+                        <heure>2019-10-08T10:15:10</heure>
+                        <nom>Christen</nom>
+                        <parti>AdC</parti>
+                        <politesse>Monsieur</politesse>
+                        <prenom>Jérôme</prenom>
+                        <role/>
+                        <transcription><![CDATA[<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magnaaliqua. </p><p>Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteursint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>]]></transcription>
+                    </transacription>
+                    <transacription>
+                        <id>8fe6c52c-6352-401c-8d01-314c3b03b25d</id>
+                        <heure>2019-10-08T10:18:10</heure>
+                        <nom>Christen</nom>
+                        <parti>AdC</parti>
+                        <politesse>Monsieur</politesse>
+                        <prenom>Jérôme</prenom>
+                        <role/>
+                        <transcription><![CDATA[<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magnaaliqua. </p><p>Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteursint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>]]></transcription>
+                    </transacription>
+                </transcriptions>
+            </return>
+        </p:rechercherPointSeanceGcParId>
+    </soap:Body>
+</soap:Envelope>

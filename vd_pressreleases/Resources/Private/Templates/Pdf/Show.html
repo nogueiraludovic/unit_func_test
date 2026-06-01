@@ -1,0 +1,163 @@
+<html data-namespace-typo3-fluid="true" xmlns:f="http://typo3.org/ns/fluid/ViewHelpers" xmlns:vdp="http://typo3.org/ns/Vd/VdPressreleases/ViewHelpers">
+    <f:asset.css href="{f:uri.resource(absolute: 1, extensionName: 'vd_pressreleases', path: 'Css/bootstrap.css')}" identifier="bootstrap"/>
+    <div class="tx-vd-pressreleases" id="vd_pressrelease_pdf">
+        <div class="header">
+            <div class="section" id="pr_mainlogo">
+                <table id="pressRelease_main_logo" style="margin-left:30px">
+                    <tbody>
+                        <tr>
+                            <td><f:image absolute="1" height="120" src="EXT:vd_pressreleases/Resources/Public/Images/logo_v3.jpg"/></td>
+                            <td style="padding-left:15px;width:200px">
+                                <table>
+                                    <tbody>
+                                        <tr>
+                                            <td class="bic_name">Bureau d’information<br/>et de communication</td>
+                                        </tr>
+                                        <tr>
+                                            <td><br/>Rue de la Barre 2<br/>1014 Lausanne</td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </td>
+                            <f:if condition="{pressReleaseData.partnerSources -> f:count()} <= 3}">
+                                <td class="section" id="pr_header" style="position:relative;text-align:-webkit-right;text-align:right;vertical-align:top;width:430px">
+                                    <table id="pressRelease_partnerSources_logos" style="position:absolute;right:0;text-align:right">
+                                        <tbody>
+                                            <tr>
+                                                <f:for as="partnerSource" each="{pressReleaseData.partnerSources}">
+                                                    <f:if condition="{partnerSource.logo}">
+                                                        <td><f:image absolute="1" height="70" image="{partnerSource.logo}"/></td>
+                                                    </f:if>
+                                                </f:for>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                </td>
+                            </f:if>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+        <section class="main">
+            <div class="section" id="pr_type">
+                <h2 id="press-release-data-type-title">{pressReleaseData.type.title}</h2>
+                <f:if condition="{pressReleaseData.source}">
+                    <h3>{pressReleaseData.source}</h3>
+                </f:if>
+            </div>
+            <div class="section" id="pr_surtitre">
+                <f:if condition="{pressReleaseData.partnerSourceInfos}">
+                    <h4 class="partnerSourceInfos">{pressReleaseData.partnerSourceInfos}</h4>
+                </f:if>
+                <f:if condition="{pressReleaseData.subtitle}">
+                    <h4 class="subtitle" style="text-transform:uppercase">{pressReleaseData.subtitle}</h4>
+                </f:if>
+            </div>
+            <div class="section" id="pr_titre">
+                <h1 id="page-title">{pressReleaseData.title}</h1>
+            </div>
+            <f:if condition="{pressReleaseData.summary}">
+                <div class="section" id="pr_chapeau">
+                    <f:format.html>{pressReleaseData.summary}</f:format.html>
+                </div>
+            </f:if>
+            <f:if condition="{pressReleaseData.bodyText}">
+                <div class="section" id="pr_corps">
+                    <f:format.html>{pressReleaseData.bodyText}</f:format.html>
+                </div>
+            </f:if>
+            <f:if condition="{pressReleaseData.additionalText}">
+                <div class="section" id="pr_aside">
+                    <f:format.html>{pressReleaseData.additionalText}</f:format.html>
+                </div>
+            </f:if>
+            <div class="section" id="pr_signature">
+                <f:if condition="{pressReleaseData.signature}">
+                    <f:then>
+                        {pressReleaseData.signature -> f:format.html()}
+                    </f:then>
+                    <f:else>
+                        <p>Bureau d'information et de communication de l'État de Vaud</p>
+                    </f:else>
+                </f:if>
+                <br/>
+            </div>
+            <div class="section" id="pr_date">
+                <span>Lausanne, le {pressReleaseData.dateTime -> f:format.date(format: '%d %B %Y')}</span>
+            </div>
+            <f:if condition="{f:count(subject: pressRelease.partnerSources)} > 3">
+                <div class="section" id="pr_header">
+                    <table id="pressRelease_partnerSources_logos">
+                        <tbody>
+                            <tr>
+                                <f:for as="partnerSource" each="{pressReleaseData.partnerSources}">
+                                    <f:if condition="{partnerSource.logo}">
+                                        <td><f:image height="80" src="{partnerSource.logo.originalResource.originalFile.uid}"/></td>
+                                    </f:if>
+                                </f:for>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </f:if>
+            <div class="print_unbreackable">
+                <div class="section" id="pr_renseignements">
+                    <f:if condition="{pressReleaseData.contacts}">
+                        <div><f:translate id="information"/></div>
+                        <ul>
+                            <f:for as="contact" each="{pressReleaseData.contacts}">
+                                <li>{vdp:contact(contact: contact, pressRelease: pressReleaseData)}</li>
+                            </f:for>
+                        </ul>
+                    </f:if>
+                </div>
+                <div class="section" id="pr_downloads">
+                    <f:if condition="{pressReleaseData.additionalContents}">
+                        <div><f:translate id="links"/></div>
+                        <ul>
+                            <f:for as="additionalContent" each="{pressReleaseData.additionalContents}">
+                                <li><f:render arguments="{link: additionalContent}" section="Link"/></li>
+                            </f:for>
+                        </ul>
+                    </f:if>
+                    <f:if condition="{pressReleaseData.files} || {pressReleaseData.publidocFiles}">
+                        <div><f:translate id="download"/></div>
+                        <ul>
+                            <f:if condition="{pressReleaseData.publidocFiles}">
+                                <f:for as="file" each="{pressReleaseData.files}" iteration="iterator">
+                                    <li>
+                                        <f:if condition="{file.originalResource.title} == ''">
+                                            <f:then>
+                                                <f:variable name="fileName" value="{file.originalResource.originalFile.name}"/>
+                                            </f:then>
+                                            <f:else>
+                                                <f:variable name="fileName" value="{file.originalResource.title}"/>
+                                            </f:else>
+                                        </f:if>
+                                        <a href="{file.originalResource.publicUrl}" id="original-resource-link-{iterator.index}">{fileName}</a>
+                                    </li>
+                                </f:for>
+                            </f:if>
+                            <f:if condition="{pressReleaseData.publidocFiles}">
+                                <f:for as="publidocFile" each="{pressReleaseData.publidocFiles}">
+                                    <li><f:render arguments="{link: publidocFile}" section="Link"/></li>
+                                </f:for>
+                            </f:if>
+                        </ul>
+                    </f:if>
+                </div>
+            </div>
+        </section>
+    </div>
+    <f:section name="Link">
+        <f:if condition="{link.title}">
+            <f:then>
+                <f:link.typolink additionalAttributes="{id: 'press-release-link'}" parameter="{link.url}">{link.title}</f:link.typolink>
+            </f:then>
+            <f:else>
+                <f:link.typolink additionalAttributes="{id: 'press-release-link'}" parameter="{link.url}"/>
+            </f:else>
+        </f:if>
+    </f:section>
+</html>

@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xliff version="1.2" xmlns="urn:oasis:names:tc:xliff:document:1.2">
+	<file datatype="plaintext" original="EXT:vd_powermail/Resources/Private/Language/Overrides/fr.locallang_db.xlf" source-language="en" target-language="fr">
+		<header/>
+		<body>
+			<trans-unit id="flexform.receiver.email" resname="flexform.receiver.email">
+				<source>Receivers Email</source>
+				<target state="translated">Courriels des destinataires (un par ligne)</target>
+			</trans-unit>
+			<trans-unit id="flexform.receiver.subject" resname="flexform.receiver.subject">
+				<source>Subject for Email to Receiver (Empty subject disables mail)</source>
+				<target state="translated">Sujet du courriel au destinataire (un sujet vide désactive l'envoi)</target>
+			</trans-unit>
+		</body>
+	</file>
+</xliff>

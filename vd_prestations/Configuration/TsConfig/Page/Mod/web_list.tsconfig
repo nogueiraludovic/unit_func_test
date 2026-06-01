@@ -1,0 +1,4 @@
+mod.web_list {
+  deniedNewTables := addToList(tx_vdprestations_domain_model_accessmodality,tx_vdprestations_domain_model_prestation,tx_vdprestations_domain_model_targetaudience,tx_vdprestations_domain_model_url)
+  tableDisplayOrder.tx_vdprestations_domain_model_prestation.before = tx_vdprestations_domain_model_targetaudience
+}

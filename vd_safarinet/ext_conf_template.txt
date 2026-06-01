@@ -1,0 +1,6 @@
+#cat=basic/enable/10;type=boolean;label=Enable log for each response received from SIEL API
+debug = 0
+#cat=basic/enable/20;type=boolean;label=Add more verbosity to SIEL log, really heavy only enable it for a short time period (30min-1h)
+debugVerbose = 0
+#cat=basic/enable/30;type=int;label=Set a timeout for SIEL requests
+timeout = 20

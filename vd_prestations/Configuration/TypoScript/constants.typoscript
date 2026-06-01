@@ -1,0 +1,14 @@
+plugin.tx_vdprestations.settings {
+  singlePid = 2000180
+  stepsList = https://int-prestations.vd.ch/pub/101554
+}
+
+##################################################
+
+[applicationContext == 'Production/Formation']
+  plugin.tx_vdprestations.settings.stepsList = https://val-prestations.vd.ch/pub/101554
+[applicationContext == 'Production/Validation']
+  plugin.tx_vdprestations.settings.stepsList = https://val-prestations.vd.ch/pub/101554
+[applicationContext == 'Production']
+  plugin.tx_vdprestations.settings.stepsList = https://prestations.vd.ch/pub/101554
+[end]

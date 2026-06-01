@@ -1,0 +1,4 @@
+mod.web_list.tableDisplayOrder {
+  tx_vddirectory_domain_model_address.before = tx_vddirectory_domain_model_sector
+  tx_vddirectory_domain_model_theme.before = tx_vddirectory_domain_model_service
+}

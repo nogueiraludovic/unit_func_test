@@ -1,0 +1,48 @@
+options {
+  bookmarkGroups {
+    4 = 0
+    5 = 0
+  }
+  contextMenu.table.pages.tree {
+    disableItems >
+    disableItems = exportT3d,importT3d,mountAsTreeRoot
+  }
+}
+
+##################################################
+
+page.TCEFORM.pages {
+  exclude_from_sitemap.disabled = 1
+  sitemap_priority.disabled = 1
+  sitemap_changefreq.disabled = 1
+}
+
+##################################################
+
+permissions.file.storage.1 {
+  addFile = 1
+  addFolder = 1
+  copyFile = 1
+  copyFolder = 1
+  deleteFile = 1
+  deleteFolder = 1
+  moveFile = 1
+  moveFolder = 1
+  readFile = 1
+  readFolder = 1
+  recursivedeleteFolder = 1
+  renameFile = 1
+  renameFolder = 1
+  unzipFile = 1
+  writeFile = 1
+  writeFolder = 1
+}
+
+##################################################
+
+setup.override {
+  copyLevels = 1
+  edit_docModuleUpload = 0
+  edit_RTE = 1
+  lang = fr
+}

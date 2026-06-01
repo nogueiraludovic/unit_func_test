@@ -1,0 +1,99 @@
+<html data-namespace-typo3-fluid="true" xmlns:f="http://typo3.org/ns/TYPO3/CMS/Fluid/ViewHelpers" xmlns:vdn="http://typo3.org/ns/Vd/VdNews/ViewHelpers">
+    <f:layout name="Detail"/>
+    <f:section name="Content">
+        <f:if condition="{newsItem.type} == 3">
+            <f:variable name="newsItem" value="{newsItem.selectedArticle}"/>
+        </f:if>
+        <article itemscope="itemscope" itemtype="https://schema.org/Article">
+            <header class="text-center">
+                <h1 class="mb-3 mt-0" id="page-title" itemprop="headline">{newsItem.title}</h1>
+                <p class="small">
+                    <time datetime="{newsItem.datetime -> f:format.date(format: 'c')}">
+                        <f:format.raw><vdn:translate arguments="{0: '{f:format.date(date: newsItem.datetime, format: \'%d.%m.%Y\')}'}" id="published_on"/></f:format.raw>
+                    </time>
+                    <f:if condition="{newsItem.categories}">
+                        - <span class="visually-hidden">{vdn:translate(id: 'category')}</span>{vdn:format.categories(categories: newsItem.categories, listPid: settings.listPid)}
+                    </f:if>
+                </p>
+            </header>
+            <f:if condition="{newsItem.teaser}">
+                <div class="lead" itemprop="description">
+                    <f:format.html>{newsItem.teaser}</f:format.html>
+                </div>
+            </f:if>
+            <f:render arguments="{newsItem: newsItem, width: 738}" partial="Media"/>
+            <div itemprop="articleBody">
+                <f:format.html>{newsItem.bodytext}</f:format.html>
+            </div>
+            <f:if condition="{newsItem.relatedLinks}">
+                <h2 id="links-title"><vdn:translate id="links"/></h2>
+                <ul class="vd-list-links">
+                    <f:for as="relatedLink" each="{newsItem.relatedLinks}" iteration="iterator">
+                        <li>
+                            <f:link.typolink additionalAttributes="{id: 'news-related-link-{iterator.index}'}" parameter="{relatedLink.uri}" title="{relatedLink.title}">
+                                <f:if condition="relatedLink.title">
+                                    <f:then>{relatedLink.title}</f:then>
+                                    <f:else>{relatedLink.uri}</f:else>
+                                </f:if>
+                            </f:link.typolink>
+                            <f:if condition="{relatedLink.description}">
+                                <small> - {relatedLink.description}</small>
+                            </f:if>
+                        </li>
+                    </f:for>
+                </ul>
+            </f:if>
+            <f:if condition="{newsItem.falRelatedFiles}">
+                <h2 id="downloads-title"><vdn:translate id="downloads"/></h2>
+                <ul class="vd-list-icons">
+                    <f:for as="relatedFile" each="{newsItem.falRelatedFiles}">
+                        <li>
+                            <span aria-hidden="true" class="fa fa-download"></span>
+                            <a href="{relatedFile.originalResource.publicUrl -> f:format.htmlspecialchars()}" id="related-file-link">
+                                <f:if condition="{relatedFile.originalResource.title}">
+                                    <f:then>
+                                        {relatedFile.originalResource.title}
+                                    </f:then>
+                                    <f:else>
+                                        {relatedFile.originalResource.name}
+                                    </f:else>
+                                </f:if>
+                            </a>
+                        </li>
+                    </f:for>
+                </ul>
+            </f:if>
+            <f:variable name="relatedImages" value="{newsItem.relatedImages}"/>
+            <f:if condition="{relatedImages}">
+                <h2 id="images-title"><vdn:translate id="images"/></h2>
+                <f:for as="relatedImage" each="{relatedImages}">
+                    <figure class="d-block figure">
+                        <f:render arguments="{height: 427, media: relatedImage, width: 738}" partial="Media/Image"/>
+                    </figure>
+                </f:for>
+            </f:if>
+            <f:variable name="relatedVideos" value="{newsItem.relatedVideos}"/>
+            <f:if condition="{relatedVideos}">
+                <h2 id="medias-title"><vdn:translate id="medias"/></h2>
+                <f:for as="relatedVideo" each="{relatedVideos}">
+                    <figure class="d-block figure">
+                        <f:render arguments="{media: relatedVideo}" partial="Media/Video"/>
+                    </figure>
+                </f:for>
+            </f:if>
+            <f:if condition="{newsItem.allRelatedSorted}">
+                <h2 id="related-news-title"><vdn:translate id="related_news"/></h2>
+                <ul class="vd-list-links">
+                    <f:for as="relatedNews" each="{newsItem.allRelatedSorted}">
+                        <li>
+                            <time datetime="{relatedNews.datetime -> f:format.date(format: 'c')}">
+                                {relatedNews.datetime -> f:format.date(format: '%d.%m.%Y')}
+                            </time>
+                            <f:render arguments="{content: relatedNews.title, newsItem: relatedNews}" partial="List/Link"/>
+                        </li>
+                    </f:for>
+                </ul>
+            </f:if>
+        </article>
+    </f:section>
+</html>

@@ -1,0 +1,165 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<xliff version="1.0">
+    <file source-language="en" datatype="plaintext" original="messages" date="2017-02-07T06:32:31Z"
+          product-name="vd_prestations">
+        <header/>
+        <body>
+            <trans-unit id="flexform.tab.general">
+                <source>General</source>
+            </trans-unit>
+            <trans-unit id="settings.prestations">
+                <source>Prestations</source>
+            </trans-unit>
+            <trans-unit id="settings.longListPageId">
+                <source>Page qui contient toutes les prestations</source>
+            </trans-unit>
+            <trans-unit id="settings.sourceContentElementId">
+                <source>Element de contenu contenant la liste de prestation courte</source>
+            </trans-unit>
+            <trans-unit id="tx_vdprestations_domain_model_prestation">
+                <source>Prestation</source>
+            </trans-unit>
+            <trans-unit id="tx_vdprestations_domain_model_prestation.title">
+                <source>Titre</source>
+            </trans-unit>
+            <trans-unit id="tx_vdprestations_domain_model_prestation.external_id">
+                <source>ID externe</source>
+            </trans-unit>
+            <trans-unit id="tx_vdprestations_domain_model_prestation.description">
+                <source>Description</source>
+            </trans-unit>
+            <trans-unit id="tx_vdprestations_domain_model_prestation.domain_name">
+                <source>Domaine</source>
+            </trans-unit>
+            <trans-unit id="tx_vdprestations_domain_model_prestation.theme_name">
+                <source>Thème</source>
+            </trans-unit>
+            <trans-unit id="tx_vdprestations_domain_model_prestation.emolument">
+                <source>Emolument</source>
+            </trans-unit>
+            <trans-unit id="tx_vdprestations_domain_model_prestation.prerequisites">
+                <source>Conditions préalables</source>
+            </trans-unit>
+            <trans-unit id="tx_vdprestations_domain_model_prestation.url">
+                <source>Adresse de la prestation</source>
+            </trans-unit>
+            <trans-unit id="tx_vdprestations_domain_model_prestation.service_name">
+                <source>Service</source>
+            </trans-unit>
+            <trans-unit id="tx_vdprestations_domain_model_prestation.result">
+                <source>Résultat de la prestation</source>
+            </trans-unit>
+            <trans-unit id="tx_vdprestations_domain_model_prestation.action_client">
+                <source>Action bénéficiaire</source>
+            </trans-unit>
+            <trans-unit id="tx_vdprestations_domain_model_prestation.action_service">
+                <source>Action service</source>
+            </trans-unit>
+            <trans-unit id="tx_vdprestations_domain_model_prestation.related_prestations">
+                <source>Prestations associées</source>
+            </trans-unit>
+            <trans-unit id="tx_vdprestations_domain_model_prestation.target_audience">
+                <source>Public cible</source>
+            </trans-unit>
+            <trans-unit id="tx_vdprestations_domain_model_prestation.access_modalities">
+                <source>Modalités d’accès</source>
+            </trans-unit>
+            <trans-unit id="tx_vdprestations_domain_model_prestation.legal_references">
+                <source>Références légales</source>
+            </trans-unit>
+            <trans-unit id="tx_vdprestations_domain_model_accessmodality">
+                <source>Modalités d’accès</source>
+            </trans-unit>
+            <trans-unit id="tx_vdprestations_domain_model_accessmodality.type">
+                <source>Type</source>
+            </trans-unit>
+            <trans-unit id="tx_vdprestations_domain_model_accessmodality.howto">
+                <source>Marche à suivre</source>
+            </trans-unit>
+            <trans-unit id="tx_vdprestations_domain_model_accessmodality.additional_informations">
+                <source>Informations complémentaires</source>
+            </trans-unit>
+            <trans-unit id="tx_vdprestations_domain_model_accessmodality.average_delay">
+                <source>Délai moyen de traitement</source>
+            </trans-unit>
+            <trans-unit id="tx_vdprestations_domain_model_accessmodality.cost">
+                <source>Coût de la prestation</source>
+            </trans-unit>
+            <trans-unit id="tx_vdprestations_domain_model_accessmodality.required_documents">
+                <source>Documents requis</source>
+            </trans-unit>
+            <trans-unit id="tx_vdprestations_domain_model_accessmodality.service_name">
+                <source>Service</source>
+            </trans-unit>
+            <trans-unit id="tx_vdprestations_domain_model_accessmodality.epayment">
+                <source>E-payment</source>
+            </trans-unit>
+            <trans-unit id="tx_vdprestations_domain_model_accessmodality.security_level">
+                <source>Niveau de sécurité</source>
+            </trans-unit>
+            <trans-unit id="tx_vdprestations_domain_model_accessmodality.external_link">
+                <source>Link externe</source>
+            </trans-unit>
+            <trans-unit id="tx_vdprestations_domain_model_accessmodality.url">
+                <source>URL</source>
+            </trans-unit>
+            <trans-unit id="tx_vdprestations_domain_model_targetaudience">
+                <source>Public cible</source>
+            </trans-unit>
+            <trans-unit id="tx_vdprestations_domain_model_targetaudience.name">
+                <source>Nom</source>
+            </trans-unit>
+            <trans-unit id="tx_vdprestations_domain_model_url">
+                <source>URL</source>
+            </trans-unit>
+            <trans-unit id="tx_vdprestations_domain_model_url.title">
+                <source>Titre</source>
+            </trans-unit>
+            <trans-unit id="tx_vdprestations_domain_model_url.url">
+                <source>URL</source>
+            </trans-unit>
+            <trans-unit id="prestation.highlight.additional_informations">
+                <source>Informations complémentaires</source>
+            </trans-unit>
+            <trans-unit id="prestation.highlight.average_delay">
+                <source>Délai</source>
+            </trans-unit>
+            <trans-unit id="prestation.highlight.cost">
+                <source>Coût</source>
+            </trans-unit>
+            <trans-unit id="prestation.highlight.required_documents">
+                <source>Documents requis</source>
+            </trans-unit>
+            <trans-unit id="prestation.poste.title">
+                <source>Par courrier</source>
+            </trans-unit>
+            <trans-unit id="prestation.poste.description">
+                <source>Obtenir la prestation par courrier</source>
+            </trans-unit>
+            <trans-unit id="prestation.online.title">
+                <source>En ligne</source>
+            </trans-unit>
+            <trans-unit id="prestation.online.description">
+                <source>Obtenir la prestation en ligne</source>
+            </trans-unit>
+            <trans-unit id="prestation.telephone.title">
+                <source>Par téléphone</source>
+            </trans-unit>
+            <trans-unit id="prestation.telephone.description">
+                <source>Obtenir la prestation par téléphone</source>
+            </trans-unit>
+            <trans-unit id="prestation.mail.title">
+                <source>Par email</source>
+            </trans-unit>
+            <trans-unit id="prestation.mail.description">
+                <source>Obtenir la prestation par email</source>
+            </trans-unit>
+            <trans-unit id="prestation.guichet.title">
+                <source>Au guichet</source>
+            </trans-unit>
+            <trans-unit id="prestation.guichet.description">
+                <source>Obtenir la prestation au guichet</source>
+            </trans-unit>
+        </body>
+    </file>
+</xliff>

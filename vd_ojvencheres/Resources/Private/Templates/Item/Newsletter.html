@@ -1,0 +1,74 @@
+<html data-namespace-typo3-fluid="true" xmlns:f="http://typo3.org/ns/TYPO3/CMS/Fluid/ViewHelpers" xmlns:vdc="http://typo3.org/ns/Vd/VdCore/ViewHelpers">
+    <vdc:titleTag value="{f:translate(id: 'newsletter_title')}{f:if(condition: category, then : ' - {category.name}')}"/>
+    <f:if condition="{items}">
+        <f:then>
+            <table style="width:550px">
+                <tbody>
+                    <f:for as="item" each="{items}">
+                        <tr style="border-bottom-color: #000;border-bottom-style:solid;border-bottom-width:1px;font-family:Helvetica,Verdana,Arial,Geneva,sans-serif;margin-bottom:20px;overflow:hidden;padding-bottom:20px">
+                            <td align="center" rowspan="2" style="font-family:Helvetica,Verdana,Arial,Geneva,sans-serif;margin-right:2%;text-align:center;vertical-align:top;width:25%">
+                                <f:if condition="{item.sale.status} == 2">
+                                    <f:then>
+                                        <span style="font-family:Helvetica,Verdana,Arial,Geneva,sans-serif;width:100%">
+                                            <f:image absolute="1" loading="lazy" src="EXT:vd_ojvencheres/Resources/Public/Images/Canceled.png" height="95c" alt="{f:translate(id: 'canceled')}" style="border: 1px solid #000;width:143px;height:95px"/>
+                                        </span>
+                                    </f:then>
+                                    <f:else>
+                                        <f:if condition="{item.pictures}">
+                                            <span style="font-family:Helvetica,Verdana,Arial,Geneva,sans-serif;width:100%">
+                                                <f:image absolute="1" image="{item.pictures.0}" loading="lazy" width="143c" height="95c" style="border: 1px solid #000;width:143px;height:95px"/>
+                                            </span>
+                                        </f:if>
+                                    </f:else>
+                                </f:if>
+                            </td>
+                            <td style="font-family:Helvetica,Verdana,Arial,Geneva,sans-serif; padding-left:20px;width:75%">
+                                <f:link.action absolute="1" action="show" arguments="{item: item}" id="item-details-link" pageUid="{settings.item.detailPid}" style="color:#3c8a2e;font-family:Helvetica,Verdana,Arial,Geneva,sans-serif;text-decoration:underline" title="{f:translate(id: 'see_item_detail')} {item.title}">
+                                    {item.title}
+                                </f:link.action>
+                                <div style="color:#000;font-family:Helvetica,Verdana,Arial,Geneva,sans-serif;text-decoration:none">
+                                    {item.description -> f:format.stripTags() -> f:format.crop(maxCharacters: 130)}
+                                </div>
+                                <div style="font-family:Helvetica,Verdana,Arial,Geneva,sans-serif;margin-top:10px;padding-right:105px">
+                                    <f:if condition="{item.sale.status} == 2">
+                                        <f:then>
+                                            <span style="color:#c3105c"><f:translate id="sale_canceled"/></span>
+                                        </f:then>
+                                        <f:else>
+                                            <f:if condition="{item.sale}">
+                                                <f:translate id="sale_date"/>
+                                                <f:for as="saleDate" each="{item.sale.saleDate}">
+                                                    <div><f:format.date format="%d.%m.%Y">{saleDate.saleDate}</f:format.date></div>
+                                                </f:for>
+                                            </f:if>
+                                        </f:else>
+                                    </f:if>
+                                </div>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td align="right">
+                                <div>
+                                    <f:link.action absolute="1" action="show" arguments="{item: item}" id="item-details-second-link" pageUid="{settings.item.detailPid}" style="color:#3c8a2e;font-family:Helvetica,Verdana,Arial,Geneva,sans-serif;text-decoration:underline">
+                                        <f:translate id="item_detail"/>
+                                    </f:link.action>
+                                </div>
+                            </td>
+                        </tr>
+                    </f:for>
+                    <tr style="font-family:Helvetica,Verdana,Arial,Geneva,sans-serif;margin-bottom:20px;text-align:right">
+                        <td align="right" colspan="2">
+                            <br/>
+                            <f:link.action absolute="1" action="list" arguments="{demand: '{category: settings.category}'}" id="item-index-link" pageUid="{settings.item.allPid}" style="color:#3c8a2e;font-family:Helvetica,Verdana,Arial,Geneva,sans-serif;text-decoration:underline">
+                                <f:translate id="see_all_items"/>
+                            </f:link.action>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+        </f:then>
+        <f:else>
+            <p><f:translate id="no_result"/></p>
+        </f:else>
+    </f:if>
+</html>

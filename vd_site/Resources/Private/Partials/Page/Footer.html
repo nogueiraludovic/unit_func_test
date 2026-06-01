@@ -1,0 +1,54 @@
+<html data-namespace-typo3-fluid="true" xmlns:f="http://typo3.org/ns/TYPO3/CMS/Fluid/ViewHelpers">
+    <f:if condition="!{noSocial}">
+        <div class="container">
+            <h2 class="vd-heading-light-alt h4 mb-3 visually-hidden"><f:translate extensionName="VdSite" id="share_the_page"/></h2>
+            <div class="d-inline-flex">
+                <f:render arguments="{currentPageUid: data.uid}" partial="Page/Seo/Share"/>
+            </div>
+        </div>
+    </f:if>
+    <footer>
+        <f:if condition="!{noTop}">
+            <div class="container">
+                <div class="text-end">
+                    <a href="#main" class="btn btn-sm btn-dark" id="btn-go-to-top" title="{f:translate(extensionName: 'VdSite', id: 'back_to_top')}">
+                        <f:translate extensionName="VdSite" id="top"/>&nbsp;<span class="fa fa-chevron-up"></span>
+                    </a>
+                </div>
+            </div>
+        </f:if>
+        <div class="footer">
+            <div class="container">
+                <div class="row">
+                    <div class="col-xs-10">
+                        <nav class="row" aria-label="{f:translate(extensionName: 'VdSite', id: 'footer')}">
+                            <div class="col-sm">
+                                <h2 class="vd-heading-light h4 visually-hidden"><f:translate extensionName="VdSite" id="direct_access"/></h2>
+                                <ul class="list-unstyled vd-list-columns">
+                                    <f:for as="item" each="{leftFooterNavItems}" iteration="iterator">
+                                        <li><a href="{item.link}" id="left-footer-nav-item-link-{iterator.index}" title="{item.title}">{item.title}</a></li>
+                                    </f:for>
+                                </ul>
+                            </div>
+                            <div class="col-sm">
+                                <h2 class="vd-heading-light h4 "><f:translate extensionName="VdSite" id="partner_sites"/></h2>
+                                <ul class="list-unstyled">
+                                    <f:for as="item" each="{rightFooterNavItems}" iteration="iterator">
+                                        <li><a href="{item.link}" id="right-footer-nav-item-link-{iterator.index}" title="{item.title}">{item.title}</a></li>
+                                    </f:for>
+                                </ul>
+                            </div>
+                        </nav>
+                    </div>
+                    <div class="col-xs-2">
+                        <div class="d-flex align-items-end flex-column h-100">
+                            <div class="mt-auto w-100 text-end">
+                                <f:image alt="{f:translate(extensionName: 'VdSite', id: 'canton_de_vaud')}" class="img-fluid footer-logo" loading="lazy" src="EXT:vd_site/Resources/Public/Foehn/dist/assets/svg/logo/logo--white.svg" width="160"/>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+</html>

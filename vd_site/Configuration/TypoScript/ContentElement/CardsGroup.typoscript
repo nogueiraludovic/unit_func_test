@@ -1,0 +1,41 @@
+tt_content.cards_group =< lib.contentElement
+tt_content.cards_group {
+  dataProcessing {
+    10 = TYPO3\CMS\Frontend\DataProcessing\DatabaseQueryProcessor
+    10 {
+      as = cards
+      dataProcessing {
+        10 = TYPO3\CMS\Frontend\DataProcessing\FilesProcessor
+        10 {
+          as = images
+          if.isTrue.field = image
+          references {
+            fieldName = image
+            table = tx_vdsite_domain_model_card
+          }
+        }
+      }
+      if.isTrue.field = cards
+      orderBy = sorting
+      pidInList = this
+      table = tx_vdsite_domain_model_card
+      where {
+        data = field:uid
+        intval = 1
+        wrap = tx_vdsite_domain_model_card.parent=|
+      }
+    }
+  }
+  templateName = CardsGroup
+  variables {
+    columnsCssClasses = CASE
+    columnsCssClasses {
+      3-cols = TEXT
+      3-cols.value = col-12 col-md-4 col-sm-6
+      4-cols = TEXT
+      4-cols.value = col-12 col-md-3 col-sm-6
+      default < .3-cols
+      key.field = layout
+    }
+  }
+}

@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xliff version="1.2" xmlns="urn:oasis:names:tc:xliff:document:1.2">
+	<file datatype="plaintext" original="EXT:vd_contact_service/Resources/Private/Language/Form/locallang_tabs.xlf" source-language="en" target-language="fr">
+		<header/>
+		<body>
+			<trans-unit id="address" resname="address">
+				<source>Address</source>
+				<target state="translated">Adresse</target>
+			</trans-unit>
+			<trans-unit id="medias" resname="medias">
+				<source>Medias</source>
+				<target state="translated">Médias</target>
+			</trans-unit>
+			<trans-unit id="misc" resname="misc">
+				<source>Misc</source>
+				<target state="translated">Divers</target>
+			</trans-unit>
+		</body>
+	</file>
+</xliff>

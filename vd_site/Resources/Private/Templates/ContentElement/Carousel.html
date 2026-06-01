@@ -1,0 +1,65 @@
+<html data-namespace-typo3-fluid="true" xmlns:f="http://typo3.org/ns/fluid/ViewHelpers">
+    <f:layout/>
+    <f:section name="Link">
+        <f:link.typolink additionalAttributes="{id: 'carousel-item-link-{carouselItem.data.uid}'}" class="text-decoration-none text-inherit vd-card-link" parameter="{carouselItem.data.link}">
+            {carouselItem.data.title}
+        </f:link.typolink>
+    </f:section>
+    <f:section name="Main">
+        <f:if condition="{carouselItems}">
+            <ul class="list-unstyled mt-3 vd-reel">
+                <f:for as="carouselItem" each="{carouselItems}">
+                    <f:switch expression="{data.type}">
+                        <f:case value="news">
+                            <f:render arguments="{carouselItem: carouselItem, sectionHeader: data.header}" partial="Carousel/News"/>
+                        </f:case>
+                        <f:case value="press_releases">
+                            <f:render arguments="{carouselItem: carouselItem, sectionHeader: data.header}" partial="Carousel/PressRelease"/>
+                        </f:case>
+                        <f:case value="records">
+                            <f:if condition="{carouselItem.data.table} == 'tx_news_domain_model_news'">
+                                <f:then>
+                                    <f:render arguments="{carouselItem: carouselItem, sectionHeader: data.header}" partial="Carousel/News"/>
+                                </f:then>
+                                <f:else if="{carouselItem.data.table} == 'tx_vdpressreleases_domain_model_pressrelease'">
+                                    <f:render arguments="{carouselItem: carouselItem, sectionHeader: data.header}" partial="Carousel/PressRelease"/>
+                                </f:else>
+                                <f:else if="{carouselItem.data.table} == tx_vdprestations_domain_model_prestation">
+                                    <f:render arguments="{carouselItem: carouselItem, sectionHeader: data.header}" partial="Carousel/Service"/>
+                                </f:else>
+                            </f:if>
+                        </f:case>
+                        <f:case value="services">
+                            <f:render arguments="{carouselItem: carouselItem, sectionHeader: data.header}" partial="Carousel/Service"/>
+                        </f:case>
+                        <f:defaultCase>
+                            <li aria-label="{carouselItem.data.title}" class="card w-80">
+                                <f:if condition="{carouselItem.images.0}">
+                                    <f:image alt="{carouselItem.images.0.alternative}" class="img-fluid" height="300c" image="{carouselItem.images.0}" loading="lazy" title="{carouselItem.images.0.title}" width="400c"/>
+                                </f:if>
+                                <div class="card-body pt-1">
+                                    <f:if condition="{data.header}">
+                                        <f:then>
+                                            <h3 class="card-title h4">
+                                                <f:render section="Link" arguments="{carouselItem: carouselItem}"/>
+                                            </h3>
+                                        </f:then>
+                                        <f:else>
+                                            <h2 class="card-title h4">
+                                                <f:render section="Link" arguments="{carouselItem: carouselItem}"/>
+                                            </h2>
+                                        </f:else>
+                                    </f:if>
+                                    <f:if condition="{carouselItem.data.text}">
+                                        <p class="card-text">{carouselItem.data.text -> f:format.stripTags() -> f:format.crop(maxCharacters: 150)}</p>
+                                    </f:if>
+                                </div>
+                            </li>
+                        </f:defaultCase>
+                    </f:switch>
+                </f:for>
+            </ul>
+            <f:render arguments="{data: data}" partial="ContentElementLink"/>
+        </f:if>
+    </f:section>
+</html>

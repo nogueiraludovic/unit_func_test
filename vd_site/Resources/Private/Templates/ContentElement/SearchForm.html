@@ -1,0 +1,26 @@
+<html data-namespace-typo3-fluid="true" xmlns:f="http://typo3.org/ns/fluid/ViewHelpers">
+    <f:layout/>
+    <f:section name="Header"/>
+    <f:section name="Main">
+        <div class="py-5">
+            <div id="search-form-container">
+                <h2 class="visually-hidden" id="search-title">Recherche</h2>
+                {searchForm -> f:format.raw()}
+            </div>
+            <f:if condition="{flexFormData.suggestions}">
+                <div class="d-flex justify-content-center mt-3 w-100">
+                    <div class="d-flex flex-column text-center vd-search-form-width">
+                        <h3 class="fs-6 mb-2 mt-0">Exemples de recherche :</h3>
+                        <div class="d-flex flex-row flex-wrap justify-content-around">
+                            <f:for as="suggestion" each="{flexFormData.suggestions}" key="index">
+                                <f:link.page additionalParams="{'tx_solr[q]': suggestion}" class="m-1 vd-search-suggestion-link" id="suggestion-link-{index}" pageUid="{site.configuration.settings.searchPageUid}">
+                                    {suggestion}
+                                </f:link.page>
+                            </f:for>
+                        </div>
+                    </div>
+                </div>
+            </f:if>
+        </div>
+    </f:section>
+</html>

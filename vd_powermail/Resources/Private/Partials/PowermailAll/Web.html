@@ -1,0 +1,19 @@
+<html data-namespace-typo3-fluid="true" xmlns:f="http://typo3.org/ns/TYPO3/CMS/Fluid/ViewHelpers" xmlns:p="http://typo3.org/ns/In2code/Powermail/ViewHelpers">
+    <dl>
+        <dt>{answer.field.title}</dt>
+        <dd>
+            <f:if condition="{p:Condition.IsArray(val:answer.value)}">
+                <f:then>
+                    <f:for as="subValue" each="{answer.value}" iteration="iterator">
+                        <f:if condition="{subValue}">
+                            <p:Misc.ManipulateValueWithTypoScript answer="{answer}" type="{type}">{subValue}</p:Misc.ManipulateValueWithTypoScript><f:if condition="{iterator.isLast}"><f:else>, </f:else></f:if>
+                        </f:if>
+                    </f:for>
+                </f:then>
+                <f:else>
+                    <f:format.nl2br><p:Misc.ManipulateValueWithTypoScript answer="{answer}" type="{type}">{answer.value}</p:Misc.ManipulateValueWithTypoScript></f:format.nl2br>
+                </f:else>
+            </f:if>
+        </dd>
+    </dl>
+</html>

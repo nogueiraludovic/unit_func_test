@@ -1,0 +1,112 @@
+<html data-namespace-typo3-fluid="true" xmlns:f="http://typo3.org/ns/TYPO3/CMS/Fluid/ViewHelpers" xmlns:vdl="http://typo3.org/ns/Vd/VdLada/ViewHelpers">
+    <f:section name="Default">
+        <f:for as="record" each="{records}" iteration="iterator">
+            <h3 class="mt-0">{record.name}</h3>
+            <f:if condition="{record.images}">
+                <div class="row">
+                    <f:for as="image" each="{record.images}">
+                        <div class="col-12 col-lg-3 col-md-5">
+                            <a href="{image.publicUrl}" id="image-public-url-link">
+                                <f:image alt="{image.alternative}" class="img-fluid" image="{image}" loading="lazy" maxHeight="200" title="{image.title}"/>
+                            </a>
+                        </div>
+                    </f:for>
+                </div>
+            </f:if>
+            <dl class="mt-3 row">
+                <dt class="col-sm-3"><f:translate extensionName="VdLada" id="housing_type"/></dt>
+                <dd class="col-sm-9">{record.housing_type.0.name}</dd>
+                <f:if condition="{record.address} || {record.city} || {record.zip}">
+                    <dt class="col-sm-3"><f:translate extensionName="VdLada" id="address"/></dt>
+                    <dd class="col-sm-9">{record -> vdl:format.googleMaps()}</dd>
+                </f:if>
+            </dl>
+            <f:if condition="{record.contact_email} || {record.contact_name} || {record.contact_telephone}">
+                <h4><f:translate extensionName="VdLada" id="contact_person"/></h4>
+                <dl class="mt-3 row">
+                    <f:if condition="{record.contact_name}">
+                        <dt class="col-sm-3"><f:translate extensionName="VdLada" id="name"/></dt>
+                        <dd class="col-sm-9">{record.contact_name}</dd>
+                    </f:if>
+                    <f:if condition="{record.contact_telephone}">
+                        <dt class="col-sm-3"><f:translate extensionName="VdLada" id="telephone"/></dt>
+                        <dd class="col-sm-9">{vdl:format.phone(identifier: '{record.uid}-contact', phone: record.contact_telephone)}</dd>
+                    </f:if>
+                    <f:if condition="{record.contact_email}">
+                        <dt class="col-sm-3"><f:translate extensionName="VdLada" id="email"/></dt>
+                        <dd class="col-sm-9"><a href="mailto:{record.contact_email}" id="contact-email-to">{record.contact_email}</a></dd>
+                    </f:if>
+                </dl>
+            </f:if>
+            <h4><f:translate extensionName="VdLada" id="other_information"/></h4>
+            <dl class="mt-3 row">
+                <f:if condition="{record.lada_number} || {record.owner} || {record.service_provider}">
+                    <f:if condition="{record.lada_number}">
+                        <dt class="col-sm-3"><f:translate extensionName="VdLada" id="lada_number"/></dt>
+                        <dd class="col-sm-9">{record.lada_number}</dd>
+                    </f:if>
+                    <f:if condition="{record.owner}">
+                        <dt class="col-sm-3"><f:translate extensionName="VdLada" id="owner"/></dt>
+                        <dd class="col-sm-9">{record.owner}</dd>
+                    </f:if>
+                    <f:if condition="{record.service_provider}">
+                        <dt class="col-sm-3"><f:translate extensionName="VdLada" id="service_provider"/></dt>
+                        <dd class="col-sm-9">{record.service_provider}</dd>
+                    </f:if>
+                </f:if>
+                <dt class="col-sm-3"><f:translate extensionName="VdLada" id="near_ems"/></dt>
+                <f:if condition="{record.near_ems} == 1">
+                    <f:then>
+                        <dd class="col-sm-9"><f:translate extensionName="VdLada" id="yes"/></dd>
+                    </f:then>
+                    <f:else>
+                        <dd class="col-sm-9"><f:translate extensionName="VdLada" id="no"/></dd>
+                    </f:else>
+                </f:if>
+            </dl>
+            <h4><f:translate extensionName="VdLada" id="health_network"/></h4>
+            <dl class="mt-3 row">
+                <dt class="col-sm-3"><f:translate extensionName="VdLada" id="name"/></dt>
+                <dd class="col-sm-9">{record.health_network.0.name}</dd>
+                <f:if condition="{record.health_network.0.email} || {record.health_network.0.telephone} || {record.health_network.0.www}">
+                    <f:if condition="{record.health_network.0.telephone}">
+                        <dt class="col-sm-3"><f:translate extensionName="VdLada" id="telephone"/></dt>
+                        <dd class="col-sm-9">{vdl:format.phone(identifier: '{record.uid}-health', phone: record.health_network.0.telephone)}</dd>
+                    </f:if>
+                    <f:if condition="{record.health_network.0.email}">
+                        <dt class="col-sm-3"><f:translate extensionName="VdLada" id="email"/></dt>
+                        <dd class="col-sm-9"><a href="mailto:{record.health_network.0.email}" id="health-network-email-to">{record.health_network.0.email}</a></dd>
+                    </f:if>
+                    <f:if condition="{record.health_network.0.www}">
+                        <dt class="col-sm-3"><f:translate extensionName="VdLada" id="www"/></dt>
+                        <dd class="col-sm-9"><f:link.external id="housing-external-link" uri="{record.health_network.0.www}">{record.health_network.0.www}</f:link.external></dd>
+                    </f:if>
+                </f:if>
+            </dl>
+            <f:if condition="{record.detail_file} || {record.request_form}">
+                <h4><f:translate extensionName="VdLada" id="documents"/></h4>
+                <dl class="mt-3 row">
+                    <f:if condition="{record.detail_file}">
+                        <dt class="col-sm-3"><f:translate extensionName="VdLada" id="detail"/></dt>
+                        <dd class="col-sm-9">
+                            <a href="{record.detail_file.0.publicUrl}" id="detail-file-public-url-link">
+                                {record.detail_file.0.originalFile.name}
+                            </a>
+                        </dd>
+                    </f:if>
+                    <f:if condition="{record.request_form}">
+                        <dt class="col-sm-3"><f:translate extensionName="VdLada" id="request_form"/></dt>
+                        <dd class="col-sm-9">
+                            <a href="{record.request_form.0.publicUrl}" id="request-form-public-url-link">
+                                {record.request_form.0.originalFile.name}
+                            </a>
+                        </dd>
+                    </f:if>
+                </dl>
+            </f:if>
+            <f:if condition="!{iterator.isLast}">
+                <hr class="mt-4"/>
+            </f:if>
+        </f:for>
+    </f:section>
+</html>

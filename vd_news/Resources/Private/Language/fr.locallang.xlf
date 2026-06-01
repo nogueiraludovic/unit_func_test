@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xliff version="1.2" xmlns="urn:oasis:names:tc:xliff:document:1.2">
+	<file datatype="plaintext" original="EXT:vd_news/Resources/Private/Language/locallang.xlf" source-language="en" target-language="fr">
+		<header/>
+		<body>
+			<trans-unit id="and" resname="and">
+				<source>and</source>
+				<target state="translated">et</target>
+			</trans-unit>
+			<trans-unit id="category" resname="category">
+				<source>Category: </source>
+				<target state="translated">Catégorie : </target>
+			</trans-unit>
+			<trans-unit id="downloads" resname="downloads">
+				<source>Downloads</source>
+				<target state="translated">Téléchargements</target>
+			</trans-unit>
+			<trans-unit id="from" resname="from">
+				<source>from</source>
+				<target state="translated">du</target>
+			</trans-unit>
+			<trans-unit id="images" resname="images">
+				<source>Images</source>
+				<target state="translated">Images</target>
+			</trans-unit>
+			<trans-unit id="links" resname="links">
+				<source>Links</source>
+				<target state="translated">Liens</target>
+			</trans-unit>
+			<trans-unit id="medias" resname="medias">
+				<source>Medias</source>
+				<target state="translated">Médias</target>
+			</trans-unit>
+			<trans-unit id="news_list" resname="news_list">
+				<source>News list</source>
+				<target state="translated">Liste des actualités</target>
+			</trans-unit>
+			<trans-unit id="no_news" resname="no_news">
+				<source>No news for the moment.</source>
+				<target state="translated">Aucune actualité pour le moment.</target>
+			</trans-unit>
+			<trans-unit id="no_upcoming_event" resname="no_upcoming_event">
+				<source>No upcoming event.</source>
+				<target state="translated">Aucun événement à venir.</target>
+			</trans-unit>
+			<trans-unit id="published_on" resname="published_on">
+				<source><![CDATA[<span class="visually-hidden">Published on</span> %s]]></source>
+				<target state="translated"><![CDATA[<span class="visually-hidden">Publié le</span> %s]]></target>
+			</trans-unit>
+			<trans-unit id="read_more" resname="read_more">
+				<source><![CDATA[Read the rest <span class="visually-hidden">of the article "%s"</span>]]></source>
+				<target state="translated"><![CDATA[Lire la suite <span class="visually-hidden">de l'article "%s"</span>]]></target>
+			</trans-unit>
+			<trans-unit id="related_news" resname="related_news-news">
+				<source>Related news</source>
+				<target state="translated">Actualités associées</target>
+			</trans-unit>
+			<trans-unit id="share_this_news" resname="share_this_news">
+				<source>Share this news</source>
+				<target state="translated">Partager cette actualité</target>
+			</trans-unit>
+			<trans-unit id="to" resname="to">
+				<source>to</source>
+				<target state="translated">au</target>
+			</trans-unit>
+		</body>
+	</file>
+</xliff>

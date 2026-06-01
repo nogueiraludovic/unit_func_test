@@ -1,0 +1,10 @@
+setup {
+  fields {
+    emailMeAtLogin.disabled = 1
+    lang.disabled = 1
+  }
+  override {
+    emailMeAtLogin = 0
+    lang = fr
+  }
+}

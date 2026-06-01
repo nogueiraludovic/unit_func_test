@@ -1,0 +1,22 @@
+TCEMAIN.linkHandler {
+  news_category {
+    configuration {
+      pageTreeMountPoints = 28405
+      table = sys_category
+    }
+    displayAfter = news
+    handler = TYPO3\CMS\Recordlist\LinkHandler\RecordLinkHandler
+    label = News (catégorie)
+    scanAfter = page
+  }
+  news < .news_category
+  news {
+    configuration >
+    configuration {
+      storagePid = 28405
+      table = tx_news_domain_model_news
+    }
+    displayAfter = page
+    label = News
+  }
+}

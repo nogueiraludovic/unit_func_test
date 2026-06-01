@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xliff version="1.2" xmlns="urn:oasis:names:tc:xliff:document:1.2">
+	<file datatype="plaintext" original="EXT:vd_municipalities/Resources/Private/Language/locallang_db.xlf" source-language="en" target-language="fr">
+		<header/>
+		<body>
+			<trans-unit id="districts" resname="districts">
+				<source>Districts</source>
+				<target state="translated">Districts</target>
+			</trans-unit>
+			<trans-unit id="id_district" resname="id_district">
+				<source>District ID</source>
+				<target state="translated">ID du district</target>
+			</trans-unit>
+			<trans-unit id="id_municipality" resname="id_municipality">
+				<source>Municipality ID</source>
+				<target state="translated">ID de la municipalité</target>
+			</trans-unit>
+			<trans-unit id="id_object" resname="id_object">
+				<source>Object ID</source>
+				<target state="translated">ID de l'objet</target>
+			</trans-unit>
+			<trans-unit id="id_state" resname="id_state">
+				<source>State ID</source>
+				<target state="translated">ID du canton</target>
+			</trans-unit>
+			<trans-unit id="idex2000" resname="idex2000">
+				<source>IDEX 2000</source>
+				<target state="translated">IDEX 2000</target>
+			</trans-unit>
+			<trans-unit id="institution" resname="institution">
+				<source>Institution</source>
+				<target state="translated">Institution</target>
+			</trans-unit>
+			<trans-unit id="institutions" resname="institutions">
+				<source>Institutions</source>
+				<target state="translated">Institutions</target>
+			</trans-unit>
+			<trans-unit id="localities" resname="localities">
+				<source>Localities (CSV)</source>
+				<target state="translated">Localités (CSV)</target>
+			</trans-unit>
+			<trans-unit id="municipalities" resname="municipalities">
+				<source>Municipalities</source>
+				<target state="translated">Municipalités</target>
+			</trans-unit>
+			<trans-unit id="name_lower" resname="name_lower">
+				<source>Name (lowercase)</source>
+				<target state="translated">Nom (minuscules)</target>
+			</trans-unit>
+			<trans-unit id="name_lower15" resname="name_lower15">
+				<source>Name (lowercase 15)</source>
+				<target state="translated">Nom (minuscules 15)</target>
+			</trans-unit>
+			<trans-unit id="name_upper" resname="name_upper">
+				<source>Name (uppercase)</source>
+				<target state="translated">Nom (majuscules)</target>
+			</trans-unit>
+			<trans-unit id="name_upper15" resname="name_upper15">
+				<source>Name (uppercase 15)</source>
+				<target state="translated">Nom (majuscules 15)</target>
+			</trans-unit>
+			<trans-unit id="npa" resname="npa">
+				<source>ZIP (CSV)</source>
+				<target state="translated">NPA (CSV)</target>
+			</trans-unit>
+			<trans-unit id="surface" resname="surface">
+				<source>Surface</source>
+				<target state="translated">Surface</target>
+			</trans-unit>
+		</body>
+	</file>
+</xliff>

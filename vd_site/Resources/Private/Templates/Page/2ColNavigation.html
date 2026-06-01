@@ -1,0 +1,63 @@
+<html data-namespace-typo3-fluid="true" xmlns:f="http://typo3.org/ns/TYPO3/CMS/Fluid/ViewHelpers">
+    <f:layout/>
+    <f:section name="main">
+        <f:render arguments="{_all}" partial="Header"/>
+        <div class="vd-bg-pattern-gray">
+            <div class="container">
+                <f:render arguments="{breadcrumbExtendedValue: breadcrumbExtendedValue, breadcrumbItems: breadcrumbItems}" partial="Breadcrumb"/>
+            </div>
+        </div>
+        <main id="main">
+            <div class="vd-bg-pattern-gray">
+                <f:render arguments="{pageTitle: pageTitle}" partial="Page/Seo/PageTitle"/>
+            </div>
+            <div class="container mt-5 vd-content">
+                <div class="row">
+                    <div class="col-md-8 vd-content-column">
+                        <f:render arguments="{alerts: serviceAlerts}" partial="Alert" section="Service"/>
+                        <!--TYPO3SEARCH_begin-->
+                        <f:format.raw>{mainContent}</f:format.raw>
+                        <!--TYPO3SEARCH_end-->
+                    </div>
+                    <f:render arguments="{_all}" contentAs="additionalContent" partial="Aside">
+                        <f:if condition="{sidebarNavItems.0.children}">
+                            <nav class="vd-nav-side mb-3">
+                                <h2 class="visually-hidden"><f:translate id="LLL:EXT:vd_site/Resources/Private/Language/locallang.xlf:secondary_navigation"/></h2>
+                                <ul class="nav flex-column">
+                                    <f:for as="item" each="{sidebarNavItems}" iteration="iterator">
+                                        <li class="nav-item">
+                                            <a href="{item.link}" class="nav-link{f:if(condition: item.active, then: ' active')}" id="sidebar-nav-item-link-{iterator.index}" title="{item.title}">{item.title}</a>
+                                            <f:if condition="{item.children}">
+                                                <ul class="nav flex-column">
+                                                    <f:for as="secondLevelItem" each="{item.children}" iteration="iteratorSecond">
+                                                        <li class="nav-item">
+                                                            <a class="nav-link{f:if(condition: secondLevelItem.active, then: ' active')}" href="{secondLevelItem.link}" id="second-level-nav-item-link-{iteratorSecond.index}" title="{secondLevelItem.title}">
+                                                                {secondLevelItem.title}
+                                                            </a>
+                                                            <f:if condition="{secondLevelItem.children}">
+                                                                <ul class="nav flex-column">
+                                                                    <f:for as="thirdLevelItem" each="{secondLevelItem.children}" iteration="iteratorThird">
+                                                                        <li class="nav-item">
+                                                                            <a class="nav-link{f:if(condition: thirdLevelItem.active, then: ' active')}" href="{thirdLevelItem.link}" id="third-level-nav-item-link-{iteratorThird.index}" title="{thirdLevelItem.title}">
+                                                                                {thirdLevelItem.title}
+                                                                            </a>
+                                                                        </li>
+                                                                    </f:for>
+                                                                </ul>
+                                                            </f:if>
+                                                        </li>
+                                                    </f:for>
+                                                </ul>
+                                            </f:if>
+                                        </li>
+                                    </f:for>
+                                </ul>
+                            </nav>
+                        </f:if>
+                    </f:render>
+                </div>
+            </div>
+        </main>
+        <f:render arguments="{_all}" partial="Footer"/>
+    </f:section>
+</html>

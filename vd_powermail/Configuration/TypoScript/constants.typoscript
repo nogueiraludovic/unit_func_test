@@ -1,0 +1,34 @@
+plugin {
+  tx_powermail {
+    settings {
+      db.enable = 0
+      javascript.addAdditionalJavaScript = 0
+      misc.addQueryString = 1
+      receiver.overwrite {
+        senderEmail := getEnv(TYPO3_MAIL_DEFAULT_FROM_ADDRESS)
+        senderName := getEnv(TYPO3_MAIL_DEFAULT_FROM_NAME)
+      }
+      sender {
+        addDisclaimerLink = 0
+        overwrite {
+          replyToEmail := getEnv(TYPO3_MAIL_DEFAULT_FROM_ADDRESS)
+          replyToName := getEnv(TYPO3_MAIL_DEFAULT_FROM_NAME)
+          senderEmail := getEnv(TYPO3_MAIL_DEFAULT_FROM_ADDRESS)
+          senderName := getEnv(TYPO3_MAIL_DEFAULT_FROM_NAME)
+        }
+      }
+      spamshield {
+        email = support.typo3@vd.ch
+        emailSubject = [SPAM][www.vd.ch] Spam détecté dans un formulaire powermail
+        factor = 50
+        senderEmail := getEnv(TYPO3_MAIL_DEFAULT_FROM_ADDRESS)
+      }
+      validation.client = 0
+    }
+    view {
+      layoutRootPath = EXT:vd_powermail/Resources/Private/Layouts/
+      partialRootPath = EXT:vd_powermail/Resources/Private/Partials/
+      templateRootPath = EXT:vd_powermail/Resources/Private/Templates/
+    }
+  }
+}

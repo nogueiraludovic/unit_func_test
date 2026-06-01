@@ -1,0 +1,23 @@
+---
+routeEnhancers:
+  OfficeHourList:
+    aspects:
+      page:
+        end: '500'
+        start: '1'
+        type: StaticRangeMapper
+    defaultController: OfficeHour::list
+    defaults:
+      page: 0
+    limitToPages:
+      - 2023349
+    namespace: tx_vdwsprosecutor_list
+    requirements:
+      page: \d+
+    routes:
+      -
+        _arguments:
+          page: page
+        _controller: OfficeHour::list
+        routePath: /page/{page}
+    type: Extbase

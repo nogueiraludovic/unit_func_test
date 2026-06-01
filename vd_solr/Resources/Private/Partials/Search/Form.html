@@ -1,0 +1,43 @@
+<html data-namespace-typo3-fluid="true" xmlns:f="http://typo3.org/ns/TYPO3/Fluid/ViewHelpers" xmlns:s="http://typo3.org/ns/ApacheSolrForTypo3/Solr/ViewHelpers">
+    <s:searchForm additionalAttributes="{role: 'search'}" additionalFilters="{additionalFilters}" addSuggestUrl="0" class="d-flex justify-content-center w-100" suggestHeader="{s:translate(id: 'suggest_header')}">
+        <label class="form-label visually-hidden" for="vd-search-input">Champ de recherche</label>
+        <div class="input-group" id="search-input-container">
+            <input class="w-100 p-3 form-control border" id="vd-search-input" name="{pluginNamespace}[q]" placeholder="Entrez votre recherche" type="search" value="{q}"/>
+            <span class="input-group-btn position-absolute vd-search-button-container">
+                <button class="btn" type="submit">
+                    <i aria-hidden="true" class="fa-search fa-solid text-primary vd-search-icon"></i>
+                    <span class="visually-hidden">Soumettre la recherche</span>
+                </button>
+            </span>
+        </div>
+    </s:searchForm>
+    <f:section name="Records">
+        <div class="d-print-none mb-3 mt-0 px-3 py-4 vd-bg-pattern-bars-gray">
+            <s:searchForm additionalAttributes="{role: 'search'}" additionalFilters="{additionalFilters}" addSuggestUrl="0" class="form" method="post" suggestHeader="{s:translate(id: 'suggest_header')}">
+                <div class="row">
+                    <div class="col-10">
+                        <div class="mb-3">
+                            <label class="form-label h5 d-block mt-0" for="keyword" id="search-form-label">
+                                Rechercher<span class="visually-hidden"> dans les {type}</span>
+                            </label>
+                            <input aria-describedby="search-form-label" class="form-control" id="keyword" name="{pluginNamespace}[q]" type="text" value="{q}">
+                        </div>
+                    </div>
+                    <f:if condition="{resultSet.usedSearchRequest.contextTypoScriptConfiguration.searchFaceting}">
+                        <div class="col-12">
+                            <s:facet.area.group facets="{resultSet.facets.available}">
+                                <f:for as="facet" each="{areaFacets}">
+                                    <f:render arguments="{arguments: arguments, facet:facet, pluginNamespace: pluginNamespace, resultSet:resultSet}" partial="Facets/{facet.partialName}"/>
+                                </f:for>
+                            </s:facet.area.group>
+                        </div>
+                    </f:if>
+                </div>
+                <button type="submit" class="btn btn-dark mb-3 mb-sm-0 me-1">Rechercher</button>
+                <f:if condition="{arguments -> f:count()} > 1 || {arguments.q} != ''">
+                    <f:link.page class="btn btn-secondary mb-3 mb-sm-0" id="reset-button">Réinitialiser</f:link.page>
+                </f:if>
+            </s:searchForm>
+        </div>
+    </f:section>
+</html>

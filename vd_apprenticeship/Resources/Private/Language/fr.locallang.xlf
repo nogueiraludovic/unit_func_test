@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xliff version="1.2" xmlns="urn:oasis:names:tc:xliff:document:1.2">
+	<file datatype="plaintext" original="EXT:vd_apprenticeship/Resources/Private/Language/locallang.xlf" source-language="en" target-language="fr">
+		<header/>
+		<body>
+			<trans-unit id="address" resname="address">
+				<source>Address</source>
+				<target state="translated">Adresse</target>
+			</trans-unit>
+			<trans-unit id="animals" resname="animals">
+				<source>Animals</source>
+				<target state="translated">Animaux</target>
+			</trans-unit>
+			<trans-unit id="apprenticeships" resname="apprenticeships">
+				<source>Apprenticeships</source>
+				<target state="translated">Apprentissages</target>
+			</trans-unit>
+			<trans-unit id="available_places" resname="available_places">
+				<source>Available places</source>
+				<target state="translated">Places proposées</target>
+			</trans-unit>
+			<trans-unit id="crops" resname="crops">
+				<source>Crops</source>
+				<target state="translated">Cultures</target>
+			</trans-unit>
+			<trans-unit id="dgav_apprenticeship_position" resname="dgav_apprenticeship_position">
+				<source>DGAV apprenticeship position</source>
+				<target state="translated">DGAV place d'apprentissage</target>
+			</trans-unit>
+			<trans-unit id="email_address" resname="email_address">
+				<source>Email address</source>
+				<target state="translated">Adresse e-mail</target>
+			</trans-unit>
+			<trans-unit id="exploitation_information" resname="exploitation_information">
+				<source>Exploitation information</source>
+				<target state="translated">Informations sur l'exploitation</target>
+			</trans-unit>
+			<trans-unit id="exploitation_type" resname="exploitation_type">
+				<source>Exploitation type</source>
+				<target state="translated">Type d'exploitation</target>
+			</trans-unit>
+			<trans-unit id="full_name" resname="full_name">
+				<source>First and last name</source>
+				<target state="translated">Nom et prénom</target>
+			</trans-unit>
+			<trans-unit id="german_apprenticeship" resname="german_apprenticeship">
+				<source>Apprenticeship CH-German</source>
+				<target state="translated">Apprenti CH-Allemand</target>
+			</trans-unit>
+			<trans-unit id="locality" resname="locality">
+				<source>Locality</source>
+				<target state="translated">Localité</target>
+			</trans-unit>
+			<trans-unit id="misc" resname="misc">
+				<source>Miscellaneous about the trainer, family, accommodation</source>
+				<target state="translated">Divers au sujet du formateur, de la famille, du logement</target>
+			</trans-unit>
+			<trans-unit id="mobile_phone" resname="mobile_phone">
+				<source>Mobile phone</source>
+				<target state="translated">Téléphone portable</target>
+			</trans-unit>
+			<trans-unit id="more_details" resname="more_details">
+				<source>More details</source>
+				<target state="translated">Plus de détail</target>
+			</trans-unit>
+			<trans-unit id="no" resname="no">
+				<source>No</source>
+				<target state="translated">Non</target>
+			</trans-unit>
+			<trans-unit id="particularities" resname="particularities">
+				<source>Particularity(ies)</source>
+				<target state="translated">Particularité(s)</target>
+			</trans-unit>
+			<trans-unit id="phone" resname="phone">
+				<source>Phone</source>
+				<target state="translated">Téléphone</target>
+			</trans-unit>
+			<trans-unit id="profession" resname="profession">
+				<source>Profession</source>
+				<target state="translated">Profession</target>
+			</trans-unit>
+			<trans-unit id="published_on" resname="published_on">
+				<source>Published on %s</source>
+				<target state="translated">Publié le %s</target>
+			</trans-unit>
+			<trans-unit id="region" resname="region">
+				<source>Region</source>
+				<target state="translated">Région</target>
+			</trans-unit>
+			<trans-unit id="slug" resname="slug">
+				<source>URL Segment</source>
+				<target state="translated">Segment d'URL</target>
+			</trans-unit>
+			<trans-unit id="trainer_contact" resname="trainer_contact">
+				<source>Trainer contact</source>
+				<target state="translated">Contact du formateur</target>
+			</trans-unit>
+			<trans-unit id="yes" resname="yes">
+				<source>Yes</source>
+				<target state="translated">Oui</target>
+			</trans-unit>
+		</body>
+	</file>
+</xliff>

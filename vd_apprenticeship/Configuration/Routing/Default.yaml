@@ -1,0 +1,21 @@
+---
+routeEnhancers:
+  ApprenticeshipDetail:
+    aspects:
+      slug:
+        routeFieldName: slug
+        tableName: tx_vdapprenticeship_apprenticeship
+        type: PersistedAliasMapper
+    defaultController: Record::detail
+    limitToPages:
+      - 2015070
+    namespace: tx_vdfrontend_recorddetail
+    requirements:
+      slug: '[a-zA-Z0-9].*'
+    routes:
+      -
+        _arguments:
+          slug: record
+        _controller: Record::detail
+        routePath: /{slug}
+    type: Extbase

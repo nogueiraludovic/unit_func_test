@@ -1,0 +1,8 @@
+<html data-namespace-typo3-fluid="true" xmlns:f="http://typo3.org/ns/TYPO3/CMS/Fluid/ViewHelpers" xmlns:p="http://typo3.org/ns/In2code/Powermail/ViewHelpers">
+    <f:if condition="{p:Validation.IsHonepodEnabled()}">
+        <div class="honey-pod mb-3">
+            <label class="form-label" for="field-honey-pod-{form.uid}"><f:translate id="honeypodLabel"/></label>
+            <f:form.textfield additionalAttributes="{aria-hidden: 'true', autocomplete: 'new-powermail-hp-{form.uid}'}" class="form-control" id="field-honey-pod-{form.uid}" name="field[__hp]" tabindex="-1" value=""/>
+        </div>
+    </f:if>
+</html>

@@ -1,0 +1,29 @@
+page.10 {
+  dataProcessing {
+    1721468466 = TYPO3\CMS\Frontend\DataProcessing\DatabaseQueryProcessor
+    1721468466 {
+      as = homeAlerts
+      dataProcessing {
+        10 = TYPO3\CMS\Frontend\DataProcessing\FilesProcessor
+        10 {
+          as = images
+          if.isTrue.field = image
+          references.fieldName = image
+        }
+      }
+      if {
+        equals.data = TSFE:id
+        value = {$homePageUid}
+      }
+      pidInList = this
+      table = tx_vdalertes_domain_model_home_alert
+    }
+    1721468467 = Vd\VdAlertes\DataProcessing\ServiceAlertProcessor
+    1721468467.if {
+      equals.data = TSFE:id
+      negate = 1
+      value = {$homePageUid}
+    }
+  }
+  partialRootPaths.1721468467 = EXT:vd_alertes/Resources/Private/Partials/
+}

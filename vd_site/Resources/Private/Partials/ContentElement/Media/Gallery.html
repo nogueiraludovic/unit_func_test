@@ -1,0 +1,15 @@
+<html data-namespace-typo3-fluid="true" xmlns:f="http://typo3.org/ns/TYPO3/CMS/Fluid/ViewHelpers">
+    <f:if condition="{gallery.rows}">
+        <f:for as="row" each="{gallery.rows}" iteration="iterator">
+            <div class="row">
+                <f:for as="column" each="{row.columns}">
+                    <div class="col-sm">
+                        <f:if condition="{column.media}">
+                            <f:render arguments="{dimensions: column.dimensions, data: data, file: column.media, isLast: iterator.isLast, mediaType: 'textpic', settings: settings}" partial="Media/Type"/>
+                        </f:if>
+                    </div>
+                </f:for>
+            </div>
+        </f:for>
+    </f:if>
+</html>

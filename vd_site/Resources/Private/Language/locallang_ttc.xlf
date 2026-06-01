@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xliff version="1.2" xmlns="urn:oasis:names:tc:xliff:document:1.2">
+	<file datatype="plaintext" original="EXT:vd_site/Resources/Private/Language/locallang_ttc.xlf" source-language="en">
+		<header/>
+		<body>
+			<trans-unit id="CType.I.biocard" resname="CType.I.biocard">
+				<source>Short biography</source>
+			</trans-unit>
+			<trans-unit id="CType.I.buttons" resname="CType.I.buttons">
+				<source>Buttons</source>
+			</trans-unit>
+			<trans-unit id="CType.I.cards_group" resname="CType.I.cards_group">
+				<source>Cards group</source>
+			</trans-unit>
+			<trans-unit id="CType.I.carousel" resname="CType.I.carousel">
+				<source>Carousel</source>
+			</trans-unit>
+			<trans-unit id="CType.I.citation" resname="CType.I.citation">
+				<source>Citation</source>
+			</trans-unit>
+			<trans-unit id="CType.I.links_box" resname="CType.I.links_box">
+				<source>Links box</source>
+			</trans-unit>
+			<trans-unit id="CType.I.menu_themes" resname="CType.I.menu_themes">
+				<source>Themes menu</source>
+			</trans-unit>
+			<trans-unit id="CType.I.search_form" resname="CType.I.search_form">
+				<source>Search form</source>
+			</trans-unit>
+			<trans-unit id="palettes.carousel" resname="palettes.carousel">
+				<source>Carousel</source>
+			</trans-unit>
+			<trans-unit id="palettes.content_element_link" resname="palettes.content_element_link">
+				<source>Content element link</source>
+			</trans-unit>
+			<trans-unit id="palettes.navigation" resname="palettes.navigation">
+				<source>Navigation</source>
+			</trans-unit>
+			<trans-unit id="palettes.related_links" resname="palettes.related_links">
+				<source>Related links</source>
+			</trans-unit>
+			<trans-unit id="tabs.icon" resname="tabs.icon">
+				<source>Icon</source>
+			</trans-unit>
+		</body>
+	</file>
+</xliff>

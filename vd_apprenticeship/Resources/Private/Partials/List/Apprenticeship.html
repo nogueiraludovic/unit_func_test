@@ -1,0 +1,57 @@
+<html data-namespace-typo3-fluid="true" xmlns:f="http://typo3.org/ns/TYPO3/CMS/Fluid/ViewHelpers" xmlns:vdf="http://typo3.org/ns/Vd/VdFrontend/ViewHelpers">
+    <f:section name="Default">
+        <f:for as="record" each="{records}">
+            <f:variable name="address" value="{record.address -> vdf:iterator.first()}"/>
+            <f:variable name="profession" value="{record.dgav_profession -> vdf:iterator.first()}"/>
+            <f:variable name="region" value="{record.region -> vdf:iterator.first()}"/>
+            <f:variable name="type" value="{record.dgav_type -> vdf:iterator.first()}"/>
+            <f:if condition="{address.company}">
+                <h3 class="name">
+                    <f:link.action action="detail" arguments="{record: record.uid}" pageUid="{settings.detailPid}">
+                        {address.company}
+                    </f:link.action>
+                </h3>
+            </f:if>
+            <dl class="row">
+                <f:if condition="{region.name}">
+                    <dt class="col-md-4"><f:translate extensionName="VdApprenticeship" id="region"/></dt>
+                    <dd class="col-md-8 mb-2">{region.name}</dd>
+                </f:if>
+                <f:if condition="{profession.name}">
+                    <dt class="col-md-4"><f:translate extensionName="VdApprenticeship" id="profession"/></dt>
+                    <dd class="col-md-8 mb-2">{profession.name}</dd>
+                </f:if>
+                <f:if condition="{record.available_places}">
+                    <dt class="col-md-4"><f:translate extensionName="VdApprenticeship" id="available_places"/></dt>
+                    <dd class="col-md-8 mb-2">
+                        <ul class="list-unstyled mb-0">
+                            <f:for as="availablePlace" each="{record.available_places}">
+                                <li>{availablePlace.title}</li>
+                            </f:for>
+                        </ul>
+                    </dd>
+                </f:if>
+                <f:if condition="{type.name}">
+                    <dt class="col-md-4"><f:translate extensionName="VdApprenticeship" id="exploitation_type"/></dt>
+                    <dd class="col-md-8 mb-2">{type.name}</dd>
+                </f:if>
+                <dt class="col-md-4"><f:translate extensionName="VdApprenticeship" id="german_apprenticeship"/></dt>
+                <dd class="col-md-8">
+                    <f:if condition="{record.dgav_language}">
+                        <f:then>
+                            <f:translate extensionName="VdApprenticeship" id="yes"/>
+                        </f:then>
+                        <f:else>
+                            <f:translate extensionName="VdApprenticeship" id="no"/>
+                        </f:else>
+                    </f:if>
+                </dd>
+            </dl>
+            <p>
+                <f:link.action action="detail" arguments="{record: record.uid}" pageUid="{settings.detailPid}">
+                    <f:translate extensionName="VdApprenticeship" id="more_details"/>
+                </f:link.action>
+            </p>
+        </f:for>
+    </f:section>
+</html>

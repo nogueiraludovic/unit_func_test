@@ -1,0 +1,48 @@
+config.recordLinks.tx_vdprestations.typolink {
+  additionalParams {
+    data = field:uid
+    wrap = &tx_vdprestations_pi4[action]=show&tx_vdprestations_pi4[controller]=Prestation&tx_vdprestations_pi4[prestation]=|
+  }
+  parameter = {$plugin.tx_vdprestations.settings.singlePid}
+  useCacheHash = 1
+}
+
+##################################################
+
+page.10.dataProcessing.1686041949 = Vd\VdPrestations\DataProcessing\ServiceProcessor
+
+##################################################
+
+plugin.tx_vdprestations {
+  settings {
+    debug = 1
+    singlePid = {$plugin.tx_vdprestations.settings.singlePid}
+    stepsList = {$plugin.tx_vdprestations.settings.stepsList}
+  }
+  view {
+    layoutRootPaths.10 = EXT:vd_prestations/Resources/Private/Layouts/
+    partialRootPaths.10 = EXT:vd_prestations/Resources/Private/Partials/
+    templateRootPaths.10 = EXT:vd_prestations/Resources/Private/Templates/
+  }
+}
+
+##################################################
+
+[getTSFE() && getTSFE().type == 1493899567]
+  pageRedirection = PAGE
+  pageRedirection {
+    10 = USER_INT
+    10 {
+      extensionName = VdPrestations
+      pluginName = Pi5
+      settings < plugin.tx_vdprestations.settings
+      userFunc = TYPO3\CMS\Extbase\Core\Bootstrap->run
+      vendorName = Vd
+    }
+    config {
+      admPanel = 0
+      disableAllHeaderCode = 1
+    }
+    typeNum = 1493899567
+  }
+[end]

@@ -1,0 +1,55 @@
+---
+services:
+  _defaults:
+    autoconfigure: true
+    autowire: true
+    public: false
+  TYPO3\CMS\Linkvalidator\EventListener\CheckBrokenRteLinkEventListener:
+    class: Vd\VdSite\EventListener\DisableCheckBrokenRteLinkEventListener
+  Vd\VdSite\:
+    resource: ../Classes/*
+  Vd\VdSite\Command\Links\SanitizeBicwebLinksCommand:
+    tags:
+      -
+        command: links:sanitize:bicweb
+        name: console.command
+  Vd\VdSite\Command\Links\SanitizeRedirectsCommand:
+    tags:
+      -
+        command: links:sanitize:redirects
+        name: console.command
+  Vd\VdSite\Command\Links\SanitizeT3LinksCommand:
+    tags:
+      -
+        command: links:sanitize:t3
+        name: console.command
+  Vd\VdSite\Command\Links\SanitizeVdLinksCommand:
+    tags:
+      -
+        command: links:sanitize:vd
+        name: console.command
+  Vd\VdSite\Command\Links\SanitizeExternalVdLinksCommand:
+    tags:
+      -
+        command: links:sanitize:vd:external
+        name: console.command
+  Vd\VdSite\Command\Links\SanitizePrestationsLinksCommand:
+    tags:
+      -
+        command: links:sanitize:vd:prestations
+        name: console.command
+  Vd\VdSite\Command\Sitemap\CrawlSitemapCommand:
+    tags:
+      -
+        command: sitemap:crawl
+        name: console.command
+  Vd\VdSite\Command\Sitemap\InitSitemapCommand:
+    tags:
+      -
+        command: sitemap:init
+        name: console.command
+  Vd\VdSite\Command\UseCorrectSiteInRedirectionCommand:
+    tags:
+      -
+        command: redirect:use_correct_site
+        name: console.command

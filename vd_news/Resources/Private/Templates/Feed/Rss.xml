@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<html data-namespace-typo3-fluid="true" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:f="http://typo3.org/ns/TYPO3/CMS/Fluid/ViewHelpers">
+    <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
+        <channel>
+            <title>{settings.displayXML.xmlTitle}</title>
+            <link><f:uri.page absolute="1"/></link>
+            <description>{settings.displayXML.xmlDesc}</description>
+            <language>fr</language>
+            <pubDate><f:format.date date="now" format="r"/></pubDate>
+            <lastBuildDate><f:format.date date="now" format="r"/></lastBuildDate>
+            <atom:link href="{f:uri.page(absolute: 1, pageType: 100)}" rel="self" type="application/rss+xml"/>
+            <f:if condition="{news}">
+                <f:for as="newsItem" each="{news}">
+                    <item>
+                        <guid isPermaLink="false">news-{newsItem.uid}</guid>
+                        <pubDate><f:format.date format="r">{newsItem.datetime}</f:format.date></pubDate>
+                        <title><f:format.htmlspecialchars>{newsItem.title}</f:format.htmlspecialchars></title>
+                        <link><f:format.htmlentities><f:uri.action absolute="1" action="detail" arguments="{news: newsItem}" controller="News" pageUid="{settings.detailPid}"/></f:format.htmlentities></link>
+                        <description><f:format.htmlspecialchars><f:format.stripTags>{newsItem.teaser}</f:format.stripTags></f:format.htmlspecialchars></description>
+                        <content:encoded><f:format.cdata><f:format.html>{newsItem.bodytext}</f:format.html></f:format.cdata></content:encoded>
+                        <f:if condition="{newsItem.categories}">
+                            <f:for as="category" each="{newsItem.categories}">
+                                <category><f:format.htmlspecialchars>{category.title}</f:format.htmlspecialchars></category>
+                            </f:for>
+                        </f:if>
+                    </item>
+                </f:for>
+            </f:if>
+        </channel>
+    </rss>
+</html>

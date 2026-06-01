@@ -1,0 +1,47 @@
+<html data-namespace-typo3-fluid="true" xmlns:f="http://typo3.org/ns/TYPO3/CMS/Fluid/ViewHelpers">
+    <f:variable name="currentPageLinkEncoded" value="{f:uri.typolink(absolute: 1, addQueryString: 1, parameter: currentPageUid) -> f:format.urlencode()}"/>
+    <ul aria-label="{f:translate(extensionName: 'VdSite', id: 'share_the_page')}" class="list-inline mb-3 mt-4 vd-social-icons">
+        <li class="list-inline-item">
+            <a class="mastodon-link vd-social-icon" href="https://tooting.ch/@etatdevaud" title="{f:translate(extensionName: 'VdCore', id: 'link_mastodon_profile')}">
+                <span aria-hidden="true" class="fa-brands fa-mastodon"></span>
+                <span class="visually-hidden"><f:translate extensionName="VdCore" id="link_mastodon_profile"/></span>
+            </a>
+        </li>
+        <li class="list-inline-item">
+            <a class="bluesky-link vd-social-icon" href="https://bsky.app/profile/vd.ch" title="{f:translate(extensionName: 'VdCore', id: 'link_bluesky_profile')}">
+                <span aria-hidden="true" class="fa-bluesky fa-brands"></span>
+                <span class="visually-hidden"><f:translate extensionName="VdCore" id="link_bluesky_profile"/></span>
+            </a>
+        </li>
+        <li class="list-inline-item">
+            <a class="instagram-link vd-social-icon" href="https://www.instagram.com/etat_de_vaud" title="{f:translate(extensionName: 'VdCore', id: 'link_instagram_profile')}">
+                <span aria-hidden="true" class="fa-brands fa-instagram"></span>
+                <span class="visually-hidden"><f:translate extensionName="VdCore" id="link_instagram_profile"/></span>
+            </a>
+        </li>
+        <li class="list-inline-item">
+            <a class="linkedin-link vd-social-icon" href="https://ch.linkedin.com/company/etat-de-vaud" title="{f:translate(extensionName: 'VdCore', id: 'link_linkedin_profile')}">
+                <span aria-hidden="true" class="fa-brands fa-linkedin"></span>
+                <span class="visually-hidden"><f:translate extensionName="VdCore" id="link_linkedin_profile"/></span>
+            </a>
+        </li>
+        <li class="list-inline-item">
+            <a class="facebook-link vd-social-icon" href="https://www.facebook.com/EtatdeVaud" title="{f:translate(extensionName: 'VdCore', id: 'link_facebook_profile')}">
+                <span aria-hidden="true" class="fa-brands fa-facebook"></span>
+                <span class="visually-hidden"><f:translate extensionName="VdCore" id="link_facebook_profile"/></span>
+            </a>
+        </li>
+        <li class="list-inline-item">
+            <a class="twitter-link vd-social-icon" href="https://x.com/EtatdeVaud" title="{f:translate(extensionName: 'VdCore', id: 'link_twitter_profile')}">
+                <span aria-hidden="true" class="fa-brands fa-x-twitter"></span>
+                <span class="visually-hidden"><f:translate extensionName="VdCore" id="link_twitter_profile"/></span>
+            </a>
+        </li>
+        <li class="d-lg-none list-inline-item">
+            <a class="whatsapp-link vd-social-icon" href="whatsapp://send?text={currentPageLinkEncoded}" title="{f:translate(extensionName: 'VdCore', id: 'share_by_whatsapp')}">
+                <span aria-hidden="true" class="fa-brands fa-whatsapp"></span>
+                <span class="visually-hidden"><f:translate extensionName="VdCore" id="share_by_whatsapp"/></span>
+            </a>
+        </li>
+    </ul>
+</html>

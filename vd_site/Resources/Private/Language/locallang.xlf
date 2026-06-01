@@ -1,0 +1,191 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xliff version="1.2" xmlns="urn:oasis:names:tc:xliff:document:1.2">
+	<file datatype="plaintext" original="EXT:vd_site/Resources/Private/Language/locallang.xlf" source-language="en">
+		<header/>
+		<body>
+			<trans-unit id="access_secured_space" resname="access_secured_space">
+				<source>Access secured space</source>
+			</trans-unit>
+			<trans-unit id="accessibility_menu_title" resname="accessibility_menu_title">
+				<source>Accessibility menu</source>
+			</trans-unit>
+			<trans-unit id="accessibility_contact_form" resname="accessibility_contact_form">
+				<source>Contact form</source>
+			</trans-unit>
+			<trans-unit id="accessibility_homepage" resname="accessibility_homepage">
+				<source>Homepage</source>
+			</trans-unit>
+			<trans-unit id="accessibility_search_form" resname="accessibility_search_form">
+				<source>Access to the search</source>
+			</trans-unit>
+			<trans-unit id="accessibility_top" resname="accessibility_top">
+				<source>Begin of the page content</source>
+			</trans-unit>
+			<trans-unit id="applications_examples" resname="applications_examples">
+				<source>Application examples</source>
+			</trans-unit>
+			<trans-unit id="applications_examples_1" resname="applications_examples_1">
+				<source>ACTIS (Camac 2010)</source>
+			</trans-unit>
+			<trans-unit id="applications_examples_2" resname="applications_examples_2">
+				<source>EasyVista</source>
+			</trans-unit>
+			<trans-unit id="applications_examples_3" resname="applications_examples_3">
+				<source>LAGAPEO</source>
+			</trans-unit>
+			<trans-unit id="applications_examples_4" resname="applications_examples_4">
+				<source>LA PLACE</source>
+			</trans-unit>
+			<trans-unit id="applications_examples_5" resname="applications_examples_5">
+				<source>NEO</source>
+			</trans-unit>
+			<trans-unit id="applications_examples_6" resname="applications_examples_6">
+				<source>PAREO</source>
+			</trans-unit>
+			<trans-unit id="applications_examples_7" resname="applications_examples_7">
+				<source>Employer Gateway - Withholding tax</source>
+			</trans-unit>
+			<trans-unit id="applications_examples_8" resname="applications_examples_8">
+				<source>RCPers - Cantonal Register of Persons</source>
+			</trans-unit>
+			<trans-unit id="applications_examples_9" resname="applications_examples_9">
+				<source>Requisition - Electronic designation (ReqDes)</source>
+			</trans-unit>
+			<trans-unit id="applications_examples_10" resname="applications_examples_10">
+				<source>RDU</source>
+			</trans-unit>
+			<trans-unit id="applications_examples_11" resname="applications_examples_11">
+				<source>Themis</source>
+			</trans-unit>
+			<trans-unit id="applications_examples_12" resname="applications_examples_12">
+				<source>Votelec - Counting</source>
+			</trans-unit>
+			<trans-unit id="applications_examples_13" resname="applications_examples_13">
+				<source>Wiki ACV projects</source>
+			</trans-unit>
+			<trans-unit id="back_to_home" resname="back_to_home">
+				<source>Back to home</source>
+			</trans-unit>
+			<trans-unit id="back_to_top" resname="back_to_top">
+				<source>Back to top</source>
+			</trans-unit>
+			<trans-unit id="breadcrumb" resname="breadcrumb">
+				<source>Breadcrumb</source>
+			</trans-unit>
+			<trans-unit id="browse_by_theme" resname="browse_by_theme">
+				<source>Browse by theme</source>
+			</trans-unit>
+			<trans-unit id="canton_de_vaud" resname="canton_de_vaud">
+				<source>Canton de Vaud</source>
+			</trans-unit>
+			<trans-unit id="cookie_warning_intro" resname="cookie_warning_intro">
+				<source>This site uses cookies to provide you with an optimal browsing experience. By continuing to visit this site, you accept the use of these cookies.</source>
+			</trans-unit>
+			<trans-unit id="cookie_warning_link_text" resname="cookie_warning_link_text">
+				<source>Find out more about how to deactivate them, as well as our data protection policy.</source>
+			</trans-unit>
+			<trans-unit id="direct_access" resname="direct_access">
+				<source>Direct access</source>
+			</trans-unit>
+			<trans-unit id="footer" resname="footer">
+				<source>Footer</source>
+			</trans-unit>
+			<trans-unit id="hide_themes" resname="hide_themes">
+				<source>Hide themes</source>
+			</trans-unit>
+			<trans-unit id="iam_portal" resname="iam_portal">
+				<source>IAM portal</source>
+			</trans-unit>
+			<trans-unit id="iam_portal_intro" resname="iam_portal_intro">
+				<source>Access to applications for Vaud State employees and partners.</source>
+			</trans-unit>
+			<trans-unit id="login" resname="login">
+				<source>Login</source>
+			</trans-unit>
+			<trans-unit id="login_form_close" resname="login_form_close">
+				<source>Close login form</source>
+			</trans-unit>
+			<trans-unit id="logout" resname="logout">
+				<source>Logout</source>
+			</trans-unit>
+			<trans-unit id="logo_alt" resname="logo_alt">
+				<source>Logo of Canton de Vaud</source>
+			</trans-unit>
+			<trans-unit id="logo_title" resname="logo_title">
+				<source>Go to Canton de Vaud home page</source>
+			</trans-unit>
+			<trans-unit id="more" resname="more">
+				<source>Read more</source>
+			</trans-unit>
+			<trans-unit id="online_help" resname="online_help">
+				<source>Online help</source>
+			</trans-unit>
+			<trans-unit id="partner_sites" resname="partner_sites">
+				<source>Partner sites</source>
+			</trans-unit>
+			<trans-unit id="register" resname="register">
+				<source>Register</source>
+			</trans-unit>
+			<trans-unit id="search" resname="search">
+				<source>Search</source>
+			</trans-unit>
+			<trans-unit id="search_section" resname="search_section">
+				<source>Search section</source>
+			</trans-unit>
+			<trans-unit id="secondary_navigation" resname="secondary_navigation">
+				<source>Secondary navigation</source>
+			</trans-unit>
+			<trans-unit id="secured_space" resname="secured_space">
+				<source>Secured space</source>
+			</trans-unit>
+			<trans-unit id="secured_space_intro" resname="secured_space_intro">
+				<source><![CDATA[Easily manage online <a href="%s" id="steps-prestations-link">administrative procedures</a> for individuals, companies, foundations and local authorities.]]></source>
+			</trans-unit>
+			<trans-unit id="share_the_page" resname="share_the_page">
+				<source>Share the page</source>
+			</trans-unit>
+			<trans-unit id="show_themes" resname="show_themes">
+				<source>Show themes</source>
+			</trans-unit>
+			<trans-unit id="state_of_vaud" resname="state_of_vaud">
+				<source>State of Vaud</source>
+			</trans-unit>
+			<trans-unit id="steps_examples" resname="steps_examples">
+				<source>Steps examples</source>
+			</trans-unit>
+			<trans-unit id="steps_examples_1" resname="steps_examples_1">
+				<source>Completing and filing your tax return</source>
+			</trans-unit>
+			<trans-unit id="steps_examples_2" resname="steps_examples_2">
+				<source>Consult your tax file</source>
+			</trans-unit>
+			<trans-unit id="steps_examples_3" resname="steps_examples_3">
+				<source>Replacing your driver's license (individuals)</source>
+			</trans-unit>
+			<trans-unit id="steps_examples_4" resname="steps_examples_4">
+				<source>Register for the post-CFC vocational maturité (students)</source>
+			</trans-unit>
+			<trans-unit id="steps_examples_5" resname="steps_examples_5">
+				<source>Obtaining an initial border permit (companies)</source>
+			</trans-unit>
+			<trans-unit id="steps_examples_6" resname="steps_examples_6">
+				<source>Apply for support for a cultural project (associations)</source>
+			</trans-unit>
+			<trans-unit id="steps_examples_7" resname="steps_examples_7">
+				<source>Access the cantonal register of persons (communes)</source>
+			</trans-unit>
+			<trans-unit id="sub_navigation" resname="sub_navigation">
+				<source>Sub-navigation</source>
+			</trans-unit>
+			<trans-unit id="top" resname="top">
+				<source>Top</source>
+			</trans-unit>
+			<trans-unit id="themes" resname="themes">
+				<source>Themes</source>
+			</trans-unit>
+			<trans-unit id="your_identity" resname="your_identity">
+				<source>Your identity</source>
+			</trans-unit>
+		</body>
+	</file>
+</xliff>

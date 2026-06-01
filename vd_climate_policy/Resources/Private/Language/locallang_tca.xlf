@@ -3,9 +3,6 @@
 	<file datatype="plaintext" original="EXT:vd_climate_policy/Resources/Private/Language/locallang_tca.xlf" source-language="en">
 		<header/>
 		<body>
-			<trans-unit id="addresses" resname="addresses">
-				<source>Addresses</source>
-			</trans-unit>
 			<trans-unit id="axes" resname="axes">
 				<source>Axes</source>
 			</trans-unit>
@@ -14,6 +11,12 @@
 			</trans-unit>
 			<trans-unit id="cities" resname="cities">
 				<source>Cities</source>
+			</trans-unit>
+			<trans-unit id="climate_policy" resname="climate_policy">
+				<source>Climate policy</source>
+			</trans-unit>
+			<trans-unit id="climate-policy-module" resname="climate-policy-module">
+				<source>Climate policy</source>
 			</trans-unit>
 			<trans-unit id="color" resname="color">
 				<source>Color</source>

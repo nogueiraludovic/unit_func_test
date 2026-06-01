@@ -1,0 +1,8 @@
+plugin.tx_web2pdf {
+  settings {
+    pdfBottomMargin = 35
+    pdfDestination = inline
+    useCustomFooter = 1
+  }
+  view.partialRootPath = EXT:vd_pressreleases/Resources/Private/Partials
+}

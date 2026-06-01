@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xliff version="1.2" xmlns="urn:oasis:names:tc:xliff:document:1.2">
+	<file datatype="plaintext" original="EXT:vd_pressreleases/Resources/Private/Language/locallang_db_new_content_el.xlf" source-language="en">
+		<header/>
+		<body>
+			<trans-unit id="plugins_vdpressreleases_pressrelease_description" resname="plugins_vdpressreleases_pressrelease_description">
+				<source>Display a press release detail view</source>
+			</trans-unit>
+			<trans-unit id="pluginsvdpressreleases_pressrelease_title" resname="pluginsvdpressreleases_pressrelease_title">
+				<source>Press release: Detail view</source>
+			</trans-unit>
+		</body>
+	</file>
+</xliff>

@@ -1,0 +1,33 @@
+<T3DataStructure>
+    <sheets>
+        <category>
+            <ROOT>
+                <el>
+                    <settings.category>
+                        <TCEforms>
+                            <config>
+                                <allowed>tx_vdojvencheres_domain_model_itemcategory</allowed>
+                                <default>0</default>
+                                <foreign_table>tx_vdojvencheres_domain_model_itemcategory</foreign_table>
+                                <internal_type>db</internal_type>
+                                <maxitems>1</maxitems>
+                                <size>1</size>
+                                <suggestOptions>
+                                    <default>
+                                        <pidDepth>250</pidDepth>
+                                        <pidList>62770</pidList>
+                                    </default>
+                                </suggestOptions>
+                                <type>group</type>
+                            </config>
+                            <label>Catégorie principale</label>
+                        </TCEforms>
+                    </settings.category>
+                </el>
+                <TCEforms>
+                    <sheetTitle>LLL:EXT:core/Resources/Private/Language/Form/locallang_tabs.xlf:categories</sheetTitle>
+                </TCEforms>
+            </ROOT>
+        </category>
+    </sheets>
+</T3DataStructure>

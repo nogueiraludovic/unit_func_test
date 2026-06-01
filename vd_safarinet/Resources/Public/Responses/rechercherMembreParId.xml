@@ -1,0 +1,131 @@
+<soap:Envelope xmlns:soap="http://schemas.xmlsoap.org/soap/envelope/">
+    <soap:Body>
+        <ns2:rechercherMembreParIdResponse
+                xmlns:ns2="http://www.vd.ch/lmgc/wsdl/ListeMembresGrandConseil"
+                xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+                xsi:schemaLocation="http://www.vd.ch/lmgc/wsdl/ListeMembresGrandConseil ../../LMGC/ListeMembresGrandConseil.xsd ">
+            <return>
+                <adressePolitique>
+                    <adresse>Chemin de Craivavers 8</adresse>
+                    <canton>Vaud</canton>
+                    <email>axel.marion@gc.vd.ch</email>
+                    <localite>Lausanne</localite>
+                    <npa>1012</npa>
+                    <pays>Suisse</pays>
+                    <siteWeb>axel.marion.gc.vd.ch</siteWeb>
+                    <telephone>021/646.24.64</telephone>
+                    <telephoneMobile>078/646.24.64</telephoneMobile>
+                    <type>POLITIQUE</type>
+                </adressePolitique>
+                <adresseProfessionnelle>
+                    <adresse>Effingerstrasse 15</adresse>
+                    <canton>Berne</canton>
+                    <email>marion@swissuniversities.ch</email>
+                    <localite>Berne</localite>
+                    <npa>3000</npa>
+                    <pays>Suisse</pays>
+                    <telephone>031/335.07.72</telephone>
+                    <type>PROFESSIONNELLE</type>
+                </adresseProfessionnelle>
+                <arrondissement>Lausanne / Lausanne-Ville</arrondissement>
+                <dateNaissance>1978-12-13</dateNaissance>
+                <documents>
+                    <document>
+                        <id>123901</id>
+                        <titre>alex.jpg</titre>
+                        <type>Photo</type>
+                    </document>
+                    <document>
+                        <id>123902</id>
+                        <titre>Registre des intérêts</titre>
+                        <type>Registre des intérêts</type>
+                    </document>
+                </documents>
+                <groupes>
+                    <groupe>
+                        <actif>Oui</actif>
+                        <dateDebut>2017-07-01</dateDebut>
+                        <id>155531</id>
+                        <nom>(17) DFIRE</nom>
+                        <qualite>Président</qualite>
+                        <sigle>17DFIRE</sigle>
+                    </groupe>
+                    <groupe>
+                        <actif>Oui</actif>
+                        <dateDebut>2017-07-01</dateDebut>
+                        <id>204768</id>
+                        <nom>(177) DSAS</nom>
+                        <qualite>Membre</qualite>
+                        <sigle>177DSAS</sigle>
+                    </groupe>
+                    <groupe>
+                        <actif>Non</actif>
+                        <dateDebut>2017-07-01</dateDebut>
+                        <dateFin>2019-07-01</dateFin>
+                        <id>220166</id>
+                        <nom>(226) DTE</nom>
+                        <qualite>Membre</qualite>
+                        <sigle>226DTE</sigle>
+                    </groupe>
+                    <groupe>
+                        <actif>Oui</actif>
+                        <dateDebut>2017-07-01</dateDebut>
+                        <id>264622</id>
+                        <nom>Commission thématique de la politique familiale 2017 - 2022</nom>
+                        <qualite>Membre</qualite>
+                        <sigle>COFAM17-22</sigle>
+                    </groupe>
+                    <groupe>
+                        <actif>Oui</actif>
+                        <dateDebut>2017-07-01</dateDebut>
+                        <id>155315</id>
+                        <nom>Délégation vaudoise à la Commission interparlementaire chargée d'examiner le projet de convention intercantonale sur l'Hôpital intercantonal de la Broye</nom>
+                        <qualite>Membre</qualite>
+                        <sigle>CHOBRY</sigle>
+                    </groupe>
+                </groupes>
+                <historique>
+                    <election>
+                        <arrondissement>Lausanne / Lausanne-Ville</arrondissement>
+                        <communeOrigine>Lausanne</communeOrigine>
+                        <dateElection>2017-07-01</dateElection>
+                        <fonction>Député</fonction>
+                        <parti>AdC</parti>
+                    </election>
+                    <election>
+                        <arrondissement>Lausanne / Lausanne-Ville</arrondissement>
+                        <communeOrigine>Lausanne</communeOrigine>
+                        <dateElection>2012-07-01</dateElection>
+                        <fonction>Député</fonction>
+                        <parti>AdC</parti>
+                    </election>
+                </historique>
+                <id>147826</id>
+                <nom>Marion</nom>
+                <objets>
+                    <objet>
+                        <dateDepot>2018-06-05</dateDepot>
+                        <id>655374</id>
+                        <titre>Motion Axel Marion et consorts - Lutte contre le "deal" : maintenant, c'est le temps de l'action !</titre>
+                    </objet>
+                    <objet>
+                        <dateDepot>2018-03-20</dateDepot>
+                        <id>18_INT_118</id>
+                        <titre>Interpellation Axel Marion et consorts - Quel accompagnement face à l'introduction du RGPD en mai prochain ?</titre>
+                    </objet>
+                    <objet>
+                        <dateDepot>2018-01-23</dateDepot>
+                        <id>18_INT_115</id>
+                        <titre>Interpellation Axel Marion et consorts - Quelle politique de prévention et promotion de la santé pour l'État de Vaud ?</titre>
+                    </objet>
+                </objets>
+                <parti>AdC</parti>
+                <photo>123901</photo>
+                <politesse>Monsieur</politesse>
+                <prenom>Axel</prenom>
+                <profession>Historien</profession>
+                <qualite>Député</qualite>
+            </return>
+        </ns2:rechercherMembreParIdResponse>
+    </soap:Body>
+</soap:Envelope>

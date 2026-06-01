@@ -1,0 +1,50 @@
+<html data-namespace-typo3-fluid="true" xmlns:f="http://typo3.org/ns/TYPO3/CMS/Fluid/ViewHelpers" xmlns:vd="http://typo3.org/ns/Vd/VdOcosp/ViewHelpers">
+    <f:if condition="{formation}">
+        <div>
+            <vd:wiki parseText="true"><f:format.raw>{formation}</f:format.raw></vd:wiki>
+        </div>
+    </f:if>
+    <f:if condition="{lieu}">
+        <h5><f:translate id="LLL:EXT:vd_ocosp/Resources/Private/Language/locallang_frontend.xlf:label.lieu_single"/></h5>
+        <div>
+            <vd:wiki parseText="true"><f:format.raw>{lieu}</f:format.raw></vd:wiki>
+        </div>
+    </f:if>
+    <f:if condition="{conditionsAdmission}">
+        <h5><f:translate id="LLL:EXT:vd_ocosp/Resources/Private/Language/locallang_frontend.xlf:label.conditions_admission"/></h5>
+        <div>
+            <vd:wiki parseText="true"><f:format.raw>{conditionsAdmission}</f:format.raw></vd:wiki>
+        </div>
+    </f:if>
+    <f:if condition="{dmde.diplomeId}">
+        <h5>
+            <f:translate id="LLL:EXT:vd_ocosp/Resources/Private/Language/locallang_frontend.xlf:label.titre_delivre"/>
+        </h5>
+        <p>
+            <f:if condition="{dmde.diplomeId.uid} == 2">
+                <f:then>{dmde.diplomeComplement}</f:then>
+                <f:else>{dmde.diplomeId.diplome}</f:else>
+            </f:if>
+        </p>
+    </f:if>
+    <f:if condition="{dmde.professionId.0.niveauCnc}">
+        <h5>
+            <f:translate id="LLL:EXT:vd_ocosp/Resources/Private/Language/locallang_frontend.xlf:label.niveau_cnc"/>
+        </h5>
+        <div class="mb-1">
+            <vd:wiki parseText="true">
+                <f:format.raw>{dmde.professionId.0.niveauCnc}</f:format.raw>
+            </vd:wiki>
+        </div>
+    </f:if>
+    <f:if condition="{dmde.remarques}">
+        <h5>
+            <f:translate id="LLL:EXT:vd_ocosp/Resources/Private/Language/locallang_frontend.xlf:label.remarques"/>
+        </h5>
+        <div class="mb-1">
+            <vd:wiki parseText="true">
+                <f:format.raw>{dmde.remarques}</f:format.raw>
+            </vd:wiki>
+        </div>
+    </f:if>
+</html>

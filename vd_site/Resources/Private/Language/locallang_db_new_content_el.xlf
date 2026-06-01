@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xliff version="1.2" xmlns="urn:oasis:names:tc:xliff:document:1.2">
+	<file datatype="plaintext" original="EXT:vd_site/Resources/Private/Language/locallang_db_new_content_el.xlf" source-language="en">
+		<header/>
+		<body>
+			<trans-unit id="common_biocard_description" resname="common_biocard_description">
+				<source>Content element to display a short biography.</source>
+			</trans-unit>
+			<trans-unit id="common_buttons_description" resname="common_buttons_description">
+				<source>Content element to display a list of buttons.</source>
+			</trans-unit>
+			<trans-unit id="common_card_title" resname="common_card_title">
+				<source>Card</source>
+			</trans-unit>
+			<trans-unit id="common_card_description" resname="common_card_description">
+				<source>Content element to display a card.</source>
+			</trans-unit>
+			<trans-unit id="common_cards_group_description" resname="common_cards_group_description">
+				<source>Content element to display a group of cards.</source>
+			</trans-unit>
+			<trans-unit id="common_carousel_description" resname="common_carousel_description">
+				<source>Content element to display a carousel.</source>
+			</trans-unit>
+			<trans-unit id="common_citation_description" resname="common_citation_description">
+				<source>Content element to display a citation.</source>
+			</trans-unit>
+			<trans-unit id="common_links_box_description" resname="common_links_box_description">
+				<source>Content element to display a list of links in a box.</source>
+			</trans-unit>
+			<trans-unit id="common_biocard_title" resname="common_biocard_title">
+				<source>Short biography</source>
+			</trans-unit>
+			<trans-unit id="common_buttons_title" resname="common_buttons_title">
+				<source>Buttons</source>
+			</trans-unit>
+			<trans-unit id="common_cards_group_title" resname="common_cards_group_title">
+				<source>Cards group</source>
+			</trans-unit>
+			<trans-unit id="common_carousel_title" resname="common_carousel_title">
+				<source>Carousel</source>
+			</trans-unit>
+			<trans-unit id="common_citation_title" resname="common_citation_title">
+				<source>Citation</source>
+			</trans-unit>
+			<trans-unit id="common_links_box_title" resname="common_links_box_title">
+				<source>Links box</source>
+			</trans-unit>
+			<trans-unit id="form_search_form_description" resname="form_search_form_description">
+				<source>Form to display a global search</source>
+			</trans-unit>
+			<trans-unit id="form_search_form_title" resname="form_search_form_title">
+				<source>Search form</source>
+			</trans-unit>
+			<trans-unit id="menu_menu_themes_description" resname="menu_menu_themes_description">
+				<source>Menu to display a list of themes into 2 columns</source>
+			</trans-unit>
+			<trans-unit id="menu_menu_themes_title" resname="menu_menu_themes_title">
+				<source>Themes menu</source>
+			</trans-unit>
+		</body>
+	</file>
+</xliff>

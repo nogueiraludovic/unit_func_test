@@ -1,0 +1,92 @@
+<soap:Envelope xmlns:soap="http://schemas.xmlsoap.org/soap/envelope/">
+    <soap:Body>
+        <ns2:rechercherMembresParPartiPolitiqueResponse
+                xmlns:ns2="http://www.vd.ch/lmgc/wsdl/ListeMembresGrandConseil"
+                xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+                xsi:schemaLocation="http://www.vd.ch/lmgc/wsdl/ListeMembresGrandConseil ../../LMGC/ListeMembresGrandConseil.xsd ">
+            <return>
+                <adresse>
+                    <adresse>p.a. M. Christophe Privet, Secrétaire parlementaire, Route de Villard 13</adresse>
+                    <canton>Vaud</canton>
+                    <email>christophe.privet@vaud-libre.ch</email>
+                    <localite>Chamby-sur-Montreux</localite>
+                    <npa>1832</npa>
+                    <pays>Suisse</pays>
+                    <telephone>021/510.30.35</telephone>
+                </adresse>
+                <id>264609</id>
+                <membres>
+                    <arrondissement>Riviera - PdE / Vevey</arrondissement>
+                    <id>21336</id>
+                    <nom>Christen</nom>
+                    <parti>AdC</parti>
+                    <politesse>Monsieur</politesse>
+                    <prenom>Jérôme</prenom>
+                    <qualite>Président-e</qualite>
+                </membres>
+                <membres>
+                    <arrondissement>Ouest lausannois</arrondissement>
+                    <id>280127</id>
+                    <nom>Radice</nom>
+                    <parti>AdC</parti>
+                    <politesse>Monsieur</politesse>
+                    <prenom>Jean-Louis</prenom>
+                    <qualite>Membre</qualite>
+                </membres>
+                <membres>
+                    <arrondissement>Nyon</arrondissement>
+                    <id>20526</id>
+                    <nom>Melly</nom>
+                    <parti>AdC</parti>
+                    <politesse>Monsieur</politesse>
+                    <prenom>Serge</prenom>
+                    <qualite>Membre</qualite>
+                </membres>
+                <nom>Groupe PDC-Vaud Libre du Grand Conseil 2017 - 2022</nom>
+                <sigle>AdC</sigle>
+            </return>
+            <return>
+                <adresse>
+                    <adresse>p.a. Mme France Manghardt, Secrétaire générale, Place Palud 7
+                    </adresse>
+                    <canton>Vaud</canton>
+                    <email>france.manghardt@verts-vd.ch</email>
+                    <localite>Lausanne</localite>
+                    <npa>1003</npa>
+                    <pays>Suisse</pays>
+                    <telephone>021/351.36.30</telephone>
+                </adresse>
+                <id>264614</id>
+                <membres>
+                    <arrondissement>Jura - Nord vaudois / Yverdon</arrondissement>
+                    <id>20277</id>
+                    <nom>Venizelos</nom>
+                    <parti>VER</parti>
+                    <politesse>Monsieur</politesse>
+                    <prenom>Vassilis</prenom>
+                    <qualite>Président-e</qualite>
+                </membres>
+                <membres>
+                    <arrondissement>Lausanne / Lausanne-Ville</arrondissement>
+                    <id>54440</id>
+                    <nom>Baehler Bech</nom>
+                    <parti>VER</parti>
+                    <politesse>Madame</politesse>
+                    <prenom>Anne</prenom>
+                    <qualite>Membre</qualite>
+                </membres>
+                <membres>
+                    <arrondissement>Lavaux - Oron</arrondissement>
+                    <id>147836</id>
+                    <nom>Wüthrich</nom>
+                    <parti>VER</parti>
+                    <politesse>Monsieur</politesse>
+                    <prenom>Andreas</prenom>
+                    <qualite>Membre</qualite>
+                </membres>
+                <nom>Groupe Verts du Grand Conseil 2017 - 2022</nom>
+                <sigle>VER</sigle>
+            </return>
+        </ns2:rechercherMembresParPartiPolitiqueResponse>
+    </soap:Body>
+</soap:Envelope>

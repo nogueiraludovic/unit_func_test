@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xliff version="1.2" xmlns="urn:oasis:names:tc:xliff:document:1.2">
+	<file original="" product-name="Vd.VdOcosp" source-language="en" datatype="plaintext">
+		<body>
+			<trans-unit id="displayAdresses" xml:space="preserve">
+				<source>OCOSP Display: Addresses</source>
+				<target>OCOSP Affichage : Adresses</target>
+			</trans-unit>
+			<trans-unit id="displayApprentissages" xml:space="preserve">
+				<source>OCOSP Display: Apprenticeships</source>
+				<target>OCOSP Affichage : Apprentissages</target>
+			</trans-unit>
+			<trans-unit id="displayDmde" xml:space="preserve">
+				<source>OCOSP Display: DMDE</source>
+				<target>OCOSP Affichage : Des Métiers - Des Ecoles</target>
+			</trans-unit>
+			<trans-unit id="displayDmdeAdvancedSearch" xml:space="preserve">
+				<source>OCOSP Display: Advanced search</source>
+				<target>OCOSP Affichage : Recherche avancée</target>
+			</trans-unit>
+			<trans-unit id="displayDmdeSimpleSearch" xml:space="preserve">
+				<source>OCOSP Display: Simple search</source>
+				<target>OCOSP Affichage : Recherche simplifiée</target>
+			</trans-unit>
+			<trans-unit id="displayInscription" xml:space="preserve">
+				<source>OCOSP Display: Registration deadlines</source>
+				<target>OCOSP Affichage : Délais d'inscription</target>
+			</trans-unit>
+			<trans-unit id="displayProfession" xml:space="preserve">
+				<source>OCOSP Display: Professions</source>
+				<target>OCOSP Affichage : Professions</target>
+			</trans-unit>
+			<trans-unit id="displaySalary" xml:space="preserve">
+				<source>OCOSP Display: Salaries</source>
+				<target>OCOSP Affichage : Salaires</target>
+			</trans-unit>
+		</body>
+	</file>
+</xliff>

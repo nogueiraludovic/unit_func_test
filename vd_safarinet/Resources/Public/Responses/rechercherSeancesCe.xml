@@ -1,0 +1,39 @@
+<soap:Envelope xmlns:soap="http://schemas.xmlsoap.org/soap/envelope/">
+    <soap:Body>
+        <p:rechercherSeancesCe
+                xmlns:p="http://www.vd.ch/lmgc/wsdl/SeanceGrandConseil"
+                xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+                xsi:schemaLocation="http://www.vd.ch/lmgc/wsdl/SeanceGrandConseil ../../LMGC/SeanceGrandConseil.xsd ">
+            <return>
+                <dateSeance>2019-12-24</dateSeance>
+                <id>12345</id>
+                <nomCourt>Séance du mardi 24 décembre 2019</nomCourt>
+            </return>
+            <return>
+                <dateSeance>2019-10-01</dateSeance>
+                <id>12312</id>
+                <nomCourt>Séance du mardi 1 octobre 2019</nomCourt>
+            </return>
+            <return>
+                <dateSeance>2019-09-24</dateSeance>
+                <id>12241</id>
+                <nomCourt>Séance du mardi 24 septembre 2019</nomCourt>
+            </return>
+            <return>
+                <dateSeance>2019-09-17</dateSeance>
+                <id>12212</id>
+                <nomCourt>Séance du mardi 17 septembre 2019</nomCourt>
+            </return>
+            <return>
+                <dateSeance>2018-09-17</dateSeance>
+                <id>12212</id>
+                <nomCourt>Séance du vendredi 17 septembre 2018</nomCourt>
+            </return>
+            <return>
+                <dateSeance>2018-08-17</dateSeance>
+                <id>12212</id>
+                <nomCourt>Séance du mardi 17 août 2018</nomCourt>
+            </return>
+        </p:rechercherSeancesCe>
+    </soap:Body>
+</soap:Envelope>

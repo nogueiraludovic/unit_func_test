@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xliff version="1.2" xmlns="urn:oasis:names:tc:xliff:document:1.2">
+	<file datatype="plaintext" original="EXT:vd_alertes/Resources/Private/Language/locallang_db.xlf" source-language="en">
+		<header/>
+		<body>
+			<trans-unit id="color" resname="color">
+				<source>Color</source>
+			</trans-unit>
+			<trans-unit id="color.I.1" resname="color.I.1">
+				<source>Green</source>
+			</trans-unit>
+			<trans-unit id="color.I.2" resname="color.I.2">
+				<source>Dark gray</source>
+			</trans-unit>
+			<trans-unit id="color.I.3" resname="color.I.3">
+				<source>Black</source>
+			</trans-unit>
+			<trans-unit id="color.I.4" resname="color.I.4">
+				<source>Light gray</source>
+			</trans-unit>
+			<trans-unit id="home_alert" resname="home_alert">
+				<source>Alert on home page</source>
+			</trans-unit>
+			<trans-unit id="link" resname="link">
+				<source>Link</source>
+			</trans-unit>
+			<trans-unit id="service_alert" resname="service_alert">
+				<source>Alert on services pages</source>
+			</trans-unit>
+			<trans-unit id="summary" resname="summary">
+				<source>Summary</source>
+			</trans-unit>
+		</body>
+	</file>
+</xliff>

@@ -1,0 +1,5 @@
+<html data-namespace-typo3-fluid="true" xmlns:f="http://typo3.org/ns/TYPO3/CMS/Fluid/ViewHelpers">
+    <f:if condition="{data.header} && {data.header_layout} != 100">
+        <f:render arguments="{additionalClass: additionalClass, default: settings.defaultHeaderType, header: data.header, layout: data.header_layout, link: data.header_link}" partial="Header/Header"/>
+    </f:if>
+</html>

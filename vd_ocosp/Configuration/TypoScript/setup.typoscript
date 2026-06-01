@@ -1,0 +1,29 @@
+plugin.tx_vdocosp {
+  features.skipDefaultArguments = 1
+  persistence.storagePid = {$plugin.tx_vdocosp.storagePid}
+  settings {
+    adressePageId = {$plugin.tx_vdocosp.adressePageId}
+    display {
+      dmdePageId = {$plugin.tx_vdocosp.display.dmdePageId}
+      links {
+        internshipList = {$plugin.tx_vdocosp.display.internshipListUrl}
+        internshipSearchPid = {$plugin.tx_vdocosp.display.internshipSearchPid}
+        professionSearch = {$plugin.tx_vdocosp.display.professionSearchUrl}
+      }
+    }
+    dmdePageId = {$plugin.tx_vdocosp.dmdePageId}
+    inscriptions {
+      allowedFiles = {$plugin.tx_vdocosp.inscriptions.allowedFiles}
+      storage = {$plugin.tx_vdocosp.inscriptions.storage}
+    }
+    professionPageId = {$plugin.tx_vdocosp.professionPageId}
+  }
+  view {
+    layoutRootPaths.10 = EXT:vd_ocosp/Resources/Private/Layouts/
+    partialRootPaths {
+      10 = EXT:vd_core/Resources/Private/Partials/
+      20 = EXT:vd_ocosp/Resources/Private/Partials/
+    }
+    templateRootPaths.10 = EXT:vd_ocosp/Resources/Private/Templates/
+  }
+}

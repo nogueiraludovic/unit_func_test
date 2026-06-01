@@ -1,0 +1,55 @@
+<html data-namespace-typo3-fluid="true" xmlns:f="http://typo3.org/ns/TYPO3/CMS/Fluid/ViewHelpers" xmlns:vd="http://typo3.org/ns/Vd/VdOcosp/ViewHelpers">
+    <f:layout/>
+    <f:section name="main">
+        <p>
+            <f:link.action id="dmde-refresh-link">
+                <f:translate id="LLL:EXT:vd_ocosp/Resources/Private/Language/locallang_frontend.xlf:new_search"/>
+            </f:link.action>
+        </p>
+        <f:if condition="{keyword}">
+            <h3>
+                <f:translate id="LLL:EXT:vd_ocosp/Resources/Private/Language/locallang_frontend.xlf:title.dmde.search.results.for" arguments="{0: keyword}"/>
+            </h3>
+        </f:if>
+        <f:if condition="{domain}">
+            <h3>
+                <f:translate id="LLL:EXT:vd_ocosp/Resources/Private/Language/locallang_frontend.xlf:title.dmde.search.results.for" arguments="{0: domain.nom}"/>
+            </h3>
+        </f:if>
+        <f:if condition="{interests}">
+            <h3>
+                <f:translate id="LLL:EXT:vd_ocosp/Resources/Private/Language/locallang_frontend.xlf:title.dmde.search.results"/>
+            </h3>
+            <p>
+                <f:if condition="{interests -> f:count()} == 1">
+                    <f:then>
+                        <f:translate id="LLL:EXT:vd_ocosp/Resources/Private/Language/locallang_frontend.xlf:title.dmde.search.for.single.interest.nomarker"/>
+                        <em>{interests.0.nom}</em>
+                    </f:then>
+                    <f:else>
+                        <f:translate id="LLL:EXT:vd_ocosp/Resources/Private/Language/locallang_frontend.xlf:title.dmde.search.for.interests.nomarker"/>
+                        <em>
+                            <f:for as="interest" each="{interests}" iteration="iterator">
+                                {interest.nom}<f:if condition="{iterator.isLast}"><f:else>,</f:else></f:if>
+                            </f:for>
+                        </em>
+                    </f:else>
+                </f:if>
+            </p>
+        </f:if>
+        <f:groupedFor as="results" each="{results}" groupBy="domaineId.nom" groupKey="domainName">
+            <f:if condition="{domain}">
+                <f:else>
+                    <h4>{domainName}</h4>
+                </f:else>
+            </f:if>
+            <vd:sortedFor as="result" each="{results}" sort="professionAffichage">
+                <p>
+                    <f:link.action action="detail" arguments="{dmde : result}" id="profession-details-link">
+                        {result.professionAffichage}
+                    </f:link.action>
+                </p>
+            </vd:sortedFor>
+        </f:groupedFor>
+    </f:section>
+</html>

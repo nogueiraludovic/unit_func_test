@@ -1,0 +1,50 @@
+plugin.tx_solr.index.queue {
+  communiques = 1
+  communiques {
+    additionalWhereClause = pid=2000107
+    attachments = 1
+    attachments {
+      fields = forcedpdf_file
+      fileExtensions = *
+    }
+    fields {
+      abstract = SOLR_CONTENT
+      abstract {
+        cObject = TEXT
+        cObject {
+          field = summary
+          noTrimWrap = || |
+        }
+      }
+      author = signature
+      content < .abstract
+      content.cObject.field = body_text
+      datetime_dateS = date_time
+      forcedpdf_intM = SOLR_RELATION
+      forcedpdf_intM {
+        localField = forcedpdf_file
+        multiValue = 1
+      }
+      keywords = SOLR_MULTIVALUE
+      keywords.field = keywords
+      subtitle_textS = subtitle
+      title = title
+      type_intS = SOLR_RELATION
+      type_intS {
+        localField = type
+        foreignLabelField = uid
+      }
+      url = TEXT
+      url.typolink {
+        additionalParams = &tx_vdpressreleases_pressrelease[action]=show&tx_vdpressreleases_pressrelease[controller]=PressRelease&tx_vdpressreleases_pressrelease[pressRelease]={field:uid}
+        additionalParams.insertData = 1
+        parameter = 2000109
+        returnLast = url
+        useCacheHash = 1
+      }
+    }
+    table = tx_vdpressreleases_domain_model_pressrelease
+  }
+  communiques_antilope < .communiques
+  communiques_antilope.additionalWhereClause = pid=2000104
+}

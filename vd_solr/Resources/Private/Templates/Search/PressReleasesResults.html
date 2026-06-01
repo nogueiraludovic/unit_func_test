@@ -1,0 +1,61 @@
+<html data-namespace-typo3-fluid="true" xmlns:f="http://typo3.org/ns/TYPO3/Fluid/ViewHelpers" xmlns:s="http://typo3.org/ns/ApacheSolrForTypo3/Solr/ViewHelpers" xmlns:vdc="http://typo3.org/ns/Vd/VdCore/ViewHelpers">
+    <f:variable name="type" value="communiqués de presse"/>
+    <f:render arguments="{_all}" partial="Search/Form" section="Records"/>
+    <f:if condition="{resultSet.allResultCount} > 0">
+        <f:then>
+            <f:render arguments="{_all}" partial="Search/ResultsCount"/>
+            <f:if condition="{resultSet.hasSearched}">
+                <s:widget.resultPaginate resultSet="{resultSet}">
+                    <div class="vd-teaser-list-striped">
+                        <f:for as="document" each="{documents}" iteration="iterator">
+                            <f:if condition="{document.forcedpdf_intM} && {document.type_intS} == 7">
+                                <f:then>
+                                    <f:variable name="external" value="1"/>
+                                    <vdc:fal as="files" data="{document.fields}" field="forcedpdf_file" table="tx_vdpressreleases_domain_model_pressrelease">
+                                        <f:variable name="url" value="{files.0.originalFile.publicUrl}"/>
+                                    </vdc:fal>
+                                </f:then>
+                                <f:else>
+                                    <f:variable name="external" value="0"/>
+                                    <f:variable name="url" value="{s:uri.result.addSearchWordList(searchWords: resultSet.usedQuery.query, url: document.url)}"/>
+                                </f:else>
+                            </f:if>
+                            <article class="d-flex flex-column pt-3 px-3 vd-teaser-list-striped-item">
+                                <header class="d-flex flex-column">
+                                    <h2 class="h3 mt-0 order-2">
+                                        <a class="vd-link-invisible" href="{url}" id="document-link-{iterator.index}">
+                                            {s:document.highlightResult(document: document, fieldName: 'title', resultSet: resultSet)}
+                                        </a>
+                                    </h2>
+                                    <f:if condition="{document.subtitle_textS}">
+                                        <p class="mb-1 order-1 small text-uppercase">
+                                            {s:document.highlightResult(document: document, fieldName: 'subtitle_textS', resultSet: resultSet)}
+                                        </p>
+                                    </f:if>
+                                </header>
+                                <f:if condition="{document.abstract}">
+                                    <f:then>
+                                        <p>{s:document.highlightResult(document: document, fieldName: 'abstract', resultSet: resultSet) -> f:format.crop(maxCharacters: 340)}</p>
+                                    </f:then>
+                                    <f:else>
+                                        <p>{s:document.highlightResult(document: document, fieldName: 'content', resultSet: resultSet) -> f:format.crop(maxCharacters: 340)}</p>
+                                    </f:else>
+                                </f:if>
+                                <footer>
+                                    <p class="fw-bold small">
+                                        <time datetime="{document.datetime_dateS -> f:format.date(format: 'c')}">
+                                            Publié le {document.datetime_dateS -> f:format.date(format: '%d %B %Y')}
+                                        </time>
+                                    </p>
+                                </footer>
+                            </article>
+                        </f:for>
+                    </div>
+                </s:widget.resultPaginate>
+            </f:if>
+        </f:then>
+        <f:else>
+            <f:render arguments="{title: '{f:translate(id: \'no_results_for_press_release\')}'}" partial="Search/NoResult"/>
+        </f:else>
+    </f:if>
+</html>

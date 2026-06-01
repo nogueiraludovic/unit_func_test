@@ -1,0 +1,84 @@
+<html data-namespace-typo3-fluid="true" xmlns:f="http://typo3.org/ns/TYPO3/CMS/Fluid/ViewHelpers">
+    <f:layout/>
+    <f:section name="AccordionBody">
+        <div class="accordion-body vd-content">
+            <f:cObject data="{child.uid}" typoscriptObjectPath="lib.contentElementRendering"/>
+        </div>
+    </f:section>
+    <f:section name="AccordionHeader">
+        <button aria-controls="collapse-{child.uid}" aria-expanded="{ariaExpanded}" class="{cssHeader}" id="heading-{child.uid}" data-bs-target="#collapse-{child.uid}" data-bs-toggle="collapse">
+            <f:if condition="{data.header}">
+                <f:then>
+                    <span class="h5 mb-0 mt-0">{child.header}</span>
+                    <f:if condition="{child.subheader}">
+                        <span class="fw-normal h6 mb-0 mt-2">{child.subheader}</span>
+                    </f:if>
+                </f:then>
+                <f:else>
+                    <span class="h5 mb-0 mt-0">{child.header}</span>
+                    <f:if condition="{child.subheader}">
+                        <span class="fw-normal h6 mb-0 mt-2">{child.subheader}</span>
+                    </f:if>
+                </f:else>
+            </f:if>
+        </button>
+    </f:section>
+    <f:section name="Content">
+        <div class="accordion" id="accordion-{data.uid}">
+            <f:for as="child" each="{children_200}" iteration="iterator">
+                <f:if condition="({iterator.isFirst} || {flexFormData.accordionDisplay} == 1) && {flexFormData.accordionDisplay} != 2">
+                    <f:then>
+                        <f:variable name="ariaExpanded" value="true"/>
+                        <f:if condition="{child.subheader}">
+                            <f:then>
+                                <f:variable name="cssHeader" value="accordion-button accordion-button-subheader accordion-header align-items-start flex-column mt-0"/>
+                            </f:then>
+                            <f:else>
+                                <f:variable name="cssHeader" value="accordion-button accordion-header align-items-start flex-column mt-0"/>
+                            </f:else>
+                        </f:if>
+                        <f:variable name="cssBody" value="accordion-collapse collapse show"/>
+                    </f:then>
+                    <f:else>
+                        <f:variable name="ariaExpanded" value="false"/>
+                        <f:if condition="{child.subheader}">
+                            <f:then>
+                                <f:variable name="cssHeader" value="accordion-button accordion-button-subheader accordion-header align-items-start collapsed flex-column mt-0"/>
+                            </f:then>
+                            <f:else>
+                                <f:variable name="cssHeader" value="accordion-button accordion-header align-items-start collapsed flex-column mt-0"/>
+                            </f:else>
+                        </f:if>
+                        <f:variable name="cssBody" value="accordion-collapse collapse"/>
+                    </f:else>
+                </f:if>
+                <div class="accordion-item border-end-0 border-start-0" id="c{child.uid}">
+                    <f:if condition="{data.header}">
+                        <f:then>
+                            <h3 class="border-end-0 border-start-0 m-0">
+                                <f:render arguments="{_all}" section="AccordionHeader"/>
+                            </h3>
+                        </f:then>
+                        <f:else>
+                            <h2 class="border-end-0 border-start-0 m-0">
+                                <f:render arguments="{_all}" section="AccordionHeader"/>
+                            </h2>
+                        </f:else>
+                    </f:if>
+                    <f:if condition="{flexFormData.accordionKeep}">
+                        <f:then>
+                            <div aria-labelledby="heading-{child.uid}" class="{cssBody}" data-bs-parent="#accordion-{data.uid}" id="collapse-{child.uid}">
+                                <f:render arguments="{child: child}" section="AccordionBody"/>
+                            </div>
+                        </f:then>
+                        <f:else>
+                            <div aria-labelledby="heading-{child.uid}" class="{cssBody}" id="collapse-{child.uid}">
+                                <f:render arguments="{child: child}" section="AccordionBody"/>
+                            </div>
+                        </f:else>
+                    </f:if>
+                </div>
+            </f:for>
+        </div>
+    </f:section>
+</html>

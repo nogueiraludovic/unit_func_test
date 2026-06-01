@@ -1,0 +1,51 @@
+<html data-namespace-typo3-fluid="true" xmlns:f="http://typo3.org/ns/TYPO3/CMS/Fluid/ViewHelpers">
+    <f:layout/>
+    <f:section name="Header">
+        <f:if condition="{gallery.position.noWrap} != 1">
+            <f:render arguments="{_all}" partial="Header/All"/>
+        </f:if>
+    </f:section>
+    <f:section name="Main">
+        <f:if condition="{gallery.position.noWrap}">
+            <f:then>
+                <div class="row">
+                    <f:if condition="{gallery.position.horizontal} == 'left'">
+                        <f:then>
+                            <div class="col-sm-4">
+                                <f:render arguments="{_all}" partial="Media/Gallery"/>
+                            </div>
+                            <div class="col-sm-8">
+                                <f:render arguments="{_all}" section="Text"/>
+                            </div>
+                        </f:then>
+                        <f:else>
+                            <div class="col-sm-8">
+                                <f:render arguments="{_all}" section="Text"/>
+                            </div>
+                            <div class="col-sm-4">
+                                <f:render arguments="{_all}" partial="Media/Gallery"/>
+                            </div>
+                        </f:else>
+                    </f:if>
+                </div>
+            </f:then>
+            <f:else>
+                <f:if condition="{gallery.position.vertical} != 'below'">
+                    <f:render arguments="{_all}" partial="Media/Gallery"/>
+                </f:if>
+                <f:if condition="{data.bodytext}">
+                    <f:format.html>{data.bodytext}</f:format.html>
+                </f:if>
+                <f:if condition="{gallery.position.vertical} == 'below'">
+                    <f:render arguments="{_all}" partial="Media/Gallery"/>
+                </f:if>
+            </f:else>
+        </f:if>
+    </f:section>
+    <f:section name="Text">
+        <f:if condition="{gallery.position.noWrap}">
+            <f:render arguments="{additionalClass: 'mt-0', data: data, settings: settings}" partial="Header/All"/>
+        </f:if>
+        <f:format.html>{data.bodytext}</f:format.html>
+    </f:section>
+</html>

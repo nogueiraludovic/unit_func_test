@@ -1,0 +1,14 @@
+---
+services:
+  _defaults:
+    autoconfigure: true
+    autowire: true
+    public: false
+  Vd\VdNews\:
+    resource: ../Classes/*
+  Vd\VdNews\EventListener\NewsDetailActionEventListener:
+    tags:
+      -
+        event: GeorgRinger\News\Event\NewsDetailActionEvent
+        identifier: vd-site/news-detail-action
+        name: event.listener

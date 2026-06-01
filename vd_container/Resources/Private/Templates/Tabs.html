@@ -1,0 +1,39 @@
+<html data-namespace-typo3-fluid="true" xmlns:f="http://typo3.org/ns/TYPO3/CMS/Fluid/ViewHelpers">
+    <f:layout/>
+    <f:section name="Content">
+        <ul class="nav nav-tabs" role="tablist">
+            <f:for as="child" each="{children_200}" iteration="iterator">
+                <li class="nav-item" role="presentation">
+                    <f:if condition="{iterator.isFirst}">
+                        <f:then>
+                            <button aria-controls="tab-{identifier}" aria-selected="true" class="active nav-link" data-bs-target="#tab-content-{child.uid}" data-bs-toggle="tab" id="tab-{child.uid}" role="tab" type="button">
+                                {child.header}
+                            </button>
+                        </f:then>
+                        <f:else>
+                            <button aria-controls="tab-{identifier}" aria-selected="false" class="nav-link" data-bs-target="#tab-content-{child.uid}" data-bs-toggle="tab" id="tab-{child.uid}" role="tab" type="button">
+                                {child.header}
+                            </button>
+                        </f:else>
+                    </f:if>
+                </li>
+            </f:for>
+        </ul>
+        <div class="mt-4 tab-content">
+            <f:for as="child" each="{children_200}" iteration="iterator">
+                <f:if condition="{iterator.isFirst}">
+                    <f:then>
+                        <div aria-labelledby="tab-{child.uid}" class="active fade show tab-pane" id="tab-content-{child.uid}" role="tabpanel">
+                            <f:format.raw>{child.renderedContent}</f:format.raw>
+                        </div>
+                    </f:then>
+                    <f:else>
+                        <div aria-labelledby="tab-{child.uid}" class="fade tab-pane" id="tab-content-{child.uid}" role="tabpanel">
+                            <f:format.raw>{child.renderedContent}</f:format.raw>
+                        </div>
+                    </f:else>
+                </f:if>
+            </f:for>
+        </div>
+    </f:section>
+</html>

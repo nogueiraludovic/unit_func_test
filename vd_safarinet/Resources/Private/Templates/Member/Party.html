@@ -1,0 +1,86 @@
+<html data-namespace-typo3-fluid="true" xmlns:f="http://typo3.org/ns/fluid/ViewHelpers" xmlns:vds="http://typo3.org/ns/Vd/VdSafarinet/ViewHelpers">
+    <f:layout/>
+    <f:section name="Main">
+        <h2 id="politic-list-title"><f:translate id="politic_list"/></h2>
+        <f:if condition="{parties}">
+            <f:then>
+                <ul class="vd-list-links">
+                    <f:for as="party" each="{parties}" iteration="iterator">
+                        <li><f:link.page id="party-details-link-{iterator.index}" pageUid="{pageUid}" section="party-{party.id}">{party.nom}</f:link.page></li>
+                    </f:for>
+                </ul>
+                <br/>
+                <f:for as="party" each="{parties}">
+                    <f:variable name="membres" value="{party.membres -> vds:format.toArrayList()}"/>
+                    <f:variable name="membresCount" value="{membres -> f:count()}"/>
+                    <h2 id="party-{party.id}">
+                        <f:if condition="{membresCount} > 1">
+                            <f:then>
+                                {party.nom} ({membresCount} {f:translate(id: 'members')})
+                            </f:then>
+                            <f:else>
+                                {party.nom} ({membresCount} {f:translate(id: 'member')})
+                            </f:else>
+                        </f:if>
+                    </h2>
+                    <f:if condition="{party.adresse}">
+                        <h3><f:translate id="contact_address"/></h3>
+                        <div class="tx-vdgrandconseil-address mb-1">
+                            <f:if condition="{party.adresse.adresse}">
+                                {party.adresse.adresse}
+                                <br/>
+                            </f:if>
+                            <f:if condition="{party.adresse.npa}">
+                                {party.adresse.npa}
+                            </f:if>
+                            <f:if condition="{party.adresse.localite}">
+                                {party.adresse.localite}
+                                <br/>
+                            </f:if>
+                            <f:if condition="{party.adresse.telephone}">
+                                Tél: {party.adresse.telephone}
+                                <br/>
+                            </f:if>
+                            <f:if condition="{party.adresse.fax}">
+                                Fax: {party.adresse.fax}
+                                <br/>
+                            </f:if>
+                            <f:if condition="{party.adresse.email}">
+                                <f:link.email email="{party.adresse.email}" id="party-email-to-{party.id}"/>
+                            </f:if>
+                        </div>
+                    </f:if>
+                    <f:if condition="{membres}">
+                        <h3><f:translate id="members_list"/></h3>
+                        <ul class="vd-list-links">
+                            <f:for as="president" each="{membres}" iteration="iterator">
+                                <f:if condition="{president.qualite} != 'Membre'">
+                                    <li>
+                                        <f:link.action action="show" arguments="{memberId: president.id}" class="d-inline-block" controller="Member" id="president-details-link-{iterator.index}" pageUid="{settings.memberDetailPageUid}">
+                                            {president.prenom} {president.nom} <f:if condition="{president.parti}">({president.parti})</f:if>
+                                        </f:link.action>
+                                        {president.qualite}
+                                    </li>
+                                </f:if>
+                            </f:for>
+                            <f:for as="membre" each="{membres}" iteration="iterator">
+                                <f:if condition="{membre.qualite} == 'Membre'">
+                                    <li>
+                                        <f:link.action action="show" arguments="{memberId: membre.id}" class="d-inline-block" controller="Member" id="member-details-link-{iterator.index}" pageUid="{settings.memberDetailPageUid}">
+                                            {membre.prenom} {membre.nom} <f:if condition="{membre.parti}">({membre.parti})</f:if>
+                                        </f:link.action>
+                                    </li>
+                                </f:if>
+                            </f:for>
+                        </ul>
+                        <f:render partial="GoToTop"/>
+                        <br/>
+                    </f:if>
+                </f:for>
+            </f:then>
+            <f:else>
+                <p class="fw-bold small"><f:translate id="no_result"/></p>
+            </f:else>
+        </f:if>
+    </f:section>
+</html>

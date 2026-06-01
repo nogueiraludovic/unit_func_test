@@ -1,0 +1,4 @@
+mod.web_list.tableDisplayOrder {
+  tx_vdocosp_dmde.before = pages
+  tx_vdocosp_professions.after = tx_vdocosp_dmde
+}

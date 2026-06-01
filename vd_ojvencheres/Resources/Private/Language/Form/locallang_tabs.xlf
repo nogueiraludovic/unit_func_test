@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xliff version="1.2" xmlns="urn:oasis:names:tc:xliff:document:1.2">
+	<file datatype="plaintext" original="EXT:vd_ojvencheres/Resources/Private/Language/Form/locallang_tabs.xlf" source-language="en">
+		<header/>
+		<body>
+			<trans-unit id="items" resname="items">
+				<source>Items</source>
+			</trans-unit>
+			<trans-unit id="publication" resname="publication">
+				<source>Publication</source>
+			</trans-unit>
+		</body>
+	</file>
+</xliff>

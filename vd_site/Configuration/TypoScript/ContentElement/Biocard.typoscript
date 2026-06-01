@@ -1,0 +1,28 @@
+tt_content.biocard =< lib.contentElement
+tt_content.biocard {
+  dataProcessing {
+    10 = TYPO3\CMS\Frontend\DataProcessing\DatabaseQueryProcessor
+    10 {
+      as = links
+      if.isTrue.field = related_links
+      orderBy = sorting
+      pidInList = this
+      table = tx_vdsite_domain_model_link
+      where {
+        data = field:uid
+        intval = 1
+        wrap = tx_vdsite_domain_model_link.parent=|
+      }
+    }
+    20 = TYPO3\CMS\Frontend\DataProcessing\FilesProcessor
+    20 {
+      as = images
+      if.isTrue.field = image
+      references {
+        fieldName = image
+        table = tt_content
+      }
+    }
+  }
+  templateName = Biocard
+}

@@ -1,0 +1,2 @@
+#cat=basic/10;type=string;label=Choisir le path vers le répertoire des data annuelles
+dataPath = fileadmin/user_upload/themes/etat_droit/impots/calculette-web/

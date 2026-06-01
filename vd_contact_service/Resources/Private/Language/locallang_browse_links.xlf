@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xliff version="1.2" xmlns="urn:oasis:names:tc:xliff:document:1.2">
+	<file datatype="plaintext" original="EXT:vd_contact_service/Resources/Private/Language/locallang_browse_links.xlf" source-language="en">
+		<header/>
+		<body>
+			<trans-unit id="service" resname="service">
+				<source>Service</source>
+			</trans-unit>
+		</body>
+	</file>
+</xliff>

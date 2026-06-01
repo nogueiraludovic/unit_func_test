@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xliff version="1.2" xmlns="urn:oasis:names:tc:xliff:document:1.2">
+	<file datatype="plaintext" original="EXT:vd_pressreleases/Resources/Private/Language/locallang.xlf" source-language="en">
+		<header/>
+		<body>
+			<trans-unit id="annexes" resname="annexes">
+				<source>Annexe(s)</source>
+			</trans-unit>
+			<trans-unit id="back" resname="back">
+				<source>Back to press releases</source>
+			</trans-unit>
+			<trans-unit id="download" resname="download">
+				<source>Download(s)</source>
+			</trans-unit>
+			<trans-unit id="files" resname="files">
+				<source>File(s)</source>
+			</trans-unit>
+			<trans-unit id="images" resname="images">
+				<source>Image(s)</source>
+			</trans-unit>
+			<trans-unit id="information" resname="information">
+				<source>Information for press only</source>
+			</trans-unit>
+			<trans-unit id="links" resname="links">
+				<source>Link(s)</source>
+			</trans-unit>
+			<trans-unit id="partners" resname="partners">
+				<source>Partner(s)</source>
+			</trans-unit>
+			<trans-unit id="pdf_press_release" resname="pdf_press_release">
+				<source>Press release (PDF)</source>
+			</trans-unit>
+			<trans-unit id="pdf_version" resname="pdf_version">
+				<source>PDF version of the press release</source>
+			</trans-unit>
+			<trans-unit id="published_on" resname="published_on">
+				<source>Published on</source>
+			</trans-unit>
+			<trans-unit id="videos" resname="videos">
+				<source>Video(s)</source>
+			</trans-unit>
+		</body>
+	</file>
+</xliff>

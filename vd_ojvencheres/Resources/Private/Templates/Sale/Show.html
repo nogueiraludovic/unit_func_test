@@ -1,0 +1,85 @@
+<html data-namespace-typo3-fluid="true" xmlns:f="http://typo3.org/ns/TYPO3/CMS/Fluid/ViewHelpers">
+    <dl class="row">
+        <dt class="col-md-4">Status</dt>
+        <dd class="col-md-8">
+            <f:if condition="{sale.status} == 2 || {sale.status} == 3">
+                <f:then>
+                    <span class="badge badge-pill bg-danger"><f:translate id="canceled"/></span>
+                </f:then>
+                <f:else>
+                    <span class="badge badge-pill bg-secondary"><f:translate id="in_progress"/></span>
+                </f:else>
+            </f:if>
+        </dd>
+    </dl>
+    <f:if condition="{sale.mainOffice}">
+        <f:then>
+            <dl class="row">
+                <dt class="col-md-4"><f:translate id="managed_by"/></dt>
+                <dd class="col-md-8"><f:link.page id="sale-main-office-link" pageUid="{sale.mainOffice.pageId}">{sale.mainOffice.name}</f:link.page></dd>
+            </dl>
+        </f:then>
+        <f:else if="{sale.secondaryOffice}">
+            <dl class="row">
+                <dt class="col-md-4"><f:translate id="secondary_office"/></dt>
+                <dd class="col-md-8"><f:link.page id="sale-secondary-office-link" pageUid="{sale.secondaryOffice.pageId}">{sale.secondaryOffice.name}</f:link.page></dd>
+            </dl>
+        </f:else>
+    </f:if>
+    <f:if condition="{sale.saleDate}">
+        <dl class="row">
+            <dt class="col-md-4"><f:translate id="sale_schedule"/></dt>
+            <dd class="col-md-8">
+                <ul class="list-unstyled mb-0">
+                    <f:for as="saleDate" each="{sale.saleDate}">
+                        <li><f:format.date format="%d %B %Y">{saleDate.saleDate}</f:format.date> - {saleDate.hour}</li>
+                    </f:for>
+                </ul>
+            </dd>
+        </dl>
+    </f:if>
+    <f:if condition="{sale.saleCategories.0.uid} == 2">
+        <f:then>
+            <f:render arguments="{property: sale.discount, label: 'discount'}" partial="Show/Property"/>
+        </f:then>
+        <f:else>
+            <f:render arguments="{property: sale.exposure, label: 'exposure'}" partial="Show/Property"/>
+        </f:else>
+    </f:if>
+    <f:render arguments="{property: sale.address, label: 'address'}" partial="Show/Property"/>
+    <f:render arguments="{property: sale.zipCode, label: 'zip_code'}" partial="Show/Property"/>
+    <f:render arguments="{property: sale.city, label: 'city'}" partial="Show/Property"/>
+    <f:render arguments="{property: sale.room, label: 'room'}" partial="Show/Property"/>
+    <f:if condition="{sale.address} && {sale.city} && {sale.zipCode}">
+        <dl class="row">
+            <dt class="col-md-4"><f:translate id="locate_sale"/></dt>
+            <dd class="col-md-8">
+                <a href="https://www.google.ch/maps/search/{f:format.urlencode(value: '{sale.address}, {sale.zipCode} {sale.city}')}" id="google-maps-link">
+                    <f:translate id="locate_google_maps"/>
+                </a>
+            </dd>
+        </dl>
+    </f:if>
+    <f:render arguments="{property: sale.parkInformation, label: 'park_information'}" partial="Show/Property"/>
+    <f:if condition="{sale.saleConditions}">
+        <dl class="row">
+            <dt class="col-md-4"><f:translate id="sale_conditions"/></dt>
+            <dd class="col-md-8"><f:format.html>{sale.saleConditions.0.description}</f:format.html></dd>
+        </dl>
+    </f:if>
+    <dl class="row">
+        <dt class="col-md-4"><f:translate id="contact"/></dt>
+        <dd class="col-md-8">
+            <div>{sale.contact}</div>
+            <div>{sale.phone}</div>
+            <div><f:link.email email="{sale.email}" id="sale-email-to"/></div>
+        </dd>
+    </dl>
+    <f:if condition="{property}">
+        <dl class="row">
+            <dt class="col-md-4"><f:translate id="observations"/></dt>
+            <dd class="col-md-8"><f:format.html>{sale.observations}</f:format.html></dd>
+        </dl>
+    </f:if>
+    <f:render arguments="{items: sale.saleItems, numberOfRecords: numberOfRecords}" partial="List/Items"/>
+</html>

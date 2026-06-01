@@ -1,0 +1,4 @@
+mod.web_list {
+  deniedNewTables := addToList(sys_template)
+  tableDisplayOrder.tx_plainfaq_domain_model_faq.before = sys_category
+}

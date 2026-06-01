@@ -1,0 +1,10 @@
+<html data-namespace-typo3-fluid="true" xmlns:f="http://typo3.org/ns/TYPO3/CMS/Fluid/ViewHelpers" xmlns:n="http://typo3.org/ns/GeorgRinger/News/ViewHelpers">
+    <f:if condition="{prestation}">
+        <f:if condition="{prestation.description}">
+            <n:metaTag content="{prestation.description -> f:format.stripTags() -> f:format.crop(maxCharacters: 155)}" name="description"/>
+            <n:metaTag content="{prestation.description -> f:format.stripTags() -> f:format.crop(maxCharacters: 155)}" property="og:description"/>
+        </f:if>
+        <n:metaTag content="" property="og:url" useCurrentDomain="1"/>
+        <f:render section="Content"/>
+    </f:if>
+</html>

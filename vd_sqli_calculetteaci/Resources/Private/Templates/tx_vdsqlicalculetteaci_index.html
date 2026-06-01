@@ -1,0 +1,576 @@
+<!--  ###CHAMPS_SAISIE### START -->
+<div class="corps_calculette">
+<h2 id="h2_vd_calculette_saisie">Calculer vos impôts communal, cantonal et fédéral</h2>
+<div>
+<form id="tx_vdsqlicalculetteaci_pi1" action="###FORM_ACTION###" method="post" class="cmxform">
+<fieldset>
+    <legend>Données de base</legend>
+    <div class="input">
+        <ol>
+            <li><div>Cocher ce qui convient</div></li>
+            <li class="type-text formCheckBox">
+                <div>
+                    <input type="checkbox" id="tx_vdsqlicalculetteaci_pi1_calculICC" name="tx_vdsqlicalculetteaci_pi1[calculICC]"
+                           onclick="javascript:vdsqlicalculetteaci_manager.hideAndSetButtons(this);" ###CALCUL_ICC_SELECTED### />
+                    <label class="form-check-label" for="tx_vdsqlicalculetteaci_pi1_calculICC">Je désire effectuer une simulation de l'impôt cantonal, communal sur le revenu et la fortune</label>
+                </div>
+            </li>
+            <li class="type-text formCheckBox">
+                <div>
+                    <input type="checkbox" id="tx_vdsqlicalculetteaci_pi1_calculIFD" name="tx_vdsqlicalculetteaci_pi1[calculIFD]"
+                           onclick="javascript:vdsqlicalculetteaci_manager.hideAndSetButtons(this);" ###CALCUL_IFD_SELECTED### />
+                    <label class="form-check-label" for="tx_vdsqlicalculetteaci_pi1_calculIFD">Je désire effectuer une simulation de l'impôt fédéral direct</label>
+                </div>
+            </li>
+            <li class="type-text formCheckBox repartition_element ###REPARTITION_HIDDEN_CLASS###">
+                <div>
+                    <input class="repartition_element ###REPARTITION_HIDDEN_CLASS###" type="checkbox"
+                           id="tx_vdsqlicalculetteaci_pi1_repartition" name="tx_vdsqlicalculetteaci_pi1[repartition]"
+                           onclick="javascript:vdsqlicalculetteaci_manager.hideAndSetButtons(this);" ###REPARTITION_SELECTED### />
+                    <label class="form-check-label" for="tx_vdsqlicalculetteaci_pi1_repartition" class="repartition_element ###REPARTITION_HIDDEN_CLASS###">Je désire effectuer une simulation de l'impôt comprenant des éléments dans un autre canton/pays (répartition intercantonale/internationale)</label>
+                </div>
+            </li>
+            <li class="type-text formCheckBox">
+                <div>
+                    <input type="checkbox" id="tx_vdsqlicalculetteaci_pi1_impotDistinct"
+                           name="tx_vdsqlicalculetteaci_pi1[impotDistinct]" onclick="javascript:vdsqlicalculetteaci_manager.hideAndSetButtons(this);" ###IMPOT_DISTINCT_SELECTED### />
+                    <label class="form-check-label" for="tx_vdsqlicalculetteaci_pi1_impotDistinct">Je désire effectuer une simulation de l'impôt distinct sur les prestations en capital provenant de la prévoyance</label>
+                </div>
+            </li>
+        </ol>
+        <ol>
+            <li class="type-text ">
+                <div>
+                    <label class="form-label" for="tx_vdsqlicalculetteaci_pi1_periode" >Année fiscale</label>
+                    <select id="tx_vdsqlicalculetteaci_pi1_periode" name="tx_vdsqlicalculetteaci_pi1[periode]" onChange="vdsqlicalculetteaci_manager.onPeriodeChange();">
+                        <option></option>
+                        ###OPTIONS_PERIODE###
+                    </select>
+                </div>
+            </li>
+            <li id="commune-container" style="display: none;" class="type-text ">
+                <div>
+                    <label class="form-label" for="tx_vdsqlicalculetteaci_pi1_commune">Commune</label>
+                    <select id="tx_vdsqlicalculetteaci_pi1_commune" name="tx_vdsqlicalculetteaci_pi1[commune]">
+                    </select>
+                    <select style="display: none;" id="tx_vdsqlicalculetteaci_pi1_commune_reference" name="tx_vdsqlicalculetteaci_pi1[commune_reference]">
+                        <option></option>
+                        ###OPTIONS_COMMUNE###
+                    </select>
+                </div>
+            </li>
+            <li class="type-text ">
+                <div>
+                    <label class="form-label" for="tx_vdsqlicalculetteaci_pi1_etatCivil">État civil</label>
+                    <select onchange="javascript:vdsqlicalculetteaci_manager.coherenceSelectionFamille(this);" id="tx_vdsqlicalculetteaci_pi1_etatCivil" name="tx_vdsqlicalculetteaci_pi1[etatCivil]">
+                        ###OPTIONS_ETAT_CIVIL###
+                    </select>
+                </div>
+            </li>
+            <li class="type-text not_distinct ###NOT_DISTINCT### ">
+                <table>
+                    <!-- Gestion du quotien par enfant -->
+                    <tr>
+                        <td><label for="tx_vdsqlicalculetteaci_pi1_noEnfants" class="form-label not_distinct ###NOT_DISTINCT### ">Nombre d'enfants, quotient complet</label></td>
+                        <td>
+                            <select class="not_distinct ###NOT_DISTINCT### " onchange="javascript:vdsqlicalculetteaci_manager.coherenceSelectionFamille(this);"
+                                    id="tx_vdsqlicalculetteaci_pi1_noEnfants" name="tx_vdsqlicalculetteaci_pi1[noEnfants]">
+                                ###OPTIONS_NO_ENFANTS###
+                            </select>
+                        </td>
+                    </tr>
+                    <!-- Gestion du demi quotien par enfant -->
+                    <tr>
+                        <td><label for="tx_vdsqlicalculetteaci_pi1_noEnfantsDemiQuotient" class="form-label not_distinct ###NOT_DISTINCT### ">Nombre d'enfants avec 1/2 quotient </label></td>
+                        <td>
+                            <select class="not_distinct ###NOT_DISTINCT### " onchange="javascript:vdsqlicalculetteaci_manager.coherenceSelectionFamille(this);"
+                                    id="tx_vdsqlicalculetteaci_pi1_noEnfantsDemiQuotient" name="tx_vdsqlicalculetteaci_pi1[noEnfantsDemiQuotient]">
+                                ###OPTIONS_NO_ENFANTS_DEMI_QUOTIENT###
+                            </select>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td><label for="tx_vdsqlicalculetteaci_pi1_noEnfantsMenage" class="form-label not_distinct ###NOT_DISTINCT### ">dont enfant(s) faisant ménage commun</label></td>
+                        <td>
+                            <select class="not_distinct ###NOT_DISTINCT### " onchange="javascript:vdsqlicalculetteaci_manager.coherenceSelectionFamille(this);"
+                                    id="tx_vdsqlicalculetteaci_pi1_noEnfantsMenage" name="tx_vdsqlicalculetteaci_pi1[noEnfantsMenage]">
+                                ###OPTIONS_NO_ENFANTS_MENAGE###
+                            </select>
+                        </td>
+                    </tr>
+
+                </table>
+                <div class="err_mono error ###ERR_MONO###">Une famille monoparentale comprend au moins un enfant dans le ménage. Veuillez vérifier et corriger la saisie s.v.p.</div>
+                <div class="err_enfants error ###ERR_ENFANTS###">Le nombre d'enfant en ménage commun est supérieur au nombre d'enfant total. Veuillez vérifier et corriger la saisie s.v.p.</div>
+            </li>
+        </ol>
+    </div>
+</fieldset>
+<fieldset>
+    <legend>Données financières</legend>
+    <div class="input">
+        <table>
+            <tbody>
+            <tr>
+            <td><label class="form-label" for="tx_vdsqlicalculetteaci_pi1_revenuImposableICC">Revenu imposable ICC</label></td>
+            <td>
+                <!--[if IE 8]>
+                   <input
+                   ondblclick="javascript:vdsqlicalculetteaci_manager.clearId('tx_vdsqlicalculetteaci_pi1_revenuImposableICC');"
+                   onkeyup="javascript:vdsqlicalculetteaci_manager.checkNumeric(this,'revenuImposableICC_err');"
+                   maxlength="11"
+                   autocomplete="off"
+                   type="number" id="tx_vdsqlicalculetteaci_pi1_revenuImposableICC"
+                   name="tx_vdsqlicalculetteaci_pi1[revenuImposableICC]" value="###REVENU_IMPOSABLE_ICC###" />
+                <![endif]-->
+                <!--[if !IE 8]><!-->
+                    <input
+                    ondblclick="javascript:vdsqlicalculetteaci_manager.clearId('tx_vdsqlicalculetteaci_pi1_revenuImposableICC');"
+                    autocomplete="off"
+                    onkeyup="javascript:vdsqlicalculetteaci_manager.checkNumeric(this,'revenuImposableICC_err','tx_vdsqlicalculetteaci_pi1_revenuImposableICC');"
+                    maxlength="11"
+                    type="text" id="tx_vdsqlicalculetteaci_pi1_revenuImposableICC"
+                    name="tx_vdsqlicalculetteaci_pi1[revenuImposableICC]" value="###REVENU_IMPOSABLE_ICC###" />
+                <!--<![endif]-->
+   <div class="hidden error revenuImposableICC_err">Veuillez saisir une valeur numérique s.v.p</div>
+   </td>
+   <td>
+       <label class="auxiliaire form-label repartition_dependent ###REPARTITION_DESELECTED###" for="tx_vdsqlicalculetteaci_pi1_tauxRevenuImposableICC">Revenu global ICC</label>
+       <span class="distinct_dependent comment ###DISTINCT_DESELECTED###">Le revenu imposable est égal au total de la somme que vous avez touchée au titre de prestation en capital LPP</span>
+   </td>
+   <td>
+       <!--[if IE 8]>
+       <input class="repartition_dependent ###REPARTITION_DESELECTED###"
+              maxlength="11"
+              autocomplete="off"
+              ondblclick="javascript:vdsqlicalculetteaci_manager.clearId('tx_vdsqlicalculetteaci_pi1_tauxRevenuImposableICC');"
+              onkeyup="javascript:vdsqlicalculetteaci_manager.checkNumeric(this,'tauxrevenuImposableICC_err','tx_vdsqlicalculetteaci_pi1_tauxRevenuImposableICC');"
+              type="text" id="tx_vdsqlicalculetteaci_pi1_tauxRevenuImposableICC" name="tx_vdsqlicalculetteaci_pi1[tauxRevenuImposableICC]"
+              value="###TAUX_REVENU_IMPOSABLE_ICC###" />
+       <![endif]-->
+       <!--[if !IE 8]><!-->
+       <input class="repartition_dependent ###REPARTITION_DESELECTED###"
+              autocomplete="off"
+              maxlength="11"
+              ondblclick="javascript:vdsqlicalculetteaci_manager.clearId('tx_vdsqlicalculetteaci_pi1_tauxRevenuImposableICC');"
+              onkeyup="javascript:vdsqlicalculetteaci_manager.checkNumeric(this,'tauxrevenuImposableICC_err','tx_vdsqlicalculetteaci_pi1_tauxRevenuImposableICC');"
+              type="text" id="tx_vdsqlicalculetteaci_pi1_tauxRevenuImposableICC" name="tx_vdsqlicalculetteaci_pi1[tauxRevenuImposableICC]"
+              value="###TAUX_REVENU_IMPOSABLE_ICC###" />
+       <!--<![endif]-->
+
+    <div class="hidden error tauxrevenuImposableICC_err">Veuillez saisir une valeur numérique s.v.p</div>
+ </td>
+ </tr>
+ <tr>
+ <td><label class="form-label" for="tx_vdsqlicalculetteaci_pi1_fortuneImposableICC">Fortune imposable ICC</label></td>
+ <td>
+     <!--[if IE 8]>
+     <input
+            maxlength="11"
+            autocomplete="off"
+            ondblclick="javascript:vdsqlicalculetteaci_manager.clearId('tx_vdsqlicalculetteaci_pi1_fortuneImposableICC');"
+            onkeyup="javascript:vdsqlicalculetteaci_manager.checkNumeric(this,'fortuneImposableICC_err', 'tx_vdsqlicalculetteaci_pi1_fortuneImposableICC');"
+            type="text" id="tx_vdsqlicalculetteaci_pi1_fortuneImposableICC"
+            name="tx_vdsqlicalculetteaci_pi1[fortuneImposableICC]" value="###FORTUNE_IMPOSABLE_ICC###" />
+     <![endif]-->
+     <!--[if !IE 8]><!-->
+     <input
+            autocomplete="off"
+            maxlength="11"
+            ondblclick="javascript:vdsqlicalculetteaci_manager.clearId('tx_vdsqlicalculetteaci_pi1_fortuneImposableICC');"
+            onkeyup="javascript:vdsqlicalculetteaci_manager.checkNumeric(this,'fortuneImposableICC_err', 'tx_vdsqlicalculetteaci_pi1_fortuneImposableICC');"
+            type="text" id="tx_vdsqlicalculetteaci_pi1_fortuneImposableICC"
+            name="tx_vdsqlicalculetteaci_pi1[fortuneImposableICC]" value="###FORTUNE_IMPOSABLE_ICC###" />
+     <!--<![endif]-->
+
+    <div class="hidden error fortuneImposableICC_err">Veuillez saisir une valeur numérique s.v.p</div>
+ </td>
+ <td><label class="auxiliaire repartition_dependent ###REPARTITION_DESELECTED###" for="tx_vdsqlicalculetteaci_pi1_tauxFortuneImposableICC">Fortune globale ICC</label></td>
+ <td>
+ <!--[if IE 8]>
+     <input class="repartition_dependent ###REPARTITION_DESELECTED###"
+            ondblclick="javascript:vdsqlicalculetteaci_manager.clearId('tx_vdsqlicalculetteaci_pi1_tauxFortuneImposableICC');"
+            onkeyup="javascript:vdsqlicalculetteaci_manager.checkNumeric(this,'tauxfortuneImposableICC_err', 'tx_vdsqlicalculetteaci_pi1_tauxFortuneImposableICC');"
+            maxlength="11"
+            autocomplete="off"
+            type="text" id="tx_vdsqlicalculetteaci_pi1_tauxFortuneImposableICC"
+            name="tx_vdsqlicalculetteaci_pi1[tauxFortuneImposableICC]" value="###TAUX_FORTUNE_IMPOSABLE_ICC###" />
+     <![endif]-->
+     <!--[if !IE 8]><!-->
+     <input class="repartition_dependent ###REPARTITION_DESELECTED###"
+            autocomplete="off"
+            ondblclick="javascript:vdsqlicalculetteaci_manager.clearId('tx_vdsqlicalculetteaci_pi1_tauxFortuneImposableICC');"
+            onkeyup="javascript:vdsqlicalculetteaci_manager.checkNumeric(this,'tauxfortuneImposableICC_err', 'tx_vdsqlicalculetteaci_pi1_tauxFortuneImposableICC');"
+            maxlength="11"
+            type="text" id="tx_vdsqlicalculetteaci_pi1_tauxFortuneImposableICC"
+            name="tx_vdsqlicalculetteaci_pi1[tauxFortuneImposableICC]" value="###TAUX_FORTUNE_IMPOSABLE_ICC###" />
+     <!--<![endif]-->
+ <div class="hidden error tauxfortuneImposableICC_err">Veuillez saisir une valeur numérique s.v.p</div>
+</td>
+</tr>
+<tr>
+<td><label class="form-label" for="tx_vdsqlicalculetteaci_pi1_revenuImposableIFD">Revenu imposable IFD</label></td>
+<td>
+    <!--[if IE 8]>
+    <input
+           ondblclick="javascript:vdsqlicalculetteaci_manager.clearId('tx_vdsqlicalculetteaci_pi1_revenuImposableIFD');"
+           onkeyup="javascript:vdsqlicalculetteaci_manager.checkNumeric(this,'tauxfortuneImposableICC_err', 'tx_vdsqlicalculetteaci_pi1_revenuImposableIFD');"
+           maxlength="11"
+           autocomplete="off"
+           type="text" id="tx_vdsqlicalculetteaci_pi1_revenuImposableIFD"
+           name="tx_vdsqlicalculetteaci_pi1[revenuImposableIFD]" value="###REVENU_IMPOSABLE_IFD###" />
+    <![endif]-->
+    <!--[if !IE 8]><!-->
+    <input
+           autocomplete="off"
+           ondblclick="javascript:vdsqlicalculetteaci_manager.clearId('tx_vdsqlicalculetteaci_pi1_revenuImposableIFD');"
+           onkeyup="javascript:vdsqlicalculetteaci_manager.checkNumeric(this,'revenuImposableIFD_err', 'tx_vdsqlicalculetteaci_pi1_revenuImposableIFD');"
+           maxlength="11"
+           type="text" id="tx_vdsqlicalculetteaci_pi1_revenuImposableIFD"
+           name="tx_vdsqlicalculetteaci_pi1[revenuImposableIFD]" value="###REVENU_IMPOSABLE_IFD###" />
+    <!--<![endif]-->
+
+<div class="hidden error revenuImposableIFD_err">Veuillez saisir une valeur numérique s.v.p</div>
+</td>
+<td>
+<label class="form-label" for="tx_vdsqlicalculetteaci_pi1_tauxRevenuImposableIFD" class="auxiliaire repartition_dependent ###REPARTITION_DESELECTED###">Revenu global IFD</label>
+<span class="distinct_dependent comment ###DISTINCT_DESELECTED###">Le revenu imposable est égal au total de la somme que vous avez touchée au titre de prestation en capital LPP</span>
+</td>
+<td>
+    <!--[if IE 8]>
+    <input class="repartition_dependent ###REPARTITION_DESELECTED###"
+           maxlength="11"
+           autocomplete="off"
+           ondblclick="javascript:vdsqlicalculetteaci_manager.clearId('tx_vdsqlicalculetteaci_pi1_tauxRevenuImposableIFD');"
+           onkeyup="javascript:vdsqlicalculetteaci_manager.checkNumeric(this,'tauxrevenuImposableIFD_err', 'tx_vdsqlicalculetteaci_pi1_tauxRevenuImposableIFD');"
+           type="text" id="tx_vdsqlicalculetteaci_pi1_tauxRevenuImposableIFD"
+           name="tx_vdsqlicalculetteaci_pi1[tauxRevenuImposableIFD]" value="###TAUX_REVENU_IMPOSABLE_IFD###" />
+    <![endif]-->
+    <!--[if !IE 8]><!-->
+    <input class="repartition_dependent ###REPARTITION_DESELECTED###"
+           autocomplete="off"
+           maxlength="11"
+           ondblclick="javascript:vdsqlicalculetteaci_manager.clearId('tx_vdsqlicalculetteaci_pi1_tauxRevenuImposableIFD');"
+           onkeyup="javascript:vdsqlicalculetteaci_manager.checkNumeric(this,'tauxrevenuImposableIFD_err', 'tx_vdsqlicalculetteaci_pi1_tauxRevenuImposableIFD');"
+           type="text" id="tx_vdsqlicalculetteaci_pi1_tauxRevenuImposableIFD"
+           name="tx_vdsqlicalculetteaci_pi1[tauxRevenuImposableIFD]" value="###TAUX_REVENU_IMPOSABLE_IFD###" />
+    <!--<![endif]-->
+
+<div class="hidden error tauxrevenuImposableIFD_err">Veuillez saisir une valeur numérique s.v.p</div>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+</fieldset>
+<fieldset>
+<legend>Calculer</legend>
+<div class="input">
+<div class="csc-header csc-header-n1"><h2 class="csc-firstHeader">Avis important</h2></div>
+<p>Le calcul de l'impôt ne tient pas compte du résultat de la
+votation de février 2009, relatif au bouclier fiscal (art. 8, al.3, de
+la loi du 5 décembre 1956 sur les impôts communaux (LICom))</p>
+<p>Le calcul de l'impôt à l'aide de cette calculette n'a qu'une
+valeur indicative (écarts d'arrondis, etc.). Le montant d'impôt
+définitivement dû est fixé par l'administration cantonale des impôts
+sur la base de l'ensemble du revenu et de la fortune du contribuable.
+L'autorité de taxation fixe, dans la décision de taxation, les
+éléments imposables, le taux et le montant de l'impôt.</p>
+<table class="calcContainer">
+<tbody>
+<tr>
+<td>
+<input type="submit" class="button" id="tx_vdsqlicalculetteaci_pi1_afficher"
+   name="tx_vdsqlicalculetteaci_pi1[afficher]" value="Afficher le résultat"  onclick="javascript:vdsqlicalculetteaci_manager.test_isrepartition();" />
+</td>
+<td>
+<input class="button " type="button" id="tx_vdsqlicalculetteaci_pi1_reset" onclick="javascript:vdsqlicalculetteaci_manager.clear();"
+   name="tx_vdsqlicalculetteaci_pi1[reset]" value="Effacer les données" />
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+</fieldset>
+<!--  ###CHAMPS_SAISIE### END -->
+
+<!--  ###RESULTAT### BEGIN -->
+<div class="csc-header csc-header-n3">
+    <h2 id="h2_vd_calculette_resultats">Calcul des impôts cantonaux, communaux et de l'impôt fédéral direct (Estimation)</h2>
+</div>
+<fieldset>
+    <legend>Calcul des impôts cantonaux et communaux (ICC)</legend>
+    <div class="input">
+        <table id="resCalc" class="resCalc">
+            <tbody>
+            <tr>
+                <td colspan="4"><label class="form-label" for="tx_vdsqlicalculetteaci_pi1_res_part_familiale">Part résultant de la situation de famille</label></td>
+                <td class="coeff">
+                    <input type="text" readonly="readonly" id="tx_vdsqlicalculetteaci_pi1_res_part_familiale"
+                           name="tx_vdsqlicalculetteaci_pi1[res_part_familiale]" value="###PART_FAMILLE###" />
+                </td>
+            </tr>
+            <tr>
+                <td colspan="4"><label class="form-label" for="tx_vdsqlicalculetteaci_pi1_res_revenu_taux">Revenu déterminant pour le taux</label></td>
+                <td>
+                    <input type="text" readonly="readonly" id="tx_vdsqlicalculetteaci_pi1_res_revenu_taux"
+                           name="tx_vdsqlicalculetteaci_pi1[res_revenu_taux]" value="###REVENU_TAUX###" />
+                </td>
+            </tr>
+            <tr><th colspan="5"/></tr>
+
+
+            <!--
+            <tr>
+                <td colspan="2" />
+                <th>Montant imposables</th>
+                <th>
+                    <label for="tx_vdsqlicalculetteaci_pi1_res_revenu_impot_base">Impôt de base</label>
+                    <label class="hidden" for="tx_vdsqlicalculetteaci_pi1_res_fortune_impot_base">Impôt de base</label>
+                </th>
+                <td />
+            </tr>
+            <tr>
+                <td colspan="2"><label for="tx_vdsqlicalculetteaci_pi1_res_revenu_montant_imp">Revenu</label></td>
+                <td>
+                    <input type="text" readonly="readonly" id="tx_vdsqlicalculetteaci_pi1_res_revenu_montant_imp"
+                        name="tx_vdsqlicalculetteaci_pi1[res_revenu_montant_imp]" value="###REVENU_MONTANT_IMPOSABLE###" />
+                </td>
+                <td>
+                    <input type="text" readonly="readonly"
+                        id="tx_vdsqlicalculetteaci_pi1_res_revenu_impot_base"
+                        name="tx_vdsqlicalculetteaci_pi1[res_revenu_impot_base]"
+                        value="###REVENU_IMPOT_BASE###" />
+                </td>
+                <td />
+            </tr>
+            <tr>
+                <td colspan="2"><label for="tx_vdsqlicalculetteaci_pi1_res_fortune_montant_imp">Fortune</label></td>
+                <td>
+                    <input type="text" readonly="readonly"
+                        id="tx_vdsqlicalculetteaci_pi1_res_fortune_montant_imp"
+                        name="tx_vdsqlicalculetteaci_pi1[res_fortune_montant_imp]"
+                        value="###FORTUNE_MONTANT_IMPOSABLE###" />
+                </td>
+                <td>
+                    <input type="text" readonly="readonly"
+                        id="tx_vdsqlicalculetteaci_pi1_res_fortune_impot_base"
+                        name="tx_vdsqlicalculetteaci_pi1[res_fortune_impot_base]"
+                        value="###FORTUNE_IMPOT_BASE###" />
+                </td>
+                <td />
+            </tr>
+            -->
+
+            <tr>
+                <td colspan="4">
+                    <table>
+                        <tr>
+                            <td/>
+                            <th>Montants imposables</th>
+                            <th>Impôt de base
+                                <label class="form-label hidden" for="tx_vdsqlicalculetteaci_pi1_res_revenu_impot_base">Impôt de base</label>
+                                <label class="form-label hidden" for="tx_vdsqlicalculetteaci_pi1_res_fortune_impot_base">Impôt de base</label>
+                            </th>
+                            <td/>
+                        </tr>
+                        <tr>
+                            <td><label class="form-label" for="tx_vdsqlicalculetteaci_pi1_res_revenu_montant_imp">Revenu</label></td>
+                            <td>
+                                <input type="text" readonly="readonly" id="tx_vdsqlicalculetteaci_pi1_res_revenu_montant_imp"
+                                       name="tx_vdsqlicalculetteaci_pi1[res_revenu_montant_imp]" value="###REVENU_MONTANT_IMPOSABLE###" />
+                            </td>
+                            <td>
+                                <input type="text" readonly="readonly"
+                                       id="tx_vdsqlicalculetteaci_pi1_res_revenu_impot_base"
+                                       name="tx_vdsqlicalculetteaci_pi1[res_revenu_impot_base]"
+                                       value="###REVENU_IMPOT_BASE###" />
+                            </td>
+                            <td />
+                        </tr>
+                        <tr>
+                            <td><label class="form-label" for="tx_vdsqlicalculetteaci_pi1_res_fortune_montant_imp">Fortune</label></td>
+                            <td>
+                                <input type="text" readonly="readonly"
+                                       id="tx_vdsqlicalculetteaci_pi1_res_fortune_montant_imp"
+                                       name="tx_vdsqlicalculetteaci_pi1[res_fortune_montant_imp]"
+                                       value="###FORTUNE_MONTANT_IMPOSABLE###" />
+                            </td>
+                            <td>
+                                <input type="text" readonly="readonly"
+                                       id="tx_vdsqlicalculetteaci_pi1_res_fortune_impot_base"
+                                       name="tx_vdsqlicalculetteaci_pi1[res_fortune_impot_base]"
+                                       value="###FORTUNE_IMPOT_BASE###" />
+                            </td>
+                            <td />
+                        </tr>
+                    </table>
+                </td>
+            </tr>
+
+            <!-- -->
+            <tr><th colspan="5"/></tr>
+            <tr>
+                <td colspan="3" />
+                <th class="coeff">
+                    <label class="form-label" for="tx_vdsqlicalculetteaci_pi1_res_revenu_coef_cant">Coefficient</label>
+                    <label class="form-label hidden" for="tx_vdsqlicalculetteaci_pi1_res_revenu_coef_comm">Coefficient</label>
+                </th>
+                <th>Charge fiscale</th>
+            </tr>
+            <tr>
+                <td colspan="3"><label class="form-label" for="tx_vdsqlicalculetteaci_pi1_res_revenu_cf_cant">Impôt cantonal sur le revenu</label></td>
+                <td class="coeff">
+                    <input type="text" readonly="readonly"
+                           id="tx_vdsqlicalculetteaci_pi1_res_revenu_coef_cant"
+                           name="tx_vdsqlicalculetteaci_pi1[res_revenu_coef_cant]"
+                           value="###REVENU_COEFICIENT_CANTONAL###" />
+                </td>
+                <td>
+                    <input type="text" readonly="readonly"
+                           id="tx_vdsqlicalculetteaci_pi1_res_revenu_cf_cant"
+                           name="tx_vdsqlicalculetteaci_pi1[res_revenu_cf_cant]"
+                           value="###REVENU_CHARGE_FISCALE_CANTONAL###" />
+                </td>
+            </tr>
+            <tr>
+                <td colspan="2"><label class="form-label" for="tx_vdsqlicalculetteaci_pi1_res_revenu_cf_comm">Impôt communal sur le revenu</label></td>
+                <td class="comment">###COMMUNE_REVENU###</td>
+                <td class="coeff"><input type="text" readonly="readonly"
+                                         id="tx_vdsqlicalculetteaci_pi1_res_revenu_coef_comm"
+                                         name="tx_vdsqlicalculetteaci_pi1[res_revenu_coeff_comm]"
+                                         value="###REVENU_COEFICIENT_COMMUNAL###" />
+                </td>
+                <td>
+                    <input type="text" readonly="readonly"
+                           id="tx_vdsqlicalculetteaci_pi1_res_revenu_cf_comm"
+                           name="tx_vdsqlicalculetteaci_pi1[res_revenu_cf_comm]"
+                           value="###REVENU_CHARGE_FISCALE_COMMUNAL###" />
+                </td>
+            </tr>
+            <tr><th colspan="5"/></tr>
+            <tr>
+                <td colspan="4"><label class="form-label" for="tx_vdsqlicalculetteaci_pi1_res_fortune_cf_cant">Impôt cantonal sur la fortune</label></td>
+                <td>
+                    <input type="text" readonly="readonly"
+                           id="tx_vdsqlicalculetteaci_pi1_res_fortune_cf_cant"
+                           name="tx_vdsqlicalculetteaci_pi1[res_fortune_cf_cant]"
+                           value="###FORTUNE_CHARGE_FISCALE_CANTONAL###" />
+                </td>
+            </tr>
+            <tr>
+                <td colspan="2"><label class="form-label" for="tx_vdsqlicalculetteaci_pi1_res_fortune_cf_comm">Impôt communal sur la fortune</label></td>
+                <td class="comment">###COMMUNE_FORTUNE###</td>
+                <td />
+                <td>
+                    <input type="text" readonly="readonly"
+                           id="tx_vdsqlicalculetteaci_pi1_res_fortune_cf_comm"
+                           name="tx_vdsqlicalculetteaci_pi1[res_fortune_cf_comm]"
+                           value="###FORTUNE_CHARGE_FISCALE_COMMUNAL###" />
+                </td>
+            </tr>
+            <tr><th colspan="5"/></tr>
+            <tr>
+                <td colspan="4"><label class="form-label" for="tx_vdsqlicalculetteaci_pi1_res_total_icc">Total des impôts cantonaux et communaux (ICC)</label></td>
+                <td>
+                    <input type="text" readonly="readonly"
+                           id="tx_vdsqlicalculetteaci_pi1_res_total_icc"
+                           name="tx_vdsqlicalculetteaci_pi1[res_total_icc]"
+                           value="###TOTAL_ICC###" />
+                </td>
+            </tr>
+            <tr><th colspan="5"/></tr>
+            </tbody>
+        </table>
+    </div>
+</fieldset>
+<fieldset>
+    <legend>Calcul de l'impôt fédéral direct (IFD)</legend>
+    <div class="input">
+        <table class="resCalc">
+            <tbody>
+            <tr>
+                <td colspan="3"><label class="form-label" for="tx_vdsqlicalculetteaci_pi1_res_revenu_ifd">Revenu</label></td>
+                <td>
+                    <input type="text" readonly="readonly"
+                           id="tx_vdsqlicalculetteaci_pi1_res_revenu_ifd"
+                           name="tx_vdsqlicalculetteaci_pi1[res_revenu_ifd]"
+                           value="###REVENU_IFD###" />
+                </td>
+                <td ><label class="form-label" for="tx_vdsqlicalculetteaci_pi1_res_revenu_base_ifd">Impôt de base</label></td>
+                <td>
+                    <input id="tx_vdsqlicalculetteaci_pi1_res_revenu_base_ifd"
+                           name="tx_vdsqlicalculetteaci_pi1[res_revenu_base_ifd]"
+                           type="text" readonly="readonly"
+                           value="###IMPOT_BASE_IFD###" />
+                </td>
+            </tr>
+            <tr>
+                <td colspan="4" />
+                <td ><label class="form-label" for="tx_vdsqlicalculetteaci_pi1_res_rabais_ifd">Rabais d'impôt</label></td>
+                <td>
+                    <input type="text" readonly="readonly"
+                           id="tx_vdsqlicalculetteaci_pi1_res_rabais_ifd"
+                           name="tx_vdsqlicalculetteaci_pi1[res_rabais_ifd]"
+                           value="###RABAIS_IFD###" />
+                </td>
+            </tr>
+            <tr>
+                <td colspan="3"><label class="form-label" for="tx_vdsqlicalculetteaci_pi1_res_total_ifd">Impôt fédéral direct (IFD)</label></td>
+                <td colspan="3">
+                    <input type="text" readonly="readonly"
+                           id="tx_vdsqlicalculetteaci_pi1_res_total_ifd"
+                           name="tx_vdsqlicalculetteaci_pi1[res_total_ifd]"
+                           value="###TOTAL_IFD###" />
+                </td>
+            </tr>
+            <tr><th colspan="6"/></tr>
+            </tbody>
+        </table>
+    </div>
+</fieldset>
+<fieldset>
+    <legend>Total dû (ICC/IFD)</legend>
+    <div class="input">
+        <table class="resCalc">
+            <tbody>
+            <tr><th colspan="2"/></tr>
+            <tr>
+                <td><label class="form-label" for="tx_vdsqlicalculetteaci_pi1_res_total_icc_ifd">Total dû (ICC/IFD)(sous toutes réserves d'une modification effectuée par l'autorité fiscale)</label></td>
+                <td>
+                    <input type="text" readonly="readonly"
+                           id="tx_vdsqlicalculetteaci_pi1_res_total_icc_ifd"
+                           name="tx_vdsqlicalculetteaci_pi1[res_total_icc_ifd]"
+                           value="###TOTAL_ICC_IFD###" />
+                </td>
+            </tr>
+            </tbody>
+        </table>
+    </div>
+</fieldset>
+</form>
+</div>
+</div>
+<!--  ###RESULTAT### END -->
+
+<!-- ###END_EMPTY_FORM### BEGIN -->
+</form>
+</div>
+</div>
+<!-- ###END_EMPTY_FORM### END -->
+
+<!--  ###DETAIL_CALCUL### BEGIN -->
+<div class="detail_calcul_class">
+    <h2>Détail des calculs</h2>
+    ###DETAIL_DONNEES_BASE###
+    ###DETAIL_IMPOT_REVENU_ICC###
+    ###DETAIL_IMPOT_FORTUNE_ICC###
+    ###DETAIL_IMPOT_REVENU_IFD###
+    ###DETAIL_CAPITAL_DISTINCT###
+    ###DETAIL_IMPRESSION###
+</div>
+<!--  ###DETAIL_CALCUL### END -->
+
+<!--  ###VERSION### BEGIN -->
+<div id="tx_vdsqlicalculetteaci_pi1_version">###DETAIL_VERSION###</div>
+<!--  ###VERSION### END -->

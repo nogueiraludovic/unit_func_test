@@ -1,0 +1,36 @@
+<html data-namespace-typo3-fluid="true" xmlns:f="http://typo3.org/ns/TYPO3/CMS/Fluid/ViewHelpers" xmlns:vdc="http://typo3.org/ns/Vd/VdCore/ViewHelpers">
+    <f:layout/>
+    <f:section name="main">
+        <f:render arguments="{_all}" partial="Header"/>
+        <f:if condition="{newsData}">
+            <f:then>
+                <div class="container pt-3">
+                     <f:render arguments="{breadcrumbExtendedValue: breadcrumbExtendedValue, breadcrumbItems: breadcrumbItems}" partial="Breadcrumb"/>
+                </div>
+                <main class="container container-small vd-content" id="main">
+                    <!--TYPO3SEARCH_begin-->
+                    <f:format.raw>{mainContent}</f:format.raw>
+                    <!--TYPO3SEARCH_end-->
+                </main>
+            </f:then>
+            <f:else>
+                <div class="vd-bg-pattern-gray">
+                    <div class="container">
+                        <f:render arguments="{breadcrumbExtendedValue: breadcrumbExtendedValue, breadcrumbItems: breadcrumbItems}" partial="Breadcrumb"/>
+                    </div>
+                </div>
+                <main id="main">
+                    <div class="vd-bg-pattern-gray">
+                        <f:render arguments="{pageTitle: pageTitle}" partial="Page/Seo/PageTitle"/>
+                    </div>
+                    <div class="container mt-5 vd-content">
+                        <!--TYPO3SEARCH_begin-->
+                        <f:format.raw>{mainContent}</f:format.raw>
+                        <!--TYPO3SEARCH_end-->
+                    </div>
+                </main>
+            </f:else>
+        </f:if>
+        <f:render arguments="{_all}" partial="Footer"/>
+    </f:section>
+</html>

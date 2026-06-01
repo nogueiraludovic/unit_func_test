@@ -1,0 +1,50 @@
+<html data-namespace-typo3-fluid="true" xmlns:f="http://typo3.org/ns/fluid/ViewHelpers">
+    <f:section name="Link">
+        <f:switch expression="{carouselItem.data.type}">
+            <f:case value="1">
+                <f:link.typolink additionalAttributes="{id: 'carousel-item-link-{carouselItem.data.uid}'}" class="text-decoration-none text-inherit vd-card-link" parameter="{carouselItem.data.internalurl}">
+                    {carouselItem.data.title}
+                </f:link.typolink>
+            </f:case>
+            <f:case value="2">
+                <f:link.typolink additionalAttributes="{id: 'carousel-item-link-{carouselItem.data.uid}', rel: 'noreferrer'}" class="text-decoration-none text-inherit vd-card-link" parameter="{carouselItem.data.externalurl}">
+                    {carouselItem.data.title}
+                </f:link.typolink>
+            </f:case>
+            <f:defaultCase>
+                <f:link.action action="detail" arguments="{news: carouselItem.data.uid}" class="text-decoration-none text-inherit vd-card-link" controller="News" extensionName="VdNews" id="carousel-item-link-{carouselItem.data.uid}" pageUid="{settings.news.detailPid}" pluginName="Pi1">
+                    {carouselItem.data.title}
+                </f:link.action>
+            </f:defaultCase>
+        </f:switch>
+    </f:section>
+    <li aria-label="{carouselItem.data.title}" class="card w-80">
+        <article class="d-contents">
+            <f:if condition="{carouselItem.images.0}">
+                <f:image alt="{carouselItem.images.0.alternative}" class="img-fluid" height="300c" image="{carouselItem.images.0}" loading="lazy" title="{carouselItem.images.0.title}" width="400c"/>
+            </f:if>
+            <div class="card-body pt-1">
+                <f:if condition="{sectionHeader}">
+                    <f:then>
+                        <h3 class="card-title h4">
+                            <f:render section="Link" arguments="{carouselItem: carouselItem}"/>
+                        </h3>
+                    </f:then>
+                    <f:else>
+                        <h2 class="card-title h4">
+                            <f:render section="Link" arguments="{carouselItem: carouselItem}"/>
+                        </h2>
+                    </f:else>
+                </f:if>
+                <f:if condition="{carouselItem.data.teaser}">
+                    <f:then>
+                        <p class="card-text">{carouselItem.data.teaser -> f:format.stripTags() -> f:format.crop(maxCharacters: 150)}</p>
+                    </f:then>
+                    <f:else if="{carouselItem.data.bodytext}">
+                        <p class="card-text">{carouselItem.data.bodytext -> f:format.stripTags() -> f:format.crop(maxCharacters: 150)}</p>
+                    </f:else>
+                </f:if>
+            </div>
+        </article>
+    </li>
+</html>

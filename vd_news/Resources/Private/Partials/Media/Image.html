@@ -1,0 +1,33 @@
+<html data-namespace-typo3-fluid="true" xmlns:f="http://typo3.org/ns/TYPO3/CMS/Fluid/ViewHelpers">
+    <f:if condition="{linkImage}">
+        <f:then>
+            <f:variable name="content">
+                <f:render arguments="{height: height, media: media, width: width}" section="Image"/>
+            </f:variable>
+            <f:render arguments="{content: content, newsItem: newsItem}" partial="List/Link"/>
+        </f:then>
+        <f:else>
+            <f:render arguments="{height: height, media: media, width: width}" section="Image"/>
+        </f:else>
+    </f:if>
+    <f:if condition="{media.description} || {media.owner}">
+        <figcaption class="figure-caption">
+            <f:if condition="{media.description}">
+                {media.description}
+            </f:if>
+            <f:if condition="{media.owner}">
+                <span class="vd-figure-credits">{media.owner}</span>
+            </f:if>
+        </figcaption>
+    </f:if>
+    <f:section name="Image">
+        <f:if condition="{height}">
+            <f:then>
+                <img alt="{media.alternative}" class="img-fluid" height="{height}" itemprop="image" loading="lazy" src="{f:uri.image(height: '{height}c', src: media.uid, treatIdAsReference: 1, width: width)}" srcset="{f:uri.image(height: '427c', src: media.uid, treatIdAsReference: 1, width: 640)} 320w, {f:uri.image(height: '427c', src: media.uid, treatIdAsReference: 1, width: 640)} 720w, {f:uri.image(height: '984c', src: media.uid, treatIdAsReference: 1, width: 1476)} 960w, {f:uri.image(height: '1067c', src: media.uid, treatIdAsReference: 1, width: 1600)} 1140w" title="{media.title}" width="{width}"/>
+            </f:then>
+            <f:else>
+                <img alt="{media.alternative}" class="img-fluid" itemprop="image" loading="lazy" src="{f:uri.image(src: media.uid, treatIdAsReference: 1, width: width)}" srcset="{f:uri.image(src: media.uid, treatIdAsReference: 1, width: 640)} 320w, {f:uri.image(src: media.uid, treatIdAsReference: 1, width: 640)} 720w, {f:uri.image(src: media.uid, treatIdAsReference: 1, width: 1476)} 960w, {f:uri.image(src: media.uid, treatIdAsReference: 1, width: 1600)} 1140w" title="{media.title}" width="{width}"/>
+            </f:else>
+        </f:if>
+    </f:section>
+</html>

@@ -1,0 +1,265 @@
+mod.web_list.tableDisplayOrder.tx_vdfilesdb_file.before = tx_vdfilesdb_category
+
+##################################################
+
+TCEFORM.tx_vdfilesdb_file {
+  keywords.disabled = 1
+  no.disabled = 1
+}
+
+##################################################
+
+[27192 in tree.rootLineIds || 30739 in tree.rootLineIds]
+  TCEFORM.tx_vdfilesdb_file {
+    datedocument.disabled = 1
+    fe_group.disabled = 1
+    filepath.disabled = 1
+    filepathbyref1.disabled = 1
+    filepathbyref2.disabled = 1
+    filepathbyref3.disabled = 1
+    no.disabled >
+    vdmunicipalitydistrictid.disabled = 1
+    vdmunicipalityid.disabled = 1
+  }
+[45189 in tree.rootLineIds]
+  TCEFORM.tx_vdfilesdb_file {
+    datedocument.disabled = 1
+    fe_group.disabled = 1
+    filepath.disabled = 1
+    vdmunicipalitydistrictid.disabled = 1
+    vdmunicipalityid.disabled = 1
+  }
+[43569 in tree.rootLineIds]
+  TCEFORM.tx_vdfilesdb_file {
+    categoryid.label = Secteur concerné
+    categoryid2.disabled = 1
+    categoryid3.disabled = 1
+    categoryid4.disabled = 1
+    categoryid5.disabled = 1
+    categoryid6.disabled = 1
+    datedocument.disabled = 1
+    description.label = Description (à usage interne)
+    filepathbyref1.disabled = 1
+    filepathbyref2.disabled = 1
+    filepathbyref3.disabled = 1
+    link.disabled = 1
+    no.disabled >
+    vdmunicipalitydistrictid.disabled = 1
+    vdmunicipalityid.disabled = 1
+  }
+[48129 in tree.rootLineIds]
+  TCEFORM.tx_vdfilesdb_file {
+    categoryid {
+      label = Thèmes
+      PAGE_TSCONFIG_ID = 48130
+    }
+    categoryid2 {
+      label = Tendances stat.
+      PAGE_TSCONFIG_ID = 48131
+    }
+    categoryid3 {
+      label = Evaluation UDD
+      PAGE_TSCONFIG_ID = 48132
+    }
+    categoryid4.disabled = 1
+    categoryid5.disabled = 1
+    categoryid6.disabled = 1
+    datedocument.disabled = 1
+    description.disabled = 1
+    filepath.disabled = 1
+    filepathbyref1.disabled = 1
+    filepathbyref2.disabled = 1
+    vdmunicipalityid.disabled = 1
+  }
+[50084 in tree.rootLineIds]
+  TCEFORM.tx_vdfilesdb_file {
+    categoryid {
+      label = Type de projet
+      PAGE_TSCONFIG_ID = 50088
+    }
+    categoryid2 {
+      label = Région Concernée
+      PAGE_TSCONFIG_ID = 50087
+    }
+    categoryid3 {
+      label = Domaine d'intervention
+      PAGE_TSCONFIG_ID = 50086
+    }
+    categoryid4 {
+      label = Année
+      PAGE_TSCONFIG_ID = 50085
+    }
+    categoryid5.disabled = 1
+    categoryid6.disabled = 1
+    datedocument.label = Date du document
+    description.label = porteur du projet
+    filepath.disabled = 1
+    filepathbyref1.disabled = 1
+    filepathbyref2.disabled = 1
+    vdmunicipalityid.disabled = 1
+  }
+[58499 in tree.rootLineIds]
+  TCEFORM.tx_vdfilesdb_file {
+    categoryid {
+      label = Service
+      PAGE_TSCONFIG_ID = 58533
+    }
+    categoryid2.disabled = 1
+    categoryid3.disabled = 1
+    categoryid4.disabled = 1
+    categoryid5.disabled = 1
+    categoryid6.disabled = 1
+    datedocument.disabled = 1
+    description.disabled = 1
+    filepath.disabled = 1
+    filepathbyref1.disabled = 1
+    filepathbyref2.disabled = 1
+    no.disabled >
+    title.label = Métier
+  }
+[1048129 in tree.rootLineIds]
+  TCEFORM.tx_vdfilesdb_file {
+    categoryid {
+      label = Thèmes
+      PAGE_TSCONFIG_ID = 48130
+    }
+    categoryid2 {
+      label = Tendances stat.
+      PAGE_TSCONFIG_ID = 48131
+    }
+    categoryid3 {
+      label = Evaluation UDD
+      PAGE_TSCONFIG_ID = 48132
+    }
+    categoryid4.disabled = 1
+    categoryid5.disabled = 1
+    categoryid6.disabled = 1
+    datedocument.disabled = 1
+    description.disabled = 1
+    filepath.disabled = 1
+    filepathbyref1.disabled = 1
+    filepathbyref2.disabled = 1
+    vdmunicipalityid.disabled = 1
+  }
+[1050084 in tree.rootLineIds]
+  TCEFORM.tx_vdfilesdb_file {
+    categoryid {
+      label = Type de projet
+      PAGE_TSCONFIG_ID = 50088
+    }
+    categoryid2 {
+      label = Région Concernée
+      PAGE_TSCONFIG_ID = 50087
+    }
+    categoryid3 {
+      label = Domaine d'intervention
+      PAGE_TSCONFIG_ID = 50086
+    }
+    categoryid4 {
+      label = Année
+      PAGE_TSCONFIG_ID = 50085
+    }
+    categoryid5.disabled = 1
+    categoryid6.disabled = 1
+    datedocument.label = Date du document
+    description.label = Porteur du projet
+    filepath.disabled = 1
+    filepathbyref1.disabled = 1
+    filepathbyref2.disabled = 1
+    vdmunicipalityid.disabled = 1
+  }
+[1058499 in tree.rootLineIds]
+  TCEFORM.tx_vdfilesdb_file {
+    categoryid {
+      label = Service
+      PAGE_TSCONFIG_ID = 58533
+    }
+    categoryid2.disabled = 1
+    categoryid3.disabled = 1
+    categoryid4.disabled = 1
+    categoryid5.disabled = 1
+    categoryid6.disabled = 1
+    datedocument.disabled = 1
+    description.disabled = 1
+    filepath.disabled = 1
+    filepathbyref1.disabled = 1
+    filepathbyref2.disabled = 1
+    no.disabled >
+    title.label = Métier
+  }
+[2019163 in tree.rootLineIds]
+  TCEFORM.tx_vdfilesdb_file {
+    categoryid {
+      label = Jours
+      PAGE_TSCONFIG_ID = 2019167
+    }
+    categoryid2 {
+      label = Thématiques
+      PAGE_TSCONFIG_ID = 2019164
+    }
+    categoryid3 {
+      label = Lieux
+      PAGE_TSCONFIG_ID = 2019166
+    }
+    categoryid4.disabled = 1
+    categoryid5.disabled = 1
+    categoryid6.disabled = 1
+    description {
+      config {
+        cols = 80
+        rows = 8
+      }
+      label = Description de l'activité
+    }
+    datedocument.disabled = 1
+    filepath.disabled = 1
+    filepathbyref1.disabled = 1
+    filepathbyref2.disabled = 1
+    filepathbyref3.disabled = 1
+    keywords {
+      disabled >
+      label = Texte supplémentaire
+    }
+    vdmunicipalityid.disabled = 1
+    vdmunicipalitydistrictid.disabled = 1
+  }
+[2019246 in tree.rootLineIds]
+  TCEFORM.tx_vdfilesdb_file {
+    categoryid {
+      label = Jours
+      PAGE_TSCONFIG_ID = 2019249
+    }
+    categoryid2 {
+      label = Thématiques
+      PAGE_TSCONFIG_ID = 2019247
+    }
+    categoryid3 {
+      label = Lieux
+      PAGE_TSCONFIG_ID = 2019248
+    }
+    categoryid4 {
+      label = Inscription ou préinscription
+      PAGE_TSCONFIG_ID = 2019266
+    }
+    categoryid5.disabled = 1
+    categoryid6.disabled = 1
+    description {
+      config {
+        cols = 80
+        rows = 8
+      }
+      label = Description de l'activité
+    }
+    keywords {
+      disabled >
+      label = Texte supplémentaire
+    }
+    datedocument.disabled = 1
+    filepath.disabled = 1
+    filepathbyref1.disabled = 1
+    filepathbyref2.disabled = 1
+    filepathbyref3.disabled = 1
+    vdmunicipalityid.disabled = 1
+    vdmunicipalitydistrictid.disabled = 1
+  }
+[end]

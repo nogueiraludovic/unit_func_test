@@ -1,0 +1,9 @@
+<html data-namespace-typo3-fluid="true" xmlns:f="http://typo3.org/ns/fluid/ViewHelpers">
+    <f:if condition="{memberId} && {settings.memberDetailPageUid}">
+        <div class="col-xs-12 mb-4">
+            <f:link.action action="show" arguments="{memberId: memberId}" class="btn btn-dark" controller="Member" id="back-link" pageUid="{settings.memberDetailPageUid}">
+                Retour vers la fiche membre du Grand Conseil
+            </f:link.action>
+        </div>
+    </f:if>
+</html>

@@ -1,0 +1,15 @@
+tt_content.citation =< lib.contentElement
+tt_content.citation {
+  dataProcessing {
+    10 = TYPO3\CMS\Frontend\DataProcessing\FilesProcessor
+    10 {
+      as = images
+      if.isTrue.field = image
+      references {
+        fieldName = image
+        table = tt_content
+      }
+    }
+  }
+  templateName = Citation
+}

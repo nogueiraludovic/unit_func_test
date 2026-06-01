@@ -1,0 +1,138 @@
+@charset "utf-8";
+@use '../../../node_modules/@fortawesome/fontawesome-free/scss/variables' with (
+  $font-path: '../Fonts/font-awesome'
+);
+@use '../../../node_modules/@fortawesome/fontawesome-free/scss/fa' as fa;
+@use '../../../node_modules/@fortawesome/fontawesome-free/scss/fontawesome';
+@use '../../../node_modules/@fortawesome/fontawesome-free/scss/brands' as fa-brands;
+@use '../../../node_modules/@fortawesome/fontawesome-free/scss/regular' as fa-regular;
+@use '../../../node_modules/@fortawesome/fontawesome-free/scss/solid' as fa-solid;
+
+html,
+body {
+  height: 100%;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+
+  > footer {
+    flex-shrink: 0;
+  }
+}
+
+figure {
+  a {
+    &:focus {
+      display: inline-block;
+    }
+  }
+}
+
+#main {
+  flex: 1 0 auto;
+}
+
+.ce-gallery,
+.ce-image,
+.ce-nowrap .ce-bodytext,
+.ce-row,
+.ce-textpic,
+.ce-uploads div,
+.ce-uploads li {
+  overflow: visible;
+}
+
+.extbase-debugger {
+  overflow: visible;
+}
+
+.honey-pod {
+  margin-left: -99999px;
+  position: absolute;
+}
+
+.red {
+  color: #ff0000;
+}
+
+.tx-plain-faq {
+  .accordion {
+    border-top: 1px solid #dce3e8;
+
+    :first-child {
+      border-top: 0;
+    }
+  }
+}
+
+.vd-blockquote {
+  .blockquote-footer {
+    padding-left: 4rem;
+  }
+
+  &.vd-blockquote-bubble {
+    blockquote {
+      font-size: 1rem;
+      margin: 0;
+      padding: 0;
+      position: static;
+
+      &:before {
+        content: none;
+      }
+
+      p:last-child {
+        margin: 0;
+      }
+    }
+
+    .blockquote-footer {
+      margin: 0.4rem 0 0 0;
+      padding: 0;
+    }
+  }
+}
+
+.vd-content-column {
+  &.vd-content {
+    > :first-child {
+      h2 {
+        margin-top: 0;
+      }
+    }
+  }
+
+  &.vd-highlight {
+    .autocomplete-menu {
+      a {
+        color: var(--bs-dropdown-link-color);
+      }
+    }
+
+    > div {
+      &:last-child{
+        margin-bottom: 0 !important;
+      }
+    }
+  }
+}
+
+.vd-list-boxed {
+  .nav-item {
+    &:last-child {
+      margin-bottom: 0;
+    }
+  }
+}
+
+.vd-search-form {
+  .fa {
+    color: #fff;
+  }
+}
+
+.w-80 {
+  width: 80% !important;
+}

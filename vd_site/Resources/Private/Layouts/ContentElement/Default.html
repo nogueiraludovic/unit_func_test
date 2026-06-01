@@ -1,0 +1,28 @@
+<html data-namespace-typo3-fluid="true" xmlns:f="http://typo3.org/ns/TYPO3/CMS/Fluid/ViewHelpers">
+    <f:if condition="{pageData.0.data.backend_layout} == 'pagets__home' && !{data.tx_container_parent}">
+        <f:then>
+            <section class="bg-white text-bg-white">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-md-12">
+                            <div class="{data.space_after_class}" id="c{data.uid}">
+                                <f:render optional="true" section="Header">
+                                    <f:render arguments="{_all}" partial="Header/All"/>
+                                </f:render>
+                                <f:render optional="true" section="Main"/>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </f:then>
+        <f:else>
+            <div class="{data.space_after_class}" id="c{data.uid}">
+                <f:render optional="true" section="Header">
+                    <f:render arguments="{_all}" partial="Header/All"/>
+                </f:render>
+                <f:render optional="true" section="Main"/>
+            </div>
+        </f:else>
+    </f:if>
+</html>

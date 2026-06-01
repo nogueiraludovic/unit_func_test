@@ -1,0 +1,10 @@
+<html data-namespace-typo3-fluid="true" xmlns:f="http://typo3.org/ns/TYPO3/Fluid/ViewHelpers">
+    <f:if condition="{resultSet.allResultCount} > 1">
+        <f:then>
+            <p>{resultSet.allResultCount} résultats trouvés{f:if(condition: categoryData, then: ' pour la catégorie "{categoryData.title}"')}</p>
+        </f:then>
+        <f:else if="{resultSet.allResultCount} == 1">
+            <p>{resultSet.allResultCount} résultat trouvé{f:if(condition: categoryData, then: ' pour la catégorie "{categoryData.title}"')}</p>
+        </f:else>
+    </f:if>
+</html>

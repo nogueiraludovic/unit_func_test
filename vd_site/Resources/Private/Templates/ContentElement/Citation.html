@@ -1,0 +1,29 @@
+<html data-namespace-typo3-fluid="true" xmlns:f="http://typo3.org/ns/fluid/ViewHelpers">
+    <f:layout/>
+    <f:section name="Header"/>
+    <f:section name="Main">
+        <f:if condition="{images.0}">
+            <f:then>
+                <figure class="vd-blockquote vd-blockquote-bubble vd-blockquote-bubble-media">
+                    <blockquote>
+                        <f:image alt="{images.0.alternative}" class="img-fluid rounded-circle" height="120c" image="{images.0}" loading="lazy" title="{images.0.title}" width="120"/>
+                        <p>{data.bodytext -> f:format.stripTags() -> f:format.nl2br()}</p>
+                    </blockquote>
+                    <figcaption>
+                        <p class="blockquote-footer">{data.header}</p>
+                    </figcaption>
+                </figure>
+            </f:then>
+            <f:else>
+                <figure class="vd-blockquote vd-blockquote-bubble">
+                    <blockquote>
+                        <p>{data.bodytext -> f:format.stripTags() -> f:format.nl2br()}</p>
+                    </blockquote>
+                    <figcaption>
+                        <p class="blockquote-footer">{data.header}</p>
+                    </figcaption>
+                </figure>
+            </f:else>
+        </f:if>
+    </f:section>
+</html>

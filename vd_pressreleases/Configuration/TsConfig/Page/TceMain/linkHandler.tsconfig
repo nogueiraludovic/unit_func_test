@@ -1,0 +1,9 @@
+TCEMAIN.linkHandler.tx_vdpressreleases_pressrelease {
+  configuration {
+    pageTreeMountPoints = 2000107
+    table = tx_vdpressreleases_domain_model_pressrelease
+  }
+  handler = TYPO3\CMS\Recordlist\LinkHandler\RecordLinkHandler
+  label = LLL:EXT:vd_pressreleases/Resources/Private/Language/Form/locallang_tabs.xlf:press_releases
+  scanAfter = page
+}

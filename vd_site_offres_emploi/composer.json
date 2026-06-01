@@ -1,0 +1,24 @@
+{
+	"name": "vd/vd-site-offres-emploi",
+	"description": "Main configuration for offres-emploi.vd.ch.",
+	"license": "GPL-3.0-or-later",
+	"type": "typo3-cms-extension",
+	"version": "10.4.0",
+	"authors": [
+		{
+			"name": "État de Vaud - DGNSI",
+			"email": "support.typo3@vd.ch",
+			"homepage": "https://www.vd.ch",
+			"role": "Developer"
+		}
+	],
+	"require": {
+		"php": "^7.4",
+		"typo3/cms-core": "^10.4"
+	},
+	"extra": {
+		"typo3/cms": {
+			"extension-key": "vd_site_offres_emploi"
+		}
+	}
+}

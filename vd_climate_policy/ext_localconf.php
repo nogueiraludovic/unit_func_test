@@ -12,10 +12,8 @@ defined('TYPO3') === true || die;
         'tx_vdclimatepolicy_domain_model_address',
         [
             'axis',
-            'bodytext',
             'cities',
             'dicastery',
-            'email',
             'name',
             'pecc',
             'theme'

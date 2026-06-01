@@ -1,0 +1,7 @@
+TCEFORM.tx_vdojvencheres_domain_model_itemcategory.parent.PAGE_TSCONFIG_STR = main
+
+##################################################
+
+[62927 in tree.rootLineIds]
+  TCEFORM.tx_vdojvencheres_domain_model_itemcategory.parent.PAGE_TSCONFIG_STR = secondary
+[end]

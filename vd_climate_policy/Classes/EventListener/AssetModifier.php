@@ -10,7 +10,7 @@ final class AssetModifier
 {
     public function __invoke(AfterInitializeActionEvent $event): void
     {
-        if ($event->getPage()['uid'] !== 2025500) {
+        if ($event->getPage()['module'] !== 'climate-policy') {
             return;
         }
 
