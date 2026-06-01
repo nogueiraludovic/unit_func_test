@@ -1,217 +1,287 @@
 <?xml version='1.0' encoding='utf-8'?>
 <xliff version="1.0">
-    <file source-language="en" datatype="plaintext" original="messages" date="2017-02-07T06:32:31Z" product-name="vd_prestations">
+    <file source-language="en" datatype="plaintext" original="messages" date="2017-02-07T06:32:31Z" product-name="vd_prestations" target-language="fr">
         <header />
         <body>
             <trans-unit id="flexform.tab.general">
                 <source>General</source>
+                <target state="translated">General</target>
             </trans-unit>
             <trans-unit id="settings.prestations">
                 <source>Services</source>
+                <target state="translated">Prestations</target>
             </trans-unit>
             <trans-unit id="settings.longListPageId">
                 <source>Page containing all services</source>
+                <target state="translated">Page qui contient toutes les prestations</target>
             </trans-unit>
             <trans-unit id="settings.sourceContentElementId">
                 <source>Content element containing the short service list</source>
+                <target state="translated">Element de contenu contenant la liste de prestation courte</target>
             </trans-unit>
             <trans-unit id="tx_vdprestations_domain_model_prestation">
                 <source>Service</source>
+                <target state="translated">Prestation</target>
             </trans-unit>
             <trans-unit id="tx_vdprestations_domain_model_prestation.title">
                 <source>Title</source>
+                <target state="translated">Titre</target>
             </trans-unit>
             <trans-unit id="tx_vdprestations_domain_model_prestation.external_id">
                 <source>External ID</source>
+                <target state="translated">ID externe</target>
             </trans-unit>
             <trans-unit id="tx_vdprestations_domain_model_prestation.description">
                 <source>Description</source>
+                <target state="translated">Description</target>
             </trans-unit>
             <trans-unit id="tx_vdprestations_domain_model_prestation.domain_name">
                 <source>Domain</source>
+                <target state="translated">Domaine</target>
             </trans-unit>
             <trans-unit id="tx_vdprestations_domain_model_prestation.theme_name">
                 <source>Theme</source>
+                <target state="translated">Thème</target>
             </trans-unit>
             <trans-unit id="tx_vdprestations_domain_model_prestation.emolument">
                 <source>Fee</source>
+                <target state="translated">Emolument</target>
             </trans-unit>
             <trans-unit id="tx_vdprestations_domain_model_prestation.prerequisites">
                 <source>Prerequisites</source>
+                <target state="translated">Conditions préalables</target>
             </trans-unit>
             <trans-unit id="tx_vdprestations_domain_model_prestation.url">
                 <source>Service URL</source>
+                <target state="translated">Adresse de la prestation</target>
             </trans-unit>
             <trans-unit id="tx_vdprestations_domain_model_prestation.service_name">
                 <source>Service</source>
+                <target state="translated">Service</target>
             </trans-unit>
             <trans-unit id="tx_vdprestations_domain_model_prestation.result">
                 <source>Service result</source>
+                <target state="translated">Résultat de la prestation</target>
             </trans-unit>
             <trans-unit id="tx_vdprestations_domain_model_prestation.action_client">
                 <source>Beneficiary action</source>
+                <target state="translated">Action bénéficiaire</target>
             </trans-unit>
             <trans-unit id="tx_vdprestations_domain_model_prestation.action_service">
                 <source>Service action</source>
+                <target state="translated">Action service</target>
             </trans-unit>
             <trans-unit id="tx_vdprestations_domain_model_prestation.related_prestations">
                 <source>Related services</source>
+                <target state="translated">Prestations associées</target>
             </trans-unit>
             <trans-unit id="tx_vdprestations_domain_model_prestation.target_audience">
                 <source>Target audience</source>
+                <target state="translated">Public cible</target>
             </trans-unit>
             <trans-unit id="tx_vdprestations_domain_model_prestation.access_modalities">
                 <source>Access modalities</source>
+                <target state="translated">Modalités d’accès</target>
             </trans-unit>
             <trans-unit id="tx_vdprestations_domain_model_prestation.legal_references">
                 <source>Legal references</source>
+                <target state="translated">Références légales</target>
             </trans-unit>
             <trans-unit id="tx_vdprestations_domain_model_accessmodality">
                 <source>Access modalities</source>
+                <target state="translated">Modalités d’accès</target>
             </trans-unit>
             <trans-unit id="tx_vdprestations_domain_model_accessmodality.type">
                 <source>Type</source>
+                <target state="translated">Type</target>
             </trans-unit>
             <trans-unit id="tx_vdprestations_domain_model_accessmodality.howto">
                 <source>How to proceed</source>
+                <target state="translated">Marche à suivre</target>
             </trans-unit>
             <trans-unit id="tx_vdprestations_domain_model_accessmodality.additional_informations">
                 <source>Additional information</source>
+                <target state="translated">Informations complémentaires</target>
             </trans-unit>
             <trans-unit id="tx_vdprestations_domain_model_accessmodality.average_delay">
                 <source>Average processing time</source>
+                <target state="translated">Délai moyen de traitement</target>
             </trans-unit>
             <trans-unit id="tx_vdprestations_domain_model_accessmodality.cost">
                 <source>Cost of service</source>
+                <target state="translated">Coût de la prestation</target>
             </trans-unit>
             <trans-unit id="tx_vdprestations_domain_model_accessmodality.required_documents">
                 <source>Required documents</source>
+                <target state="translated">Documents requis</target>
             </trans-unit>
             <trans-unit id="tx_vdprestations_domain_model_accessmodality.service_name">
                 <source>Service</source>
+                <target state="translated">Service</target>
             </trans-unit>
             <trans-unit id="tx_vdprestations_domain_model_accessmodality.epayment">
                 <source>E-payment</source>
+                <target state="translated">E-payment</target>
             </trans-unit>
             <trans-unit id="tx_vdprestations_domain_model_accessmodality.security_level">
                 <source>Security level</source>
+                <target state="translated">Niveau de sécurité</target>
             </trans-unit>
             <trans-unit id="tx_vdprestations_domain_model_accessmodality.external_link">
                 <source>External link</source>
+                <target state="translated">Link externe</target>
             </trans-unit>
             <trans-unit id="tx_vdprestations_domain_model_accessmodality.url">
                 <source>URL</source>
+                <target state="translated">URL</target>
             </trans-unit>
             <trans-unit id="tx_vdprestations_domain_model_targetaudience">
                 <source>Target audience</source>
+                <target state="translated">Public cible</target>
             </trans-unit>
             <trans-unit id="tx_vdprestations_domain_model_targetaudience.name">
                 <source>Name</source>
+                <target state="translated">Nom</target>
             </trans-unit>
             <trans-unit id="tx_vdprestations_domain_model_url">
                 <source>URL</source>
+                <target state="translated">URL</target>
             </trans-unit>
             <trans-unit id="tx_vdprestations_domain_model_url.title">
                 <source>Title</source>
+                <target state="translated">Titre</target>
             </trans-unit>
             <trans-unit id="tx_vdprestations_domain_model_url.url">
                 <source>URL</source>
+                <target state="translated">URL</target>
             </trans-unit>
             <trans-unit id="prestation.highlight.additional_informations">
                 <source>Additional information</source>
+                <target state="translated">Informations complémentaires</target>
             </trans-unit>
             <trans-unit id="prestation.highlight.average_delay">
                 <source>Delay</source>
+                <target state="translated">Délai</target>
             </trans-unit>
             <trans-unit id="prestation.highlight.cost">
                 <source>Cost</source>
+                <target state="translated">Coût</target>
             </trans-unit>
             <trans-unit id="prestation.highlight.required_documents">
                 <source>Required documents</source>
+                <target state="translated">Documents requis</target>
             </trans-unit>
             <trans-unit id="prestation.poste.title">
                 <source>By mail</source>
+                <target state="translated">Par courrier</target>
             </trans-unit>
             <trans-unit id="prestation.poste.description">
                 <source>Get the service by mail</source>
+                <target state="translated">Obtenir la prestation par courrier</target>
             </trans-unit>
             <trans-unit id="prestation.online.title">
                 <source>Online</source>
+                <target state="translated">En ligne</target>
             </trans-unit>
             <trans-unit id="prestation.online.description">
                 <source>Get the service online</source>
+                <target state="translated">Obtenir la prestation en ligne</target>
             </trans-unit>
             <trans-unit id="prestation.telephone.title">
                 <source>By phone</source>
+                <target state="translated">Par téléphone</target>
             </trans-unit>
             <trans-unit id="prestation.telephone.description">
                 <source>Get the service by phone</source>
+                <target state="translated">Obtenir la prestation par téléphone</target>
             </trans-unit>
             <trans-unit id="prestation.mail.title">
                 <source>By email</source>
+                <target state="translated">Par email</target>
             </trans-unit>
             <trans-unit id="prestation.mail.description">
                 <source>Get the service by email</source>
+                <target state="translated">Obtenir la prestation par email</target>
             </trans-unit>
             <trans-unit id="prestation.guichet.title">
                 <source>At the counter</source>
+                <target state="translated">Au guichet</target>
             </trans-unit>
             <trans-unit id="prestation.guichet.description">
                 <source>Get the service at the counter</source>
+                <target state="translated">Obtenir la prestation au guichet</target>
             </trans-unit>
             <trans-unit id="conditions_title">
                 <source>What are the conditions to meet?</source>
+                <target state="translated">Quelles sont les conditions à remplir ?</target>
             </trans-unit>
             <trans-unit id="contact_us_button">
                 <source>Contact us</source>
+                <target state="translated">Prendre contact</target>
             </trans-unit>
             <trans-unit id="contact_us_question">
                 <source>Do you have a question or need help?</source>
+                <target state="translated">Vous avez une question ou besoin d'aide ?</target>
             </trans-unit>
             <trans-unit id="how_much_cost">
                 <source>How much does it cost?</source>
+                <target state="translated">Combien cela coûte-t-il ?</target>
             </trans-unit>
             <trans-unit id="how_to_proceed">
                 <source>How to proceed?</source>
+                <target state="translated">Comment procéder ?</target>
             </trans-unit>
             <trans-unit id="in_this_theme">
                 <source>In this theme</source>
+                <target state="translated">Dans ce thème</target>
             </trans-unit>
             <trans-unit id="legal_references">
                 <source>Legal references</source>
+                <target state="translated">Références légales</target>
             </trans-unit>
             <trans-unit id="no_prestations_message">
                 <source>No services to display...</source>
+                <target state="translated">Pas de prestations à afficher...</target>
             </trans-unit>
             <trans-unit id="related_pages_forms">
                 <source>Related pages and forms</source>
+                <target state="translated">Pages et formulaires en lien</target>
             </trans-unit>
             <trans-unit id="related_procedures">
                 <source>Related procedures</source>
+                <target state="translated">Procédures liées</target>
             </trans-unit>
             <trans-unit id="required_documents">
                 <source>Which documents are required?</source>
+                <target state="translated">Quels documents sont requis ?</target>
             </trans-unit>
             <trans-unit id="see_all">
                 <source>See all</source>
+                <target state="translated">Voir tout</target>
             </trans-unit>
             <trans-unit id="see_fewer">
                 <source>See less</source>
+                <target state="translated">Voir moins</target>
             </trans-unit>
             <trans-unit id="what_is_delay">
                 <source>What is the delay?</source>
+                <target state="translated">Quel est le délai ?</target>
             </trans-unit>
             <trans-unit id="who_can_help">
                 <source>Who can help me?</source>
+                <target state="translated">Qui peut m'aider ?</target>
             </trans-unit>
             <trans-unit id="more_information">
                 <source>More information</source>
+                <target state="translated">Plus d'informations</target>
             </trans-unit>
             <trans-unit id="less_information">
                 <source>Less information</source>
+                <target state="translated">Moins d'informations</target>
             </trans-unit>
             <trans-unit id="start_action">
                 <source>Start</source>
+                <target state="translated">Commencer</target>
             </trans-unit>
         </body>
     </file>
