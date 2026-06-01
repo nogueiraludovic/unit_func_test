@@ -2,24 +2,24 @@ TCEFORM.tt_content {
   layout.types {
     highlighting-container {
       addItems {
-        dark = Fond vert foncé
-        light = Fond gris foncé
+        dark = LLL:EXT:vd_container/Resources/Private/Language/locallang_be.xlf:container.layout.dark_green
+        light = LLL:EXT:vd_container/Resources/Private/Language/locallang_be.xlf:container.layout.dark_grey
       }
       disabled = 0
-      label = Couleur de fond
+      label = LLL:EXT:vd_container/Resources/Private/Language/locallang_be.xlf:background_color
       removeItems = 0,1,2,3
     }
     section-container {
       addItems {
-        white = Fond blanc
-        dark = Fond vert foncé
-        light = Fond gris
-        primary_light = Fond vert clair
-        secondary_light = Fond violet clair
-        tertiary_light = Fond bleu clair
+        white = LLL:EXT:vd_container/Resources/Private/Language/locallang_be.xlf:container.layout.white
+        dark = LLL:EXT:vd_container/Resources/Private/Language/locallang_be.xlf:container.layout.dark_green
+        light = LLL:EXT:vd_container/Resources/Private/Language/locallang_be.xlf:container.layout.light_grey
+        primary_light = LLL:EXT:vd_container/Resources/Private/Language/locallang_be.xlf:container.layout.light_green
+        secondary_light = LLL:EXT:vd_container/Resources/Private/Language/locallang_be.xlf:container.layout.light_purple
+        tertiary_light = LLL:EXT:vd_container/Resources/Private/Language/locallang_be.xlf:container.layout.light_blue
       }
       disabled = 0
-      label = Couleur de fond
+      label = LLL:EXT:vd_container/Resources/Private/Language/locallang_be.xlf:background_color
       removeItems = 0,1,2,3
     }
   }

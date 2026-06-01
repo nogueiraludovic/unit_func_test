@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xliff version="1.2" xmlns="urn:oasis:names:tc:xliff:document:1.2">
+	<file datatype="plaintext" original="EXT:vd_ojvencheres/Resources/Private/Language/locallang_db_new_content_el.xlf" source-language="en">
+		<header/>
+		<body>
+			<trans-unit id="plugins_vdojvencheres_header" resname="plugins_vdojvencheres_header">
+				<source>OJV Auctions</source>
+			</trans-unit>
+			<trans-unit id="plugins_vdojvencheres_itemlist_title" resname="plugins_vdojvencheres_itemlist_title">
+				<source>Items list</source>
+			</trans-unit>
+			<trans-unit id="plugins_vdojvencheres_itemlist_description" resname="plugins_vdojvencheres_itemlist_description">
+				<source>Display the list of auctioned items</source>
+			</trans-unit>
+			<trans-unit id="plugins_vdojvencheres_itemshow_title" resname="plugins_vdojvencheres_itemshow_title">
+				<source>Item detail</source>
+			</trans-unit>
+			<trans-unit id="plugins_vdojvencheres_itemshow_description" resname="plugins_vdojvencheres_itemshow_description">
+				<source>Display the detail of an auctioned item</source>
+			</trans-unit>
+			<trans-unit id="plugins_vdojvencheres_newsletter_title" resname="plugins_vdojvencheres_newsletter_title">
+				<source>Newsletter</source>
+			</trans-unit>
+			<trans-unit id="plugins_vdojvencheres_newsletter_description" resname="plugins_vdojvencheres_newsletter_description">
+				<source>Display the list of auctioned items for the newsletter view</source>
+			</trans-unit>
+			<trans-unit id="plugins_vdojvencheres_salelist_title" resname="plugins_vdojvencheres_salelist_title">
+				<source>Sales list</source>
+			</trans-unit>
+			<trans-unit id="plugins_vdojvencheres_salelist_description" resname="plugins_vdojvencheres_salelist_description">
+				<source>Display the list of auctions</source>
+			</trans-unit>
+			<trans-unit id="plugins_vdojvencheres_saleshow_title" resname="plugins_vdojvencheres_saleshow_title">
+				<source>Sale detail</source>
+			</trans-unit>
+			<trans-unit id="plugins_vdojvencheres_saleshow_description" resname="plugins_vdojvencheres_saleshow_description">
+				<source>Display the detail of an auction</source>
+			</trans-unit>
+		</body>
+	</file>
+</xliff>

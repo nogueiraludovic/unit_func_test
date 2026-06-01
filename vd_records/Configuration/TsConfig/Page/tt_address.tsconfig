@@ -70,7 +70,7 @@ TCEFORM.tt_address {
   }
 [49233 in tree.rootLineIds]
   TCEFORM.tt_address {
-    birthday.label = Date d'autorisation
+    birthday.label = LLL:EXT:vd_records/Resources/Private/Language/locallang_db.xlf:tsconfig.tt_address.birthday.authorization_date
     company.disabled = 1
     country.disabled = 1
     fax.disabled = 1
@@ -80,7 +80,7 @@ TCEFORM.tt_address {
     title.disabled = 1
     tx_vdaddrgeneral_categoryid1 {
       disabled = 0
-      label = Type d'installation
+      label = LLL:EXT:vd_records/Resources/Private/Language/locallang_db.xlf:tsconfig.tt_address.categoryid1.installation_type
       PAGE_TSCONFIG_ID = 66065
     }
   }
@@ -99,17 +99,17 @@ TCEFORM.tt_address {
     title.disabled = 1
     tx_vdaddrgeneral_categoryid1 {
       disabled = 0
-      label = Domaines d'intervention
+      label = LLL:EXT:vd_records/Resources/Private/Language/locallang_db.xlf:tsconfig.tt_address.categoryid1.intervention_domains
       PAGE_TSCONFIG_ID = 2016170
     }
     tx_vdaddrgeneral_categoryid2 {
       disabled = 0
-      label = Destinataires
+      label = LLL:EXT:vd_records/Resources/Private/Language/locallang_db.xlf:tsconfig.tt_address.categoryid2.recipients
       PAGE_TSCONFIG_ID = 2016168
     }
     tx_vdaddrgeneral_categoryid3 {
       disabled = 0
-      label = Prestations
+      label = LLL:EXT:vd_records/Resources/Private/Language/locallang_db.xlf:tsconfig.tt_address.categoryid3.benefits
       PAGE_TSCONFIG_ID = 2016169
     }
   }

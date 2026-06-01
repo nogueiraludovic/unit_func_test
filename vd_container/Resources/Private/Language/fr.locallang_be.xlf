@@ -99,6 +99,34 @@
 				<source>2 columns, same gap</source>
 				<target state="translated">2 colonnes, largeur égale</target>
 			</trans-unit>
+			<trans-unit id="container.layout.dark_green" resname="container.layout.dark_green">
+				<source>Dark green background</source>
+				<target state="translated">Fond vert foncé</target>
+			</trans-unit>
+			<trans-unit id="container.layout.dark_grey" resname="container.layout.dark_grey">
+				<source>Dark grey background</source>
+				<target state="translated">Fond gris foncé</target>
+			</trans-unit>
+			<trans-unit id="container.layout.white" resname="container.layout.white">
+				<source>White background</source>
+				<target state="translated">Fond blanc</target>
+			</trans-unit>
+			<trans-unit id="container.layout.light_grey" resname="container.layout.light_grey">
+				<source>Light grey background</source>
+				<target state="translated">Fond gris</target>
+			</trans-unit>
+			<trans-unit id="container.layout.light_green" resname="container.layout.light_green">
+				<source>Light green background</source>
+				<target state="translated">Fond vert clair</target>
+			</trans-unit>
+			<trans-unit id="container.layout.light_purple" resname="container.layout.light_purple">
+				<source>Light purple background</source>
+				<target state="translated">Fond violet clair</target>
+			</trans-unit>
+			<trans-unit id="container.layout.light_blue" resname="container.layout.light_blue">
+				<source>Light blue background</source>
+				<target state="translated">Fond bleu clair</target>
+			</trans-unit>
 		</body>
 	</file>
 </xliff>

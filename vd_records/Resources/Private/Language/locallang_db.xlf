@@ -207,6 +207,75 @@
 			<trans-unit id="web_adviser" resname="web_adviser">
 				<source>Web Adviser VD</source>
 			</trans-unit>
+			<trans-unit id="tsconfig.categoryid.sector" resname="tsconfig.categoryid.sector">
+				<source>Concerned sector</source>
+			</trans-unit>
+			<trans-unit id="tsconfig.description.internal" resname="tsconfig.description.internal">
+				<source>Description (for internal use)</source>
+			</trans-unit>
+			<trans-unit id="tsconfig.categoryid.themes" resname="tsconfig.categoryid.themes">
+				<source>Themes</source>
+			</trans-unit>
+			<trans-unit id="tsconfig.categoryid.trends" resname="tsconfig.categoryid.trends">
+				<source>Statistical trends</source>
+			</trans-unit>
+			<trans-unit id="tsconfig.categoryid.evaluation" resname="tsconfig.categoryid.evaluation">
+				<source>UDD evaluation</source>
+			</trans-unit>
+			<trans-unit id="tsconfig.categoryid.project_type" resname="tsconfig.categoryid.project_type">
+				<source>Project type</source>
+			</trans-unit>
+			<trans-unit id="tsconfig.categoryid.region" resname="tsconfig.categoryid.region">
+				<source>Concerned region</source>
+			</trans-unit>
+			<trans-unit id="tsconfig.categoryid.intervention_domain" resname="tsconfig.categoryid.intervention_domain">
+				<source>Intervention domain</source>
+			</trans-unit>
+			<trans-unit id="tsconfig.categoryid.year" resname="tsconfig.categoryid.year">
+				<source>Year</source>
+			</trans-unit>
+			<trans-unit id="tsconfig.description.project_holder" resname="tsconfig.description.project_holder">
+				<source>Project holder</source>
+			</trans-unit>
+			<trans-unit id="tsconfig.categoryid.service" resname="tsconfig.categoryid.service">
+				<source>Service</source>
+			</trans-unit>
+			<trans-unit id="tsconfig.title.job" resname="tsconfig.title.job">
+				<source>Profession</source>
+			</trans-unit>
+			<trans-unit id="tsconfig.categoryid.days" resname="tsconfig.categoryid.days">
+				<source>Days</source>
+			</trans-unit>
+			<trans-unit id="tsconfig.categoryid.topics" resname="tsconfig.categoryid.topics">
+				<source>Topics</source>
+			</trans-unit>
+			<trans-unit id="tsconfig.categoryid.locations" resname="tsconfig.categoryid.locations">
+				<source>Locations</source>
+			</trans-unit>
+			<trans-unit id="tsconfig.description.activity" resname="tsconfig.description.activity">
+				<source>Activity description</source>
+			</trans-unit>
+			<trans-unit id="tsconfig.keywords.additional_text" resname="tsconfig.keywords.additional_text">
+				<source>Additional text</source>
+			</trans-unit>
+			<trans-unit id="tsconfig.categoryid.registration" resname="tsconfig.categoryid.registration">
+				<source>Registration or pre-registration</source>
+			</trans-unit>
+			<trans-unit id="tsconfig.tt_address.birthday.authorization_date" resname="tsconfig.tt_address.birthday.authorization_date">
+				<source>Authorization date</source>
+			</trans-unit>
+			<trans-unit id="tsconfig.tt_address.categoryid1.installation_type" resname="tsconfig.tt_address.categoryid1.installation_type">
+				<source>Installation type</source>
+			</trans-unit>
+			<trans-unit id="tsconfig.tt_address.categoryid1.intervention_domains" resname="tsconfig.tt_address.categoryid1.intervention_domains">
+				<source>Intervention domains</source>
+			</trans-unit>
+			<trans-unit id="tsconfig.tt_address.categoryid2.recipients" resname="tsconfig.tt_address.categoryid2.recipients">
+				<source>Recipients</source>
+			</trans-unit>
+			<trans-unit id="tsconfig.tt_address.categoryid3.benefits" resname="tsconfig.tt_address.categoryid3.benefits">
+				<source>Benefits/Services</source>
+			</trans-unit>
 		</body>
 	</file>
 </xliff>
