@@ -5,7 +5,7 @@
         <body>
             <trans-unit id="flexform.tab.general">
                 <source>General</source>
-                <target state="translated">General</target>
+                <target state="translated">Général</target>
             </trans-unit>
             <trans-unit id="settings.prestations">
                 <source>Services</source>
@@ -129,7 +129,7 @@
             </trans-unit>
             <trans-unit id="tx_vdprestations_domain_model_accessmodality.external_link">
                 <source>External link</source>
-                <target state="translated">Link externe</target>
+                <target state="translated">Lien externe</target>
             </trans-unit>
             <trans-unit id="tx_vdprestations_domain_model_accessmodality.url">
                 <source>URL</source>
