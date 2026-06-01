@@ -3,10 +3,10 @@
     <f:section name="main">
         <div id="irfaq-{contentObjectData.uid}">
             <div class="d-print-none irfaq-search-form my-1 px-4 py-4 vd-bg-pattern-bars-gray">
-                <h4 class="mt-0">Rechercher dans les questions</h4>
+                <h4 class="mt-0"><f:translate extensionName="VdSite" id="search_in_questions"/></h4>
                 <form class="input-group vd-search-form-regular">
                     <label class="form-label visually-hidden" for="search-form-faq-f-{contentObjectData.uid}" id="search-form-label-faq-{contentObjectData.uid}">
-                        Rechercher dans les questions
+                        <f:translate extensionName="VdSite" id="search_in_questions"/>
                     </label>
                     <input aria-describedby="search-form-label-faq-{contentObjectData.uid}" class="form-control search-form-faq" id="search-form-faq-f-{contentObjectData.uid}" maxlength="100" name="irfaq_search_words" type="text" value="">
                     <input name="importantMessage" value="" type="hidden">
@@ -44,7 +44,7 @@
                                 <li><a data-search-field="1" href="javascript:" id="faq-question-link-{faq.uid}" onclick="document.location.hash='#irfaq-{contentObjectData.uid}-{faq.uid}'">{faq.question}</a></li>
                             </f:for>
                         </ul>
-                        <h3 class="visually-hidden">Réponses</h3>
+                        <h3 class="visually-hidden"><f:translate extensionName="VdSite" id="answers_heading"/></h3>
                         <div class="irfaq-answers">
                             <f:for as="faq" each="{faqs}">
                                 <article class="mb-4" id="irfaq-{contentObjectData.uid}-{faq.uid}">

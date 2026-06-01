@@ -1,5 +1,5 @@
 <html data-namespace-typo3-fluid="true" xmlns:f="http://typo3.org/ns/TYPO3/Fluid/ViewHelpers" xmlns:s="http://typo3.org/ns/ApacheSolrForTypo3/Solr/ViewHelpers" xmlns:vdc="http://typo3.org/ns/Vd/VdCore/ViewHelpers">
-    <f:variable name="type" value="communiqués de presse"/>
+    <f:variable name="type" value="{f:translate(extensionName: 'VdSolr', id: 'press_releases_type')}"/>
     <f:render arguments="{_all}" partial="Search/Form" section="Records"/>
     <f:if condition="{resultSet.allResultCount} > 0">
         <f:then>
@@ -44,7 +44,7 @@
                                 <footer>
                                     <p class="fw-bold small">
                                         <time datetime="{document.datetime_dateS -> f:format.date(format: 'c')}">
-                                            Publié le {document.datetime_dateS -> f:format.date(format: '%d %B %Y')}
+                                            <f:translate extensionName="VdSolr" id="published_on_prefix"/> {document.datetime_dateS -> f:format.date(format: '%d %B %Y')}
                                         </time>
                                     </p>
                                 </footer>

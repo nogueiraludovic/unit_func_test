@@ -4,7 +4,7 @@
         <f:if condition="{resultSet.usedSearchRequest.contextTypoScriptConfiguration.searchFaceting}">
             <s:facet.area.group facets="{resultSet.facets.available}">
                 <nav class="mb-5">
-                    <h2 class="h5" id="filter-results-title">Filtrer les résultats</h2>
+                    <h2 class="h5" id="filter-results-title"><f:translate extensionName="VdSolr" id="filter_results"/></h2>
                     <ul class="nav nav-pills">
                         <li class="nav-item">
                             <f:link.page addQueryString="1" argumentsToBeExcludedFromQueryString="{0: 'tx_solr[filter]'}" class="{f:if(condition: resultSet.facets.used, else: 'active ')}nav-link" id="all-facets-link" pageUid="{settings.searchPageUid}">
@@ -29,24 +29,24 @@
         <f:then>
             <f:if condition="{resultSet.allResultCount} > 1">
                 <f:then>
-                    <h2 id="result-count-title">{resultSet.allResultCount} résultats pour "{arguments.q}"</h2>
+                    <h2 id="result-count-title"><f:translate extensionName="VdSolr" id="results_count_query_plural" arguments="{0: resultSet.allResultCount, 1: arguments.q}"/></h2>
                 </f:then>
                 <f:else if="{resultSet.allResultCount} == 1">
-                    <h2 id="result-count-title">{resultSet.allResultCount} résultat pour "{arguments.q}"</h2>
+                    <h2 id="result-count-title"><f:translate extensionName="VdSolr" id="result_count_query_singular" arguments="{0: resultSet.allResultCount, 1: arguments.q}"/></h2>
                 </f:else>
                 <f:else>
-                    <h2 id="result-count-title">Aucun résultat pour "{arguments.q}"</h2>
+                    <h2 id="result-count-title"><f:translate extensionName="VdSolr" id="no_results_query" arguments="{0: arguments.q}"/></h2>
                 </f:else>
             </f:if>
         </f:then>
         <f:else if="{resultSet.allResultCount} > 1">
-            <h2 id="result-count-title">{resultSet.allResultCount} résultats</h2>
+            <h2 id="result-count-title"><f:translate extensionName="VdSolr" id="results_count_plural" arguments="{0: resultSet.allResultCount}"/></h2>
         </f:else>
         <f:else if="{resultSet.allResultCount} == 1">
-            <h2 id="result-count-title">{resultSet.allResultCount} résultat</h2>
+            <h2 id="result-count-title"><f:translate extensionName="VdSolr" id="result_count_singular" arguments="{0: resultSet.allResultCount}"/></h2>
         </f:else>
         <f:else>
-            <h2 id="result-count-title">Aucun résultat</h2>
+            <h2 id="result-count-title"><f:translate extensionName="VdSolr" id="no_results"/></h2>
         </f:else>
     </f:if>
     <f:if condition="{resultSet.hasSearched}">

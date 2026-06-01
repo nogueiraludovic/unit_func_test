@@ -23,7 +23,7 @@
             </f:if>
             <f:if condition="{decision.seance}">
                 <h3 class="all-decisions-title h4"><f:translate id="ce_decisions"/></h3>
-                <p>Voir toutes les décisions de la
+                <p><f:translate id="see_all_decisions"/>
                     <f:link.action action="show" arguments="{meetingId: decision.seance.id}" controller="Meeting" pageUid="{settings.meetingDetailPageUid}">
                         {decision.seance.nomCourt -> f:format.case(mode:'uncapital')}
                     </f:link.action>

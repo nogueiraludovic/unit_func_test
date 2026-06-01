@@ -15,6 +15,12 @@
 			<trans-unit id="write_us" resname="write_us">
 				<source>Write us</source>
 			</trans-unit>
+			<trans-unit id="no_result_found" resname="no_result_found">
+				<source>No result found</source>
+			</trans-unit>
+			<trans-unit id="search_label" resname="search_label">
+				<source>Search for the competent entity by municipality or postal code (NPA)</source>
+			</trans-unit>
 		</body>
 	</file>
 </xliff>

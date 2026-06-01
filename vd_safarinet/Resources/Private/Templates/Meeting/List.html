@@ -6,8 +6,8 @@
                 <p>
                     <f:variable name="meetingsCount" value="{meetings -> f:count()}"/>
                     <f:if condition="{meetingsCount} > 1">
-                        <f:then>{meetingsCount} résultats trouvés</f:then>
-                        <f:else>{meetingsCount} résultat trouvé</f:else>
+                        <f:then><f:translate id="results_found_plural" arguments="{0: meetingsCount}"/></f:then>
+                        <f:else><f:translate id="result_found_singular" arguments="{0: meetingsCount}"/></f:else>
                     </f:if>
                 </p>
                 <f:for as="meeting" each="{paginator.paginatedItems}" iteration="iterator">

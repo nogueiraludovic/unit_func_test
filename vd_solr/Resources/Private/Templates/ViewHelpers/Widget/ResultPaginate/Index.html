@@ -12,10 +12,10 @@
                             <a class="vd-pagination__link" href="{s:uri.paginate.resultPage(page: pagination.previousPage)}" id="previous-page-link">
                                 <span class="vd-pagination__title">
                                     <span class="fa-chevron-left fa-solid" aria-hidden="true"></span>
-                                    Page précédente
+                                    <f:translate extensionName="VdSolr" id="previous_page"/>
                                 </span>
                                 <span class="visually-hidden">:</span>
-                                <span class="vd-pagination__label">{pagination.previousPage} sur {pagination.numberOfPages}</span>
+                                <span class="vd-pagination__label"><f:translate extensionName="VdSolr" id="page_of_total" arguments="{0: pagination.previousPage, 1: pagination.numberOfPages}"/></span>
                             </a>
                         </li>
                     </f:if>
@@ -23,11 +23,11 @@
                         <li class="vd-pagination__item vd-pagination__item--next">
                             <a class="vd-pagination__link" href="{s:uri.paginate.resultPage(page: pagination.nextPage)}" id="next-page-link">
                                 <span class="vd-pagination__title">
-                                    Page suivante
+                                    <f:translate extensionName="VdSolr" id="next_page"/>
                                     <span class="fa-chevron-right fa-solid" aria-hidden="true"></span>
                                 </span>
                                 <span class="visually-hidden">:</span>
-                                <span class="vd-pagination__label">{pagination.nextPage} sur {pagination.numberOfPages}</span>
+                                <span class="vd-pagination__label"><f:translate extensionName="VdSolr" id="page_of_total" arguments="{0: pagination.nextPage, 1: pagination.numberOfPages}"/></span>
                             </a>
                         </li>
                     </f:if>

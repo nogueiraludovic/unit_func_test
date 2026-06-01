@@ -3,24 +3,24 @@
     <div class="row">
         <div class="col-6">
             <fieldset>
-                <legend class="h5 mt-0">Publié du</legend>
+                <legend class="h5 mt-0"><f:translate extensionName="VdSolr" id="published_from"/></legend>
                 <div class="vd-form-flex">
                     <div class="vd-form-flex__item vd-form-flex__item--2-char-width">
                         <div class="mb-3">
-                            <label class="form-label visually-hidden" for="from-day">Jour</label>
-                            <f:form.textfield additionalAttributes="{max: 31, min: 1}" class="form-control" id="from-day" name="{pluginNamespace}[from][]" placeholder="JJ" type="number" value="{arguments.from.0}"/>
+                            <label class="form-label visually-hidden" for="from-day"><f:translate extensionName="VdSolr" id="day_label"/></label>
+                            <f:form.textfield additionalAttributes="{max: 31, min: 1}" class="form-control" id="from-day" name="{pluginNamespace}[from][]" placeholder="{f:translate(extensionName: 'VdSolr', id: 'day_placeholder')}" type="number" value="{arguments.from.0}"/>
                         </div>
                     </div>
                     <div class="vd-form-flex__item vd-form-flex__item--2-char-width">
                         <div class="mb-3">
-                            <label class="form-label visually-hidden" for="from-month">Mois</label>
-                            <f:form.textfield additionalAttributes="{max: 12, min: 1}" class="form-control" id="from-month" name="{pluginNamespace}[from][]" placeholder="MM" type="number" value="{arguments.from.1}"/>
+                            <label class="form-label visually-hidden" for="from-month"><f:translate extensionName="VdSolr" id="month_label"/></label>
+                            <f:form.textfield additionalAttributes="{max: 12, min: 1}" class="form-control" id="from-month" name="{pluginNamespace}[from][]" placeholder="{f:translate(extensionName: 'VdSolr', id: 'month_placeholder')}" type="number" value="{arguments.from.1}"/>
                         </div>
                     </div>
                     <div class="vd-form-flex__item vd-form-flex__item--4-char-width">
                         <div class="mb-3">
-                            <label class="form-label visually-hidden" for="from-year">Année</label>
-                            <f:form.textfield additionalAttributes="{max: currentYear, min: 1998}" class="form-control" id="from-year" name="{pluginNamespace}[from][]" placeholder="AAAA" type="number" value="{arguments.from.2}"/>
+                            <label class="form-label visually-hidden" for="from-year"><f:translate extensionName="VdSolr" id="year_label"/></label>
+                            <f:form.textfield additionalAttributes="{max: currentYear, min: 1998}" class="form-control" id="from-year" name="{pluginNamespace}[from][]" placeholder="{f:translate(extensionName: 'VdSolr', id: 'year_placeholder')}" type="number" value="{arguments.from.2}"/>
                         </div>
                     </div>
                 </div>
@@ -28,24 +28,24 @@
         </div>
         <div class="col-6">
             <fieldset>
-                <legend class="h5 mt-0">au</legend>
+                <legend class="h5 mt-0"><f:translate extensionName="VdSolr" id="to_label"/></legend>
                 <div class="vd-form-flex">
                     <div class="vd-form-flex__item vd-form-flex__item--2-char-width">
                         <div class="mb-3">
-                            <label class="form-label visually-hidden" for="to-day">Jour</label>
-                            <f:form.textfield additionalAttributes="{max: 31, min: 1}" class="form-control" id="to-day" name="{pluginNamespace}[to][]" placeholder="JJ" type="number" value="{arguments.to.0}"/>
+                            <label class="form-label visually-hidden" for="to-day"><f:translate extensionName="VdSolr" id="day_label"/></label>
+                            <f:form.textfield additionalAttributes="{max: 31, min: 1}" class="form-control" id="to-day" name="{pluginNamespace}[to][]" placeholder="{f:translate(extensionName: 'VdSolr', id: 'day_placeholder')}" type="number" value="{arguments.to.0}"/>
                         </div>
                     </div>
                     <div class="vd-form-flex__item vd-form-flex__item--2-char-width">
                         <div class="mb-3">
-                            <label class="form-label visually-hidden" for="to-month">Mois</label>
-                            <f:form.textfield additionalAttributes="{max: 12, min: 1}" class="form-control" id="to-month" name="{pluginNamespace}[to][]" placeholder="MM" type="number" value="{arguments.to.1}"/>
+                            <label class="form-label visually-hidden" for="to-month"><f:translate extensionName="VdSolr" id="month_label"/></label>
+                            <f:form.textfield additionalAttributes="{max: 12, min: 1}" class="form-control" id="to-month" name="{pluginNamespace}[to][]" placeholder="{f:translate(extensionName: 'VdSolr', id: 'month_placeholder')}" type="number" value="{arguments.to.1}"/>
                         </div>
                     </div>
                     <div class="vd-form-flex__item vd-form-flex__item--4-char-width">
                         <div class="mb-3">
-                            <label class="form-label visually-hidden" for="to-year">Année</label>
-                            <f:form.textfield additionalAttributes="{max: currentYear, min: 1998}" class="form-control" id="to-year" name="{pluginNamespace}[to][]" placeholder="AAAA" type="number" value="{arguments.to.2}"/>
+                            <label class="form-label visually-hidden" for="to-year"><f:translate extensionName="VdSolr" id="year_label"/></label>
+                            <f:form.textfield additionalAttributes="{max: currentYear, min: 1998}" class="form-control" id="to-year" name="{pluginNamespace}[to][]" placeholder="{f:translate(extensionName: 'VdSolr', id: 'year_placeholder')}" type="number" value="{arguments.to.2}"/>
                         </div>
                     </div>
                 </div>

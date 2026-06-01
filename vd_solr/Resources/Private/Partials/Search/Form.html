@@ -1,12 +1,12 @@
 <html data-namespace-typo3-fluid="true" xmlns:f="http://typo3.org/ns/TYPO3/Fluid/ViewHelpers" xmlns:s="http://typo3.org/ns/ApacheSolrForTypo3/Solr/ViewHelpers">
     <s:searchForm additionalAttributes="{role: 'search'}" additionalFilters="{additionalFilters}" addSuggestUrl="0" class="d-flex justify-content-center w-100" suggestHeader="{s:translate(id: 'suggest_header')}">
-        <label class="form-label visually-hidden" for="vd-search-input">Champ de recherche</label>
+        <label class="form-label visually-hidden" for="vd-search-input">{f:translate(extensionName: 'VdSolr', id: 'search_field_label')}</label>
         <div class="input-group" id="search-input-container">
-            <input class="w-100 p-3 form-control border" id="vd-search-input" name="{pluginNamespace}[q]" placeholder="Entrez votre recherche" type="search" value="{q}"/>
+            <input class="w-100 p-3 form-control border" id="vd-search-input" name="{pluginNamespace}[q]" placeholder="{f:translate(extensionName: 'VdSolr', id: 'search_placeholder')}" type="search" value="{q}"/>
             <span class="input-group-btn position-absolute vd-search-button-container">
                 <button class="btn" type="submit">
                     <i aria-hidden="true" class="fa-search fa-solid text-primary vd-search-icon"></i>
-                    <span class="visually-hidden">Soumettre la recherche</span>
+                    <span class="visually-hidden">{f:translate(extensionName: 'VdSolr', id: 'submit_search')}</span>
                 </button>
             </span>
         </div>
@@ -18,7 +18,7 @@
                     <div class="col-10">
                         <div class="mb-3">
                             <label class="form-label h5 d-block mt-0" for="keyword" id="search-form-label">
-                                Rechercher<span class="visually-hidden"> dans les {type}</span>
+                                <f:translate extensionName="VdSolr" id="search_in_type" arguments="{0: type}"/>
                             </label>
                             <input aria-describedby="search-form-label" class="form-control" id="keyword" name="{pluginNamespace}[q]" type="text" value="{q}">
                         </div>
@@ -33,9 +33,9 @@
                         </div>
                     </f:if>
                 </div>
-                <button type="submit" class="btn btn-dark mb-3 mb-sm-0 me-1">Rechercher</button>
+                <button type="submit" class="btn btn-dark mb-3 mb-sm-0 me-1"><f:translate extensionName="VdSolr" id="search_button"/></button>
                 <f:if condition="{arguments -> f:count()} > 1 || {arguments.q} != ''">
-                    <f:link.page class="btn btn-secondary mb-3 mb-sm-0" id="reset-button">Réinitialiser</f:link.page>
+                    <f:link.page class="btn btn-secondary mb-3 mb-sm-0" id="reset-button"><f:translate extensionName="VdSolr" id="reset_button"/></f:link.page>
                 </f:if>
             </s:searchForm>
         </div>

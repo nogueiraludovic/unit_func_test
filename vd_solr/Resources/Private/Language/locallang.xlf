@@ -12,6 +12,102 @@
 			<trans-unit id="no_results_for_press_release" resname="no_results_for_press_release">
 				<source>No press release found.</source>
 			</trans-unit>
+			<trans-unit id="day_label" resname="day_label">
+				<source>Day</source>
+			</trans-unit>
+			<trans-unit id="day_placeholder" resname="day_placeholder">
+				<source>DD</source>
+			</trans-unit>
+			<trans-unit id="decisions_type" resname="decisions_type">
+				<source>Conseil d'État decisions</source>
+			</trans-unit>
+			<trans-unit id="filter_results" resname="filter_results">
+				<source>Filter results</source>
+			</trans-unit>
+			<trans-unit id="month_label" resname="month_label">
+				<source>Month</source>
+			</trans-unit>
+			<trans-unit id="month_placeholder" resname="month_placeholder">
+				<source>MM</source>
+			</trans-unit>
+			<trans-unit id="news_type" resname="news_type">
+				<source>News</source>
+			</trans-unit>
+			<trans-unit id="next_page" resname="next_page">
+				<source>Next page</source>
+			</trans-unit>
+			<trans-unit id="no_element_found" resname="no_element_found">
+				<source>No element matching your search was found.</source>
+			</trans-unit>
+			<trans-unit id="no_results" resname="no_results">
+				<source>No results</source>
+			</trans-unit>
+			<trans-unit id="no_results_query" resname="no_results_query">
+				<source>No results for "%1$s"</source>
+			</trans-unit>
+			<trans-unit id="page_of_total" resname="page_of_total">
+				<source>%1$s of %2$s</source>
+			</trans-unit>
+			<trans-unit id="press_releases_type" resname="press_releases_type">
+				<source>Press releases</source>
+			</trans-unit>
+			<trans-unit id="previous_page" resname="previous_page">
+				<source>Previous page</source>
+			</trans-unit>
+			<trans-unit id="published_from" resname="published_from">
+				<source>Published from</source>
+			</trans-unit>
+			<trans-unit id="published_on_prefix" resname="published_on_prefix">
+				<source>Published on</source>
+			</trans-unit>
+			<trans-unit id="reset_button" resname="reset_button">
+				<source>Reset</source>
+			</trans-unit>
+			<trans-unit id="result_count_singular" resname="result_count_singular">
+				<source>%1$s result found</source>
+			</trans-unit>
+			<trans-unit id="result_count_query_singular" resname="result_count_query_singular">
+				<source>%1$s result for "%2$s"</source>
+			</trans-unit>
+			<trans-unit id="results_count_plural" resname="results_count_plural">
+				<source>%1$s results found</source>
+			</trans-unit>
+			<trans-unit id="results_count_query_plural" resname="results_count_query_plural">
+				<source>%1$s results for "%2$s"</source>
+			</trans-unit>
+			<trans-unit id="results_count_with_cat_plural" resname="results_count_with_cat_plural">
+				<source>%1$s results found for category "%2$s"</source>
+			</trans-unit>
+			<trans-unit id="result_count_with_cat_singular" resname="result_count_with_cat_singular">
+				<source>%1$s result found for category "%2$s"</source>
+			</trans-unit>
+			<trans-unit id="search_button" resname="search_button">
+				<source>Search</source>
+			</trans-unit>
+			<trans-unit id="search_field_label" resname="search_field_label">
+				<source>Search field</source>
+			</trans-unit>
+			<trans-unit id="search_in_type" resname="search_in_type">
+				<source>Search in %1$s</source>
+			</trans-unit>
+			<trans-unit id="search_placeholder" resname="search_placeholder">
+				<source>Enter your search</source>
+			</trans-unit>
+			<trans-unit id="session_on_prefix" resname="session_on_prefix">
+				<source>Session of</source>
+			</trans-unit>
+			<trans-unit id="submit_search" resname="submit_search">
+				<source>Submit search</source>
+			</trans-unit>
+			<trans-unit id="to_label" resname="to_label">
+				<source>to</source>
+			</trans-unit>
+			<trans-unit id="year_label" resname="year_label">
+				<source>Year</source>
+			</trans-unit>
+			<trans-unit id="year_placeholder" resname="year_placeholder">
+				<source>YYYY</source>
+			</trans-unit>
 		</body>
 	</file>
 </xliff>
