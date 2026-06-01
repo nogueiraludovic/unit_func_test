@@ -26,17 +26,17 @@ TCEFORM.tt_content {
   filelink_size.disabled = 1
   frame_class.disabled = 1
   header_layout {
-    addItems.6 = Titre H2 - Autorité uniquement
+    addItems.6 = LLL:EXT:vd_site/Resources/Private/Language/locallang_be.xlf:tt_content.header_layout.addItems.6
     altLabels {
-      2 = Titre H2
-      3 = Titre H3
-      4 = Titre H4
-      5 = Titre H5
+      2 = LLL:EXT:vd_site/Resources/Private/Language/locallang_be.xlf:tt_content.header_layout.altLabels.2
+      3 = LLL:EXT:vd_site/Resources/Private/Language/locallang_be.xlf:tt_content.header_layout.altLabels.3
+      4 = LLL:EXT:vd_site/Resources/Private/Language/locallang_be.xlf:tt_content.header_layout.altLabels.4
+      5 = LLL:EXT:vd_site/Resources/Private/Language/locallang_be.xlf:tt_content.header_layout.altLabels.5
     }
     types {
       menu_abstract.addItems {
-        7 = Titre H2 - VD Titre de menu
-        8 = Titre H3 - Lien sans style
+        7 = LLL:EXT:vd_site/Resources/Private/Language/locallang_be.xlf:tt_content.header_layout.menu_abstract.addItems.7
+        8 = LLL:EXT:vd_site/Resources/Private/Language/locallang_be.xlf:tt_content.header_layout.menu_abstract.addItems.8
       }
       menu_pages < .menu_abstract
       menu_section < .menu_abstract
@@ -55,14 +55,14 @@ TCEFORM.tt_content {
     disabled = 1
     types {
       div {
-        altLabels.1 = Séparateur de section
+        altLabels.1 = LLL:EXT:vd_site/Resources/Private/Language/locallang_be.xlf:tt_content.layout.div.altLabels.1
         disabled = 0
         removeItems = 2,3
       }
       cards_group {
         addItems {
-          3-cols = 3 colonnes
-          4-cols = 4 colonnes
+          3-cols = LLL:EXT:vd_site/Resources/Private/Language/locallang_be.xlf:tt_content.layout.cards_group.addItems.3cols
+          4-cols = LLL:EXT:vd_site/Resources/Private/Language/locallang_be.xlf:tt_content.layout.cards_group.addItems.4cols
         }
         default = 4
         disabled = 0
@@ -70,23 +70,23 @@ TCEFORM.tt_content {
       }
       links_box {
         addItems {
-          white = Fond blanc
-          light = Fond gris
-          primary = Fond vert
-          secondary = Fond violet
-          tertiary = Fond bleu
+          white = LLL:EXT:vd_site/Resources/Private/Language/locallang_be.xlf:tt_content.layout.links_box.addItems.white
+          light = LLL:EXT:vd_site/Resources/Private/Language/locallang_be.xlf:tt_content.layout.links_box.addItems.light
+          primary = LLL:EXT:vd_site/Resources/Private/Language/locallang_be.xlf:tt_content.layout.links_box.addItems.primary
+          secondary = LLL:EXT:vd_site/Resources/Private/Language/locallang_be.xlf:tt_content.layout.links_box.addItems.secondary
+          tertiary = LLL:EXT:vd_site/Resources/Private/Language/locallang_be.xlf:tt_content.layout.links_box.addItems.tertiary
         }
         default = default
         disabled = 0
         removeItems = 0,1,2,3
       }
       menu_pages {
-        addItems.4 = Menu sans puces
+        addItems.4 = LLL:EXT:vd_site/Resources/Private/Language/locallang_be.xlf:tt_content.layout.menu_pages.addItems.4
         disabled = 0
         removeItems = 1,2,3
       }
       menu_sitemap_pages < .menu_pages
-      menu_sitemap_pages.addItems.5 = Toute l'arborescence
+      menu_sitemap_pages.addItems.5 = LLL:EXT:vd_site/Resources/Private/Language/locallang_be.xlf:tt_content.layout.menu_sitemap_pages.addItems.5
     }
   }
   linkToTop.disabled = 1
@@ -100,7 +100,7 @@ TCEFORM.tt_content {
   sys_language_uid.disabled = 1
   table_class.disabled = 1
   table_enclosure.disabled = 1
-  table_header_position.addItems.3 = En haut à gauche
+  table_header_position.addItems.3 = LLL:EXT:vd_site/Resources/Private/Language/locallang_be.xlf:tt_content.table_header_position.addItems.3
   table_tfoot.disabled = 1
   target.disabled = 1
   uploads_description.disabled = 1

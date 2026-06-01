@@ -19,15 +19,15 @@ plugin.tx_solr {
           pages = TEXT
           pages.value = Pages
           siel_ce = TEXT
-          siel_ce.value = Conseil d'État
+          siel_ce.data = LLL:EXT:vd_solr/Resources/Private/Language/locallang.xlf:facet.type.conseil_etat
           siel_gc = TEXT
-          siel_gc.value = Grand Conseil
+          siel_gc.data = LLL:EXT:vd_solr/Resources/Private/Language/locallang.xlf:facet.type.grand_conseil
           tx_news_domain_model_news = TEXT
-          tx_news_domain_model_news.value = Actualités
+          tx_news_domain_model_news.data = LLL:EXT:vd_solr/Resources/Private/Language/locallang.xlf:facet.type.actualites
           tx_vdpressreleases_domain_model_pressrelease = TEXT
-          tx_vdpressreleases_domain_model_pressrelease.value = Communiqués de presse
+          tx_vdpressreleases_domain_model_pressrelease.data = LLL:EXT:vd_solr/Resources/Private/Language/locallang.xlf:facet.type.communiques_de_presse
           tx_vdprestations_domain_model_prestation = TEXT
-          tx_vdprestations_domain_model_prestation.value = Prestations
+          tx_vdprestations_domain_model_prestation.data = LLL:EXT:vd_solr/Resources/Private/Language/locallang.xlf:facet.type.prestations
         }
       }
       keepAllFacetsOnSelection = 1
@@ -60,15 +60,15 @@ plugin.tx_solr {
   view.templateFiles.results.availableTemplates {
     news {
       file = NewsResults
-      label = Actualités
+      label = LLL:EXT:vd_solr/Resources/Private/Language/locallang.xlf:template.news.label
     }
     pressReleases {
       file = PressReleasesResults
-      label = Communiqués de presse
+      label = LLL:EXT:vd_solr/Resources/Private/Language/locallang.xlf:template.pressReleases.label
     }
     siel {
       file = SielResults
-      label = Grand Conseil
+      label = LLL:EXT:vd_solr/Resources/Private/Language/locallang.xlf:template.siel.label
     }
   }
 }

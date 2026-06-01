@@ -143,6 +143,38 @@
 				<source>YYYY</source>
 				<target state="translated">AAAA</target>
 			</trans-unit>
+			<trans-unit id="facet.type.conseil_etat" resname="facet.type.conseil_etat">
+				<source>Conseil d'État</source>
+				<target state="translated">Conseil d'État</target>
+			</trans-unit>
+			<trans-unit id="facet.type.grand_conseil" resname="facet.type.grand_conseil">
+				<source>Grand Conseil</source>
+				<target state="translated">Grand Conseil</target>
+			</trans-unit>
+			<trans-unit id="facet.type.actualites" resname="facet.type.actualites">
+				<source>News</source>
+				<target state="translated">Actualités</target>
+			</trans-unit>
+			<trans-unit id="facet.type.communiques_de_presse" resname="facet.type.communiques_de_presse">
+				<source>Press releases</source>
+				<target state="translated">Communiqués de presse</target>
+			</trans-unit>
+			<trans-unit id="facet.type.prestations" resname="facet.type.prestations">
+				<source>Services</source>
+				<target state="translated">Prestations</target>
+			</trans-unit>
+			<trans-unit id="template.news.label" resname="template.news.label">
+				<source>News</source>
+				<target state="translated">Actualités</target>
+			</trans-unit>
+			<trans-unit id="template.pressReleases.label" resname="template.pressReleases.label">
+				<source>Press releases</source>
+				<target state="translated">Communiqués de presse</target>
+			</trans-unit>
+			<trans-unit id="template.siel.label" resname="template.siel.label">
+				<source>Grand Council</source>
+				<target state="translated">Grand Conseil</target>
+			</trans-unit>
 		</body>
 	</file>
 </xliff>

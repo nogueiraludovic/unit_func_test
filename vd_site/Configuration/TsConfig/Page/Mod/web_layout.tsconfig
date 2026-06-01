@@ -11,10 +11,10 @@ mod.web_layout {
           name = LLL:EXT:vd_site/Resources/Private/Language/locallang_be.xlf:main_content
         }
       }
-      title = 1 colonne (par défaut)
+      title = LLL:EXT:vd_site/Resources/Private/Language/locallang_be.xlf:backend_layout.1_col.title
     }
     1_col_white_headline < .1_col
-    1_col_white_headline.title = 1 colonne avec en-tête
+    1_col_white_headline.title = LLL:EXT:vd_site/Resources/Private/Language/locallang_be.xlf:backend_layout.1_col_white_headline.title
     2_col {
       config.backend_layout {
         colCount = 12
@@ -26,10 +26,10 @@ mod.web_layout {
           name = LLL:EXT:vd_site/Resources/Private/Language/locallang_be.xlf:main_content
         }
       }
-      title = 2 colonnes
+      title = LLL:EXT:vd_site/Resources/Private/Language/locallang_be.xlf:backend_layout.2_col.title
     }
     2_col_navigation < .2_col
-    2_col_navigation.title = 2 colonnes (navigation + colonne de droite éditable)
+    2_col_navigation.title = LLL:EXT:vd_site/Resources/Private/Language/locallang_be.xlf:backend_layout.2_col_navigation.title
     2_col_search {
       config.backend_layout {
         colCount = 12
@@ -49,25 +49,25 @@ mod.web_layout {
           }
         }
       }
-      title = 2 colonnes (plugin de recherche)
+      title = LLL:EXT:vd_site/Resources/Private/Language/locallang_be.xlf:backend_layout.2_col_search.title
     }
     home < .1_col
     home {
       config.backend_layout.rows.1.columns.1.disallowed >
-      title = Page d'accueil
+      title = LLL:EXT:vd_site/Resources/Private/Language/locallang_be.xlf:backend_layout.home.title
     }
     minimal < .1_col
     minimal.title = Minimal
     no_headline < .1_col
-    no_headline.title = Sans en-tête
+    no_headline.title = LLL:EXT:vd_site/Resources/Private/Language/locallang_be.xlf:backend_layout.no_headline.title
     no_headline_center < .1_col
-    no_headline_center.title = Sans en-tête centré
+    no_headline_center.title = LLL:EXT:vd_site/Resources/Private/Language/locallang_be.xlf:backend_layout.no_headline_center.title
     theme {
       config.backend_layout {
         colCount = 0
         rowCount = 0
       }
-      title = Thèmes
+      title = LLL:EXT:vd_site/Resources/Private/Language/locallang_be.xlf:backend_layout.theme.title
     }
   }
   tt_content.preview.list.ttaddress_listview >
