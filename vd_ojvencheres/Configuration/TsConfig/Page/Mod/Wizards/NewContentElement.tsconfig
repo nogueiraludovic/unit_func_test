@@ -1,9 +1,9 @@
 mod.wizards.newContentElement.wizardItems.vd_ojvencheres {
   elements {
     vdojvencheres_itemlist {
-      description = Affiche la liste des objets aux enchères
+      description = LLL:EXT:vd_ojvencheres/Resources/Private/Language/locallang_db_new_content_el.xlf:plugins_vdojvencheres_itemlist_description
       iconIdentifier = content-plugin
-      title = Liste des objets
+      title = LLL:EXT:vd_ojvencheres/Resources/Private/Language/locallang_db_new_content_el.xlf:plugins_vdojvencheres_itemlist_title
       tt_content_defValues {
         CType = list
         list_type = vdojvencheres_itemlist
@@ -11,29 +11,29 @@ mod.wizards.newContentElement.wizardItems.vd_ojvencheres {
     }
     vdojvencheres_itemshow < .vdojvencheres_itemlist
     vdojvencheres_itemshow {
-      description = Affiche le détail d'un objet aux enchères
-      title = Détail d'un objet
+      description = LLL:EXT:vd_ojvencheres/Resources/Private/Language/locallang_db_new_content_el.xlf:plugins_vdojvencheres_itemshow_description
+      title = LLL:EXT:vd_ojvencheres/Resources/Private/Language/locallang_db_new_content_el.xlf:plugins_vdojvencheres_itemshow_title
       tt_content_defValues.list_type = vdojvencheres_itemshow
     }
     vdojvencheres_newsletter < .vdojvencheres_itemlist
     vdojvencheres_newsletter {
-      description = Affiche la liste des objets aux enchères pour la vue "newsletter"
-      title = Newsletter
+      description = LLL:EXT:vd_ojvencheres/Resources/Private/Language/locallang_db_new_content_el.xlf:plugins_vdojvencheres_newsletter_description
+      title = LLL:EXT:vd_ojvencheres/Resources/Private/Language/locallang_db_new_content_el.xlf:plugins_vdojvencheres_newsletter_title
       tt_content_defValues.list_type = vdojvencheres_newsletter
     }
     vdojvencheres_salelist < .vdojvencheres_itemlist
     vdojvencheres_salelist {
-      description = Affiche la liste des ventes aux enchères
-      title = Liste des ventes
+      description = LLL:EXT:vd_ojvencheres/Resources/Private/Language/locallang_db_new_content_el.xlf:plugins_vdojvencheres_salelist_description
+      title = LLL:EXT:vd_ojvencheres/Resources/Private/Language/locallang_db_new_content_el.xlf:plugins_vdojvencheres_salelist_title
       tt_content_defValues.list_type = vdojvencheres_salelist
     }
     vdojvencheres_saleshow < .vdojvencheres_itemlist
     vdojvencheres_saleshow {
-      description = Affiche le détail d'une vente aux enchères
-      title = Détail d'une vente
+      description = LLL:EXT:vd_ojvencheres/Resources/Private/Language/locallang_db_new_content_el.xlf:plugins_vdojvencheres_saleshow_description
+      title = LLL:EXT:vd_ojvencheres/Resources/Private/Language/locallang_db_new_content_el.xlf:plugins_vdojvencheres_saleshow_title
       tt_content_defValues.list_type = vdojvencheres_saleshow
     }
   }
-  header = OJV Enchères
+  header = LLL:EXT:vd_ojvencheres/Resources/Private/Language/locallang_db_new_content_el.xlf:plugins_vdojvencheres_header
   show = *
 }

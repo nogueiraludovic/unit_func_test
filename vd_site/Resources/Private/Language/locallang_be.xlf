@@ -15,6 +15,96 @@
 			<trans-unit id="no_result" resname="no_result">
 				<source>No result for this search.</source>
 			</trans-unit>
+			<trans-unit id="backend_layout.1_col.title" resname="backend_layout.1_col.title">
+				<source>1 column (default)</source>
+			</trans-unit>
+			<trans-unit id="backend_layout.1_col_white_headline.title" resname="backend_layout.1_col_white_headline.title">
+				<source>1 column with headline</source>
+			</trans-unit>
+			<trans-unit id="backend_layout.2_col.title" resname="backend_layout.2_col.title">
+				<source>2 columns</source>
+			</trans-unit>
+			<trans-unit id="backend_layout.2_col_navigation.title" resname="backend_layout.2_col_navigation.title">
+				<source>2 columns (navigation + right column)</source>
+			</trans-unit>
+			<trans-unit id="backend_layout.2_col_search.title" resname="backend_layout.2_col_search.title">
+				<source>2 columns (search plugin)</source>
+			</trans-unit>
+			<trans-unit id="backend_layout.home.title" resname="backend_layout.home.title">
+				<source>Homepage</source>
+			</trans-unit>
+			<trans-unit id="backend_layout.no_headline.title" resname="backend_layout.no_headline.title">
+				<source>No headline</source>
+			</trans-unit>
+			<trans-unit id="backend_layout.no_headline_center.title" resname="backend_layout.no_headline_center.title">
+				<source>No headline (centered)</source>
+			</trans-unit>
+			<trans-unit id="backend_layout.theme.title" resname="backend_layout.theme.title">
+				<source>Themes</source>
+			</trans-unit>
+			<trans-unit id="tt_content.header_layout.addItems.6" resname="tt_content.header_layout.addItems.6">
+				<source>H2 title - Authority only</source>
+			</trans-unit>
+			<trans-unit id="tt_content.header_layout.altLabels.2" resname="tt_content.header_layout.altLabels.2">
+				<source>H2 title</source>
+			</trans-unit>
+			<trans-unit id="tt_content.header_layout.altLabels.3" resname="tt_content.header_layout.altLabels.3">
+				<source>H3 title</source>
+			</trans-unit>
+			<trans-unit id="tt_content.header_layout.altLabels.4" resname="tt_content.header_layout.altLabels.4">
+				<source>H4 title</source>
+			</trans-unit>
+			<trans-unit id="tt_content.header_layout.altLabels.5" resname="tt_content.header_layout.altLabels.5">
+				<source>H5 title</source>
+			</trans-unit>
+			<trans-unit id="tt_content.header_layout.menu_abstract.addItems.7" resname="tt_content.header_layout.menu_abstract.addItems.7">
+				<source>H2 title - VD Menu title</source>
+			</trans-unit>
+			<trans-unit id="tt_content.header_layout.menu_abstract.addItems.8" resname="tt_content.header_layout.menu_abstract.addItems.8">
+				<source>H3 title - Link without style</source>
+			</trans-unit>
+			<trans-unit id="tt_content.layout.div.altLabels.1" resname="tt_content.layout.div.altLabels.1">
+				<source>Section separator</source>
+			</trans-unit>
+			<trans-unit id="tt_content.layout.cards_group.addItems.3cols" resname="tt_content.layout.cards_group.addItems.3cols">
+				<source>3 columns</source>
+			</trans-unit>
+			<trans-unit id="tt_content.layout.cards_group.addItems.4cols" resname="tt_content.layout.cards_group.addItems.4cols">
+				<source>4 columns</source>
+			</trans-unit>
+			<trans-unit id="tt_content.layout.links_box.addItems.white" resname="tt_content.layout.links_box.addItems.white">
+				<source>White background</source>
+			</trans-unit>
+			<trans-unit id="tt_content.layout.links_box.addItems.light" resname="tt_content.layout.links_box.addItems.light">
+				<source>Grey background</source>
+			</trans-unit>
+			<trans-unit id="tt_content.layout.links_box.addItems.primary" resname="tt_content.layout.links_box.addItems.primary">
+				<source>Green background</source>
+			</trans-unit>
+			<trans-unit id="tt_content.layout.links_box.addItems.secondary" resname="tt_content.layout.links_box.addItems.secondary">
+				<source>Purple background</source>
+			</trans-unit>
+			<trans-unit id="tt_content.layout.links_box.addItems.tertiary" resname="tt_content.layout.links_box.addItems.tertiary">
+				<source>Blue background</source>
+			</trans-unit>
+			<trans-unit id="tt_content.layout.menu_pages.addItems.4" resname="tt_content.layout.menu_pages.addItems.4">
+				<source>Menu without bullets</source>
+			</trans-unit>
+			<trans-unit id="tt_content.layout.menu_sitemap_pages.addItems.5" resname="tt_content.layout.menu_sitemap_pages.addItems.5">
+				<source>Full site tree</source>
+			</trans-unit>
+			<trans-unit id="tt_content.table_header_position.addItems.3" resname="tt_content.table_header_position.addItems.3">
+				<source>Top left</source>
+			</trans-unit>
+			<trans-unit id="tx_news.templateLayouts.10" resname="tx_news.templateLayouts.10">
+				<source>Agenda / Events viewer</source>
+			</trans-unit>
+			<trans-unit id="tx_news.templateLayouts.20" resname="tx_news.templateLayouts.20">
+				<source>Latest news viewer</source>
+			</trans-unit>
+			<trans-unit id="tx_plainfaq.templateLayouts.1" resname="tx_plainfaq.templateLayouts.1">
+				<source>Accordion template</source>
+			</trans-unit>
 		</body>
 	</file>
 </xliff>

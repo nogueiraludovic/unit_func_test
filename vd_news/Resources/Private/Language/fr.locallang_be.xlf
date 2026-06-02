@@ -19,6 +19,10 @@
 				<source>Target</source>
 				<target state="translated">Cible</target>
 			</trans-unit>
+			<trans-unit id="link_handler.news_category.label" resname="link_handler.news_category.label">
+				<source>News (category)</source>
+				<target state="translated">News (catégorie)</target>
+			</trans-unit>
 		</body>
 	</file>
 </xliff>

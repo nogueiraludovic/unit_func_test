@@ -108,6 +108,30 @@
 			<trans-unit id="year_placeholder" resname="year_placeholder">
 				<source>YYYY</source>
 			</trans-unit>
+			<trans-unit id="facet.type.conseil_etat" resname="facet.type.conseil_etat">
+				<source>Conseil d'État</source>
+			</trans-unit>
+			<trans-unit id="facet.type.grand_conseil" resname="facet.type.grand_conseil">
+				<source>Grand Conseil</source>
+			</trans-unit>
+			<trans-unit id="facet.type.actualites" resname="facet.type.actualites">
+				<source>News</source>
+			</trans-unit>
+			<trans-unit id="facet.type.communiques_de_presse" resname="facet.type.communiques_de_presse">
+				<source>Press releases</source>
+			</trans-unit>
+			<trans-unit id="facet.type.prestations" resname="facet.type.prestations">
+				<source>Services</source>
+			</trans-unit>
+			<trans-unit id="template.news.label" resname="template.news.label">
+				<source>News</source>
+			</trans-unit>
+			<trans-unit id="template.pressReleases.label" resname="template.pressReleases.label">
+				<source>Press releases</source>
+			</trans-unit>
+			<trans-unit id="template.siel.label" resname="template.siel.label">
+				<source>Grand Council</source>
+			</trans-unit>
 		</body>
 	</file>
 </xliff>

@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xliff version="1.2" xmlns="urn:oasis:names:tc:xliff:document:1.2">
+	<file datatype="plaintext" original="EXT:vd_site_offres_emploi/Resources/Private/Language/locallang_be.xlf" source-language="en" target-language="fr">
+		<header/>
+		<body>
+			<trans-unit id="backend_layout.default.title" resname="backend_layout.default.title">
+				<source>Default</source>
+				<target state="translated">Par défaut</target>
+			</trans-unit>
+		</body>
+	</file>
+</xliff>

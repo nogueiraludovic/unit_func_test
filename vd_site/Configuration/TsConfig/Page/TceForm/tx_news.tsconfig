@@ -1,4 +1,4 @@
 tx_news.templateLayouts {
-  10 = Afficheur Agenda / Événements
-  20 = Afficheur News Latest
+  10 = LLL:EXT:vd_site/Resources/Private/Language/locallang_be.xlf:tx_news.templateLayouts.10
+  20 = LLL:EXT:vd_site/Resources/Private/Language/locallang_be.xlf:tx_news.templateLayouts.20
 }

@@ -6,7 +6,7 @@ mod.web_layout {
         colCount = 1
         rowCount = 1
       }
-      title = Par défaut
+      title = LLL:EXT:vd_site_offres_emploi/Resources/Private/Language/locallang_be.xlf:backend_layout.default.title
     }
   }
   tt_content >

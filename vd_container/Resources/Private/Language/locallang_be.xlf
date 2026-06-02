@@ -75,6 +75,27 @@
 			<trans-unit id="two_columns_same" resname="two_columns_same">
 				<source>2 columns, same gap</source>
 			</trans-unit>
+			<trans-unit id="container.layout.dark_green" resname="container.layout.dark_green">
+				<source>Dark green background</source>
+			</trans-unit>
+			<trans-unit id="container.layout.dark_grey" resname="container.layout.dark_grey">
+				<source>Dark grey background</source>
+			</trans-unit>
+			<trans-unit id="container.layout.white" resname="container.layout.white">
+				<source>White background</source>
+			</trans-unit>
+			<trans-unit id="container.layout.light_grey" resname="container.layout.light_grey">
+				<source>Light grey background</source>
+			</trans-unit>
+			<trans-unit id="container.layout.light_green" resname="container.layout.light_green">
+				<source>Light green background</source>
+			</trans-unit>
+			<trans-unit id="container.layout.light_purple" resname="container.layout.light_purple">
+				<source>Light purple background</source>
+			</trans-unit>
+			<trans-unit id="container.layout.light_blue" resname="container.layout.light_blue">
+				<source>Light blue background</source>
+			</trans-unit>
 		</body>
 	</file>
 </xliff>

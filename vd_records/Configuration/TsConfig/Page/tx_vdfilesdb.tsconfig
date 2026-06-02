@@ -31,14 +31,14 @@ TCEFORM.tx_vdfilesdb_file {
   }
 [43569 in tree.rootLineIds]
   TCEFORM.tx_vdfilesdb_file {
-    categoryid.label = Secteur concerné
+    categoryid.label = LLL:EXT:vd_records/Resources/Private/Language/locallang_db.xlf:tsconfig.categoryid.sector
     categoryid2.disabled = 1
     categoryid3.disabled = 1
     categoryid4.disabled = 1
     categoryid5.disabled = 1
     categoryid6.disabled = 1
     datedocument.disabled = 1
-    description.label = Description (à usage interne)
+    description.label = LLL:EXT:vd_records/Resources/Private/Language/locallang_db.xlf:tsconfig.description.internal
     filepathbyref1.disabled = 1
     filepathbyref2.disabled = 1
     filepathbyref3.disabled = 1
@@ -50,15 +50,15 @@ TCEFORM.tx_vdfilesdb_file {
 [48129 in tree.rootLineIds]
   TCEFORM.tx_vdfilesdb_file {
     categoryid {
-      label = Thèmes
+      label = LLL:EXT:vd_records/Resources/Private/Language/locallang_db.xlf:tsconfig.categoryid.themes
       PAGE_TSCONFIG_ID = 48130
     }
     categoryid2 {
-      label = Tendances stat.
+      label = LLL:EXT:vd_records/Resources/Private/Language/locallang_db.xlf:tsconfig.categoryid.trends
       PAGE_TSCONFIG_ID = 48131
     }
     categoryid3 {
-      label = Evaluation UDD
+      label = LLL:EXT:vd_records/Resources/Private/Language/locallang_db.xlf:tsconfig.categoryid.evaluation
       PAGE_TSCONFIG_ID = 48132
     }
     categoryid4.disabled = 1
@@ -74,25 +74,25 @@ TCEFORM.tx_vdfilesdb_file {
 [50084 in tree.rootLineIds]
   TCEFORM.tx_vdfilesdb_file {
     categoryid {
-      label = Type de projet
+      label = LLL:EXT:vd_records/Resources/Private/Language/locallang_db.xlf:tsconfig.categoryid.project_type
       PAGE_TSCONFIG_ID = 50088
     }
     categoryid2 {
-      label = Région Concernée
+      label = LLL:EXT:vd_records/Resources/Private/Language/locallang_db.xlf:tsconfig.categoryid.region
       PAGE_TSCONFIG_ID = 50087
     }
     categoryid3 {
-      label = Domaine d'intervention
+      label = LLL:EXT:vd_records/Resources/Private/Language/locallang_db.xlf:tsconfig.categoryid.intervention_domain
       PAGE_TSCONFIG_ID = 50086
     }
     categoryid4 {
-      label = Année
+      label = LLL:EXT:vd_records/Resources/Private/Language/locallang_db.xlf:tsconfig.categoryid.year
       PAGE_TSCONFIG_ID = 50085
     }
     categoryid5.disabled = 1
     categoryid6.disabled = 1
-    datedocument.label = Date du document
-    description.label = porteur du projet
+    datedocument.label = LLL:EXT:vd_records/Resources/Private/Language/locallang_db.xlf:date_document
+    description.label = LLL:EXT:vd_records/Resources/Private/Language/locallang_db.xlf:tsconfig.description.project_holder
     filepath.disabled = 1
     filepathbyref1.disabled = 1
     filepathbyref2.disabled = 1
@@ -101,7 +101,7 @@ TCEFORM.tx_vdfilesdb_file {
 [58499 in tree.rootLineIds]
   TCEFORM.tx_vdfilesdb_file {
     categoryid {
-      label = Service
+      label = LLL:EXT:vd_records/Resources/Private/Language/locallang_db.xlf:tsconfig.categoryid.service
       PAGE_TSCONFIG_ID = 58533
     }
     categoryid2.disabled = 1
@@ -115,20 +115,20 @@ TCEFORM.tx_vdfilesdb_file {
     filepathbyref1.disabled = 1
     filepathbyref2.disabled = 1
     no.disabled >
-    title.label = Métier
+    title.label = LLL:EXT:vd_records/Resources/Private/Language/locallang_db.xlf:tsconfig.title.job
   }
 [1048129 in tree.rootLineIds]
   TCEFORM.tx_vdfilesdb_file {
     categoryid {
-      label = Thèmes
+      label = LLL:EXT:vd_records/Resources/Private/Language/locallang_db.xlf:tsconfig.categoryid.themes
       PAGE_TSCONFIG_ID = 48130
     }
     categoryid2 {
-      label = Tendances stat.
+      label = LLL:EXT:vd_records/Resources/Private/Language/locallang_db.xlf:tsconfig.categoryid.trends
       PAGE_TSCONFIG_ID = 48131
     }
     categoryid3 {
-      label = Evaluation UDD
+      label = LLL:EXT:vd_records/Resources/Private/Language/locallang_db.xlf:tsconfig.categoryid.evaluation
       PAGE_TSCONFIG_ID = 48132
     }
     categoryid4.disabled = 1
@@ -144,25 +144,25 @@ TCEFORM.tx_vdfilesdb_file {
 [1050084 in tree.rootLineIds]
   TCEFORM.tx_vdfilesdb_file {
     categoryid {
-      label = Type de projet
+      label = LLL:EXT:vd_records/Resources/Private/Language/locallang_db.xlf:tsconfig.categoryid.project_type
       PAGE_TSCONFIG_ID = 50088
     }
     categoryid2 {
-      label = Région Concernée
+      label = LLL:EXT:vd_records/Resources/Private/Language/locallang_db.xlf:tsconfig.categoryid.region
       PAGE_TSCONFIG_ID = 50087
     }
     categoryid3 {
-      label = Domaine d'intervention
+      label = LLL:EXT:vd_records/Resources/Private/Language/locallang_db.xlf:tsconfig.categoryid.intervention_domain
       PAGE_TSCONFIG_ID = 50086
     }
     categoryid4 {
-      label = Année
+      label = LLL:EXT:vd_records/Resources/Private/Language/locallang_db.xlf:tsconfig.categoryid.year
       PAGE_TSCONFIG_ID = 50085
     }
     categoryid5.disabled = 1
     categoryid6.disabled = 1
-    datedocument.label = Date du document
-    description.label = Porteur du projet
+    datedocument.label = LLL:EXT:vd_records/Resources/Private/Language/locallang_db.xlf:date_document
+    description.label = LLL:EXT:vd_records/Resources/Private/Language/locallang_db.xlf:tsconfig.description.project_holder
     filepath.disabled = 1
     filepathbyref1.disabled = 1
     filepathbyref2.disabled = 1
@@ -171,7 +171,7 @@ TCEFORM.tx_vdfilesdb_file {
 [1058499 in tree.rootLineIds]
   TCEFORM.tx_vdfilesdb_file {
     categoryid {
-      label = Service
+      label = LLL:EXT:vd_records/Resources/Private/Language/locallang_db.xlf:tsconfig.categoryid.service
       PAGE_TSCONFIG_ID = 58533
     }
     categoryid2.disabled = 1
@@ -185,20 +185,20 @@ TCEFORM.tx_vdfilesdb_file {
     filepathbyref1.disabled = 1
     filepathbyref2.disabled = 1
     no.disabled >
-    title.label = Métier
+    title.label = LLL:EXT:vd_records/Resources/Private/Language/locallang_db.xlf:tsconfig.title.job
   }
 [2019163 in tree.rootLineIds]
   TCEFORM.tx_vdfilesdb_file {
     categoryid {
-      label = Jours
+      label = LLL:EXT:vd_records/Resources/Private/Language/locallang_db.xlf:tsconfig.categoryid.days
       PAGE_TSCONFIG_ID = 2019167
     }
     categoryid2 {
-      label = Thématiques
+      label = LLL:EXT:vd_records/Resources/Private/Language/locallang_db.xlf:tsconfig.categoryid.topics
       PAGE_TSCONFIG_ID = 2019164
     }
     categoryid3 {
-      label = Lieux
+      label = LLL:EXT:vd_records/Resources/Private/Language/locallang_db.xlf:tsconfig.categoryid.locations
       PAGE_TSCONFIG_ID = 2019166
     }
     categoryid4.disabled = 1
@@ -209,7 +209,7 @@ TCEFORM.tx_vdfilesdb_file {
         cols = 80
         rows = 8
       }
-      label = Description de l'activité
+      label = LLL:EXT:vd_records/Resources/Private/Language/locallang_db.xlf:tsconfig.description.activity
     }
     datedocument.disabled = 1
     filepath.disabled = 1
@@ -218,7 +218,7 @@ TCEFORM.tx_vdfilesdb_file {
     filepathbyref3.disabled = 1
     keywords {
       disabled >
-      label = Texte supplémentaire
+      label = LLL:EXT:vd_records/Resources/Private/Language/locallang_db.xlf:tsconfig.keywords.additional_text
     }
     vdmunicipalityid.disabled = 1
     vdmunicipalitydistrictid.disabled = 1
@@ -226,19 +226,19 @@ TCEFORM.tx_vdfilesdb_file {
 [2019246 in tree.rootLineIds]
   TCEFORM.tx_vdfilesdb_file {
     categoryid {
-      label = Jours
+      label = LLL:EXT:vd_records/Resources/Private/Language/locallang_db.xlf:tsconfig.categoryid.days
       PAGE_TSCONFIG_ID = 2019249
     }
     categoryid2 {
-      label = Thématiques
+      label = LLL:EXT:vd_records/Resources/Private/Language/locallang_db.xlf:tsconfig.categoryid.topics
       PAGE_TSCONFIG_ID = 2019247
     }
     categoryid3 {
-      label = Lieux
+      label = LLL:EXT:vd_records/Resources/Private/Language/locallang_db.xlf:tsconfig.categoryid.locations
       PAGE_TSCONFIG_ID = 2019248
     }
     categoryid4 {
-      label = Inscription ou préinscription
+      label = LLL:EXT:vd_records/Resources/Private/Language/locallang_db.xlf:tsconfig.categoryid.registration
       PAGE_TSCONFIG_ID = 2019266
     }
     categoryid5.disabled = 1
@@ -248,11 +248,11 @@ TCEFORM.tx_vdfilesdb_file {
         cols = 80
         rows = 8
       }
-      label = Description de l'activité
+      label = LLL:EXT:vd_records/Resources/Private/Language/locallang_db.xlf:tsconfig.description.activity
     }
     keywords {
       disabled >
-      label = Texte supplémentaire
+      label = LLL:EXT:vd_records/Resources/Private/Language/locallang_db.xlf:tsconfig.keywords.additional_text
     }
     datedocument.disabled = 1
     filepath.disabled = 1

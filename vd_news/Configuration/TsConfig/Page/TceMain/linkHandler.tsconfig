@@ -6,7 +6,7 @@ TCEMAIN.linkHandler {
     }
     displayAfter = news
     handler = TYPO3\CMS\Recordlist\LinkHandler\RecordLinkHandler
-    label = News (catégorie)
+    label = LLL:EXT:vd_news/Resources/Private/Language/locallang_be.xlf:link_handler.news_category.label
     scanAfter = page
   }
   news < .news_category

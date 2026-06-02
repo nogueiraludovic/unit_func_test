@@ -275,6 +275,98 @@
 				<source>Web Adviser VD</source>
 				<target state="translated">Conseiller web VD</target>
 			</trans-unit>
+			<trans-unit id="tsconfig.categoryid.sector" resname="tsconfig.categoryid.sector">
+				<source>Concerned sector</source>
+				<target state="translated">Secteur concerné</target>
+			</trans-unit>
+			<trans-unit id="tsconfig.description.internal" resname="tsconfig.description.internal">
+				<source>Description (for internal use)</source>
+				<target state="translated">Description (à usage interne)</target>
+			</trans-unit>
+			<trans-unit id="tsconfig.categoryid.themes" resname="tsconfig.categoryid.themes">
+				<source>Themes</source>
+				<target state="translated">Thèmes</target>
+			</trans-unit>
+			<trans-unit id="tsconfig.categoryid.trends" resname="tsconfig.categoryid.trends">
+				<source>Statistical trends</source>
+				<target state="translated">Tendances stat.</target>
+			</trans-unit>
+			<trans-unit id="tsconfig.categoryid.evaluation" resname="tsconfig.categoryid.evaluation">
+				<source>UDD evaluation</source>
+				<target state="translated">Evaluation UDD</target>
+			</trans-unit>
+			<trans-unit id="tsconfig.categoryid.project_type" resname="tsconfig.categoryid.project_type">
+				<source>Project type</source>
+				<target state="translated">Type de projet</target>
+			</trans-unit>
+			<trans-unit id="tsconfig.categoryid.region" resname="tsconfig.categoryid.region">
+				<source>Concerned region</source>
+				<target state="translated">Région Concernée</target>
+			</trans-unit>
+			<trans-unit id="tsconfig.categoryid.intervention_domain" resname="tsconfig.categoryid.intervention_domain">
+				<source>Intervention domain</source>
+				<target state="translated">Domaine d'intervention</target>
+			</trans-unit>
+			<trans-unit id="tsconfig.categoryid.year" resname="tsconfig.categoryid.year">
+				<source>Year</source>
+				<target state="translated">Année</target>
+			</trans-unit>
+			<trans-unit id="tsconfig.description.project_holder" resname="tsconfig.description.project_holder">
+				<source>Project holder</source>
+				<target state="translated">Porteur du projet</target>
+			</trans-unit>
+			<trans-unit id="tsconfig.categoryid.service" resname="tsconfig.categoryid.service">
+				<source>Service</source>
+				<target state="translated">Service</target>
+			</trans-unit>
+			<trans-unit id="tsconfig.title.job" resname="tsconfig.title.job">
+				<source>Profession</source>
+				<target state="translated">Métier</target>
+			</trans-unit>
+			<trans-unit id="tsconfig.categoryid.days" resname="tsconfig.categoryid.days">
+				<source>Days</source>
+				<target state="translated">Jours</target>
+			</trans-unit>
+			<trans-unit id="tsconfig.categoryid.topics" resname="tsconfig.categoryid.topics">
+				<source>Topics</source>
+				<target state="translated">Thématiques</target>
+			</trans-unit>
+			<trans-unit id="tsconfig.categoryid.locations" resname="tsconfig.categoryid.locations">
+				<source>Locations</source>
+				<target state="translated">Lieux</target>
+			</trans-unit>
+			<trans-unit id="tsconfig.description.activity" resname="tsconfig.description.activity">
+				<source>Activity description</source>
+				<target state="translated">Description de l'activité</target>
+			</trans-unit>
+			<trans-unit id="tsconfig.keywords.additional_text" resname="tsconfig.keywords.additional_text">
+				<source>Additional text</source>
+				<target state="translated">Texte supplémentaire</target>
+			</trans-unit>
+			<trans-unit id="tsconfig.categoryid.registration" resname="tsconfig.categoryid.registration">
+				<source>Registration or pre-registration</source>
+				<target state="translated">Inscription ou préinscription</target>
+			</trans-unit>
+			<trans-unit id="tsconfig.tt_address.birthday.authorization_date" resname="tsconfig.tt_address.birthday.authorization_date">
+				<source>Authorization date</source>
+				<target state="translated">Date d'autorisation</target>
+			</trans-unit>
+			<trans-unit id="tsconfig.tt_address.categoryid1.installation_type" resname="tsconfig.tt_address.categoryid1.installation_type">
+				<source>Installation type</source>
+				<target state="translated">Type d'installation</target>
+			</trans-unit>
+			<trans-unit id="tsconfig.tt_address.categoryid1.intervention_domains" resname="tsconfig.tt_address.categoryid1.intervention_domains">
+				<source>Intervention domains</source>
+				<target state="translated">Domaines d'intervention</target>
+			</trans-unit>
+			<trans-unit id="tsconfig.tt_address.categoryid2.recipients" resname="tsconfig.tt_address.categoryid2.recipients">
+				<source>Recipients</source>
+				<target state="translated">Destinataires</target>
+			</trans-unit>
+			<trans-unit id="tsconfig.tt_address.categoryid3.benefits" resname="tsconfig.tt_address.categoryid3.benefits">
+				<source>Benefits/Services</source>
+				<target state="translated">Prestations</target>
+			</trans-unit>
 		</body>
 	</file>
 </xliff>
